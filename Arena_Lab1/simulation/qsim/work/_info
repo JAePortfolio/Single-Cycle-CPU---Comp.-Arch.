@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\theco\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\simulation\qsim
+vArena_simpleCircuit
+Z1 !s100 4F>R]4kkf?]]k3mP3K7GE3
+Z2 I]LS?k@=Zk8]2D<Z^GH`?`2
+Z3 VBG_jhiYk]bK:daLzZf5J43
+Z4 dC:\Users\theco\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\simulation\qsim
+Z5 w1550195292
+Z6 8Arena_Lab1Part1.vo
+Z7 FArena_Lab1Part1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Arena_Lab1Part1.vo|
+Z10 o-work work -O0
+Z11 n@arena_simple@circuit
+!i10b 1
+!s85 0
+Z12 !s108 1550195293.125000
+Z13 !s107 Arena_Lab1Part1.vo|
+!s101 -O0
+vArena_simpleCircuit_vlg_check_tst
+!i10b 1
+Z14 !s100 Vkh[Z_DmNeHGNR7[oPE3d2
+Z15 IR@<mJ5iD;VJmEmBL6bI;<3
+Z16 VVO1:i_80>gE3[D?5l>I>[0
+R4
+Z17 w1550195290
+Z18 8Arena_Lab1Part1.vt
+Z19 FArena_Lab1Part1.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1550195293.205000
+Z21 !s107 Arena_Lab1Part1.vt|
+Z22 !s90 -work|work|Arena_Lab1Part1.vt|
+!s101 -O0
+R10
+Z23 n@arena_simple@circuit_vlg_check_tst
+vArena_simpleCircuit_vlg_sample_tst
+!i10b 1
+Z24 !s100 [f5=16J4W`a^f?lSN_iJ^3
+Z25 If>l[>44S0H4YbM[T[Q=Al0
+Z26 VioIFVVSL`2lPZFJ6FNJ_=2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@arena_simple@circuit_vlg_sample_tst
+vArena_simpleCircuit_vlg_vec_tst
+!i10b 1
+Z28 !s100 :CSo4JmokDSb>jz3k^PkJ1
+Z29 I:]B2k<MAEC]7JnhR76RjQ3
+Z30 Vf7MOT>[j[]ZT>OkaiNAWK3
+R4
+R17
+R18
+R19
+Z31 L0 154
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@arena_simple@circuit_vlg_vec_tst

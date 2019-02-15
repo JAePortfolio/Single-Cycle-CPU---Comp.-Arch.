@@ -1,0 +1,7 @@
+|Arena_simpleCircuit
+Arena_F <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Arena_A => inst3.IN0
+Arena_A => inst.IN0
+Arena_B => inst3.IN1
+
+
