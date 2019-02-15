@@ -1,0 +1,8 @@
+|Arena_mux2to1
+Arena_M <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Arena_S => inst3.IN0
+Arena_S => inst2.IN0
+Arena_Y => inst3.IN1
+Arena_X => inst.IN0
+
+
