@@ -1,4 +1,6 @@
 # do Arena_Lab1Part2.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Arena_mux2to1
 # 

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "02/14/2019 21:20:53"
+// DATE "02/15/2019 22:53:25"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -29,14 +29,14 @@
 `timescale 1 ps/ 1 ps
 
 module Arena_mux2to1 (
-	Arena_M,
-	Arena_S,
+	Arena_X,
 	Arena_Y,
-	Arena_X);
-output 	Arena_M;
-input 	Arena_S;
-input 	Arena_Y;
+	Arena_S,
+	Arena_M);
 input 	Arena_X;
+input 	Arena_Y;
+input 	Arena_S;
+output 	Arena_M;
 
 // Design Ports Information
 // Arena_M	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
@@ -59,7 +59,7 @@ tri1 devoe;
 wire \Arena_S~combout ;
 wire \Arena_Y~combout ;
 wire \Arena_X~combout ;
-wire \inst4~0_combout ;
+wire \Arena_M~0_combout ;
 
 
 // Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -171,25 +171,25 @@ defparam \Arena_X~I .output_sync_reset = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X30_Y35_N0
-cycloneii_lcell_comb \inst4~0 (
+cycloneii_lcell_comb \Arena_M~0 (
 // Equation(s):
-// \inst4~0_combout  = (\Arena_S~combout  & (\Arena_Y~combout )) # (!\Arena_S~combout  & ((\Arena_X~combout )))
+// \Arena_M~0_combout  = (\Arena_S~combout  & (\Arena_Y~combout )) # (!\Arena_S~combout  & ((\Arena_X~combout )))
 
 	.dataa(\Arena_S~combout ),
 	.datab(\Arena_Y~combout ),
 	.datac(vcc),
 	.datad(\Arena_X~combout ),
 	.cin(gnd),
-	.combout(\inst4~0_combout ),
+	.combout(\Arena_M~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst4~0 .lut_mask = 16'hDD88;
-defparam \inst4~0 .sum_lutc_input = "datac";
+defparam \Arena_M~0 .lut_mask = 16'hDD88;
+defparam \Arena_M~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \Arena_M~I (
-	.datain(\inst4~0_combout ),
+	.datain(\Arena_M~0_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),

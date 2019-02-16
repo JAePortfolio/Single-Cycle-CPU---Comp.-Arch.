@@ -1,0 +1,6 @@
+-- Arena_mux2to1_tb.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity 

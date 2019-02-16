@@ -1,0 +1,9 @@
+|Arena_HalfAdder
+Arena_X => Arena_Sum.IN0
+Arena_X => Arena_CarryOut.IN0
+Arena_Y => Arena_Sum.IN1
+Arena_Y => Arena_CarryOut.IN1
+Arena_Sum <= Arena_Sum.DB_MAX_OUTPUT_PORT_TYPE
+Arena_CarryOut <= Arena_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

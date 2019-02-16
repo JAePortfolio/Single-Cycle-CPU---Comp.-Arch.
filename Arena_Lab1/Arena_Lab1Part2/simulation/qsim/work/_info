@@ -4,82 +4,82 @@ K3
 cModel Technology
 Z0 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1Part2\simulation\qsim
 vArena_mux2to1
-Z1 ICl3=]U:_KEJ[IDY?0RC[K3
-Z2 V1JK4mLC:@6mdSTV=Z=^Pn1
-Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1Part2\simulation\qsim
-Z4 w1550197253
-Z5 8Arena_Lab1Part2.vo
-Z6 FArena_Lab1Part2.vo
+Z1 !s100 foBh0_b@J?>PbmG<ze`:h1
+Z2 I`?]<FfeFhenIF6O14HSC<3
+Z3 VRe_gcE`8EaN6z7>::NJWQ2
+Z4 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1Part2\simulation\qsim
+Z5 w1550289205
+Z6 8Arena_Lab1Part2.vo
+Z7 FArena_Lab1Part2.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 n@arena_mux2to1
+Z9 !s90 -work|work|Arena_Lab1Part2.vo|
+Z10 o-work work -O0
+Z11 n@arena_mux2to1
 !i10b 1
-Z10 !s100 jo[U3:f]DI:M`5keS;<9`0
 !s85 0
-Z11 !s108 1550197258.237000
-Z12 !s107 Arena_Lab1Part2.vo|
-Z13 !s90 -work|work|Arena_Lab1Part2.vo|
+Z12 !s108 1550289207.643000
+Z13 !s107 Arena_Lab1Part2.vo|
 !s101 -O0
 vArena_mux2to1_vlg_check_tst
 !i10b 1
-!s100 `7j3RNW^c;g`XHo56^WE32
-IO<ZJnWcB29izzDNoAeJ3S3
-VPnzHWW@`iIh3aLC@U9DS=0
-R3
-Z14 w1550197251
-Z15 8Arena_Lab1Part2.vt
-Z16 FArena_Lab1Part2.vt
+Z14 !s100 `7j3RNW^c;g`XHo56^WE32
+Z15 IO<ZJnWcB29izzDNoAeJ3S3
+Z16 VPnzHWW@`iIh3aLC@U9DS=0
+R4
+Z17 w1550289203
+Z18 8Arena_Lab1Part2.vt
+Z19 FArena_Lab1Part2.vt
 L0 61
-R7
+R8
 r1
 !s85 0
 31
-Z17 !s108 1550197258.527000
-Z18 !s107 Arena_Lab1Part2.vt|
-Z19 !s90 -work|work|Arena_Lab1Part2.vt|
+Z20 !s108 1550289207.963000
+Z21 !s107 Arena_Lab1Part2.vt|
+Z22 !s90 -work|work|Arena_Lab1Part2.vt|
 !s101 -O0
-R8
-n@arena_mux2to1_vlg_check_tst
+R10
+Z23 n@arena_mux2to1_vlg_check_tst
 vArena_mux2to1_vlg_sample_tst
 !i10b 1
-!s100 Dh?]3a[mXkDYjPB9KlPUb3
-IIfL?]a`_hYe4J=b2OVZlX1
-Vd39BNU4hgZQWl27QiM;<A0
-R3
-R14
-R15
-R16
-L0 29
-R7
-r1
-!s85 0
-31
+Z24 !s100 Dh?]3a[mXkDYjPB9KlPUb3
+Z25 IIfL?]a`_hYe4J=b2OVZlX1
+Z26 Vd39BNU4hgZQWl27QiM;<A0
+R4
 R17
 R18
 R19
-!s101 -O0
+L0 29
 R8
-n@arena_mux2to1_vlg_sample_tst
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@arena_mux2to1_vlg_sample_tst
 vArena_mux2to1_vlg_vec_tst
 !i10b 1
-!s100 Oo`DRmMTGezfiJTIY0cXR3
-IQbgI>L5kKCm[[JL1N4R0o3
-VSmn9hOWW`5gYUb8=SJ_M^3
-R3
-R14
-R15
-R16
-L0 156
-R7
-r1
-!s85 0
-31
+!s100 G@2cOJ>h_Th4:0Km=818d2
+ISf@0:Cm_Q4YNaf>FT[4L@3
+Z28 VSmn9hOWW`5gYUb8=SJ_M^3
+R4
 R17
 R18
 R19
-!s101 -O0
+Z29 L0 156
 R8
-n@arena_mux2to1_vlg_vec_tst
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@arena_mux2to1_vlg_vec_tst

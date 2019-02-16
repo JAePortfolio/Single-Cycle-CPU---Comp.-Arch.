@@ -172,7 +172,7 @@ SIGNAL("Arena_mux2to1_vlg_vec_tst|i1|Arena_X~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_mux2to1_vlg_vec_tst|i1|inst4~0_combout")
+SIGNAL("Arena_mux2to1_vlg_vec_tst|i1|Arena_M~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -203,10 +203,8 @@ TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|Arena_X")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
 	}
 }
 
@@ -215,8 +213,10 @@ TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|Arena_Y")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -225,10 +225,10 @@ TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|Arena_M")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -323,8 +323,10 @@ TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|i1|Arena_Y~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -333,22 +335,20 @@ TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|i1|Arena_X~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
 	}
 }
 
-TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|i1|inst4~0_combout")
+TRANSITION_LIST("Arena_mux2to1_vlg_vec_tst|i1|Arena_M~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -480,7 +480,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_mux2to1_vlg_vec_tst|i1|inst4~0_combout";
+	CHANNEL = "Arena_mux2to1_vlg_vec_tst|i1|Arena_M~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;

@@ -1,0 +1,25 @@
+|Arena_muxLPM
+Arena_data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+Arena_data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+Arena_sel => LPM_MUX:LPM_MUX_component.SEL[0]
+Arena_result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|Arena_muxLPM|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_03e:auto_generated.data[0]
+data[1][0] => mux_03e:auto_generated.data[1]
+sel[0] => mux_03e:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_03e:auto_generated.result[0]
+
+
+|Arena_muxLPM|LPM_MUX:LPM_MUX_component|mux_03e:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+

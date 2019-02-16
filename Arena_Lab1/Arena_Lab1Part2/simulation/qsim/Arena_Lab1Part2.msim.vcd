@@ -3,7 +3,7 @@ $comment
 		vcd file Arena_Lab1Part2.msim.vcd -direction
 $end
 $date
-	Thu Feb 14 21:21:01 2019
+	Fri Feb 15 22:53:29 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -27,7 +27,7 @@ $var tri1 1 + devoe $end
 $var wire 1 , Arena_S~combout $end
 $var wire 1 - Arena_Y~combout $end
 $var wire 1 . Arena_X~combout $end
-$var wire 1 / inst4~0_combout $end
+$var wire 1 / Arena_M~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -54,39 +54,39 @@ $end
 1,
 0%
 #40000
-1"
+1#
 0!
-1.
+1-
 0,
 1%
-1/
-1$
 #60000
 1!
 1,
 0%
-0/
-0$
+1/
+1$
 #80000
-1#
-0"
+1"
+0#
 0!
-1-
-0.
+1.
+0-
 0,
 1%
 #100000
 1!
 1,
 0%
-1/
-1$
+0/
+0$
 #120000
-1"
+1#
 0!
-1.
+1-
 0,
 1%
+1/
+1$
 #140000
 1!
 1,

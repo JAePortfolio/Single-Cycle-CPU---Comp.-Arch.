@@ -1,0 +1,5 @@
+To, Location
+Arena_data0, PIN_N25
+Arena_data1, PIN_N26
+Arena_sel, PIN_P25
+Arena_result, PIN_AE23
