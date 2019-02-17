@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_FullAdder\simulation\qsim
+vArena_FullAdder
+Z1 IZ8SVe?3Jkf>V<n_eG2C942
+Z2 Vi;:T[Q9U`UM4<3V[zfQ?E1
+Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_FullAdder\simulation\qsim
+Z4 w1550359558
+Z5 8Arena_Lab1_FullAdder.vo
+Z6 FArena_Lab1_FullAdder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Arena_Lab1_FullAdder.vo|
+Z9 o-work work -O0
+Z10 n@arena_@full@adder
+!i10b 1
+Z11 !s100 O;QdhR_WN2=?FWH3Q2K?U0
+!s85 0
+Z12 !s108 1550359560.284000
+Z13 !s107 Arena_Lab1_FullAdder.vo|
+!s101 -O0
+vArena_FullAdder_vlg_check_tst
+!i10b 1
+Z14 !s100 <XdoABPU3oL:ZJgfB[zLm1
+Z15 I3Cb`iFAP;6gJ044Rdkgc12
+Z16 VUZSIm6gz?zLIK=cJe`3M92
+R3
+Z17 w1550359556
+Z18 8Arena_Lab1_FullAdder.vt
+Z19 FArena_Lab1_FullAdder.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1550359560.564000
+Z21 !s107 Arena_Lab1_FullAdder.vt|
+Z22 !s90 -work|work|Arena_Lab1_FullAdder.vt|
+!s101 -O0
+R9
+Z23 n@arena_@full@adder_vlg_check_tst
+vArena_FullAdder_vlg_sample_tst
+!i10b 1
+!s100 nCYe02J<g6MS4P`oRS=eB2
+Ig:R[]U>NoN?IBh2dLCz8]0
+V4gDL8HBR6@5IZ4gW[`G5O1
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z24 n@arena_@full@adder_vlg_sample_tst
+vArena_FullAdder_vlg_vec_tst
+!i10b 1
+!s100 E8cWd^d]=`M2z4`V16dJe1
+I?b93;<gohQIU[[k2?enO;0
+Z25 V;ZUZSL1LNfR_8EE=;3Q@F2
+R3
+R17
+R18
+R19
+Z26 L0 183
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@arena_@full@adder_vlg_vec_tst
