@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\simulation\qsim
+vArena_8to3Encoder
+Z1 I>RBTjM8EQTIIYYYG3En]U2
+Z2 VfXfdN5VhB0SUI0k422nF51
+Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\simulation\qsim
+Z4 w1550375342
+Z5 8Arena_8to3Encoder.vo
+Z6 FArena_8to3Encoder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Arena_8to3Encoder.vo|
+Z9 o-work work -O0
+Z10 n@arena_8to3@encoder
+!i10b 1
+Z11 !s100 zWeA^HI4CGN]F[fjOKZCU3
+!s85 0
+Z12 !s108 1550375345.581000
+Z13 !s107 Arena_8to3Encoder.vo|
+!s101 -O0
+vArena_8to3Encoder_vlg_check_tst
+!i10b 1
+Z14 !s100 ck9KMmQm`59CWIYP<1`Zk3
+Z15 InhBc?bgdoej?HcHOW7Tm;2
+Z16 V=[8AeYCoEm_:=5YFCKV^h3
+R3
+Z17 w1550375340
+Z18 8Arena_8to3Encoder.vt
+Z19 FArena_8to3Encoder.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z20 !s108 1550375345.993000
+Z21 !s107 Arena_8to3Encoder.vt|
+Z22 !s90 -work|work|Arena_8to3Encoder.vt|
+!s101 -O0
+R9
+Z23 n@arena_8to3@encoder_vlg_check_tst
+vArena_8to3Encoder_vlg_sample_tst
+!i10b 1
+Z24 !s100 PJ24YeK2MnIU^04mlfCOJ0
+Z25 ILIba<RE2llDZeC]2AU`FV2
+Z26 V^=GnLK:Ko=LM^>=KJJcJj2
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@arena_8to3@encoder_vlg_sample_tst
+vArena_8to3Encoder_vlg_vec_tst
+!i10b 1
+Z28 !s100 4fa><7eaC@OnogLjaB5]91
+Z29 I8o@1Th<HC@Yej2Ti_5GaM3
+Z30 V;4UK2EIXgjO0LSCHeOZ4c0
+R3
+R17
+R18
+R19
+Z31 L0 218
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@arena_8to3@encoder_vlg_vec_tst

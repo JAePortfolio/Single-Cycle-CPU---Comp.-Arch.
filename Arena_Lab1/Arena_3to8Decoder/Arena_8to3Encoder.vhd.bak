@@ -1,0 +1,10 @@
+library ieee;
+use iee.std_logic_1164.all;
+
+entity Arena_8to3Encoder is 
+	port(
+		Arena_Y0, Arena_Y1, Arena_Y2 : in std_logic;
+		Arena_Y3, Arena_Y4, Arena_Y5, Arena_Y6 : in std_logic;
+		Arena_F0, Arena_F1, Arena_F2 : out std_logic
+		);
+end Arena_8to3Encoder;

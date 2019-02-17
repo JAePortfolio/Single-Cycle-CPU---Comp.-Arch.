@@ -1,0 +1,132 @@
+$comment
+	File created using the following command:
+		vcd file Arena_8to3Encoder.msim.vcd -direction
+$end
+$date
+	Sat Feb 16 22:49:07 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Arena_8to3Encoder_vlg_vec_tst $end
+$var reg 1 ! Arena_Y0 $end
+$var reg 1 " Arena_Y1 $end
+$var reg 1 # Arena_Y2 $end
+$var reg 1 $ Arena_Y3 $end
+$var reg 1 % Arena_Y4 $end
+$var reg 1 & Arena_Y5 $end
+$var reg 1 ' Arena_Y6 $end
+$var wire 1 ( Arena_F0 $end
+$var wire 1 ) Arena_F1 $end
+$var wire 1 * Arena_F2 $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 Arena_Y3~combout $end
+$var wire 1 3 Arena_Y0~combout $end
+$var wire 1 4 Arena_Y1~combout $end
+$var wire 1 5 Arena_Y2~combout $end
+$var wire 1 6 Arena_F0~0_combout $end
+$var wire 1 7 Arena_Y5~combout $end
+$var wire 1 8 Arena_Y4~combout $end
+$var wire 1 9 Arena_F1~0_combout $end
+$var wire 1 : Arena_Y6~combout $end
+$var wire 1 ; Arena_F2~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+0%
+0&
+0'
+1(
+1)
+1*
+x+
+0,
+1-
+x.
+1/
+10
+11
+02
+13
+04
+05
+16
+07
+08
+19
+0:
+1;
+$end
+#20000
+1"
+0!
+14
+03
+0+
+0;
+0*
+#40000
+1#
+0"
+15
+04
+1+
+1;
+09
+1*
+0)
+#60000
+1$
+0#
+12
+05
+0+
+0;
+0*
+#80000
+1%
+0$
+18
+02
+1+
+1;
+19
+06
+1*
+1)
+0(
+#100000
+1&
+0%
+17
+08
+0+
+0;
+0*
+#120000
+1'
+0&
+1:
+07
+1+
+1;
+09
+1*
+0)
+#140000
