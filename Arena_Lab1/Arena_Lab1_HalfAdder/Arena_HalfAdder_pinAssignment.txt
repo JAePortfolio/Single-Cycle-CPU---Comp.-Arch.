@@ -1,0 +1,5 @@
+To, Location
+Arena_X, PIN_N25
+Arena_Y, PIN_N26
+Arena_Sum, PIN_AE23
+Arena_CarryOut, PIN_AF23

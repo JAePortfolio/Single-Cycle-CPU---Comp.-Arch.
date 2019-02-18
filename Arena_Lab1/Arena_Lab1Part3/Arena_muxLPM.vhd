@@ -1,3 +1,4 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 1 - Spring 2019 Due: 2/20/19
 -- megafunction wizard: %LPM_MUX%
 -- GENERATION: STANDARD
 -- VERSION: WM1.0
