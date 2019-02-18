@@ -1,8 +1,10 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder_tb.vhd
 source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_HalfAdder/Arena_HalfAdder.bdf
 source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vwf
 source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd
 source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder_vhdl.vwf
+source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_pinAssignment_FullAdder.txt
 source_file = 1, C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/db/Arena_Lab1_FullAdder.cbx.xml
 source_file = 1, c:/users/john/desktop/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/users/john/desktop/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

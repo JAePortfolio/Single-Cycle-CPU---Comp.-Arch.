@@ -1,0 +1,94 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\simulation\modelsim
+Earena_8to3encoder
+Z0 w1550445232
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\Test Bench
+Z4 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder.vhd
+Z5 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder.vhd
+l0
+L4
+V6GlZoYV7[`HMzI8>CP7@e0
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1550446213.135000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder.vhd|
+Z9 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 hnT81]dfP]XdceU@@eG593
+!i10b 1
+Aarena_arch_8to3encoder
+R1
+R2
+Z12 DEx4 work 17 arena_8to3encoder 0 22 6GlZoYV7[`HMzI8>CP7@e0
+l13
+L12
+VccF^kd1LoUzKRMVB=K1U;2
+!s100 FiAB:M_e1Mlg;HhWMe`aj2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Earena_8to3encoder_tb
+Z13 w1550446079
+R1
+R2
+R3
+Z14 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_tb.vhd
+Z15 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_tb.vhd
+l0
+L6
+V:YZPJJO=M=L?f^^Vf:JMc0
+!s100 60Z<aEKk>Xkl;2S7E9Kho3
+R6
+32
+!i10b 1
+Z16 !s108 1550446213.445000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_tb.vhd|
+Z18 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_tb.vhd|
+R10
+R11
+Aarena_arch_8to3encoder_tb
+R12
+R1
+R2
+Z19 DEx4 work 20 arena_8to3encoder_tb 0 22 :YZPJJO=M=L?f^^Vf:JMc0
+l38
+L9
+V7:XSnd2DWZ6d^gb9`ILi91
+!s100 ezl>Pm3S1f5D^2EHU;RBf1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11
+Aarena_f0rch_8to3encoder_tb
+R12
+R1
+R2
+R19
+l37
+L9
+V2LCcan><W`B2lIkNSMS`=0
+R6
+32
+!s108 1550445535.830000
+R17
+!s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_tb.vhd|
+R10
+R11
+w1550445312
+!s100 ?SjV=VH>N2:g>>EkN7dgl0
+!i10b 1

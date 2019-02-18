@@ -1,0 +1,19 @@
+{C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_HalfAdder/Arena_HalfAdder.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_HalfAdder/Arena_HalfAdder.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_HalfAdder
+-- Compiling architecture Arena_Arch_HalfAdder of Arena_HalfAdder
+
+} {} {}} {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_HalfAdder/Arena_HalfAdder_tb.vhd} {2 {vcom -work work -2002 -explicit {C:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_HalfAdder\Arena_HalfAdder_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_HalfAdder_tb
+-- Compiling architecture Arena_Arch_HalfAdder_tb of Arena_HalfAdder_tb
+-- Loading entity Arena_HalfAdder
+** Warning: [4] C:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_HalfAdder\Arena_HalfAdder_tb.vhd(17): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

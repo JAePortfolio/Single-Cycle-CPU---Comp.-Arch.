@@ -11,6 +11,7 @@ Arena_Y4 => Arena_F1.IN0
 Arena_Y4 => Arena_F2.IN0
 Arena_Y5 => Arena_F1.IN1
 Arena_Y6 => Arena_F2.IN1
+Arena_Y7 => ~NO_FANOUT~
 Arena_F0 <= Arena_F0.DB_MAX_OUTPUT_PORT_TYPE
 Arena_F1 <= Arena_F1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_F2 <= Arena_F2.DB_MAX_OUTPUT_PORT_TYPE

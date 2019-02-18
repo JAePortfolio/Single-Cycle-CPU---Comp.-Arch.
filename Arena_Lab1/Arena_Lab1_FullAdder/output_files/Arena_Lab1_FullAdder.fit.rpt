@@ -1,5 +1,5 @@
 Fitter report for Arena_Lab1_FullAdder
-Sat Feb 16 18:24:16 2019
+Sun Feb 17 15:28:53 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Feb 16 18:24:16 2019           ;
+; Fitter Status                      ; Successful - Sun Feb 17 15:28:53 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_Lab1_FullAdder                            ;
 ; Top-level Entity Name              ; Arena_FullAdder                                 ;
@@ -1260,7 +1260,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 2 output pins without output pin load capacitance assignment
     Info (306007): Pin "Arena_Sum" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1273,7 +1273,7 @@ Warning (169174): The Reserve All Unused Pins setting has not been specified, an
 Info (144001): Generated suppressed messages file C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/output_files/Arena_Lab1_FullAdder.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 658 megabytes
-    Info: Processing ended: Sat Feb 16 18:24:16 2019
+    Info: Processing ended: Sun Feb 17 15:28:53 2019
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 

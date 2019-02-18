@@ -1,0 +1,9 @@
+vmap -del work
+# Removing reference to logical library work
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_TestBench.mpf
+vmap work {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/work}
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Test Bench/Arena_8to3Encoder_TestBench.mpf
+# Compile of Arena_8to3Encoder.vhd was successful.
+# Compile of Arena_8to3Encoder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+vsim +altera -do Arena_8to3Encoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_8to3encoder_tb

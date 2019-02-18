@@ -1,0 +1,6 @@
+# Compile of Arena_HalfAdder.vhd was successful.
+# Compile of Arena_HalfAdder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+do Arena_HalfAdder_sim.do
+# Cannot open macro file: Arena_HalfAdder_sim.do
+vsim +altera -do Arena_Lab1_HalfAdder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_halfadder

@@ -1,0 +1,76 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\simulation\modelsim
+Earena_3to8decoder
+Z0 w1550367360
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\Test Bench
+Z4 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder.vhd
+Z5 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder.vhd
+l0
+L4
+V`QUK`Wa`OX<KRWi_3ZIM:3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1550442797.731000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder.vhd|
+Z9 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 gE=UJIbE?Yj5o_eShJg0[1
+!i10b 1
+Aarena_arch_3to8decoder
+R1
+R2
+Z12 DEx4 work 17 arena_3to8decoder 0 22 `QUK`Wa`OX<KRWi_3ZIM:3
+l15
+L13
+Vo>CRMahIlMF6hRn=^kPc13
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 Z0_IYAYFgNa>IA=<K_gdS3
+!i10b 1
+Earena_3to8decoder_tb
+Z13 w1550443842
+R1
+R2
+R3
+Z14 8C:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\Test Bench\Arena_3to8Decoder_tb.vhd
+Z15 FC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\Test Bench\Arena_3to8Decoder_tb.vhd
+l0
+L6
+V]z]8i`T`2KdL<z?c:?9I=0
+!s100 R_DnP^h6f0`6mbSA58:fz0
+R6
+32
+!i10b 1
+Z16 !s108 1550443847.331000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\Test Bench\Arena_3to8Decoder_tb.vhd|
+Z18 !s107 C:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_3to8Decoder\Test Bench\Arena_3to8Decoder_tb.vhd|
+R10
+R11
+Aarena_arch_3to8decoder_tb
+R12
+R1
+R2
+Z19 DEx4 work 20 arena_3to8decoder_tb 0 22 ]z]8i`T`2KdL<z?c:?9I=0
+l37
+L9
+V?FaiS3zzlzQ`L9X:[L7g:0
+!s100 aFhkg80U9[cbH4Rf8;WkK2
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

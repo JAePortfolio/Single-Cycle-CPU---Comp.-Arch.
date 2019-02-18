@@ -1,0 +1,10 @@
+# Compile of Arena_mux2to1.vhd was successful.
+# Compile of Arena_mux2to1_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Load canceled
+vmap -del work
+# Removing reference to logical library work
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_2to1mux_TestBench.mpf
+vmap work {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/work}
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_2to1mux_TestBench.mpf
+vsim +altera -do Arena_Lab1Part2_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_mux2to1_tb

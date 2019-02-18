@@ -1,0 +1,76 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1Part2\simulation\modelsim
+Earena_mux2to1
+Z0 w1550288729
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1Part2\Test Bench
+Z4 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd
+Z5 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd
+l0
+L6
+VTOCO@C;5C3j2Jc6e^C:U80
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1550449734.063000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd|
+Z9 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 0_RGkfY;SB2WOfbO<H=nY3
+!i10b 1
+Aarena_arch_mux2to1
+R1
+R2
+Z12 DEx4 work 13 arena_mux2to1 0 22 TOCO@C;5C3j2Jc6e^C:U80
+l14
+L13
+V5TG7CUKzI7Y0>_`2emU:Y1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 ?d^fmD6g4@mSH89n[dnI93
+!i10b 1
+Earena_mux2to1_tb
+Z13 w1550449580
+R1
+R2
+R3
+Z14 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd
+Z15 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd
+l0
+L6
+V8>Y>E6_]b8EdG9F=18W861
+!s100 0b=ZZ6ed_0FWN4EDHW1IX0
+R6
+32
+!i10b 1
+Z16 !s108 1550449734.403000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd|
+Z18 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd|
+R10
+R11
+Aarena_arch_mux2to1_tb
+R12
+R1
+R2
+DEx4 work 16 arena_mux2to1_tb 0 22 8>Y>E6_]b8EdG9F=18W861
+l33
+L9
+V9Jh]1@NYz7h`kNo?X:85?2
+!s100 zdA>XO0FTT1[BBfB[h;_I3
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

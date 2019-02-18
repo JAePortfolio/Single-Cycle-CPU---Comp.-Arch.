@@ -1,0 +1,24 @@
+# vsim +altera -do Arena_3to8Decoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_3to8decoder_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arena_3to8decoder_tb(arena_arch_3to8decoder_tb)
+# Loading work.arena_3to8decoder(arena_arch_3to8decoder)
+# Arena_3to8Decoder_run_msim_rtl_vhdl.do 
+# invalid command name "Arena_3to8Decoder_run_msim_rtl_vhdl.do"
+add wave -r /*
+run -all
+run -all
+# Compile of Arena_3to8Decoder_tb.vhd was successful with warnings.
+run -all
+vsim +altera -do Arena_3to8Decoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_3to8decoder_tb
+# vsim +altera -do Arena_3to8Decoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_3to8decoder_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arena_3to8decoder_tb(arena_arch_3to8decoder_tb)
+# Loading work.arena_3to8decoder(arena_arch_3to8decoder)
+# Arena_3to8Decoder_run_msim_rtl_vhdl.do 
+# invalid command name "Arena_3to8Decoder_run_msim_rtl_vhdl.do"
+add wave -r /*
+run -all

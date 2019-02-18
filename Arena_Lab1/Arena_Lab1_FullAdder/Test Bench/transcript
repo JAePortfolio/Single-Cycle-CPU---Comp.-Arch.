@@ -1,0 +1,4 @@
+# Compile of Arena_HalfAdder_tb.vhd was successful with warnings.
+# Compile of Arena_HalfAdder.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim +altera -L {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/work} -Lf {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/work} -do Arena_Lab1_FullAdder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_halfadder_tb

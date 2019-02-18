@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_Lab1_FullAdder
-Sat Feb 16 18:24:07 2019
+Sun Feb 17 15:28:44 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb 16 18:24:07 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 17 15:28:44 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_Lab1_FullAdder                            ;
 ; Top-level Entity Name              ; Arena_FullAdder                                 ;
@@ -233,9 +233,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Feb 16 18:24:04 2019
+    Info: Processing started: Sun Feb 17 15:28:40 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_Lab1_FullAdder -c Arena_Lab1_FullAdder
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file arena_fulladder_tb.vhd
+    Info (12022): Found design unit 1: Arena_FullAdder_tb-Arena_Arch_FullAdder_tb
+    Info (12023): Found entity 1: Arena_FullAdder_tb
 Info (12021): Found 1 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_lab1/arena_lab1_halfadder/arena_halfadder.bdf
     Info (12023): Found entity 1: Arena_HalfAdder
 Info (12021): Found 2 design units, including 1 entities, in source file arena_fulladder.vhd
@@ -249,9 +252,9 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 489 megabytes
-    Info: Processing ended: Sat Feb 16 18:24:07 2019
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 505 megabytes
+    Info: Processing ended: Sun Feb 17 15:28:44 2019
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

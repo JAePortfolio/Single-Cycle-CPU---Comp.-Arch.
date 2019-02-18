@@ -1,0 +1,24 @@
+# vsim +altera -do Arena_8to3Encoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_8to3encoder_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arena_8to3encoder_tb(arena_f0rch_8to3encoder_tb)
+# Loading work.arena_8to3encoder(arena_arch_8to3encoder)
+# Arena_8to3Encoder_run_msim_rtl_vhdl.do 
+# invalid command name "Arena_8to3Encoder_run_msim_rtl_vhdl.do"
+add wave -r /*
+run -all
+# Compile of Arena_8to3Encoder.vhd was successful.
+# Compile of Arena_8to3Encoder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+vsim +altera -do Arena_8to3Encoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_8to3encoder_tb
+# vsim +altera -do Arena_8to3Encoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_8to3encoder_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arena_8to3encoder_tb(arena_arch_8to3encoder_tb)
+# Loading work.arena_8to3encoder(arena_arch_8to3encoder)
+# Arena_8to3Encoder_run_msim_rtl_vhdl.do 
+# invalid command name "Arena_8to3Encoder_run_msim_rtl_vhdl.do"
+add wave -r /*
+run -all

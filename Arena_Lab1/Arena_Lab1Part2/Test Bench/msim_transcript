@@ -1,0 +1,10 @@
+# vsim +altera -do Arena_Lab1Part2_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_mux2to1_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.arena_mux2to1_tb(arena_arch_mux2to1_tb)
+# Loading work.arena_mux2to1(arena_arch_mux2to1)
+# Arena_Lab1Part2_run_msim_rtl_vhdl.do 
+# invalid command name "Arena_Lab1Part2_run_msim_rtl_vhdl.do"
+add wave -r /*
+run -all

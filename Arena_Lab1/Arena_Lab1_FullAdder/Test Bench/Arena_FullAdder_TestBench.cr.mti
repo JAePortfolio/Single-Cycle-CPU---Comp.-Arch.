@@ -1,0 +1,19 @@
+{C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_FullAdder
+-- Compiling architecture Arena_Arch_FullAdder of Arena_FullAdder
+
+} {} {}} {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder_tb.vhd} {2 {vcom -work work -2002 -explicit {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_FullAdder_tb
+-- Compiling architecture Arena_Arch_FullAdder_tb of Arena_FullAdder_tb
+-- Loading entity Arena_FullAdder
+** Warning: [4] C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder_tb.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

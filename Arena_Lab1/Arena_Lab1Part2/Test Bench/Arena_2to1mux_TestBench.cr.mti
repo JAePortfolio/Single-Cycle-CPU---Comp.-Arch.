@@ -1,0 +1,18 @@
+{C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_mux2to1
+-- Compiling architecture Arena_Arch_mux2to1 of Arena_mux2to1
+
+} {} {}} {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1Part2/Test Bench/Arena_mux2to1_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Arena_mux2to1_tb
+-- Compiling architecture Arena_Arch_mux2to1_tb of Arena_mux2to1_tb
+-- Loading entity Arena_mux2to1
+
+} {} {}}

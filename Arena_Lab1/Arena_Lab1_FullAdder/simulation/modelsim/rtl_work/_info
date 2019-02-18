@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_FullAdder\simulation\modelsim
+Earena_fulladder
+Z1 w1550359442
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_Lab1_FullAdder\simulation\modelsim
+Z5 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd
+Z6 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd
+l0
+L4
+VURP7m8:3cgGzSdH1`gMH53
+!s100 h]?>>TVcWi<;g2oWINd`L0
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1550435415.639000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd|
+Z10 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Aarena_arch_fulladder
+R2
+R3
+DEx4 work 15 arena_fulladder 0 22 URP7m8:3cgGzSdH1`gMH53
+l13
+L11
+V=Y5dodSU19d:Mh5?f1kcK1
+!s100 fAgoXRG=n=eE7@ekMH=730
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

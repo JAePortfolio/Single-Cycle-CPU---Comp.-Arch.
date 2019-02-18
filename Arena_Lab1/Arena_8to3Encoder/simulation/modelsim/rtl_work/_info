@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\simulation\modelsim
+Earena_8to3encoder
+Z1 w1550445232
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_Lab1\Arena_8to3Encoder\simulation\modelsim
+Z5 8C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Arena_8to3Encoder.vhd
+Z6 FC:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Arena_8to3Encoder.vhd
+l0
+L4
+V[::N`jj]M]4ZE1n1PNz@m0
+!s100 hnT81]dfP]XdceU@@eG593
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1550445426.201000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Arena_8to3Encoder.vhd|
+Z10 !s107 C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_8to3Encoder/Arena_8to3Encoder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Aarena_arch_8to3encoder
+R2
+R3
+DEx4 work 17 arena_8to3encoder 0 22 [::N`jj]M]4ZE1n1PNz@m0
+l13
+L12
+VoBNmcLAJ;1^hL=Xh23RWN2
+!s100 FiAB:M_e1Mlg;HhWMe`aj2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

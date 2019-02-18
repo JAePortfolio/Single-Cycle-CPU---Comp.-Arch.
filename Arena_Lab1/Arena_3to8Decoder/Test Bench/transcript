@@ -1,0 +1,10 @@
+# Compile of Arena_3to8Decoder.vhd was successful.
+# Compile of Arena_3to8Decoder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+# Load canceled
+vmap -del work
+# Removing reference to logical library work
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder_TestBench.mpf
+vmap work {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/work}
+# Modifying C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_3to8Decoder/Test Bench/Arena_3to8Decoder_TestBench.mpf
+vsim +altera -do Arena_3to8Decoder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_3to8decoder_tb
