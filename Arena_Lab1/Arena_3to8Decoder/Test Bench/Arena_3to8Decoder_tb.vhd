@@ -1,4 +1,5 @@
--- Arena_FullAdder_tb.vhd
+-- (First, Last) John Arena - CSC 342/343 - Lab 1 - Spring 2019 Due: 2/20/19
+-- Arena_3to8Decoder_tb.vhd
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -7,19 +8,19 @@ Entity Arena_3to8Decoder_tb is
 end Arena_3to8Decoder_tb;
 
 Architecture Arena_Arch_3to8Decoder_tb of Arena_3to8Decoder_tb is
-	signal Arena_A, Arena_B, Arena_C : std_logic;
+	signal Arena_A, Arena_B, Arena_C : std_logic; -- Defining signals
 	signal Arena_F0, Arena_F1, Arena_F2 : std_logic; 
 	signal Arena_F3, Arena_F4, Arena_F5 : std_logic;
 	signal Arena_F6, Arena_F7 : std_logic;
 	
-	type test_vector is record
+	type test_vector is record -- collection of signals in one object, like C structures
 		Arena_A, Arena_B, Arena_C : std_logic;
 		Arena_F0, Arena_F1, Arena_F2 : std_logic; 
 		Arena_F3, Arena_F4, Arena_F5 : std_logic;
 		Arena_F6, Arena_F7 : std_logic;
 	end record;
 	
-	type test_vector_array is array (natural range <> ) of test_vector;
+	type test_vector_array is array (natural range <> ) of test_vector; -- Array of test_vector
 	constant test_vectors : test_vector_array := (
 		-- Arena_A, Arena_B, Arena_C, Arena_F0, Arena_F1, Arena_F2, Arena_F3, Arena_F4, Arena_F5, Arena_F6, Arena_F7,
 		('0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0'), -- A=0,B=0,C=0,F0=0...F7=0
@@ -31,11 +32,10 @@ Architecture Arena_Arch_3to8Decoder_tb of Arena_3to8Decoder_tb is
 		('1', '1', '0', '0', '0', '0', '0', '0', '0', '1', '0'),
 		('1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '1')
 		
-		--('0', '0', '1', '1', '0', '0', '0', '0', '0', '0', '1') -- fail test
 		);
 		
 begin
-	-- connecting testbench signals with Arena_HalfAdder.vhd
+	-- connecting testbench signals with Arena_3to8Decoder.vhd
 	UUT : entity work.Arena_3to8Decoder port map (Arena_A => Arena_A, Arena_B => Arena_B, Arena_C => Arena_C, Arena_F0 => Arena_F0, Arena_F1 => Arena_F1,
 			 Arena_F2 => Arena_F2, Arena_F3 => Arena_F3, Arena_F4 => Arena_F4, Arena_F5 => Arena_F5, Arena_F6 => Arena_F6, Arena_F7 => Arena_F7);
 	
@@ -44,7 +44,7 @@ begin
 	begin
 		for i in test_vectors'range loop
 			Arena_A <= test_vectors(i).Arena_A; -- signal a = i^th-row-value of test_vector's a
-			Arena_B <= test_vectors(i).Arena_B;
+			Arena_B <= test_vectors(i).Arena_B; -- row is left to right
 			Arena_C <= test_vectors(i).Arena_C;
 			Arena_F0 <= test_vectors(i).Arena_F0;
 			Arena_F1 <= test_vectors(i).Arena_F1;
@@ -71,7 +71,7 @@ begin
 					(Arena_F7 <= test_vectors(i).Arena_F7)
 					)
 					
-			report"test_vector " & integer'image(i) & " failed " &
+			report"test_vector " & integer'image(i) & " failed " & --T'image(x) is a string represesntation of x of type T
 					" for input Arena_A = " & std_logic'image(Arena_A) &
 					" and Arena_B = " & std_logic'image(Arena_B) &
 					" and Arena_C = " & std_logic'image(Arena_C) &

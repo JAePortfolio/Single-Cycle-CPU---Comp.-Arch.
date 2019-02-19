@@ -1,3 +1,4 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 1 - Spring 2019 Due: 2/20/19
 -- Arena_mux2to1_tb.vhd
 
 library ieee;
@@ -37,7 +38,7 @@ begin
 		begin
 			for i in test_vectors'range loop
             Arena_X <= test_vectors(i).Arena_X;  -- signal a = i^th-row-value of test_vector's a
-            Arena_Y <= test_vectors(i).Arena_Y;
+            Arena_Y <= test_vectors(i).Arena_Y; -- row left to right
 				Arena_S <= test_vectors(i).Arena_S;
 				Arena_M <= test_vectors(i).Arena_M;
             wait for 20 ns;
@@ -50,7 +51,7 @@ begin
                     )
 
             -- image is used for string-representation of integer etc.
-            report  "test_vector " & integer'image(i) & " failed " & 
+            report  "test_vector " & integer'image(i) & " failed " &  --T'image(x) is a string represesntation of x of type T
                     " for input Arena_X = " & std_logic'image(Arena_X) & 
                     " and Arena_Y = " & std_logic'image(Arena_Y) & 
                     " and Arena_S = " & std_logic'image(Arena_S) & 

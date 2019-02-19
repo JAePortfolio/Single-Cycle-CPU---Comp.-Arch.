@@ -1,3 +1,4 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 1 - Spring 2019 Due: 2/20/19
 -- Arena_HalfAdder_tb.vhd
 
 library ieee;
@@ -6,7 +7,7 @@ use ieee.std_logic_1164.all;
 Entity Arena_HalfAdder_tb is 
 end Arena_HalfAdder_tb;
 
-Architecture Arena_Arch_HalfAdder_tb of Arena_HalfAdder_tb is
+Architecture Arena_Arch_HalfAdder_tb of Arena_HalfAdder_tb is -- Describiing functionality
 	signal Arena_X, Arena_Y : std_logic;
 	signal Arena_CarryOut, Arena_Sum : std_logic;
 begin

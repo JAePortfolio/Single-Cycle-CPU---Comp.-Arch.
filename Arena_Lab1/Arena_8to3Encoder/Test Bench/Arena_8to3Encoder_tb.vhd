@@ -1,3 +1,4 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 1 - Spring 2019 Due: 2/20/19
 -- Arena_8to3Encoder_tb.vhd
 
 library ieee;
@@ -6,21 +7,21 @@ use ieee.std_logic_1164.all;
 Entity Arena_8to3Encoder_tb is 
 end Arena_8to3Encoder_tb;
 
-Architecture Arena_Arch_8to3Encoder_tb of Arena_8to3Encoder_tb is
-	signal Arena_Y0, Arena_Y1, Arena_Y2 : std_logic; 
+Architecture Arena_Arch_8to3Encoder_tb of Arena_8to3Encoder_tb is 
+	signal Arena_Y0, Arena_Y1, Arena_Y2 : std_logic; -- define signals
 	signal Arena_Y3, Arena_Y4, Arena_Y5 : std_logic;
 	signal Arena_Y6, Arena_Y7 : std_logic;
 	signal Arena_F0, Arena_F1, Arena_F2 : std_logic;
 
 	
-	type test_vector is record
+	type test_vector is record -- collection of signals in one object, like C structures
 		Arena_Y0, Arena_Y1, Arena_Y2 : std_logic; 
 		Arena_Y3, Arena_Y4, Arena_Y5 : std_logic;
 		Arena_Y6, Arena_Y7 : std_logic;
 		Arena_F0, Arena_F1, Arena_F2 : std_logic;
 	end record;
 	
-	type test_vector_array is array (natural range <> ) of test_vector;
+	type test_vector_array is array (natural range <> ) of test_vector; --Array of test vector
 	constant test_vectors : test_vector_array := (
 		-- Arena_Y0, Arena_Y1, Arena_Y2, Arena_Y3, Arena_Y4, Arena_Y5, Arena_Y6, Arena_Y7, Arena_Y0, Arena_Y1, Arena_Y2,
 		('0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0'), -- Y0=0...Y7=0,F0=0,F1=0,F2=0
@@ -36,7 +37,7 @@ Architecture Arena_Arch_8to3Encoder_tb of Arena_8to3Encoder_tb is
 		);
 		
 begin
-	-- connecting testbench signals with Arena_HalfAdder.vhd
+	-- connecting testbench signals with Arena_8to3Encoder.vhd
 	UUT : entity work.Arena_8to3Encoder port map (Arena_F0 => Arena_F0, Arena_F1 => Arena_F1, Arena_F2 => Arena_F2, Arena_Y0 => Arena_Y0, Arena_Y1 => Arena_Y1,
 			 Arena_Y2 => Arena_Y2, Arena_Y3 => Arena_Y3, Arena_Y4 => Arena_Y4, Arena_Y5 => Arena_Y5, Arena_Y6 => Arena_Y6, Arena_Y7 => Arena_Y7);
 	
@@ -45,7 +46,7 @@ begin
 	begin
 		for i in test_vectors'range loop
 			Arena_Y0 <= test_vectors(i).Arena_Y0; -- signal a = i^th-row-value of test_vector's a
-			Arena_Y1 <= test_vectors(i).Arena_Y1;
+			Arena_Y1 <= test_vectors(i).Arena_Y1; -- row is left to right
 			Arena_Y2 <= test_vectors(i).Arena_Y2;
 			Arena_Y3 <= test_vectors(i).Arena_Y3;
 			Arena_Y4 <= test_vectors(i).Arena_Y4;
@@ -71,7 +72,7 @@ begin
 					(Arena_F2 <= test_vectors(i).Arena_F2) 
 					)
 					
-			report"test_vector " & integer'image(i) & " failed " &
+			report"test_vector " & integer'image(i) & " failed " & --T'image(x) is a string represesntation of x of type T
 					" For input Arena_Y0 = " & std_logic'image(Arena_Y0) &
 					" and input Arena_Y1 = " & std_logic'image(Arena_Y1) &
 					" and input Arena_Y2 = " & std_logic'image(Arena_Y2) &
