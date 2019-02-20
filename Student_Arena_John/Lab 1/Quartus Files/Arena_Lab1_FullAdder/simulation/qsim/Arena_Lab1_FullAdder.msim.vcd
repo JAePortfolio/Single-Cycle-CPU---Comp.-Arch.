@@ -1,0 +1,148 @@
+$comment
+	File created using the following command:
+		vcd file Arena_Lab1_FullAdder.msim.vcd -direction
+$end
+$date
+	Wed Feb 20 15:27:25 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Arena_FullAdder_vlg_vec_tst $end
+$var reg 1 ! Arena_CarryIn1 $end
+$var reg 1 " Arena_X1 $end
+$var reg 1 # Arena_Y1 $end
+$var wire 1 $ Arena_CarryOut $end
+$var wire 1 % Arena_Sum $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - Arena_X1~combout $end
+$var wire 1 . Arena_CarryIn1~combout $end
+$var wire 1 / Arena_Y1~combout $end
+$var wire 1 0 HA2|Arena_Sum~0_combout $end
+$var wire 1 1 Arena_CarryOut~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+1$
+0%
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+1.
+1/
+00
+11
+$end
+#10000
+1"
+1-
+0&
+10
+1%
+#20000
+0#
+0/
+1&
+00
+0%
+#30000
+0!
+1#
+0.
+1/
+0&
+#50000
+0"
+0-
+1&
+01
+10
+0$
+1%
+#70000
+1!
+1.
+0&
+11
+00
+1$
+0%
+#90000
+0#
+1"
+0/
+1-
+1&
+#100000
+0!
+0.
+0&
+01
+10
+0$
+1%
+#110000
+0"
+1!
+0-
+1.
+1&
+#120000
+1#
+1"
+0!
+1/
+1-
+0.
+0&
+11
+00
+1$
+0%
+#130000
+1!
+1.
+1&
+10
+1%
+#140000
+0#
+0"
+0!
+0/
+0-
+0.
+0&
+01
+00
+0$
+0%
+#150000
+1"
+1!
+1-
+1.
+1&
+11
+1$
+#160000

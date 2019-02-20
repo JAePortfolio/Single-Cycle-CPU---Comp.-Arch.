@@ -1,0 +1,72 @@
+$comment
+	File created using the following command:
+		vcd file Arena_Lab1_HalfAdder.msim.vcd -direction
+$end
+$date
+	Wed Feb 20 09:32:39 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Arena_HalfAdder_vlg_vec_tst $end
+$var reg 1 ! Arena_X $end
+$var reg 1 " Arena_Y $end
+$var wire 1 # Arena_CarryOut $end
+$var wire 1 $ Arena_Sum $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Arena_Y~combout $end
+$var wire 1 - Arena_X~combout $end
+$var wire 1 . Arena_Sum~0_combout $end
+$var wire 1 / Arena_CarryOut~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+$end
+#40000
+1"
+1,
+0%
+1.
+1$
+#80000
+1!
+0"
+1-
+0,
+1%
+#120000
+1"
+1,
+0%
+1/
+0.
+1#
+0$
+#160000
