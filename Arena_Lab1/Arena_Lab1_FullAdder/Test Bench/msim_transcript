@@ -1,17 +1,39 @@
-# vsim +altera -L {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/work} -Lf {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/work} -do Arena_Lab1_FullAdder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_fulladder_tb 
+# vsim +altera -do Arena_Lab1_FullAdder_run_msim_rtl_vhdl.do -l msim_transcript -gui work.arena_fulladder_tb 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.arena_fulladder_tb(arena_arch_fulladder_tb)
 # Loading work.arena_fulladder(arena_arch_fulladder)
+# ** Warning: (vsim-3473) Component instance "HA1 : Arena_HalfAdder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /arena_fulladder_tb/UUT File: C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder.vhd
+# ** Warning: (vsim-3473) Component instance "HA2 : Arena_HalfAdder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /arena_fulladder_tb/UUT File: C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /arena_fulladder_tb/UUT/Arena_Sum, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /arena_fulladder_tb/Arena_Sum.
+# 
 # Arena_Lab1_FullAdder_run_msim_rtl_vhdl.do 
 # invalid command name "Arena_Lab1_FullAdder_run_msim_rtl_vhdl.do"
 add wave -r /*
+# Can't move the Now cursor.
 run -all
-# ** Error: test_vector 8 failed  for input Arena_X = '0' and Arena_Y = '0' and Arena_CarryIn = '1' For output Arena_CarryOut = '0' and output Arena_Sum = '1'
+# ** Error: test_vector 0 failed  for input Arena_X = '0' and Arena_Y = '0' and Arena_CarryIn = '0' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 40 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 1 failed  for input Arena_X = '0' and Arena_Y = '0' and Arena_CarryIn = '1' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 80 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 2 failed  for input Arena_X = '0' and Arena_Y = '1' and Arena_CarryIn = '0' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 120 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 3 failed  for input Arena_X = '0' and Arena_Y = '1' and Arena_CarryIn = '1' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 160 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 4 failed  for input Arena_X = '1' and Arena_Y = '0' and Arena_CarryIn = '0' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 200 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 5 failed  for input Arena_X = '1' and Arena_Y = '0' and Arena_CarryIn = '1' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 240 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 6 failed  for input Arena_X = '1' and Arena_Y = '1' and Arena_CarryIn = '0' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 280 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 7 failed  for input Arena_X = '1' and Arena_Y = '1' and Arena_CarryIn = '1' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
+#    Time: 320 ns  Iteration: 0  Instance: /arena_fulladder_tb
+# ** Error: test_vector 8 failed  for input Arena_X = '0' and Arena_Y = '0' and Arena_CarryIn = '1' For output Arena_CarryOut = 'U' and output Arena_Sum = 'U'
 #    Time: 360 ns  Iteration: 0  Instance: /arena_fulladder_tb
-# Closing project C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Test Bench/Arena_FullAdder_TestBench.mpf
-# reading C:\Users\John\Desktop\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini
-project open {C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_HalfAdder/simulation/modelsim/Arena_HalfAdder_tb}
-# reading modelsim.ini
-# Loading project Arena_HalfAdder_tb

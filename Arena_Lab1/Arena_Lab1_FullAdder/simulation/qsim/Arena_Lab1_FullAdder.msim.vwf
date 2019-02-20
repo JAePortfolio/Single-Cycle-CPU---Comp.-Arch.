@@ -182,7 +182,7 @@ SIGNAL("Arena_FullAdder_vlg_vec_tst|i1|Arena_Y~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_FullAdder_vlg_vec_tst|i1|Arena_Sum~0_combout")
+SIGNAL("Arena_FullAdder_vlg_vec_tst|i1|HA2|inst~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -374,7 +374,7 @@ TRANSITION_LIST("Arena_FullAdder_vlg_vec_tst|i1|Arena_Y~combout")
 	}
 }
 
-TRANSITION_LIST("Arena_FullAdder_vlg_vec_tst|i1|Arena_Sum~0_combout")
+TRANSITION_LIST("Arena_FullAdder_vlg_vec_tst|i1|HA2|inst~0_combout")
 {
 	NODE
 	{
@@ -537,7 +537,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_FullAdder_vlg_vec_tst|i1|Arena_Sum~0_combout";
+	CHANNEL = "Arena_FullAdder_vlg_vec_tst|i1|HA2|inst~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;

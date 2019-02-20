@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_Lab1_FullAdder
-Sun Feb 17 15:28:44 2019
+Tue Feb 19 23:01:15 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 17 15:28:44 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 19 23:01:14 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_Lab1_FullAdder                            ;
 ; Top-level Entity Name              ; Arena_FullAdder                                 ;
@@ -154,13 +154,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_FullAdder.vhd              ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                                ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_FullAdder.vhd              ; yes             ; User VHDL File                           ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/Arena_FullAdder.vhd ;         ;
+; arena_halfadder.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_Lab1/Arena_Lab1_FullAdder/arena_halfadder.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -193,13 +194,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Arena_FullAdder           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |Arena_FullAdder    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
+; |Arena_FullAdder           ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |Arena_FullAdder                     ; work         ;
+;    |Arena_HalfAdder:HA2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_FullAdder|Arena_HalfAdder:HA2 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,28 +235,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Feb 17 15:28:40 2019
+    Info: Processing started: Tue Feb 19 23:01:12 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_Lab1_FullAdder -c Arena_Lab1_FullAdder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file arena_fulladder_tb.vhd
     Info (12022): Found design unit 1: Arena_FullAdder_tb-Arena_Arch_FullAdder_tb
     Info (12023): Found entity 1: Arena_FullAdder_tb
-Info (12021): Found 1 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_lab1/arena_lab1_halfadder/arena_halfadder.bdf
-    Info (12023): Found entity 1: Arena_HalfAdder
 Info (12021): Found 2 design units, including 1 entities, in source file arena_fulladder.vhd
     Info (12022): Found design unit 1: Arena_FullAdder-Arena_Arch_FullAdder
     Info (12023): Found entity 1: Arena_FullAdder
 Info (12127): Elaborating entity "Arena_FullAdder" for the top level hierarchy
+Warning (12125): Using design file arena_halfadder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Arena_HalfAdder
+Info (12128): Elaborating entity "Arena_HalfAdder" for hierarchy "Arena_HalfAdder:HA1"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 505 megabytes
-    Info: Processing ended: Sun Feb 17 15:28:44 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 479 megabytes
+    Info: Processing ended: Tue Feb 19 23:01:15 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

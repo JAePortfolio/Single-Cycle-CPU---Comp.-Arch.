@@ -3,7 +3,7 @@ $comment
 		vcd file Arena_Lab1_FullAdder.msim.vcd -direction
 $end
 $date
-	Sat Feb 16 18:26:01 2019
+	Tue Feb 19 22:29:25 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -28,7 +28,7 @@ $var tri1 1 , devoe $end
 $var wire 1 - Arena_X~combout $end
 $var wire 1 . Arena_CarryIn~combout $end
 $var wire 1 / Arena_Y~combout $end
-$var wire 1 0 Arena_Sum~0_combout $end
+$var wire 1 0 HA2|inst~0_combout $end
 $var wire 1 1 Arena_CarryOut~0_combout $end
 $upscope $end
 $upscope $end

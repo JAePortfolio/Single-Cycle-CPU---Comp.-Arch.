@@ -11,11 +11,23 @@ entity Arena_FullAdder is
 	end Arena_FullAdder; -- End of entity
 	
 architecture Arena_Arch_FullAdder of Arena_FullAdder is -- Architecture describing functionality
+	signal Arena_Sum1, Arena_CarryOut1, Arena_CarryOut2 : std_logic; --Variables for mapping
+
+	component Arena_HalfAdder -- Using Half Adder component 
+	port(
+		Arena_X, Arena_Y : in std_logic;
+		Arena_Sum, Arena_CarryOut : out std_logic
+		);
+end component;
 
 begin
 
-	Arena_Sum <= Arena_CarryIn xor Arena_X xor Arena_Y; -- Sum = Ci xor (X xor Y)
-	Arena_CarryOut <= (Arena_X and Arena_Y) or (Arena_CarryIn and (Arena_X xor Arena_Y)); -- Co (XY) or (Ci(X xorY))
-
+	HA1: Arena_HalfAdder port map (Arena_X, Arena_Y, Arena_Sum1, Arena_CarryOut1);
+	-- X into X, Y into Y, Sum1 out of Sum1, Co1 out of Co1
+	HA2: Arena_HalfAdder port map(Arena_Sum1, Arena_CarryIn, Arena_Sum, Arena_CarryOut2);
+   -- Sum1 into X, Ci into Y, Sum out as final Sum, CarryOut2 out of CarryOut2
+	
+	Arena_CarryOut <= Arena_CarryOut1 or Arena_CarryOut2; -- Final CarryOut 
+	--Sum is already final, don't need a statement
 end Arena_Arch_FullAdder; -- end of architecture
 	

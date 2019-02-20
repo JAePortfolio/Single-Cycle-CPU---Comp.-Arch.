@@ -1,13 +1,26 @@
 |Arena_FullAdder
-Arena_X => Arena_Sum.IN0
-Arena_X => Arena_CarryOut.IN0
-Arena_X => Arena_CarryOut.IN0
-Arena_Y => Arena_Sum.IN1
-Arena_Y => Arena_CarryOut.IN1
-Arena_Y => Arena_CarryOut.IN1
-Arena_CarryIn => Arena_Sum.IN1
-Arena_CarryIn => Arena_CarryOut.IN1
-Arena_Sum <= Arena_Sum.DB_MAX_OUTPUT_PORT_TYPE
+Arena_X => Arena_HalfAdder:HA1.Arena_X
+Arena_Y => Arena_HalfAdder:HA1.Arena_Y
+Arena_CarryIn => Arena_HalfAdder:HA2.Arena_Y
+Arena_Sum <= Arena_HalfAdder:HA2.Arena_Sum
 Arena_CarryOut <= Arena_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_FullAdder|Arena_HalfAdder:HA1
+Arena_Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_X => inst.IN0
+Arena_X => inst2.IN0
+Arena_Y => inst.IN1
+Arena_Y => inst2.IN1
+Arena_CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_FullAdder|Arena_HalfAdder:HA2
+Arena_Sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_X => inst.IN0
+Arena_X => inst2.IN0
+Arena_Y => inst.IN1
+Arena_Y => inst2.IN1
+Arena_CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
