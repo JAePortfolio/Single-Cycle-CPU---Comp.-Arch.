@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_16x4_SRAM
-Fri Mar 01 22:31:12 2019
+Sat Mar 02 14:50:07 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 01 22:31:12 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 02 14:50:07 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
 ; Top-level Entity Name              ; Arena_16x4_SRAM                                 ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 12                                              ;
+; Total pins                         ; 15                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -187,7 +187,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 12    ;
+; I/O pins                                    ; 15    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 +---------------------------------------------+-------+
 
@@ -197,7 +197,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Arena_16x4_SRAM           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |Arena_16x4_SRAM    ; work         ;
+; |Arena_16x4_SRAM           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Arena_16x4_SRAM    ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,7 +232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 01 22:31:08 2019
+    Info: Processing started: Sat Mar 02 14:50:03 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file arena_4to16decoder/arena_3to8decoder.bdf
@@ -253,39 +253,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_4
     Info (12022): Found design unit 1: Arena_4to16Decoder-Arena_Arch_4to16Decoder
     Info (12023): Found entity 1: Arena_4to16Decoder
 Info (12127): Elaborating entity "Arena_16x4_SRAM" for the top level hierarchy
-Warning (275043): Pin "pin_name1" is missing source
+Warning (275043): Pin "Arena_OUT[3..0]" is missing source
 Warning (275009): Pin "Arena_OE" not connected
 Warning (275008): Primitive "TRI" of instance "inst4" not used
 Warning (275008): Primitive "TRI" of instance "inst5" not used
 Warning (275008): Primitive "TRI" of instance "inst6" not used
 Warning (275008): Primitive "TRI" of instance "inst7" not used
 Warning (275008): Primitive "AND2" of instance "inst8" not used
-Info (12128): Elaborating entity "Arena_16x1_SRAM" for hierarchy "Arena_16x1_SRAM:inst"
-Info (12128): Elaborating entity "Arena_SRAM" for hierarchy "Arena_16x1_SRAM:inst|Arena_SRAM:inst2"
-Info (12128): Elaborating entity "Arena_DLatch" for hierarchy "Arena_16x1_SRAM:inst|Arena_SRAM:inst2|Arena_DLatch:DLatch1"
 Info (12128): Elaborating entity "Arena_4to16Decoder" for hierarchy "Arena_4to16Decoder:inst10"
+Info (12128): Elaborating entity "Arena_16x1_SRAM" for hierarchy "Arena_16x1_SRAM:inst11"
+Info (12128): Elaborating entity "Arena_SRAM" for hierarchy "Arena_16x1_SRAM:inst11|Arena_SRAM:inst2"
+Info (12128): Elaborating entity "Arena_DLatch" for hierarchy "Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pin_name1" is stuck at GND
+    Warning (13410): Pin "Arena_OUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_OUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_OUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_OUT[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Arena_DataIn[3]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[2]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[1]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[0]"
     Warning (15610): No output dependent on input pin "Arena_Address[3]"
     Warning (15610): No output dependent on input pin "Arena_Address[2]"
     Warning (15610): No output dependent on input pin "Arena_Address[1]"
     Warning (15610): No output dependent on input pin "Arena_Address[0]"
     Warning (15610): No output dependent on input pin "Arena_WE"
     Warning (15610): No output dependent on input pin "Arena_CS"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[3]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[2]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[1]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[0]"
     Warning (15610): No output dependent on input pin "Arena_OE"
-Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info (21059): Implemented 4 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Fri Mar 01 22:31:12 2019
+    Info: Processing ended: Sat Mar 02 14:50:07 2019
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

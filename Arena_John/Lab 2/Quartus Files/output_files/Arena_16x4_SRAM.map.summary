@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Fri Mar 01 22:31:12 2019
+Analysis & Synthesis Status : Successful - Sat Mar 02 14:50:07 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Arena_16x4_SRAM
 Top-level Entity Name : Arena_16x4_SRAM
@@ -7,7 +7,7 @@ Total logic elements : 0
     Total combinational functions : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 12
+Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Arena_CS[0..15]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
-		(text "Arena_CS[0..15]" (rect 21 59 115 73)(font "Arial" (font_size 8)))
+		(text "Arena_CS[15..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "Arena_CS[15..0]" (rect 21 59 115 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port

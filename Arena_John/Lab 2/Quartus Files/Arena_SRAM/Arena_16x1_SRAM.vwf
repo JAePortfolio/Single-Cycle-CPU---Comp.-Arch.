@@ -1,0 +1,703 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 320.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("Arena_CS[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_CS[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_IN")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_OUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_WE")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("Arena_CS[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_CS[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_IN")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 5.247;
+		LEVEL 0 FOR 10.2;
+		LEVEL 1 FOR 4.566;
+		LEVEL 0 FOR 2.35;
+		LEVEL 1 FOR 2.65;
+		LEVEL 0 FOR 2.35;
+		LEVEL 1 FOR 2.637;
+		LEVEL 0 FOR 0.421;
+		LEVEL 1 FOR 3.4;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 6.6;
+			LEVEL 1 FOR 3.4;
+		}
+		LEVEL 0 FOR 6.179;
+		LEVEL 1 FOR 1.936;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.7;
+			LEVEL 1 FOR 4.3;
+		}
+		LEVEL 0 FOR 5.7;
+		LEVEL 1 FOR 2.523;
+		LEVEL 0 FOR 14.0;
+		LEVEL 1 FOR 5.841;
+		LEVEL 0 FOR 1.298;
+		LEVEL 1 FOR 1.499;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.834;
+			LEVEL 1 FOR 1.499;
+		}
+		LEVEL 0 FOR 0.537;
+		LEVEL 1 FOR 1.641;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.6;
+			LEVEL 1 FOR 4.4;
+		}
+		LEVEL 0 FOR 5.6;
+		LEVEL 1 FOR 2.759;
+		LEVEL 0 FOR 1.242;
+		LEVEL 1 FOR 4.8;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.2;
+			LEVEL 1 FOR 4.8;
+		}
+		LEVEL 0 FOR 6.164;
+		LEVEL 1 FOR 2.45;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 2.55;
+			LEVEL 1 FOR 2.45;
+		}
+		LEVEL 0 FOR 9.545;
+		LEVEL 1 FOR 9.2;
+		LEVEL 0 FOR 2.29;
+		LEVEL 1 FOR 2.75;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 2.25;
+			LEVEL 1 FOR 2.75;
+		}
+		LEVEL 0 FOR 1.559;
+		LEVEL 1 FOR 0.571;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.767;
+			LEVEL 1 FOR 1.566;
+		}
+		LEVEL 0 FOR 1.767;
+		LEVEL 1 FOR 2.975;
+		LEVEL 0 FOR 5.5;
+		LEVEL 1 FOR 4.5;
+		LEVEL 0 FOR 5.5;
+		LEVEL 1 FOR 2.521;
+		LEVEL 0 FOR 1.692;
+		LEVEL 1 FOR 1.066;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.267;
+			LEVEL 1 FOR 1.066;
+		}
+		LEVEL 0 FOR 0.8;
+		LEVEL 1 FOR 10.8;
+		LEVEL 0 FOR 8.976;
+		LEVEL 1 FOR 6.867;
+		LEVEL 0 FOR 8.4;
+		LEVEL 1 FOR 5.761;
+		LEVEL 0 FOR 1.567;
+		LEVEL 1 FOR 1.766;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1.567;
+			LEVEL 1 FOR 1.766;
+		}
+		LEVEL 0 FOR 1.567;
+		LEVEL 1 FOR 0.739;
+		LEVEL 0 FOR 3.374;
+		LEVEL 1 FOR 4.7;
+		LEVEL 0 FOR 1.926;
+		LEVEL 1 FOR 1.157;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 2.2;
+			LEVEL 1 FOR 2.8;
+		}
+		LEVEL 0 FOR 2.2;
+		LEVEL 1 FOR 4.575;
+		LEVEL 0 FOR 4.3;
+		LEVEL 1 FOR 2.768;
+		LEVEL 0 FOR 1.852;
+		LEVEL 1 FOR 3.066;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 3.6;
+			LEVEL 1 FOR 3.066;
+		}
+		LEVEL 0 FOR 1.75;
+	}
+}
+
+TRANSITION_LIST("Arena_OUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 320.0;
+	}
+}
+
+TRANSITION_LIST("Arena_WE")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 320.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_CS[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_IN";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_WE";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_OUT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

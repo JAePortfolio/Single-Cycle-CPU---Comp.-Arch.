@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -48 -1768 120 -1752)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_WE" (rect 5 0 57 12)(font "Arial" ))
+	(text "Arena_WE" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect -16 -1752 152 -1736)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_IN" (rect 5 0 52 12)(font "Arial" ))
+	(text "Arena_IN" (rect 5 0 51 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 32 -1736 208 -1720)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Arena_CS[0..15]" (rect 5 0 87 12)(font "Arial" ))
+	(text "Arena_CS[15..0]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
