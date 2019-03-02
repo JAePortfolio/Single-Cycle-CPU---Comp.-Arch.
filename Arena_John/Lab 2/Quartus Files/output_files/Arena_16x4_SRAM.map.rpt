@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_16x4_SRAM
-Fri Mar 01 20:21:12 2019
+Fri Mar 01 22:31:12 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Logic Cells Representing Combinational Loops
-  9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 01 20:21:12 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 01 22:31:12 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
-; Top-level Entity Name              ; Arena_16x1_SRAM                                 ;
+; Top-level Entity Name              ; Arena_16x4_SRAM                                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 48                                              ;
-;     Total combinational functions  ; 48                                              ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 19                                              ;
+; Total pins                         ; 12                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Arena_16x1_SRAM    ; Arena_16x4_SRAM    ;
+; Top-level entity name                                                      ; Arena_16x4_SRAM    ; Arena_16x4_SRAM    ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -155,145 +154,52 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_DLatch/Arena_DLatch.bdf    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_DLatch/Arena_DLatch.bdf  ;         ;
-; Arena_SRAM/Arena_SRAM.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRAM/Arena_SRAM.bdf      ;         ;
-; Arena_SRAM/Arena_16x1_SRAM.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRAM/Arena_16x1_SRAM.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                 ;
++-------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                              ; Library ;
++-------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_DLatch/Arena_DLatch.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_DLatch/Arena_DLatch.bdf             ;         ;
+; Arena_SRAM/Arena_SRAM.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRAM/Arena_SRAM.bdf                 ;         ;
+; Arena_SRAM/Arena_16x1_SRAM.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRAM/Arena_16x1_SRAM.bdf            ;         ;
+; Arena_16x4_SRAM/Arena_16x4_SRAM.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/Arena_16x4_SRAM.bdf       ;         ;
+; Arena_4to16Decoder/Arena_4to16Decoder.vhd ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to16Decoder/Arena_4to16Decoder.vhd ;         ;
++-------------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 48       ;
-;                                             ;          ;
-; Total combinational functions               ; 48       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 47       ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 1        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 48       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 19       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; Arena_WE ;
-; Maximum fan-out                             ; 32       ;
-; Total fan-out                               ; 192      ;
-; Average fan-out                             ; 2.87     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 12    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Library Name ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
-; |Arena_16x1_SRAM             ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |Arena_16x1_SRAM                                        ; work         ;
-;    |Arena_SRAM:inst22|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst22                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst22|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst22|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst23|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst23                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst23|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst23|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst24|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst24                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst24|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst24|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst25|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst25                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst25|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst25|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst26|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst26                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst26|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst26|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst27|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst27                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst27|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst27|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst28|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst28                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst28|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst28|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst29|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst29                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst29|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst29|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst2|        ; 17 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst2                       ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst2|Arena_DLatch:DLatch0  ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst2|Arena_DLatch:DLatch1  ; work         ;
-;    |Arena_SRAM:inst30|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst30                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst30|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst30|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst31|       ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst31                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst31|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst31|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst32|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst32                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst32|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst32|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst33|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst33                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst33|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst33|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst34|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst34                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst34|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst34|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst35|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst35                      ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst35|Arena_DLatch:DLatch0 ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst35|Arena_DLatch:DLatch1 ; work         ;
-;    |Arena_SRAM:inst|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst                        ; work         ;
-;       |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst|Arena_DLatch:DLatch0   ; work         ;
-;       |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x1_SRAM|Arena_SRAM:inst|Arena_DLatch:DLatch1   ; work         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |Arena_16x4_SRAM           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |Arena_16x4_SRAM    ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                ;
-+--------------------------------------------------------+----+
-; Logic Cell Name                                        ;    ;
-+--------------------------------------------------------+----+
-; Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~0          ;    ;
-; Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~0         ;    ;
-; Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~0           ;    ;
-; Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~0          ;    ;
-; Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~0         ;    ;
-; Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~0           ;    ;
-; Number of logic cells representing combinational loops ; 32 ;
-+--------------------------------------------------------+----+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -326,9 +232,11 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 01 20:21:09 2019
+    Info: Processing started: Fri Mar 01 22:31:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file arena_4to16decoder/arena_3to8decoder.bdf
+    Info (12023): Found entity 1: Arena_3to8Decoder
 Info (12021): Found 1 design units, including 1 entities, in source file arena_dlatch/arena_dlatch.bdf
     Info (12023): Found entity 1: Arena_DLatch
 Info (12021): Found 1 design units, including 1 entities, in source file arena_srlatch/arena_srlatch.bdf
@@ -339,19 +247,46 @@ Info (12021): Found 1 design units, including 1 entities, in source file arena_s
     Info (12023): Found entity 1: Arena_SRAM
 Info (12021): Found 1 design units, including 1 entities, in source file arena_sram/arena_16x1_sram.bdf
     Info (12023): Found entity 1: Arena_16x1_SRAM
-Info (12127): Elaborating entity "Arena_16x1_SRAM" for the top level hierarchy
-Info (12128): Elaborating entity "Arena_SRAM" for hierarchy "Arena_SRAM:inst2"
-Info (12128): Elaborating entity "Arena_DLatch" for hierarchy "Arena_SRAM:inst2|Arena_DLatch:DLatch1"
+Info (12021): Found 1 design units, including 1 entities, in source file arena_16x4_sram/arena_16x4_sram.bdf
+    Info (12023): Found entity 1: Arena_16x4_SRAM
+Info (12021): Found 2 design units, including 1 entities, in source file arena_4to16decoder/arena_4to16decoder.vhd
+    Info (12022): Found design unit 1: Arena_4to16Decoder-Arena_Arch_4to16Decoder
+    Info (12023): Found entity 1: Arena_4to16Decoder
+Info (12127): Elaborating entity "Arena_16x4_SRAM" for the top level hierarchy
+Warning (275043): Pin "pin_name1" is missing source
+Warning (275009): Pin "Arena_OE" not connected
+Warning (275008): Primitive "TRI" of instance "inst4" not used
+Warning (275008): Primitive "TRI" of instance "inst5" not used
+Warning (275008): Primitive "TRI" of instance "inst6" not used
+Warning (275008): Primitive "TRI" of instance "inst7" not used
+Warning (275008): Primitive "AND2" of instance "inst8" not used
+Info (12128): Elaborating entity "Arena_16x1_SRAM" for hierarchy "Arena_16x1_SRAM:inst"
+Info (12128): Elaborating entity "Arena_SRAM" for hierarchy "Arena_16x1_SRAM:inst|Arena_SRAM:inst2"
+Info (12128): Elaborating entity "Arena_DLatch" for hierarchy "Arena_16x1_SRAM:inst|Arena_SRAM:inst2|Arena_DLatch:DLatch1"
+Info (12128): Elaborating entity "Arena_4to16Decoder" for hierarchy "Arena_4to16Decoder:inst10"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pin_name1" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 18 input pins
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Arena_DataIn[3]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[2]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[1]"
+    Warning (15610): No output dependent on input pin "Arena_DataIn[0]"
+    Warning (15610): No output dependent on input pin "Arena_Address[3]"
+    Warning (15610): No output dependent on input pin "Arena_Address[2]"
+    Warning (15610): No output dependent on input pin "Arena_Address[1]"
+    Warning (15610): No output dependent on input pin "Arena_Address[0]"
+    Warning (15610): No output dependent on input pin "Arena_WE"
+    Warning (15610): No output dependent on input pin "Arena_CS"
+    Warning (15610): No output dependent on input pin "Arena_OE"
+Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Fri Mar 01 20:21:12 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4656 megabytes
+    Info: Processing ended: Fri Mar 01 22:31:12 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

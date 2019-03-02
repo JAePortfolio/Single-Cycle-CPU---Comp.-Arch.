@@ -3,83 +3,283 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\simulation\qsim
-vArena_DLatch
-Z1 IJE;S1UW^_=e_nBE?=5WN50
-Z2 VdX_<9>PK<EmG=7_;F3@in1
+vArena_16x1_SRAM
+Z1 IMQQKC^8Dd:GF_^Q<h_d8D3
+Z2 VA0^cHeVPj2>J7Ccl_44mO3
 Z3 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\simulation\qsim
-Z4 w1551471916
+Z4 w1551495236
 Z5 8Arena_16x4_SRAM.vo
 Z6 FArena_16x4_SRAM.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
-Z9 n@arena_@d@latch
+Z8 !s90 -work|work|Arena_16x4_SRAM.vo|
+Z9 o-work work -O0
+Z10 n@arena_16x1_@s@r@a@m
+Z11 !s100 YJ`A1@ji??<h?Pfo<Dg>b3
+Z12 !s108 1551495237.802000
+Z13 !s107 Arena_16x4_SRAM.vo|
 !i10b 1
-Z10 !s100 h`<T[ZoUg1:?ZQHCbLJ`V2
 !s85 0
-Z11 !s108 1551471917.871000
-Z12 !s107 Arena_16x4_SRAM.vo|
-Z13 !s90 -work|work|Arena_16x4_SRAM.vo|
 !s101 -O0
-vArena_DLatch_vlg_check_tst
-!i10b 1
-!s100 ;`HOigaEO:i@ZX8Ti_TJW0
-IYQIjFOTER7SPR805]3`_M3
-VB==O8f0:88I`c7A@mhR[A1
+vArena_16x1_SRAM_vlg_vec_tst
+Z14 I9gDU^H=<O87h<3`>ehML@1
+Z15 VjXD9K^nPz078TcbO=Flz23
 R3
-Z14 w1551471915
-Z15 8Arena_16x4_SRAM.vt
-Z16 FArena_16x4_SRAM.vt
-L0 59
+Z16 w1551495233
+Z17 8Arena_16x4_SRAM.vt
+Z18 FArena_16x4_SRAM.vt
+L0 29
+R7
+r1
+31
+Z19 !s90 -work|work|Arena_16x4_SRAM.vt|
+R9
+Z20 n@arena_16x1_@s@r@a@m_vlg_vec_tst
+Z21 !s100 _CYcUSM6AUo3>zG7L1hRW0
+Z22 !s108 1551495237.924000
+Z23 !s107 Arena_16x4_SRAM.vt|
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_3to8Decoder
+Z24 I4<O;AYg]_Y1jV`>SJ9f:?2
+Z25 VMHmK_=Pl8DIlf]Y0o[ChQ2
+R3
+Z26 w1551495294
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z27 n@arena_3to8@decoder
+Z28 !s100 7RYWA[7a_fZl8@fEiElU_1
+Z29 !s108 1551495295.521000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_3to8Decoder_vlg_check_tst
+Z30 Ii]S5_I@oGZ<8LlPo<NMfR1
+Z31 VlA>M7hIe]1N=Uk@DM;kC_1
+R3
+Z32 w1551495292
+R17
+R18
+L0 61
+R7
+r1
+31
+Z33 !s108 1551495295.634000
+R23
+R19
+R9
+Z34 n@arena_3to8@decoder_vlg_check_tst
+Z35 !s100 GlT8iK2]TOXV]:JQE61Se0
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_3to8Decoder_vlg_sample_tst
+Z36 IGLH<zF_mYOZlak7@VCB]O1
+Z37 VIcQbHU4ScV9f?hZ0PzLmI2
+R3
+R32
+R17
+R18
+L0 29
+R7
+r1
+31
+R33
+R23
+R19
+R9
+Z38 n@arena_3to8@decoder_vlg_sample_tst
+Z39 !s100 DD:D3A72S<`>A7;:QXHSa0
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_3to8Decoder_vlg_vec_tst
+Z40 In3[[Q@ZLJ9_NdZ42CbeZb2
+Z41 V7VnDM4k5=^S9;KK<gQE9i1
+R3
+R32
+R17
+R18
+Z42 L0 345
+R7
+r1
+31
+R33
+R23
+R19
+R9
+Z43 n@arena_3to8@decoder_vlg_vec_tst
+Z44 !s100 <BnLWi@lj3e@@Z[nN_zOU2
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_4to16Decoder
+Z45 !s100 4D;lYonhPl64Q7>6X<L532
+Z46 IPR:jW=XNAXLX:m<H<c7J91
+Z47 V^COfZ=k4WD9f]m=lCC@102
+R3
+Z48 w1551496922
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z49 n@arena_4to16@decoder
+!i10b 1
+!s85 0
+Z50 !s108 1551496923.463000
+R13
+!s101 -O0
+vArena_4to16Decoder_vlg_check_tst
+!i10b 1
+Z51 !s100 VmDOlXg[Tn44;znTIY@@W3
+Z52 Ih;BHa3UozKPM4glWYDi1?0
+Z53 Vz4QzhdWLU88d:mOOfRHkd0
+R3
+Z54 w1551496920
+R17
+R18
+L0 57
 R7
 r1
 !s85 0
 31
-Z17 !s108 1551471917.972000
-Z18 !s107 Arena_16x4_SRAM.vt|
-Z19 !s90 -work|work|Arena_16x4_SRAM.vt|
+Z55 !s108 1551496923.574000
+Z56 !s107 Arena_16x4_SRAM.vt|
+R19
 !s101 -O0
-R8
-n@arena_@d@latch_vlg_check_tst
-vArena_DLatch_vlg_sample_tst
+R9
+Z57 n@arena_4to16@decoder_vlg_check_tst
+vArena_4to16Decoder_vlg_sample_tst
 !i10b 1
-!s100 ]]fA2=oBLXc]Mhgz_Y^aj0
-IfiiaU4CCSmF?;71Ji^n193
-VPok<3XN`3O=SE6GijB6D63
+Z58 !s100 ME5U7ImFYJ`k2_NUOk3@a1
+Z59 Ie>N][lHYm<bIl94OH2z3W2
+Z60 Vca=]888ie<MK`77V`lGOA1
 R3
-R14
-R15
-R16
+R54
+R17
+R18
 L0 29
 R7
 r1
 !s85 0
 31
-R17
-R18
+R55
+R56
 R19
 !s101 -O0
-R8
-n@arena_@d@latch_vlg_sample_tst
-vArena_DLatch_vlg_vec_tst
+R9
+Z61 n@arena_4to16@decoder_vlg_sample_tst
+vArena_4to16Decoder_vlg_vec_tst
 !i10b 1
-!s100 c3Cdklk_iG?=zBoMA_mb31
-IbTEiX;f9cg3Q49VDI>X311
-VZbkhk=8MjgNJQkW=O<h7M0
+!s100 ZCiej;Q0fn]PIcQbkcc[F1
+IJ2kLmmHEOZC@MfZAH1Hg^1
+Z62 VJHD11[leihdd7d5PQAf8S2
 R3
-R14
-R15
-R16
-L0 181
+R54
+R17
+R18
+Z63 L0 437
 R7
 r1
 !s85 0
 31
-R17
-R18
+R55
+R56
 R19
 !s101 -O0
+R9
+Z64 n@arena_4to16@decoder_vlg_vec_tst
+vArena_DLatch
+Z65 IJE;S1UW^_=e_nBE?=5WN50
+Z66 VdX_<9>PK<EmG=7_;F3@in1
+R3
+Z67 w1551471916
+R5
+R6
+L0 31
+R7
+r1
+31
+R9
+Z68 n@arena_@d@latch
+Z69 !s100 h`<T[ZoUg1:?ZQHCbLJ`V2
+Z70 !s108 1551471917.871000
+R13
 R8
-n@arena_@d@latch_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_DLatch_vlg_check_tst
+Z71 IYQIjFOTER7SPR805]3`_M3
+Z72 VB==O8f0:88I`c7A@mhR[A1
+R3
+Z73 w1551471915
+R17
+R18
+L0 59
+R7
+r1
+31
+Z74 !s108 1551471917.972000
+R23
+R19
+R9
+Z75 n@arena_@d@latch_vlg_check_tst
+Z76 !s100 ;`HOigaEO:i@ZX8Ti_TJW0
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_DLatch_vlg_sample_tst
+Z77 IfiiaU4CCSmF?;71Ji^n193
+Z78 VPok<3XN`3O=SE6GijB6D63
+R3
+R73
+R17
+R18
+L0 29
+R7
+r1
+31
+R74
+R23
+R19
+R9
+Z79 n@arena_@d@latch_vlg_sample_tst
+Z80 !s100 ]]fA2=oBLXc]Mhgz_Y^aj0
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_DLatch_vlg_vec_tst
+Z81 IbTEiX;f9cg3Q49VDI>X311
+Z82 VZbkhk=8MjgNJQkW=O<h7M0
+R3
+R73
+R17
+R18
+Z83 L0 181
+R7
+r1
+31
+R74
+R23
+R19
+R9
+Z84 n@arena_@d@latch_vlg_vec_tst
+Z85 !s100 c3Cdklk_iG?=zBoMA_mb31
+!i10b 1
+!s85 0
+!s101 -O0

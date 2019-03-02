@@ -1,27 +1,29 @@
 # do Arena_16x4_SRAM.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Arena_DLatch
+# -- Compiling module Arena_4to16Decoder
 # 
 # Top level modules:
-# 	Arena_DLatch
+# 	Arena_4to16Decoder
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Arena_DLatch_vlg_sample_tst
-# -- Compiling module Arena_DLatch_vlg_check_tst
-# -- Compiling module Arena_DLatch_vlg_vec_tst
+# -- Compiling module Arena_4to16Decoder_vlg_sample_tst
+# -- Compiling module Arena_4to16Decoder_vlg_check_tst
+# -- Compiling module Arena_4to16Decoder_vlg_vec_tst
 # 
 # Top level modules:
-# 	Arena_DLatch_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Arena_DLatch_vlg_vec_tst 
-# Loading work.Arena_DLatch_vlg_vec_tst
-# Loading work.Arena_DLatch
+# 	Arena_4to16Decoder_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Arena_4to16Decoder_vlg_vec_tst 
+# Loading work.Arena_4to16Decoder_vlg_vec_tst
+# Loading work.Arena_4to16Decoder
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
 # Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading work.Arena_DLatch_vlg_sample_tst
-# Loading work.Arena_DLatch_vlg_check_tst
+# Loading work.Arena_4to16Decoder_vlg_sample_tst
+# Loading work.Arena_4to16Decoder_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : Arena_16x4_SRAM.vt(177)
-#    Time: 160 ns  Iteration: 0  Instance: /Arena_DLatch_vlg_vec_tst/tb_out
+# ** Note: $finish    : Arena_16x4_SRAM.vt(433)
+#    Time: 320 ns  Iteration: 0  Instance: /Arena_4to16Decoder_vlg_vec_tst/tb_out

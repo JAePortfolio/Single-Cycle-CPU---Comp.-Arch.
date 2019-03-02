@@ -1,5 +1,20 @@
-|Arena_16x1_SRAM
-Arena_OUT0 <= Arena_OUT0.DB_MAX_OUTPUT_PORT_TYPE
+|Arena_16x4_SRAM
+pin_name1 <= <GND>
+Arena_DataIn[0] => Arena_16x1_SRAM:inst.Arena_IN
+Arena_DataIn[1] => Arena_16x1_SRAM:inst1.Arena_IN
+Arena_DataIn[2] => Arena_16x1_SRAM:inst2.Arena_IN
+Arena_DataIn[3] => Arena_16x1_SRAM:inst3.Arena_IN
+Arena_Address[0] => Arena_4to16Decoder:inst10.Arena_In[0]
+Arena_Address[1] => Arena_4to16Decoder:inst10.Arena_In[1]
+Arena_Address[2] => Arena_4to16Decoder:inst10.Arena_In[2]
+Arena_Address[3] => Arena_4to16Decoder:inst10.Arena_In[3]
+Arena_WE => inst9.IN0
+Arena_CS => inst9.IN1
+Arena_OE => ~NO_FANOUT~
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst
+Arena_OUT <= Arena_OUT.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_SRAM:inst2.Arena_IN
 Arena_IN => Arena_SRAM:inst22.Arena_IN
 Arena_IN => Arena_SRAM:inst23.Arena_IN
@@ -50,7 +65,7 @@ Arena_WE => Arena_SRAM:inst35.Arena_Write_Enable
 Arena_WE => Arena_SRAM:inst.Arena_Write_Enable
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst2
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst2
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -58,7 +73,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst2|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst2|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -67,7 +82,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst2|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst2|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -76,7 +91,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst22
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst22
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -84,7 +99,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst22|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst22|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -93,7 +108,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst22|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst22|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -102,7 +117,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst23
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst23
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -110,7 +125,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst23|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst23|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -119,7 +134,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst23|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst23|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -128,7 +143,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst24
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst24
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -136,7 +151,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst24|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst24|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -145,7 +160,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst24|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst24|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -154,7 +169,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst25
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst25
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -162,7 +177,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst25|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst25|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -171,7 +186,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst25|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst25|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -180,7 +195,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst26
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst26
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -188,7 +203,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst26|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst26|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -197,7 +212,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst26|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst26|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -206,7 +221,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst27
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst27
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -214,7 +229,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst27|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst27|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -223,7 +238,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst27|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst27|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -232,7 +247,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst28
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst28
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -240,7 +255,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst28|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst28|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -249,7 +264,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst28|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst28|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -258,7 +273,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst29
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst29
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -266,7 +281,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst29|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst29|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -275,7 +290,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst29|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst29|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -284,7 +299,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst30
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst30
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -292,7 +307,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst30|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst30|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -301,7 +316,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst30|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst30|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -310,7 +325,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst31
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst31
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -318,7 +333,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst31|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst31|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -327,7 +342,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst31|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst31|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -336,7 +351,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst32
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst32
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -344,7 +359,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst32|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst32|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -353,7 +368,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst32|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst32|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -362,7 +377,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst33
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst33
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -370,7 +385,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst33|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst33|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -379,7 +394,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst33|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst33|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -388,7 +403,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst34
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst34
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -396,7 +411,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst34|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst34|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -405,7 +420,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst34|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst34|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -414,7 +429,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst35
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst35
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -422,7 +437,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst35|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst35|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -431,7 +446,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst35|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst35|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -440,7 +455,7 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst
 Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Arena_IN => Arena_DLatch:DLatch0.Arena_D
 Arena_Select_Chip => inst2.IN0
@@ -448,7 +463,7 @@ Arena_Select_Chip => inst.OE
 Arena_Write_Enable => inst2.IN1
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst|Arena_DLatch:DLatch1
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst|Arena_DLatch:DLatch1
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
@@ -457,7 +472,1494 @@ Arena_C => inst.IN0
 Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16x1_SRAM|Arena_SRAM:inst|Arena_DLatch:DLatch0
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst|Arena_SRAM:inst|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_4to16Decoder:inst10
+Arena_In[0] => Mux0.IN19
+Arena_In[0] => Mux1.IN19
+Arena_In[0] => Mux2.IN19
+Arena_In[0] => Mux3.IN19
+Arena_In[0] => Mux4.IN19
+Arena_In[0] => Mux5.IN19
+Arena_In[0] => Mux6.IN19
+Arena_In[0] => Mux7.IN19
+Arena_In[0] => Mux8.IN19
+Arena_In[0] => Mux9.IN19
+Arena_In[0] => Mux10.IN19
+Arena_In[0] => Mux11.IN19
+Arena_In[0] => Mux12.IN19
+Arena_In[0] => Mux13.IN19
+Arena_In[0] => Mux14.IN19
+Arena_In[0] => Mux15.IN19
+Arena_In[1] => Mux0.IN18
+Arena_In[1] => Mux1.IN18
+Arena_In[1] => Mux2.IN18
+Arena_In[1] => Mux3.IN18
+Arena_In[1] => Mux4.IN18
+Arena_In[1] => Mux5.IN18
+Arena_In[1] => Mux6.IN18
+Arena_In[1] => Mux7.IN18
+Arena_In[1] => Mux8.IN18
+Arena_In[1] => Mux9.IN18
+Arena_In[1] => Mux10.IN18
+Arena_In[1] => Mux11.IN18
+Arena_In[1] => Mux12.IN18
+Arena_In[1] => Mux13.IN18
+Arena_In[1] => Mux14.IN18
+Arena_In[1] => Mux15.IN18
+Arena_In[2] => Mux0.IN17
+Arena_In[2] => Mux1.IN17
+Arena_In[2] => Mux2.IN17
+Arena_In[2] => Mux3.IN17
+Arena_In[2] => Mux4.IN17
+Arena_In[2] => Mux5.IN17
+Arena_In[2] => Mux6.IN17
+Arena_In[2] => Mux7.IN17
+Arena_In[2] => Mux8.IN17
+Arena_In[2] => Mux9.IN17
+Arena_In[2] => Mux10.IN17
+Arena_In[2] => Mux11.IN17
+Arena_In[2] => Mux12.IN17
+Arena_In[2] => Mux13.IN17
+Arena_In[2] => Mux14.IN17
+Arena_In[2] => Mux15.IN17
+Arena_In[3] => Mux0.IN16
+Arena_In[3] => Mux1.IN16
+Arena_In[3] => Mux2.IN16
+Arena_In[3] => Mux3.IN16
+Arena_In[3] => Mux4.IN16
+Arena_In[3] => Mux5.IN16
+Arena_In[3] => Mux6.IN16
+Arena_In[3] => Mux7.IN16
+Arena_In[3] => Mux8.IN16
+Arena_In[3] => Mux9.IN16
+Arena_In[3] => Mux10.IN16
+Arena_In[3] => Mux11.IN16
+Arena_In[3] => Mux12.IN16
+Arena_In[3] => Mux13.IN16
+Arena_In[3] => Mux14.IN16
+Arena_In[3] => Mux15.IN16
+Arena_Dec[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Dec[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1
+Arena_OUT <= Arena_OUT.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_SRAM:inst2.Arena_IN
+Arena_IN => Arena_SRAM:inst22.Arena_IN
+Arena_IN => Arena_SRAM:inst23.Arena_IN
+Arena_IN => Arena_SRAM:inst24.Arena_IN
+Arena_IN => Arena_SRAM:inst25.Arena_IN
+Arena_IN => Arena_SRAM:inst26.Arena_IN
+Arena_IN => Arena_SRAM:inst27.Arena_IN
+Arena_IN => Arena_SRAM:inst28.Arena_IN
+Arena_IN => Arena_SRAM:inst29.Arena_IN
+Arena_IN => Arena_SRAM:inst30.Arena_IN
+Arena_IN => Arena_SRAM:inst31.Arena_IN
+Arena_IN => Arena_SRAM:inst32.Arena_IN
+Arena_IN => Arena_SRAM:inst33.Arena_IN
+Arena_IN => Arena_SRAM:inst34.Arena_IN
+Arena_IN => Arena_SRAM:inst35.Arena_IN
+Arena_IN => Arena_SRAM:inst.Arena_IN
+Arena_CS[15] => Arena_SRAM:inst35.Arena_Select_Chip
+Arena_CS[14] => Arena_SRAM:inst34.Arena_Select_Chip
+Arena_CS[13] => Arena_SRAM:inst33.Arena_Select_Chip
+Arena_CS[12] => Arena_SRAM:inst32.Arena_Select_Chip
+Arena_CS[11] => Arena_SRAM:inst31.Arena_Select_Chip
+Arena_CS[10] => Arena_SRAM:inst30.Arena_Select_Chip
+Arena_CS[9] => Arena_SRAM:inst29.Arena_Select_Chip
+Arena_CS[8] => Arena_SRAM:inst28.Arena_Select_Chip
+Arena_CS[7] => Arena_SRAM:inst27.Arena_Select_Chip
+Arena_CS[6] => Arena_SRAM:inst26.Arena_Select_Chip
+Arena_CS[5] => Arena_SRAM:inst25.Arena_Select_Chip
+Arena_CS[4] => Arena_SRAM:inst24.Arena_Select_Chip
+Arena_CS[3] => Arena_SRAM:inst23.Arena_Select_Chip
+Arena_CS[2] => Arena_SRAM:inst22.Arena_Select_Chip
+Arena_CS[1] => Arena_SRAM:inst2.Arena_Select_Chip
+Arena_CS[0] => Arena_SRAM:inst.Arena_Select_Chip
+Arena_WE => Arena_SRAM:inst2.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst22.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst23.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst24.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst25.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst26.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst27.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst28.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst29.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst30.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst31.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst32.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst33.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst34.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst35.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst.Arena_Write_Enable
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst2
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst2|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst2|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst22
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst22|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst22|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst23
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst23|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst23|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst24
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst24|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst24|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst25
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst25|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst25|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst26
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst26|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst26|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst27
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst27|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst27|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst28
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst28|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst28|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst29
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst29|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst29|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst30
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst30|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst30|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst31
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst31|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst31|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst32
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst32|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst32|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst33
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst33|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst33|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst34
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst34|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst34|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst35
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst35|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst35|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst1|Arena_SRAM:inst|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2
+Arena_OUT <= Arena_OUT.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_SRAM:inst2.Arena_IN
+Arena_IN => Arena_SRAM:inst22.Arena_IN
+Arena_IN => Arena_SRAM:inst23.Arena_IN
+Arena_IN => Arena_SRAM:inst24.Arena_IN
+Arena_IN => Arena_SRAM:inst25.Arena_IN
+Arena_IN => Arena_SRAM:inst26.Arena_IN
+Arena_IN => Arena_SRAM:inst27.Arena_IN
+Arena_IN => Arena_SRAM:inst28.Arena_IN
+Arena_IN => Arena_SRAM:inst29.Arena_IN
+Arena_IN => Arena_SRAM:inst30.Arena_IN
+Arena_IN => Arena_SRAM:inst31.Arena_IN
+Arena_IN => Arena_SRAM:inst32.Arena_IN
+Arena_IN => Arena_SRAM:inst33.Arena_IN
+Arena_IN => Arena_SRAM:inst34.Arena_IN
+Arena_IN => Arena_SRAM:inst35.Arena_IN
+Arena_IN => Arena_SRAM:inst.Arena_IN
+Arena_CS[15] => Arena_SRAM:inst35.Arena_Select_Chip
+Arena_CS[14] => Arena_SRAM:inst34.Arena_Select_Chip
+Arena_CS[13] => Arena_SRAM:inst33.Arena_Select_Chip
+Arena_CS[12] => Arena_SRAM:inst32.Arena_Select_Chip
+Arena_CS[11] => Arena_SRAM:inst31.Arena_Select_Chip
+Arena_CS[10] => Arena_SRAM:inst30.Arena_Select_Chip
+Arena_CS[9] => Arena_SRAM:inst29.Arena_Select_Chip
+Arena_CS[8] => Arena_SRAM:inst28.Arena_Select_Chip
+Arena_CS[7] => Arena_SRAM:inst27.Arena_Select_Chip
+Arena_CS[6] => Arena_SRAM:inst26.Arena_Select_Chip
+Arena_CS[5] => Arena_SRAM:inst25.Arena_Select_Chip
+Arena_CS[4] => Arena_SRAM:inst24.Arena_Select_Chip
+Arena_CS[3] => Arena_SRAM:inst23.Arena_Select_Chip
+Arena_CS[2] => Arena_SRAM:inst22.Arena_Select_Chip
+Arena_CS[1] => Arena_SRAM:inst2.Arena_Select_Chip
+Arena_CS[0] => Arena_SRAM:inst.Arena_Select_Chip
+Arena_WE => Arena_SRAM:inst2.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst22.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst23.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst24.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst25.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst26.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst27.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst28.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst29.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst30.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst31.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst32.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst33.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst34.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst35.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst.Arena_Write_Enable
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst2
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst2|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst2|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst22
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst22|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst22|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst23
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst23|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst23|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst24
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst24|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst24|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst25
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst25|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst25|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst26
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst26|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst26|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst27
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst27|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst27|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst28
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst28|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst28|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst29
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst29|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst29|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst30
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst30|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst30|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst31
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst31|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst31|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst32
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst32|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst32|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst33
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst33|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst33|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst34
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst34|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst34|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst35
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst35|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst35|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst2|Arena_SRAM:inst|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3
+Arena_OUT <= Arena_OUT.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_SRAM:inst2.Arena_IN
+Arena_IN => Arena_SRAM:inst22.Arena_IN
+Arena_IN => Arena_SRAM:inst23.Arena_IN
+Arena_IN => Arena_SRAM:inst24.Arena_IN
+Arena_IN => Arena_SRAM:inst25.Arena_IN
+Arena_IN => Arena_SRAM:inst26.Arena_IN
+Arena_IN => Arena_SRAM:inst27.Arena_IN
+Arena_IN => Arena_SRAM:inst28.Arena_IN
+Arena_IN => Arena_SRAM:inst29.Arena_IN
+Arena_IN => Arena_SRAM:inst30.Arena_IN
+Arena_IN => Arena_SRAM:inst31.Arena_IN
+Arena_IN => Arena_SRAM:inst32.Arena_IN
+Arena_IN => Arena_SRAM:inst33.Arena_IN
+Arena_IN => Arena_SRAM:inst34.Arena_IN
+Arena_IN => Arena_SRAM:inst35.Arena_IN
+Arena_IN => Arena_SRAM:inst.Arena_IN
+Arena_CS[15] => Arena_SRAM:inst35.Arena_Select_Chip
+Arena_CS[14] => Arena_SRAM:inst34.Arena_Select_Chip
+Arena_CS[13] => Arena_SRAM:inst33.Arena_Select_Chip
+Arena_CS[12] => Arena_SRAM:inst32.Arena_Select_Chip
+Arena_CS[11] => Arena_SRAM:inst31.Arena_Select_Chip
+Arena_CS[10] => Arena_SRAM:inst30.Arena_Select_Chip
+Arena_CS[9] => Arena_SRAM:inst29.Arena_Select_Chip
+Arena_CS[8] => Arena_SRAM:inst28.Arena_Select_Chip
+Arena_CS[7] => Arena_SRAM:inst27.Arena_Select_Chip
+Arena_CS[6] => Arena_SRAM:inst26.Arena_Select_Chip
+Arena_CS[5] => Arena_SRAM:inst25.Arena_Select_Chip
+Arena_CS[4] => Arena_SRAM:inst24.Arena_Select_Chip
+Arena_CS[3] => Arena_SRAM:inst23.Arena_Select_Chip
+Arena_CS[2] => Arena_SRAM:inst22.Arena_Select_Chip
+Arena_CS[1] => Arena_SRAM:inst2.Arena_Select_Chip
+Arena_CS[0] => Arena_SRAM:inst.Arena_Select_Chip
+Arena_WE => Arena_SRAM:inst2.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst22.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst23.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst24.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst25.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst26.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst27.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst28.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst29.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst30.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst31.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst32.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst33.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst34.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst35.Arena_Write_Enable
+Arena_WE => Arena_SRAM:inst.Arena_Write_Enable
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst2
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst2|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst2|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst22
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst22|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst22|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst23
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst23|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst23|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst24
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst24|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst24|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst25
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst25|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst25|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst26
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst26|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst26|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst27
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst27|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst27|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst28
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst28|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst28|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst29
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst29|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst29|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst30
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst30|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst30|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst31
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst31|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst31|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst32
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst32|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst32|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst33
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst33|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst33|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst34
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst34|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst34|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst35
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst35|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst35|Arena_DLatch:DLatch0
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst
+Arena_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Arena_IN => Arena_DLatch:DLatch0.Arena_D
+Arena_Select_Chip => inst2.IN0
+Arena_Select_Chip => inst.OE
+Arena_Write_Enable => inst2.IN1
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst|Arena_DLatch:DLatch1
+Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Arena_D => inst4.IN0
+Arena_D => inst.IN1
+Arena_C => inst3.IN1
+Arena_C => inst.IN0
+Arena_Q_NOT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16x4_SRAM|Arena_16x1_SRAM:inst3|Arena_SRAM:inst|Arena_DLatch:DLatch0
 Arena_Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 Arena_D => inst4.IN0
 Arena_D => inst.IN1
