@@ -1,0 +1,12 @@
+To, Location
+Arena_A, PIN_P25
+Arena_B, PIN_N26
+Arena_C, PIN_N25
+Arena_F0, PIN_AE23
+Arena_F1, PIN_AF23
+Arena_F2, PIN_AB21
+Arena_F3, PIN_AC22
+Arena_F4, PIN_AD22
+Arena_F5, PIN_AD23
+Arena_F6, PIN_AD21
+Arena_F7, PIN_AC21

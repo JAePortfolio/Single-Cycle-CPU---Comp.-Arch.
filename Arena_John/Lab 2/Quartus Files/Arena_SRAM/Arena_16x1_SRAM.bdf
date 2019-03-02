@@ -1,0 +1,1269 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -48 -1768 120 -1752)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Arena_WE" (rect 5 0 57 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -16 -1752 152 -1736)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Arena_IN" (rect 5 0 52 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 32 -1736 208 -1720)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "Arena_CS[0..15]" (rect 5 0 87 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 568 -1752 744 -1736)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Arena_OUT" (rect 90 0 146 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 288 -1776 528 -1680)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1552 528 -1456)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst22" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1440 528 -1344)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst23" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1328 528 -1232)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst24" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1216 528 -1120)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst25" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1104 528 -1008)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst26" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -992 528 -896)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst27" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -872 528 -776)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst28" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -760 528 -664)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst29" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -648 528 -552)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst30" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -536 528 -440)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst31" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -424 528 -328)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst32" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -312 528 -216)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst33" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -200 528 -104)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst34" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -88 528 8)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst35" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(symbol
+	(rect 288 -1664 528 -1568)
+	(text "Arena_SRAM" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_IN" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "Arena_IN" (rect 21 27 74 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_Select_Chip" (rect 0 0 109 14)(font "Arial" (font_size 8)))
+		(text "Arena_Select_Chip" (rect 21 43 130 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Write_Enable" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "Arena_Write_Enable" (rect 21 59 137 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "Arena_OUT" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "Arena_OUT" (rect 152 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 80))
+	)
+)
+(connector
+	(pt 288 -56)
+	(pt 264 -56)
+)
+(connector
+	(pt 288 -1632)
+	(pt 264 -1632)
+)
+(connector
+	(pt 264 -1744)
+	(pt 264 -1632)
+)
+(connector
+	(pt 288 -1520)
+	(pt 264 -1520)
+)
+(connector
+	(pt 264 -1632)
+	(pt 264 -1520)
+)
+(connector
+	(pt 288 -1408)
+	(pt 264 -1408)
+)
+(connector
+	(pt 264 -1520)
+	(pt 264 -1408)
+)
+(connector
+	(pt 288 -1296)
+	(pt 264 -1296)
+)
+(connector
+	(pt 264 -1408)
+	(pt 264 -1296)
+)
+(connector
+	(pt 288 -1184)
+	(pt 264 -1184)
+)
+(connector
+	(pt 264 -1296)
+	(pt 264 -1184)
+)
+(connector
+	(pt 288 -1072)
+	(pt 264 -1072)
+)
+(connector
+	(pt 264 -1184)
+	(pt 264 -1072)
+)
+(connector
+	(pt 288 -960)
+	(pt 264 -960)
+)
+(connector
+	(pt 264 -1072)
+	(pt 264 -960)
+)
+(connector
+	(pt 288 -840)
+	(pt 264 -840)
+)
+(connector
+	(pt 264 -960)
+	(pt 264 -840)
+)
+(connector
+	(pt 288 -728)
+	(pt 264 -728)
+)
+(connector
+	(pt 264 -840)
+	(pt 264 -728)
+)
+(connector
+	(pt 288 -616)
+	(pt 264 -616)
+)
+(connector
+	(pt 264 -728)
+	(pt 264 -616)
+)
+(connector
+	(pt 288 -504)
+	(pt 264 -504)
+)
+(connector
+	(pt 264 -616)
+	(pt 264 -504)
+)
+(connector
+	(pt 288 -392)
+	(pt 264 -392)
+)
+(connector
+	(pt 264 -504)
+	(pt 264 -392)
+)
+(connector
+	(pt 288 -280)
+	(pt 264 -280)
+)
+(connector
+	(pt 264 -392)
+	(pt 264 -280)
+)
+(connector
+	(pt 288 -168)
+	(pt 264 -168)
+)
+(connector
+	(pt 264 -280)
+	(pt 264 -168)
+)
+(connector
+	(pt 264 -168)
+	(pt 264 -56)
+)
+(connector
+	(pt 288 -136)
+	(pt 248 -136)
+)
+(connector
+	(pt 288 -24)
+	(pt 248 -24)
+)
+(connector
+	(pt 288 -248)
+	(pt 248 -248)
+)
+(connector
+	(pt 288 -360)
+	(pt 248 -360)
+)
+(connector
+	(pt 288 -472)
+	(pt 248 -472)
+)
+(connector
+	(pt 288 -584)
+	(pt 248 -584)
+)
+(connector
+	(pt 288 -696)
+	(pt 248 -696)
+)
+(connector
+	(pt 288 -808)
+	(pt 248 -808)
+)
+(connector
+	(pt 288 -928)
+	(pt 248 -928)
+)
+(connector
+	(pt 288 -1040)
+	(pt 248 -1040)
+)
+(connector
+	(pt 288 -1152)
+	(pt 248 -1152)
+)
+(connector
+	(pt 288 -1264)
+	(pt 248 -1264)
+)
+(connector
+	(pt 288 -1376)
+	(pt 248 -1376)
+)
+(connector
+	(pt 288 -1488)
+	(pt 248 -1488)
+)
+(connector
+	(pt 288 -1600)
+	(pt 248 -1600)
+)
+(connector
+	(pt 288 -1712)
+	(pt 248 -1712)
+)
+(connector
+	(pt 248 -136)
+	(pt 248 -24)
+)
+(connector
+	(pt 248 -248)
+	(pt 248 -136)
+)
+(connector
+	(pt 248 -360)
+	(pt 248 -248)
+)
+(connector
+	(pt 248 -472)
+	(pt 248 -360)
+)
+(connector
+	(pt 248 -584)
+	(pt 248 -472)
+)
+(connector
+	(pt 248 -696)
+	(pt 248 -584)
+)
+(connector
+	(pt 248 -808)
+	(pt 248 -696)
+)
+(connector
+	(pt 248 -928)
+	(pt 248 -808)
+)
+(connector
+	(pt 248 -1040)
+	(pt 248 -928)
+)
+(connector
+	(pt 248 -1152)
+	(pt 248 -1040)
+)
+(connector
+	(pt 248 -1264)
+	(pt 248 -1152)
+)
+(connector
+	(pt 248 -1376)
+	(pt 248 -1264)
+)
+(connector
+	(pt 248 -1488)
+	(pt 248 -1376)
+)
+(connector
+	(pt 248 -1600)
+	(pt 248 -1488)
+)
+(connector
+	(pt 208 -152)
+	(pt 208 -40)
+	(bus)
+)
+(connector
+	(pt 208 -264)
+	(pt 208 -152)
+	(bus)
+)
+(connector
+	(pt 208 -376)
+	(pt 208 -264)
+	(bus)
+)
+(connector
+	(pt 208 -488)
+	(pt 208 -376)
+	(bus)
+)
+(connector
+	(pt 208 -600)
+	(pt 208 -488)
+	(bus)
+)
+(connector
+	(pt 208 -712)
+	(pt 208 -600)
+	(bus)
+)
+(connector
+	(pt 208 -824)
+	(pt 208 -712)
+	(bus)
+)
+(connector
+	(pt 208 -944)
+	(pt 208 -824)
+	(bus)
+)
+(connector
+	(pt 208 -1056)
+	(pt 208 -944)
+	(bus)
+)
+(connector
+	(pt 208 -1168)
+	(pt 208 -1056)
+	(bus)
+)
+(connector
+	(pt 208 -1280)
+	(pt 208 -1168)
+	(bus)
+)
+(connector
+	(pt 208 -1392)
+	(pt 208 -1280)
+	(bus)
+)
+(connector
+	(pt 208 -1504)
+	(pt 208 -1392)
+	(bus)
+)
+(connector
+	(text "Arena_CS[1]" (rect 210 -1632 272 -1620)(font "Arial" ))
+	(pt 288 -1616)
+	(pt 208 -1616)
+)
+(connector
+	(text "Arena_CS[2]" (rect 210 -1520 272 -1508)(font "Arial" ))
+	(pt 208 -1504)
+	(pt 288 -1504)
+)
+(connector
+	(text "Arena_CS[3]" (rect 210 -1408 272 -1396)(font "Arial" ))
+	(pt 288 -1392)
+	(pt 208 -1392)
+)
+(connector
+	(text "Arena_CS[4]" (rect 210 -1296 272 -1284)(font "Arial" ))
+	(pt 288 -1280)
+	(pt 208 -1280)
+)
+(connector
+	(text "Arena_CS[5]" (rect 210 -1184 272 -1172)(font "Arial" ))
+	(pt 288 -1168)
+	(pt 208 -1168)
+)
+(connector
+	(text "Arena_CS[6]" (rect 210 -1072 272 -1060)(font "Arial" ))
+	(pt 288 -1056)
+	(pt 208 -1056)
+)
+(connector
+	(text "Arena_CS[7]" (rect 210 -960 272 -948)(font "Arial" ))
+	(pt 288 -944)
+	(pt 208 -944)
+)
+(connector
+	(text "Arena_CS[8]" (rect 210 -840 272 -828)(font "Arial" ))
+	(pt 288 -824)
+	(pt 208 -824)
+)
+(connector
+	(text "Arena_CS[9]" (rect 210 -728 272 -716)(font "Arial" ))
+	(pt 288 -712)
+	(pt 208 -712)
+)
+(connector
+	(text "Arena_CS[10]" (rect 210 -616 278 -604)(font "Arial" ))
+	(pt 288 -600)
+	(pt 208 -600)
+)
+(connector
+	(text "Arena_CS[11]" (rect 210 -504 278 -492)(font "Arial" ))
+	(pt 288 -488)
+	(pt 208 -488)
+)
+(connector
+	(text "Arena_CS[12]" (rect 210 -392 278 -380)(font "Arial" ))
+	(pt 288 -376)
+	(pt 208 -376)
+)
+(connector
+	(text "Arena_CS[13]" (rect 210 -280 278 -268)(font "Arial" ))
+	(pt 288 -264)
+	(pt 208 -264)
+)
+(connector
+	(text "Arena_CS[14]" (rect 210 -168 278 -156)(font "Arial" ))
+	(pt 288 -152)
+	(pt 208 -152)
+)
+(connector
+	(text "Arena_CS[15]" (rect 210 -40 278 -28)(font "Arial" ))
+	(pt 288 -40)
+	(pt 208 -40)
+)
+(connector
+	(pt 120 -1760)
+	(pt 248 -1760)
+)
+(connector
+	(pt 248 -1760)
+	(pt 248 -1712)
+)
+(connector
+	(pt 248 -1712)
+	(pt 248 -1600)
+)
+(connector
+	(pt 152 -1744)
+	(pt 264 -1744)
+)
+(connector
+	(pt 264 -1744)
+	(pt 288 -1744)
+)
+(connector
+	(pt 208 -1728)
+	(pt 208 -1616)
+	(bus)
+)
+(connector
+	(pt 208 -1616)
+	(pt 208 -1504)
+	(bus)
+)
+(connector
+	(pt 208 -1728)
+	(pt 232 -1728)
+	(bus)
+)
+(connector
+	(text "Arena_CS[0]" (rect 242 -1744 304 -1732)(font "Arial" ))
+	(pt 288 -1728)
+	(pt 232 -1728)
+)
+(connector
+	(pt 528 -1632)
+	(pt 552 -1632)
+)
+(connector
+	(pt 528 -1520)
+	(pt 552 -1520)
+)
+(connector
+	(pt 528 -1408)
+	(pt 552 -1408)
+)
+(connector
+	(pt 528 -1296)
+	(pt 552 -1296)
+)
+(connector
+	(pt 528 -1184)
+	(pt 552 -1184)
+)
+(connector
+	(pt 528 -1072)
+	(pt 552 -1072)
+)
+(connector
+	(pt 528 -960)
+	(pt 552 -960)
+)
+(connector
+	(pt 528 -840)
+	(pt 552 -840)
+)
+(connector
+	(pt 528 -728)
+	(pt 552 -728)
+)
+(connector
+	(pt 528 -616)
+	(pt 552 -616)
+)
+(connector
+	(pt 528 -504)
+	(pt 552 -504)
+)
+(connector
+	(pt 528 -392)
+	(pt 552 -392)
+)
+(connector
+	(pt 528 -280)
+	(pt 552 -280)
+)
+(connector
+	(pt 528 -168)
+	(pt 552 -168)
+)
+(connector
+	(pt 528 -56)
+	(pt 552 -56)
+)
+(connector
+	(pt 552 -56)
+	(pt 552 -168)
+)
+(connector
+	(pt 568 -1744)
+	(pt 552 -1744)
+)
+(connector
+	(pt 552 -1744)
+	(pt 528 -1744)
+)
+(connector
+	(pt 552 -1744)
+	(pt 552 -1632)
+)
+(connector
+	(pt 552 -1632)
+	(pt 552 -1520)
+)
+(connector
+	(pt 552 -1520)
+	(pt 552 -1408)
+)
+(connector
+	(pt 552 -1408)
+	(pt 552 -1296)
+)
+(connector
+	(pt 552 -1296)
+	(pt 552 -1184)
+)
+(connector
+	(pt 552 -1184)
+	(pt 552 -1072)
+)
+(connector
+	(pt 552 -1072)
+	(pt 552 -960)
+)
+(connector
+	(pt 552 -960)
+	(pt 552 -840)
+)
+(connector
+	(pt 552 -840)
+	(pt 552 -728)
+)
+(connector
+	(pt 552 -728)
+	(pt 552 -616)
+)
+(connector
+	(pt 552 -616)
+	(pt 552 -504)
+)
+(connector
+	(pt 552 -504)
+	(pt 552 -392)
+)
+(connector
+	(pt 552 -392)
+	(pt 552 -280)
+)
+(connector
+	(pt 552 -280)
+	(pt 552 -168)
+)
+(junction (pt 264 -1744))
+(junction (pt 264 -1632))
+(junction (pt 264 -1520))
+(junction (pt 264 -1408))
+(junction (pt 264 -1296))
+(junction (pt 264 -1184))
+(junction (pt 264 -1072))
+(junction (pt 264 -960))
+(junction (pt 264 -840))
+(junction (pt 264 -728))
+(junction (pt 264 -616))
+(junction (pt 264 -504))
+(junction (pt 264 -392))
+(junction (pt 264 -280))
+(junction (pt 264 -168))
+(junction (pt 248 -136))
+(junction (pt 248 -248))
+(junction (pt 248 -360))
+(junction (pt 248 -472))
+(junction (pt 248 -584))
+(junction (pt 248 -696))
+(junction (pt 248 -808))
+(junction (pt 248 -928))
+(junction (pt 248 -1040))
+(junction (pt 248 -1152))
+(junction (pt 248 -1264))
+(junction (pt 248 -1376))
+(junction (pt 248 -1488))
+(junction (pt 248 -1600))
+(junction (pt 248 -1712))
+(junction (pt 208 -152))
+(junction (pt 208 -264))
+(junction (pt 208 -376))
+(junction (pt 208 -488))
+(junction (pt 208 -600))
+(junction (pt 208 -712))
+(junction (pt 208 -824))
+(junction (pt 208 -944))
+(junction (pt 208 -1056))
+(junction (pt 208 -1168))
+(junction (pt 208 -1280))
+(junction (pt 208 -1392))
+(junction (pt 208 -1504))
+(junction (pt 208 -1616))
+(junction (pt 208 -1728))
+(junction (pt 552 -280))
+(junction (pt 552 -168))
+(junction (pt 552 -1744))
+(junction (pt 552 -1632))
+(junction (pt 552 -1520))
+(junction (pt 552 -1408))
+(junction (pt 552 -1296))
+(junction (pt 552 -1184))
+(junction (pt 552 -1072))
+(junction (pt 552 -960))
+(junction (pt 552 -840))
+(junction (pt 552 -728))
+(junction (pt 552 -616))
+(junction (pt 552 -504))
+(junction (pt 552 -392))

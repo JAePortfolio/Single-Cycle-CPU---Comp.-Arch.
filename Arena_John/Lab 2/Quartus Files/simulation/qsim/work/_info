@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\simulation\qsim
+vArena_DLatch
+Z1 IJE;S1UW^_=e_nBE?=5WN50
+Z2 VdX_<9>PK<EmG=7_;F3@in1
+Z3 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\simulation\qsim
+Z4 w1551471916
+Z5 8Arena_16x4_SRAM.vo
+Z6 FArena_16x4_SRAM.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@arena_@d@latch
+!i10b 1
+Z10 !s100 h`<T[ZoUg1:?ZQHCbLJ`V2
+!s85 0
+Z11 !s108 1551471917.871000
+Z12 !s107 Arena_16x4_SRAM.vo|
+Z13 !s90 -work|work|Arena_16x4_SRAM.vo|
+!s101 -O0
+vArena_DLatch_vlg_check_tst
+!i10b 1
+!s100 ;`HOigaEO:i@ZX8Ti_TJW0
+IYQIjFOTER7SPR805]3`_M3
+VB==O8f0:88I`c7A@mhR[A1
+R3
+Z14 w1551471915
+Z15 8Arena_16x4_SRAM.vt
+Z16 FArena_16x4_SRAM.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1551471917.972000
+Z18 !s107 Arena_16x4_SRAM.vt|
+Z19 !s90 -work|work|Arena_16x4_SRAM.vt|
+!s101 -O0
+R8
+n@arena_@d@latch_vlg_check_tst
+vArena_DLatch_vlg_sample_tst
+!i10b 1
+!s100 ]]fA2=oBLXc]Mhgz_Y^aj0
+IfiiaU4CCSmF?;71Ji^n193
+VPok<3XN`3O=SE6GijB6D63
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@arena_@d@latch_vlg_sample_tst
+vArena_DLatch_vlg_vec_tst
+!i10b 1
+!s100 c3Cdklk_iG?=zBoMA_mb31
+IbTEiX;f9cg3Q49VDI>X311
+VZbkhk=8MjgNJQkW=O<h7M0
+R3
+R14
+R15
+R16
+L0 181
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@arena_@d@latch_vlg_vec_tst

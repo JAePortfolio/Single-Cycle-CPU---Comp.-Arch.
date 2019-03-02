@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRLatch/Arena_SRLatch.bdf
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRLatch/Arena_SRLatch.vwf
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_SRLatch/db/Arena_SRLatch.cbx.xml
+design_name = Arena_SRLatch
+instance = comp, \Arena_S~I , Arena_S, Arena_SRLatch, 1
+instance = comp, \Arena_R~I , Arena_R, Arena_SRLatch, 1
+instance = comp, \Arena_Q~I , Arena_Q, Arena_SRLatch, 1
+instance = comp, \Arena_Q_NOT~I , Arena_Q_NOT, Arena_SRLatch, 1

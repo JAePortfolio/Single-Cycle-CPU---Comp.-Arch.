@@ -1,0 +1,226 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "02/25/2019 12:21:59"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Arena_mux2to1 (
+	Arena_X,
+	Arena_Y,
+	Arena_S,
+	Arena_M);
+input 	Arena_X;
+input 	Arena_Y;
+input 	Arena_S;
+output 	Arena_M;
+
+// Design Ports Information
+// Arena_M	=>  Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Arena_Y	=>  Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_X	=>  Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_S	=>  Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Arena_Y~combout ;
+wire \Arena_X~combout ;
+wire \Arena_S~combout ;
+wire \Arena_M~0_combout ;
+
+
+// Location: PIN_N26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_Y~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_Y~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_Y));
+// synopsys translate_off
+defparam \Arena_Y~I .input_async_reset = "none";
+defparam \Arena_Y~I .input_power_up = "low";
+defparam \Arena_Y~I .input_register_mode = "none";
+defparam \Arena_Y~I .input_sync_reset = "none";
+defparam \Arena_Y~I .oe_async_reset = "none";
+defparam \Arena_Y~I .oe_power_up = "low";
+defparam \Arena_Y~I .oe_register_mode = "none";
+defparam \Arena_Y~I .oe_sync_reset = "none";
+defparam \Arena_Y~I .operation_mode = "input";
+defparam \Arena_Y~I .output_async_reset = "none";
+defparam \Arena_Y~I .output_power_up = "low";
+defparam \Arena_Y~I .output_register_mode = "none";
+defparam \Arena_Y~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_N25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_X~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_X~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_X));
+// synopsys translate_off
+defparam \Arena_X~I .input_async_reset = "none";
+defparam \Arena_X~I .input_power_up = "low";
+defparam \Arena_X~I .input_register_mode = "none";
+defparam \Arena_X~I .input_sync_reset = "none";
+defparam \Arena_X~I .oe_async_reset = "none";
+defparam \Arena_X~I .oe_power_up = "low";
+defparam \Arena_X~I .oe_register_mode = "none";
+defparam \Arena_X~I .oe_sync_reset = "none";
+defparam \Arena_X~I .operation_mode = "input";
+defparam \Arena_X~I .output_async_reset = "none";
+defparam \Arena_X~I .output_power_up = "low";
+defparam \Arena_X~I .output_register_mode = "none";
+defparam \Arena_X~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_P25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_S~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_S~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_S));
+// synopsys translate_off
+defparam \Arena_S~I .input_async_reset = "none";
+defparam \Arena_S~I .input_power_up = "low";
+defparam \Arena_S~I .input_register_mode = "none";
+defparam \Arena_S~I .input_sync_reset = "none";
+defparam \Arena_S~I .oe_async_reset = "none";
+defparam \Arena_S~I .oe_power_up = "low";
+defparam \Arena_S~I .oe_register_mode = "none";
+defparam \Arena_S~I .oe_sync_reset = "none";
+defparam \Arena_S~I .operation_mode = "input";
+defparam \Arena_S~I .output_async_reset = "none";
+defparam \Arena_S~I .output_power_up = "low";
+defparam \Arena_S~I .output_register_mode = "none";
+defparam \Arena_S~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X64_Y19_N0
+cycloneii_lcell_comb \Arena_M~0 (
+// Equation(s):
+// \Arena_M~0_combout  = (\Arena_S~combout  & (\Arena_Y~combout )) # (!\Arena_S~combout  & ((\Arena_X~combout )))
+
+	.dataa(\Arena_Y~combout ),
+	.datab(vcc),
+	.datac(\Arena_X~combout ),
+	.datad(\Arena_S~combout ),
+	.cin(gnd),
+	.combout(\Arena_M~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Arena_M~0 .lut_mask = 16'hAAF0;
+defparam \Arena_M~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_AE23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \Arena_M~I (
+	.datain(\Arena_M~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_M));
+// synopsys translate_off
+defparam \Arena_M~I .input_async_reset = "none";
+defparam \Arena_M~I .input_power_up = "low";
+defparam \Arena_M~I .input_register_mode = "none";
+defparam \Arena_M~I .input_sync_reset = "none";
+defparam \Arena_M~I .oe_async_reset = "none";
+defparam \Arena_M~I .oe_power_up = "low";
+defparam \Arena_M~I .oe_register_mode = "none";
+defparam \Arena_M~I .oe_sync_reset = "none";
+defparam \Arena_M~I .operation_mode = "output";
+defparam \Arena_M~I .output_async_reset = "none";
+defparam \Arena_M~I .output_power_up = "low";
+defparam \Arena_M~I .output_register_mode = "none";
+defparam \Arena_M~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

@@ -1,0 +1,74 @@
+$comment
+	File created using the following command:
+		vcd file Arena_16x4_SRAM.msim.vcd -direction
+$end
+$date
+	Fri Mar 01 15:25:18 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Arena_DLatch_vlg_vec_tst $end
+$var reg 1 ! Arena_C $end
+$var reg 1 " Arena_D $end
+$var wire 1 # Arena_Q $end
+$var wire 1 $ Arena_Q_NOT $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Arena_D~combout $end
+$var wire 1 - Arena_C~combout $end
+$var wire 1 . inst1~1_combout $end
+$var wire 1 / inst2~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+x#
+x$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+x.
+x/
+$end
+#40000
+1"
+1,
+0%
+#80000
+1!
+0"
+1-
+0,
+1%
+1/
+1.
+1$
+0#
+#120000
+1"
+1,
+0%
+0.
+0/
+1#
+0$
+#160000

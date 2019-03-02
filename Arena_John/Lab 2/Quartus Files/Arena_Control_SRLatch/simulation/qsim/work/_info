@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\Arena_Control_SRLatch\simulation\qsim
+vArena_Control_SRLatch
+Z1 !s100 8S_g1MN6LiW>3ULEV@OZn0
+Z2 ICGTJoKIY3`aD0YiPbU9>[3
+Z3 VEd<i3Vo=l0`bYYO58bz8O0
+Z4 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 2\Quartus Files\Arena_Control_SRLatch\simulation\qsim
+Z5 w1551470575
+Z6 8Arena_Control_SRLatch.vo
+Z7 FArena_Control_SRLatch.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Arena_Control_SRLatch.vo|
+Z10 o-work work -O0
+Z11 n@arena_@control_@s@r@latch
+!i10b 1
+!s85 0
+Z12 !s108 1551470577.326000
+Z13 !s107 Arena_Control_SRLatch.vo|
+!s101 -O0
+vArena_Control_SRLatch_vlg_check_tst
+!i10b 1
+Z14 !s100 VW7<ebkVaM4C5e6^SJB`91
+Z15 I28VmB]cn41NZE=nV1eO2n2
+Z16 V;4_C>j9K2LcaUX=R]3[CA1
+R4
+Z17 w1551470574
+Z18 8Arena_Control_SRLatch.vt
+Z19 FArena_Control_SRLatch.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1551470577.433000
+Z21 !s107 Arena_Control_SRLatch.vt|
+Z22 !s90 -work|work|Arena_Control_SRLatch.vt|
+!s101 -O0
+R10
+Z23 n@arena_@control_@s@r@latch_vlg_check_tst
+vArena_Control_SRLatch_vlg_sample_tst
+!i10b 1
+Z24 !s100 iiZTW@4;TaA_f3e_[ZM0Q1
+Z25 INCmYGQ2<G6?Ej]emR16XY2
+Z26 VM>jaHCRHHQQOBkSU?KT2]1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@arena_@control_@s@r@latch_vlg_sample_tst
+vArena_Control_SRLatch_vlg_vec_tst
+!i10b 1
+Z28 !s100 1L?jb1E:NSlZeQ<DmcHJi0
+Z29 I4M<<Q5E6;Uhl[a[6o4UGG1
+Z30 V1;WjoDk^mbfCzlICANVkf0
+R4
+R17
+R18
+R19
+Z31 L0 183
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@arena_@control_@s@r@latch_vlg_vec_tst
