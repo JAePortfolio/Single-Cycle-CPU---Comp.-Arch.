@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 136 208 408 336)
+	(rect 128 64 400 192)
 	(text "Arena_16x4_SRAM" (rect 5 0 118 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -68,4 +68,93 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 256 112))
 	)
+)
+(symbol
+	(rect 136 232 400 408)
+	(text "Arena_Dec_To_Hex" (rect 5 0 102 12)(font "Arial" ))
+	(text "inst1" (rect 8 160 31 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_hexDigit[3..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "Arena_hexDigit[3..0]" (rect 21 27 121 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "Arena_segment_A" (rect 0 0 90 12)(font "Arial" ))
+		(text "Arena_segment_A" (rect 167 27 257 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32))
+	)
+	(port
+		(pt 264 48)
+		(output)
+		(text "Arena_segment_B" (rect 0 0 89 12)(font "Arial" ))
+		(text "Arena_segment_B" (rect 168 43 257 55)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "Arena_segment_C" (rect 0 0 90 12)(font "Arial" ))
+		(text "Arena_segment_C" (rect 167 59 257 71)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "Arena_segment_D" (rect 0 0 90 12)(font "Arial" ))
+		(text "Arena_segment_D" (rect 167 75 257 87)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80))
+	)
+	(port
+		(pt 264 96)
+		(output)
+		(text "Arena_segment_E" (rect 0 0 89 12)(font "Arial" ))
+		(text "Arena_segment_E" (rect 168 91 257 103)(font "Arial" ))
+		(line (pt 264 96)(pt 248 96))
+	)
+	(port
+		(pt 264 112)
+		(output)
+		(text "Arena_segment_F" (rect 0 0 89 12)(font "Arial" ))
+		(text "Arena_segment_F" (rect 168 107 257 119)(font "Arial" ))
+		(line (pt 264 112)(pt 248 112))
+	)
+	(port
+		(pt 264 128)
+		(output)
+		(text "Arena_segment_G" (rect 0 0 90 12)(font "Arial" ))
+		(text "Arena_segment_G" (rect 167 123 257 135)(font "Arial" ))
+		(line (pt 264 128)(pt 248 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 160))
+	)
+)
+(connector
+	(pt 120 208)
+	(pt 120 264)
+	(bus)
+)
+(connector
+	(pt 136 264)
+	(pt 120 264)
+	(bus)
+)
+(connector
+	(pt 400 96)
+	(pt 416 96)
+	(bus)
+)
+(connector
+	(pt 416 96)
+	(pt 416 208)
+	(bus)
+)
+(connector
+	(pt 120 208)
+	(pt 416 208)
+	(bus)
 )
