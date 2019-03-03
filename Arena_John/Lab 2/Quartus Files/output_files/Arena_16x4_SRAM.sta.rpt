@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Arena_16x4_SRAM
-Sat Mar 02 18:55:42 2019
+Sun Mar 03 15:41:06 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,42 +16,23 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Setup: 'Arena_Address[0]'
- 12. Slow Model Hold: 'Arena_Address[0]'
- 13. Slow Model Minimum Pulse Width: 'Arena_Address[0]'
- 14. Setup Times
- 15. Hold Times
- 16. Clock to Output Times
- 17. Minimum Clock to Output Times
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
  18. Propagation Delay
  19. Minimum Propagation Delay
- 20. Fast Model Setup Summary
- 21. Fast Model Hold Summary
- 22. Fast Model Recovery Summary
- 23. Fast Model Removal Summary
- 24. Fast Model Minimum Pulse Width Summary
- 25. Fast Model Setup: 'Arena_Address[0]'
- 26. Fast Model Hold: 'Arena_Address[0]'
- 27. Fast Model Minimum Pulse Width: 'Arena_Address[0]'
- 28. Setup Times
- 29. Hold Times
- 30. Clock to Output Times
- 31. Minimum Clock to Output Times
- 32. Propagation Delay
- 33. Minimum Propagation Delay
- 34. Multicorner Timing Analysis Summary
- 35. Setup Times
- 36. Hold Times
- 37. Clock to Output Times
- 38. Minimum Clock to Output Times
- 39. Progagation Delay
- 40. Minimum Progagation Delay
- 41. Setup Transfers
- 42. Hold Transfers
- 43. Report TCCS
- 44. Report RSKM
- 45. Unconstrained Paths
- 46. TimeQuest Timing Analyzer Messages
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
 
 
 
@@ -98,41 +79,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                             ;
-+------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
-; Clock Name       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets              ;
-+------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
-; Arena_Address[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_Address[0] } ;
-+------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
-+--------------------------------------------------------+
-; Slow Model Fmax Summary                                ;
-+------------+-----------------+------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name       ; Note ;
-+------------+-----------------+------------------+------+
-; 345.54 MHz ; 345.54 MHz      ; Arena_Address[0] ;      ;
-+------------+-----------------+------------------+------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
 
 
-+-------------------------------------------+
-; Slow Model Setup Summary                  ;
-+------------------+--------+---------------+
-; Clock            ; Slack  ; End Point TNS ;
-+------------------+--------+---------------+
-; Arena_Address[0] ; -0.947 ; -47.576       ;
-+------------------+--------+---------------+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+------------------------------------------+
-; Slow Model Hold Summary                  ;
-+------------------+-------+---------------+
-; Clock            ; Slack ; End Point TNS ;
-+------------------+-------+---------------+
-; Arena_Address[0] ; 0.647 ; 0.000         ;
-+------------------+-------+---------------+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -147,411 +115,94 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------+
-; Slow Model Minimum Pulse Width Summary    ;
-+------------------+--------+---------------+
-; Clock            ; Slack  ; End Point TNS ;
-+------------------+--------+---------------+
-; Arena_Address[0] ; -1.380 ; -1.380        ;
-+------------------+--------+---------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'Arena_Address[0]'                                                                                                                                                                                                  ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; Slack  ; From Node                                                             ; To Node                                                               ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; -0.947 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.128      ; 0.408      ;
-; -0.907 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.135      ; 0.400      ;
-; -0.874 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.004     ; 0.399      ;
-; -0.869 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.004     ; 0.394      ;
-; -0.848 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.003     ; 0.400      ;
-; -0.843 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.004     ; 0.400      ;
-; -0.783 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.111      ; 0.412      ;
-; -0.773 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~2  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.117      ; 0.408      ;
-; -0.770 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.115      ; 0.404      ;
-; -0.769 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.114      ; 0.401      ;
-; -0.769 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.121      ; 0.408      ;
-; -0.766 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.129      ; 0.409      ;
-; -0.761 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.127      ; 0.406      ;
-; -0.761 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.119      ; 0.399      ;
-; -0.761 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.247      ; 0.398      ;
-; -0.757 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.129      ; 0.408      ;
-; -0.754 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.125      ; 0.397      ;
-; -0.753 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.127      ; 0.398      ;
-; -0.750 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.111      ; 0.403      ;
-; -0.749 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.141      ; 0.408      ;
-; -0.745 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.248      ; 0.399      ;
-; -0.744 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.131      ; 0.401      ;
-; -0.741 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.110      ; 0.401      ;
-; -0.741 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.247      ; 0.394      ;
-; -0.740 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.112      ; 0.403      ;
-; -0.740 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.130      ; 0.417      ;
-; -0.739 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.115      ; 0.404      ;
-; -0.739 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.150      ; 0.407      ;
-; -0.738 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.112      ; 0.400      ;
-; -0.736 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.144      ; 0.401      ;
-; -0.733 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.150      ; 0.401      ;
-; -0.732 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.142      ; 0.400      ;
-; -0.728 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.141      ; 0.411      ;
-; -0.727 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.127      ; 0.405      ;
-; -0.727 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.126      ; 0.404      ;
-; -0.727 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.140      ; 0.415      ;
-; -0.726 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.127      ; 0.408      ;
-; -0.724 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.129      ; 0.408      ;
-; -0.724 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.127      ; 0.407      ;
-; -0.722 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.129      ; 0.401      ;
-; -0.722 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.128      ; 0.400      ;
-; -0.722 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.125      ; 0.406      ;
-; -0.722 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.120      ; 0.400      ;
-; -0.721 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.128      ; 0.399      ;
-; -0.721 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.132      ; 0.400      ;
-; -0.721 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.126      ; 0.397      ;
-; -0.720 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.129      ; 0.400      ;
-; -0.719 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.142      ; 0.404      ;
-; -0.717 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.147      ; 0.411      ;
-; -0.715 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.122      ; 0.397      ;
-; -0.715 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.142      ; 0.408      ;
-; -0.714 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.121      ; 0.396      ;
-; -0.713 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.142      ; 0.409      ;
-; -0.712 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.148      ; 0.409      ;
-; -0.712 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.123      ; 0.396      ;
-; -0.710 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~2   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.143      ; 0.402      ;
-; -0.708 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.135      ; 0.398      ;
-; -0.706 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.147      ; 0.404      ;
-; -0.702 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.151      ; 0.409      ;
-; -0.702 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.147      ; 0.399      ;
-; -0.702 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.148      ; 0.401      ;
-; -0.690 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.148      ; 0.397      ;
-; -0.690 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.148      ; 0.396      ;
-; -0.563 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.248      ; 0.396      ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Hold: 'Arena_Address[0]'                                                                                                                                                                                                  ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; Slack ; From Node                                                             ; To Node                                                               ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; 0.647 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.247      ; 0.394      ;
-; 0.648 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.248      ; 0.396      ;
-; 0.651 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.248      ; 0.399      ;
-; 0.651 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.247      ; 0.398      ;
-; 0.748 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.148      ; 0.396      ;
-; 0.749 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.148      ; 0.397      ;
-; 0.751 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.150      ; 0.401      ;
-; 0.752 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.147      ; 0.399      ;
-; 0.753 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.148      ; 0.401      ;
-; 0.757 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.147      ; 0.404      ;
-; 0.757 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.144      ; 0.401      ;
-; 0.757 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.150      ; 0.407      ;
-; 0.758 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.151      ; 0.409      ;
-; 0.758 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.142      ; 0.400      ;
-; 0.759 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~2   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.143      ; 0.402      ;
-; 0.761 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.148      ; 0.409      ;
-; 0.762 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.142      ; 0.404      ;
-; 0.763 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.135      ; 0.398      ;
-; 0.764 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.147      ; 0.411      ;
-; 0.765 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.135      ; 0.400      ;
-; 0.766 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.142      ; 0.408      ;
-; 0.767 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.142      ; 0.409      ;
-; 0.767 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.141      ; 0.408      ;
-; 0.768 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.132      ; 0.400      ;
-; 0.770 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.141      ; 0.411      ;
-; 0.770 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.131      ; 0.401      ;
-; 0.771 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.129      ; 0.400      ;
-; 0.771 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.128      ; 0.399      ;
-; 0.771 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.126      ; 0.397      ;
-; 0.771 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.127      ; 0.398      ;
-; 0.772 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.129      ; 0.401      ;
-; 0.772 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.128      ; 0.400      ;
-; 0.772 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.125      ; 0.397      ;
-; 0.773 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.123      ; 0.396      ;
-; 0.775 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.122      ; 0.397      ;
-; 0.775 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.140      ; 0.415      ;
-; 0.775 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.121      ; 0.396      ;
-; 0.778 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.127      ; 0.405      ;
-; 0.778 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.126      ; 0.404      ;
-; 0.779 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.129      ; 0.408      ;
-; 0.779 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.129      ; 0.408      ;
-; 0.779 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.127      ; 0.406      ;
-; 0.780 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.127      ; 0.407      ;
-; 0.780 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.128      ; 0.408      ;
-; 0.780 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.129      ; 0.409      ;
-; 0.780 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.120      ; 0.400      ;
-; 0.780 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.119      ; 0.399      ;
-; 0.781 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.127      ; 0.408      ;
-; 0.781 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.125      ; 0.406      ;
-; 0.787 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.114      ; 0.401      ;
-; 0.787 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.130      ; 0.417      ;
-; 0.787 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.121      ; 0.408      ;
-; 0.788 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.112      ; 0.400      ;
-; 0.789 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.115      ; 0.404      ;
-; 0.789 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.115      ; 0.404      ;
-; 0.791 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.110      ; 0.401      ;
-; 0.791 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.112      ; 0.403      ;
-; 0.791 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~2  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.117      ; 0.408      ;
-; 0.792 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.111      ; 0.403      ;
-; 0.801 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.111      ; 0.412      ;
-; 0.898 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.004     ; 0.394      ;
-; 0.903 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.003     ; 0.400      ;
-; 0.903 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.004     ; 0.399      ;
-; 0.904 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.004     ; 0.400      ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_Address[0]'                                                                                                                ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target                                                                ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_Address[0] ; Rise       ; Arena_Address[0]                                                      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Setup Times                                                                         ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; 3.607 ; 3.607 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 3.607 ; 3.607 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 3.507 ; 3.507 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 3.449 ; 3.449 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 3.502 ; 3.502 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; 4.250 ; 4.250 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 4.250 ; 4.250 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 3.633 ; 3.633 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 3.887 ; 3.887 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 3.384 ; 3.384 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+-------+-------+------------+------------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Hold Times                                                                            ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise   ; Fall   ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.152 ; -0.152 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.551 ; -0.551 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.204 ; -0.204 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.540 ; -0.540 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.152 ; -0.152 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.216 ; -0.216 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.627 ; -0.627 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.216 ; -0.216 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.589 ; -0.589 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.239 ; -0.239 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+--------+--------+------------+------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Clock to Output Times                                                              ;
-+---------------+------------------+--------+--------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise   ; Fall   ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+--------+--------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 13.672 ; 13.672 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 13.672 ; 13.672 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 13.640 ; 13.640 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 13.449 ; 13.449 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 12.988 ; 12.988 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 13.814 ; 13.814 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 13.439 ; 13.439 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 13.814 ; 13.814 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 13.461 ; 13.461 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 13.243 ; 13.243 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+--------+--------+------------+------------------+
-
-
-+----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                    ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 8.603 ; 8.603 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 8.603 ; 8.603 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 9.027 ; 9.027 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 9.290 ; 9.290 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 9.181 ; 9.181 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 8.603 ; 8.603 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 8.603 ; 8.603 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 9.027 ; 9.027 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 9.290 ; 9.290 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 9.181 ; 9.181 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+-------+-------+------------+------------------+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
 +---------------------------------------------------------------------+
 ; Propagation Delay                                                   ;
-+------------------+--------------+--------+--------+--------+--------+
-; Input Port       ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
-+------------------+--------------+--------+--------+--------+--------+
-; Arena_Address[1] ; Arena_OUT[0] ; 10.305 ; 10.429 ; 10.429 ; 10.305 ;
-; Arena_Address[1] ; Arena_OUT[1] ; 10.693 ; 10.372 ; 10.372 ; 10.693 ;
-; Arena_Address[1] ; Arena_OUT[2] ; 10.707 ; 10.571 ; 10.571 ; 10.707 ;
-; Arena_Address[1] ; Arena_OUT[3] ; 10.418 ; 10.331 ; 10.331 ; 10.418 ;
-; Arena_Address[2] ; Arena_OUT[0] ; 14.462 ; 14.808 ; 14.808 ; 14.462 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 14.674 ; 15.149 ; 15.149 ; 14.674 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 15.114 ; 14.982 ; 14.982 ; 15.114 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 14.561 ; 14.874 ; 14.874 ; 14.561 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 14.617 ; 14.863 ; 14.863 ; 14.617 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 15.195 ; 14.654 ; 14.654 ; 15.195 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 15.028 ; 15.205 ; 15.205 ; 15.028 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 14.920 ; 14.702 ; 14.702 ; 14.920 ;
-; Arena_CS         ; Arena_OUT[0] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[1] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_CS         ; Arena_OUT[2] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[3] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_OE         ; Arena_OUT[0] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[1] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-; Arena_OE         ; Arena_OUT[2] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[3] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-+------------------+--------------+--------+--------+--------+--------+
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 5.864 ; 5.864 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 5.711 ;       ;       ; 5.711 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 5.885 ;       ;       ; 5.885 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 5.621 ;       ;       ; 5.621 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 5.445 ; 5.445 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 9.354 ;       ;       ; 9.354 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 9.878 ; 9.878 ; 9.878 ; 9.878 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 9.554 ; 9.554 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
 +---------------------------------------------------------------------+
 ; Minimum Propagation Delay                                           ;
-+------------------+--------------+--------+--------+--------+--------+
-; Input Port       ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
-+------------------+--------------+--------+--------+--------+--------+
-; Arena_Address[1] ; Arena_OUT[0] ; 9.469  ; 9.020  ; 9.020  ; 9.469  ;
-; Arena_Address[1] ; Arena_OUT[1] ; 9.543  ; 9.104  ; 9.104  ; 9.543  ;
-; Arena_Address[1] ; Arena_OUT[2] ; 9.794  ; 9.687  ; 9.687  ; 9.794  ;
-; Arena_Address[1] ; Arena_OUT[3] ; 9.591  ; 9.598  ; 9.598  ; 9.591  ;
-; Arena_Address[2] ; Arena_OUT[0] ; 13.027 ; 13.073 ; 13.073 ; 13.027 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 13.587 ; 13.374 ; 13.374 ; 13.587 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 13.633 ; 13.751 ; 13.751 ; 13.633 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 13.741 ; 13.548 ; 13.548 ; 13.741 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 12.907 ; 14.008 ; 14.008 ; 12.907 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 13.753 ; 13.479 ; 13.479 ; 13.753 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 13.594 ; 14.053 ; 14.053 ; 13.594 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 13.485 ; 13.550 ; 13.550 ; 13.485 ;
-; Arena_CS         ; Arena_OUT[0] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[1] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_CS         ; Arena_OUT[2] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[3] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_OE         ; Arena_OUT[0] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[1] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-; Arena_OE         ; Arena_OUT[2] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[3] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-+------------------+--------------+--------+--------+--------+--------+
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 5.864 ; 5.864 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 5.711 ;       ;       ; 5.711 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 5.885 ;       ;       ; 5.885 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 5.621 ;       ;       ; 5.621 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 5.445 ; 5.445 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 9.354 ;       ;       ; 9.354 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 9.878 ; 9.878 ; 9.878 ; 9.878 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 9.554 ; 9.554 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
-+-------------------------------------------+
-; Fast Model Setup Summary                  ;
-+------------------+--------+---------------+
-; Clock            ; Slack  ; End Point TNS ;
-+------------------+--------+---------------+
-; Arena_Address[0] ; -0.112 ; -1.057        ;
-+------------------+--------+---------------+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+------------------------------------------+
-; Fast Model Hold Summary                  ;
-+------------------+-------+---------------+
-; Clock            ; Slack ; End Point TNS ;
-+------------------+-------+---------------+
-; Arena_Address[0] ; 0.541 ; 0.000         ;
-+------------------+-------+---------------+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -566,553 +217,170 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------+
-; Fast Model Minimum Pulse Width Summary    ;
-+------------------+--------+---------------+
-; Clock            ; Slack  ; End Point TNS ;
-+------------------+--------+---------------+
-; Arena_Address[0] ; -1.380 ; -1.380        ;
-+------------------+--------+---------------+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'Arena_Address[0]'                                                                                                                                                                                                  ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; Slack  ; From Node                                                             ; To Node                                                               ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; -0.112 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.053      ; 0.170      ;
-; -0.090 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.054      ; 0.165      ;
-; -0.064 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.003     ; 0.164      ;
-; -0.061 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.002     ; 0.162      ;
-; -0.055 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.001      ; 0.165      ;
-; -0.054 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; -0.001     ; 0.166      ;
-; -0.033 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.045      ; 0.174      ;
-; -0.027 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~2  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.047      ; 0.170      ;
-; -0.026 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.046      ; 0.169      ;
-; -0.025 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.049      ; 0.170      ;
-; -0.023 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.052      ; 0.170      ;
-; -0.023 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.117      ; 0.165      ;
-; -0.022 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.048      ; 0.166      ;
-; -0.022 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.044      ; 0.167      ;
-; -0.022 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.054      ; 0.171      ;
-; -0.021 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.051      ; 0.177      ;
-; -0.020 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.052      ; 0.170      ;
-; -0.020 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.049      ; 0.165      ;
-; -0.019 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.049      ; 0.164      ;
-; -0.016 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.044      ; 0.166      ;
-; -0.016 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.045      ; 0.167      ;
-; -0.016 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.058      ; 0.171      ;
-; -0.015 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.054      ; 0.165      ;
-; -0.014 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.045      ; 0.167      ;
-; -0.014 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.057      ; 0.176      ;
-; -0.013 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.121      ; 0.165      ;
-; -0.012 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.046      ; 0.165      ;
-; -0.012 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.050      ; 0.168      ;
-; -0.012 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.059      ; 0.172      ;
-; -0.012 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.050      ; 0.171      ;
-; -0.010 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.051      ; 0.166      ;
-; -0.010 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.121      ; 0.162      ;
-; -0.010 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.056      ; 0.167      ;
-; -0.010 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.064      ; 0.169      ;
-; -0.009 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.051      ; 0.168      ;
-; -0.009 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.050      ; 0.165      ;
-; -0.008 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.053      ; 0.170      ;
-; -0.008 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.061      ; 0.166      ;
-; -0.008 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.050      ; 0.169      ;
-; -0.007 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.054      ; 0.165      ;
-; -0.006 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.052      ; 0.165      ;
-; -0.006 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.046      ; 0.164      ;
-; -0.006 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.053      ; 0.169      ;
-; -0.006 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.060      ; 0.168      ;
-; -0.006 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.060      ; 0.165      ;
-; -0.006 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.050      ; 0.163      ;
-; -0.006 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.064      ; 0.166      ;
-; -0.006 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.048      ; 0.165      ;
-; -0.005 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.052      ; 0.165      ;
-; -0.005 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.063      ; 0.172      ;
-; -0.005 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.045      ; 0.163      ;
-; -0.004 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.060      ; 0.170      ;
-; -0.004 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.059      ; 0.171      ;
-; -0.003 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.046      ; 0.162      ;
-; -0.002 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.063      ; 0.171      ;
-; -0.001 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.061      ; 0.168      ;
-; 0.000  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.054      ; 0.165      ;
-; 0.000  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~2   ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.061      ; 0.167      ;
-; 0.003  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.063      ; 0.167      ;
-; 0.004  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.063      ; 0.165      ;
-; 0.005  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.066      ; 0.171      ;
-; 0.009  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.062      ; 0.164      ;
-; 0.011  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.062      ; 0.162      ;
-; 0.068  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; 0.500        ; 0.117      ; 0.162      ;
-+--------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
++---------------------------------------------------------------------+
+; Propagation Delay                                                   ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 3.021 ; 3.021 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 2.976 ;       ;       ; 2.976 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 3.015 ;       ;       ; 3.015 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 2.909 ;       ;       ; 2.909 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 2.862 ; 2.862 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 5.255 ;       ;       ; 5.255 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 5.346 ; 5.346 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'Arena_Address[0]'                                                                                                                                                                                                  ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; Slack ; From Node                                                             ; To Node                                                               ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
-; 0.541 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.121      ; 0.162      ;
-; 0.544 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.121      ; 0.165      ;
-; 0.545 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.117      ; 0.162      ;
-; 0.548 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.117      ; 0.165      ;
-; 0.600 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.062      ; 0.162      ;
-; 0.602 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.063      ; 0.165      ;
-; 0.602 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.062      ; 0.164      ;
-; 0.602 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.064      ; 0.166      ;
-; 0.604 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.063      ; 0.167      ;
-; 0.605 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.066      ; 0.171      ;
-; 0.605 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.060      ; 0.165      ;
-; 0.605 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.061      ; 0.166      ;
-; 0.605 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.064      ; 0.169      ;
-; 0.606 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~2   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.061      ; 0.167      ;
-; 0.607 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.061      ; 0.168      ;
-; 0.608 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.063      ; 0.171      ;
-; 0.608 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.060      ; 0.168      ;
-; 0.609 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.063      ; 0.172      ;
-; 0.610 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.060      ; 0.170      ;
-; 0.611 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.054      ; 0.165      ;
-; 0.611 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.054      ; 0.165      ;
-; 0.611 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.054      ; 0.165      ;
-; 0.611 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.056      ; 0.167      ;
-; 0.611 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.054      ; 0.165      ;
-; 0.612 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.059      ; 0.171      ;
-; 0.613 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.052      ; 0.165      ;
-; 0.613 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.052      ; 0.165      ;
-; 0.613 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.059      ; 0.172      ;
-; 0.613 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.050      ; 0.163      ;
-; 0.613 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.058      ; 0.171      ;
-; 0.615 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.051      ; 0.166      ;
-; 0.615 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.050      ; 0.165      ;
-; 0.615 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.049      ; 0.164      ;
-; 0.616 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.053      ; 0.169      ;
-; 0.616 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.046      ; 0.162      ;
-; 0.616 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.049      ; 0.165      ;
-; 0.617 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.053      ; 0.170      ;
-; 0.617 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.051      ; 0.168      ;
-; 0.617 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.053      ; 0.170      ;
-; 0.617 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.054      ; 0.171      ;
-; 0.617 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.048      ; 0.165      ;
-; 0.618 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.052      ; 0.170      ;
-; 0.618 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.048      ; 0.166      ;
-; 0.618 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.046      ; 0.164      ;
-; 0.618 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.050      ; 0.168      ;
-; 0.618 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.052      ; 0.170      ;
-; 0.618 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.045      ; 0.163      ;
-; 0.619 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.046      ; 0.165      ;
-; 0.619 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.057      ; 0.176      ;
-; 0.619 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.050      ; 0.169      ;
-; 0.621 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.050      ; 0.171      ;
-; 0.621 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.049      ; 0.170      ;
-; 0.622 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~2 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.044      ; 0.166      ;
-; 0.622 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.045      ; 0.167      ;
-; 0.622 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.045      ; 0.167      ;
-; 0.623 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.044      ; 0.167      ;
-; 0.623 ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~2  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.047      ; 0.170      ;
-; 0.623 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.046      ; 0.169      ;
-; 0.626 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.051      ; 0.177      ;
-; 0.629 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.045      ; 0.174      ;
-; 0.664 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; 0.001      ; 0.165      ;
-; 0.664 ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.002     ; 0.162      ;
-; 0.667 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.003     ; 0.164      ;
-; 0.667 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ; Arena_Address[0] ; Arena_Address[0] ; -0.500       ; -0.001     ; 0.166      ;
-+-------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+------------------+--------------+------------+------------+
++---------------------------------------------------------------------+
+; Minimum Propagation Delay                                           ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 3.021 ; 3.021 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 2.976 ;       ;       ; 2.976 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 3.015 ;       ;       ; 3.015 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 2.909 ;       ;       ; 2.909 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 2.862 ; 2.862 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 5.255 ;       ;       ; 5.255 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 5.346 ; 5.346 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_Address[0]'                                                                                                                ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target                                                                ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_Address[0] ; Rise       ; Arena_Address[0]                                                      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~1   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~1 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_Address[0] ; Rise       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~1  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_Address[0] ; Fall       ; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~1  ;
-+--------+--------------+----------------+------------------+------------------+------------+-----------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Setup Times                                                                         ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; 2.085 ; 2.085 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 2.085 ; 2.085 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 1.992 ; 1.992 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 1.995 ; 1.995 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 2.021 ; 2.021 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; 2.383 ; 2.383 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 2.383 ; 2.383 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 2.068 ; 2.068 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 2.239 ; 2.239 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 1.960 ; 1.960 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+-------+-------+------------+------------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Hold Times                                                                            ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise   ; Fall   ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.383 ; -0.383 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.620 ; -0.620 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.405 ; -0.405 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.573 ; -0.573 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.383 ; -0.383 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.400 ; -0.400 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.643 ; -0.643 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.400 ; -0.400 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.598 ; -0.598 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.426 ; -0.426 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+--------+--------+------------+------------------+
-
-
-+----------------------------------------------------------------------------------+
-; Clock to Output Times                                                            ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 6.968 ; 6.968 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 6.968 ; 6.968 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 6.916 ; 6.916 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 6.838 ; 6.838 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 6.645 ; 6.645 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 7.002 ; 7.002 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 6.855 ; 6.855 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 7.002 ; 7.002 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 6.850 ; 6.850 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 6.733 ; 6.733 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+-------+-------+------------+------------------+
-
-
-+----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                    ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 4.370 ; 4.370 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 4.370 ; 4.370 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 4.509 ; 4.509 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 4.663 ; 4.663 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 4.603 ; 4.603 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 4.370 ; 4.370 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 4.370 ; 4.370 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 4.509 ; 4.509 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 4.663 ; 4.663 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 4.603 ; 4.603 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+-------+-------+------------+------------------+
-
-
-+-----------------------------------------------------------------+
-; Propagation Delay                                               ;
-+------------------+--------------+-------+-------+-------+-------+
-; Input Port       ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
-+------------------+--------------+-------+-------+-------+-------+
-; Arena_Address[1] ; Arena_OUT[0] ; 5.188 ; 5.236 ; 5.236 ; 5.188 ;
-; Arena_Address[1] ; Arena_OUT[1] ; 5.277 ; 5.201 ; 5.201 ; 5.277 ;
-; Arena_Address[1] ; Arena_OUT[2] ; 5.347 ; 5.272 ; 5.272 ; 5.347 ;
-; Arena_Address[1] ; Arena_OUT[3] ; 5.175 ; 5.121 ; 5.121 ; 5.175 ;
-; Arena_Address[2] ; Arena_OUT[0] ; 7.722 ; 7.798 ; 7.798 ; 7.722 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 7.805 ; 7.949 ; 7.949 ; 7.805 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 7.906 ; 7.901 ; 7.901 ; 7.906 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 7.727 ; 7.818 ; 7.818 ; 7.727 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 7.803 ; 7.881 ; 7.881 ; 7.803 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 7.971 ; 7.788 ; 7.788 ; 7.971 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 7.898 ; 7.932 ; 7.932 ; 7.898 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 7.840 ; 7.755 ; 7.755 ; 7.840 ;
-; Arena_CS         ; Arena_OUT[0] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[1] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_CS         ; Arena_OUT[2] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[3] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_OE         ; Arena_OUT[0] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[1] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-; Arena_OE         ; Arena_OUT[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[3] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-+------------------+--------------+-------+-------+-------+-------+
-
-
-+-----------------------------------------------------------------+
-; Minimum Propagation Delay                                       ;
-+------------------+--------------+-------+-------+-------+-------+
-; Input Port       ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
-+------------------+--------------+-------+-------+-------+-------+
-; Arena_Address[1] ; Arena_OUT[0] ; 4.725 ; 4.593 ; 4.593 ; 4.725 ;
-; Arena_Address[1] ; Arena_OUT[1] ; 4.808 ; 4.568 ; 4.568 ; 4.808 ;
-; Arena_Address[1] ; Arena_OUT[2] ; 4.879 ; 4.854 ; 4.854 ; 4.879 ;
-; Arena_Address[1] ; Arena_OUT[3] ; 4.793 ; 4.826 ; 4.826 ; 4.793 ;
-; Arena_Address[2] ; Arena_OUT[0] ; 7.015 ; 7.029 ; 7.029 ; 7.015 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 7.234 ; 7.140 ; 7.140 ; 7.234 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 7.271 ; 7.323 ; 7.323 ; 7.271 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 7.344 ; 7.237 ; 7.237 ; 7.344 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 6.996 ; 7.419 ; 7.419 ; 6.996 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 7.355 ; 7.239 ; 7.239 ; 7.355 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 7.289 ; 7.488 ; 7.488 ; 7.289 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 7.229 ; 7.303 ; 7.303 ; 7.229 ;
-; Arena_CS         ; Arena_OUT[0] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[1] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_CS         ; Arena_OUT[2] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[3] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_OE         ; Arena_OUT[0] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[1] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-; Arena_OE         ; Arena_OUT[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[3] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-+------------------+--------------+-------+-------+-------+-------+
-
-
-+--------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                            ;
-+-------------------+---------+-------+----------+---------+---------------------+
-; Clock             ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+-------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack  ; -0.947  ; 0.541 ; N/A      ; N/A     ; -1.380              ;
-;  Arena_Address[0] ; -0.947  ; 0.541 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS   ; -47.576 ; 0.0   ; 0.0      ; 0.0     ; -1.38               ;
-;  Arena_Address[0] ; -47.576 ; 0.000 ; N/A      ; N/A     ; -1.380              ;
-+-------------------+---------+-------+----------+---------+---------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Setup Times                                                                         ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+-------+-------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; 3.607 ; 3.607 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 3.607 ; 3.607 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 3.507 ; 3.507 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 3.449 ; 3.449 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 3.502 ; 3.502 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; 4.250 ; 4.250 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; 4.250 ; 4.250 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; 3.633 ; 3.633 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; 3.887 ; 3.887 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; 3.384 ; 3.384 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+-------+-------+------------+------------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Hold Times                                                                            ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Data Port        ; Clock Port       ; Rise   ; Fall   ; Clock Edge ; Clock Reference  ;
-+------------------+------------------+--------+--------+------------+------------------+
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.152 ; -0.152 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.551 ; -0.551 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.204 ; -0.204 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.540 ; -0.540 ; Rise       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.152 ; -0.152 ; Rise       ; Arena_Address[0] ;
-; Arena_DataIn[*]  ; Arena_Address[0] ; -0.216 ; -0.216 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[0] ; Arena_Address[0] ; -0.627 ; -0.627 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[1] ; Arena_Address[0] ; -0.216 ; -0.216 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[2] ; Arena_Address[0] ; -0.589 ; -0.589 ; Fall       ; Arena_Address[0] ;
-;  Arena_DataIn[3] ; Arena_Address[0] ; -0.239 ; -0.239 ; Fall       ; Arena_Address[0] ;
-+------------------+------------------+--------+--------+------------+------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Clock to Output Times                                                              ;
-+---------------+------------------+--------+--------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise   ; Fall   ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+--------+--------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 13.672 ; 13.672 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 13.672 ; 13.672 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 13.640 ; 13.640 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 13.449 ; 13.449 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 12.988 ; 12.988 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 13.814 ; 13.814 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 13.439 ; 13.439 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 13.814 ; 13.814 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 13.461 ; 13.461 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 13.243 ; 13.243 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+--------+--------+------------+------------------+
-
-
-+----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                    ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Data Port     ; Clock Port       ; Rise  ; Fall  ; Clock Edge ; Clock Reference  ;
-+---------------+------------------+-------+-------+------------+------------------+
-; Arena_OUT[*]  ; Arena_Address[0] ; 4.370 ; 4.370 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 4.370 ; 4.370 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 4.509 ; 4.509 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 4.663 ; 4.663 ; Rise       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 4.603 ; 4.603 ; Rise       ; Arena_Address[0] ;
-; Arena_OUT[*]  ; Arena_Address[0] ; 4.370 ; 4.370 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[0] ; Arena_Address[0] ; 4.370 ; 4.370 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[1] ; Arena_Address[0] ; 4.509 ; 4.509 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[2] ; Arena_Address[0] ; 4.663 ; 4.663 ; Fall       ; Arena_Address[0] ;
-;  Arena_OUT[3] ; Arena_Address[0] ; 4.603 ; 4.603 ; Fall       ; Arena_Address[0] ;
-+---------------+------------------+-------+-------+------------+------------------+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
 
 
 +---------------------------------------------------------------------+
 ; Progagation Delay                                                   ;
-+------------------+--------------+--------+--------+--------+--------+
-; Input Port       ; Output Port  ; RR     ; RF     ; FR     ; FF     ;
-+------------------+--------------+--------+--------+--------+--------+
-; Arena_Address[1] ; Arena_OUT[0] ; 10.305 ; 10.429 ; 10.429 ; 10.305 ;
-; Arena_Address[1] ; Arena_OUT[1] ; 10.693 ; 10.372 ; 10.372 ; 10.693 ;
-; Arena_Address[1] ; Arena_OUT[2] ; 10.707 ; 10.571 ; 10.571 ; 10.707 ;
-; Arena_Address[1] ; Arena_OUT[3] ; 10.418 ; 10.331 ; 10.331 ; 10.418 ;
-; Arena_Address[2] ; Arena_OUT[0] ; 14.462 ; 14.808 ; 14.808 ; 14.462 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 14.674 ; 15.149 ; 15.149 ; 14.674 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 15.114 ; 14.982 ; 14.982 ; 15.114 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 14.561 ; 14.874 ; 14.874 ; 14.561 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 14.617 ; 14.863 ; 14.863 ; 14.617 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 15.195 ; 14.654 ; 14.654 ; 15.195 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 15.028 ; 15.205 ; 15.205 ; 15.028 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 14.920 ; 14.702 ; 14.702 ; 14.920 ;
-; Arena_CS         ; Arena_OUT[0] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[1] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_CS         ; Arena_OUT[2] ; 9.686  ; 9.686  ; 9.686  ; 9.686  ;
-; Arena_CS         ; Arena_OUT[3] ; 9.676  ; 9.676  ; 9.676  ; 9.676  ;
-; Arena_OE         ; Arena_OUT[0] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[1] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-; Arena_OE         ; Arena_OUT[2] ; 9.681  ; 9.681  ; 9.681  ; 9.681  ;
-; Arena_OE         ; Arena_OUT[3] ; 9.671  ; 9.671  ; 9.671  ; 9.671  ;
-+------------------+--------------+--------+--------+--------+--------+
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 5.685 ; 5.685 ; 5.685 ; 5.685 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 5.702 ; 5.702 ; 5.702 ; 5.702 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 5.864 ; 5.864 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 6.034 ; 6.034 ; 6.034 ; 6.034 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 5.711 ;       ;       ; 5.711 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 5.885 ;       ;       ; 5.885 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 5.689 ; 5.689 ; 5.689 ; 5.689 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 5.408 ; 5.408 ; 5.408 ; 5.408 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 5.431 ; 5.431 ; 5.431 ; 5.431 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 5.621 ;       ;       ; 5.621 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 5.769 ; 5.769 ; 5.769 ; 5.769 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 5.445 ; 5.445 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 5.608 ; 5.608 ; 5.608 ; 5.608 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 5.411 ; 5.411 ; 5.411 ; 5.411 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 9.334 ; 9.334 ; 9.334 ; 9.334 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 9.354 ;       ;       ; 9.354 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 9.539 ; 9.539 ; 9.539 ; 9.539 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 9.684 ; 9.684 ; 9.684 ; 9.684 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 9.360 ; 9.360 ; 9.360 ; 9.360 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 9.534 ; 9.534 ; 9.534 ; 9.534 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 9.336 ; 9.336 ; 9.336 ; 9.336 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 9.516 ; 9.516 ; 9.516 ; 9.516 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 9.542 ; 9.542 ; 9.542 ; 9.542 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 9.731 ; 9.731 ; 9.731 ; 9.731 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 9.878 ; 9.878 ; 9.878 ; 9.878 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 9.554 ; 9.554 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 9.717 ; 9.717 ; 9.717 ; 9.717 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 9.520 ; 9.520 ; 9.520 ; 9.520 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
-+-----------------------------------------------------------------+
-; Minimum Progagation Delay                                       ;
-+------------------+--------------+-------+-------+-------+-------+
-; Input Port       ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
-+------------------+--------------+-------+-------+-------+-------+
-; Arena_Address[1] ; Arena_OUT[0] ; 4.725 ; 4.593 ; 4.593 ; 4.725 ;
-; Arena_Address[1] ; Arena_OUT[1] ; 4.808 ; 4.568 ; 4.568 ; 4.808 ;
-; Arena_Address[1] ; Arena_OUT[2] ; 4.879 ; 4.854 ; 4.854 ; 4.879 ;
-; Arena_Address[1] ; Arena_OUT[3] ; 4.793 ; 4.826 ; 4.826 ; 4.793 ;
-; Arena_Address[2] ; Arena_OUT[0] ; 7.015 ; 7.029 ; 7.029 ; 7.015 ;
-; Arena_Address[2] ; Arena_OUT[1] ; 7.234 ; 7.140 ; 7.140 ; 7.234 ;
-; Arena_Address[2] ; Arena_OUT[2] ; 7.271 ; 7.323 ; 7.323 ; 7.271 ;
-; Arena_Address[2] ; Arena_OUT[3] ; 7.344 ; 7.237 ; 7.237 ; 7.344 ;
-; Arena_Address[3] ; Arena_OUT[0] ; 6.996 ; 7.419 ; 7.419 ; 6.996 ;
-; Arena_Address[3] ; Arena_OUT[1] ; 7.355 ; 7.239 ; 7.239 ; 7.355 ;
-; Arena_Address[3] ; Arena_OUT[2] ; 7.289 ; 7.488 ; 7.488 ; 7.289 ;
-; Arena_Address[3] ; Arena_OUT[3] ; 7.229 ; 7.303 ; 7.303 ; 7.229 ;
-; Arena_CS         ; Arena_OUT[0] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[1] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_CS         ; Arena_OUT[2] ; 5.381 ; 5.381 ; 5.381 ; 5.381 ;
-; Arena_CS         ; Arena_OUT[3] ; 5.371 ; 5.371 ; 5.371 ; 5.371 ;
-; Arena_OE         ; Arena_OUT[0] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[1] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-; Arena_OE         ; Arena_OUT[2] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
-; Arena_OE         ; Arena_OUT[3] ; 5.382 ; 5.382 ; 5.382 ; 5.382 ;
-+------------------+--------------+-------+-------+-------+-------+
++---------------------------------------------------------------------+
+; Minimum Progagation Delay                                           ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Input Port        ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++-------------------+-----------------+-------+-------+-------+-------+
+; Arena_hexDigit[0] ; Arena_segment_A ; 2.949 ; 2.949 ; 2.949 ; 2.949 ;
+; Arena_hexDigit[0] ; Arena_segment_B ; 2.966 ; 2.966 ; 2.966 ; 2.966 ;
+; Arena_hexDigit[0] ; Arena_segment_C ;       ; 3.021 ; 3.021 ;       ;
+; Arena_hexDigit[0] ; Arena_segment_D ; 3.126 ; 3.126 ; 3.126 ; 3.126 ;
+; Arena_hexDigit[0] ; Arena_segment_E ; 2.976 ;       ;       ; 2.976 ;
+; Arena_hexDigit[0] ; Arena_segment_F ; 3.015 ;       ;       ; 3.015 ;
+; Arena_hexDigit[0] ; Arena_segment_G ; 2.947 ; 2.947 ; 2.947 ; 2.947 ;
+; Arena_hexDigit[1] ; Arena_segment_A ; 2.826 ; 2.826 ; 2.826 ; 2.826 ;
+; Arena_hexDigit[1] ; Arena_segment_B ; 2.850 ; 2.850 ; 2.850 ; 2.850 ;
+; Arena_hexDigit[1] ; Arena_segment_C ; 2.909 ;       ;       ; 2.909 ;
+; Arena_hexDigit[1] ; Arena_segment_D ; 3.016 ; 3.016 ; 3.016 ; 3.016 ;
+; Arena_hexDigit[1] ; Arena_segment_E ;       ; 2.862 ; 2.862 ;       ;
+; Arena_hexDigit[1] ; Arena_segment_F ; 2.896 ; 2.896 ; 2.896 ; 2.896 ;
+; Arena_hexDigit[1] ; Arena_segment_G ; 2.828 ; 2.828 ; 2.828 ; 2.828 ;
+; Arena_hexDigit[2] ; Arena_segment_A ; 5.235 ; 5.235 ; 5.235 ; 5.235 ;
+; Arena_hexDigit[2] ; Arena_segment_B ; 5.255 ;       ;       ; 5.255 ;
+; Arena_hexDigit[2] ; Arena_segment_C ; 5.311 ; 5.311 ; 5.311 ; 5.311 ;
+; Arena_hexDigit[2] ; Arena_segment_D ; 5.413 ; 5.413 ; 5.413 ; 5.413 ;
+; Arena_hexDigit[2] ; Arena_segment_E ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
+; Arena_hexDigit[2] ; Arena_segment_F ; 5.305 ; 5.305 ; 5.305 ; 5.305 ;
+; Arena_hexDigit[2] ; Arena_segment_G ; 5.237 ; 5.237 ; 5.237 ; 5.237 ;
+; Arena_hexDigit[3] ; Arena_segment_A ; 5.315 ; 5.315 ; 5.315 ; 5.315 ;
+; Arena_hexDigit[3] ; Arena_segment_B ; 5.333 ; 5.333 ; 5.333 ; 5.333 ;
+; Arena_hexDigit[3] ; Arena_segment_C ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; Arena_hexDigit[3] ; Arena_segment_D ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; Arena_hexDigit[3] ; Arena_segment_E ;       ; 5.346 ; 5.346 ;       ;
+; Arena_hexDigit[3] ; Arena_segment_F ; 5.378 ; 5.378 ; 5.378 ; 5.378 ;
+; Arena_hexDigit[3] ; Arena_segment_G ; 5.310 ; 5.310 ; 5.310 ; 5.310 ;
++-------------------+-----------------+-------+-------+-------+-------+
 
 
-+---------------------------------------------------------------------------------+
-; Setup Transfers                                                                 ;
-+------------------+------------------+----------+----------+----------+----------+
-; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------------+------------------+----------+----------+----------+----------+
-; Arena_Address[0] ; Arena_Address[0] ; 0        ; 32       ; 32       ; 0        ;
-+------------------+------------------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
-
-
-+---------------------------------------------------------------------------------+
-; Hold Transfers                                                                  ;
-+------------------+------------------+----------+----------+----------+----------+
-; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------------+------------------+----------+----------+----------+----------+
-; Arena_Address[0] ; Arena_Address[0] ; 0        ; 32       ; 32       ; 0        ;
-+------------------+------------------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
 
 
 ---------------
@@ -1134,10 +402,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 88    ; 88   ;
-; Unconstrained Output Ports      ; 4     ; 4    ;
-; Unconstrained Output Port Paths ; 88    ; 88   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
 +---------------------------------+-------+------+
 
 
@@ -1147,58 +415,42 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Mar 02 18:55:40 2019
+    Info: Processing started: Sun Mar 03 15:41:04 2019
 Info: Command: quartus_sta Arena_16x4_SRAM -c Arena_16x4_SRAM
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 128 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Arena_16x4_SRAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name Arena_Address[0] Arena_Address[0]
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.947
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.947       -47.576 Arena_Address[0] 
-Info (332146): Worst-case hold slack is 0.647
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.647         0.000 Arena_Address[0] 
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -1.380 Arena_Address[0] 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.112
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.112        -1.057 Arena_Address[0] 
-Info (332146): Worst-case hold slack is 0.541
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.541         0.000 Arena_Address[0] 
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -1.380 Arena_Address[0] 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 404 megabytes
-    Info: Processing ended: Sat Mar 02 18:55:42 2019
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 388 megabytes
+    Info: Processing ended: Sun Mar 03 15:41:06 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -3,7 +3,7 @@ $comment
 		vcd file Arena_16x4_SRAM.msim.vcd -direction
 $end
 $date
-	Sat Mar 02 18:56:33 2019
+	Sun Mar 03 14:07:50 2019
 $end
 $version
 	ModelSim Version 10.1d
