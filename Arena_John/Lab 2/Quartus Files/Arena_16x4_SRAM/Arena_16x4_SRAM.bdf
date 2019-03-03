@@ -104,7 +104,7 @@ applicable agreement for further details.
 	(output)
 	(rect 200 320 376 336)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "Arena_OUT[3..0]" (rect 5 0 88 12)(font "Arial" ))
+	(text "Arena_OUT[3..0]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -161,7 +161,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -193,7 +193,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -225,7 +225,7 @@ applicable agreement for further details.
 		(pt 16 48)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 13 32 25 46)(font "Courier New" (bold))(vertical)(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
 		(line (pt 16 32)(pt 16 48))
 	)
 	(drawing
@@ -257,7 +257,7 @@ applicable agreement for further details.
 		(pt 16 48)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 13 32 25 46)(font "Courier New" (bold))(vertical)(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
 		(line (pt 16 32)(pt 16 48))
 	)
 	(drawing
@@ -289,7 +289,7 @@ applicable agreement for further details.
 		(pt 16 48)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 13 32 25 46)(font "Courier New" (bold))(vertical)(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
 		(line (pt 16 32)(pt 16 48))
 	)
 	(drawing
@@ -321,7 +321,7 @@ applicable agreement for further details.
 		(pt 16 48)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 13 32 25 46)(font "Courier New" (bold))(vertical)(invisible))
+		(text "OUT" (rect 13 32 25 49)(font "Courier New" (bold))(vertical)(invisible))
 		(line (pt 16 32)(pt 16 48))
 	)
 	(drawing
@@ -492,19 +492,6 @@ applicable agreement for further details.
 	(pt 1256 256)
 )
 (connector
-	(pt 400 304)
-	(pt 400 328)
-)
-(connector
-	(pt 376 328)
-	(pt 400 328)
-	(bus)
-)
-(connector
-	(pt 1256 304)
-	(pt 1256 328)
-)
-(connector
 	(pt 16 232)
 	(pt 16 240)
 )
@@ -573,15 +560,6 @@ applicable agreement for further details.
 	(pt 680 256)
 )
 (connector
-	(pt 680 328)
-	(pt 680 304)
-)
-(connector
-	(pt 400 328)
-	(pt 680 328)
-	(bus)
-)
-(connector
 	(pt 720 248)
 	(pt 720 280)
 )
@@ -600,15 +578,6 @@ applicable agreement for further details.
 (connector
 	(pt 960 152)
 	(pt 960 256)
-)
-(connector
-	(pt 960 328)
-	(pt 960 304)
-)
-(connector
-	(pt 680 328)
-	(pt 960 328)
-	(bus)
 )
 (connector
 	(pt 960 328)
@@ -826,7 +795,41 @@ applicable agreement for further details.
 	(pt 416 -32)
 	(bus)
 )
-(junction (pt 400 328))
+(connector
+	(text "Arena_OUT[0]" (rect 384 323 396 392)(font "Arial" )(vertical))
+	(pt 400 304)
+	(pt 400 328)
+)
+(connector
+	(pt 376 328)
+	(pt 400 328)
+	(bus)
+)
+(connector
+	(text "Arena_OUT[1]" (rect 664 307 676 376)(font "Arial" )(vertical))
+	(pt 680 328)
+	(pt 680 304)
+)
+(connector
+	(pt 400 328)
+	(pt 680 328)
+	(bus)
+)
+(connector
+	(pt 680 328)
+	(pt 960 328)
+	(bus)
+)
+(connector
+	(text "Arena_OUT[2]" (rect 944 259 956 328)(font "Arial" )(vertical))
+	(pt 960 328)
+	(pt 960 304)
+)
+(connector
+	(text "Arena_OUT[3]" (rect 1240 259 1252 328)(font "Arial" )(vertical))
+	(pt 1256 304)
+	(pt 1256 328)
+)
 (junction (pt 440 248))
 (junction (pt 440 96))
 (junction (pt 720 96))
@@ -846,3 +849,4 @@ applicable agreement for further details.
 (junction (pt 152 40))
 (junction (pt 160 96))
 (junction (pt 16 256))
+(junction (pt 400 328))

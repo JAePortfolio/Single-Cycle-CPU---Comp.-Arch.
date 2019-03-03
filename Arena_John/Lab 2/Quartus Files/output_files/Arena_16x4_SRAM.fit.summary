@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Mar 02 16:25:16 2019
+Fitter Status : Successful - Sat Mar 02 18:55:34 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Arena_16x4_SRAM
 Top-level Entity Name : Arena_16x4_SRAM
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 0 / 33,216 ( 0 % )
-    Total combinational functions : 0 / 33,216 ( 0 % )
+Total logic elements : 205 / 33,216 ( < 1 % )
+    Total combinational functions : 205 / 33,216 ( < 1 % )
     Dedicated logic registers : 0 / 33,216 ( 0 % )
 Total registers : 0
 Total pins : 15 / 475 ( 3 % )

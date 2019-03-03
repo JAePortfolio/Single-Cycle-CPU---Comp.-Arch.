@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Mar 02 16:25:07 2019
+Analysis & Synthesis Status : Successful - Sat Mar 02 18:55:24 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Arena_16x4_SRAM
 Top-level Entity Name : Arena_16x4_SRAM
 Family : Cyclone II
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 205
+    Total combinational functions : 205
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 15

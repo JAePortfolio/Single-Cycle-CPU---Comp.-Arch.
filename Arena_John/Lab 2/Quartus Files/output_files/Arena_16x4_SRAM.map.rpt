@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_16x4_SRAM
-Sat Mar 02 16:25:07 2019
+Sat Mar 02 18:55:24 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 02 16:25:07 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 02 18:55:24 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
 ; Top-level Entity Name              ; Arena_16x4_SRAM                                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 205                                             ;
+;     Total combinational functions  ; 205                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 15                                              ;
@@ -167,39 +168,351 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 15    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 205      ;
+;                                             ;          ;
+; Total combinational functions               ; 205      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 56       ;
+;     -- 3 input functions                    ; 144      ;
+;     -- <=2 input functions                  ; 5        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 205      ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 15       ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; Arena_CS ;
+; Maximum fan-out                             ; 17       ;
+; Total fan-out                               ; 674      ;
+; Average fan-out                             ; 3.06     ;
++---------------------------------------------+----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Arena_16x4_SRAM           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Arena_16x4_SRAM    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
+; |Arena_16x4_SRAM                ; 205 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Arena_16x4_SRAM                                                               ; work         ;
+;    |Arena_16x1_SRAM:inst11|     ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11                                        ; work         ;
+;       |Arena_SRAM:inst22|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst22                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst23|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst23                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst24|       ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst24                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst25|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst25                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst26|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst26                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst27|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst27                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst28|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst28                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst29|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst29                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst2|        ; 12 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst2                       ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch0  ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1  ; work         ;
+;       |Arena_SRAM:inst30|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst30                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst31|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst31                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst32|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst32                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst33|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst33                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst34|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst34                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst35|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst35                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst                        ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch0   ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1   ; work         ;
+;    |Arena_16x1_SRAM:inst12|     ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12                                        ; work         ;
+;       |Arena_SRAM:inst22|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst22                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst23|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst23                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst24|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst24                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst25|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst25                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst26|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst26                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst27|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst27                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst28|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst28                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst29|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst29                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst2|        ; 12 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst2                       ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0  ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1  ; work         ;
+;       |Arena_SRAM:inst30|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst30                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst31|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst31                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst32|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst32                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst33|       ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst33                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst34|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst34                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst35|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst35                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst                        ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch0   ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1   ; work         ;
+;    |Arena_16x1_SRAM:inst13|     ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13                                        ; work         ;
+;       |Arena_SRAM:inst22|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst22                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst23|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst23                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst24|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst24                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst25|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst25                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst26|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst26                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst27|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst27                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst28|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst28                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst29|       ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst29                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst2|        ; 12 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst2                       ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0  ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1  ; work         ;
+;       |Arena_SRAM:inst30|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst30                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst31|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst31                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst32|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst32                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst33|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst33                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst34|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst34                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst35|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst35                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst                        ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0   ; work         ;
+;          |Arena_DLatch:DLatch1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1   ; work         ;
+;    |Arena_16x1_SRAM:inst14|     ; 60 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14                                        ; work         ;
+;       |Arena_SRAM:inst22|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst22                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst23|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst23                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst24|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst24                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst25|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst25                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst26|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst26                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst27|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst27                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst28|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst28                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst29|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst29                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst2|        ; 14 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst2                       ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0  ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1  ; work         ;
+;       |Arena_SRAM:inst30|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst30                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst31|       ; 4 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst31                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst32|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst32                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst33|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst33                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst34|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst34                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst35|       ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst35                      ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0 ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1 ; work         ;
+;       |Arena_SRAM:inst|         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst                        ; work         ;
+;          |Arena_DLatch:DLatch0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0   ; work         ;
+;          |Arena_DLatch:DLatch1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1   ; work         ;
+;    |Arena_4to16Decoder:inst10|  ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16x4_SRAM|Arena_4to16Decoder:inst10                                     ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                ;
++-----------------------------------------------------------------------+-----+
+; Logic Cell Name                                                       ;     ;
++-----------------------------------------------------------------------+-----+
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst22|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst23|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst24|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst25|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst26|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst27|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst28|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst29|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst30|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst31|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst32|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst33|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst34|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst35|Arena_DLatch:DLatch1|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst11|Arena_SRAM:inst|Arena_DLatch:DLatch1|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst14|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst25|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst26|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst27|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst28|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst29|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst30|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst31|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst32|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst33|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst34|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst35|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst13|Arena_SRAM:inst|Arena_DLatch:DLatch0|inst1~0   ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst2|Arena_DLatch:DLatch0|inst1~0  ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst22|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst23|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Arena_16x1_SRAM:inst12|Arena_SRAM:inst24|Arena_DLatch:DLatch0|inst1~0 ;     ;
+; Number of logic cells representing combinational loops                ; 128 ;
++-----------------------------------------------------------------------+-----+
+Table restricted to first 100 entries. Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -232,7 +545,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Mar 02 16:25:04 2019
+    Info: Processing started: Sat Mar 02 18:55:19 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file arena_4to16decoder/arena_3to8decoder.bdf
@@ -253,43 +566,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_4
     Info (12022): Found design unit 1: Arena_4to16Decoder-Arena_Arch_4to16Decoder
     Info (12023): Found entity 1: Arena_4to16Decoder
 Info (12127): Elaborating entity "Arena_16x4_SRAM" for the top level hierarchy
-Warning (275043): Pin "Arena_OUT[3..0]" is missing source
-Warning (275009): Pin "Arena_OE" not connected
-Warning (275008): Primitive "TRI" of instance "inst4" not used
-Warning (275008): Primitive "TRI" of instance "inst5" not used
-Warning (275008): Primitive "TRI" of instance "inst6" not used
-Warning (275008): Primitive "TRI" of instance "inst7" not used
-Warning (275008): Primitive "AND2" of instance "inst8" not used
-Info (12128): Elaborating entity "Arena_4to16Decoder" for hierarchy "Arena_4to16Decoder:inst10"
 Info (12128): Elaborating entity "Arena_16x1_SRAM" for hierarchy "Arena_16x1_SRAM:inst11"
 Info (12128): Elaborating entity "Arena_SRAM" for hierarchy "Arena_16x1_SRAM:inst11|Arena_SRAM:inst2"
 Info (12128): Elaborating entity "Arena_DLatch" for hierarchy "Arena_16x1_SRAM:inst11|Arena_SRAM:inst2|Arena_DLatch:DLatch1"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Arena_OUT[3]" is stuck at GND
-    Warning (13410): Pin "Arena_OUT[2]" is stuck at GND
-    Warning (13410): Pin "Arena_OUT[1]" is stuck at GND
-    Warning (13410): Pin "Arena_OUT[0]" is stuck at GND
+Info (12128): Elaborating entity "Arena_4to16Decoder" for hierarchy "Arena_4to16Decoder:inst10"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Arena_Address[3]"
-    Warning (15610): No output dependent on input pin "Arena_Address[2]"
-    Warning (15610): No output dependent on input pin "Arena_Address[1]"
-    Warning (15610): No output dependent on input pin "Arena_Address[0]"
-    Warning (15610): No output dependent on input pin "Arena_WE"
-    Warning (15610): No output dependent on input pin "Arena_CS"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[3]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[2]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[1]"
-    Warning (15610): No output dependent on input pin "Arena_DataIn[0]"
-    Warning (15610): No output dependent on input pin "Arena_OE"
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 220 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 4 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info (21061): Implemented 205 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 480 megabytes
-    Info: Processing ended: Sat Mar 02 16:25:07 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Sat Mar 02 18:55:24 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 
