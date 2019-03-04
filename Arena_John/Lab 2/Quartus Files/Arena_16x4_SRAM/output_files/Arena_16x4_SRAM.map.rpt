@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Arena_16x4_SRAM
-Sun Mar 03 17:37:03 2019
+Mon Mar 04 16:20:30 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 03 17:37:03 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 04 16:20:30 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
 ; Top-level Entity Name              ; Arena_16x32_SRAM                                ;
@@ -1917,7 +1917,7 @@ Table restricted to first 100 entries. Note: All cells listed above may not be p
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Mar 03 17:36:48 2019
+    Info: Processing started: Mon Mar 04 16:20:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 2/quartus files/arena_16x32_sram/arena_16x32_sram.bdf
@@ -1956,9 +1956,9 @@ Info (21057): Implemented 1480 device resources after synthesis - the final reso
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 1409 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 490 megabytes
-    Info: Processing ended: Sun Mar 03 17:37:03 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 494 megabytes
+    Info: Processing ended: Mon Mar 04 16:20:30 2019
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:14
 
 

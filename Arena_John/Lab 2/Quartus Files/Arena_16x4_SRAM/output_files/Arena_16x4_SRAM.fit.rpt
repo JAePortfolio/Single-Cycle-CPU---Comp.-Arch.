@@ -1,5 +1,5 @@
 Fitter report for Arena_16x4_SRAM
-Sun Mar 03 17:37:21 2019
+Mon Mar 04 16:20:50 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Mar 03 17:37:20 2019           ;
+; Fitter Status                      ; Successful - Mon Mar 04 16:20:50 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
 ; Top-level Entity Name              ; Arena_16x32_SRAM                                ;
@@ -4817,10 +4817,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/output_files/Arena_16x4_SRAM.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 671 megabytes
-    Info: Processing ended: Sun Mar 03 17:37:21 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 683 megabytes
+    Info: Processing ended: Mon Mar 04 16:20:51 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+

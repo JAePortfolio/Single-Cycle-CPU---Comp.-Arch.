@@ -52,7 +52,6 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/Arena_16x4_SRAM.vwf"
 set_global_assignment -name BDF_FILE ../Arena_16x32_SRAM/Arena_16x32_SRAM.bdf
 set_global_assignment -name TEXT_FILE Arena_16x4_SRAM_with_Decoder_pinAssignments.txt
 set_global_assignment -name BDF_FILE Arena_16x4_SRAM_with_Decoder.bdf
@@ -78,3 +77,7 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../Arena_16x32_SRAM/Aren.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../Arena_16x32_SRAM/Arena_16x32_SRAM.vwf
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x32_SRAM/Arena_16x32_SRAM.vwf"

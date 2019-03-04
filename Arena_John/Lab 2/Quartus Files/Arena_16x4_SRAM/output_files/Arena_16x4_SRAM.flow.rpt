@@ -1,5 +1,5 @@
 Flow report for Arena_16x4_SRAM
-Sun Mar 03 17:37:32 2019
+Mon Mar 04 16:28:18 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 03 17:37:32 2019           ;
+; Flow Status                        ; Successful - Mon Mar 04 16:28:18 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Arena_16x4_SRAM                                 ;
 ; Top-level Entity Name              ; Arena_16x32_SRAM                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/03/2019 17:36:49 ;
+; Start date & time ; 03/04/2019 16:20:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Arena_16x4_SRAM     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+-----------------+------------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value   ; Entity Name      ; Section Id     ;
 +-------------------------------------+---------------------------------------+-----------------+------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220314654093205.155165260912112       ; --              ; --               ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220314654093205.155173441508748       ; --              ; --               ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --              ; --               ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --              ; --               ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>          ; --               ; --             ;
@@ -96,12 +96,18 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 490 MB              ; 00:00:10                           ;
-; Fitter                    ; 00:00:16     ; 1.0                     ; 671 MB              ; 00:00:16                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 436 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 416 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 494 MB              ; 00:00:10                           ;
+; Fitter                    ; 00:00:19     ; 1.0                     ; 683 MB              ; 00:00:16                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 436 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 416 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 394 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:32                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 387 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 403 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 402 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 402 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 403 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 403 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:45     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +121,12 @@ applicable agreement for further details.
 ; Assembler                 ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -126,6 +138,12 @@ quartus_fit --read_settings_files=off --write_settings_files=off Arena_16x4_SRAM
 quartus_asm --read_settings_files=off --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
 quartus_sta Arena_16x4_SRAM -c Arena_16x4_SRAM
 quartus_eda --read_settings_files=off --write_settings_files=off Arena_16x4_SRAM -c Arena_16x4_SRAM
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x32_SRAM/Aren.vwf" --testbench_file=./simulation/qsim/Arena_16x4_SRAM.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x32_SRAM/Arena_16x32_SRAM.vwf" --testbench_file=./simulation/qsim/Arena_16x4_SRAM.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x32_SRAM/Arena_16x32_SRAM.vwf" --testbench_file=./simulation/qsim/Arena_16x4_SRAM.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x32_SRAM/Arena_16x32_SRAM.vwf" --testbench_file=./simulation/qsim/Arena_16x4_SRAM.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Arena_16x4_SRAM -c Arena_16x4_SRAM
 
 
 
