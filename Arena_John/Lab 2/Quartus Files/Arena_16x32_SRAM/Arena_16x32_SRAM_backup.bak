@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_32BitDivider
+	port(
+		Arena_octet0: in std_logic_vector(7 downto 0);
+		Arena_octet1: in std_logic_vector(7 downto 0);
+		Arena_octet2: in std_logic_vector(7 downto 0);
+		Arena_octet3: in std_logic_vector(7 downto 0);
+		Arena_Dec: out std_logic_vector(15 downto 0)
+		);
+end Arena_32BitDivider;
+
+architecture Arena_Arch_32BitDivider of Arena_32BitDivider is
+
+begin
+
+end Arena_Arch_4to16Decoder;
