@@ -1,0 +1,5 @@
+To, Location
+Arena_IN, PIN_N25
+Arena_Select_Chip, PIN_N26
+Arena_Write_Enable, PIN_P25
+Arena_OUT, PIN_P25

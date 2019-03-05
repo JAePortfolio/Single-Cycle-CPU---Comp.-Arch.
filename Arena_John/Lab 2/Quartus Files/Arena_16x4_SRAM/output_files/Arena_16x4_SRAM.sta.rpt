@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Arena_16x4_SRAM
-Mon Mar 04 18:14:06 2019
+Tue Mar 05 14:27:21 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,37 +16,23 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Minimum Pulse Width: 'Arena_button[0]'
- 12. Slow Model Minimum Pulse Width: 'Arena_button[1]'
- 13. Slow Model Minimum Pulse Width: 'Arena_button[2]'
- 14. Slow Model Minimum Pulse Width: 'Arena_button[3]'
- 15. Setup Times
- 16. Hold Times
- 17. Clock to Output Times
- 18. Minimum Clock to Output Times
- 19. Fast Model Setup Summary
- 20. Fast Model Hold Summary
- 21. Fast Model Recovery Summary
- 22. Fast Model Removal Summary
- 23. Fast Model Minimum Pulse Width Summary
- 24. Fast Model Minimum Pulse Width: 'Arena_button[0]'
- 25. Fast Model Minimum Pulse Width: 'Arena_button[1]'
- 26. Fast Model Minimum Pulse Width: 'Arena_button[2]'
- 27. Fast Model Minimum Pulse Width: 'Arena_button[3]'
- 28. Setup Times
- 29. Hold Times
- 30. Clock to Output Times
- 31. Minimum Clock to Output Times
- 32. Multicorner Timing Analysis Summary
- 33. Setup Times
- 34. Hold Times
- 35. Clock to Output Times
- 36. Minimum Clock to Output Times
- 37. Clock Transfers
- 38. Report TCCS
- 39. Report RSKM
- 40. Unconstrained Paths
- 41. TimeQuest Timing Analyzer Messages
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
 
 
 
@@ -93,16 +79,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                           ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
-; Clock Name      ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets             ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
-; Arena_button[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_button[0] } ;
-; Arena_button[1] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_button[1] } ;
-; Arena_button[2] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_button[2] } ;
-; Arena_button[3] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_button[3] } ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
 ---------------------------
@@ -135,380 +115,32 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------+
-; Slow Model Minimum Pulse Width Summary   ;
-+-----------------+--------+---------------+
-; Clock           ; Slack  ; End Point TNS ;
-+-----------------+--------+---------------+
-; Arena_button[0] ; -1.380 ; -1.380        ;
-; Arena_button[1] ; -1.380 ; -1.380        ;
-; Arena_button[2] ; -1.380 ; -1.380        ;
-; Arena_button[3] ; -1.380 ; -1.380        ;
-+-----------------+--------+---------------+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_button[0]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[0] ; Rise       ; Arena_button[0]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[4]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[4]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[6]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[6]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[7]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[7]$latch|datad      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
++------------------------------------------------------------------+
+; Propagation Delay                                                ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
+; Arena_Write_Enable ; Arena_OUT   ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_button[1]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[1] ; Rise       ; Arena_button[1]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_button[2]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[2] ; Rise       ; Arena_button[2]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[2]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[2]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_button[3]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[3] ; Rise       ; Arena_button[3]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Setup Times                                                                          ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; 4.339 ; 4.339 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; 4.184 ; 4.184 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; 4.187 ; 4.187 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; 4.142 ; 4.142 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; 4.159 ; 4.159 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; 4.176 ; 4.176 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; 4.339 ; 4.339 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; 4.141 ; 4.141 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; 4.154 ; 4.154 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; 4.138 ; 4.138 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; 4.043 ; 4.043 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; 4.048 ; 4.048 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; 4.138 ; 4.138 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; 4.018 ; 4.018 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; 4.038 ; 4.038 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; 4.060 ; 4.060 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; 4.004 ; 4.004 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; 4.020 ; 4.020 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; 4.061 ; 4.061 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; 4.041 ; 4.041 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; 4.044 ; 4.044 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; 4.020 ; 4.020 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; 4.016 ; 4.016 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; 4.033 ; 4.033 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; 4.061 ; 4.061 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; 4.006 ; 4.006 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; 4.022 ; 4.022 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; 4.152 ; 4.152 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; 4.163 ; 4.163 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; 4.040 ; 4.040 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; 4.151 ; 4.151 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; 4.050 ; 4.050 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; 4.068 ; 4.068 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Hold Times                                                                             ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; -3.323 ; -3.323 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; -3.508 ; -3.508 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; -3.511 ; -3.511 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; -3.324 ; -3.324 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; -3.483 ; -3.483 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; -3.500 ; -3.500 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; -3.521 ; -3.521 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; -3.323 ; -3.323 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; -3.336 ; -3.336 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; -3.320 ; -3.320 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; -3.374 ; -3.374 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; -3.380 ; -3.380 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; -3.320 ; -3.320 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; -3.349 ; -3.349 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; -3.370 ; -3.370 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; -3.392 ; -3.392 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; -3.336 ; -3.336 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; -3.352 ; -3.352 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; -3.337 ; -3.337 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; -3.372 ; -3.372 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; -3.375 ; -3.375 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; -3.351 ; -3.351 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; -3.347 ; -3.347 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; -3.364 ; -3.364 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; -3.392 ; -3.392 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; -3.337 ; -3.337 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; -3.353 ; -3.353 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; -3.333 ; -3.333 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; -3.508 ; -3.508 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; -3.366 ; -3.366 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; -3.476 ; -3.476 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; -3.487 ; -3.487 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; -3.372 ; -3.372 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; -3.333 ; -3.333 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; -3.382 ; -3.382 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; -3.400 ; -3.400 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Clock to Output Times                                                             ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 6.236 ; 6.236 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 6.008 ; 6.008 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 6.236 ; 6.236 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 5.975 ; 5.975 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 5.863 ; 5.863 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 5.949 ; 5.949 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 5.978 ; 5.978 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 6.161 ; 6.161 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 6.161 ; 6.161 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 6.134 ; 6.134 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 6.042 ; 6.042 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 6.118 ; 6.118 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 6.093 ; 6.093 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 5.866 ; 5.866 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 6.103 ; 6.103 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 6.097 ; 6.097 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 6.286 ; 6.286 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 6.286 ; 6.286 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 6.137 ; 6.137 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 6.138 ; 6.138 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 6.119 ; 6.119 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 6.098 ; 6.098 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 5.993 ; 5.993 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 6.086 ; 6.086 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 6.111 ; 6.111 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 6.206 ; 6.206 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 5.965 ; 5.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 5.966 ; 5.966 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 5.970 ; 5.970 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 6.206 ; 6.206 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 6.067 ; 6.067 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 5.982 ; 5.982 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 6.095 ; 6.095 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 6.087 ; 6.087 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                     ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 5.863 ; 5.863 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 6.008 ; 6.008 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 6.236 ; 6.236 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 5.975 ; 5.975 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 5.863 ; 5.863 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 5.949 ; 5.949 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 5.978 ; 5.978 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 5.866 ; 5.866 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 6.161 ; 6.161 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 6.134 ; 6.134 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 6.042 ; 6.042 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 6.118 ; 6.118 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 6.093 ; 6.093 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 5.866 ; 5.866 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 6.103 ; 6.103 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 6.097 ; 6.097 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 5.993 ; 5.993 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 6.286 ; 6.286 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 6.137 ; 6.137 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 6.138 ; 6.138 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 6.119 ; 6.119 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 6.098 ; 6.098 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 5.993 ; 5.993 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 6.086 ; 6.086 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 6.111 ; 6.111 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 5.965 ; 5.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 5.965 ; 5.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 5.966 ; 5.966 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 5.970 ; 5.970 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 6.206 ; 6.206 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 6.067 ; 6.067 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 5.982 ; 5.982 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 6.095 ; 6.095 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 6.087 ; 6.087 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------+
+; Minimum Propagation Delay                                        ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 4.738 ; 4.738 ; 4.738 ; 4.738 ;
+; Arena_Write_Enable ; Arena_OUT   ; 5.142 ; 5.142 ; 5.142 ; 5.142 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
 ----------------------------
@@ -535,380 +167,32 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------+
-; Fast Model Minimum Pulse Width Summary   ;
-+-----------------+--------+---------------+
-; Clock           ; Slack  ; End Point TNS ;
-+-----------------+--------+---------------+
-; Arena_button[0] ; -1.380 ; -1.380        ;
-; Arena_button[1] ; -1.380 ; -1.380        ;
-; Arena_button[2] ; -1.380 ; -1.380        ;
-; Arena_button[3] ; -1.380 ; -1.380        ;
-+-----------------+--------+---------------+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_button[0]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[0] ; Rise       ; Arena_button[0]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_button[0]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[4]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[4]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[6]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[6]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Fall       ; Arena_octet0[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Fall       ; Arena_octet0[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[0] ; Rise       ; Arena_octet0[7]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[0] ; Rise       ; Arena_octet0[7]$latch|datad      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
++------------------------------------------------------------------+
+; Propagation Delay                                                ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 3.215 ; 3.215 ; 3.215 ; 3.215 ;
+; Arena_Write_Enable ; Arena_OUT   ; 2.983 ; 2.983 ; 2.983 ; 2.983 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_button[1]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[1] ; Rise       ; Arena_button[1]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_button[1]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Fall       ; Arena_octet1[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Fall       ; Arena_octet1[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[1] ; Rise       ; Arena_octet1[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[1] ; Rise       ; Arena_octet1[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_button[2]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[2] ; Rise       ; Arena_button[2]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_button[2]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[0]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[1]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[2]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[2]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[3]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[5]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Fall       ; Arena_octet2[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Fall       ; Arena_octet2[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[2] ; Rise       ; Arena_octet2[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[2] ; Rise       ; Arena_octet2[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_button[3]'                                                                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_button[3] ; Rise       ; Arena_button[3]                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_button[3]~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[0]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[0]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[1]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[1]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[2]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[2]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[3]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[3]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[4]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[4]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[5]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[5]$latch|datad      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[6]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[6]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Fall       ; Arena_octet3[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Fall       ; Arena_octet3[7]$latch            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_button[3] ; Rise       ; Arena_octet3[7]$latch|datac      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_button[3] ; Rise       ; Arena_octet3[7]$latch|datac      ;
-+--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Setup Times                                                                          ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; 2.308 ; 2.308 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; 2.244 ; 2.244 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; 2.245 ; 2.245 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; 2.212 ; 2.212 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; 2.224 ; 2.224 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; 2.231 ; 2.231 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; 2.308 ; 2.308 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; 2.205 ; 2.205 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; 2.218 ; 2.218 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; 2.208 ; 2.208 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; 2.187 ; 2.187 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; 2.189 ; 2.189 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; 2.208 ; 2.208 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; 2.166 ; 2.166 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; 2.175 ; 2.175 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; 2.180 ; 2.180 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; 2.154 ; 2.154 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; 2.168 ; 2.168 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; 2.188 ; 2.188 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; 2.187 ; 2.187 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; 2.188 ; 2.188 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; 2.158 ; 2.158 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; 2.166 ; 2.166 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; 2.174 ; 2.174 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; 2.181 ; 2.181 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; 2.156 ; 2.156 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; 2.170 ; 2.170 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; 2.257 ; 2.257 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; 2.257 ; 2.257 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; 2.255 ; 2.255 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; 2.225 ; 2.225 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; 2.236 ; 2.236 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; 2.186 ; 2.186 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; 2.223 ; 2.223 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; 2.176 ; 2.176 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; 2.192 ; 2.192 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------+
-; Hold Times                                                                             ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; -1.867 ; -1.867 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; -1.973 ; -1.973 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; -1.974 ; -1.974 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; -1.874 ; -1.874 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; -1.953 ; -1.953 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; -1.960 ; -1.960 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; -1.967 ; -1.967 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; -1.867 ; -1.867 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; -1.880 ; -1.880 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; -1.869 ; -1.869 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; -1.918 ; -1.918 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; -1.921 ; -1.921 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; -1.869 ; -1.869 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; -1.897 ; -1.897 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; -1.907 ; -1.907 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; -1.912 ; -1.912 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; -1.886 ; -1.886 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; -1.900 ; -1.900 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; -1.887 ; -1.887 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; -1.918 ; -1.918 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; -1.919 ; -1.919 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; -1.889 ; -1.889 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; -1.897 ; -1.897 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; -1.905 ; -1.905 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; -1.912 ; -1.912 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; -1.887 ; -1.887 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; -1.901 ; -1.901 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; -1.885 ; -1.885 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; -1.986 ; -1.986 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; -1.917 ; -1.917 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; -1.954 ; -1.954 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; -1.965 ; -1.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; -1.918 ; -1.918 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; -1.885 ; -1.885 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; -1.908 ; -1.908 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; -1.924 ; -1.924 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Clock to Output Times                                                             ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 3.464 ; 3.464 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 3.351 ; 3.351 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 3.368 ; 3.368 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 3.464 ; 3.464 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 3.337 ; 3.337 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 3.287 ; 3.287 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 3.315 ; 3.315 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 3.412 ; 3.412 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 3.378 ; 3.378 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 3.412 ; 3.412 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 3.381 ; 3.381 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 3.394 ; 3.394 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 3.375 ; 3.375 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 3.245 ; 3.245 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 3.384 ; 3.384 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 3.379 ; 3.379 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 3.466 ; 3.466 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 3.466 ; 3.466 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 3.414 ; 3.414 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 3.403 ; 3.403 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 3.393 ; 3.393 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 3.376 ; 3.376 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 3.335 ; 3.335 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 3.365 ; 3.365 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 3.391 ; 3.391 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 3.440 ; 3.440 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 3.326 ; 3.326 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 3.329 ; 3.329 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 3.330 ; 3.330 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 3.440 ; 3.440 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 3.350 ; 3.350 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 3.346 ; 3.346 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 3.372 ; 3.372 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 3.373 ; 3.373 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                     ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 3.287 ; 3.287 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 3.351 ; 3.351 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 3.368 ; 3.368 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 3.464 ; 3.464 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 3.337 ; 3.337 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 3.287 ; 3.287 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 3.315 ; 3.315 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 3.245 ; 3.245 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 3.378 ; 3.378 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 3.412 ; 3.412 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 3.381 ; 3.381 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 3.394 ; 3.394 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 3.375 ; 3.375 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 3.245 ; 3.245 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 3.384 ; 3.384 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 3.379 ; 3.379 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 3.335 ; 3.335 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 3.466 ; 3.466 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 3.414 ; 3.414 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 3.403 ; 3.403 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 3.393 ; 3.393 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 3.376 ; 3.376 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 3.335 ; 3.335 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 3.365 ; 3.365 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 3.391 ; 3.391 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 3.326 ; 3.326 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 3.326 ; 3.326 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 3.329 ; 3.329 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 3.330 ; 3.330 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 3.440 ; 3.440 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 3.350 ; 3.350 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 3.346 ; 3.346 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 3.372 ; 3.372 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 3.373 ; 3.373 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------+
+; Minimum Propagation Delay                                        ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 2.518 ; 2.518 ; 2.518 ; 2.518 ;
+; Arena_Write_Enable ; Arena_OUT   ; 2.701 ; 2.701 ; 2.701 ; 2.701 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
 +----------------------------------------------------------------------------+
@@ -916,193 +200,31 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[0] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[1] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[2] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[3] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -5.52               ;
-;  Arena_button[0] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[1] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[2] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_button[3] ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Setup Times                                                                          ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; 4.339 ; 4.339 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; 4.184 ; 4.184 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; 4.187 ; 4.187 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; 4.142 ; 4.142 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; 4.159 ; 4.159 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; 4.176 ; 4.176 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; 4.339 ; 4.339 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; 4.141 ; 4.141 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; 4.154 ; 4.154 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; 4.138 ; 4.138 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; 4.043 ; 4.043 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; 4.048 ; 4.048 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; 4.138 ; 4.138 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; 4.018 ; 4.018 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; 4.038 ; 4.038 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; 4.060 ; 4.060 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; 4.004 ; 4.004 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; 4.020 ; 4.020 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; 4.061 ; 4.061 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; 4.041 ; 4.041 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; 4.044 ; 4.044 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; 4.020 ; 4.020 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; 4.016 ; 4.016 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; 4.033 ; 4.033 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; 4.061 ; 4.061 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; 4.006 ; 4.006 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; 4.022 ; 4.022 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; 4.184 ; 4.184 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; 4.152 ; 4.152 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; 4.163 ; 4.163 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; 4.040 ; 4.040 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; 4.151 ; 4.151 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; 4.050 ; 4.050 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; 4.068 ; 4.068 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------+
+; Progagation Delay                                                ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
+; Arena_Write_Enable ; Arena_OUT   ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
-+----------------------------------------------------------------------------------------+
-; Hold Times                                                                             ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_octalBits[*]  ; Arena_button[0] ; -1.867 ; -1.867 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[0] ; Arena_button[0] ; -1.973 ; -1.973 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[1] ; Arena_button[0] ; -1.974 ; -1.974 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[2] ; Arena_button[0] ; -1.874 ; -1.874 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[3] ; Arena_button[0] ; -1.953 ; -1.953 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[4] ; Arena_button[0] ; -1.960 ; -1.960 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[5] ; Arena_button[0] ; -1.967 ; -1.967 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[6] ; Arena_button[0] ; -1.867 ; -1.867 ; Fall       ; Arena_button[0] ;
-;  Arena_octalBits[7] ; Arena_button[0] ; -1.880 ; -1.880 ; Fall       ; Arena_button[0] ;
-; Arena_octalBits[*]  ; Arena_button[1] ; -1.869 ; -1.869 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[0] ; Arena_button[1] ; -1.918 ; -1.918 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[1] ; Arena_button[1] ; -1.921 ; -1.921 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[2] ; Arena_button[1] ; -1.869 ; -1.869 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[3] ; Arena_button[1] ; -1.897 ; -1.897 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[4] ; Arena_button[1] ; -1.907 ; -1.907 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[5] ; Arena_button[1] ; -1.912 ; -1.912 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[6] ; Arena_button[1] ; -1.886 ; -1.886 ; Fall       ; Arena_button[1] ;
-;  Arena_octalBits[7] ; Arena_button[1] ; -1.900 ; -1.900 ; Fall       ; Arena_button[1] ;
-; Arena_octalBits[*]  ; Arena_button[2] ; -1.887 ; -1.887 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[0] ; Arena_button[2] ; -1.918 ; -1.918 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[1] ; Arena_button[2] ; -1.919 ; -1.919 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[2] ; Arena_button[2] ; -1.889 ; -1.889 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[3] ; Arena_button[2] ; -1.897 ; -1.897 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[4] ; Arena_button[2] ; -1.905 ; -1.905 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[5] ; Arena_button[2] ; -1.912 ; -1.912 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[6] ; Arena_button[2] ; -1.887 ; -1.887 ; Fall       ; Arena_button[2] ;
-;  Arena_octalBits[7] ; Arena_button[2] ; -1.901 ; -1.901 ; Fall       ; Arena_button[2] ;
-; Arena_octalBits[*]  ; Arena_button[3] ; -1.885 ; -1.885 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[0] ; Arena_button[3] ; -1.986 ; -1.986 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[1] ; Arena_button[3] ; -1.917 ; -1.917 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[2] ; Arena_button[3] ; -1.954 ; -1.954 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[3] ; Arena_button[3] ; -1.965 ; -1.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[4] ; Arena_button[3] ; -1.918 ; -1.918 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[5] ; Arena_button[3] ; -1.885 ; -1.885 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[6] ; Arena_button[3] ; -1.908 ; -1.908 ; Fall       ; Arena_button[3] ;
-;  Arena_octalBits[7] ; Arena_button[3] ; -1.924 ; -1.924 ; Fall       ; Arena_button[3] ;
-+---------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Clock to Output Times                                                             ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 6.236 ; 6.236 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 6.008 ; 6.008 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 5.987 ; 5.987 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 6.236 ; 6.236 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 5.975 ; 5.975 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 5.863 ; 5.863 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 5.949 ; 5.949 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 5.978 ; 5.978 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 6.161 ; 6.161 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 6.161 ; 6.161 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 6.134 ; 6.134 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 6.042 ; 6.042 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 6.118 ; 6.118 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 6.093 ; 6.093 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 5.866 ; 5.866 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 6.103 ; 6.103 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 6.097 ; 6.097 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 6.286 ; 6.286 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 6.286 ; 6.286 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 6.137 ; 6.137 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 6.138 ; 6.138 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 6.119 ; 6.119 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 6.098 ; 6.098 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 5.993 ; 5.993 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 6.086 ; 6.086 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 6.111 ; 6.111 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 6.206 ; 6.206 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 5.965 ; 5.965 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 5.966 ; 5.966 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 5.970 ; 5.970 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 6.206 ; 6.206 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 6.067 ; 6.067 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 5.982 ; 5.982 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 6.095 ; 6.095 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 6.087 ; 6.087 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                     ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_octet0[*]  ; Arena_button[0] ; 3.287 ; 3.287 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[0] ; Arena_button[0] ; 3.351 ; 3.351 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[1] ; Arena_button[0] ; 3.368 ; 3.368 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[2] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[3] ; Arena_button[0] ; 3.464 ; 3.464 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[4] ; Arena_button[0] ; 3.337 ; 3.337 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[5] ; Arena_button[0] ; 3.287 ; 3.287 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[6] ; Arena_button[0] ; 3.315 ; 3.315 ; Fall       ; Arena_button[0] ;
-;  Arena_octet0[7] ; Arena_button[0] ; 3.343 ; 3.343 ; Fall       ; Arena_button[0] ;
-; Arena_octet1[*]  ; Arena_button[1] ; 3.245 ; 3.245 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[0] ; Arena_button[1] ; 3.378 ; 3.378 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[1] ; Arena_button[1] ; 3.412 ; 3.412 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[2] ; Arena_button[1] ; 3.381 ; 3.381 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[3] ; Arena_button[1] ; 3.394 ; 3.394 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[4] ; Arena_button[1] ; 3.375 ; 3.375 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[5] ; Arena_button[1] ; 3.245 ; 3.245 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[6] ; Arena_button[1] ; 3.384 ; 3.384 ; Fall       ; Arena_button[1] ;
-;  Arena_octet1[7] ; Arena_button[1] ; 3.379 ; 3.379 ; Fall       ; Arena_button[1] ;
-; Arena_octet2[*]  ; Arena_button[2] ; 3.335 ; 3.335 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[0] ; Arena_button[2] ; 3.466 ; 3.466 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[1] ; Arena_button[2] ; 3.414 ; 3.414 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[2] ; Arena_button[2] ; 3.403 ; 3.403 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[3] ; Arena_button[2] ; 3.393 ; 3.393 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[4] ; Arena_button[2] ; 3.376 ; 3.376 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[5] ; Arena_button[2] ; 3.335 ; 3.335 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[6] ; Arena_button[2] ; 3.365 ; 3.365 ; Fall       ; Arena_button[2] ;
-;  Arena_octet2[7] ; Arena_button[2] ; 3.391 ; 3.391 ; Fall       ; Arena_button[2] ;
-; Arena_octet3[*]  ; Arena_button[3] ; 3.326 ; 3.326 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[0] ; Arena_button[3] ; 3.326 ; 3.326 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[1] ; Arena_button[3] ; 3.329 ; 3.329 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[2] ; Arena_button[3] ; 3.330 ; 3.330 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[3] ; Arena_button[3] ; 3.440 ; 3.440 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[4] ; Arena_button[3] ; 3.350 ; 3.350 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[5] ; Arena_button[3] ; 3.346 ; 3.346 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[6] ; Arena_button[3] ; 3.372 ; 3.372 ; Fall       ; Arena_button[3] ;
-;  Arena_octet3[7] ; Arena_button[3] ; 3.373 ; 3.373 ; Fall       ; Arena_button[3] ;
-+------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------+
+; Minimum Progagation Delay                                        ;
++--------------------+-------------+-------+-------+-------+-------+
+; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------------+-------------+-------+-------+-------+-------+
+; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
+; Arena_Select_Chip  ; Arena_OUT   ; 2.518 ; 2.518 ; 2.518 ; 2.518 ;
+; Arena_Write_Enable ; Arena_OUT   ; 2.701 ; 2.701 ; 2.701 ; 2.701 ;
++--------------------+-------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -1130,10 +252,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 32    ; 32   ;
-; Unconstrained Output Ports      ; 32    ; 32   ;
-; Unconstrained Output Port Paths ; 32    ; 32   ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 3     ; 3    ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 3     ; 3    ;
 +---------------------------------+-------+------+
 
 
@@ -1143,56 +265,48 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Mar 04 18:14:05 2019
+    Info: Processing started: Tue Mar 05 14:27:19 2019
 Info: Command: quartus_sta Arena_16x4_SRAM -c Arena_16x4_SRAM
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 32 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Arena_16x4_SRAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name Arena_button[0] Arena_button[0]
-    Info (332105): create_clock -period 1.000 -name Arena_button[1] Arena_button[1]
-    Info (332105): create_clock -period 1.000 -name Arena_button[2] Arena_button[2]
-    Info (332105): create_clock -period 1.000 -name Arena_button[3] Arena_button[3]
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "DLatch1|inst1~1|datac"
+    Warning (332126): Node "DLatch1|inst1~1|combout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "DLatch0|inst1~1|combout"
+    Warning (332126): Node "DLatch0|inst1~1|datab"
+Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -1.380 Arena_button[0] 
-    Info (332119):    -1.380        -1.380 Arena_button[1] 
-    Info (332119):    -1.380        -1.380 Arena_button[2] 
-    Info (332119):    -1.380        -1.380 Arena_button[3] 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -1.380 Arena_button[0] 
-    Info (332119):    -1.380        -1.380 Arena_button[1] 
-    Info (332119):    -1.380        -1.380 Arena_button[2] 
-    Info (332119):    -1.380        -1.380 Arena_button[3] 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Mon Mar 04 18:14:06 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4558 megabytes
+    Info: Processing ended: Tue Mar 05 14:27:21 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
