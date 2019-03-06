@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Arena_16x4_SRAM
-Tue Mar 05 14:27:21 2019
+Wed Mar 06 14:14:17 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -121,26 +121,148 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------------+
-; Propagation Delay                                                ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
-; Arena_Write_Enable ; Arena_OUT   ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
-+--------------------+-------------+-------+-------+-------+-------+
++--------------------------------------------------------+
+; Propagation Delay                                      ;
++------------+---------------+----+--------+--------+----+
+; Input Port ; Output Port   ; RR ; RF     ; FR     ; FF ;
++------------+---------------+----+--------+--------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 12.147 ; 12.147 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 11.340 ; 11.340 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 11.347 ; 11.347 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 9.559  ; 9.559  ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 11.472 ; 11.472 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 12.251 ; 12.251 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 11.869 ; 11.869 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 11.844 ; 11.844 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 12.097 ; 12.097 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 11.434 ; 11.434 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 11.016 ; 11.016 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 11.574 ; 11.574 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 11.339 ; 11.339 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 11.170 ; 11.170 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 11.795 ; 11.795 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 11.463 ; 11.463 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 12.442 ; 12.442 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 11.501 ; 11.501 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 11.762 ; 11.762 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 11.476 ; 11.476 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 9.220  ; 9.220  ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 11.772 ; 11.772 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 11.232 ; 11.232 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 11.742 ; 11.742 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 12.124 ; 12.124 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 8.665  ; 8.665  ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 12.429 ; 12.429 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 11.622 ; 11.622 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 11.629 ; 11.629 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 9.841  ; 9.841  ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 11.754 ; 11.754 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 12.533 ; 12.533 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 12.151 ; 12.151 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 12.126 ; 12.126 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 12.379 ; 12.379 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 11.716 ; 11.716 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 11.298 ; 11.298 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 11.856 ; 11.856 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 11.621 ; 11.621 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 11.452 ; 11.452 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 12.077 ; 12.077 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 11.745 ; 11.745 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 12.724 ; 12.724 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 11.783 ; 11.783 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 12.044 ; 12.044 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 11.758 ; 11.758 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 9.502  ; 9.502  ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 12.054 ; 12.054 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 11.514 ; 11.514 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 12.024 ; 12.024 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 12.406 ; 12.406 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 8.947  ; 8.947  ;    ;
++------------+---------------+----+--------+--------+----+
 
 
-+------------------------------------------------------------------+
-; Minimum Propagation Delay                                        ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 4.738 ; 4.738 ; 4.738 ; 4.738 ;
-; Arena_Write_Enable ; Arena_OUT   ; 5.142 ; 5.142 ; 5.142 ; 5.142 ;
-+--------------------+-------------+-------+-------+-------+-------+
++--------------------------------------------------------+
+; Minimum Propagation Delay                              ;
++------------+---------------+----+--------+--------+----+
+; Input Port ; Output Port   ; RR ; RF     ; FR     ; FF ;
++------------+---------------+----+--------+--------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 12.147 ; 12.147 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 11.340 ; 11.340 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 11.347 ; 11.347 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 9.559  ; 9.559  ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 11.472 ; 11.472 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 12.251 ; 12.251 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 11.869 ; 11.869 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 11.844 ; 11.844 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 12.097 ; 12.097 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 11.434 ; 11.434 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 11.016 ; 11.016 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 11.574 ; 11.574 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 11.339 ; 11.339 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 11.170 ; 11.170 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 11.795 ; 11.795 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 11.463 ; 11.463 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 12.442 ; 12.442 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 11.501 ; 11.501 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 11.762 ; 11.762 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 11.476 ; 11.476 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 9.220  ; 9.220  ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 11.772 ; 11.772 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 11.232 ; 11.232 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 11.742 ; 11.742 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 12.124 ; 12.124 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 8.665  ; 8.665  ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 12.429 ; 12.429 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 11.622 ; 11.622 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 11.629 ; 11.629 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 9.841  ; 9.841  ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 11.754 ; 11.754 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 12.533 ; 12.533 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 12.151 ; 12.151 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 12.126 ; 12.126 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 12.379 ; 12.379 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 11.716 ; 11.716 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 11.298 ; 11.298 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 11.856 ; 11.856 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 11.621 ; 11.621 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 11.452 ; 11.452 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 12.077 ; 12.077 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 11.745 ; 11.745 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 12.724 ; 12.724 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 11.783 ; 11.783 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 12.044 ; 12.044 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 11.758 ; 11.758 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 9.502  ; 9.502  ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 12.054 ; 12.054 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 11.514 ; 11.514 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 12.024 ; 12.024 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 12.406 ; 12.406 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 8.947  ; 8.947  ;    ;
++------------+---------------+----+--------+--------+----+
 
 
 ----------------------------
@@ -173,26 +295,148 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------------+
-; Propagation Delay                                                ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 3.215 ; 3.215 ; 3.215 ; 3.215 ;
-; Arena_Write_Enable ; Arena_OUT   ; 2.983 ; 2.983 ; 2.983 ; 2.983 ;
-+--------------------+-------------+-------+-------+-------+-------+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+---------------+----+-------+-------+----+
+; Input Port ; Output Port   ; RR ; RF    ; FR    ; FF ;
++------------+---------------+----+-------+-------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 6.711 ; 6.711 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 6.312 ; 6.312 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 6.320 ; 6.320 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 5.363 ; 5.363 ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 6.377 ; 6.377 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 6.802 ; 6.802 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 6.593 ; 6.593 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 6.563 ; 6.563 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 6.620 ; 6.620 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 6.354 ; 6.354 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 6.157 ; 6.157 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 6.485 ; 6.485 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 6.309 ; 6.309 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 6.234 ; 6.234 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 6.367 ; 6.367 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 6.861 ; 6.861 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 6.344 ; 6.344 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 6.549 ; 6.549 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 6.423 ; 6.423 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 5.193 ; 5.193 ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 6.562 ; 6.562 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 6.277 ; 6.277 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 6.522 ; 6.522 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 6.709 ; 6.709 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 4.968 ; 4.968 ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 6.814 ; 6.814 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 6.415 ; 6.415 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 6.423 ; 6.423 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 5.466 ; 5.466 ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 6.480 ; 6.480 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 6.905 ; 6.905 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 6.696 ; 6.696 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 6.666 ; 6.666 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 6.723 ; 6.723 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 6.457 ; 6.457 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 6.260 ; 6.260 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 6.588 ; 6.588 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 6.412 ; 6.412 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 6.337 ; 6.337 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 6.573 ; 6.573 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 6.964 ; 6.964 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 6.447 ; 6.447 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 6.652 ; 6.652 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 6.526 ; 6.526 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 5.296 ; 5.296 ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 6.665 ; 6.665 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 6.380 ; 6.380 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 6.625 ; 6.625 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 6.812 ; 6.812 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 5.071 ; 5.071 ;    ;
++------------+---------------+----+-------+-------+----+
 
 
-+------------------------------------------------------------------+
-; Minimum Propagation Delay                                        ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 2.518 ; 2.518 ; 2.518 ; 2.518 ;
-; Arena_Write_Enable ; Arena_OUT   ; 2.701 ; 2.701 ; 2.701 ; 2.701 ;
-+--------------------+-------------+-------+-------+-------+-------+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+---------------+----+-------+-------+----+
+; Input Port ; Output Port   ; RR ; RF    ; FR    ; FF ;
++------------+---------------+----+-------+-------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 6.711 ; 6.711 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 6.312 ; 6.312 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 6.320 ; 6.320 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 5.363 ; 5.363 ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 6.377 ; 6.377 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 6.802 ; 6.802 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 6.593 ; 6.593 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 6.563 ; 6.563 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 6.620 ; 6.620 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 6.354 ; 6.354 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 6.157 ; 6.157 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 6.485 ; 6.485 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 6.309 ; 6.309 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 6.234 ; 6.234 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 6.367 ; 6.367 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 6.861 ; 6.861 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 6.344 ; 6.344 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 6.549 ; 6.549 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 6.423 ; 6.423 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 5.193 ; 5.193 ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 6.562 ; 6.562 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 6.277 ; 6.277 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 6.522 ; 6.522 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 6.709 ; 6.709 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 4.968 ; 4.968 ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 6.814 ; 6.814 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 6.415 ; 6.415 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 6.423 ; 6.423 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 5.466 ; 5.466 ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 6.480 ; 6.480 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 6.905 ; 6.905 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 6.696 ; 6.696 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 6.666 ; 6.666 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 6.723 ; 6.723 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 6.457 ; 6.457 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 6.260 ; 6.260 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 6.588 ; 6.588 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 6.412 ; 6.412 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 6.337 ; 6.337 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 6.573 ; 6.573 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 6.964 ; 6.964 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 6.447 ; 6.447 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 6.652 ; 6.652 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 6.526 ; 6.526 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 5.296 ; 5.296 ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 6.665 ; 6.665 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 6.380 ; 6.380 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 6.625 ; 6.625 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 6.812 ; 6.812 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 5.071 ; 5.071 ;    ;
++------------+---------------+----+-------+-------+----+
 
 
 +----------------------------------------------------------------------------+
@@ -205,26 +449,148 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+------------------------------------------------------------------+
-; Progagation Delay                                                ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 9.952 ;       ;       ; 9.952 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 6.346 ; 6.346 ; 6.346 ; 6.346 ;
-; Arena_Write_Enable ; Arena_OUT   ; 5.812 ; 5.812 ; 5.812 ; 5.812 ;
-+--------------------+-------------+-------+-------+-------+-------+
++--------------------------------------------------------+
+; Progagation Delay                                      ;
++------------+---------------+----+--------+--------+----+
+; Input Port ; Output Port   ; RR ; RF     ; FR     ; FF ;
++------------+---------------+----+--------+--------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 12.147 ; 12.147 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 11.340 ; 11.340 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 11.347 ; 11.347 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 9.559  ; 9.559  ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 11.472 ; 11.472 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 12.251 ; 12.251 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 11.869 ; 11.869 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 11.844 ; 11.844 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 12.097 ; 12.097 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 11.434 ; 11.434 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 11.016 ; 11.016 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 11.574 ; 11.574 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 11.339 ; 11.339 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 11.170 ; 11.170 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 11.795 ; 11.795 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 11.463 ; 11.463 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 11.939 ; 11.939 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 8.834  ; 8.834  ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 12.442 ; 12.442 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 11.501 ; 11.501 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 11.762 ; 11.762 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 11.476 ; 11.476 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 9.220  ; 9.220  ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 11.772 ; 11.772 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 11.232 ; 11.232 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 11.742 ; 11.742 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 12.124 ; 12.124 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 8.605  ; 8.605  ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 8.665  ; 8.665  ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 12.429 ; 12.429 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 11.622 ; 11.622 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 11.629 ; 11.629 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 9.841  ; 9.841  ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 11.754 ; 11.754 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 12.533 ; 12.533 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 12.151 ; 12.151 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 12.126 ; 12.126 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 12.379 ; 12.379 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 11.716 ; 11.716 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 11.298 ; 11.298 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 11.856 ; 11.856 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 11.621 ; 11.621 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 11.452 ; 11.452 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 12.077 ; 12.077 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 11.745 ; 11.745 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 12.221 ; 12.221 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 9.116  ; 9.116  ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 12.724 ; 12.724 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 11.783 ; 11.783 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 12.044 ; 12.044 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 11.758 ; 11.758 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 9.502  ; 9.502  ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 12.054 ; 12.054 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 11.514 ; 11.514 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 12.024 ; 12.024 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 12.406 ; 12.406 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 8.887  ; 8.887  ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 8.947  ; 8.947  ;    ;
++------------+---------------+----+--------+--------+----+
 
 
-+------------------------------------------------------------------+
-; Minimum Progagation Delay                                        ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Input Port         ; Output Port ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------+-------+-------+-------+-------+
-; Arena_IN           ; Arena_OUT   ; 5.496 ;       ;       ; 5.496 ;
-; Arena_Select_Chip  ; Arena_OUT   ; 2.518 ; 2.518 ; 2.518 ; 2.518 ;
-; Arena_Write_Enable ; Arena_OUT   ; 2.701 ; 2.701 ; 2.701 ; 2.701 ;
-+--------------------+-------------+-------+-------+-------+-------+
++------------------------------------------------------+
+; Minimum Progagation Delay                            ;
++------------+---------------+----+-------+-------+----+
+; Input Port ; Output Port   ; RR ; RF    ; FR    ; FF ;
++------------+---------------+----+-------+-------+----+
+; Arena_CS   ; Arena_OUT[0]  ;    ; 6.711 ; 6.711 ;    ;
+; Arena_CS   ; Arena_OUT[1]  ;    ; 6.312 ; 6.312 ;    ;
+; Arena_CS   ; Arena_OUT[2]  ;    ; 6.320 ; 6.320 ;    ;
+; Arena_CS   ; Arena_OUT[3]  ;    ; 5.363 ; 5.363 ;    ;
+; Arena_CS   ; Arena_OUT[4]  ;    ; 6.377 ; 6.377 ;    ;
+; Arena_CS   ; Arena_OUT[5]  ;    ; 6.802 ; 6.802 ;    ;
+; Arena_CS   ; Arena_OUT[6]  ;    ; 6.593 ; 6.593 ;    ;
+; Arena_CS   ; Arena_OUT[7]  ;    ; 6.563 ; 6.563 ;    ;
+; Arena_CS   ; Arena_OUT[8]  ;    ; 6.620 ; 6.620 ;    ;
+; Arena_CS   ; Arena_OUT[9]  ;    ; 6.354 ; 6.354 ;    ;
+; Arena_CS   ; Arena_OUT[10] ;    ; 6.157 ; 6.157 ;    ;
+; Arena_CS   ; Arena_OUT[11] ;    ; 6.485 ; 6.485 ;    ;
+; Arena_CS   ; Arena_OUT[12] ;    ; 6.309 ; 6.309 ;    ;
+; Arena_CS   ; Arena_OUT[13] ;    ; 6.234 ; 6.234 ;    ;
+; Arena_CS   ; Arena_OUT[14] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_CS   ; Arena_OUT[15] ;    ; 6.367 ; 6.367 ;    ;
+; Arena_CS   ; Arena_OUT[16] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[17] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[18] ;    ; 6.671 ; 6.671 ;    ;
+; Arena_CS   ; Arena_OUT[19] ;    ; 5.010 ; 5.010 ;    ;
+; Arena_CS   ; Arena_OUT[20] ;    ; 6.861 ; 6.861 ;    ;
+; Arena_CS   ; Arena_OUT[21] ;    ; 6.344 ; 6.344 ;    ;
+; Arena_CS   ; Arena_OUT[22] ;    ; 6.549 ; 6.549 ;    ;
+; Arena_CS   ; Arena_OUT[23] ;    ; 6.423 ; 6.423 ;    ;
+; Arena_CS   ; Arena_OUT[24] ;    ; 5.193 ; 5.193 ;    ;
+; Arena_CS   ; Arena_OUT[25] ;    ; 6.562 ; 6.562 ;    ;
+; Arena_CS   ; Arena_OUT[26] ;    ; 6.277 ; 6.277 ;    ;
+; Arena_CS   ; Arena_OUT[27] ;    ; 6.522 ; 6.522 ;    ;
+; Arena_CS   ; Arena_OUT[28] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[29] ;    ; 6.709 ; 6.709 ;    ;
+; Arena_CS   ; Arena_OUT[30] ;    ; 4.908 ; 4.908 ;    ;
+; Arena_CS   ; Arena_OUT[31] ;    ; 4.968 ; 4.968 ;    ;
+; Arena_OE   ; Arena_OUT[0]  ;    ; 6.814 ; 6.814 ;    ;
+; Arena_OE   ; Arena_OUT[1]  ;    ; 6.415 ; 6.415 ;    ;
+; Arena_OE   ; Arena_OUT[2]  ;    ; 6.423 ; 6.423 ;    ;
+; Arena_OE   ; Arena_OUT[3]  ;    ; 5.466 ; 5.466 ;    ;
+; Arena_OE   ; Arena_OUT[4]  ;    ; 6.480 ; 6.480 ;    ;
+; Arena_OE   ; Arena_OUT[5]  ;    ; 6.905 ; 6.905 ;    ;
+; Arena_OE   ; Arena_OUT[6]  ;    ; 6.696 ; 6.696 ;    ;
+; Arena_OE   ; Arena_OUT[7]  ;    ; 6.666 ; 6.666 ;    ;
+; Arena_OE   ; Arena_OUT[8]  ;    ; 6.723 ; 6.723 ;    ;
+; Arena_OE   ; Arena_OUT[9]  ;    ; 6.457 ; 6.457 ;    ;
+; Arena_OE   ; Arena_OUT[10] ;    ; 6.260 ; 6.260 ;    ;
+; Arena_OE   ; Arena_OUT[11] ;    ; 6.588 ; 6.588 ;    ;
+; Arena_OE   ; Arena_OUT[12] ;    ; 6.412 ; 6.412 ;    ;
+; Arena_OE   ; Arena_OUT[13] ;    ; 6.337 ; 6.337 ;    ;
+; Arena_OE   ; Arena_OUT[14] ;    ; 6.573 ; 6.573 ;    ;
+; Arena_OE   ; Arena_OUT[15] ;    ; 6.470 ; 6.470 ;    ;
+; Arena_OE   ; Arena_OUT[16] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[17] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[18] ;    ; 6.774 ; 6.774 ;    ;
+; Arena_OE   ; Arena_OUT[19] ;    ; 5.113 ; 5.113 ;    ;
+; Arena_OE   ; Arena_OUT[20] ;    ; 6.964 ; 6.964 ;    ;
+; Arena_OE   ; Arena_OUT[21] ;    ; 6.447 ; 6.447 ;    ;
+; Arena_OE   ; Arena_OUT[22] ;    ; 6.652 ; 6.652 ;    ;
+; Arena_OE   ; Arena_OUT[23] ;    ; 6.526 ; 6.526 ;    ;
+; Arena_OE   ; Arena_OUT[24] ;    ; 5.296 ; 5.296 ;    ;
+; Arena_OE   ; Arena_OUT[25] ;    ; 6.665 ; 6.665 ;    ;
+; Arena_OE   ; Arena_OUT[26] ;    ; 6.380 ; 6.380 ;    ;
+; Arena_OE   ; Arena_OUT[27] ;    ; 6.625 ; 6.625 ;    ;
+; Arena_OE   ; Arena_OUT[28] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[29] ;    ; 6.812 ; 6.812 ;    ;
+; Arena_OE   ; Arena_OUT[30] ;    ; 5.011 ; 5.011 ;    ;
+; Arena_OE   ; Arena_OUT[31] ;    ; 5.071 ; 5.071 ;    ;
++------------+---------------+----+-------+-------+----+
 
 
 -------------------
@@ -252,10 +618,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 3     ; 3    ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 3     ; 3    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 64    ; 64   ;
+; Unconstrained Output Ports      ; 32    ; 32   ;
+; Unconstrained Output Port Paths ; 64    ; 64   ;
 +---------------------------------+-------+------+
 
 
@@ -265,7 +631,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 05 14:27:19 2019
+    Info: Processing started: Wed Mar 06 14:14:16 2019
 Info: Command: quartus_sta Arena_16x4_SRAM -c Arena_16x4_SRAM
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -274,12 +640,6 @@ Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Arena_16x4_SRAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "DLatch1|inst1~1|datac"
-    Warning (332126): Node "DLatch1|inst1~1|combout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "DLatch0|inst1~1|combout"
-    Warning (332126): Node "DLatch0|inst1~1|datab"
 Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info (332159): No clocks to report
@@ -303,10 +663,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4558 megabytes
-    Info: Processing ended: Tue Mar 05 14:27:21 2019
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4573 megabytes
+    Info: Processing ended: Wed Mar 06 14:14:17 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 
