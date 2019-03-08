@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -144 56 48 72)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
-	(text "Arena_DataIn[3..0]" (rect 5 0 99 12)(font "Arial" ))
+	(text "Arena_DataIn[3..0]" (rect 5 0 98 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 108 12)(pt 133 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -160 88 40 104)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
-	(text "Arena_Address[3..0]" (rect 5 0 106 12)(font "Arial" ))
+	(text "Arena_Address[3..0]" (rect 5 0 105 12)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect -128 120 40 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_WE" (rect 5 0 57 12)(font "Arial" ))
+	(text "Arena_WE" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect -128 152 40 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_CS" (rect 5 0 55 12)(font "Arial" ))
+	(text "Arena_CS" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -91,7 +91,7 @@ applicable agreement for further details.
 	(input)
 	(rect -128 184 40 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_OE" (rect 5 0 55 12)(font "Arial" ))
+	(text "Arena_OE" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,6 +119,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 746 272 802 288))
 )
 (pin
 	(output)
@@ -135,6 +136,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 737 296 793 312))
 )
 (pin
 	(output)
@@ -151,6 +153,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 738 320 802 336))
 )
 (pin
 	(output)
@@ -167,6 +170,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 738 344 802 360))
 )
 (pin
 	(output)
@@ -183,6 +187,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 737 368 801 384))
 )
 (pin
 	(output)
@@ -199,6 +204,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 737 400 801 416))
 )
 (pin
 	(output)
@@ -215,6 +221,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 746 432 810 448))
 )
 (symbol
 	(rect 128 64 400 192)
@@ -267,7 +274,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 136 232 400 408)
+	(rect 144 232 408 408)
 	(text "Arena_Dec_To_Hex" (rect 5 0 102 12)(font "Arial" ))
 	(text "inst1" (rect 8 160 31 172)(font "Arial" ))
 	(port
@@ -329,16 +336,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 248 160))
 	)
-)
-(connector
-	(pt 120 208)
-	(pt 120 264)
-	(bus)
-)
-(connector
-	(pt 136 264)
-	(pt 120 264)
-	(bus)
 )
 (connector
 	(pt 400 96)
@@ -414,36 +411,8 @@ applicable agreement for further details.
 	(pt 40 192)
 )
 (connector
-	(pt 400 280)
-	(pt 400 288)
-)
-(connector
-	(pt 536 296)
-	(pt 536 312)
-)
-(connector
-	(pt 400 296)
-	(pt 536 296)
-)
-(connector
-	(pt 400 264)
-	(pt 560 264)
-)
-(connector
-	(pt 400 288)
-	(pt 552 288)
-)
-(connector
 	(pt 536 312)
 	(pt 552 312)
-)
-(connector
-	(pt 400 312)
-	(pt 504 312)
-)
-(connector
-	(pt 504 312)
-	(pt 504 336)
 )
 (connector
 	(pt 552 336)
@@ -454,34 +423,72 @@ applicable agreement for further details.
 	(pt 488 360)
 )
 (connector
-	(pt 488 360)
-	(pt 488 328)
-)
-(connector
-	(pt 488 328)
-	(pt 400 328)
-)
-(connector
 	(pt 552 392)
 	(pt 472 392)
-)
-(connector
-	(pt 472 392)
-	(pt 472 344)
-)
-(connector
-	(pt 472 344)
-	(pt 400 344)
 )
 (connector
 	(pt 560 424)
 	(pt 432 424)
 )
 (connector
+	(pt 120 208)
+	(pt 120 264)
+	(bus)
+)
+(connector
+	(pt 408 288)
+	(pt 408 280)
+)
+(connector
+	(pt 536 312)
+	(pt 536 296)
+)
+(connector
+	(pt 536 296)
+	(pt 408 296)
+)
+(connector
+	(pt 560 264)
+	(pt 408 264)
+)
+(connector
+	(pt 552 288)
+	(pt 408 288)
+)
+(connector
+	(pt 504 312)
+	(pt 408 312)
+)
+(connector
+	(pt 504 336)
+	(pt 504 312)
+)
+(connector
+	(pt 488 360)
+	(pt 488 328)
+)
+(connector
+	(pt 488 328)
+	(pt 408 328)
+)
+(connector
+	(pt 472 392)
+	(pt 472 344)
+)
+(connector
+	(pt 472 344)
+	(pt 408 344)
+)
+(connector
 	(pt 432 424)
 	(pt 432 360)
 )
 (connector
 	(pt 432 360)
-	(pt 400 360)
+	(pt 408 360)
+)
+(connector
+	(pt 120 264)
+	(pt 144 264)
+	(bus)
 )
