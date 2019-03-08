@@ -1,3 +1,5 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 2 - Spring 2019 Due: 3/13/19
+-- Arena_Dec_To_Hex.vhd
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
@@ -6,8 +8,8 @@ use ieee.std_logic_unsigned.all;
 
 entity Arena_Dec_To_Hex is
 	port(
-		Arena_hexDigit : in std_logic_vector(3 downto 0);
-		Arena_segment_A, Arena_segment_B, Arena_segment_C, 
+		Arena_hexDigit : in std_logic_vector(3 downto 0); -- inputs
+		Arena_segment_A, Arena_segment_B, Arena_segment_C, --outputs of segments 
 		Arena_segment_D, Arena_segment_E, Arena_segment_F, 
 		Arena_segment_G : out std_logic
 		);
@@ -56,7 +58,7 @@ begin
 	end process;
 --extract segment data bits and invert since operates on low
 -- led driver circuit is inverted
-Arena_segment_A <= NOT Arena_segment_data(6);
+Arena_segment_A <= NOT Arena_segment_data(6); --NOT gate cause the segments respond to active low
 Arena_segment_B <= NOT Arena_segment_data(5);
 Arena_segment_C <= NOT Arena_segment_data(4);
 Arena_segment_D <= NOT Arena_segment_data(3);

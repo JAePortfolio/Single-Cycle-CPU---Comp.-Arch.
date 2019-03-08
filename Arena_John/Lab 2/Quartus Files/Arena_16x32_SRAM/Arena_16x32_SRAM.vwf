@@ -403,7 +403,7 @@ TRANSITION_LIST("Arena_button[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -421,7 +421,7 @@ TRANSITION_LIST("Arena_button[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
