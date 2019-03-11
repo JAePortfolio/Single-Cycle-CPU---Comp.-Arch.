@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(input)
 	(rect -424 -216 -240 -200)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "Arena_button[3..0]" (rect 5 0 96 12)(font "Arial" ))
+	(text "Arena_button[3..0]" (rect 5 0 95 12)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -104,7 +104,7 @@ applicable agreement for further details.
 	(input)
 	(rect -456 -160 -256 -144)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
-	(text "Arena_octatlBits[7..0]" (rect 5 0 112 12)(font "Arial" ))
+	(text "Arena_octatlBits[7..0]" (rect 5 0 111 12)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -2682,39 +2682,9 @@ applicable agreement for further details.
 	(pt 32 256)
 )
 (connector
-	(text "Arena_OUT[0]" (rect 383 322 395 391)(font "Arial" )(vertical))
-	(pt 400 304)
-	(pt 400 328)
-)
-(connector
-	(pt 376 328)
-	(pt 400 328)
-	(bus)
-)
-(connector
-	(text "Arena_OUT[1]" (rect 660 335 672 404)(font "Arial" )(vertical))
-	(pt 680 328)
-	(pt 680 304)
-)
-(connector
-	(pt 400 328)
-	(pt 680 328)
-	(bus)
-)
-(connector
 	(pt 680 328)
 	(pt 960 328)
 	(bus)
-)
-(connector
-	(text "Arena_OUT[2]" (rect 943 322 955 391)(font "Arial" )(vertical))
-	(pt 960 328)
-	(pt 960 304)
-)
-(connector
-	(text "Arena_OUT[3]" (rect 1239 330 1251 399)(font "Arial" )(vertical))
-	(pt 1256 304)
-	(pt 1256 328)
 )
 (connector
 	(pt 1312 168)
@@ -3651,11 +3621,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_OUT[4]" (rect 1519 322 1531 391)(font "Arial" )(vertical))
-	(pt 1536 304)
-	(pt 1536 328)
-)
-(connector
 	(pt 1824 152)
 	(pt 1840 152)
 )
@@ -3674,11 +3639,6 @@ applicable agreement for further details.
 (connector
 	(pt 1568 248)
 	(pt 1864 248)
-)
-(connector
-	(text "Arena_OUT[5]" (rect 1823 322 1835 391)(font "Arial" )(vertical))
-	(pt 1840 304)
-	(pt 1840 328)
 )
 (connector
 	(pt 1536 328)
@@ -3711,11 +3671,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_OUT[6]" (rect 2119 330 2131 399)(font "Arial" )(vertical))
-	(pt 2136 312)
-	(pt 2136 328)
-)
-(connector
 	(pt 2424 152)
 	(pt 2440 152)
 )
@@ -3734,11 +3689,6 @@ applicable agreement for further details.
 (connector
 	(pt 2160 248)
 	(pt 2464 248)
-)
-(connector
-	(text "Arena_OUT[7]" (rect 2423 338 2435 407)(font "Arial" )(vertical))
-	(pt 2440 312)
-	(pt 2440 328)
 )
 (connector
 	(pt 2136 328)
@@ -4510,37 +4460,37 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_octet0[1]" (rect 399 89 411 166)(font "Arial" )(vertical))
+	(text "Arena_octet0[1]" (rect 398 88 410 165)(font "Arial" )(vertical))
 	(pt 416 -208)
 	(pt 416 168)
 )
 (connector
-	(text "Arena_octet0[2]" (rect 680 90 692 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[2]" (rect 679 89 691 166)(font "Arial" )(vertical))
 	(pt 696 -208)
 	(pt 696 168)
 )
 (connector
-	(text "Arena_octet0[3]" (rect 960 90 972 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[3]" (rect 959 89 971 166)(font "Arial" )(vertical))
 	(pt 976 -208)
 	(pt 976 168)
 )
 (connector
-	(text "Arena_octet0[4]" (rect 1264 90 1276 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[4]" (rect 1263 89 1275 166)(font "Arial" )(vertical))
 	(pt 1280 -208)
 	(pt 1280 168)
 )
 (connector
-	(text "Arena_octet0[5]" (rect 1552 90 1564 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[5]" (rect 1551 89 1563 166)(font "Arial" )(vertical))
 	(pt 1568 -208)
 	(pt 1568 168)
 )
 (connector
-	(text "Arena_octet0[6]" (rect 1856 90 1868 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[6]" (rect 1855 89 1867 166)(font "Arial" )(vertical))
 	(pt 1872 -208)
 	(pt 1872 168)
 )
 (connector
-	(text "Arena_octet0[7]" (rect 2152 90 2164 167)(font "Arial" )(vertical))
+	(text "Arena_octet0[7]" (rect 2151 89 2163 166)(font "Arial" )(vertical))
 	(pt 2168 -208)
 	(pt 2168 168)
 )
@@ -4835,7 +4785,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_octet0[0]" (rect 121 97 133 174)(font "Arial" )(vertical))
+	(text "Arena_octet0[0]" (rect 122 96 134 173)(font "Arial" )(vertical))
 	(pt 136 -208)
 	(pt 136 168)
 )
@@ -4858,6 +4808,56 @@ applicable agreement for further details.
 	(pt -208 -192)
 	(pt -224 -192)
 	(bus)
+)
+(connector
+	(pt 368 328)
+	(pt 400 328)
+	(bus)
+)
+(connector
+	(pt 400 328)
+	(pt 680 328)
+	(bus)
+)
+(connector
+	(text "Arena_OUT[0]" (rect 379 318 391 387)(font "Arial" )(vertical))
+	(pt 400 304)
+	(pt 400 328)
+)
+(connector
+	(text "Arena_OUT[1]" (rect 657 332 669 401)(font "Arial" )(vertical))
+	(pt 680 328)
+	(pt 680 304)
+)
+(connector
+	(text "Arena_OUT[2]" (rect 940 319 952 388)(font "Arial" )(vertical))
+	(pt 960 328)
+	(pt 960 304)
+)
+(connector
+	(text "Arena_OUT[3]" (rect 1236 327 1248 396)(font "Arial" )(vertical))
+	(pt 1256 304)
+	(pt 1256 328)
+)
+(connector
+	(text "Arena_OUT[4]" (rect 1516 319 1528 388)(font "Arial" )(vertical))
+	(pt 1536 304)
+	(pt 1536 328)
+)
+(connector
+	(text "Arena_OUT[5]" (rect 1820 319 1832 388)(font "Arial" )(vertical))
+	(pt 1840 304)
+	(pt 1840 328)
+)
+(connector
+	(text "Arena_OUT[6]" (rect 2116 327 2128 396)(font "Arial" )(vertical))
+	(pt 2136 312)
+	(pt 2136 328)
+)
+(connector
+	(text "Arena_OUT[7]" (rect 2421 336 2433 405)(font "Arial" )(vertical))
+	(pt 2440 312)
+	(pt 2440 328)
 )
 (junction (pt 440 248))
 (junction (pt 440 96))

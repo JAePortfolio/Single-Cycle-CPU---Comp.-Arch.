@@ -16,7 +16,7 @@ architecture Arena_Arch_32BitDivider of Arena_32BitDivider is
 begin 
 process(Arena_octalBits, Arena_button)
 	begin
-		if (Arena_button(0) = '1') then -- If button0 pressed, take first 8 bits of 32-bit number
+		if (Arena_button(0) = '0') then -- If button0 pressed, take first 8 bits of 32-bit number
             Arena_octet0(0) <= Arena_octalBits(0); -- octalBits are values gotten from switches using pin assignments
             Arena_octet0(1) <= Arena_octalBits(1);
             Arena_octet0(2) <= Arena_octalBits(2);
@@ -29,7 +29,7 @@ process(Arena_octalBits, Arena_button)
 			null;
 		end if;
 			
-		if (Arena_button(1) = '1') then -- If button1 pressed, take 2nd set 8 bits of 32-bit number
+		if (Arena_button(1) = '0') then -- If button1 pressed, take 2nd set 8 bits of 32-bit number
             Arena_octet1(0) <= Arena_octalBits(0);
             Arena_octet1(1) <= Arena_octalBits(1);
             Arena_octet1(2) <= Arena_octalBits(2);
@@ -42,7 +42,7 @@ process(Arena_octalBits, Arena_button)
 			null;
 		end if;
 
-		if (Arena_button(2) = '1') then -- If button2 pressed, take 3rd set 8 bits of 32-bit number
+		if (Arena_button(2) = '0') then -- If button2 pressed, take 3rd set 8 bits of 32-bit number
             Arena_octet2(0) <= Arena_octalBits(0);
             Arena_octet2(1) <= Arena_octalBits(1);
             Arena_octet2(2) <= Arena_octalBits(2);
@@ -55,7 +55,7 @@ process(Arena_octalBits, Arena_button)
 			null;
 		end if;
 			
-		if (Arena_button(3) = '1') then -- If button3 pressed, take 4th set of 8 bits of 32-bit number
+		if (Arena_button(3) = '0') then -- If button3 pressed, take 4th set of 8 bits of 32-bit number
             Arena_octet3(0) <= Arena_octalBits(0);
             Arena_octet3(1) <= Arena_octalBits(1);
             Arena_octet3(2) <= Arena_octalBits(2);

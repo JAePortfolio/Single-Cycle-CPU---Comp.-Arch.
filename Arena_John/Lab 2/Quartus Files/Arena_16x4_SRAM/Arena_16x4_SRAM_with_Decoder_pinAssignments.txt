@@ -10,10 +10,10 @@ Arena_Address[3], PIN_C13
 Arena_CS, PIN_V2
 Arena_OE, PIN_V1 
 Arena_WE, PIN_U4
-Arena_segment_G, PIN_AF10
-Arena_segment_F, PIN_AB12
-Arena_segment_E, PIN_AC12
+Arena_segment_G, PIN_V13
+Arena_segment_F, PIN_V14
+Arena_segment_E, PIN_AE11
 Arena_segment_D, PIN_AD11
-Arena_segment_C, PIN_AE11
-Arena_segment_B, PIN_V14
-Arena_segment_A, PIN_V13
+Arena_segment_C, PIN_AC12
+Arena_segment_B, PIN_AB12
+Arena_segment_A, PIN_AF10

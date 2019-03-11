@@ -2,60 +2,60 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'Arena_Address[0]'
-Slack : -1.626
-TNS   : -313.444
+Type  : Slow Model Setup 'Arena_Adress[0]'
+Slack : -2.037
+TNS   : -364.275
 
-Type  : Slow Model Hold 'Arena_Address[0]'
-Slack : -1.645
-TNS   : -466.746
+Type  : Slow Model Hold 'Arena_Adress[0]'
+Slack : -1.800
+TNS   : -380.639
 
-Type  : Slow Model Minimum Pulse Width 'Arena_Address[0]'
-Slack : -1.380
-TNS   : -1.380
+Type  : Slow Model Minimum Pulse Width 'Arena_Adress[0]'
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Slow Model Minimum Pulse Width 'Arena_button[0]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Slow Model Minimum Pulse Width 'Arena_button[1]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Slow Model Minimum Pulse Width 'Arena_button[2]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Slow Model Minimum Pulse Width 'Arena_button[3]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
-Type  : Fast Model Setup 'Arena_Address[0]'
-Slack : -0.407
-TNS   : -9.704
+Type  : Fast Model Setup 'Arena_Adress[0]'
+Slack : -0.599
+TNS   : -16.111
 
-Type  : Fast Model Hold 'Arena_Address[0]'
-Slack : -0.601
-TNS   : -90.743
+Type  : Fast Model Hold 'Arena_Adress[0]'
+Slack : -0.657
+TNS   : -80.519
 
-Type  : Fast Model Minimum Pulse Width 'Arena_Address[0]'
-Slack : -1.380
-TNS   : -1.380
+Type  : Fast Model Minimum Pulse Width 'Arena_Adress[0]'
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[0]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[1]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[2]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[3]'
-Slack : -1.380
-TNS   : -1.380
+Slack : -1.222
+TNS   : -1.222
 
 ------------------------------------------------------------
