@@ -46,6 +46,18 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_location_assignment PIN_AF14 -to Arena_Address[0]
+set_location_assignment PIN_AD13 -to Arena_Address[1]
+set_location_assignment PIN_AC13 -to Arena_Address[2]
+set_location_assignment PIN_C13 -to Arena_Address[3]
+set_location_assignment PIN_V2 -to Arena_CS
+set_location_assignment PIN_V1 -to Arena_OE
+set_location_assignment PIN_U4 -to Arena_WE
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE ../Arena_4to7Decoder/Arena_Seg8Decoder.vhd
 set_global_assignment -name VHDL_FILE ../Arena_4to7Decoder/Arena_Seg7Decoder.vhd
 set_global_assignment -name VHDL_FILE ../Arena_4to7Decoder/Arena_Seg6Decoder.vhd
@@ -84,73 +96,67 @@ set_global_assignment -name TEXT_FILE ../Arena_DLatch/Arena_DLatch_pinAssignment
 set_global_assignment -name TEXT_FILE ../Arena_SRAM/Arena_SRAM_pinAssignments.txt
 set_global_assignment -name BDF_FILE ../Arena_16x32_SRAM/Arena_16x32_SRAM_withSegmentDisplay.bdf
 set_global_assignment -name TEXT_FILE ../Arena_16x32_SRAM/Arena_16x32_SRAM_withSegmentDisplay_pinAssignment.txt
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16x4_SRAM_with_Decoder.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/Arena_16x4_SRAM_with_Decoder.vwf"
+set_global_assignment -name BDF_FILE Arena_16x4_SRAM_with_SignedDecoder.bdf
+set_global_assignment -name VHDL_FILE ../Arena_4to7Decoder/Arena_Dec_To_Hex_Signed.vhd
+set_global_assignment -name TEXT_FILE Arena_16x4_SRAM_with_SignedDecoder_pinAssignments.txt
+set_location_assignment PIN_N25 -to Arena_DataIn[0]
+set_location_assignment PIN_N26 -to Arena_DataIn[1]
+set_location_assignment PIN_P25 -to Arena_DataIn[2]
+set_location_assignment PIN_AE14 -to Arena_DataIn[3]
+set_location_assignment PIN_B13 -to Arena_signedSwitch
+set_location_assignment PIN_V13 -to Arena_segment_G
+set_location_assignment PIN_V14 -to Arena_segment_F
+set_location_assignment PIN_AE11 -to Arena_segment_E
+set_location_assignment PIN_AD11 -to Arena_segment_D
+set_location_assignment PIN_AC12 -to Arena_segment_C
+set_location_assignment PIN_AB12 -to Arena_segment_B
+set_location_assignment PIN_AF10 -to Arena_segment_A
+set_location_assignment PIN_AB24 -to Arena_signedSegment_G
+set_location_assignment PIN_AA23 -to Arena_signedSegment_F
+set_location_assignment PIN_AA24 -to Arena_signedSegment_E
+set_location_assignment PIN_Y22 -to Arena_signedSegment_D
+set_location_assignment PIN_W21 -to Arena_signedSegment_C
+set_location_assignment PIN_V21 -to Arena_signedSegment_B
+set_location_assignment PIN_V20 -to Arena_signedSegment_A
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_PIN_TO_SLD_NODE_ENTITY_PORT acq_clk -to auto_stp_external_clock_0 -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to Arena_DataIn[0] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to Arena_DataIn[1] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to Arena_DataIn[2] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to Arena_DataIn[3] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to Arena_DataIn[0] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to Arena_DataIn[1] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to Arena_DataIn[2] -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to Arena_DataIn[3] -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=4" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=4" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=33" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=26412" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=13283" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16x4_SRAM_with_SignedDecoder.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/Arena_16x4_SRAM_with_SignedDecoder.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_N25 -to Arena_octalBits[0]
-set_location_assignment PIN_N26 -to Arena_octalBits[1]
-set_location_assignment PIN_P25 -to Arena_octalBits[2]
-set_location_assignment PIN_AE14 -to Arena_octalBits[3]
-set_location_assignment PIN_AF14 -to Arena_octalBits[4]
-set_location_assignment PIN_AD13 -to Arena_octalBits[5]
-set_location_assignment PIN_AC13 -to Arena_octalBits[6]
-set_location_assignment PIN_C13 -to Arena_octalBits[7]
-set_location_assignment PIN_B13 -to Arena_Address[0]
-set_location_assignment PIN_A13 -to Arena_Address[1]
-set_location_assignment PIN_N1 -to Arena_Address[2]
-set_location_assignment PIN_P1 -to Arena_Address[3]
-set_location_assignment PIN_V2 -to Arena_CS
-set_location_assignment PIN_V1 -to Arena_OE
-set_location_assignment PIN_U4 -to Arena_WE
-set_location_assignment PIN_G26 -to Arena_button[0]
-set_location_assignment PIN_N23 -to Arena_button[1]
-set_location_assignment PIN_P23 -to Arena_button[2]
-set_location_assignment PIN_W26 -to Arena_button[3]
-set_location_assignment PIN_AB23 -to Arena_segment6_A
-set_location_assignment PIN_V22 -to Arena_segment6_B
-set_location_assignment PIN_AC25 -to Arena_segment6_C
-set_location_assignment PIN_AC26 -to Arena_segment6_D
-set_location_assignment PIN_AB26 -to Arena_segment6_E
-set_location_assignment PIN_AB25 -to Arena_segment6_F
-set_location_assignment PIN_Y24 -to Arena_segment6_G
-set_location_assignment PIN_Y23 -to Arena_segment5_A
-set_location_assignment PIN_AA25 -to Arena_segment5_B
-set_location_assignment PIN_AA26 -to Arena_segment5_C
-set_location_assignment PIN_Y26 -to Arena_segment5_D
-set_location_assignment PIN_Y25 -to Arena_segment5_E
-set_location_assignment PIN_U22 -to Arena_segment5_F
-set_location_assignment PIN_W24 -to Arena_segment5_G
-set_location_assignment PIN_U9 -to Arena_segment4_A
-set_location_assignment PIN_U1 -to Arena_segment4_B
-set_location_assignment PIN_U2 -to Arena_segment4_C
-set_location_assignment PIN_T4 -to Arena_segment4_D
-set_location_assignment PIN_R7 -to Arena_segment4_E
-set_location_assignment PIN_R6 -to Arena_segment4_F
-set_location_assignment PIN_T3 -to Arena_segment4_G
-set_location_assignment PIN_T2 -to Arena_segment3_A
-set_location_assignment PIN_P6 -to Arena_segment3_B
-set_location_assignment PIN_P7 -to Arena_segment3_C
-set_location_assignment PIN_T9 -to Arena_segment3_D
-set_location_assignment PIN_R5 -to Arena_segment3_E
-set_location_assignment PIN_R4 -to Arena_segment3_F
-set_location_assignment PIN_R3 -to Arena_segment3_G
-set_location_assignment PIN_V20 -to Arena_segment2_A
-set_location_assignment PIN_V21 -to Arena_segment2_B
-set_location_assignment PIN_W21 -to Arena_segment2_C
-set_location_assignment PIN_Y22 -to Arena_segment2_D
-set_location_assignment PIN_AA24 -to Arena_segment2_E
-set_location_assignment PIN_AA23 -to Arena_segment2_F
-set_location_assignment PIN_AB24 -to Arena_segment2_G
-set_location_assignment PIN_AF10 -to Arena_segment1_A
-set_location_assignment PIN_AB12 -to Arena_segment1_B
-set_location_assignment PIN_AC12 -to Arena_segment1_C
-set_location_assignment PIN_AD11 -to Arena_segment1_D
-set_location_assignment PIN_AE11 -to Arena_segment1_E
-set_location_assignment PIN_V14 -to Arena_segment1_F
-set_location_assignment PIN_V13 -to Arena_segment1_G
+set_global_assignment -name SLD_FILE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/output_files/stp1_auto_stripped.stp"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

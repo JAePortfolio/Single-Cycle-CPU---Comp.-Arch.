@@ -1,0 +1,88 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Arena_16x4_SRAM_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to16Decoder/Arena_4to16Decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Arena_4to16Decoder
+# -- Compiling architecture Arena_Arch_4to16Decoder of Arena_4to16Decoder
+# vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to7Decoder/Arena_Dec_To_Hex_Signed.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Arena_Dec_To_Hex_Signed
+# -- Compiling architecture Arena_Arch_Dec_To_Hex_Signed of Arena_Dec_To_Hex_Signed
+# ** Error: C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to7Decoder/Arena_Dec_To_Hex_Signed.vhd(30): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# 
+# ** Error: C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to7Decoder/Arena_Dec_To_Hex_Signed.vhd(66): (vcom-1339) Case statement choices cover only 16 out of 6561 cases.
+# 
+# ** Error: C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to7Decoder/Arena_Dec_To_Hex_Signed.vhd(122): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Arena_16x4_SRAM_run_msim_rtl_vhdl.do line 9
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_4to7Decoder/Arena_Dec_To_He..."
+vsim work.arena_dec_to_hex_signed
+# vsim work.arena_dec_to_hex_signed 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/simulation/modelsim/rtl_work.arena_dec_to_hex_signed' has no architecture.
+# 
+# Error loading design
+vsim work.arena_dec_to_hex_signed
+# vsim work.arena_dec_to_hex_signed 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/simulation/modelsim/rtl_work.arena_dec_to_hex_signed' has no architecture.
+# 
+# Error loading design
+vsim work.arena_dec_to_hex_signed
+# vsim work.arena_dec_to_hex_signed 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 2/Quartus Files/Arena_16x4_SRAM/simulation/modelsim/rtl_work.arena_dec_to_hex_signed' has no architecture.
+# 
+# Error loading design
+wave create -pattern none -portmode in -language vhdl -range 3 0 /arena_dec_to_hex_signed/Arena_hexDigit
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode in -language vhdl /arena_dec_to_hex_signed/Arena_signedSwitch
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_A
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_B
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_C
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_D
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_E
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_F
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_segment_G
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_A
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_B
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_C
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_D
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_E
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_F
+# arena_dec_to_hex_signed
+wave create -pattern none -portmode out -language vhdl /arena_dec_to_hex_signed/Arena_signedSegment_G
+# arena_dec_to_hex_signed
