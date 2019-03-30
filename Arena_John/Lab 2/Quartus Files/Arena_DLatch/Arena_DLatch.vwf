@@ -79,9 +79,9 @@ TRANSITION_LIST("Arena_C")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
+			REPEAT = 4;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
 	}
 }

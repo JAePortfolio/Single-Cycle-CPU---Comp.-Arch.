@@ -1,0 +1,287 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Earena_bitrotationleft
+Z0 w1553613325
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files
+Z4 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationleft.vhd
+Z5 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationleft.vhd
+l0
+L5
+VJJ?B43;3HiCmf@eO3I>Jk1
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1553613325.988000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationleft.vhd|
+Z9 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationleft.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 [<<3?[OJ4FPh@L1bNcE4`0
+!i10b 1
+Aarena_bitrotationleft_arch
+R1
+R2
+DEx4 work 21 arena_bitrotationleft 0 22 JJ?B43;3HiCmf@eO3I>Jk1
+l13
+L12
+V1>Vbna3[gT:RNi??hc4BN3
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 cOaeacYh[NX>NCzRX94B50
+!i10b 1
+Earena_bitrotationright
+Z12 w1553612941
+R1
+R2
+R3
+Z13 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationright.vhd
+Z14 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationright.vhd
+l0
+L5
+VK07o1QHk`5H1a@JV4kc4I0
+R6
+32
+Z15 !s108 1553612944.266000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationright.vhd|
+Z17 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitrotationright.vhd|
+R10
+R11
+!s100 ^g^hVVf9`bYDS0T3C`:2b2
+!i10b 1
+Aarena_bitrotationright_arch
+R1
+R2
+DEx4 work 22 arena_bitrotationright 0 22 K07o1QHk`5H1a@JV4kc4I0
+l13
+L12
+VY>]i8g7<z@i?dCLDbEAcQ1
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 dTD=E9aM>9<UAXDoeaX^G2
+!i10b 1
+Earena_bitshift
+Z18 w1553612191
+R1
+R2
+R3
+Z19 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshiftright.vhd
+Z20 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshiftright.vhd
+l0
+L5
+V>Ak1dLFio=G5?FQORMRf80
+R6
+32
+R10
+R11
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshiftright.vhd|
+Z22 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshiftright.vhd|
+!s100 cCZ`Qb<e3eRD9S5G2m1ng3
+!i10b 1
+!s108 1553612197.391000
+Aarena_bitshift_arch
+R1
+R2
+DEx4 work 14 arena_bitshift 0 22 >Ak1dLFio=G5?FQORMRf80
+l13
+L12
+VWckdR;SMToi@a1]P83RPF0
+R6
+32
+R10
+R11
+FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshift.vhd
+8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshift.vhd
+!s108 1553611803.609000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshift.vhd|
+!s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitshift.vhd|
+!s100 z;]N^Z9I_eELHaDg<=4J:1
+!i10b 1
+Earena_bitshiftright
+Z23 w1553612698
+R1
+R2
+R3
+R19
+R20
+l0
+L5
+VkYViOdWgdU5n7dN?Li4C>3
+R6
+32
+Z24 !s108 1553612701.403000
+R21
+R22
+R10
+R11
+!s100 oOZ<LAP5?FC4H:PQWllFN1
+!i10b 1
+Aarena_bitshiftright_arch
+R1
+R2
+DEx4 work 19 arena_bitshiftright 0 22 kYViOdWgdU5n7dN?Li4C>3
+l13
+L12
+V<@12QfobjBG`WCelGM;T61
+R6
+32
+R24
+R21
+R22
+R10
+R11
+!s100 NOSRz71i>gPPnS4SKnDmC0
+!i10b 1
+Earena_bitwise
+Z25 w1553535141
+R1
+R2
+R3
+Z26 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwise.vhd
+Z27 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwise.vhd
+l0
+L5
+Vf_2HFi@P]j[J30Vf7nJg72
+R6
+32
+Z28 !s108 1553535144.600000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwise.vhd|
+Z30 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwise.vhd|
+R10
+R11
+!s100 F0kaW>6KM>C9OV<AKf?[e3
+!i10b 1
+Aarena_bitwise_arch
+R1
+R2
+DEx4 work 13 arena_bitwise 0 22 f_2HFi@P]j[J30Vf7nJg72
+l13
+L12
+VQ2HANh5Gl4l[mj0Tnh1dP0
+R6
+32
+R28
+R29
+R30
+R10
+R11
+!s100 <dDmi^o3bQ87gL106VlN`0
+!i10b 1
+Earena_bitwisenot
+Z31 w1553614199
+R1
+R2
+R3
+Z32 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisenot.vhd
+Z33 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisenot.vhd
+l0
+L5
+VSeKBmVPkY6A0`9eN>NJo^3
+!s100 >23dc<>[cXFC4H=2NejGI2
+R6
+32
+!i10b 1
+Z34 !s108 1553614202.683000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisenot.vhd|
+Z36 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisenot.vhd|
+R10
+R11
+Aarena_bitwisenot_arch
+R1
+R2
+DEx4 work 16 arena_bitwisenot 0 22 SeKBmVPkY6A0`9eN>NJo^3
+l13
+L12
+VZaQ3AT?iWPZYHAj<>OWNR1
+!s100 [8?l[KZk3CoRfkUQlZM^D1
+R6
+32
+!i10b 1
+R34
+R35
+R36
+R10
+R11
+Earena_bitwiseor
+Z37 w1553613626
+R1
+R2
+R3
+Z38 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwiseor.vhd
+Z39 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwiseor.vhd
+l0
+L5
+VlJ0<EnnAK^gZz@YG`T0AS2
+R6
+32
+Z40 !s108 1553613674.176000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwiseor.vhd|
+Z42 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwiseor.vhd|
+R10
+R11
+!s100 `k^Jm^5e?56:ZST1lmbP81
+!i10b 1
+Aarena_bitwiseor_arch
+R1
+R2
+DEx4 work 15 arena_bitwiseor 0 22 lJ0<EnnAK^gZz@YG`T0AS2
+l13
+L12
+VUoOf:7PMD0TXUb<]HUMmg0
+R6
+32
+R40
+R41
+R42
+R10
+R11
+!s100 Xf4nYVKSoJ`83OW`ARMH13
+!i10b 1
+Earena_bitwisexor
+Z43 w1553613864
+R1
+R2
+R3
+Z44 8C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisexor.vhd
+Z45 FC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisexor.vhd
+l0
+L5
+VNhkDbB7iESHHf?nzL>7W?2
+R6
+32
+Z46 !s108 1553613868.283000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisexor.vhd|
+Z48 !s107 C:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\ModelSim Files\bitwisexor.vhd|
+R10
+R11
+!s100 QKb9C8ZLWT`kY2RCi`H]61
+!i10b 1
+Aarena_bitwisexor_arch
+R1
+R2
+DEx4 work 16 arena_bitwisexor 0 22 NhkDbB7iESHHf?nzL>7W?2
+l13
+L12
+V;7Q0mg6nVDaMLeclAVA402
+R6
+32
+R46
+R47
+R48
+R10
+R11
+!s100 kW_U1JBamUNRM7>f4l=^@1
+!i10b 1

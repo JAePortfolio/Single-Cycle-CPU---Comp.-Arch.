@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\Quartus Files\simulation\qsim
+vArena_bitwiseOperation_decoder
+Z1 !s100 ?7922[Z6FY;:BAACI]LId2
+Z2 Ib?Y9<j];[GP;U0IXf_GJ;2
+Z3 VMc?bd4<VXB^;TmPR^5:RW0
+Z4 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\Quartus Files\simulation\qsim
+Z5 w1553979002
+Z6 8bitwise.vo
+Z7 Fbitwise.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|bitwise.vo|
+Z10 o-work work -O0
+Z11 n@arena_bitwise@operation_decoder
+!i10b 1
+!s85 0
+Z12 !s108 1553979003.367000
+Z13 !s107 bitwise.vo|
+!s101 -O0
+vArena_bitwiseOperation_decoder_vlg_check_tst
+!i10b 1
+Z14 !s100 >TVDO=]>5eT_P2Nl7N:Vf2
+Z15 IMgIFLE0GfILaW_L?gCd4L2
+Z16 V0]a[OK:46Pm>OQ2=mZzTb1
+R4
+Z17 w1553979000
+Z18 8bitwise.vt
+Z19 Fbitwise.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z20 !s108 1553979003.476000
+Z21 !s107 bitwise.vt|
+Z22 !s90 -work|work|bitwise.vt|
+!s101 -O0
+R10
+Z23 n@arena_bitwise@operation_decoder_vlg_check_tst
+vArena_bitwiseOperation_decoder_vlg_sample_tst
+!i10b 1
+Z24 !s100 6MbAd7<jLP_QLUl>P?0g_3
+Z25 I1QkQYBWS`miAi?581D;2m3
+Z26 VHjoc:N_l2RYOHB]4YhglV1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@arena_bitwise@operation_decoder_vlg_sample_tst
+vArena_bitwiseOperation_decoder_vlg_vec_tst
+!i10b 1
+!s100 XQEMEICW`jUQ]Hi9BfYcc0
+I^bfoMC1lD0con[L;nOa962
+Z28 V;`jmBFnoOdiA6AQ><U=BS2
+R4
+R17
+R18
+R19
+Z29 L0 277
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@arena_bitwise@operation_decoder_vlg_vec_tst

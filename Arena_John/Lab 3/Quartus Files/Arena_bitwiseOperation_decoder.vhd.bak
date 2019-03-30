@@ -1,0 +1,11 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 3 - Spring 2019 Due: 4/1/19
+-- Arena_bitwiseOperation_decoder.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_bitwiseOperation_decoder is
+	port(
+		Arena_In: in std_logic_vector(2 downto 0); -- 3 inputs
+		Arena_Out: out std_logic_vector(7 downto 0) -- 8 outputs
+	);
+end Arena_bitwiseOperation_decoder;

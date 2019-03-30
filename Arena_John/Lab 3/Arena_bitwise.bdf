@@ -1,0 +1,434 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect -256 -72 8 8)
+	(text "Arena_bitwiseOperation_decoder" (rect 5 0 164 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_opcode[2..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "Arena_opcode[2..0]" (rect 21 27 116 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "Arena_opSelect[7..0]" (rect 0 0 102 12)(font "Arial" ))
+		(text "Arena_opSelect[7..0]" (rect 157 27 259 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 64))
+	)
+)
+(symbol
+	(rect 88 104 384 184)
+	(text "Arena_bitwisenot" (rect 5 0 87 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_notIN[2..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_a_notIN[2..0]" (rect 21 27 120 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_notSelect" (rect 0 0 80 12)(font "Arial" ))
+		(text "Arena_notSelect" (rect 21 43 101 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_notOUT[2..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "Arena_result_notOUT[2..0]" (rect 165 27 295 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 64))
+	)
+)
+(symbol
+	(rect 488 112 776 224)
+	(text "Arena_bitwiseor" (rect 5 0 81 12)(font "Arial" ))
+	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_orIN[2..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "Arena_a_orIN[2..0]" (rect 21 27 114 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_b_orIN[2..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "Arena_b_orIN[2..0]" (rect 21 43 114 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_xorSelect" (rect 0 0 80 12)(font "Arial" ))
+		(text "Arena_xorSelect" (rect 21 59 101 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "Arena_result_orOUT[2..0]" (rect 0 0 125 12)(font "Arial" ))
+		(text "Arena_result_orOUT[2..0]" (rect 162 27 287 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 96))
+	)
+)
+(symbol
+	(rect 896 104 1200 216)
+	(text "Arena_bitwiseand" (rect 5 0 89 12)(font "Arial" ))
+	(text "inst3" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_andIN[2..0]" (rect 0 0 101 12)(font "Arial" ))
+		(text "Arena_a_andIN[2..0]" (rect 21 27 122 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_b_andIN[2..0]" (rect 0 0 101 12)(font "Arial" ))
+		(text "Arena_b_andIN[2..0]" (rect 21 43 122 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_andSelect" (rect 0 0 82 12)(font "Arial" ))
+		(text "Arena_andSelect" (rect 21 59 103 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Arena_result_andOUT[2..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "Arena_result_andOUT[2..0]" (rect 171 27 304 39)(font "Arial" ))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 96))
+	)
+)
+(symbol
+	(rect 1312 104 1608 216)
+	(text "Arena_bitwisexor" (rect 5 0 87 12)(font "Arial" ))
+	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_xorIN[2..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_a_xorIN[2..0]" (rect 21 27 120 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_b_xorIN[2..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_b_xorIN[2..0]" (rect 21 43 120 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_orSelect" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_orSelect" (rect 21 59 95 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_xorOUT[2..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "Arena_result_xorOUT[2..0]" (rect 165 27 295 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 96))
+	)
+)
+(symbol
+	(rect 88 -240 392 -160)
+	(text "Arena_bitshiftright" (rect 5 0 94 12)(font "Arial" ))
+	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_bsrIN[4..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_a_bsrIN[4..0]" (rect 21 27 120 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_bsrSelect" (rect 0 0 80 12)(font "Arial" ))
+		(text "Arena_bsrSelect" (rect 21 43 101 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "Arena_result_bsrOUT[4..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "Arena_result_bsrOUT[4..0]" (rect 173 27 303 39)(font "Arial" ))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 64))
+	)
+)
+(symbol
+	(rect 488 -240 784 -160)
+	(text "Arena_bitshiftleft" (rect 5 0 89 12)(font "Arial" ))
+	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_bslIN[4..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "Arena_a_bslIN[4..0]" (rect 21 27 118 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_bslSelect" (rect 0 0 79 12)(font "Arial" ))
+		(text "Arena_bslSelect" (rect 21 43 100 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_bslOUT[4..0]" (rect 0 0 129 12)(font "Arial" ))
+		(text "Arena_result_bslOUT[4..0]" (rect 166 27 295 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 64))
+	)
+)
+(symbol
+	(rect 888 -240 1184 -160)
+	(text "Arena_bitrotationright" (rect 5 0 108 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_brrIN[4..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "Arena_a_brrIN[4..0]" (rect 21 27 117 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_brrSelect" (rect 0 0 77 12)(font "Arial" ))
+		(text "Arena_brrSelect" (rect 21 43 98 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_brrOUT[4..0]" (rect 0 0 128 12)(font "Arial" ))
+		(text "Arena_result_brrOUT[4..0]" (rect 167 27 295 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 64))
+	)
+)
+(symbol
+	(rect 1312 -240 1608 -160)
+	(text "Arena_bitrotationleft" (rect 5 0 104 12)(font "Arial" ))
+	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_brlIN[4..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "Arena_a_brlIN[4..0]" (rect 21 27 116 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_brlSelect" (rect 0 0 76 12)(font "Arial" ))
+		(text "Arena_brlSelect" (rect 21 43 97 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_brlOUT[4..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "Arena_result_brlOUT[4..0]" (rect 168 27 295 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 64))
+	)
+)
+(connector
+	(pt 8 -40)
+	(pt 40 -40)
+	(bus)
+)
+(connector
+	(pt 1312 -192)
+	(pt 1280 -192)
+)
+(connector
+	(pt 1280 -304)
+	(pt 1352 -304)
+	(bus)
+)
+(connector
+	(pt 488 -192)
+	(pt 456 -192)
+)
+(connector
+	(pt 40 -304)
+	(pt 456 -304)
+	(bus)
+)
+(connector
+	(pt 40 -192)
+	(pt 40 -304)
+	(bus)
+)
+(connector
+	(pt 40 -192)
+	(pt 40 -40)
+	(bus)
+)
+(connector
+	(pt 1312 168)
+	(pt 1272 168)
+)
+(connector
+	(pt 1272 368)
+	(pt 1344 368)
+	(bus)
+)
+(connector
+	(pt 896 168)
+	(pt 864 168)
+)
+(connector
+	(pt 864 368)
+	(pt 1272 368)
+	(bus)
+)
+(connector
+	(pt 488 176)
+	(pt 456 176)
+)
+(connector
+	(pt 40 368)
+	(pt 456 368)
+	(bus)
+)
+(connector
+	(pt 456 368)
+	(pt 864 368)
+	(bus)
+)
+(connector
+	(pt 40 -40)
+	(pt 40 152)
+	(bus)
+)
+(connector
+	(pt 40 152)
+	(pt 40 368)
+	(bus)
+)
+(connector
+	(text "Arena_opSelect[0]" (rect 40 136 129 148)(font "Arial" ))
+	(pt 88 152)
+	(pt 40 152)
+)
+(connector
+	(text "Arena_opSelect[1]" (rect 440 282 452 371)(font "Arial" )(vertical))
+	(pt 456 176)
+	(pt 456 368)
+)
+(connector
+	(text "Arena_opSelect[2]" (rect 848 282 860 371)(font "Arial" )(vertical))
+	(pt 864 168)
+	(pt 864 368)
+)
+(connector
+	(text "Arena_opSelect[3]" (rect 1256 282 1268 371)(font "Arial" )(vertical))
+	(pt 1272 168)
+	(pt 1272 368)
+)
+(connector
+	(text "Arena_opSelect[4]" (rect 40 -208 129 -196)(font "Arial" ))
+	(pt 88 -192)
+	(pt 40 -192)
+)
+(connector
+	(text "Arena_opSelect[5]" (rect 440 -270 452 -181)(font "Arial" )(vertical))
+	(pt 456 -192)
+	(pt 456 -304)
+)
+(connector
+	(pt 888 -192)
+	(pt 856 -192)
+)
+(connector
+	(pt 456 -304)
+	(pt 856 -304)
+	(bus)
+)
+(connector
+	(pt 856 -304)
+	(pt 1280 -304)
+	(bus)
+)
+(connector
+	(text "Arena_opSelect[6]" (rect 840 -270 852 -181)(font "Arial" )(vertical))
+	(pt 856 -304)
+	(pt 856 -192)
+)
+(connector
+	(text "Arena_opSelect[7]" (rect 1264 -270 1276 -181)(font "Arial" )(vertical))
+	(pt 1280 -192)
+	(pt 1280 -304)
+)
+(junction (pt 1280 -304))
+(junction (pt 456 -304))
+(junction (pt 40 -192))
+(junction (pt 40 -40))
+(junction (pt 1272 368))
+(junction (pt 864 368))
+(junction (pt 456 368))
+(junction (pt 40 152))
+(junction (pt 856 -304))

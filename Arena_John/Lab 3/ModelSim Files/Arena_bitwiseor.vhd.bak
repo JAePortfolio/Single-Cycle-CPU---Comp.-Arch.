@@ -1,0 +1,15 @@
+--John Arena
+Library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_bitwiseor is
+  port(
+    Arena_a_orIN,Arena_b_orIN: in std_logic_vector(2 downto 0);
+    Arena_result_orOUT: out std_logic_vector (2 downto 0)
+);
+end Arena_bitwiseor;
+
+architecture Arena_bitwiseor_arch of Arena_bitwiseor is
+begin
+  Arena_result_orOUT <= Arena_a_orIN or Arena_b_orIN;
+end Arena_bitwiseor_arch;

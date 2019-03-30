@@ -1,0 +1,10 @@
+|Arena_ledReset
+Arena_button => ~NO_FANOUT~
+Arena_ledOUT[0] <= <GND>
+Arena_ledOUT[1] <= <GND>
+Arena_ledOUT[2] <= <GND>
+Arena_ledOUT[3] <= <GND>
+Arena_ledOUT[4] <= <GND>
+Arena_ledOUT[5] <= <GND>
+
+

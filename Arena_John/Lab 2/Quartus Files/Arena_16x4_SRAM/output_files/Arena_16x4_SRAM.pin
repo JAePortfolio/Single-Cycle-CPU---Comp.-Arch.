@@ -103,7 +103,7 @@ VCCA_PLL1                    : AA8       : power  :                   : 1.2V    
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
 GND*                         : AA11      :        :                   :         : 8         :                
-Arena_Adress[1]              : AA12      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AA12      :        :                   :         : 8         :                
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
@@ -114,10 +114,10 @@ VCCA_PLL4                    : AA19      : power  :                   : 1.2V    
 GND*                         : AA20      :        :                   :         : 7         :                
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
-Arena_segment2_F             : AA23      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment2_E             : AA24      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment4_B             : AA25      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment4_C             : AA26      : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AA23      :        :                   :         : 6         :                
+GND*                         : AA24      :        :                   :         : 6         :                
+GND*                         : AA25      :        :                   :         : 6         :                
+GND*                         : AA26      :        :                   :         : 6         :                
 GND*                         : AB1       :        :                   :         : 1         :                
 GND*                         : AB2       :        :                   :         : 1         :                
 GND*                         : AB3       :        :                   :         : 1         :                
@@ -129,7 +129,7 @@ GND*                         : AB8       :        :                   :         
 VCCIO8                       : AB9       : power  :                   : 3.3V    : 8         :                
 GND*                         : AB10      :        :                   :         : 8         :                
 GND                          : AB11      : gnd    :                   :         :           :                
-Arena_segment1_B             : AB12      : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AB12      :        :                   :         : 8         :                
 VCCIO8                       : AB13      : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : AB14      : power  :                   : 3.3V    : 7         :                
 GND*                         : AB15      :        :                   :         : 7         :                
@@ -140,10 +140,10 @@ GND                          : AB19      : gnd    :                   :         
 GND*                         : AB20      :        :                   :         : 7         :                
 GND*                         : AB21      :        :                   :         : 7         :                
 VCCIO7                       : AB22      : power  :                   : 3.3V    : 7         :                
-Arena_segment3_A             : AB23      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment2_G             : AB24      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment3_F             : AB25      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment3_E             : AB26      : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AB23      :        :                   :         : 6         :                
+GND*                         : AB24      :        :                   :         : 6         :                
+GND*                         : AB25      :        :                   :         : 6         :                
+GND*                         : AB26      :        :                   :         : 6         :                
 GND*                         : AC1       :        :                   :         : 1         :                
 GND*                         : AC2       :        :                   :         : 1         :                
 GND*                         : AC3       :        :                   :         : 1         :                
@@ -155,8 +155,8 @@ GND*                         : AC8       :        :                   :         
 GND*                         : AC9       :        :                   :         : 8         :                
 GND*                         : AC10      :        :                   :         : 8         :                
 GND*                         : AC11      :        :                   :         : 8         :                
-Arena_segment1_C             : AC12      : output : 3.3-V LVTTL       :         : 8         : Y              
-Arena_octalBits[6]           : AC13      : input  : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AC12      :        :                   :         : 8         :                
+GND+                         : AC13      :        :                   :         : 8         :                
 GND*                         : AC14      :        :                   :         : 7         :                
 GND*                         : AC15      :        :                   :         : 7         :                
 GND*                         : AC16      :        :                   :         : 7         :                
@@ -168,8 +168,8 @@ GND*                         : AC21      :        :                   :         
 GND*                         : AC22      :        :                   :         : 7         :                
 GND*                         : AC23      :        :                   :         : 6         :                
 NC                           : AC24      :        :                   :         :           :                
-Arena_segment3_C             : AC25      : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment3_D             : AC26      : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : AC25      :        :                   :         : 6         :                
+GND*                         : AC26      :        :                   :         : 6         :                
 VCCIO1                       : AD1       : power  :                   : 3.3V    : 1         :                
 GND*                         : AD2       :        :                   :         : 1         :                
 GND*                         : AD3       :        :                   :         : 1         :                
@@ -180,9 +180,9 @@ GND*                         : AD7       :        :                   :         
 GND*                         : AD8       :        :                   :         : 8         :                
 GND                          : AD9       : gnd    :                   :         :           :                
 GND*                         : AD10      :        :                   :         : 8         :                
-Arena_segment1_D             : AD11      : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AD11      :        :                   :         : 8         :                
 GND*                         : AD12      :        :                   :         : 8         :                
-Arena_octalBits[5]           : AD13      : input  : 3.3-V LVTTL       :         : 8         : Y              
+GND+                         : AD13      :        :                   :         : 8         :                
 GND                          : AD14      : gnd    :                   :         :           :                
 GND*                         : AD15      :        :                   :         : 7         :                
 GND*                         : AD16      :        :                   :         : 7         :                
@@ -205,11 +205,11 @@ GND*                         : AE6       :        :                   :         
 GND*                         : AE7       :        :                   :         : 8         :                
 GND*                         : AE8       :        :                   :         : 8         :                
 GND*                         : AE9       :        :                   :         : 8         :                
-Arena_Adress[0]              : AE10      : input  : 3.3-V LVTTL       :         : 8         : N              
-Arena_segment1_E             : AE11      : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AE10      :        :                   :         : 8         :                
+GND*                         : AE11      :        :                   :         : 8         :                
 GND*                         : AE12      :        :                   :         : 8         :                
 GND*                         : AE13      :        :                   :         : 8         :                
-Arena_octalBits[3]           : AE14      : input  : 3.3-V LVTTL       :         : 7         : Y              
+GND+                         : AE14      :        :                   :         : 7         :                
 GND*                         : AE15      :        :                   :         : 7         :                
 GND*                         : AE16      :        :                   :         : 7         :                
 GND*                         : AE17      :        :                   :         : 7         :                
@@ -230,11 +230,11 @@ GND*                         : AF6       :        :                   :         
 GND*                         : AF7       :        :                   :         : 8         :                
 GND*                         : AF8       :        :                   :         : 8         :                
 GND*                         : AF9       :        :                   :         : 8         :                
-Arena_segment1_A             : AF10      : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : AF10      :        :                   :         : 8         :                
 VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
 GND                          : AF12      : gnd    :                   :         :           :                
 GND*                         : AF13      :        :                   :         : 8         :                
-Arena_octalBits[4]           : AF14      : input  : 3.3-V LVTTL       :         : 7         : Y              
+GND+                         : AF14      :        :                   :         : 7         :                
 GND                          : AF15      : gnd    :                   :         :           :                
 VCCIO7                       : AF16      : power  :                   : 3.3V    : 7         :                
 GND*                         : AF17      :        :                   :         : 7         :                
@@ -256,7 +256,7 @@ GND*                         : B7        :        :                   :         
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
 GND*                         : B10       :        :                   :         : 3         :                
-GND*                         : B11       :        :                   :         : 3         :                
+Arena_Q_NOT                  : B11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B12       :        :                   :         : 3         :                
 GND+                         : B13       :        :                   :         : 4         :                
 GND*                         : B14       :        :                   :         : 4         :                
@@ -282,9 +282,9 @@ GND*                         : C7        :        :                   :         
 GND*                         : C8        :        :                   :         : 3         :                
 GND*                         : C9        :        :                   :         : 3         :                
 GND*                         : C10       :        :                   :         : 3         :                
-GND*                         : C11       :        :                   :         : 3         :                
+Arena_Q                      : C11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : C12       :        :                   :         : 3         :                
-Arena_octalBits[7]           : C13       : input  : 3.3-V LVTTL       :         : 3         : Y              
+Arena_C                      : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C14       : gnd    :                   :         :           :                
 GND*                         : C15       :        :                   :         : 4         :                
 GND*                         : C16       :        :                   :         : 4         :                
@@ -310,7 +310,7 @@ GND*                         : D9        :        :                   :         
 GND*                         : D10       :        :                   :         : 3         :                
 GND*                         : D11       :        :                   :         : 3         :                
 GND*                         : D12       :        :                   :         : 3         :                
-GND+                         : D13       :        :                   :         : 3         :                
+Arena_D                      : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : D14       :        :                   :         : 4         :                
 GND*                         : D15       :        :                   :         : 4         :                
 GND*                         : D16       :        :                   :         : 4         :                
@@ -401,7 +401,7 @@ GND*                         : G22       :        :                   :         
 GND*                         : G23       :        :                   :         : 5         :                
 GND*                         : G24       :        :                   :         : 5         :                
 GND*                         : G25       :        :                   :         : 5         :                
-Arena_button[0]              : G26       : input  : 3.3-V LVTTL       :         : 5         : Y              
+GND*                         : G26       :        :                   :         : 5         :                
 GND*                         : H1        :        :                   :         : 2         :                
 GND*                         : H2        :        :                   :         : 2         :                
 GND*                         : H3        :        :                   :         : 2         :                
@@ -437,8 +437,8 @@ GND*                         : J6        :        :                   :         
 GND*                         : J7        :        :                   :         : 2         :                
 GND*                         : J8        :        :                   :         : 2         :                
 GND*                         : J9        :        :                   :         : 3         :                
-Arena_Adress[3]              : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
-Arena_Adress[2]              : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : J10       :        :                   :         : 3         :                
+GND*                         : J11       :        :                   :         : 3         :                
 VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
 GND*                         : J13       :        :                   :         : 3         :                
 GND*                         : J14       :        :                   :         : 3         :                
@@ -481,14 +481,14 @@ GND*                         : K24       :        :                   :         
 GND*                         : K25       :        :                   :         : 5         :                
 GND*                         : K26       :        :                   :         : 5         :                
 VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
-Arena_segment8_B             : L2        : output : 3.3-V LVTTL       :         : 2         : Y              
-Arena_segment8_A             : L3        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : L2        :        :                   :         : 2         :                
+GND*                         : L3        :        :                   :         : 2         :                
 GND*                         : L4        :        :                   :         : 2         :                
 GND                          : L5        : gnd    :                   :         :           :                
-Arena_segment8_D             : L6        : output : 3.3-V LVTTL       :         : 2         : Y              
-Arena_segment8_E             : L7        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : L6        :        :                   :         : 2         :                
+GND*                         : L7        :        :                   :         : 2         :                
 altera_reserved_tms          : L8        : input  : 3.3-V LVTTL       :         : 2         : N              
-Arena_segment8_C             : L9        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : L9        :        :                   :         : 2         :                
 GND*                         : L10       :        :                   :         : 2         :                
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
@@ -507,10 +507,10 @@ GND*                         : L24       :        :                   :         
 GND*                         : L25       :        :                   :         : 5         :                
 VCCIO5                       : L26       : power  :                   : 3.3V    : 5         :                
 GND                          : M1        : gnd    :                   :         :           :                
-Arena_segment7_D             : M2        : output : 3.3-V LVTTL       :         : 2         : Y              
-Arena_segment7_E             : M3        : output : 3.3-V LVTTL       :         : 2         : Y              
-Arena_segment7_G             : M4        : output : 3.3-V LVTTL       :         : 2         : Y              
-Arena_segment7_F             : M5        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : M2        :        :                   :         : 2         :                
+GND*                         : M3        :        :                   :         : 2         :                
+GND*                         : M4        :        :                   :         : 2         :                
+GND*                         : M5        :        :                   :         : 2         :                
 altera_reserved_tck          : M6        : input  : 3.3-V LVTTL       :         : 2         : N              
 altera_reserved_tdo          : M7        : output : 3.3-V LVTTL       :         : 2         : N              
 altera_reserved_tdi          : M8        : input  : 3.3-V LVTTL       :         : 2         : N              
@@ -540,7 +540,7 @@ VCCIO2                       : N5        : power  :                   : 3.3V    
 DCLK                         : N6        :        :                   :         : 2         :                
 nCONFIG                      : N7        :        :                   :         : 2         :                
 GND                          : N8        : gnd    :                   :         :           :                
-Arena_segment8_G             : N9        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : N9        :        :                   :         : 2         :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 GND                          : N12       : gnd    :                   :         :           :                
@@ -554,19 +554,19 @@ GND                          : N19       : gnd    :                   :         
 GND*                         : N20       :        :                   :         : 5         :                
 NC                           : N21       :        :                   :         :           :                
 VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
-Arena_button[1]              : N23       : input  : 3.3-V LVTTL       :         : 5         : Y              
+GND*                         : N23       :        :                   :         : 5         :                
 GND*                         : N24       :        :                   :         : 5         :                
-Arena_octalBits[0]           : N25       : input  : 3.3-V LVTTL       :         : 5         : Y              
-Arena_octalBits[1]           : N26       : input  : 3.3-V LVTTL       :         : 5         : Y              
+GND+                         : N25       :        :                   :         : 5         :                
+GND+                         : N26       :        :                   :         : 5         :                
 GND+                         : P1        :        :                   :         : 1         :                
 auto_stp_external_clock_0    : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
-Arena_segment7_C             : P3        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment7_B             : P4        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : P3        :        :                   :         : 1         :                
+GND*                         : P4        :        :                   :         : 1         :                
 VCCIO1                       : P5        : power  :                   : 3.3V    : 1         :                
-Arena_segment6_B             : P6        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment6_C             : P7        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : P6        :        :                   :         : 1         :                
+GND*                         : P7        :        :                   :         : 1         :                
 GND                          : P8        : gnd    :                   :         :           :                
-Arena_segment8_F             : P9        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : P9        :        :                   :         : 2         :                
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 GND                          : P11       : gnd    :                   :         :           :                
 GND                          : P12       : gnd    :                   :         :           :                
@@ -580,17 +580,17 @@ GND                          : P19       : gnd    :                   :         
 MSEL0                        : P20       :        :                   :         : 6         :                
 MSEL1                        : P21       :        :                   :         : 6         :                
 VCCIO6                       : P22       : power  :                   : 3.3V    : 6         :                
-Arena_button[2]              : P23       : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : P23       :        :                   :         : 6         :                
 GND*                         : P24       :        :                   :         : 6         :                
-Arena_octalBits[2]           : P25       : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND+                         : P25       :        :                   :         : 6         :                
 GND+                         : P26       :        :                   :         : 6         :                
 GND                          : R1        : gnd    :                   :         :           :                
-Arena_segment7_A             : R2        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment6_G             : R3        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment6_F             : R4        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment6_E             : R5        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment5_F             : R6        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment5_E             : R7        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : R2        :        :                   :         : 1         :                
+GND*                         : R3        :        :                   :         : 1         :                
+GND*                         : R4        :        :                   :         : 1         :                
+GND*                         : R5        :        :                   :         : 1         :                
+GND*                         : R6        :        :                   :         : 1         :                
+GND*                         : R7        :        :                   :         : 1         :                
 GND*                         : R8        :        :                   :         : 1         :                
 VCCIO1                       : R9        : power  :                   : 3.3V    : 1         :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -611,14 +611,14 @@ GND*                         : R24       :        :                   :         
 GND*                         : R25       :        :                   :         : 6         :                
 GND                          : R26       : gnd    :                   :         :           :                
 VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
-Arena_segment6_A             : T2        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment5_G             : T3        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment5_D             : T4        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : T2        :        :                   :         : 1         :                
+GND*                         : T3        :        :                   :         : 1         :                
+GND*                         : T4        :        :                   :         : 1         :                
 GND                          : T5        : gnd    :                   :         :           :                
 GND*                         : T6        :        :                   :         : 1         :                
 GND*                         : T7        :        :                   :         : 1         :                
 GND*                         : T8        :        :                   :         : 1         :                
-Arena_segment6_D             : T9        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : T9        :        :                   :         : 1         :                
 GND*                         : T10       :        :                   :         : 1         :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
 GND                          : T12       : gnd    :                   :         :           :                
@@ -636,15 +636,15 @@ GND*                         : T23       :        :                   :         
 GND*                         : T24       :        :                   :         : 6         :                
 GND*                         : T25       :        :                   :         : 6         :                
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
-Arena_segment5_B             : U1        : output : 3.3-V LVTTL       :         : 1         : Y              
-Arena_segment5_C             : U2        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : U1        :        :                   :         : 1         :                
+GND*                         : U2        :        :                   :         : 1         :                
 GND*                         : U3        :        :                   :         : 1         :                
-Arena_WE                     : U4        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : U4        :        :                   :         : 1         :                
 GND*                         : U5        :        :                   :         : 1         :                
 GND*                         : U6        :        :                   :         : 1         :                
 GND*                         : U7        :        :                   :         : 1         :                
 GND                          : U8        : gnd    :                   :         :           :                
-Arena_segment5_A             : U9        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : U9        :        :                   :         : 1         :                
 GND*                         : U10       :        :                   :         : 1         :                
 VCCINT                       : U11       : power  :                   : 1.2V    :           :                
 GND*                         : U12       :        :                   :         : 8         :                
@@ -657,13 +657,13 @@ GND*                         : U18       :        :                   :         
 GND                          : U19       : gnd    :                   :         :           :                
 GND*                         : U20       :        :                   :         : 6         :                
 GND*                         : U21       :        :                   :         : 6         :                
-Arena_segment4_F             : U22       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : U22       :        :                   :         : 6         :                
 GND*                         : U23       :        :                   :         : 6         :                
 GND*                         : U24       :        :                   :         : 6         :                
 GND*                         : U25       :        :                   :         : 6         :                
 GND*                         : U26       :        :                   :         : 6         :                
-Arena_OE                     : V1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Arena_CS                     : V2        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : V1        :        :                   :         : 1         :                
+GND*                         : V2        :        :                   :         : 1         :                
 GND*                         : V3        :        :                   :         : 1         :                
 GND*                         : V4        :        :                   :         : 1         :                
 GND*                         : V5        :        :                   :         : 1         :                
@@ -674,16 +674,16 @@ GND*                         : V9        :        :                   :         
 GND*                         : V10       :        :                   :         : 8         :                
 GND*                         : V11       :        :                   :         : 8         :                
 VCCIO8                       : V12       : power  :                   : 3.3V    : 8         :                
-Arena_segment1_G             : V13       : output : 3.3-V LVTTL       :         : 8         : Y              
-Arena_segment1_F             : V14       : output : 3.3-V LVTTL       :         : 8         : Y              
+GND*                         : V13       :        :                   :         : 8         :                
+GND*                         : V14       :        :                   :         : 8         :                
 VCCIO7                       : V15       : power  :                   : 3.3V    : 7         :                
 VCCINT                       : V16       : power  :                   : 1.2V    :           :                
 GND*                         : V17       :        :                   :         : 7         :                
 GND*                         : V18       :        :                   :         : 7         :                
 VCCIO6                       : V19       : power  :                   : 3.3V    : 6         :                
-Arena_segment2_A             : V20       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment2_B             : V21       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment3_B             : V22       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : V20       :        :                   :         : 6         :                
+GND*                         : V21       :        :                   :         : 6         :                
+GND*                         : V22       :        :                   :         : 6         :                
 GND*                         : V23       :        :                   :         : 6         :                
 GND*                         : V24       :        :                   :         : 6         :                
 GND*                         : V25       :        :                   :         : 6         :                
@@ -708,12 +708,12 @@ GND*                         : W17       :        :                   :         
 VCCIO7                       : W18       : power  :                   : 3.3V    : 7         :                
 GND*                         : W19       :        :                   :         : 7         :                
 GND_PLL4                     : W20       : gnd    :                   :         :           :                
-Arena_segment2_C             : W21       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : W21       :        :                   :         : 6         :                
 GND                          : W22       : gnd    :                   :         :           :                
 GND*                         : W23       :        :                   :         : 6         :                
-Arena_segment4_G             : W24       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : W24       :        :                   :         : 6         :                
 GND*                         : W25       :        :                   :         : 6         :                
-Arena_button[3]              : W26       : input  : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : W26       :        :                   :         : 6         :                
 GND*                         : Y1        :        :                   :         : 1         :                
 NC                           : Y2        :        :                   :         :           :                
 GND*                         : Y3        :        :                   :         : 1         :                
@@ -735,8 +735,8 @@ GND*                         : Y18       :        :                   :         
 GNDA_PLL4                    : Y19       : gnd    :                   :         :           :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 GND*                         : Y21       :        :                   :         : 6         :                
-Arena_segment2_D             : Y22       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment4_A             : Y23       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment3_G             : Y24       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment4_E             : Y25       : output : 3.3-V LVTTL       :         : 6         : Y              
-Arena_segment4_D             : Y26       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : Y22       :        :                   :         : 6         :                
+GND*                         : Y23       :        :                   :         : 6         :                
+GND*                         : Y24       :        :                   :         : 6         :                
+GND*                         : Y25       :        :                   :         : 6         :                
+GND*                         : Y26       :        :                   :         : 6         :                
