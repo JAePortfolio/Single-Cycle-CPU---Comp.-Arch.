@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -688 -64 -512 -48)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Arena_opcode[2]" (rect 5 0 88 12)(font "Arial" ))
+	(text "Arena_opcode[2]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect -688 -24 -512 -8)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Arena_opcode[1]" (rect 5 0 88 12)(font "Arial" ))
+	(text "Arena_opcode[1]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect -688 16 -512 32)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Arena_opcode[0]" (rect 5 0 88 12)(font "Arial" ))
+	(text "Arena_opcode[0]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect -632 184 -464 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_button" (rect 5 0 70 12)(font "Arial" ))
+	(text "Arena_button" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -82,6 +82,22 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -496 -176 -312 -160)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "Arena_buttonStart" (rect 5 0 94 12)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -155,7 +171,7 @@ applicable agreement for further details.
 	(output)
 	(rect 352 208 368 416)
 	(text "OUTPUT" (rect 0 169 10 207)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_resultnotOUT[1]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_resultnotOUT[1]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 208)
 	(drawing
 		(line (pt 8 208)(pt 8 156))
@@ -189,7 +205,7 @@ applicable agreement for further details.
 	(output)
 	(rect 184 224 200 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[0]" (rect 1 5 13 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[0]" (rect 1 5 13 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -206,7 +222,7 @@ applicable agreement for further details.
 	(output)
 	(rect 152 224 168 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[1]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[1]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -223,7 +239,7 @@ applicable agreement for further details.
 	(output)
 	(rect 120 224 136 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[2]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[2]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -240,7 +256,7 @@ applicable agreement for further details.
 	(output)
 	(rect 88 224 104 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[3]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[3]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -257,7 +273,7 @@ applicable agreement for further details.
 	(output)
 	(rect 56 224 72 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[4]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[4]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -274,7 +290,7 @@ applicable agreement for further details.
 	(output)
 	(rect 24 224 40 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_notIN[5]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_notIN[5]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1141,7 +1157,7 @@ applicable agreement for further details.
 	(output)
 	(rect 568 232 584 416)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_orIN[1]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_a_orIN[1]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1158,7 +1174,7 @@ applicable agreement for further details.
 	(output)
 	(rect 600 232 616 416)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_orIN[0]" (rect 1 5 13 86)(font "Arial" )(vertical))
+	(text "Arena_a_orIN[0]" (rect 1 5 13 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1175,7 +1191,7 @@ applicable agreement for further details.
 	(output)
 	(rect 640 200 656 416)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[5]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[5]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1192,7 +1208,7 @@ applicable agreement for further details.
 	(output)
 	(rect 672 200 688 416)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[4]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[4]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1209,7 +1225,7 @@ applicable agreement for further details.
 	(output)
 	(rect 704 200 720 416)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[3]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[3]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1226,7 +1242,7 @@ applicable agreement for further details.
 	(output)
 	(rect 736 208 752 416)
 	(text "OUTPUT" (rect 0 169 10 207)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[2]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[2]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 208)
 	(drawing
 		(line (pt 8 208)(pt 8 156))
@@ -1243,7 +1259,7 @@ applicable agreement for further details.
 	(output)
 	(rect 768 208 784 416)
 	(text "OUTPUT" (rect 0 169 10 207)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[1]" (rect 0 5 12 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[1]" (rect 0 5 12 117)(font "Arial" )(vertical))
 	(pt 8 208)
 	(drawing
 		(line (pt 8 208)(pt 8 156))
@@ -1260,7 +1276,7 @@ applicable agreement for further details.
 	(output)
 	(rect 800 208 816 416)
 	(text "OUTPUT" (rect 0 169 10 207)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_orOUT[0]" (rect 1 5 13 118)(font "Arial" )(vertical))
+	(text "Arena_result_orOUT[0]" (rect 1 5 13 117)(font "Arial" )(vertical))
 	(pt 8 208)
 	(drawing
 		(line (pt 8 208)(pt 8 156))
@@ -1277,7 +1293,7 @@ applicable agreement for further details.
 	(output)
 	(rect 472 -144 488 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[4]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[4]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1294,7 +1310,7 @@ applicable agreement for further details.
 	(output)
 	(rect 504 -144 520 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[3]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[3]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1311,7 +1327,7 @@ applicable agreement for further details.
 	(output)
 	(rect 536 -144 552 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[2]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[2]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1328,7 +1344,7 @@ applicable agreement for further details.
 	(output)
 	(rect 568 -144 584 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[1]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[1]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1345,7 +1361,7 @@ applicable agreement for further details.
 	(output)
 	(rect 600 -144 616 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[0]" (rect 1 5 13 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[0]" (rect 1 5 13 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1362,7 +1378,7 @@ applicable agreement for further details.
 	(output)
 	(rect 880 -144 896 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[5]" (rect 1 5 13 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[5]" (rect 1 5 13 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1379,7 +1395,7 @@ applicable agreement for further details.
 	(output)
 	(rect 912 -144 928 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[4]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[4]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1396,7 +1412,7 @@ applicable agreement for further details.
 	(output)
 	(rect 944 -144 960 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[3]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[3]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1413,7 +1429,7 @@ applicable agreement for further details.
 	(output)
 	(rect 976 -144 992 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[2]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[2]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1430,7 +1446,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1008 -144 1024 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[1]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[1]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1447,7 +1463,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1040 -144 1056 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_andIN[0]" (rect 1 5 13 94)(font "Arial" )(vertical))
+	(text "Arena_b_andIN[0]" (rect 1 5 13 93)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1464,7 +1480,7 @@ applicable agreement for further details.
 	(output)
 	(rect 864 216 880 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[5]" (rect 1 5 13 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[5]" (rect 1 5 13 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1481,7 +1497,7 @@ applicable agreement for further details.
 	(output)
 	(rect 896 216 912 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[4]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[4]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1498,7 +1514,7 @@ applicable agreement for further details.
 	(output)
 	(rect 928 216 944 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[3]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[3]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1515,7 +1531,7 @@ applicable agreement for further details.
 	(output)
 	(rect 960 216 976 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[2]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[2]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1532,7 +1548,7 @@ applicable agreement for further details.
 	(output)
 	(rect 992 216 1008 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[1]" (rect 0 5 12 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[1]" (rect 0 5 12 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1549,7 +1565,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1024 216 1040 408)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_andIN[0]" (rect 1 5 13 94)(font "Arial" )(vertical))
+	(text "Arena_a_andIN[0]" (rect 1 5 13 93)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1566,7 +1582,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1072 192 1088 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[5]" (rect 1 5 13 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[5]" (rect 1 5 13 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1583,7 +1599,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1104 192 1120 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[4]" (rect 0 5 12 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[4]" (rect 0 5 12 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1600,7 +1616,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1136 192 1152 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[3]" (rect 0 5 12 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[3]" (rect 0 5 12 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1617,7 +1633,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1168 192 1184 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[2]" (rect 0 5 12 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[2]" (rect 0 5 12 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1634,7 +1650,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1200 192 1216 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[1]" (rect 0 5 12 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[1]" (rect 0 5 12 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1651,7 +1667,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1232 192 1248 408)
 	(text "OUTPUT" (rect 0 177 10 215)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_result_andOUT[0]" (rect 1 5 13 126)(font "Arial" )(vertical))
+	(text "Arena_result_andOUT[0]" (rect 1 5 13 125)(font "Arial" )(vertical))
 	(pt 8 216)
 	(drawing
 		(line (pt 8 216)(pt 8 164))
@@ -1668,7 +1684,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1296 224 1312 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[5]" (rect 1 5 13 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[5]" (rect 1 5 13 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1685,7 +1701,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1328 224 1344 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[4]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[4]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1702,7 +1718,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1360 224 1376 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[3]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[3]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1719,7 +1735,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1392 224 1408 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[2]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[2]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1736,7 +1752,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1424 224 1440 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[1]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[1]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1753,7 +1769,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1456 224 1472 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_xorIN[0]" (rect 1 5 13 92)(font "Arial" )(vertical))
+	(text "Arena_a_xorIN[0]" (rect 1 5 13 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1770,7 +1786,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1296 -136 1312 48)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[5]" (rect 1 5 13 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[5]" (rect 1 5 13 91)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -1787,7 +1803,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1328 -144 1344 48)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[4]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[4]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1804,7 +1820,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1360 -144 1376 48)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[3]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[3]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1821,7 +1837,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1392 -144 1408 48)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[2]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[2]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1838,7 +1854,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1424 -144 1440 48)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[1]" (rect 0 5 12 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[1]" (rect 0 5 12 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1855,7 +1871,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1456 -144 1472 48)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN[0]" (rect 1 5 13 92)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN[0]" (rect 1 5 13 91)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1872,7 +1888,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1536 224 1552 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN63[5]" (rect 1 5 13 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN63[5]" (rect 1 5 13 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1889,7 +1905,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1568 224 1584 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN64[4]" (rect 0 5 12 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN64[4]" (rect 0 5 12 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1906,7 +1922,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1600 224 1616 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN65[3]" (rect 0 5 12 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN65[3]" (rect 0 5 12 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1923,7 +1939,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1632 224 1648 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN66[2]" (rect 0 5 12 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN66[2]" (rect 0 5 12 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1940,7 +1956,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1664 224 1680 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN67[1]" (rect 0 5 12 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN67[1]" (rect 0 5 12 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -1957,7 +1973,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1696 224 1712 416)
 	(text "OUTPUT" (rect 0 153 10 191)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_xorIN68[0]" (rect 1 5 13 103)(font "Arial" )(vertical))
+	(text "Arena_b_xorIN68[0]" (rect 1 5 13 102)(font "Arial" )(vertical))
 	(pt 8 192)
 	(drawing
 		(line (pt 8 192)(pt 8 140))
@@ -2093,7 +2109,7 @@ applicable agreement for further details.
 	(output)
 	(rect 440 232 456 416)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_a_orIN[5]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_a_orIN[5]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -2110,7 +2126,7 @@ applicable agreement for further details.
 	(output)
 	(rect 440 -144 456 40)
 	(text "OUTPUT" (rect 0 145 10 183)(font "Arial" (font_size 6))(vertical))
-	(text "Arena_b_orIN[5]" (rect 0 5 12 86)(font "Arial" )(vertical))
+	(text "Arena_b_orIN[5]" (rect 0 5 12 85)(font "Arial" )(vertical))
 	(pt 8 184)
 	(drawing
 		(line (pt 8 184)(pt 8 132))
@@ -2122,28 +2138,6 @@ applicable agreement for further details.
 		(line (pt 12 106)(pt 8 102))
 	)
 	(rotate90)
-)
-(symbol
-	(rect -352 -64 -88 16)
-	(text "Arena_bitwiseOperation_decoder" (rect 5 0 164 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Arena_opcode[2..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "Arena_opcode[2..0]" (rect 21 27 116 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 264 32)
-		(output)
-		(text "Arena_opSelect[7..0]" (rect 0 0 102 12)(font "Arial" ))
-		(text "Arena_opSelect[7..0]" (rect 157 27 243 39)(font "Arial" ))
-		(line (pt 264 32)(pt 248 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 248 64))
-	)
 )
 (symbol
 	(rect 88 552 384 632)
@@ -2167,47 +2161,11 @@ applicable agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "Arena_result_notOUT[5..0]" (rect 0 0 130 12)(font "Arial" ))
-		(text "Arena_result_notOUT[5..0]" (rect 165 27 275 39)(font "Arial" ))
+		(text "Arena_result_notOUT[5..0]" (rect 165 27 295 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 280 64))
-	)
-)
-(symbol
-	(rect 488 560 776 672)
-	(text "Arena_bitwiseor" (rect 5 0 81 12)(font "Arial" ))
-	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Arena_a_orIN[5..0]" (rect 0 0 93 12)(font "Arial" ))
-		(text "Arena_a_orIN[5..0]" (rect 21 27 114 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Arena_b_orIN[5..0]" (rect 0 0 93 12)(font "Arial" ))
-		(text "Arena_b_orIN[5..0]" (rect 21 43 114 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Arena_xorSelect" (rect 0 0 80 12)(font "Arial" ))
-		(text "Arena_xorSelect" (rect 21 59 101 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 288 32)
-		(output)
-		(text "Arena_result_orOUT[5..0]" (rect 0 0 125 12)(font "Arial" ))
-		(text "Arena_result_orOUT[5..0]" (rect 162 27 267 39)(font "Arial" ))
-		(line (pt 288 32)(pt 272 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 272 96))
 	)
 )
 (symbol
@@ -2239,47 +2197,11 @@ applicable agreement for further details.
 		(pt 304 32)
 		(output)
 		(text "Arena_result_andOUT[5..0]" (rect 0 0 133 12)(font "Arial" ))
-		(text "Arena_result_andOUT[5..0]" (rect 171 27 283 39)(font "Arial" ))
+		(text "Arena_result_andOUT[5..0]" (rect 171 27 304 39)(font "Arial" ))
 		(line (pt 304 32)(pt 288 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 288 96))
-	)
-)
-(symbol
-	(rect 1312 552 1608 664)
-	(text "Arena_bitwisexor" (rect 5 0 87 12)(font "Arial" ))
-	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Arena_a_xorIN[5..0]" (rect 0 0 99 12)(font "Arial" ))
-		(text "Arena_a_xorIN[5..0]" (rect 21 27 120 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Arena_b_xorIN[5..0]" (rect 0 0 99 12)(font "Arial" ))
-		(text "Arena_b_xorIN[5..0]" (rect 21 43 120 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Arena_orSelect" (rect 0 0 74 12)(font "Arial" ))
-		(text "Arena_orSelect" (rect 21 59 95 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 296 32)
-		(output)
-		(text "Arena_result_xorOUT[5..0]" (rect 0 0 130 12)(font "Arial" ))
-		(text "Arena_result_xorOUT[5..0]" (rect 165 27 275 39)(font "Arial" ))
-		(line (pt 296 32)(pt 280 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 280 96))
 	)
 )
 (symbol
@@ -2304,7 +2226,7 @@ applicable agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "Arena_result_bsrOUT[5..0]" (rect 0 0 130 12)(font "Arial" ))
-		(text "Arena_result_bsrOUT[5..0]" (rect 165 27 275 39)(font "Arial" ))
+		(text "Arena_result_bsrOUT[5..0]" (rect 165 27 295 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(drawing
@@ -2333,7 +2255,7 @@ applicable agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "Arena_result_bslOUT[5..0]" (rect 0 0 129 12)(font "Arial" ))
-		(text "Arena_result_bslOUT[5..0]" (rect 166 27 275 39)(font "Arial" ))
+		(text "Arena_result_bslOUT[5..0]" (rect 166 27 295 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(drawing
@@ -2362,7 +2284,7 @@ applicable agreement for further details.
 		(pt 296 32)
 		(output)
 		(text "Arena_result_brrOUT[5..0]" (rect 0 0 128 12)(font "Arial" ))
-		(text "Arena_result_brrOUT[5..0]" (rect 167 27 275 39)(font "Arial" ))
+		(text "Arena_result_brrOUT[5..0]" (rect 167 27 295 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(drawing
@@ -2391,7 +2313,7 @@ applicable agreement for further details.
 		(pt 288 32)
 		(output)
 		(text "Arena_result_brlOUT[5..0]" (rect 0 0 127 12)(font "Arial" ))
-		(text "Arena_result_brlOUT[5..0]" (rect 160 27 267 39)(font "Arial" ))
+		(text "Arena_result_brlOUT[5..0]" (rect 160 27 287 39)(font "Arial" ))
 		(line (pt 288 32)(pt 272 32)(line_width 3))
 	)
 	(drawing
@@ -2418,6 +2340,107 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 224 64))
+	)
+)
+(symbol
+	(rect 1312 552 1608 664)
+	(text "Arena_bitwisexor" (rect 5 0 87 12)(font "Arial" ))
+	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_xorIN[5..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_a_xorIN[5..0]" (rect 21 27 120 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_b_xorIN[5..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_b_xorIN[5..0]" (rect 21 43 120 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_xorSelect" (rect 0 0 80 12)(font "Arial" ))
+		(text "Arena_xorSelect" (rect 21 59 101 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Arena_result_xorOUT[5..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "Arena_result_xorOUT[5..0]" (rect 165 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 96))
+	)
+)
+(symbol
+	(rect 488 560 776 672)
+	(text "Arena_bitwiseor" (rect 5 0 81 12)(font "Arial" ))
+	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_a_orIN[5..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "Arena_a_orIN[5..0]" (rect 21 27 114 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_b_orIN[5..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "Arena_b_orIN[5..0]" (rect 21 43 114 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_orSelect" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_orSelect" (rect 21 59 95 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "Arena_result_orOUT[5..0]" (rect 0 0 125 12)(font "Arial" ))
+		(text "Arena_result_orOUT[5..0]" (rect 162 27 267 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 96))
+	)
+)
+(symbol
+	(rect -352 -64 -88 16)
+	(text "Arena_bitwiseOperation_decoder" (rect 5 0 164 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_buttonStart" (rect 0 0 88 12)(font "Arial" ))
+		(text "Arena_buttonStart" (rect 21 27 109 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_opcode[2..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "Arena_opcode[2..0]" (rect 21 43 116 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "Arena_opSelect[7..0]" (rect 0 0 102 12)(font "Arial" ))
+		(text "Arena_opSelect[7..0]" (rect 157 27 243 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 64))
 	)
 )
 (connector
@@ -3996,20 +4019,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -424 -80)
-	(pt -424 -32)
-	(bus)
-)
-(connector
 	(text "Arena_opSelect[7..0]" (rect -88 -48 14 -36)(font "Arial" ))
 	(pt -56 -32)
 	(pt -88 -32)
-	(bus)
-)
-(connector
-	(text "Arena_opcode[2..0]" (rect -424 -48 -329 -36)(font "Arial" ))
-	(pt -424 -32)
-	(pt -352 -32)
 	(bus)
 )
 (connector
@@ -4021,6 +4033,37 @@ applicable agreement for further details.
 	(pt -56 -32)
 	(pt -56 600)
 	(bus)
+)
+(connector
+	(pt -424 -80)
+	(pt -424 -16)
+	(bus)
+)
+(connector
+	(text "Arena_opcode[2..0]" (rect -424 -32 -329 -20)(font "Arial" ))
+	(pt -424 -16)
+	(pt -352 -16)
+	(bus)
+)
+(connector
+	(pt -352 -32)
+	(pt -376 -32)
+)
+(connector
+	(pt -376 -32)
+	(pt -376 -120)
+)
+(connector
+	(pt -376 -120)
+	(pt -288 -120)
+)
+(connector
+	(pt -288 -120)
+	(pt -288 -168)
+)
+(connector
+	(pt -288 -168)
+	(pt -312 -168)
 )
 (junction (pt 456 -672))
 (junction (pt 856 -672))

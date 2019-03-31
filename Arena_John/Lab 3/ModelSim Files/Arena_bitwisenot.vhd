@@ -1,4 +1,5 @@
---John Arena
+-- (First, Last) John Arena - CSC 342/343 - Lab 3 - Spring 2019 - Due 3/30/19
+-- Arena_bitwisenot.vhd
 Library ieee;
 use ieee.std_logic_1164.all;
 

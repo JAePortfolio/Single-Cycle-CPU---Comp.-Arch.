@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Arena_xorSelect" (rect 0 0 68 12)(font "Arial" ))
-		(text "Arena_xorSelect" (rect 21 59 89 71)(font "Arial" ))
+		(text "Arena_orSelect" (rect 0 0 63 12)(font "Arial" ))
+		(text "Arena_orSelect" (rect 21 59 84 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port

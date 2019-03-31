@@ -1,5 +1,5 @@
 Flow report for bitwise
-Sat Mar 30 20:43:59 2019
+Sun Mar 31 16:15:06 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sat Mar 30 20:43:59 2019          ;
+; Flow Status                        ; Flow Failed - Sun Mar 31 16:15:06 2019          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
-; Top-level Entity Name              ; Arena_bitwiseOperation_decoder                  ;
+; Top-level Entity Name              ; Arena_bitrotationright                          ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
@@ -64,31 +64,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/30/2019 20:43:58 ;
+; Start date & time ; 03/31/2019 16:15:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bitwise             ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                              ;
-+-------------------------------------+---------------------------------------+---------------+--------------------------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name                    ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+--------------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220314654093205.155399303703656       ; --            ; --                             ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --                             ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --                             ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --                             ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --                             ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --                             ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; Arena_bitwiseOperation_decoder ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Arena_bitwiseOperation_decoder ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Arena_bitwiseOperation_decoder ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --                             ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                             ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --                             ; --             ;
-; TOP_LEVEL_ENTITY                    ; Arena_bitwiseOperation_decoder        ; bitwise       ; --                             ; --             ;
-+-------------------------------------+---------------------------------------+---------------+--------------------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                      ;
++-------------------------------------+---------------------------------------+---------------+------------------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name            ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 264840330406669.155406330417692       ; --            ; --                     ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --                     ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --                     ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --                     ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --                     ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --                     ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; Arena_bitrotationright ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Arena_bitrotationright ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Arena_bitrotationright ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --                     ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                     ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --                     ; --             ;
+; TOP_LEVEL_ENTITY                    ; Arena_bitrotationright                ; bitwise       ; --                     ; --             ;
++-------------------------------------+---------------------------------------+---------------+------------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -96,8 +96,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 475 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 4649 MB             ; 00:00:03                           ;
+; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

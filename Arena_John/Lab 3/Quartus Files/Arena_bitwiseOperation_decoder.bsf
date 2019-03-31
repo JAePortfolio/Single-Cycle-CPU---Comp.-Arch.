@@ -26,9 +26,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
+		(text "Arena_buttonStart" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_buttonStart" (rect 21 27 95 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "Arena_opcode[2..0]" (rect 0 0 80 12)(font "Arial" ))
-		(text "Arena_opcode[2..0]" (rect 21 27 101 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "Arena_opcode[2..0]" (rect 21 43 101 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 264 32)

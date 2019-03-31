@@ -17,15 +17,33 @@ begin
 process(Arena_buttonStart, Arena_opcode)
 	begin
 		if(Arena_buttonStart = '1') then 
-				Arena_opSelect <= "00000000" when (Arena_opcode = "000")-- Op 0
-										else "00000010" when (Arena_opcode = "001")-- Op 1
-										else "00000100" when (Arena_opcode = "001")-- Op 2
-										else "00001000" when (Arena_opcode = "001")-- Op 3
-										else "00010000" when (Arena_opcode = "001")-- Op 4
-										else "00100000" when (Arena_opcode = "001")-- Op 5
-										else "01000000" when (Arena_opcode = "001")-- Op 6
-										else "10000000" when (Arena_opcode = "001")-- Op 7
-										else "11111111";
+--				Arena_opSelect <= "00000000" when (Arena_opcode = "000")-- Op 0
+--										else "00000010" when (Arena_opcode = "001")-- Op 1
+--										else "00000100" when (Arena_opcode = "001")-- Op 2
+--										else "00001000" when (Arena_opcode = "001")-- Op 3
+--										else "00010000" when (Arena_opcode = "001")-- Op 4
+--										else "00100000" when (Arena_opcode = "001")-- Op 5
+--										else "01000000" when (Arena_opcode = "001")-- Op 6
+--										else "10000000" when (Arena_opcode = "001")-- Op 7
+--										else "11111111";
+				case Arena_opcode is
+					when "000" =>
+					Arena_opSelect <= "00000001";
+					when "001" =>
+					Arena_opSelect <= "00000010";
+					when "010" =>
+					Arena_opSelect <= "00000100";
+					when "011" =>
+					Arena_opSelect <= "00001000";
+					when "100" =>
+					Arena_opSelect <= "00010000";
+					when "101" =>
+					Arena_opSelect <= "00100000";
+					when "110" =>
+					Arena_opSelect <= "01000000";
+					when "111" =>
+					Arena_opSelect <= "10000000";
+				end case;
 		else 
 			null;
 		end if;
