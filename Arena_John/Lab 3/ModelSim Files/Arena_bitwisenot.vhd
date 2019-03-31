@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 
 entity Arena_bitwisenot is
   port(
-    Arena_a_notIN: in std_logic_vector(2 downto 0);
-    Arena_result_notOUT: out std_logic_vector (2 downto 0);
+    Arena_a_notIN: in std_logic_vector(5 downto 0);
+    Arena_result_notOUT: out std_logic_vector (5 downto 0);
 	 Arena_notSelect: in std_logic
 );
 end Arena_bitwisenot;

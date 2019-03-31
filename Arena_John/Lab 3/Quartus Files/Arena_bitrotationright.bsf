@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "Arena_a_brrIN[4..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "Arena_a_brrIN[4..0]" (rect 21 27 105 39)(font "Arial" ))
+		(text "Arena_a_brrIN[5..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "Arena_a_brrIN[5..0]" (rect 21 27 104 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 296 32)
 		(output)
-		(text "Arena_result_brrOUT[4..0]" (rect 0 0 112 12)(font "Arial" ))
-		(text "Arena_result_brrOUT[4..0]" (rect 163 27 275 39)(font "Arial" ))
+		(text "Arena_result_brrOUT[5..0]" (rect 0 0 110 12)(font "Arial" ))
+		(text "Arena_result_brrOUT[5..0]" (rect 165 27 275 39)(font "Arial" ))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(drawing

@@ -5,6 +5,7 @@ use ieee.std_logic_1164.all;
 
 entity Arena_bitwiseOperation_decoder is
 	port(
+		Arena_buttonStart: in std_logic;
 		Arena_opcode: in std_logic_vector(2 downto 0); -- 3 inputs
 		Arena_opSelect: out std_logic_vector(7 downto 0) -- 8 outputs
 	);
@@ -13,15 +14,20 @@ end Arena_bitwiseOperation_decoder;
 architecture Arena_bitwiseOperation_decoder_arch of Arena_bitwiseOperation_decoder is -- Architecture
 
 begin
-
-with Arena_opcode select
-	Arena_opSelect <= "00000000" when "000", -- Op 0
-							"00000010" when "001", -- Op 1
-							"00000100" when "010", -- Op 2
-							"00001000" when "011", -- Op 3
-							"00010000" when "100", -- Op 4
-							"00100000" when "101", -- Op 5
-							"01000000" when "110", -- Op 6
-							"10000000" when "111", -- Op 7
-							"00000000" when others;
+process(Arena_buttonStart, Arena_opcode)
+	begin
+		if(Arena_buttonStart = '1') then 
+				Arena_opSelect <= "00000000" when (Arena_opcode = "000")-- Op 0
+										else "00000010" when (Arena_opcode = "001")-- Op 1
+										else "00000100" when (Arena_opcode = "001")-- Op 2
+										else "00001000" when (Arena_opcode = "001")-- Op 3
+										else "00010000" when (Arena_opcode = "001")-- Op 4
+										else "00100000" when (Arena_opcode = "001")-- Op 5
+										else "01000000" when (Arena_opcode = "001")-- Op 6
+										else "10000000" when (Arena_opcode = "001")-- Op 7
+										else "11111111";
+		else 
+			null;
+		end if;
+end process;
 end Arena_bitwiseOperation_decoder_arch;

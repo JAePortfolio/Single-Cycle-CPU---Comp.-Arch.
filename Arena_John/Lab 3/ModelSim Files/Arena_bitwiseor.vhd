@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 
 entity Arena_bitwiseor is
   port(
-    Arena_a_orIN,Arena_b_orIN: in std_logic_vector(2 downto 0);
-    Arena_result_orOUT: out std_logic_vector (2 downto 0);
+    Arena_a_orIN,Arena_b_orIN: in std_logic_vector(5 downto 0);
+    Arena_result_orOUT: out std_logic_vector (5 downto 0);
 	Arena_xorSelect: in std_logic
 );
 end Arena_bitwiseor;

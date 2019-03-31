@@ -26,15 +26,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "Arena_a_andIN[2..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "Arena_a_andIN[2..0]" (rect 21 27 107 39)(font "Arial" ))
+		(text "Arena_a_andIN[5..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "Arena_a_andIN[5..0]" (rect 21 27 107 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "Arena_b_andIN[2..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "Arena_b_andIN[2..0]" (rect 21 43 107 55)(font "Arial" ))
+		(text "Arena_b_andIN[5..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "Arena_b_andIN[5..0]" (rect 21 43 107 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 304 32)
 		(output)
-		(text "Arena_result_andOUT[2..0]" (rect 0 0 113 12)(font "Arial" ))
-		(text "Arena_result_andOUT[2..0]" (rect 170 27 283 39)(font "Arial" ))
+		(text "Arena_result_andOUT[5..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "Arena_result_andOUT[5..0]" (rect 170 27 283 39)(font "Arial" ))
 		(line (pt 304 32)(pt 288 32)(line_width 3))
 	)
 	(drawing

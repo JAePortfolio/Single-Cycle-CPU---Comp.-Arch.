@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 
 entity Arena_bitrotationright is
   port(
-    Arena_a_brrIN: in std_logic_vector(4 downto 0); -- Bit rotation right in
-    Arena_result_brrOUT: out std_logic_vector(4 downto 0); -- Bit rotation out
+    Arena_a_brrIN: in std_logic_vector(5 downto 0); -- Bit rotation right in
+    Arena_result_brrOUT: out std_logic_vector(5 downto 0); -- Bit rotation out
 	 Arena_brrSelect: in std_logic
   );
 end Arena_bitrotationright;

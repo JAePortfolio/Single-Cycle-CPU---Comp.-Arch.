@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 
 entity Arena_bitwiseand is
   port(
-    Arena_a_andIN,Arena_b_andIN: in std_logic_vector(2 downto 0);
-    Arena_result_andOUT: out std_logic_vector (2 downto 0);
+    Arena_a_andIN,Arena_b_andIN: in std_logic_vector(5 downto 0);
+    Arena_result_andOUT: out std_logic_vector (5 downto 0);
 	 Arena_andSelect: in std_logic
 );
 end Arena_bitwiseand;
