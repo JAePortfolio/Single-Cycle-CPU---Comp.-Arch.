@@ -35,242 +35,167 @@ HEADER
 
 
 
-SIGNAL("Arena_opcode")
+SIGNAL("Arena_a_sltIN")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 3;
+	WIDTH = 6;
 	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("Arena_opcode[2]")
+SIGNAL("Arena_a_sltIN[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_opcode";
+	PARENT = "Arena_a_sltIN";
 }
 
-SIGNAL("Arena_opcode[1]")
+SIGNAL("Arena_a_sltIN[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_opcode";
+	PARENT = "Arena_a_sltIN";
 }
 
-SIGNAL("Arena_opcode[0]")
+SIGNAL("Arena_a_sltIN[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_opcode";
+	PARENT = "Arena_a_sltIN";
 }
 
-SIGNAL("Arena_opSelect")
+SIGNAL("Arena_a_sltIN[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_a_sltIN";
+}
+
+SIGNAL("Arena_a_sltIN[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_a_sltIN";
+}
+
+SIGNAL("Arena_a_sltIN[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_a_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 6;
 	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_b_sltIN[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_b_sltIN[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "Arena_b_sltIN";
+}
+
+SIGNAL("Arena_result_sltOUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("Arena_opSelect[7]")
+SIGNAL("Arena_sltSelect")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
+	DIRECTION = INPUT;
+	PARENT = "";
 }
 
-SIGNAL("Arena_opSelect[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-SIGNAL("Arena_opSelect[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_opSelect";
-}
-
-TRANSITION_LIST("Arena_opcode[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 20.0;
-	}
-}
-TRANSITION_LIST("Arena_opcode[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-	}
-}
-TRANSITION_LIST("Arena_opcode[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 140.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 100.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 20.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 80.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-	}
-}
-TRANSITION_LIST("Arena_opSelect[0]")
+TRANSITION_LIST("Arena_a_sltIN[5]")
 {
 	NODE
 	{
@@ -278,21 +203,125 @@ TRANSITION_LIST("Arena_opSelect[0]")
 		LEVEL 0 FOR 160.0;
 	}
 }
+TRANSITION_LIST("Arena_a_sltIN[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_a_sltIN[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_a_sltIN[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_a_sltIN[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_a_sltIN[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_b_sltIN[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_result_sltOUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+TRANSITION_LIST("Arena_sltSelect")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
 
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opcode";
+	CHANNEL = "Arena_a_sltIN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3;
+	CHILDREN = 1, 2, 3, 4, 5, 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opcode[2]";
+	CHANNEL = "Arena_a_sltIN[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -302,7 +331,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opcode[1]";
+	CHANNEL = "Arena_a_sltIN[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -312,7 +341,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opcode[0]";
+	CHANNEL = "Arena_a_sltIN[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -322,92 +351,120 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect";
+	CHANNEL = "Arena_a_sltIN[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
-	TREE_LEVEL = 0;
-	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12;
+	TREE_LEVEL = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[7]";
+	CHANNEL = "Arena_a_sltIN[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[6]";
+	CHANNEL = "Arena_a_sltIN[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[5]";
+	CHANNEL = "Arena_b_sltIN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 4;
+	TREE_LEVEL = 0;
+	CHILDREN = 8, 9, 10, 11, 12, 13;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[4]";
+	CHANNEL = "Arena_b_sltIN[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[3]";
+	CHANNEL = "Arena_b_sltIN[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[2]";
+	CHANNEL = "Arena_b_sltIN[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[1]";
+	CHANNEL = "Arena_b_sltIN[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_opSelect[0]";
+	CHANNEL = "Arena_b_sltIN[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 4;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_b_sltIN[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_sltSelect";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
 }
 TIME_BAR
 {

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "03/30/2019 16:50:02"
+// DATE "04/01/2019 13:15:33"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -28,24 +28,31 @@
 
 `timescale 1 ps/ 1 ps
 
-module Arena_bitwiseOperation_decoder (
-	Arena_opcode,
-	Arena_opSelect);
-input 	[2:0] Arena_opcode;
-output 	[7:0] Arena_opSelect;
+module Arena_bitwise_setLessThanSigned (
+	Arena_a_sltIN,
+	Arena_b_sltIN,
+	Arena_result_sltOUT,
+	Arena_sltSelect);
+input 	[5:0] Arena_a_sltIN;
+input 	[5:0] Arena_b_sltIN;
+output 	Arena_result_sltOUT;
+input 	Arena_sltSelect;
 
 // Design Ports Information
-// Arena_opSelect[0]	=>  Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[1]	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[2]	=>  Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[3]	=>  Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[4]	=>  Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[5]	=>  Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[6]	=>  Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opSelect[7]	=>  Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// Arena_opcode[0]	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// Arena_opcode[2]	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// Arena_opcode[1]	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_result_sltOUT	=>  Location: PIN_G16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Arena_a_sltIN[5]	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[5]	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[4]	=>  Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_a_sltIN[4]	=>  Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[3]	=>  Location: PIN_F16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_a_sltIN[3]	=>  Location: PIN_D17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[2]	=>  Location: PIN_B18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_a_sltIN[2]	=>  Location: PIN_G17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[1]	=>  Location: PIN_C17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_a_sltIN[1]	=>  Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_b_sltIN[0]	=>  Location: PIN_J17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_a_sltIN[0]	=>  Location: PIN_A18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Arena_sltSelect	=>  Location: PIN_F18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -59,54 +66,74 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \Mux3~0_combout ;
-wire \Mux3~1_combout ;
-wire \Mux3~2_combout ;
-wire \Mux3~3_combout ;
-wire \Mux3~4_combout ;
-wire \Mux3~5_combout ;
-wire \Mux3~6_combout ;
-wire [2:0] \Arena_opcode~combout ;
+wire \LessThan0~0_combout ;
+wire \LessThan0~1_combout ;
+wire \LessThan0~3_combout ;
+wire \LessThan0~5_combout ;
+wire \LessThan0~4_combout ;
+wire \LessThan0~2_combout ;
+wire \LessThan0~6_combout ;
+wire \Arena_sltSelect~combout ;
+wire \Arena_result_sltOUT$latch~combout ;
+wire [5:0] \Arena_a_sltIN~combout ;
+wire [5:0] \Arena_b_sltIN~combout ;
 
 
-// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \Arena_opcode[2]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(\Arena_opcode~combout [2]),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(Arena_opcode[2]));
+// Location: LCCOMB_X45_Y35_N0
+cycloneii_lcell_comb \LessThan0~0 (
+// Equation(s):
+// \LessThan0~0_combout  = (\Arena_a_sltIN~combout [4] & (\Arena_b_sltIN~combout [3] & (!\Arena_a_sltIN~combout [3] & \Arena_b_sltIN~combout [4]))) # (!\Arena_a_sltIN~combout [4] & ((\Arena_b_sltIN~combout [4]) # ((\Arena_b_sltIN~combout [3] & 
+// !\Arena_a_sltIN~combout [3]))))
+
+	.dataa(\Arena_b_sltIN~combout [3]),
+	.datab(\Arena_a_sltIN~combout [4]),
+	.datac(\Arena_a_sltIN~combout [3]),
+	.datad(\Arena_b_sltIN~combout [4]),
+	.cin(gnd),
+	.combout(\LessThan0~0_combout ),
+	.cout());
 // synopsys translate_off
-defparam \Arena_opcode[2]~I .input_async_reset = "none";
-defparam \Arena_opcode[2]~I .input_power_up = "low";
-defparam \Arena_opcode[2]~I .input_register_mode = "none";
-defparam \Arena_opcode[2]~I .input_sync_reset = "none";
-defparam \Arena_opcode[2]~I .oe_async_reset = "none";
-defparam \Arena_opcode[2]~I .oe_power_up = "low";
-defparam \Arena_opcode[2]~I .oe_register_mode = "none";
-defparam \Arena_opcode[2]~I .oe_sync_reset = "none";
-defparam \Arena_opcode[2]~I .operation_mode = "input";
-defparam \Arena_opcode[2]~I .output_async_reset = "none";
-defparam \Arena_opcode[2]~I .output_power_up = "low";
-defparam \Arena_opcode[2]~I .output_register_mode = "none";
-defparam \Arena_opcode[2]~I .output_sync_reset = "none";
+defparam \LessThan0~0 .lut_mask = 16'h3B02;
+defparam \LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N10
+cycloneii_lcell_comb \LessThan0~1 (
+// Equation(s):
+// \LessThan0~1_combout  = (\Arena_a_sltIN~combout [5] & ((\LessThan0~0_combout ) # (!\Arena_b_sltIN~combout [5]))) # (!\Arena_a_sltIN~combout [5] & (!\Arena_b_sltIN~combout [5] & \LessThan0~0_combout ))
+
+	.dataa(\Arena_a_sltIN~combout [5]),
+	.datab(vcc),
+	.datac(\Arena_b_sltIN~combout [5]),
+	.datad(\LessThan0~0_combout ),
+	.cin(gnd),
+	.combout(\LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~1 .lut_mask = 16'hAF0A;
+defparam \LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N6
+cycloneii_lcell_comb \LessThan0~3 (
+// Equation(s):
+// \LessThan0~3_combout  = (\Arena_b_sltIN~combout [1] & (((\Arena_b_sltIN~combout [0] & !\Arena_a_sltIN~combout [0])) # (!\Arena_a_sltIN~combout [1]))) # (!\Arena_b_sltIN~combout [1] & (\Arena_b_sltIN~combout [0] & (!\Arena_a_sltIN~combout [0] & 
+// !\Arena_a_sltIN~combout [1])))
+
+	.dataa(\Arena_b_sltIN~combout [0]),
+	.datab(\Arena_a_sltIN~combout [0]),
+	.datac(\Arena_b_sltIN~combout [1]),
+	.datad(\Arena_a_sltIN~combout [1]),
+	.cin(gnd),
+	.combout(\LessThan0~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~3 .lut_mask = 16'h20F2;
+defparam \LessThan0~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \Arena_opcode[0]~I (
+cycloneii_io \Arena_a_sltIN[5]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -120,29 +147,29 @@ cycloneii_io \Arena_opcode[0]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(\Arena_opcode~combout [0]),
+	.combout(\Arena_a_sltIN~combout [5]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opcode[0]));
+	.padio(Arena_a_sltIN[5]));
 // synopsys translate_off
-defparam \Arena_opcode[0]~I .input_async_reset = "none";
-defparam \Arena_opcode[0]~I .input_power_up = "low";
-defparam \Arena_opcode[0]~I .input_register_mode = "none";
-defparam \Arena_opcode[0]~I .input_sync_reset = "none";
-defparam \Arena_opcode[0]~I .oe_async_reset = "none";
-defparam \Arena_opcode[0]~I .oe_power_up = "low";
-defparam \Arena_opcode[0]~I .oe_register_mode = "none";
-defparam \Arena_opcode[0]~I .oe_sync_reset = "none";
-defparam \Arena_opcode[0]~I .operation_mode = "input";
-defparam \Arena_opcode[0]~I .output_async_reset = "none";
-defparam \Arena_opcode[0]~I .output_power_up = "low";
-defparam \Arena_opcode[0]~I .output_register_mode = "none";
-defparam \Arena_opcode[0]~I .output_sync_reset = "none";
+defparam \Arena_a_sltIN[5]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[5]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[5]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[5]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[5]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[5]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[5]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[5]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[5]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[5]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[5]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[5]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \Arena_opcode[1]~I (
+// Location: PIN_D17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_a_sltIN[3]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -156,150 +183,31 @@ cycloneii_io \Arena_opcode[1]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(\Arena_opcode~combout [1]),
+	.combout(\Arena_a_sltIN~combout [3]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opcode[1]));
+	.padio(Arena_a_sltIN[3]));
 // synopsys translate_off
-defparam \Arena_opcode[1]~I .input_async_reset = "none";
-defparam \Arena_opcode[1]~I .input_power_up = "low";
-defparam \Arena_opcode[1]~I .input_register_mode = "none";
-defparam \Arena_opcode[1]~I .input_sync_reset = "none";
-defparam \Arena_opcode[1]~I .oe_async_reset = "none";
-defparam \Arena_opcode[1]~I .oe_power_up = "low";
-defparam \Arena_opcode[1]~I .oe_register_mode = "none";
-defparam \Arena_opcode[1]~I .oe_sync_reset = "none";
-defparam \Arena_opcode[1]~I .operation_mode = "input";
-defparam \Arena_opcode[1]~I .output_async_reset = "none";
-defparam \Arena_opcode[1]~I .output_power_up = "low";
-defparam \Arena_opcode[1]~I .output_register_mode = "none";
-defparam \Arena_opcode[1]~I .output_sync_reset = "none";
+defparam \Arena_a_sltIN[3]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[3]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[3]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[3]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[3]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[3]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[3]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[3]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[3]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[3]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[3]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[3]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X33_Y35_N0
-cycloneii_lcell_comb \Mux3~0 (
-// Equation(s):
-// \Mux3~0_combout  = (!\Arena_opcode~combout [2] & (\Arena_opcode~combout [0] & !\Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~0 .lut_mask = 16'h0050;
-defparam \Mux3~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N2
-cycloneii_lcell_comb \Mux3~1 (
-// Equation(s):
-// \Mux3~1_combout  = (!\Arena_opcode~combout [2] & (!\Arena_opcode~combout [0] & \Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~1_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~1 .lut_mask = 16'h0500;
-defparam \Mux3~1 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N28
-cycloneii_lcell_comb \Mux3~2 (
-// Equation(s):
-// \Mux3~2_combout  = (!\Arena_opcode~combout [2] & (\Arena_opcode~combout [0] & \Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~2_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~2 .lut_mask = 16'h5000;
-defparam \Mux3~2 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N6
-cycloneii_lcell_comb \Mux3~3 (
-// Equation(s):
-// \Mux3~3_combout  = (\Arena_opcode~combout [2] & (!\Arena_opcode~combout [0] & !\Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~3_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~3 .lut_mask = 16'h000A;
-defparam \Mux3~3 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N16
-cycloneii_lcell_comb \Mux3~4 (
-// Equation(s):
-// \Mux3~4_combout  = (\Arena_opcode~combout [2] & (\Arena_opcode~combout [0] & !\Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~4_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~4 .lut_mask = 16'h00A0;
-defparam \Mux3~4 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N18
-cycloneii_lcell_comb \Mux3~5 (
-// Equation(s):
-// \Mux3~5_combout  = (\Arena_opcode~combout [2] & (!\Arena_opcode~combout [0] & \Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~5_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~5 .lut_mask = 16'h0A00;
-defparam \Mux3~5 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X33_Y35_N20
-cycloneii_lcell_comb \Mux3~6 (
-// Equation(s):
-// \Mux3~6_combout  = (\Arena_opcode~combout [2] & (\Arena_opcode~combout [0] & \Arena_opcode~combout [1]))
-
-	.dataa(\Arena_opcode~combout [2]),
-	.datab(vcc),
-	.datac(\Arena_opcode~combout [0]),
-	.datad(\Arena_opcode~combout [1]),
-	.cin(gnd),
-	.combout(\Mux3~6_combout ),
-	.cout());
-// synopsys translate_off
-defparam \Mux3~6 .lut_mask = 16'hA000;
-defparam \Mux3~6 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[0]~I (
+// Location: PIN_C17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[1]~I (
 	.datain(gnd),
-	.oe(vcc),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -311,31 +219,31 @@ cycloneii_io \Arena_opSelect[0]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_b_sltIN~combout [1]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[0]));
+	.padio(Arena_b_sltIN[1]));
 // synopsys translate_off
-defparam \Arena_opSelect[0]~I .input_async_reset = "none";
-defparam \Arena_opSelect[0]~I .input_power_up = "low";
-defparam \Arena_opSelect[0]~I .input_register_mode = "none";
-defparam \Arena_opSelect[0]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[0]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[0]~I .oe_power_up = "low";
-defparam \Arena_opSelect[0]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[0]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[0]~I .operation_mode = "output";
-defparam \Arena_opSelect[0]~I .output_async_reset = "none";
-defparam \Arena_opSelect[0]~I .output_power_up = "low";
-defparam \Arena_opSelect[0]~I .output_register_mode = "none";
-defparam \Arena_opSelect[0]~I .output_sync_reset = "none";
+defparam \Arena_b_sltIN[1]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[1]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[1]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[1]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[1]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[1]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[1]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[1]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[1]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[1]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[1]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[1]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[1]~I (
-	.datain(\Mux3~0_combout ),
-	.oe(vcc),
+// Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_a_sltIN[1]~I (
+	.datain(gnd),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -347,31 +255,31 @@ cycloneii_io \Arena_opSelect[1]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_a_sltIN~combout [1]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[1]));
+	.padio(Arena_a_sltIN[1]));
 // synopsys translate_off
-defparam \Arena_opSelect[1]~I .input_async_reset = "none";
-defparam \Arena_opSelect[1]~I .input_power_up = "low";
-defparam \Arena_opSelect[1]~I .input_register_mode = "none";
-defparam \Arena_opSelect[1]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[1]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[1]~I .oe_power_up = "low";
-defparam \Arena_opSelect[1]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[1]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[1]~I .operation_mode = "output";
-defparam \Arena_opSelect[1]~I .output_async_reset = "none";
-defparam \Arena_opSelect[1]~I .output_power_up = "low";
-defparam \Arena_opSelect[1]~I .output_register_mode = "none";
-defparam \Arena_opSelect[1]~I .output_sync_reset = "none";
+defparam \Arena_a_sltIN[1]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[1]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[1]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[1]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[1]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[1]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[1]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[1]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[1]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[1]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[1]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[1]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[2]~I (
-	.datain(\Mux3~1_combout ),
-	.oe(vcc),
+// Location: PIN_J17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[0]~I (
+	.datain(gnd),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -383,31 +291,31 @@ cycloneii_io \Arena_opSelect[2]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_b_sltIN~combout [0]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[2]));
+	.padio(Arena_b_sltIN[0]));
 // synopsys translate_off
-defparam \Arena_opSelect[2]~I .input_async_reset = "none";
-defparam \Arena_opSelect[2]~I .input_power_up = "low";
-defparam \Arena_opSelect[2]~I .input_register_mode = "none";
-defparam \Arena_opSelect[2]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[2]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[2]~I .oe_power_up = "low";
-defparam \Arena_opSelect[2]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[2]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[2]~I .operation_mode = "output";
-defparam \Arena_opSelect[2]~I .output_async_reset = "none";
-defparam \Arena_opSelect[2]~I .output_power_up = "low";
-defparam \Arena_opSelect[2]~I .output_register_mode = "none";
-defparam \Arena_opSelect[2]~I .output_sync_reset = "none";
+defparam \Arena_b_sltIN[0]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[0]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[0]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[0]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[0]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[0]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[0]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[0]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[0]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[0]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[0]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[0]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_B15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[3]~I (
-	.datain(\Mux3~2_combout ),
-	.oe(vcc),
+// Location: PIN_A18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_a_sltIN[0]~I (
+	.datain(gnd),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -419,31 +327,31 @@ cycloneii_io \Arena_opSelect[3]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_a_sltIN~combout [0]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[3]));
+	.padio(Arena_a_sltIN[0]));
 // synopsys translate_off
-defparam \Arena_opSelect[3]~I .input_async_reset = "none";
-defparam \Arena_opSelect[3]~I .input_power_up = "low";
-defparam \Arena_opSelect[3]~I .input_register_mode = "none";
-defparam \Arena_opSelect[3]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[3]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[3]~I .oe_power_up = "low";
-defparam \Arena_opSelect[3]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[3]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[3]~I .operation_mode = "output";
-defparam \Arena_opSelect[3]~I .output_async_reset = "none";
-defparam \Arena_opSelect[3]~I .output_power_up = "low";
-defparam \Arena_opSelect[3]~I .output_register_mode = "none";
-defparam \Arena_opSelect[3]~I .output_sync_reset = "none";
+defparam \Arena_a_sltIN[0]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[0]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[0]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[0]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[0]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[0]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[0]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[0]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[0]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[0]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[0]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[0]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[4]~I (
-	.datain(\Mux3~3_combout ),
-	.oe(vcc),
+// Location: PIN_F16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[3]~I (
+	.datain(gnd),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -455,67 +363,48 @@ cycloneii_io \Arena_opSelect[4]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_b_sltIN~combout [3]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[4]));
+	.padio(Arena_b_sltIN[3]));
 // synopsys translate_off
-defparam \Arena_opSelect[4]~I .input_async_reset = "none";
-defparam \Arena_opSelect[4]~I .input_power_up = "low";
-defparam \Arena_opSelect[4]~I .input_register_mode = "none";
-defparam \Arena_opSelect[4]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[4]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[4]~I .oe_power_up = "low";
-defparam \Arena_opSelect[4]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[4]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[4]~I .operation_mode = "output";
-defparam \Arena_opSelect[4]~I .output_async_reset = "none";
-defparam \Arena_opSelect[4]~I .output_power_up = "low";
-defparam \Arena_opSelect[4]~I .output_register_mode = "none";
-defparam \Arena_opSelect[4]~I .output_sync_reset = "none";
+defparam \Arena_b_sltIN[3]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[3]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[3]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[3]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[3]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[3]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[3]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[3]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[3]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[3]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[3]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[3]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[5]~I (
-	.datain(\Mux3~4_combout ),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(Arena_opSelect[5]));
+// Location: LCCOMB_X45_Y35_N26
+cycloneii_lcell_comb \LessThan0~5 (
+// Equation(s):
+// \LessThan0~5_combout  = \Arena_a_sltIN~combout [3] $ (\Arena_b_sltIN~combout [3])
+
+	.dataa(\Arena_a_sltIN~combout [3]),
+	.datab(vcc),
+	.datac(\Arena_b_sltIN~combout [3]),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\LessThan0~5_combout ),
+	.cout());
 // synopsys translate_off
-defparam \Arena_opSelect[5]~I .input_async_reset = "none";
-defparam \Arena_opSelect[5]~I .input_power_up = "low";
-defparam \Arena_opSelect[5]~I .input_register_mode = "none";
-defparam \Arena_opSelect[5]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[5]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[5]~I .oe_power_up = "low";
-defparam \Arena_opSelect[5]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[5]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[5]~I .operation_mode = "output";
-defparam \Arena_opSelect[5]~I .output_async_reset = "none";
-defparam \Arena_opSelect[5]~I .output_power_up = "low";
-defparam \Arena_opSelect[5]~I .output_register_mode = "none";
-defparam \Arena_opSelect[5]~I .output_sync_reset = "none";
+defparam \LessThan0~5 .lut_mask = 16'h5A5A;
+defparam \LessThan0~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[6]~I (
-	.datain(\Mux3~5_combout ),
-	.oe(vcc),
+// Location: PIN_B18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[2]~I (
+	.datain(gnd),
+	.oe(gnd),
 	.outclk(gnd),
 	.outclkena(vcc),
 	.inclk(gnd),
@@ -527,30 +416,279 @@ cycloneii_io \Arena_opSelect[6]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\Arena_b_sltIN~combout [2]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[6]));
+	.padio(Arena_b_sltIN[2]));
 // synopsys translate_off
-defparam \Arena_opSelect[6]~I .input_async_reset = "none";
-defparam \Arena_opSelect[6]~I .input_power_up = "low";
-defparam \Arena_opSelect[6]~I .input_register_mode = "none";
-defparam \Arena_opSelect[6]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[6]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[6]~I .oe_power_up = "low";
-defparam \Arena_opSelect[6]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[6]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[6]~I .operation_mode = "output";
-defparam \Arena_opSelect[6]~I .output_async_reset = "none";
-defparam \Arena_opSelect[6]~I .output_power_up = "low";
-defparam \Arena_opSelect[6]~I .output_register_mode = "none";
-defparam \Arena_opSelect[6]~I .output_sync_reset = "none";
+defparam \Arena_b_sltIN[2]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[2]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[2]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[2]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[2]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[2]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[2]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[2]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[2]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[2]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[2]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[2]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \Arena_opSelect[7]~I (
-	.datain(\Mux3~6_combout ),
+// Location: PIN_G17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_a_sltIN[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_a_sltIN~combout [2]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_a_sltIN[2]));
+// synopsys translate_off
+defparam \Arena_a_sltIN[2]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[2]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[2]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[2]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[2]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[2]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[2]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[2]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[2]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[2]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[2]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[2]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[2]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N24
+cycloneii_lcell_comb \LessThan0~4 (
+// Equation(s):
+// \LessThan0~4_combout  = (\LessThan0~3_combout  & ((\Arena_b_sltIN~combout [2]) # (!\Arena_a_sltIN~combout [2]))) # (!\LessThan0~3_combout  & (\Arena_b_sltIN~combout [2] & !\Arena_a_sltIN~combout [2]))
+
+	.dataa(\LessThan0~3_combout ),
+	.datab(vcc),
+	.datac(\Arena_b_sltIN~combout [2]),
+	.datad(\Arena_a_sltIN~combout [2]),
+	.cin(gnd),
+	.combout(\LessThan0~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~4 .lut_mask = 16'hA0FA;
+defparam \LessThan0~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_a_sltIN[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_a_sltIN~combout [4]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_a_sltIN[4]));
+// synopsys translate_off
+defparam \Arena_a_sltIN[4]~I .input_async_reset = "none";
+defparam \Arena_a_sltIN[4]~I .input_power_up = "low";
+defparam \Arena_a_sltIN[4]~I .input_register_mode = "none";
+defparam \Arena_a_sltIN[4]~I .input_sync_reset = "none";
+defparam \Arena_a_sltIN[4]~I .oe_async_reset = "none";
+defparam \Arena_a_sltIN[4]~I .oe_power_up = "low";
+defparam \Arena_a_sltIN[4]~I .oe_register_mode = "none";
+defparam \Arena_a_sltIN[4]~I .oe_sync_reset = "none";
+defparam \Arena_a_sltIN[4]~I .operation_mode = "input";
+defparam \Arena_a_sltIN[4]~I .output_async_reset = "none";
+defparam \Arena_a_sltIN[4]~I .output_power_up = "low";
+defparam \Arena_a_sltIN[4]~I .output_register_mode = "none";
+defparam \Arena_a_sltIN[4]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[5]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_b_sltIN~combout [5]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_b_sltIN[5]));
+// synopsys translate_off
+defparam \Arena_b_sltIN[5]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[5]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[5]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[5]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[5]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[5]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[5]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[5]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[5]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[5]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[5]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[5]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[5]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_b_sltIN[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_b_sltIN~combout [4]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_b_sltIN[4]));
+// synopsys translate_off
+defparam \Arena_b_sltIN[4]~I .input_async_reset = "none";
+defparam \Arena_b_sltIN[4]~I .input_power_up = "low";
+defparam \Arena_b_sltIN[4]~I .input_register_mode = "none";
+defparam \Arena_b_sltIN[4]~I .input_sync_reset = "none";
+defparam \Arena_b_sltIN[4]~I .oe_async_reset = "none";
+defparam \Arena_b_sltIN[4]~I .oe_power_up = "low";
+defparam \Arena_b_sltIN[4]~I .oe_register_mode = "none";
+defparam \Arena_b_sltIN[4]~I .oe_sync_reset = "none";
+defparam \Arena_b_sltIN[4]~I .operation_mode = "input";
+defparam \Arena_b_sltIN[4]~I .output_async_reset = "none";
+defparam \Arena_b_sltIN[4]~I .output_power_up = "low";
+defparam \Arena_b_sltIN[4]~I .output_register_mode = "none";
+defparam \Arena_b_sltIN[4]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N28
+cycloneii_lcell_comb \LessThan0~2 (
+// Equation(s):
+// \LessThan0~2_combout  = (\Arena_a_sltIN~combout [5] & (\Arena_b_sltIN~combout [5] & (\Arena_a_sltIN~combout [4] $ (!\Arena_b_sltIN~combout [4])))) # (!\Arena_a_sltIN~combout [5] & (!\Arena_b_sltIN~combout [5] & (\Arena_a_sltIN~combout [4] $ 
+// (!\Arena_b_sltIN~combout [4]))))
+
+	.dataa(\Arena_a_sltIN~combout [5]),
+	.datab(\Arena_a_sltIN~combout [4]),
+	.datac(\Arena_b_sltIN~combout [5]),
+	.datad(\Arena_b_sltIN~combout [4]),
+	.cin(gnd),
+	.combout(\LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~2 .lut_mask = 16'h8421;
+defparam \LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N12
+cycloneii_lcell_comb \LessThan0~6 (
+// Equation(s):
+// \LessThan0~6_combout  = (\LessThan0~1_combout ) # ((!\LessThan0~5_combout  & (\LessThan0~4_combout  & \LessThan0~2_combout )))
+
+	.dataa(\LessThan0~1_combout ),
+	.datab(\LessThan0~5_combout ),
+	.datac(\LessThan0~4_combout ),
+	.datad(\LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\LessThan0~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~6 .lut_mask = 16'hBAAA;
+defparam \LessThan0~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_F18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Arena_sltSelect~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Arena_sltSelect~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Arena_sltSelect));
+// synopsys translate_off
+defparam \Arena_sltSelect~I .input_async_reset = "none";
+defparam \Arena_sltSelect~I .input_power_up = "low";
+defparam \Arena_sltSelect~I .input_register_mode = "none";
+defparam \Arena_sltSelect~I .input_sync_reset = "none";
+defparam \Arena_sltSelect~I .oe_async_reset = "none";
+defparam \Arena_sltSelect~I .oe_power_up = "low";
+defparam \Arena_sltSelect~I .oe_register_mode = "none";
+defparam \Arena_sltSelect~I .oe_sync_reset = "none";
+defparam \Arena_sltSelect~I .operation_mode = "input";
+defparam \Arena_sltSelect~I .output_async_reset = "none";
+defparam \Arena_sltSelect~I .output_power_up = "low";
+defparam \Arena_sltSelect~I .output_register_mode = "none";
+defparam \Arena_sltSelect~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X45_Y35_N22
+cycloneii_lcell_comb Arena_result_sltOUT$latch(
+// Equation(s):
+// \Arena_result_sltOUT$latch~combout  = (\Arena_sltSelect~combout  & (\LessThan0~6_combout )) # (!\Arena_sltSelect~combout  & ((\Arena_result_sltOUT$latch~combout )))
+
+	.dataa(\LessThan0~6_combout ),
+	.datab(vcc),
+	.datac(\Arena_sltSelect~combout ),
+	.datad(\Arena_result_sltOUT$latch~combout ),
+	.cin(gnd),
+	.combout(\Arena_result_sltOUT$latch~combout ),
+	.cout());
+// synopsys translate_off
+defparam Arena_result_sltOUT$latch.lut_mask = 16'hAFA0;
+defparam Arena_result_sltOUT$latch.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_G16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \Arena_result_sltOUT~I (
+	.datain(\Arena_result_sltOUT$latch~combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -567,21 +705,21 @@ cycloneii_io \Arena_opSelect[7]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(Arena_opSelect[7]));
+	.padio(Arena_result_sltOUT));
 // synopsys translate_off
-defparam \Arena_opSelect[7]~I .input_async_reset = "none";
-defparam \Arena_opSelect[7]~I .input_power_up = "low";
-defparam \Arena_opSelect[7]~I .input_register_mode = "none";
-defparam \Arena_opSelect[7]~I .input_sync_reset = "none";
-defparam \Arena_opSelect[7]~I .oe_async_reset = "none";
-defparam \Arena_opSelect[7]~I .oe_power_up = "low";
-defparam \Arena_opSelect[7]~I .oe_register_mode = "none";
-defparam \Arena_opSelect[7]~I .oe_sync_reset = "none";
-defparam \Arena_opSelect[7]~I .operation_mode = "output";
-defparam \Arena_opSelect[7]~I .output_async_reset = "none";
-defparam \Arena_opSelect[7]~I .output_power_up = "low";
-defparam \Arena_opSelect[7]~I .output_register_mode = "none";
-defparam \Arena_opSelect[7]~I .output_sync_reset = "none";
+defparam \Arena_result_sltOUT~I .input_async_reset = "none";
+defparam \Arena_result_sltOUT~I .input_power_up = "low";
+defparam \Arena_result_sltOUT~I .input_register_mode = "none";
+defparam \Arena_result_sltOUT~I .input_sync_reset = "none";
+defparam \Arena_result_sltOUT~I .oe_async_reset = "none";
+defparam \Arena_result_sltOUT~I .oe_power_up = "low";
+defparam \Arena_result_sltOUT~I .oe_register_mode = "none";
+defparam \Arena_result_sltOUT~I .oe_sync_reset = "none";
+defparam \Arena_result_sltOUT~I .operation_mode = "output";
+defparam \Arena_result_sltOUT~I .output_async_reset = "none";
+defparam \Arena_result_sltOUT~I .output_power_up = "low";
+defparam \Arena_result_sltOUT~I .output_register_mode = "none";
+defparam \Arena_result_sltOUT~I .output_sync_reset = "none";
 // synopsys translate_on
 
 endmodule

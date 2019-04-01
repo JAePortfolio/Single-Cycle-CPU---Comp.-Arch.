@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bitwise
-Sun Mar 31 22:02:38 2019
+Mon Apr 01 13:09:41 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 31 22:02:38 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 01 13:09:41 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
-; Top-level Entity Name              ; Arena_bitrotationright                          ;
+; Top-level Entity Name              ; Arena_bitwise_setLessThanSigned                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 48                                              ;
-;     Total combinational functions  ; 48                                              ;
+; Total logic elements               ; 8                                               ;
+;     Total combinational functions  ; 8                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 19                                              ;
+; Total pins                         ; 14                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -59,89 +59,89 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                            ;
-+----------------------------------------------------------------------------+------------------------+--------------------+
-; Option                                                                     ; Setting                ; Default Value      ;
-+----------------------------------------------------------------------------+------------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6           ;                    ;
-; Top-level entity name                                                      ; Arena_bitrotationright ; bitwise            ;
-; Family name                                                                ; Cyclone II             ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                    ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                     ; On                 ;
-; Enable compact report table                                                ; Off                    ; Off                ;
-; Restructure Multiplexers                                                   ; Auto                   ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                    ; Off                ;
-; Preserve fewer node names                                                  ; On                     ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                    ; Off                ;
-; Verilog Version                                                            ; Verilog_2001           ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993              ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto                   ; Auto               ;
-; Safe State Machine                                                         ; Off                    ; Off                ;
-; Extract Verilog State Machines                                             ; On                     ; On                 ;
-; Extract VHDL State Machines                                                ; On                     ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                    ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000                   ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                    ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                     ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                     ; On                 ;
-; Parallel Synthesis                                                         ; On                     ; On                 ;
-; DSP Block Balancing                                                        ; Auto                   ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                     ; On                 ;
-; Power-Up Don't Care                                                        ; On                     ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                    ; Off                ;
-; Remove Duplicate Registers                                                 ; On                     ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                    ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                    ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                    ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                    ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                    ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                     ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                    ; Off                ;
-; Optimization Technique                                                     ; Balanced               ; Balanced           ;
-; Carry Chain Length                                                         ; 70                     ; 70                 ;
-; Auto Carry Chains                                                          ; On                     ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                     ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                    ; Off                ;
-; Auto ROM Replacement                                                       ; On                     ; On                 ;
-; Auto RAM Replacement                                                       ; On                     ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto                   ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto                   ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                     ; On                 ;
-; Strict RAM Replacement                                                     ; Off                    ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                     ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                    ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                    ; Off                ;
-; Auto Resource Sharing                                                      ; Off                    ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                    ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                    ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                    ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                     ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                    ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                    ; Off                ;
-; Report Parameter Settings                                                  ; On                     ; On                 ;
-; Report Source Assignments                                                  ; On                     ; On                 ;
-; Report Connectivity Checks                                                 ; On                     ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                    ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                      ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation     ; Normal compilation ;
-; HDL message level                                                          ; Level2                 ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                    ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000                   ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                   ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                    ; 100                ;
-; Clock MUX Protection                                                       ; On                     ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                    ; Off                ;
-; Block Design Naming                                                        ; Auto                   ; Auto               ;
-; SDC constraint protection                                                  ; Off                    ; Off                ;
-; Synthesis Effort                                                           ; Auto                   ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                     ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                    ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium                 ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto                   ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                     ; On                 ;
-; Synthesis Seed                                                             ; 1                      ; 1                  ;
-+----------------------------------------------------------------------------+------------------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                     ;
++----------------------------------------------------------------------------+---------------------------------+--------------------+
+; Option                                                                     ; Setting                         ; Default Value      ;
++----------------------------------------------------------------------------+---------------------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6                    ;                    ;
+; Top-level entity name                                                      ; Arena_bitwise_setLessThanSigned ; bitwise            ;
+; Family name                                                                ; Cyclone II                      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                             ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                              ; On                 ;
+; Enable compact report table                                                ; Off                             ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                            ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                             ; Off                ;
+; Preserve fewer node names                                                  ; On                              ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                             ; Off                ;
+; Verilog Version                                                            ; Verilog_2001                    ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993                       ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                            ; Auto               ;
+; Safe State Machine                                                         ; Off                             ; Off                ;
+; Extract Verilog State Machines                                             ; On                              ; On                 ;
+; Extract VHDL State Machines                                                ; On                              ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                             ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                            ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                             ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                              ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                              ; On                 ;
+; Parallel Synthesis                                                         ; On                              ; On                 ;
+; DSP Block Balancing                                                        ; Auto                            ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                              ; On                 ;
+; Power-Up Don't Care                                                        ; On                              ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                             ; Off                ;
+; Remove Duplicate Registers                                                 ; On                              ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                             ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                             ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                             ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                             ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                             ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                              ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                             ; Off                ;
+; Optimization Technique                                                     ; Balanced                        ; Balanced           ;
+; Carry Chain Length                                                         ; 70                              ; 70                 ;
+; Auto Carry Chains                                                          ; On                              ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                              ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                             ; Off                ;
+; Auto ROM Replacement                                                       ; On                              ; On                 ;
+; Auto RAM Replacement                                                       ; On                              ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                            ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                            ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                              ; On                 ;
+; Strict RAM Replacement                                                     ; Off                             ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                              ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                             ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                             ; Off                ;
+; Auto Resource Sharing                                                      ; Off                             ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                             ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                             ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                             ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                              ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                             ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                             ; Off                ;
+; Report Parameter Settings                                                  ; On                              ; On                 ;
+; Report Source Assignments                                                  ; On                              ; On                 ;
+; Report Connectivity Checks                                                 ; On                              ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                             ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                               ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation              ; Normal compilation ;
+; HDL message level                                                          ; Level2                          ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                             ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                            ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                            ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                             ; 100                ;
+; Clock MUX Protection                                                       ; On                              ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                             ; Off                ;
+; Block Design Naming                                                        ; Auto                            ; Auto               ;
+; SDC constraint protection                                                  ; Off                             ; Off                ;
+; Synthesis Effort                                                           ; Auto                            ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                              ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                             ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium                          ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                            ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                              ; On                 ;
+; Synthesis Seed                                                             ; 1                               ; 1                  ;
++----------------------------------------------------------------------------+---------------------------------+--------------------+
 
 
 +------------------------------------------+
@@ -161,52 +161,52 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
-+----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../ModelSim Files/Arena_bitrotationright.vhd ; yes             ; User VHDL File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationright.vhd ;         ;
-+----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                        ; Library ;
++-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_bitwise_setLessThanSigned.vhd ; yes             ; User VHDL File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanSigned.vhd ;         ;
++-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 48             ;
-;                                             ;                ;
-; Total combinational functions               ; 48             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 38             ;
-;     -- 3 input functions                    ; 6              ;
-;     -- <=2 input functions                  ; 4              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 48             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 19             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; RotateRight0~3 ;
-; Maximum fan-out                             ; 12             ;
-; Total fan-out                               ; 184            ;
-; Average fan-out                             ; 2.75           ;
-+---------------------------------------------+----------------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 8                         ;
+;                                             ;                           ;
+; Total combinational functions               ; 8                         ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 4                         ;
+;     -- 3 input functions                    ; 3                         ;
+;     -- <=2 input functions                  ; 1                         ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 8                         ;
+;     -- arithmetic mode                      ; 0                         ;
+;                                             ;                           ;
+; Total registers                             ; 0                         ;
+;     -- Dedicated logic registers            ; 0                         ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 14                        ;
+; Embedded Multiplier 9-bit elements          ; 0                         ;
+; Maximum fan-out node                        ; Arena_result_sltOUT$latch ;
+; Maximum fan-out                             ; 2                         ;
+; Total fan-out                               ; 28                        ;
+; Average fan-out                             ; 1.27                      ;
++---------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; |Arena_bitrotationright    ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |Arena_bitrotationright ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; |Arena_bitwise_setLessThanSigned ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Arena_bitwise_setLessThanSigned ; work         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -215,13 +215,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; Arena_result_brrOUT[0]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Arena_result_brrOUT[1]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Arena_result_brrOUT[2]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Arena_result_brrOUT[3]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Arena_result_brrOUT[4]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Arena_result_brrOUT[5]$latch                       ; Arena_brrSelect     ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
+; Arena_result_sltOUT$latch                          ; Arena_sltSelect     ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -256,9 +251,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Mar 31 22:02:35 2019
+    Info: Processing started: Mon Apr 01 13:09:39 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bitwise -c bitwise
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthansigned.vhd
+    Info (12022): Found design unit 1: Arena_bitwise_setLessThanSigned-Arena_bitwise_setLessThanSigned_arch
+    Info (12023): Found entity 1: Arena_bitwise_setLessThanSigned
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwiseoperation_decoder.vhd
     Info (12022): Found design unit 1: Arena_bitwiseOperation_decoder-Arena_bitwiseOperation_decoder_arch
     Info (12023): Found entity 1: Arena_bitwiseOperation_decoder
@@ -291,26 +289,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: Arena_bitrotationleft
 Info (12021): Found 1 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/arena_bitwise.bdf
     Info (12023): Found entity 1: Arena_bitwise
-Info (12127): Elaborating entity "Arena_bitrotationright" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(23): signal "Arena_a_brrIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(23): signal "Arena_b_rramt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Arena_bitrotationright.vhd(20): inferring latch(es) for signal or variable "Arena_result_brrOUT", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "Arena_result_brrOUT[0]" at Arena_bitrotationright.vhd(20)
-Info (10041): Inferred latch for "Arena_result_brrOUT[1]" at Arena_bitrotationright.vhd(20)
-Info (10041): Inferred latch for "Arena_result_brrOUT[2]" at Arena_bitrotationright.vhd(20)
-Info (10041): Inferred latch for "Arena_result_brrOUT[3]" at Arena_bitrotationright.vhd(20)
-Info (10041): Inferred latch for "Arena_result_brrOUT[4]" at Arena_bitrotationright.vhd(20)
-Info (10041): Inferred latch for "Arena_result_brrOUT[5]" at Arena_bitrotationright.vhd(20)
+Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthanunsigned.vhd
+    Info (12022): Found design unit 1: Arena_bitwise_setLessThanUnsigned-Arena_bitwise_setLessThanUnsigned_arch
+    Info (12023): Found entity 1: Arena_bitwise_setLessThanUnsigned
+Info (12127): Elaborating entity "Arena_bitwise_setLessThanSigned" for the top level hierarchy
+Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanSigned.vhd(22): inferring latch(es) for signal or variable "Arena_result_sltOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_sltOUT" at Arena_bitwise_setLessThanSigned.vhd(22)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Sun Mar 31 22:02:38 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Mon Apr 01 13:09:41 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
