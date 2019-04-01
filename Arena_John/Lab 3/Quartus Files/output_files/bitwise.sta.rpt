@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bitwise
-Sun Mar 31 15:55:28 2019
+Sun Mar 31 22:02:57 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -21,32 +21,26 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  13. Hold Times
  14. Clock to Output Times
  15. Minimum Clock to Output Times
- 16. Propagation Delay
- 17. Minimum Propagation Delay
- 18. Fast Model Setup Summary
- 19. Fast Model Hold Summary
- 20. Fast Model Recovery Summary
- 21. Fast Model Removal Summary
- 22. Fast Model Minimum Pulse Width Summary
- 23. Fast Model Minimum Pulse Width: 'Arena_brrSelect'
- 24. Setup Times
- 25. Hold Times
- 26. Clock to Output Times
- 27. Minimum Clock to Output Times
- 28. Propagation Delay
- 29. Minimum Propagation Delay
- 30. Multicorner Timing Analysis Summary
- 31. Setup Times
- 32. Hold Times
- 33. Clock to Output Times
- 34. Minimum Clock to Output Times
- 35. Progagation Delay
- 36. Minimum Progagation Delay
- 37. Clock Transfers
- 38. Report TCCS
- 39. Report RSKM
- 40. Unconstrained Paths
- 41. TimeQuest Timing Analyzer Messages
+ 16. Fast Model Setup Summary
+ 17. Fast Model Hold Summary
+ 18. Fast Model Recovery Summary
+ 19. Fast Model Removal Summary
+ 20. Fast Model Minimum Pulse Width Summary
+ 21. Fast Model Minimum Pulse Width: 'Arena_brrSelect'
+ 22. Setup Times
+ 23. Hold Times
+ 24. Clock to Output Times
+ 25. Minimum Clock to Output Times
+ 26. Multicorner Timing Analysis Summary
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Clock Transfers
+ 32. Report TCCS
+ 33. Report RSKM
+ 34. Unconstrained Paths
+ 35. TimeQuest Timing Analyzer Messages
 
 
 
@@ -165,8 +159,8 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[0]$latch|datac ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[1]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[1]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[2]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[2]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[2]$latch|datac ;
@@ -177,43 +171,57 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[3]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[4]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[4]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[5]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[5]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datad ;
 +--------+--------------+----------------+------------------+-----------------+------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; 4.116 ; 4.116 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; 3.723 ; 3.723 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; 3.703 ; 3.703 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; 4.030 ; 4.030 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; 4.027 ; 4.027 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; 4.116 ; 4.116 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; 3.659 ; 3.659 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------------------------------+
+; Setup Times                                                                              ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; 8.338 ; 8.338 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; 7.932 ; 7.932 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; 7.981 ; 7.981 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; 4.360 ; 4.360 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; 8.338 ; 8.338 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; 7.871 ; 7.871 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; 8.170 ; 8.170 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; 8.469 ; 8.469 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; 5.724 ; 5.724 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; 4.564 ; 4.564 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; 8.061 ; 8.061 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; 7.831 ; 7.831 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; 5.587 ; 5.587 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; 8.469 ; 8.469 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; -2.991 ; -2.991 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; -3.055 ; -3.055 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; -3.035 ; -3.035 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; -3.362 ; -3.362 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; -3.359 ; -3.359 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; -3.298 ; -3.298 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; -2.991 ; -2.991 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------------------------+
+; Hold Times                                                                                 ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; -1.898 ; -1.898 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; -5.553 ; -5.553 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; -5.271 ; -5.271 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; -1.898 ; -1.898 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; -5.578 ; -5.578 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; -5.671 ; -5.671 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; -5.718 ; -5.718 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; -1.605 ; -1.605 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; -4.172 ; -4.172 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; -1.605 ; -1.605 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; -5.471 ; -5.471 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; -5.191 ; -5.191 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; -4.517 ; -4.517 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; -5.368 ; -5.368 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -221,13 +229,13 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 6.108 ; 6.108 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 5.811 ; 5.811 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.083 ; 6.083 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.108 ; 6.108 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 5.949 ; 5.949 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 5.871 ; 5.871 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 5.826 ; 5.826 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 6.242 ; 6.242 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 6.123 ; 6.123 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.242 ; 6.242 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.106 ; 6.106 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 6.009 ; 6.009 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 6.017 ; 6.017 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 6.001 ; 6.001 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
@@ -236,42 +244,14 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 5.811 ; 5.811 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 5.811 ; 5.811 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.083 ; 6.083 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.108 ; 6.108 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 5.949 ; 5.949 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 5.871 ; 5.871 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 5.826 ; 5.826 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 6.001 ; 6.001 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 6.123 ; 6.123 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.242 ; 6.242 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.106 ; 6.106 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 6.009 ; 6.009 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 6.017 ; 6.017 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 6.001 ; 6.001 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------+
-; Propagation Delay                                                           ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 4.859 ;    ;    ; 4.859 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 4.802 ;    ;    ; 4.802 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 8.822 ;    ;    ; 8.822 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 8.860 ;    ;    ; 8.860 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 8.815 ;    ;    ; 8.815 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 8.796 ;    ;    ; 8.796 ;
-+------------------------+--------------------------+-------+----+----+-------+
-
-
-+-----------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                   ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 4.859 ;    ;    ; 4.859 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 4.802 ;    ;    ; 4.802 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 8.822 ;    ;    ; 8.822 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 8.860 ;    ;    ; 8.860 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 8.815 ;    ;    ; 8.815 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 8.796 ;    ;    ; 8.796 ;
-+------------------------+--------------------------+-------+----+----+-------+
 
 
 ----------------------------
@@ -325,8 +305,8 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[0]$latch|datac ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[1]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[1]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[1]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[2]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[2]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[2]$latch|datac ;
@@ -337,43 +317,57 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[3]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[4]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[4]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[4]$latch|datad ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[5]$latch       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Fall       ; Arena_result_brrOUT[5]$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datac ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_brrSelect ; Rise       ; Arena_result_brrOUT[5]$latch|datad ;
 +--------+--------------+----------------+------------------+-----------------+------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; 2.191 ; 2.191 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; 2.056 ; 2.056 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; 2.036 ; 2.036 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; 2.175 ; 2.175 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; 2.157 ; 2.157 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; 2.191 ; 2.191 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; 2.013 ; 2.013 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------------------------------+
+; Setup Times                                                                              ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; 4.029 ; 4.029 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; 3.823 ; 3.823 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; 3.848 ; 3.848 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; 1.567 ; 1.567 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; 4.029 ; 4.029 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; 3.806 ; 3.806 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; 3.956 ; 3.956 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; 4.057 ; 4.057 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; 2.880 ; 2.880 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; 1.679 ; 1.679 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; 3.926 ; 3.926 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; 3.811 ; 3.811 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; 2.820 ; 2.820 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; 4.057 ; 4.057 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; -1.745 ; -1.745 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; -1.788 ; -1.788 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; -1.768 ; -1.768 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; -1.907 ; -1.907 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; -1.889 ; -1.889 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; -1.853 ; -1.853 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; -1.745 ; -1.745 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------------------------+
+; Hold Times                                                                                 ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; -0.541 ; -0.541 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; -2.838 ; -2.838 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; -2.711 ; -2.711 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; -0.541 ; -0.541 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; -2.881 ; -2.881 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; -2.882 ; -2.882 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; -2.915 ; -2.915 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; -0.407 ; -0.407 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; -2.230 ; -2.230 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; -0.407 ; -0.407 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; -2.806 ; -2.806 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; -2.683 ; -2.683 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; -2.362 ; -2.362 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; -2.731 ; -2.731 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -381,13 +375,13 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.392 ; 3.392 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.192 ; 3.192 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.368 ; 3.368 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.392 ; 3.392 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.315 ; 3.315 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.258 ; 3.258 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.213 ; 3.213 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.468 ; 3.468 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.401 ; 3.401 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.468 ; 3.468 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.383 ; 3.383 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.354 ; 3.354 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.363 ; 3.363 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.341 ; 3.341 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
@@ -396,42 +390,14 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.192 ; 3.192 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.192 ; 3.192 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.368 ; 3.368 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.392 ; 3.392 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.315 ; 3.315 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.258 ; 3.258 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.213 ; 3.213 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.341 ; 3.341 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.401 ; 3.401 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.468 ; 3.468 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.383 ; 3.383 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.354 ; 3.354 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.363 ; 3.363 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.341 ; 3.341 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------+
-; Propagation Delay                                                           ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 2.609 ;    ;    ; 2.609 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 2.572 ;    ;    ; 2.572 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 5.013 ;    ;    ; 5.013 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 5.050 ;    ;    ; 5.050 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 5.014 ;    ;    ; 5.014 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 4.995 ;    ;    ; 4.995 ;
-+------------------------+--------------------------+-------+----+----+-------+
-
-
-+-----------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                   ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 2.609 ;    ;    ; 2.609 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 2.572 ;    ;    ; 2.572 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 5.013 ;    ;    ; 5.013 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 5.050 ;    ;    ; 5.050 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 5.014 ;    ;    ; 5.014 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 4.995 ;    ;    ; 4.995 ;
-+------------------------+--------------------------+-------+----+----+-------+
 
 
 +----------------------------------------------------------------------------+
@@ -446,34 +412,48 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; 4.116 ; 4.116 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; 3.723 ; 3.723 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; 3.703 ; 3.703 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; 4.030 ; 4.030 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; 4.027 ; 4.027 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; 4.116 ; 4.116 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; 3.659 ; 3.659 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
++------------------------------------------------------------------------------------------+
+; Setup Times                                                                              ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; 8.338 ; 8.338 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; 7.932 ; 7.932 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; 7.981 ; 7.981 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; 4.360 ; 4.360 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; 8.338 ; 8.338 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; 7.871 ; 7.871 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; 8.170 ; 8.170 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; 8.469 ; 8.469 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; 5.724 ; 5.724 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; 4.564 ; 4.564 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; 8.061 ; 8.061 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; 7.831 ; 7.831 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; 5.587 ; 5.587 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; 8.469 ; 8.469 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_brrIN[*]  ; Arena_brrSelect ; -1.745 ; -1.745 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[0] ; Arena_brrSelect ; -1.788 ; -1.788 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[1] ; Arena_brrSelect ; -1.768 ; -1.768 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[2] ; Arena_brrSelect ; -1.907 ; -1.907 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[3] ; Arena_brrSelect ; -1.889 ; -1.889 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[4] ; Arena_brrSelect ; -1.853 ; -1.853 ; Fall       ; Arena_brrSelect ;
-;  Arena_a_brrIN[5] ; Arena_brrSelect ; -1.745 ; -1.745 ; Fall       ; Arena_brrSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------------------------+
+; Hold Times                                                                                 ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Data Port               ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
+; Arena_a_brrIN[*]        ; Arena_brrSelect ; -0.541 ; -0.541 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[0]       ; Arena_brrSelect ; -2.838 ; -2.838 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[1]       ; Arena_brrSelect ; -2.711 ; -2.711 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[2]       ; Arena_brrSelect ; -0.541 ; -0.541 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[3]       ; Arena_brrSelect ; -2.881 ; -2.881 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[4]       ; Arena_brrSelect ; -2.882 ; -2.882 ; Fall       ; Arena_brrSelect ;
+;  Arena_a_brrIN[5]       ; Arena_brrSelect ; -2.915 ; -2.915 ; Fall       ; Arena_brrSelect ;
+; Arena_b_rramt_brrIN[*]  ; Arena_brrSelect ; -0.407 ; -0.407 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[0] ; Arena_brrSelect ; -2.230 ; -2.230 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[1] ; Arena_brrSelect ; -0.407 ; -0.407 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[2] ; Arena_brrSelect ; -2.806 ; -2.806 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[3] ; Arena_brrSelect ; -2.683 ; -2.683 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[4] ; Arena_brrSelect ; -2.362 ; -2.362 ; Fall       ; Arena_brrSelect ;
+;  Arena_b_rramt_brrIN[5] ; Arena_brrSelect ; -2.731 ; -2.731 ; Fall       ; Arena_brrSelect ;
++-------------------------+-----------------+--------+--------+------------+-----------------+
 
 
 +------------------------------------------------------------------------------------------+
@@ -481,13 +461,13 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 6.108 ; 6.108 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 5.811 ; 5.811 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.083 ; 6.083 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.108 ; 6.108 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 5.949 ; 5.949 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 5.871 ; 5.871 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 5.826 ; 5.826 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 6.242 ; 6.242 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 6.123 ; 6.123 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 6.242 ; 6.242 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 6.106 ; 6.106 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 6.009 ; 6.009 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 6.017 ; 6.017 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 6.001 ; 6.001 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 
 
@@ -496,42 +476,14 @@ No paths to report.
 +-------------------------+-----------------+-------+-------+------------+-----------------+
 ; Data Port               ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.192 ; 3.192 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.192 ; 3.192 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.368 ; 3.368 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.392 ; 3.392 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.315 ; 3.315 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.258 ; 3.258 ; Fall       ; Arena_brrSelect ;
-;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.213 ; 3.213 ; Fall       ; Arena_brrSelect ;
+; Arena_result_brrOUT[*]  ; Arena_brrSelect ; 3.341 ; 3.341 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[0] ; Arena_brrSelect ; 3.401 ; 3.401 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[1] ; Arena_brrSelect ; 3.468 ; 3.468 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[2] ; Arena_brrSelect ; 3.383 ; 3.383 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[3] ; Arena_brrSelect ; 3.354 ; 3.354 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[4] ; Arena_brrSelect ; 3.363 ; 3.363 ; Fall       ; Arena_brrSelect ;
+;  Arena_result_brrOUT[5] ; Arena_brrSelect ; 3.341 ; 3.341 ; Fall       ; Arena_brrSelect ;
 +-------------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------------+
-; Progagation Delay                                                           ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 4.859 ;    ;    ; 4.859 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 4.802 ;    ;    ; 4.802 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 8.822 ;    ;    ; 8.822 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 8.860 ;    ;    ; 8.860 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 8.815 ;    ;    ; 8.815 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 8.796 ;    ;    ; 8.796 ;
-+------------------------+--------------------------+-------+----+----+-------+
-
-
-+-----------------------------------------------------------------------------+
-; Minimum Progagation Delay                                                   ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Input Port             ; Output Port              ; RR    ; RF ; FR ; FF    ;
-+------------------------+--------------------------+-------+----+----+-------+
-; Arena_b_shamt_brrIN[0] ; Arena_b_shamt_integer[0] ; 2.609 ;    ;    ; 2.609 ;
-; Arena_b_shamt_brrIN[1] ; Arena_b_shamt_integer[1] ; 2.572 ;    ;    ; 2.572 ;
-; Arena_b_shamt_brrIN[2] ; Arena_b_shamt_integer[2] ; 5.013 ;    ;    ; 5.013 ;
-; Arena_b_shamt_brrIN[3] ; Arena_b_shamt_integer[3] ; 5.050 ;    ;    ; 5.050 ;
-; Arena_b_shamt_brrIN[4] ; Arena_b_shamt_integer[4] ; 5.014 ;    ;    ; 5.014 ;
-; Arena_b_shamt_brrIN[5] ; Arena_b_shamt_integer[5] ; 4.995 ;    ;    ; 4.995 ;
-+------------------------+--------------------------+-------+----+----+-------+
 
 
 -------------------
@@ -560,9 +512,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 12    ; 12   ;
-; Unconstrained Input Port Paths  ; 12    ; 12   ;
-; Unconstrained Output Ports      ; 12    ; 12   ;
-; Unconstrained Output Port Paths ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 72    ; 72   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
 
 
@@ -572,7 +524,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Mar 31 15:55:26 2019
+    Info: Processing started: Sun Mar 31 22:02:55 2019
 Info: Command: quartus_sta bitwise -c bitwise
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -611,7 +563,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Sun Mar 31 15:55:28 2019
+    Info: Processing ended: Sun Mar 31 22:02:57 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
