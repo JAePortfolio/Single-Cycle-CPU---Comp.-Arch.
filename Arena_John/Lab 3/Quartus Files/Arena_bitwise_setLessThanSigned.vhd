@@ -1,4 +1,5 @@
---John Arena
+-- (First, Last) John Arena - CSC 342/343 - Lab 3 - Spring 2019 Due: 4/1/19
+-- Arena_bitwise_setLessThanSigned.vhd
 Library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
