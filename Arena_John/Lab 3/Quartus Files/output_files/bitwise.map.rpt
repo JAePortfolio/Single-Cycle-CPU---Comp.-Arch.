@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bitwise
-Mon Apr 01 13:09:41 2019
+Tue Apr 02 15:57:16 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 01 13:09:41 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 02 15:57:15 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
-; Top-level Entity Name              ; Arena_bitwise_setLessThanSigned                 ;
+; Top-level Entity Name              ; Arena_bitwise                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 8                                               ;
-;     Total combinational functions  ; 8                                               ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 14                                              ;
+; Total pins                         ; 176                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -59,166 +58,156 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                     ;
-+----------------------------------------------------------------------------+---------------------------------+--------------------+
-; Option                                                                     ; Setting                         ; Default Value      ;
-+----------------------------------------------------------------------------+---------------------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6                    ;                    ;
-; Top-level entity name                                                      ; Arena_bitwise_setLessThanSigned ; bitwise            ;
-; Family name                                                                ; Cyclone II                      ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                             ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                              ; On                 ;
-; Enable compact report table                                                ; Off                             ; Off                ;
-; Restructure Multiplexers                                                   ; Auto                            ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                             ; Off                ;
-; Preserve fewer node names                                                  ; On                              ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                             ; Off                ;
-; Verilog Version                                                            ; Verilog_2001                    ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993                       ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto                            ; Auto               ;
-; Safe State Machine                                                         ; Off                             ; Off                ;
-; Extract Verilog State Machines                                             ; On                              ; On                 ;
-; Extract VHDL State Machines                                                ; On                              ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                             ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000                            ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                             ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                              ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                              ; On                 ;
-; Parallel Synthesis                                                         ; On                              ; On                 ;
-; DSP Block Balancing                                                        ; Auto                            ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                              ; On                 ;
-; Power-Up Don't Care                                                        ; On                              ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                             ; Off                ;
-; Remove Duplicate Registers                                                 ; On                              ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                             ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                             ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                             ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                             ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                             ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                              ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                             ; Off                ;
-; Optimization Technique                                                     ; Balanced                        ; Balanced           ;
-; Carry Chain Length                                                         ; 70                              ; 70                 ;
-; Auto Carry Chains                                                          ; On                              ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                              ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                             ; Off                ;
-; Auto ROM Replacement                                                       ; On                              ; On                 ;
-; Auto RAM Replacement                                                       ; On                              ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto                            ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto                            ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                              ; On                 ;
-; Strict RAM Replacement                                                     ; Off                             ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                              ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                             ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                             ; Off                ;
-; Auto Resource Sharing                                                      ; Off                             ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                             ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                             ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                             ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                              ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                             ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                             ; Off                ;
-; Report Parameter Settings                                                  ; On                              ; On                 ;
-; Report Source Assignments                                                  ; On                              ; On                 ;
-; Report Connectivity Checks                                                 ; On                              ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                             ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                               ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation              ; Normal compilation ;
-; HDL message level                                                          ; Level2                          ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                             ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000                            ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                            ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                             ; 100                ;
-; Clock MUX Protection                                                       ; On                              ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                             ; Off                ;
-; Block Design Naming                                                        ; Auto                            ; Auto               ;
-; SDC constraint protection                                                  ; Off                             ; Off                ;
-; Synthesis Effort                                                           ; Auto                            ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                              ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                             ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium                          ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto                            ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                              ; On                 ;
-; Synthesis Seed                                                             ; 1                               ; 1                  ;
-+----------------------------------------------------------------------------+---------------------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Arena_bitwise      ; bitwise            ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                        ; Library ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_bitwise_setLessThanSigned.vhd ; yes             ; User VHDL File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanSigned.vhd ;         ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                       ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                 ; Library ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_bitwise_setLessThanSigned.vhd          ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanSigned.vhd   ;         ;
+; Arena_bitwiseOperation_decoder.vhd           ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd    ;         ;
+; Arena_ledReset.vhd                           ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_ledReset.vhd                    ;         ;
+; ../ModelSim Files/Arena_bitwisexor.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisexor.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitwiseor.vhd        ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseor.vhd                  ;         ;
+; ../ModelSim Files/Arena_bitwisenot.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisenot.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitwiseand.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseand.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitshiftright.vhd    ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftright.vhd              ;         ;
+; ../ModelSim Files/Arena_bitshiftleft.vhd     ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftleft.vhd               ;         ;
+; ../ModelSim Files/Arena_bitrotationright.vhd ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationright.vhd           ;         ;
+; ../ModelSim Files/Arena_bitrotationleft.vhd  ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationleft.vhd            ;         ;
+; ../Arena_bitwise.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Arena_bitwise.bdf                                   ;         ;
+; Arena_bitwise_setLessThanUnsigned.vhd        ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanUnsigned.vhd ;         ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 8                         ;
-;                                             ;                           ;
-; Total combinational functions               ; 8                         ;
-; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 4                         ;
-;     -- 3 input functions                    ; 3                         ;
-;     -- <=2 input functions                  ; 1                         ;
-;                                             ;                           ;
-; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 8                         ;
-;     -- arithmetic mode                      ; 0                         ;
-;                                             ;                           ;
-; Total registers                             ; 0                         ;
-;     -- Dedicated logic registers            ; 0                         ;
-;     -- I/O registers                        ; 0                         ;
-;                                             ;                           ;
-; I/O pins                                    ; 14                        ;
-; Embedded Multiplier 9-bit elements          ; 0                         ;
-; Maximum fan-out node                        ; Arena_result_sltOUT$latch ;
-; Maximum fan-out                             ; 2                         ;
-; Total fan-out                               ; 28                        ;
-; Average fan-out                             ; 1.27                      ;
-+---------------------------------------------+---------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 176   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |Arena_bitwise_setLessThanSigned ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Arena_bitwise_setLessThanSigned ; work         ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |Arena_bitwise             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 176  ; 0            ; |Arena_bitwise      ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; Arena_result_sltOUT$latch                          ; Arena_sltSelect     ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -251,9 +240,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 01 13:09:39 2019
+    Info: Processing started: Tue Apr 02 15:57:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bitwise -c bitwise
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthansigned.vhd
     Info (12022): Found design unit 1: Arena_bitwise_setLessThanSigned-Arena_bitwise_setLessThanSigned_arch
     Info (12023): Found entity 1: Arena_bitwise_setLessThanSigned
@@ -263,48 +252,355 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_b
 Info (12021): Found 2 design units, including 1 entities, in source file arena_ledreset.vhd
     Info (12022): Found design unit 1: Arena_ledReset-Arena_ledReset_arch
     Info (12023): Found entity 1: Arena_ledReset
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
     Info (12022): Found design unit 1: Arena_bitwisexor-Arena_bitwisexor_arch
     Info (12023): Found entity 1: Arena_bitwisexor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
     Info (12022): Found design unit 1: Arena_bitwiseor-Arena_bitwiseor_arch
     Info (12023): Found entity 1: Arena_bitwiseor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
     Info (12022): Found design unit 1: Arena_bitwisenot-Arena_bitwisenot_arch
     Info (12023): Found entity 1: Arena_bitwisenot
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
     Info (12022): Found design unit 1: Arena_bitwiseand-Arena_bitwiseand_arch
     Info (12023): Found entity 1: Arena_bitwiseand
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
     Info (12022): Found design unit 1: Arena_bitshiftright-Arena_bitshiftright_arch
     Info (12023): Found entity 1: Arena_bitshiftright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
     Info (12022): Found design unit 1: Arena_bitshiftleft-Arena_bitshiftleft_arch
     Info (12023): Found entity 1: Arena_bitshiftleft
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
     Info (12022): Found design unit 1: Arena_bitrotationright-Arena_bitrotationright_arch
     Info (12023): Found entity 1: Arena_bitrotationright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
     Info (12022): Found design unit 1: Arena_bitrotationleft-Arena_bitrotationleft_arch
     Info (12023): Found entity 1: Arena_bitrotationleft
-Info (12021): Found 1 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/arena_bitwise.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/arena_bitwise.bdf
     Info (12023): Found entity 1: Arena_bitwise
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthanunsigned.vhd
     Info (12022): Found design unit 1: Arena_bitwise_setLessThanUnsigned-Arena_bitwise_setLessThanUnsigned_arch
     Info (12023): Found entity 1: Arena_bitwise_setLessThanUnsigned
-Info (12127): Elaborating entity "Arena_bitwise_setLessThanSigned" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanSigned.vhd(22): inferring latch(es) for signal or variable "Arena_result_sltOUT", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "Arena_result_sltOUT" at Arena_bitwise_setLessThanSigned.vhd(22)
+Info (12127): Elaborating entity "Arena_bitwise" for the top level hierarchy
+Warning (275002): No superset bus at connection
+Warning (275043): Pin "Arena_a_sltIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_sltIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_sltuIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_sltuIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_andIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_brlIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_brrIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_bslIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_bsrIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_notIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_orIN[5..0]" is missing source
+Warning (275043): Pin "Arena_a_xorIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_andIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_orIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_rlamt_brlIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_rramt_brrIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_slamt_bslIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_sramt_bsrIN[5..0]" is missing source
+Warning (275043): Pin "Arena_b_xorIN[5..0]" is missing source
+Warning (275043): Pin "Arena_resultnotOUT[5..0]" is missing source
+Info (12128): Elaborating entity "Arena_bitwise_setLessThanSigned" for hierarchy "Arena_bitwise_setLessThanSigned:inst13"
+Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanSigned.vhd(23): inferring latch(es) for signal or variable "Arena_result_sltOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_sltOUT" at Arena_bitwise_setLessThanSigned.vhd(23)
+Info (12128): Elaborating entity "Arena_bitwiseOperation_decoder" for hierarchy "Arena_bitwiseOperation_decoder:inst"
+Warning (10631): VHDL Process Statement warning at Arena_bitwiseOperation_decoder.vhd(17): inferring latch(es) for signal or variable "Arena_opSelect", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_opSelect[0]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[1]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[2]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[3]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[4]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[5]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[6]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[7]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[8]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[9]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[10]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[11]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[12]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[13]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[14]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (10041): Inferred latch for "Arena_opSelect[15]" at Arena_bitwiseOperation_decoder.vhd(17)
+Info (12128): Elaborating entity "Arena_bitwise_setLessThanUnsigned" for hierarchy "Arena_bitwise_setLessThanUnsigned:inst14"
+Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanUnsigned.vhd(23): inferring latch(es) for signal or variable "Arena_result_sltuOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_sltuOUT" at Arena_bitwise_setLessThanUnsigned.vhd(23)
+Info (12128): Elaborating entity "Arena_bitwisexor" for hierarchy "Arena_bitwisexor:inst4"
+Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_a_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_b_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwisexor.vhd(16): inferring latch(es) for signal or variable "Arena_result_xorOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_xorOUT[0]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[1]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[2]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[3]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[4]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[5]" at Arena_bitwisexor.vhd(16)
+Info (12128): Elaborating entity "Arena_ledReset" for hierarchy "Arena_ledReset:inst10"
+Warning (10631): VHDL Process Statement warning at Arena_ledReset.vhd(16): inferring latch(es) for signal or variable "Arena_ledOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_ledOUT[0]" at Arena_ledReset.vhd(16)
+Info (10041): Inferred latch for "Arena_ledOUT[1]" at Arena_ledReset.vhd(16)
+Info (10041): Inferred latch for "Arena_ledOUT[2]" at Arena_ledReset.vhd(16)
+Info (10041): Inferred latch for "Arena_ledOUT[3]" at Arena_ledReset.vhd(16)
+Info (10041): Inferred latch for "Arena_ledOUT[4]" at Arena_ledReset.vhd(16)
+Info (10041): Inferred latch for "Arena_ledOUT[5]" at Arena_ledReset.vhd(16)
+Info (12128): Elaborating entity "Arena_bitwiseand" for hierarchy "Arena_bitwiseand:inst3"
+Warning (10492): VHDL Process Statement warning at Arena_bitwiseand.vhd(19): signal "Arena_a_andIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitwiseand.vhd(19): signal "Arena_b_andIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwiseand.vhd(16): inferring latch(es) for signal or variable "Arena_result_andOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_andOUT[0]" at Arena_bitwiseand.vhd(16)
+Info (10041): Inferred latch for "Arena_result_andOUT[1]" at Arena_bitwiseand.vhd(16)
+Info (10041): Inferred latch for "Arena_result_andOUT[2]" at Arena_bitwiseand.vhd(16)
+Info (10041): Inferred latch for "Arena_result_andOUT[3]" at Arena_bitwiseand.vhd(16)
+Info (10041): Inferred latch for "Arena_result_andOUT[4]" at Arena_bitwiseand.vhd(16)
+Info (10041): Inferred latch for "Arena_result_andOUT[5]" at Arena_bitwiseand.vhd(16)
+Info (12128): Elaborating entity "Arena_bitrotationright" for hierarchy "Arena_bitrotationright:inst7"
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(24): signal "Arena_a_brrIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(24): signal "Arena_b_rramt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitrotationright.vhd(21): inferring latch(es) for signal or variable "Arena_result_brrOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_brrOUT[0]" at Arena_bitrotationright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brrOUT[1]" at Arena_bitrotationright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brrOUT[2]" at Arena_bitrotationright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brrOUT[3]" at Arena_bitrotationright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brrOUT[4]" at Arena_bitrotationright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brrOUT[5]" at Arena_bitrotationright.vhd(21)
+Info (12128): Elaborating entity "Arena_bitshiftleft" for hierarchy "Arena_bitshiftleft:inst6"
+Warning (10492): VHDL Process Statement warning at Arena_bitshiftleft.vhd(24): signal "Arena_a_bslIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitshiftleft.vhd(24): signal "Arena_b_slamt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitshiftleft.vhd(21): inferring latch(es) for signal or variable "Arena_result_bslOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_bslOUT[0]" at Arena_bitshiftleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bslOUT[1]" at Arena_bitshiftleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bslOUT[2]" at Arena_bitshiftleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bslOUT[3]" at Arena_bitshiftleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bslOUT[4]" at Arena_bitshiftleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bslOUT[5]" at Arena_bitshiftleft.vhd(21)
+Info (12128): Elaborating entity "Arena_bitshiftright" for hierarchy "Arena_bitshiftright:inst5"
+Warning (10492): VHDL Process Statement warning at Arena_bitshiftright.vhd(24): signal "Arena_a_bsrIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitshiftright.vhd(24): signal "Arena_b_sramt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitshiftright.vhd(21): inferring latch(es) for signal or variable "Arena_result_bsrOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_bsrOUT[0]" at Arena_bitshiftright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bsrOUT[1]" at Arena_bitshiftright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bsrOUT[2]" at Arena_bitshiftright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bsrOUT[3]" at Arena_bitshiftright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bsrOUT[4]" at Arena_bitshiftright.vhd(21)
+Info (10041): Inferred latch for "Arena_result_bsrOUT[5]" at Arena_bitshiftright.vhd(21)
+Info (12128): Elaborating entity "Arena_bitwiseor" for hierarchy "Arena_bitwiseor:inst2"
+Warning (10492): VHDL Process Statement warning at Arena_bitwiseor.vhd(19): signal "Arena_a_orIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitwiseor.vhd(19): signal "Arena_b_orIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwiseor.vhd(16): inferring latch(es) for signal or variable "Arena_result_orOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_orOUT[0]" at Arena_bitwiseor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_orOUT[1]" at Arena_bitwiseor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_orOUT[2]" at Arena_bitwiseor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_orOUT[3]" at Arena_bitwiseor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_orOUT[4]" at Arena_bitwiseor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_orOUT[5]" at Arena_bitwiseor.vhd(16)
+Info (12128): Elaborating entity "Arena_bitrotationleft" for hierarchy "Arena_bitrotationleft:inst8"
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_a_brlIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_b_rlamt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitrotationleft.vhd(21): inferring latch(es) for signal or variable "Arena_result_brlOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_brlOUT[0]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[1]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[2]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[3]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[4]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[5]" at Arena_bitrotationleft.vhd(21)
+Info (12128): Elaborating entity "Arena_bitwisenot" for hierarchy "Arena_bitwisenot:inst1"
+Warning (10492): VHDL Process Statement warning at Arena_bitwisenot.vhd(19): signal "Arena_a_notIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwisenot.vhd(16): inferring latch(es) for signal or variable "Arena_result_notOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_notOUT[0]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[1]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[2]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[3]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[4]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[5]" at Arena_bitwisenot.vhd(16)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Arena_result_sltOUT" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_sltuOUT" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_sltuIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sltuIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_andIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brlIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_brrIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bslIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_bsrIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_notIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_orIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_a_xorIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_andIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_orIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rlamt_brlIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_rramt_brrIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_slamt_bslIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_sramt_bsrIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN[0]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN63[5]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN64[4]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN65[3]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN66[2]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN67[1]" is stuck at GND
+    Warning (13410): Pin "Arena_b_xorIN68[0]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_ledOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_andOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brrOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bslOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_bsrOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_orOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT18[5]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT19[4]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT19[3]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT20[2]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT21[1]" is stuck at GND
+    Warning (13410): Pin "Arena_resultnotOUT22[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4654 megabytes
-    Info: Processing ended: Mon Apr 01 13:09:41 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Arena_button"
+    Warning (15610): No output dependent on input pin "Arena_opcode[3]"
+    Warning (15610): No output dependent on input pin "Arena_opcode[2]"
+    Warning (15610): No output dependent on input pin "Arena_opcode[1]"
+    Warning (15610): No output dependent on input pin "Arena_opcode[0]"
+    Warning (15610): No output dependent on input pin "Arena_buttonStart"
+Info (21057): Implemented 176 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 170 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 227 warnings
+    Info: Peak virtual memory: 480 megabytes
+    Info: Processing ended: Tue Apr 02 15:57:16 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

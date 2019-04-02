@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 entity Arena_bitrotationleft is
   port(
     Arena_a_brlIN: in std_logic_vector(5 downto 0); -- Bit rotation left in
-	 Arena_b_rlamt_brrIN: in std_logic_vector(5 downto 0); -- Bit rotation left amount IN
+	 Arena_b_rlamt_brlIN: in std_logic_vector(5 downto 0); -- Bit rotation left amount IN
     Arena_result_brlOUT: out std_logic_vector(5 downto 0); -- Bit rotation out
 	 Arena_brlSelect: in std_logic
   );
@@ -17,7 +17,7 @@ architecture Arena_bitrotationleft_arch of Arena_bitrotationleft is
 signal Arena_b_rlamt_integer : integer; -- Rotate Left integer value declaration
 
 begin
-Arena_b_rlamt_integer <= to_integer(unsigned(Arena_b_rlamt_brrIN)); -- Assign value
+Arena_b_rlamt_integer <= to_integer(unsigned(Arena_b_rlamt_brlIN)); -- Assign value
 	process(Arena_brlSelect)
 		begin
 			if(Arena_brlSelect = '1') then

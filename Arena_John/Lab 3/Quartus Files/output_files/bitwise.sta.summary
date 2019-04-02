@@ -2,12 +2,4 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Minimum Pulse Width 'Arena_sltSelect'
-Slack : -1.222
-TNS   : -1.222
-
-Type  : Fast Model Minimum Pulse Width 'Arena_sltSelect'
-Slack : -1.222
-TNS   : -1.222
-
 ------------------------------------------------------------

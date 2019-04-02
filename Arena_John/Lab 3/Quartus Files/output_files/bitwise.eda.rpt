@@ -1,5 +1,5 @@
 EDA Netlist Writer report for bitwise
-Mon Apr 01 13:15:33 2019
+Tue Apr 02 15:57:32 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Apr 01 13:15:33 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 02 15:57:32 2019 ;
 ; Revision Name             ; bitwise                               ;
-; Top-level Entity Name     ; Arena_bitwise_setLessThanSigned       ;
+; Top-level Entity Name     ; Arena_bitwise                         ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                     ;
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                ;
-+--------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/simulation/modelsim/bitwise.vo ;
-+--------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                            ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                       ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/simulation/modelsim/bitwise.vo ;
++---------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 01 13:15:32 2019
-Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog bitwise -c bitwise
-Info (204019): Generated file bitwise.vo in folder "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Tue Apr 02 15:57:32 2019
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off bitwise -c bitwise
+Info (204019): Generated file bitwise.vo in folder "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4553 megabytes
-    Info: Processing ended: Mon Apr 01 13:15:33 2019
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Tue Apr 02 15:57:32 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

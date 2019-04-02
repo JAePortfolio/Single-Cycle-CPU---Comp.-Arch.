@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bitwise
-Mon Apr 01 13:09:55 2019
+Tue Apr 02 15:57:31 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,31 +16,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Minimum Pulse Width: 'Arena_sltSelect'
- 12. Setup Times
- 13. Hold Times
- 14. Clock to Output Times
- 15. Minimum Clock to Output Times
- 16. Fast Model Setup Summary
- 17. Fast Model Hold Summary
- 18. Fast Model Recovery Summary
- 19. Fast Model Removal Summary
- 20. Fast Model Minimum Pulse Width Summary
- 21. Fast Model Minimum Pulse Width: 'Arena_sltSelect'
- 22. Setup Times
- 23. Hold Times
- 24. Clock to Output Times
- 25. Minimum Clock to Output Times
- 26. Multicorner Timing Analysis Summary
- 27. Setup Times
- 28. Hold Times
- 29. Clock to Output Times
- 30. Minimum Clock to Output Times
- 31. Clock Transfers
- 32. Report TCCS
- 33. Report RSKM
- 34. Unconstrained Paths
- 35. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Datasheet Report
+ 12. Fast Model Setup Summary
+ 13. Fast Model Hold Summary
+ 14. Fast Model Recovery Summary
+ 15. Fast Model Removal Summary
+ 16. Fast Model Minimum Pulse Width Summary
+ 17. Fast Model Datasheet Report
+ 18. Multicorner Timing Analysis Summary
+ 19. Clock Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -76,30 +64,21 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                           ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
-; Clock Name      ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets             ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
-; Arena_sltSelect ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_sltSelect } ;
-+-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
 ---------------------------
@@ -132,90 +111,16 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------+
-; Slow Model Minimum Pulse Width Summary   ;
-+-----------------+--------+---------------+
-; Clock           ; Slack  ; End Point TNS ;
-+-----------------+--------+---------------+
-; Arena_sltSelect ; -1.222 ; -1.222        ;
-+-----------------+--------+---------------+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_sltSelect'                                                                          ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                          ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_sltSelect ; Rise       ; Arena_sltSelect                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Fall       ; Arena_result_sltOUT$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Fall       ; Arena_result_sltOUT$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Rise       ; Arena_result_sltOUT$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Rise       ; Arena_result_sltOUT$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Rise       ; Arena_sltSelect|combout         ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Rise       ; Arena_sltSelect|combout         ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; 6.286 ; 6.286 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; 6.178 ; 6.178 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; 6.286 ; 6.286 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; 5.380 ; 5.380 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; 5.899 ; 5.899 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; 6.206 ; 6.206 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; 2.663 ; 2.663 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; 6.385 ; 6.385 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; 6.385 ; 6.385 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; 6.070 ; 6.070 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; 5.524 ; 5.524 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; 6.048 ; 6.048 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; 5.726 ; 5.726 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; 2.212 ; 2.212 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; -1.683 ; -1.683 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; -5.509 ; -5.509 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; -5.617 ; -5.617 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; -4.711 ; -4.711 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; -4.973 ; -4.973 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; -4.844 ; -4.844 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; -1.683 ; -1.683 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; -1.231 ; -1.231 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; -5.716 ; -5.716 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; -5.401 ; -5.401 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; -4.855 ; -4.855 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; -4.783 ; -4.783 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; -4.354 ; -4.354 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; -1.231 ; -1.231 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 5.852 ; 5.852 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                        ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 5.852 ; 5.852 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -242,90 +147,16 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------+
-; Fast Model Minimum Pulse Width Summary   ;
-+-----------------+--------+---------------+
-; Clock           ; Slack  ; End Point TNS ;
-+-----------------+--------+---------------+
-; Arena_sltSelect ; -1.222 ; -1.222        ;
-+-----------------+--------+---------------+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_sltSelect'                                                                          ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                          ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_sltSelect ; Rise       ; Arena_sltSelect                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Fall       ; Arena_result_sltOUT$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Fall       ; Arena_result_sltOUT$latch       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Rise       ; Arena_result_sltOUT$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Rise       ; Arena_result_sltOUT$latch|datac ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_sltSelect ; Rise       ; Arena_sltSelect|combout         ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_sltSelect ; Rise       ; Arena_sltSelect|combout         ;
-+--------+--------------+----------------+------------------+-----------------+------------+---------------------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; 3.446 ; 3.446 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; 3.336 ; 3.336 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; 3.446 ; 3.446 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; 2.979 ; 2.979 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; 3.200 ; 3.200 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; 3.349 ; 3.349 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; 1.164 ; 1.164 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; 3.413 ; 3.413 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; 3.413 ; 3.413 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; 3.282 ; 3.282 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; 3.046 ; 3.046 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; 3.253 ; 3.253 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; 3.136 ; 3.136 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; 0.955 ; 0.955 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; -0.764 ; -0.764 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; -3.067 ; -3.067 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; -3.177 ; -3.177 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; -2.710 ; -2.710 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; -2.832 ; -2.832 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; -2.797 ; -2.797 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; -0.764 ; -0.764 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; -0.555 ; -0.555 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; -3.144 ; -3.144 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; -3.013 ; -3.013 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; -2.777 ; -2.777 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; -2.736 ; -2.736 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; -2.574 ; -2.574 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; -0.555 ; -0.555 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 2.998 ; 2.998 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                        ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 2.998 ; 2.998 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +----------------------------------------------------------------------------+
@@ -333,73 +164,9 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
-;  Arena_sltSelect ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1.222              ;
-;  Arena_sltSelect ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Setup Times                                                                        ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; 6.286 ; 6.286 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; 6.178 ; 6.178 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; 6.286 ; 6.286 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; 5.380 ; 5.380 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; 5.899 ; 5.899 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; 6.206 ; 6.206 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; 2.663 ; 2.663 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; 6.385 ; 6.385 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; 6.385 ; 6.385 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; 6.070 ; 6.070 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; 5.524 ; 5.524 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; 6.048 ; 6.048 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; 5.726 ; 5.726 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; 2.212 ; 2.212 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Hold Times                                                                           ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Data Port         ; Clock Port      ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-; Arena_a_sltIN[*]  ; Arena_sltSelect ; -0.764 ; -0.764 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[0] ; Arena_sltSelect ; -3.067 ; -3.067 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[1] ; Arena_sltSelect ; -3.177 ; -3.177 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[2] ; Arena_sltSelect ; -2.710 ; -2.710 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[3] ; Arena_sltSelect ; -2.832 ; -2.832 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[4] ; Arena_sltSelect ; -2.797 ; -2.797 ; Fall       ; Arena_sltSelect ;
-;  Arena_a_sltIN[5] ; Arena_sltSelect ; -0.764 ; -0.764 ; Fall       ; Arena_sltSelect ;
-; Arena_b_sltIN[*]  ; Arena_sltSelect ; -0.555 ; -0.555 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[0] ; Arena_sltSelect ; -3.144 ; -3.144 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[1] ; Arena_sltSelect ; -3.013 ; -3.013 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[2] ; Arena_sltSelect ; -2.777 ; -2.777 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[3] ; Arena_sltSelect ; -2.736 ; -2.736 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[4] ; Arena_sltSelect ; -2.574 ; -2.574 ; Fall       ; Arena_sltSelect ;
-;  Arena_b_sltIN[5] ; Arena_sltSelect ; -0.555 ; -0.555 ; Fall       ; Arena_sltSelect ;
-+-------------------+-----------------+--------+--------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 5.852 ; 5.852 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                        ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Data Port           ; Clock Port      ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
-; Arena_result_sltOUT ; Arena_sltSelect ; 2.998 ; 2.998 ; Fall       ; Arena_sltSelect ;
-+---------------------+-----------------+-------+-------+------------+-----------------+
 
 
 -------------------
@@ -427,10 +194,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 12    ; 12   ;
-; Unconstrained Input Port Paths  ; 12    ; 12   ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 1     ; 1    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -440,46 +207,41 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 01 13:09:53 2019
+    Info: Processing started: Tue Apr 02 15:57:29 2019
 Info: Command: quartus_sta bitwise -c bitwise
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'bitwise.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name Arena_sltSelect Arena_sltSelect
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -1.222
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.222        -1.222 Arena_sltSelect 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -1.222
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.222        -1.222 Arena_sltSelect 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Mon Apr 01 13:09:55 2019
+    Info: Peak virtual memory: 387 megabytes
+    Info: Processing ended: Tue Apr 02 15:57:31 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
