@@ -5,20 +5,15 @@ Arena_opcode[1], PIN_U4
 Arena_opcode[0], PIN_U3
 Arena_buttonStart, PIN_W26
 Arena_button, PIN_G26
-Arena_ledOUT[0], PIN_AE22
-Arena_ledOUT[1], PIN_AF22
-Arena_ledOUT[2], PIN_W19
-Arena_ledOUT[3], PIN_V18
-Arena_ledOUT[4], PIN_U18
-Arena_ledOUT[5], PIN_U17
-Arena_ledOUT[6], PIN_AA20
+result[0], PIN_AE22
+result[1], PIN_AF22
+result[2], PIN_W19
+result[3], PIN_V18
+result[4], PIN_U18
+result[5], PIN_U17
 
-Arena_result_notOUT[0], PIN_AE22
-Arena_result_notOUT[1], PIN_AF22
-Arena_result_notOUT[2], PIN_W19
-Arena_result_notOUT[3], PIN_V18
-Arena_result_notOUT[4], PIN_U18
-Arena_result_notOUT[5], PIN_U17
+
+
 
 Arena_a_notIN[0], PIN_N25
 Arena_a_notIN[1], PIN_N26
@@ -29,12 +24,6 @@ Arena_a_notIN[5], PIN_AD13
 
 
 
-Arena_result_orOUT[0], PIN_AE22
-Arena_result_orOUT[1], PIN_AF22
-Arena_result_orOUT[2], PIN_W19
-Arena_result_orOUT[3], PIN_V18
-Arena_result_orOUT[4], PIN_U18
-Arena_result_orOUT[5], PIN_U17
 Arena_a_orIN[0], PIN_N25
 Arena_a_orIN[1], PIN_N26
 Arena_a_orIN[2], PIN_P25
@@ -48,12 +37,7 @@ Arena_b_orIN[3], PIN_A13
 Arena_b_orIN[4], PIN_N1
 Arena_b_orIN[5], PIN_P1
 
-Arena_result_andOUT[0], PIN_AE22
-Arena_result_andOUT[1], PIN_AF22
-Arena_result_andOUT[2], PIN_W19
-Arena_result_andOUT[3], PIN_V18
-Arena_result_andOUT[4], PIN_U18
-Arena_result_andOUT[5], PIN_U17
+
 Arena_a_andIN[0], PIN_N25
 Arena_a_andIN[1], PIN_N26
 Arena_a_andIN[2], PIN_P25
@@ -67,12 +51,7 @@ Arena_b_andIN[3], PIN_A13
 Arena_b_andIN[4], PIN_N1
 Arena_b_andIN[5], PIN_P1
 
-Arena_result_xorOUT[0], PIN_AE22
-Arena_result_xorOUT[1], PIN_AF22
-Arena_result_xorOUT[2], PIN_W19
-Arena_result_xorOUT[3], PIN_V18
-Arena_result_xorOUT[4], PIN_U18
-Arena_result_xorOUT[5], PIN_U17
+
 Arena_a_xorIN[0], PIN_N25
 Arena_a_xorIN[1], PIN_N26
 Arena_a_xorIN[2], PIN_P25
@@ -86,12 +65,7 @@ Arena_b_xorIN[3], PIN_A13
 Arena_b_xorIN[4], PIN_N1
 Arena_b_xorIN[5], PIN_P1
 
-Arena_result_bsrOUT[0], PIN_AE22
-Arena_result_bsrOUT[1], PIN_AF22
-Arena_result_bsrOUT[2], PIN_W19
-Arena_result_bsrOUT[3], PIN_V18
-Arena_result_bsrOUT[4], PIN_U18
-Arena_result_bsrOUT[5], PIN_U17
+
 Arena_a_bsrIN[0], PIN_N25
 Arena_a_bsrIN[1], PIN_N26
 Arena_a_bsrIN[2], PIN_P25
@@ -105,12 +79,6 @@ Arena_b_sramt_bsrIN[3], PIN_A13
 Arena_b_sramt_bsrIN[4], PIN_N1
 Arena_b_sramt_bsrIN[5], PIN_P1
 
-Arena_result_bslOUT[0], PIN_AE22
-Arena_result_bslOUT[1], PIN_AF22
-Arena_result_bslOUT[2], PIN_W19
-Arena_result_bslOUT[3], PIN_V18
-Arena_result_bslOUT[4], PIN_U18
-Arena_result_bslOUT[5], PIN_U17
 Arena_a_bslIN[0], PIN_N25
 Arena_a_bslIN[1], PIN_N26
 Arena_a_bslIN[2], PIN_P25
@@ -125,12 +93,6 @@ Arena_b_slamt_bslIN[4], PIN_N1
 Arena_b_slamt_bslIN[5], PIN_P1
 
 
-Arena_result_brrOUT[0], PIN_AE22
-Arena_result_brrOUT[1], PIN_AF22
-Arena_result_brrOUT[2], PIN_W19
-Arena_result_brrOUT[3], PIN_V18
-Arena_result_brrOUT[4], PIN_U18
-Arena_result_brrOUT[5], PIN_U17
 Arena_a_brrIN[0], PIN_N25
 Arena_a_brrIN[1], PIN_N26
 Arena_a_brrIN[2], PIN_P25
@@ -145,12 +107,6 @@ Arena_b_rramt_brrIN[4], PIN_N1
 Arena_b_rramt_brrIN[5], PIN_P1
 
 
-Arena_result_brlOUT[0], PIN_AE22
-Arena_result_brlOUT[1], PIN_AF22
-Arena_result_brlOUT[2], PIN_W19
-Arena_result_brlOUT[3], PIN_V18
-Arena_result_brlOUT[4], PIN_U18
-Arena_result_brlOUT[5], PIN_U17
 Arena_a_brlIN[0], PIN_N25
 Arena_a_brlIN[1], PIN_N26
 Arena_a_brlIN[2], PIN_P25

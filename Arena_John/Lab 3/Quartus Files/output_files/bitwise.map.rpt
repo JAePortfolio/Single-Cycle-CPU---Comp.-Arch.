@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bitwise
-Tue Apr 02 15:57:16 2019
+Wed Apr 03 13:08:13 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 02 15:57:15 2019           ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 03 13:08:13 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
 ; Top-level Entity Name              ; Arena_bitwise                                   ;
@@ -143,36 +143,42 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                       ;
-+----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                 ; Library ;
-+----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_bitwise_setLessThanSigned.vhd          ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanSigned.vhd   ;         ;
-; Arena_bitwiseOperation_decoder.vhd           ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd    ;         ;
-; Arena_ledReset.vhd                           ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_ledReset.vhd                    ;         ;
-; ../ModelSim Files/Arena_bitwisexor.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisexor.vhd                 ;         ;
-; ../ModelSim Files/Arena_bitwiseor.vhd        ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseor.vhd                  ;         ;
-; ../ModelSim Files/Arena_bitwisenot.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisenot.vhd                 ;         ;
-; ../ModelSim Files/Arena_bitwiseand.vhd       ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseand.vhd                 ;         ;
-; ../ModelSim Files/Arena_bitshiftright.vhd    ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftright.vhd              ;         ;
-; ../ModelSim Files/Arena_bitshiftleft.vhd     ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftleft.vhd               ;         ;
-; ../ModelSim Files/Arena_bitrotationright.vhd ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationright.vhd           ;         ;
-; ../ModelSim Files/Arena_bitrotationleft.vhd  ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationleft.vhd            ;         ;
-; ../Arena_bitwise.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Arena_bitwise.bdf                                   ;         ;
-; Arena_bitwise_setLessThanUnsigned.vhd        ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanUnsigned.vhd ;         ;
-+----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                ;
++----------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                          ; Library ;
++----------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_bitwise_setLessThanSigned.vhd          ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanSigned.vhd   ;         ;
+; Arena_bitwiseOperation_decoder.vhd           ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd    ;         ;
+; Arena_ledReset.vhd                           ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_ledReset.vhd                    ;         ;
+; ../ModelSim Files/Arena_bitwisexor.vhd       ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisexor.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitwiseor.vhd        ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseor.vhd                  ;         ;
+; ../ModelSim Files/Arena_bitwisenot.vhd       ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwisenot.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitwiseand.vhd       ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitwiseand.vhd                 ;         ;
+; ../ModelSim Files/Arena_bitshiftright.vhd    ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftright.vhd              ;         ;
+; ../ModelSim Files/Arena_bitshiftleft.vhd     ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitshiftleft.vhd               ;         ;
+; ../ModelSim Files/Arena_bitrotationright.vhd ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationright.vhd           ;         ;
+; ../ModelSim Files/Arena_bitrotationleft.vhd  ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/ModelSim Files/Arena_bitrotationleft.vhd            ;         ;
+; ../Arena_bitwise.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Arena_bitwise.bdf                                   ;         ;
+; Arena_bitwise_setLessThanUnsigned.vhd        ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_setLessThanUnsigned.vhd ;         ;
++----------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -240,9 +246,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 02 15:57:13 2019
+    Info: Processing started: Wed Apr 03 13:08:10 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bitwise -c bitwise
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthansigned.vhd
     Info (12022): Found design unit 1: Arena_bitwise_setLessThanSigned-Arena_bitwise_setLessThanSigned_arch
     Info (12023): Found entity 1: Arena_bitwise_setLessThanSigned
@@ -252,37 +258,36 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_b
 Info (12021): Found 2 design units, including 1 entities, in source file arena_ledreset.vhd
     Info (12022): Found design unit 1: Arena_ledReset-Arena_ledReset_arch
     Info (12023): Found entity 1: Arena_ledReset
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
     Info (12022): Found design unit 1: Arena_bitwisexor-Arena_bitwisexor_arch
     Info (12023): Found entity 1: Arena_bitwisexor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
     Info (12022): Found design unit 1: Arena_bitwiseor-Arena_bitwiseor_arch
     Info (12023): Found entity 1: Arena_bitwiseor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
     Info (12022): Found design unit 1: Arena_bitwisenot-Arena_bitwisenot_arch
     Info (12023): Found entity 1: Arena_bitwisenot
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
     Info (12022): Found design unit 1: Arena_bitwiseand-Arena_bitwiseand_arch
     Info (12023): Found entity 1: Arena_bitwiseand
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
     Info (12022): Found design unit 1: Arena_bitshiftright-Arena_bitshiftright_arch
     Info (12023): Found entity 1: Arena_bitshiftright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
     Info (12022): Found design unit 1: Arena_bitshiftleft-Arena_bitshiftleft_arch
     Info (12023): Found entity 1: Arena_bitshiftleft
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
     Info (12022): Found design unit 1: Arena_bitrotationright-Arena_bitrotationright_arch
     Info (12023): Found entity 1: Arena_bitrotationright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
     Info (12022): Found design unit 1: Arena_bitrotationleft-Arena_bitrotationleft_arch
     Info (12023): Found entity 1: Arena_bitrotationleft
-Info (12021): Found 1 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/arena_bitwise.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/arena_bitwise.bdf
     Info (12023): Found entity 1: Arena_bitwise
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthanunsigned.vhd
     Info (12022): Found design unit 1: Arena_bitwise_setLessThanUnsigned-Arena_bitwise_setLessThanUnsigned_arch
     Info (12023): Found entity 1: Arena_bitwise_setLessThanUnsigned
 Info (12127): Elaborating entity "Arena_bitwise" for the top level hierarchy
-Warning (275002): No superset bus at connection
 Warning (275043): Pin "Arena_a_sltIN[5..0]" is missing source
 Warning (275043): Pin "Arena_b_sltIN[5..0]" is missing source
 Warning (275043): Pin "Arena_a_sltuIN[5..0]" is missing source
@@ -302,7 +307,6 @@ Warning (275043): Pin "Arena_b_rramt_brrIN[5..0]" is missing source
 Warning (275043): Pin "Arena_b_slamt_bslIN[5..0]" is missing source
 Warning (275043): Pin "Arena_b_sramt_bsrIN[5..0]" is missing source
 Warning (275043): Pin "Arena_b_xorIN[5..0]" is missing source
-Warning (275043): Pin "Arena_resultnotOUT[5..0]" is missing source
 Info (12128): Elaborating entity "Arena_bitwise_setLessThanSigned" for hierarchy "Arena_bitwise_setLessThanSigned:inst13"
 Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanSigned.vhd(23): inferring latch(es) for signal or variable "Arena_result_sltOUT", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Arena_result_sltOUT" at Arena_bitwise_setLessThanSigned.vhd(23)
@@ -327,16 +331,6 @@ Info (10041): Inferred latch for "Arena_opSelect[15]" at Arena_bitwiseOperation_
 Info (12128): Elaborating entity "Arena_bitwise_setLessThanUnsigned" for hierarchy "Arena_bitwise_setLessThanUnsigned:inst14"
 Warning (10631): VHDL Process Statement warning at Arena_bitwise_setLessThanUnsigned.vhd(23): inferring latch(es) for signal or variable "Arena_result_sltuOUT", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Arena_result_sltuOUT" at Arena_bitwise_setLessThanUnsigned.vhd(23)
-Info (12128): Elaborating entity "Arena_bitwisexor" for hierarchy "Arena_bitwisexor:inst4"
-Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_a_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_b_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Arena_bitwisexor.vhd(16): inferring latch(es) for signal or variable "Arena_result_xorOUT", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "Arena_result_xorOUT[0]" at Arena_bitwisexor.vhd(16)
-Info (10041): Inferred latch for "Arena_result_xorOUT[1]" at Arena_bitwisexor.vhd(16)
-Info (10041): Inferred latch for "Arena_result_xorOUT[2]" at Arena_bitwisexor.vhd(16)
-Info (10041): Inferred latch for "Arena_result_xorOUT[3]" at Arena_bitwisexor.vhd(16)
-Info (10041): Inferred latch for "Arena_result_xorOUT[4]" at Arena_bitwisexor.vhd(16)
-Info (10041): Inferred latch for "Arena_result_xorOUT[5]" at Arena_bitwisexor.vhd(16)
 Info (12128): Elaborating entity "Arena_ledReset" for hierarchy "Arena_ledReset:inst10"
 Warning (10631): VHDL Process Statement warning at Arena_ledReset.vhd(16): inferring latch(es) for signal or variable "Arena_ledOUT", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "Arena_ledOUT[0]" at Arena_ledReset.vhd(16)
@@ -355,6 +349,16 @@ Info (10041): Inferred latch for "Arena_result_andOUT[2]" at Arena_bitwiseand.vh
 Info (10041): Inferred latch for "Arena_result_andOUT[3]" at Arena_bitwiseand.vhd(16)
 Info (10041): Inferred latch for "Arena_result_andOUT[4]" at Arena_bitwiseand.vhd(16)
 Info (10041): Inferred latch for "Arena_result_andOUT[5]" at Arena_bitwiseand.vhd(16)
+Info (12128): Elaborating entity "Arena_bitrotationleft" for hierarchy "Arena_bitrotationleft:inst8"
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_a_brlIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_b_rlamt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitrotationleft.vhd(21): inferring latch(es) for signal or variable "Arena_result_brlOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_brlOUT[0]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[1]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[2]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[3]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[4]" at Arena_bitrotationleft.vhd(21)
+Info (10041): Inferred latch for "Arena_result_brlOUT[5]" at Arena_bitrotationleft.vhd(21)
 Info (12128): Elaborating entity "Arena_bitrotationright" for hierarchy "Arena_bitrotationright:inst7"
 Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(24): signal "Arena_a_brrIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_bitrotationright.vhd(24): signal "Arena_b_rramt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -385,6 +389,15 @@ Info (10041): Inferred latch for "Arena_result_bsrOUT[2]" at Arena_bitshiftright
 Info (10041): Inferred latch for "Arena_result_bsrOUT[3]" at Arena_bitshiftright.vhd(21)
 Info (10041): Inferred latch for "Arena_result_bsrOUT[4]" at Arena_bitshiftright.vhd(21)
 Info (10041): Inferred latch for "Arena_result_bsrOUT[5]" at Arena_bitshiftright.vhd(21)
+Info (12128): Elaborating entity "Arena_bitwisenot" for hierarchy "Arena_bitwisenot:inst1"
+Warning (10492): VHDL Process Statement warning at Arena_bitwisenot.vhd(19): signal "Arena_a_notIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwisenot.vhd(16): inferring latch(es) for signal or variable "Arena_result_notOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_notOUT[0]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[1]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[2]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[3]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[4]" at Arena_bitwisenot.vhd(16)
+Info (10041): Inferred latch for "Arena_result_notOUT[5]" at Arena_bitwisenot.vhd(16)
 Info (12128): Elaborating entity "Arena_bitwiseor" for hierarchy "Arena_bitwiseor:inst2"
 Warning (10492): VHDL Process Statement warning at Arena_bitwiseor.vhd(19): signal "Arena_a_orIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_bitwiseor.vhd(19): signal "Arena_b_orIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -395,25 +408,16 @@ Info (10041): Inferred latch for "Arena_result_orOUT[2]" at Arena_bitwiseor.vhd(
 Info (10041): Inferred latch for "Arena_result_orOUT[3]" at Arena_bitwiseor.vhd(16)
 Info (10041): Inferred latch for "Arena_result_orOUT[4]" at Arena_bitwiseor.vhd(16)
 Info (10041): Inferred latch for "Arena_result_orOUT[5]" at Arena_bitwiseor.vhd(16)
-Info (12128): Elaborating entity "Arena_bitrotationleft" for hierarchy "Arena_bitrotationleft:inst8"
-Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_a_brlIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Arena_bitrotationleft.vhd(24): signal "Arena_b_rlamt_integer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Arena_bitrotationleft.vhd(21): inferring latch(es) for signal or variable "Arena_result_brlOUT", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "Arena_result_brlOUT[0]" at Arena_bitrotationleft.vhd(21)
-Info (10041): Inferred latch for "Arena_result_brlOUT[1]" at Arena_bitrotationleft.vhd(21)
-Info (10041): Inferred latch for "Arena_result_brlOUT[2]" at Arena_bitrotationleft.vhd(21)
-Info (10041): Inferred latch for "Arena_result_brlOUT[3]" at Arena_bitrotationleft.vhd(21)
-Info (10041): Inferred latch for "Arena_result_brlOUT[4]" at Arena_bitrotationleft.vhd(21)
-Info (10041): Inferred latch for "Arena_result_brlOUT[5]" at Arena_bitrotationleft.vhd(21)
-Info (12128): Elaborating entity "Arena_bitwisenot" for hierarchy "Arena_bitwisenot:inst1"
-Warning (10492): VHDL Process Statement warning at Arena_bitwisenot.vhd(19): signal "Arena_a_notIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Arena_bitwisenot.vhd(16): inferring latch(es) for signal or variable "Arena_result_notOUT", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "Arena_result_notOUT[0]" at Arena_bitwisenot.vhd(16)
-Info (10041): Inferred latch for "Arena_result_notOUT[1]" at Arena_bitwisenot.vhd(16)
-Info (10041): Inferred latch for "Arena_result_notOUT[2]" at Arena_bitwisenot.vhd(16)
-Info (10041): Inferred latch for "Arena_result_notOUT[3]" at Arena_bitwisenot.vhd(16)
-Info (10041): Inferred latch for "Arena_result_notOUT[4]" at Arena_bitwisenot.vhd(16)
-Info (10041): Inferred latch for "Arena_result_notOUT[5]" at Arena_bitwisenot.vhd(16)
+Info (12128): Elaborating entity "Arena_bitwisexor" for hierarchy "Arena_bitwisexor:inst4"
+Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_a_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Arena_bitwisexor.vhd(19): signal "Arena_b_xorIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Arena_bitwisexor.vhd(16): inferring latch(es) for signal or variable "Arena_result_xorOUT", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_result_xorOUT[0]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[1]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[2]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[3]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[4]" at Arena_bitwisexor.vhd(16)
+Info (10041): Inferred latch for "Arena_result_xorOUT[5]" at Arena_bitwisexor.vhd(16)
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Arena_result_sltOUT" is stuck at GND
     Warning (13410): Pin "Arena_a_sltIN[5]" is stuck at GND
@@ -531,12 +535,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Arena_b_xorIN[2]" is stuck at GND
     Warning (13410): Pin "Arena_b_xorIN[1]" is stuck at GND
     Warning (13410): Pin "Arena_b_xorIN[0]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN63[5]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN64[4]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN65[3]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN66[2]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN67[1]" is stuck at GND
-    Warning (13410): Pin "Arena_b_xorIN68[0]" is stuck at GND
     Warning (13410): Pin "Arena_ledOUT[5]" is stuck at GND
     Warning (13410): Pin "Arena_ledOUT[4]" is stuck at GND
     Warning (13410): Pin "Arena_ledOUT[3]" is stuck at GND
@@ -549,6 +547,12 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Arena_result_andOUT[2]" is stuck at GND
     Warning (13410): Pin "Arena_result_andOUT[1]" is stuck at GND
     Warning (13410): Pin "Arena_result_andOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_brlOUT[0]" is stuck at GND
     Warning (13410): Pin "Arena_result_brrOUT[5]" is stuck at GND
     Warning (13410): Pin "Arena_result_brrOUT[4]" is stuck at GND
     Warning (13410): Pin "Arena_result_brrOUT[3]" is stuck at GND
@@ -567,24 +571,24 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Arena_result_bsrOUT[2]" is stuck at GND
     Warning (13410): Pin "Arena_result_bsrOUT[1]" is stuck at GND
     Warning (13410): Pin "Arena_result_bsrOUT[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_notOUT[5]" is stuck at VCC
+    Warning (13410): Pin "Arena_result_notOUT[4]" is stuck at VCC
+    Warning (13410): Pin "Arena_result_notOUT[3]" is stuck at VCC
+    Warning (13410): Pin "Arena_result_notOUT[2]" is stuck at VCC
+    Warning (13410): Pin "Arena_result_notOUT[1]" is stuck at VCC
+    Warning (13410): Pin "Arena_result_notOUT[0]" is stuck at VCC
     Warning (13410): Pin "Arena_result_orOUT[5]" is stuck at GND
     Warning (13410): Pin "Arena_result_orOUT[4]" is stuck at GND
     Warning (13410): Pin "Arena_result_orOUT[3]" is stuck at GND
     Warning (13410): Pin "Arena_result_orOUT[2]" is stuck at GND
     Warning (13410): Pin "Arena_result_orOUT[1]" is stuck at GND
     Warning (13410): Pin "Arena_result_orOUT[0]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[5]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[4]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[3]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[2]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[1]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT[0]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT18[5]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT19[4]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT19[3]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT20[2]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT21[1]" is stuck at GND
-    Warning (13410): Pin "Arena_resultnotOUT22[0]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[5]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[4]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[3]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[2]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[1]" is stuck at GND
+    Warning (13410): Pin "Arena_result_xorOUT[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
@@ -597,9 +601,9 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
 Info (21057): Implemented 176 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 170 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 227 warnings
-    Info: Peak virtual memory: 480 megabytes
-    Info: Processing ended: Tue Apr 02 15:57:16 2019
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 224 warnings
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Wed Apr 03 13:08:13 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

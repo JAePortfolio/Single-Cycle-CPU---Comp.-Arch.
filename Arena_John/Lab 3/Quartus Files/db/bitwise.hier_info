@@ -120,12 +120,6 @@ Arena_b_xorIN[2] <= <GND>
 Arena_b_xorIN[3] <= <GND>
 Arena_b_xorIN[4] <= <GND>
 Arena_b_xorIN[5] <= <GND>
-Arena_b_xorIN63[5] <= Arena_result_xorOUT[5].DB_MAX_OUTPUT_PORT_TYPE
-Arena_b_xorIN64[4] <= Arena_result_xorOUT[4].DB_MAX_OUTPUT_PORT_TYPE
-Arena_b_xorIN65[3] <= Arena_result_xorOUT[3].DB_MAX_OUTPUT_PORT_TYPE
-Arena_b_xorIN66[2] <= Arena_result_xorOUT[2].DB_MAX_OUTPUT_PORT_TYPE
-Arena_b_xorIN67[1] <= Arena_result_xorOUT[1].DB_MAX_OUTPUT_PORT_TYPE
-Arena_b_xorIN68[0] <= Arena_result_xorOUT[0].DB_MAX_OUTPUT_PORT_TYPE
 Arena_ledOUT[0] <= Arena_ledReset:inst10.Arena_ledOUT[0]
 Arena_ledOUT[1] <= Arena_ledReset:inst10.Arena_ledOUT[1]
 Arena_ledOUT[2] <= Arena_ledReset:inst10.Arena_ledOUT[2]
@@ -139,6 +133,12 @@ Arena_result_andOUT[2] <= Arena_bitwiseand:inst3.Arena_result_andOUT[2]
 Arena_result_andOUT[3] <= Arena_bitwiseand:inst3.Arena_result_andOUT[3]
 Arena_result_andOUT[4] <= Arena_bitwiseand:inst3.Arena_result_andOUT[4]
 Arena_result_andOUT[5] <= Arena_bitwiseand:inst3.Arena_result_andOUT[5]
+Arena_result_brlOUT[0] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[0]
+Arena_result_brlOUT[1] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[1]
+Arena_result_brlOUT[2] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[2]
+Arena_result_brlOUT[3] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[3]
+Arena_result_brlOUT[4] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[4]
+Arena_result_brlOUT[5] <= Arena_bitrotationleft:inst8.Arena_result_brlOUT[5]
 Arena_result_brrOUT[0] <= Arena_bitrotationright:inst7.Arena_result_brrOUT[0]
 Arena_result_brrOUT[1] <= Arena_bitrotationright:inst7.Arena_result_brrOUT[1]
 Arena_result_brrOUT[2] <= Arena_bitrotationright:inst7.Arena_result_brrOUT[2]
@@ -157,24 +157,24 @@ Arena_result_bsrOUT[2] <= Arena_bitshiftright:inst5.Arena_result_bsrOUT[2]
 Arena_result_bsrOUT[3] <= Arena_bitshiftright:inst5.Arena_result_bsrOUT[3]
 Arena_result_bsrOUT[4] <= Arena_bitshiftright:inst5.Arena_result_bsrOUT[4]
 Arena_result_bsrOUT[5] <= Arena_bitshiftright:inst5.Arena_result_bsrOUT[5]
+Arena_result_notOUT[0] <= Arena_bitwisenot:inst1.Arena_result_notOUT[0]
+Arena_result_notOUT[1] <= Arena_bitwisenot:inst1.Arena_result_notOUT[1]
+Arena_result_notOUT[2] <= Arena_bitwisenot:inst1.Arena_result_notOUT[2]
+Arena_result_notOUT[3] <= Arena_bitwisenot:inst1.Arena_result_notOUT[3]
+Arena_result_notOUT[4] <= Arena_bitwisenot:inst1.Arena_result_notOUT[4]
+Arena_result_notOUT[5] <= Arena_bitwisenot:inst1.Arena_result_notOUT[5]
 Arena_result_orOUT[0] <= Arena_bitwiseor:inst2.Arena_result_orOUT[0]
 Arena_result_orOUT[1] <= Arena_bitwiseor:inst2.Arena_result_orOUT[1]
 Arena_result_orOUT[2] <= Arena_bitwiseor:inst2.Arena_result_orOUT[2]
 Arena_result_orOUT[3] <= Arena_bitwiseor:inst2.Arena_result_orOUT[3]
 Arena_result_orOUT[4] <= Arena_bitwiseor:inst2.Arena_result_orOUT[4]
 Arena_result_orOUT[5] <= Arena_bitwiseor:inst2.Arena_result_orOUT[5]
-Arena_resultnotOUT[0] <= <GND>
-Arena_resultnotOUT[1] <= <GND>
-Arena_resultnotOUT[2] <= <GND>
-Arena_resultnotOUT[3] <= <GND>
-Arena_resultnotOUT[4] <= <GND>
-Arena_resultnotOUT[5] <= <GND>
-Arena_resultnotOUT18[5] <= Arena_result_brlOUT[5].DB_MAX_OUTPUT_PORT_TYPE
-Arena_resultnotOUT19[3] <= Arena_result_brlOUT[3].DB_MAX_OUTPUT_PORT_TYPE
-Arena_resultnotOUT19[4] <= Arena_result_brlOUT[4].DB_MAX_OUTPUT_PORT_TYPE
-Arena_resultnotOUT20[2] <= Arena_result_brlOUT[2].DB_MAX_OUTPUT_PORT_TYPE
-Arena_resultnotOUT21[1] <= Arena_result_brlOUT[1].DB_MAX_OUTPUT_PORT_TYPE
-Arena_resultnotOUT22[0] <= Arena_result_brlOUT[0].DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[0] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[0]
+Arena_result_xorOUT[1] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[1]
+Arena_result_xorOUT[2] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[2]
+Arena_result_xorOUT[3] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[3]
+Arena_result_xorOUT[4] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[4]
+Arena_result_xorOUT[5] <= Arena_bitwisexor:inst4.Arena_result_xorOUT[5]
 
 
 |Arena_bitwise|Arena_bitwise_setLessThanSigned:inst13
@@ -341,33 +341,6 @@ Arena_result_sltuOUT <= Arena_result_sltuOUT$latch.DB_MAX_OUTPUT_PORT_TYPE
 Arena_sltuSelect => Arena_result_sltuOUT$latch.LATCH_ENABLE
 
 
-|Arena_bitwise|Arena_bitwisexor:inst4
-Arena_a_xorIN[0] => Arena_result_xorOUT.IN0
-Arena_a_xorIN[1] => Arena_result_xorOUT.IN0
-Arena_a_xorIN[2] => Arena_result_xorOUT.IN0
-Arena_a_xorIN[3] => Arena_result_xorOUT.IN0
-Arena_a_xorIN[4] => Arena_result_xorOUT.IN0
-Arena_a_xorIN[5] => Arena_result_xorOUT.IN0
-Arena_b_xorIN[0] => Arena_result_xorOUT.IN1
-Arena_b_xorIN[1] => Arena_result_xorOUT.IN1
-Arena_b_xorIN[2] => Arena_result_xorOUT.IN1
-Arena_b_xorIN[3] => Arena_result_xorOUT.IN1
-Arena_b_xorIN[4] => Arena_result_xorOUT.IN1
-Arena_b_xorIN[5] => Arena_result_xorOUT.IN1
-Arena_result_xorOUT[0] <= Arena_result_xorOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_xorOUT[1] <= Arena_result_xorOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_xorOUT[2] <= Arena_result_xorOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_xorOUT[3] <= Arena_result_xorOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_xorOUT[4] <= Arena_result_xorOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_xorOUT[5] <= Arena_result_xorOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_xorSelect => Arena_result_xorOUT[0]$latch.LATCH_ENABLE
-Arena_xorSelect => Arena_result_xorOUT[1]$latch.LATCH_ENABLE
-Arena_xorSelect => Arena_result_xorOUT[2]$latch.LATCH_ENABLE
-Arena_xorSelect => Arena_result_xorOUT[3]$latch.LATCH_ENABLE
-Arena_xorSelect => Arena_result_xorOUT[4]$latch.LATCH_ENABLE
-Arena_xorSelect => Arena_result_xorOUT[5]$latch.LATCH_ENABLE
-
-
 |Arena_bitwise|Arena_ledReset:inst10
 Arena_button => ~NO_FANOUT~
 Arena_ledOUT[0] <= <GND>
@@ -403,6 +376,33 @@ Arena_andSelect => Arena_result_andOUT[2]$latch.LATCH_ENABLE
 Arena_andSelect => Arena_result_andOUT[3]$latch.LATCH_ENABLE
 Arena_andSelect => Arena_result_andOUT[4]$latch.LATCH_ENABLE
 Arena_andSelect => Arena_result_andOUT[5]$latch.LATCH_ENABLE
+
+
+|Arena_bitwise|Arena_bitrotationleft:inst8
+Arena_a_brlIN[0] => RotateLeft0.IN31
+Arena_a_brlIN[1] => RotateLeft0.IN30
+Arena_a_brlIN[2] => RotateLeft0.IN29
+Arena_a_brlIN[3] => RotateLeft0.IN28
+Arena_a_brlIN[4] => RotateLeft0.IN27
+Arena_a_brlIN[5] => RotateLeft0.IN26
+Arena_b_rlamt_brlIN[0] => RotateLeft0.IN37
+Arena_b_rlamt_brlIN[1] => RotateLeft0.IN36
+Arena_b_rlamt_brlIN[2] => RotateLeft0.IN35
+Arena_b_rlamt_brlIN[3] => RotateLeft0.IN34
+Arena_b_rlamt_brlIN[4] => RotateLeft0.IN33
+Arena_b_rlamt_brlIN[5] => RotateLeft0.IN32
+Arena_result_brlOUT[0] <= Arena_result_brlOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_brlOUT[1] <= Arena_result_brlOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_brlOUT[2] <= Arena_result_brlOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_brlOUT[3] <= Arena_result_brlOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_brlOUT[4] <= Arena_result_brlOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_brlOUT[5] <= Arena_result_brlOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_brlSelect => Arena_result_brlOUT[0]$latch.LATCH_ENABLE
+Arena_brlSelect => Arena_result_brlOUT[1]$latch.LATCH_ENABLE
+Arena_brlSelect => Arena_result_brlOUT[2]$latch.LATCH_ENABLE
+Arena_brlSelect => Arena_result_brlOUT[3]$latch.LATCH_ENABLE
+Arena_brlSelect => Arena_result_brlOUT[4]$latch.LATCH_ENABLE
+Arena_brlSelect => Arena_result_brlOUT[5]$latch.LATCH_ENABLE
 
 
 |Arena_bitwise|Arena_bitrotationright:inst7
@@ -486,6 +486,27 @@ Arena_bsrSelect => Arena_result_bsrOUT[4]$latch.LATCH_ENABLE
 Arena_bsrSelect => Arena_result_bsrOUT[5]$latch.LATCH_ENABLE
 
 
+|Arena_bitwise|Arena_bitwisenot:inst1
+Arena_a_notIN[0] => Arena_result_notOUT[0]$latch.DATAIN
+Arena_a_notIN[1] => Arena_result_notOUT[1]$latch.DATAIN
+Arena_a_notIN[2] => Arena_result_notOUT[2]$latch.DATAIN
+Arena_a_notIN[3] => Arena_result_notOUT[3]$latch.DATAIN
+Arena_a_notIN[4] => Arena_result_notOUT[4]$latch.DATAIN
+Arena_a_notIN[5] => Arena_result_notOUT[5]$latch.DATAIN
+Arena_result_notOUT[0] <= Arena_result_notOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_notOUT[1] <= Arena_result_notOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_notOUT[2] <= Arena_result_notOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_notOUT[3] <= Arena_result_notOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_notOUT[4] <= Arena_result_notOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_notOUT[5] <= Arena_result_notOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_notSelect => Arena_result_notOUT[0]$latch.LATCH_ENABLE
+Arena_notSelect => Arena_result_notOUT[1]$latch.LATCH_ENABLE
+Arena_notSelect => Arena_result_notOUT[2]$latch.LATCH_ENABLE
+Arena_notSelect => Arena_result_notOUT[3]$latch.LATCH_ENABLE
+Arena_notSelect => Arena_result_notOUT[4]$latch.LATCH_ENABLE
+Arena_notSelect => Arena_result_notOUT[5]$latch.LATCH_ENABLE
+
+
 |Arena_bitwise|Arena_bitwiseor:inst2
 Arena_a_orIN[0] => Arena_result_orOUT.IN0
 Arena_a_orIN[1] => Arena_result_orOUT.IN0
@@ -513,51 +534,30 @@ Arena_orSelect => Arena_result_orOUT[4]$latch.LATCH_ENABLE
 Arena_orSelect => Arena_result_orOUT[5]$latch.LATCH_ENABLE
 
 
-|Arena_bitwise|Arena_bitrotationleft:inst8
-Arena_a_brlIN[0] => RotateLeft0.IN31
-Arena_a_brlIN[1] => RotateLeft0.IN30
-Arena_a_brlIN[2] => RotateLeft0.IN29
-Arena_a_brlIN[3] => RotateLeft0.IN28
-Arena_a_brlIN[4] => RotateLeft0.IN27
-Arena_a_brlIN[5] => RotateLeft0.IN26
-Arena_b_rlamt_brlIN[0] => RotateLeft0.IN37
-Arena_b_rlamt_brlIN[1] => RotateLeft0.IN36
-Arena_b_rlamt_brlIN[2] => RotateLeft0.IN35
-Arena_b_rlamt_brlIN[3] => RotateLeft0.IN34
-Arena_b_rlamt_brlIN[4] => RotateLeft0.IN33
-Arena_b_rlamt_brlIN[5] => RotateLeft0.IN32
-Arena_result_brlOUT[0] <= Arena_result_brlOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_brlOUT[1] <= Arena_result_brlOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_brlOUT[2] <= Arena_result_brlOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_brlOUT[3] <= Arena_result_brlOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_brlOUT[4] <= Arena_result_brlOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_brlOUT[5] <= Arena_result_brlOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_brlSelect => Arena_result_brlOUT[0]$latch.LATCH_ENABLE
-Arena_brlSelect => Arena_result_brlOUT[1]$latch.LATCH_ENABLE
-Arena_brlSelect => Arena_result_brlOUT[2]$latch.LATCH_ENABLE
-Arena_brlSelect => Arena_result_brlOUT[3]$latch.LATCH_ENABLE
-Arena_brlSelect => Arena_result_brlOUT[4]$latch.LATCH_ENABLE
-Arena_brlSelect => Arena_result_brlOUT[5]$latch.LATCH_ENABLE
-
-
-|Arena_bitwise|Arena_bitwisenot:inst1
-Arena_a_notIN[0] => Arena_result_notOUT[0]$latch.DATAIN
-Arena_a_notIN[1] => Arena_result_notOUT[1]$latch.DATAIN
-Arena_a_notIN[2] => Arena_result_notOUT[2]$latch.DATAIN
-Arena_a_notIN[3] => Arena_result_notOUT[3]$latch.DATAIN
-Arena_a_notIN[4] => Arena_result_notOUT[4]$latch.DATAIN
-Arena_a_notIN[5] => Arena_result_notOUT[5]$latch.DATAIN
-Arena_result_notOUT[0] <= Arena_result_notOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_notOUT[1] <= Arena_result_notOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_notOUT[2] <= Arena_result_notOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_notOUT[3] <= Arena_result_notOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_notOUT[4] <= Arena_result_notOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_result_notOUT[5] <= Arena_result_notOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_notSelect => Arena_result_notOUT[0]$latch.LATCH_ENABLE
-Arena_notSelect => Arena_result_notOUT[1]$latch.LATCH_ENABLE
-Arena_notSelect => Arena_result_notOUT[2]$latch.LATCH_ENABLE
-Arena_notSelect => Arena_result_notOUT[3]$latch.LATCH_ENABLE
-Arena_notSelect => Arena_result_notOUT[4]$latch.LATCH_ENABLE
-Arena_notSelect => Arena_result_notOUT[5]$latch.LATCH_ENABLE
+|Arena_bitwise|Arena_bitwisexor:inst4
+Arena_a_xorIN[0] => Arena_result_xorOUT.IN0
+Arena_a_xorIN[1] => Arena_result_xorOUT.IN0
+Arena_a_xorIN[2] => Arena_result_xorOUT.IN0
+Arena_a_xorIN[3] => Arena_result_xorOUT.IN0
+Arena_a_xorIN[4] => Arena_result_xorOUT.IN0
+Arena_a_xorIN[5] => Arena_result_xorOUT.IN0
+Arena_b_xorIN[0] => Arena_result_xorOUT.IN1
+Arena_b_xorIN[1] => Arena_result_xorOUT.IN1
+Arena_b_xorIN[2] => Arena_result_xorOUT.IN1
+Arena_b_xorIN[3] => Arena_result_xorOUT.IN1
+Arena_b_xorIN[4] => Arena_result_xorOUT.IN1
+Arena_b_xorIN[5] => Arena_result_xorOUT.IN1
+Arena_result_xorOUT[0] <= Arena_result_xorOUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[1] <= Arena_result_xorOUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[2] <= Arena_result_xorOUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[3] <= Arena_result_xorOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[4] <= Arena_result_xorOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_result_xorOUT[5] <= Arena_result_xorOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Arena_xorSelect => Arena_result_xorOUT[0]$latch.LATCH_ENABLE
+Arena_xorSelect => Arena_result_xorOUT[1]$latch.LATCH_ENABLE
+Arena_xorSelect => Arena_result_xorOUT[2]$latch.LATCH_ENABLE
+Arena_xorSelect => Arena_result_xorOUT[3]$latch.LATCH_ENABLE
+Arena_xorSelect => Arena_result_xorOUT[4]$latch.LATCH_ENABLE
+Arena_xorSelect => Arena_result_xorOUT[5]$latch.LATCH_ENABLE
 
 
