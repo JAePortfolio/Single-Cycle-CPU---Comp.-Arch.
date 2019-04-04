@@ -175,11 +175,71 @@ SIGNAL("Arena_b_sltIN[0]")
 SIGNAL("Arena_result_sltOUT")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_result_sltOUT[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
+	PARENT = "Arena_result_sltOUT";
+}
+
+SIGNAL("Arena_result_sltOUT[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_result_sltOUT";
+}
+
+SIGNAL("Arena_result_sltOUT[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_result_sltOUT";
+}
+
+SIGNAL("Arena_result_sltOUT[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_result_sltOUT";
+}
+
+SIGNAL("Arena_result_sltOUT[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_result_sltOUT";
+}
+
+SIGNAL("Arena_result_sltOUT[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_result_sltOUT";
 }
 
 SIGNAL("Arena_sltSelect")
@@ -197,7 +257,7 @@ TRANSITION_LIST("Arena_a_sltIN[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -206,7 +266,7 @@ TRANSITION_LIST("Arena_a_sltIN[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -215,7 +275,7 @@ TRANSITION_LIST("Arena_a_sltIN[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -224,7 +284,7 @@ TRANSITION_LIST("Arena_a_sltIN[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -242,7 +302,7 @@ TRANSITION_LIST("Arena_a_sltIN[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -300,7 +360,52 @@ TRANSITION_LIST("Arena_b_sltIN[0]")
 	}
 }
 
-TRANSITION_LIST("Arena_result_sltOUT")
+TRANSITION_LIST("Arena_result_sltOUT[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_result_sltOUT[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_result_sltOUT[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_result_sltOUT[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_result_sltOUT[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_result_sltOUT[0]")
 {
 	NODE
 	{
@@ -474,6 +579,67 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 0;
+	CHILDREN = 16, 17, 18, 19, 20, 21;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 1;
+	PARENT = 15;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_result_sltOUT[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 1;
+	PARENT = 15;
 }
 
 TIME_BAR

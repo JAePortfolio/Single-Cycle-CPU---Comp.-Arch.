@@ -120,7 +120,7 @@ Arena_b_rlamt_brlIN[3], PIN_A13
 Arena_b_rlamt_brlIN[4], PIN_N1
 Arena_b_rlamt_brlIN[5], PIN_P1
 
-Arena_result_sltOUT, PIN_AE22
+
 Arena_a_sltIN[0], PIN_N25
 Arena_a_sltIN[1], PIN_N26
 Arena_a_sltIN[2], PIN_P25
@@ -134,7 +134,7 @@ Arena_b_sltIN[3], PIN_A13
 Arena_b_sltIN[4], PIN_N1
 Arena_b_sltIN[5], PIN_P1
 
-Arena_result_sltuOUT, PIN_AE22
+
 Arena_a_sltuIN[0], PIN_N25
 Arena_a_sltuIN[1], PIN_N26
 Arena_a_sltuIN[2], PIN_P25

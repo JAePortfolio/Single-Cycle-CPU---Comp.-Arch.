@@ -47,6 +47,8 @@ process(Arena_buttonStart, Arena_opcode)
 					Arena_opSelect <= "0000000100000000";
 					when "1001" =>
 					Arena_opSelect <= "0000001000000000";
+					When "1111" =>
+					Arena_opSelect <= "1000000000000000";
 					when others =>
 					Arena_opSelect <= "1111111111111111";
 				end case;

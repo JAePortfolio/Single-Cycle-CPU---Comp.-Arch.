@@ -3,7 +3,7 @@ $comment
 		vcd file bitwise.msim.vcd -direction
 $end
 $date
-	Mon Apr 01 13:15:35 2019
+	Wed Apr 03 18:41:36 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -15,72 +15,82 @@ $scope module Arena_bitwise_setLessThanSigned_vlg_vec_tst $end
 $var reg 6 ! Arena_a_sltIN [5:0] $end
 $var reg 6 " Arena_b_sltIN [5:0] $end
 $var reg 1 # Arena_sltSelect $end
-$var wire 1 $ Arena_result_sltOUT $end
-$var wire 1 % sampler $end
+$var wire 1 $ Arena_result_sltOUT [5] $end
+$var wire 1 % Arena_result_sltOUT [4] $end
+$var wire 1 & Arena_result_sltOUT [3] $end
+$var wire 1 ' Arena_result_sltOUT [2] $end
+$var wire 1 ( Arena_result_sltOUT [1] $end
+$var wire 1 ) Arena_result_sltOUT [0] $end
+$var wire 1 * sampler $end
 $scope module i1 $end
-$var wire 1 & gnd $end
-$var wire 1 ' vcc $end
-$var wire 1 ( unknown $end
-$var tri1 1 ) devclrn $end
-$var tri1 1 * devpor $end
-$var tri1 1 + devoe $end
-$var wire 1 , LessThan0~0_combout $end
-$var wire 1 - LessThan0~1_combout $end
-$var wire 1 . LessThan0~3_combout $end
-$var wire 1 / LessThan0~5_combout $end
-$var wire 1 0 LessThan0~4_combout $end
-$var wire 1 1 LessThan0~2_combout $end
-$var wire 1 2 LessThan0~6_combout $end
-$var wire 1 3 Arena_sltSelect~combout $end
-$var wire 1 4 Arena_result_sltOUT$latch~combout $end
-$var wire 1 5 Arena_a_sltIN~combout [5] $end
-$var wire 1 6 Arena_a_sltIN~combout [4] $end
-$var wire 1 7 Arena_a_sltIN~combout [3] $end
-$var wire 1 8 Arena_a_sltIN~combout [2] $end
-$var wire 1 9 Arena_a_sltIN~combout [1] $end
-$var wire 1 : Arena_a_sltIN~combout [0] $end
-$var wire 1 ; Arena_b_sltIN~combout [5] $end
-$var wire 1 < Arena_b_sltIN~combout [4] $end
-$var wire 1 = Arena_b_sltIN~combout [3] $end
-$var wire 1 > Arena_b_sltIN~combout [2] $end
-$var wire 1 ? Arena_b_sltIN~combout [1] $end
-$var wire 1 @ Arena_b_sltIN~combout [0] $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 LessThan0~0_combout $end
+$var wire 1 2 LessThan0~1_combout $end
+$var wire 1 3 LessThan0~3_combout $end
+$var wire 1 4 LessThan0~5_combout $end
+$var wire 1 5 LessThan0~4_combout $end
+$var wire 1 6 LessThan0~2_combout $end
+$var wire 1 7 LessThan0~6_combout $end
+$var wire 1 8 Arena_sltSelect~combout $end
+$var wire 1 9 Arena_result_sltOUT[0]$latch~combout $end
+$var wire 1 : Arena_b_sltIN~combout [5] $end
+$var wire 1 ; Arena_b_sltIN~combout [4] $end
+$var wire 1 < Arena_b_sltIN~combout [3] $end
+$var wire 1 = Arena_b_sltIN~combout [2] $end
+$var wire 1 > Arena_b_sltIN~combout [1] $end
+$var wire 1 ? Arena_b_sltIN~combout [0] $end
+$var wire 1 @ Arena_a_sltIN~combout [5] $end
+$var wire 1 A Arena_a_sltIN~combout [4] $end
+$var wire 1 B Arena_a_sltIN~combout [3] $end
+$var wire 1 C Arena_a_sltIN~combout [2] $end
+$var wire 1 D Arena_a_sltIN~combout [1] $end
+$var wire 1 E Arena_a_sltIN~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b10 !
+b111111 !
 b1 "
 1#
-0$
-x%
-0&
-1'
-x(
 1)
-1*
-1+
-0,
-0-
-0.
-0/
-00
-11
-02
-13
-04
-0:
-19
-08
-07
-06
+0(
+0'
+0&
+0%
+0$
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+12
+03
+14
 05
-1@
-0?
+06
+17
+18
+19
+1?
 0>
 0=
 0<
 0;
+0:
+1E
+1D
+1C
+1B
+1A
+1@
 $end
 #160000

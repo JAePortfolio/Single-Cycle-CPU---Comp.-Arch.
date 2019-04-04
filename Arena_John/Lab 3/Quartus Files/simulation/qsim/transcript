@@ -25,5 +25,5 @@
 # Loading work.Arena_bitwise_setLessThanSigned_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : bitwise.vt(152)
+# ** Note: $finish    : bitwise.vt(241)
 #    Time: 160 ns  Iteration: 0  Instance: /Arena_bitwise_setLessThanSigned_vlg_vec_tst/tb_out
