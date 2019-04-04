@@ -4,146 +4,25 @@ Arena_opcode[2], PIN_V1
 Arena_opcode[1], PIN_U4
 Arena_opcode[0], PIN_U3
 Arena_buttonStart, PIN_W26
-Arena_button, PIN_G26
-result[0], PIN_AE22
-result[1], PIN_AF22
-result[2], PIN_W19
-result[3], PIN_V18
-result[4], PIN_U18
-result[5], PIN_U17
+
+Arena_result_bitwiseOUT[0], PIN_AE22
+Arena_result_bitwiseOUT[1], PIN_AF22
+Arena_result_bitwiseOUT[2], PIN_W19
+Arena_result_bitwiseOUT[3], PIN_V18
+Arena_result_bitwiseOUT[4], PIN_U18
+Arena_result_bitwiseOUT[5], PIN_U17
+
+Arena_a_bitwiseIN[0], PIN_N25
+Arena_a_bitwiseIN[1], PIN_N26
+Arena_a_bitwiseIN[2], PIN_P25
+Arena_a_bitwiseIN[3], PIN_AE14
+Arena_a_bitwiseIN[4], PIN_AF14
+Arena_a_bitwiseIN[5], PIN_AD13
+Arena_b_bitwiseIN[0], PIN_AC13
+Arena_b_bitwiseIN[1], PIN_C13
+Arena_b_bitwiseIN[2], PIN_B13
+Arena_b_bitwiseIN[3], PIN_A13
+Arena_b_bitwiseIN[4], PIN_N1
+Arena_b_bitwiseIN[5], PIN_P1
 
 
-
-
-Arena_a_notIN[0], PIN_N25
-Arena_a_notIN[1], PIN_N26
-Arena_a_notIN[2], PIN_P25
-Arena_a_notIN[3], PIN_AE14
-Arena_a_notIN[4], PIN_AF14
-Arena_a_notIN[5], PIN_AD13
-
-
-
-Arena_a_orIN[0], PIN_N25
-Arena_a_orIN[1], PIN_N26
-Arena_a_orIN[2], PIN_P25
-Arena_a_orIN[3], PIN_AE14
-Arena_a_orIN[4], PIN_AF14
-Arena_a_orIN[5], PIN_AD13
-Arena_b_orIN[0], PIN_AC13
-Arena_b_orIN[1], PIN_C13
-Arena_b_orIN[2], PIN_B13
-Arena_b_orIN[3], PIN_A13
-Arena_b_orIN[4], PIN_N1
-Arena_b_orIN[5], PIN_P1
-
-
-Arena_a_andIN[0], PIN_N25
-Arena_a_andIN[1], PIN_N26
-Arena_a_andIN[2], PIN_P25
-Arena_a_andIN[3], PIN_AE14
-Arena_a_andIN[4], PIN_AF14
-Arena_a_andIN[5], PIN_AD13
-Arena_b_andIN[0], PIN_AC13
-Arena_b_andIN[1], PIN_C13
-Arena_b_andIN[2], PIN_B13
-Arena_b_andIN[3], PIN_A13
-Arena_b_andIN[4], PIN_N1
-Arena_b_andIN[5], PIN_P1
-
-
-Arena_a_xorIN[0], PIN_N25
-Arena_a_xorIN[1], PIN_N26
-Arena_a_xorIN[2], PIN_P25
-Arena_a_xorIN[3], PIN_AE14
-Arena_a_xorIN[4], PIN_AF14
-Arena_a_xorIN[5], PIN_AD13
-Arena_b_xorIN[0], PIN_AC13
-Arena_b_xorIN[1], PIN_C13
-Arena_b_xorIN[2], PIN_B13
-Arena_b_xorIN[3], PIN_A13
-Arena_b_xorIN[4], PIN_N1
-Arena_b_xorIN[5], PIN_P1
-
-
-Arena_a_bsrIN[0], PIN_N25
-Arena_a_bsrIN[1], PIN_N26
-Arena_a_bsrIN[2], PIN_P25
-Arena_a_bsrIN[3], PIN_AE14
-Arena_a_bsrIN[4], PIN_AF14
-Arena_a_bsrIN[5], PIN_AD13
-Arena_b_sramt_bsrIN[0], PIN_AC13
-Arena_b_sramt_bsrIN[1], PIN_C13
-Arena_b_sramt_bsrIN[2], PIN_B13
-Arena_b_sramt_bsrIN[3], PIN_A13
-Arena_b_sramt_bsrIN[4], PIN_N1
-Arena_b_sramt_bsrIN[5], PIN_P1
-
-Arena_a_bslIN[0], PIN_N25
-Arena_a_bslIN[1], PIN_N26
-Arena_a_bslIN[2], PIN_P25
-Arena_a_bslIN[3], PIN_AE14
-Arena_a_bslIN[4], PIN_AF14
-Arena_a_bslIN[5], PIN_AD13
-Arena_b_slamt_bslIN[0], PIN_AC13
-Arena_b_slamt_bslIN[1], PIN_C13
-Arena_b_slamt_bslIN[2], PIN_B13
-Arena_b_slamt_bslIN[3], PIN_A13
-Arena_b_slamt_bslIN[4], PIN_N1
-Arena_b_slamt_bslIN[5], PIN_P1
-
-
-Arena_a_brrIN[0], PIN_N25
-Arena_a_brrIN[1], PIN_N26
-Arena_a_brrIN[2], PIN_P25
-Arena_a_brrIN[3], PIN_AE14
-Arena_a_brrIN[4], PIN_AF14
-Arena_a_brrIN[5], PIN_AD13
-Arena_b_rramt_brrIN[0], PIN_AC13
-Arena_b_rramt_brrIN[1], PIN_C13
-Arena_b_rramt_brrIN[2], PIN_B13
-Arena_b_rramt_brrIN[3], PIN_A13
-Arena_b_rramt_brrIN[4], PIN_N1
-Arena_b_rramt_brrIN[5], PIN_P1
-
-
-Arena_a_brlIN[0], PIN_N25
-Arena_a_brlIN[1], PIN_N26
-Arena_a_brlIN[2], PIN_P25
-Arena_a_brlIN[3], PIN_AE14
-Arena_a_brlIN[4], PIN_AF14
-Arena_a_brlIN[5], PIN_AD13
-Arena_b_rlamt_brlIN[0], PIN_AC13
-Arena_b_rlamt_brlIN[1], PIN_C13
-Arena_b_rlamt_brlIN[2], PIN_B13
-Arena_b_rlamt_brlIN[3], PIN_A13
-Arena_b_rlamt_brlIN[4], PIN_N1
-Arena_b_rlamt_brlIN[5], PIN_P1
-
-
-Arena_a_sltIN[0], PIN_N25
-Arena_a_sltIN[1], PIN_N26
-Arena_a_sltIN[2], PIN_P25
-Arena_a_sltIN[3], PIN_AE14
-Arena_a_sltIN[4], PIN_AF14
-Arena_a_sltIN[5], PIN_AD13
-Arena_b_sltIN[0], PIN_AC13
-Arena_b_sltIN[1], PIN_C13
-Arena_b_sltIN[2], PIN_B13
-Arena_b_sltIN[3], PIN_A13
-Arena_b_sltIN[4], PIN_N1
-Arena_b_sltIN[5], PIN_P1
-
-
-Arena_a_sltuIN[0], PIN_N25
-Arena_a_sltuIN[1], PIN_N26
-Arena_a_sltuIN[2], PIN_P25
-Arena_a_sltuIN[3], PIN_AE14
-Arena_a_sltuIN[4], PIN_AF14
-Arena_a_sltuIN[5], PIN_AD13
-Arena_b_sltuIN[0], PIN_AC13
-Arena_b_sltuIN[1], PIN_C13
-Arena_b_sltuIN[2], PIN_B13
-Arena_b_sltuIN[3], PIN_A13
-Arena_b_sltuIN[4], PIN_N1
-Arena_b_sltuIN[5], PIN_P1

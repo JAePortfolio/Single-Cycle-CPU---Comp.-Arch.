@@ -1,4 +1,30 @@
-|Arena_bitwise
+|Arena_bitwise_2
+Arena_result_bitwiseOUT[0] <= <GND>
+Arena_result_bitwiseOUT[1] <= <GND>
+Arena_result_bitwiseOUT[2] <= <GND>
+Arena_result_bitwiseOUT[3] <= <GND>
+Arena_result_bitwiseOUT[4] <= <GND>
+Arena_result_bitwiseOUT[5] <= <GND>
+Arena_buttonStart => Arena_bitwise:inst.Arena_buttonStart
+Arena_a_bitwiseIN[0] => Arena_bitwise:inst.Arena_a_bitwiseIN[0]
+Arena_a_bitwiseIN[1] => Arena_bitwise:inst.Arena_a_bitwiseIN[1]
+Arena_a_bitwiseIN[2] => Arena_bitwise:inst.Arena_a_bitwiseIN[2]
+Arena_a_bitwiseIN[3] => Arena_bitwise:inst.Arena_a_bitwiseIN[3]
+Arena_a_bitwiseIN[4] => Arena_bitwise:inst.Arena_a_bitwiseIN[4]
+Arena_a_bitwiseIN[5] => Arena_bitwise:inst.Arena_a_bitwiseIN[5]
+Arena_b_bitwiseIN[0] => Arena_bitwise:inst.Arena_b_bitwiseIN[0]
+Arena_b_bitwiseIN[1] => Arena_bitwise:inst.Arena_b_bitwiseIN[1]
+Arena_b_bitwiseIN[2] => Arena_bitwise:inst.Arena_b_bitwiseIN[2]
+Arena_b_bitwiseIN[3] => Arena_bitwise:inst.Arena_b_bitwiseIN[3]
+Arena_b_bitwiseIN[4] => Arena_bitwise:inst.Arena_b_bitwiseIN[4]
+Arena_b_bitwiseIN[5] => Arena_bitwise:inst.Arena_b_bitwiseIN[5]
+Arena_opcode[0] => Arena_bitwise:inst.Arena_opcode[0]
+Arena_opcode[1] => Arena_bitwise:inst.Arena_opcode[1]
+Arena_opcode[2] => Arena_bitwise:inst.Arena_opcode[2]
+Arena_opcode[3] => Arena_bitwise:inst.Arena_opcode[3]
+
+
+|Arena_bitwise_2|Arena_bitwise:inst
 Arena_a_bitwiseIN[0] => Arena_result_bitwiseOUT.IN0
 Arena_a_bitwiseIN[0] => Arena_result_bitwiseOUT.IN0
 Arena_a_bitwiseIN[0] => Arena_result_bitwiseOUT.IN0
@@ -171,7 +197,6 @@ Arena_result_bitwiseOUT[2] <= Arena_result_bitwiseOUT[2]$latch.DB_MAX_OUTPUT_POR
 Arena_result_bitwiseOUT[3] <= Arena_result_bitwiseOUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Arena_result_bitwiseOUT[4] <= Arena_result_bitwiseOUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Arena_result_bitwiseOUT[5] <= Arena_result_bitwiseOUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_opSelect => ~NO_FANOUT~
 Arena_opcode[0] => Mux0.IN19
 Arena_opcode[0] => Mux1.IN19
 Arena_opcode[0] => Mux2.IN19

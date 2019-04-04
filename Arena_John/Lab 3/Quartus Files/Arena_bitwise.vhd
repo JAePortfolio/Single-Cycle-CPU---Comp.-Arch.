@@ -8,7 +8,7 @@ entity Arena_bitwise is
   port(
     Arena_a_bitwiseIN,Arena_b_bitwiseIN: in std_logic_vector(5 downto 0);
     Arena_result_bitwiseOUT: out std_logic_vector (5 downto 0);
-	 Arena_opSelect: in std_logic;
+	 --Arena_opSelect: in std_logic;
 	 Arena_opcode: in std_logic_vector (3 downto 0);
 	 Arena_buttonStart: in std_logic
 );
