@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bitwise
-Thu Apr 04 18:16:42 2019
+Fri Apr 05 21:06:41 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +43,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 04 18:16:42 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 05 21:06:41 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
-; Top-level Entity Name              ; Arena_bitwise_2                                 ;
+; Top-level Entity Name              ; Arena_bitwise                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
+; Total logic elements               ; 163                                             ;
+;     Total combinational functions  ; 163                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 23                                              ;
@@ -64,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Arena_bitwise_2    ; bitwise            ;
+; Top-level entity name                                                      ; Arena_bitwise      ; bitwise            ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,39 +156,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_bitwise_2.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_2.bdf ;         ;
-; Arena_bitwise.vhd                ; yes             ; User VHDL File                     ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd   ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_bitwise.vhd                ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 23    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 163                  ;
+;                                             ;                      ;
+; Total combinational functions               ; 163                  ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 110                  ;
+;     -- 3 input functions                    ; 37                   ;
+;     -- <=2 input functions                  ; 16                   ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 158                  ;
+;     -- arithmetic mode                      ; 5                    ;
+;                                             ;                      ;
+; Total registers                             ; 0                    ;
+;     -- Dedicated logic registers            ; 0                    ;
+;     -- I/O registers                        ; 0                    ;
+;                                             ;                      ;
+; I/O pins                                    ; 23                   ;
+; Embedded Multiplier 9-bit elements          ; 0                    ;
+; Maximum fan-out node                        ; Arena_b_bitwiseIN[1] ;
+; Maximum fan-out                             ; 35                   ;
+; Total fan-out                               ; 589                  ;
+; Average fan-out                             ; 3.17                 ;
++---------------------------------------------+----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -194,9 +200,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Arena_bitwise_2           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |Arena_bitwise_2    ; work         ;
+; |Arena_bitwise             ; 163 (163)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |Arena_bitwise      ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                      ;
++----------------------------------------------------+----------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal        ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------------+------------------------+
+; Arena_result_bitwiseOUT[0]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Arena_result_bitwiseOUT[1]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Arena_result_bitwiseOUT[2]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Arena_result_bitwiseOUT[3]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Arena_result_bitwiseOUT[4]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Arena_result_bitwiseOUT[5]$latch                   ; Arena_result_bitwiseOUT[5] ; yes                    ;
+; Number of user-specified and inferred latches = 6  ;                            ;                        ;
++----------------------------------------------------+----------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -214,12 +236,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 19:1               ; 2 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Arena_bitwise|Mux4        ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; No         ; |Arena_bitwise|Mux2        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -229,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 04 18:16:39 2019
+    Info: Processing started: Fri Apr 05 21:06:37 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bitwise -c bitwise
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file arena_bitwise_2.bdf
@@ -276,9 +308,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_b
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise.vhd
     Info (12022): Found design unit 1: Arena_bitwise-Arena_bitwise_arch
     Info (12023): Found entity 1: Arena_bitwise
-Info (12127): Elaborating entity "Arena_bitwise_2" for the top level hierarchy
-Warning (275043): Pin "Arena_result_bitwiseOUT[5..0]" is missing source
-Info (12128): Elaborating entity "Arena_bitwise" for hierarchy "Arena_bitwise:inst"
+Info (12127): Elaborating entity "Arena_bitwise" for the top level hierarchy
 Warning (10492): VHDL Process Statement warning at Arena_bitwise.vhd(44): signal "Arena_a_bitwiseIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_bitwise.vhd(46): signal "Arena_a_bitwiseIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_bitwise.vhd(46): signal "Arena_b_bitwiseIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -301,40 +331,28 @@ Info (10041): Inferred latch for "Arena_result_bitwiseOUT[2]" at Arena_bitwise.v
 Info (10041): Inferred latch for "Arena_result_bitwiseOUT[3]" at Arena_bitwise.vhd(39)
 Info (10041): Inferred latch for "Arena_result_bitwiseOUT[4]" at Arena_bitwise.vhd(39)
 Info (10041): Inferred latch for "Arena_result_bitwiseOUT[5]" at Arena_bitwise.vhd(39)
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[5]" is stuck at GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[4]" is stuck at GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[3]" is stuck at GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[2]" is stuck at GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[1]" is stuck at GND
-    Warning (13410): Pin "Arena_result_bitwiseOUT[0]" is stuck at GND
+Warning (13012): Latch Arena_result_bitwiseOUT[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[2]
+Warning (13012): Latch Arena_result_bitwiseOUT[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[3]
+Warning (13012): Latch Arena_result_bitwiseOUT[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[3]
+Warning (13012): Latch Arena_result_bitwiseOUT[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[3]
+Warning (13012): Latch Arena_result_bitwiseOUT[4]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[3]
+Warning (13012): Latch Arena_result_bitwiseOUT[5]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_opcode[3]
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 17 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Arena_buttonStart"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[5]"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[4]"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[3]"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[2]"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[1]"
-    Warning (15610): No output dependent on input pin "Arena_a_bitwiseIN[0]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[5]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[4]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[3]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[2]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[1]"
-    Warning (15610): No output dependent on input pin "Arena_b_bitwiseIN[0]"
-    Warning (15610): No output dependent on input pin "Arena_opcode[3]"
-    Warning (15610): No output dependent on input pin "Arena_opcode[2]"
-    Warning (15610): No output dependent on input pin "Arena_opcode[1]"
-    Warning (15610): No output dependent on input pin "Arena_opcode[0]"
-Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 6 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info (21061): Implemented 163 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 481 megabytes
-    Info: Processing ended: Thu Apr 04 18:16:42 2019
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Fri Apr 05 21:06:41 2019
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

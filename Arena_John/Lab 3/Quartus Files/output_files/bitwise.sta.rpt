@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bitwise
-Thu Apr 04 18:16:57 2019
+Fri Apr 05 21:06:58 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,19 +16,31 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Datasheet Report
- 12. Fast Model Setup Summary
- 13. Fast Model Hold Summary
- 14. Fast Model Recovery Summary
- 15. Fast Model Removal Summary
- 16. Fast Model Minimum Pulse Width Summary
- 17. Fast Model Datasheet Report
- 18. Multicorner Timing Analysis Summary
- 19. Clock Transfers
- 20. Report TCCS
- 21. Report RSKM
- 22. Unconstrained Paths
- 23. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Minimum Pulse Width: 'Arena_buttonStart'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Fast Model Setup Summary
+ 17. Fast Model Hold Summary
+ 18. Fast Model Recovery Summary
+ 19. Fast Model Removal Summary
+ 20. Fast Model Minimum Pulse Width Summary
+ 21. Fast Model Minimum Pulse Width: 'Arena_buttonStart'
+ 22. Setup Times
+ 23. Hold Times
+ 24. Clock to Output Times
+ 25. Minimum Clock to Output Times
+ 26. Multicorner Timing Analysis Summary
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Clock Transfers
+ 32. Report TCCS
+ 33. Report RSKM
+ 34. Unconstrained Paths
+ 35. TimeQuest Timing Analyzer Messages
 
 
 
@@ -75,10 +87,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-----------
-; Clocks ;
-----------
-No clocks to report.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; Clock Name        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; Arena_buttonStart ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_buttonStart } ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
 
 
 ---------------------------
@@ -111,16 +126,140 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
-; Slow Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++--------------------------------------------+
+; Slow Model Minimum Pulse Width Summary     ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; Arena_buttonStart ; -1.222 ; -1.222        ;
++-------------------+--------+---------------+
 
 
--------------------------------
-; Slow Model Datasheet Report ;
--------------------------------
-Nothing to report.
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Arena_buttonStart'                                                                                       ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock             ; Clock Edge ; Target                                       ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonStart ; Rise       ; Arena_buttonStart                            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|datad           ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Setup Times                                                                                ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.048 ; 5.048 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.623 ; 4.623 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.970 ; 3.970 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.657 ; 4.657 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.690 ; 4.690 ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.511 ; 1.511 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.961 ; 5.961 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.056 ; 6.056 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.065 ; 6.065 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.913 ; 2.913 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 3.975 ; 3.975 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 4.099 ; 4.099 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.757  ; 0.757  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.191  ; 1.191  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.384  ; 0.384  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.581  ; 0.581  ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.527  ; 1.527  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.074  ; 1.074  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.953  ; 0.953  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.154  ; 0.154  ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -1.430 ; -1.430 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -2.223 ; -2.223 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.892 ; -1.892 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.587 ; -1.587 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -1.430 ; -1.430 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                              ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                      ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
 
 
 ----------------------------
@@ -147,26 +286,236 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
-; Fast Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++--------------------------------------------+
+; Fast Model Minimum Pulse Width Summary     ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; Arena_buttonStart ; -1.222 ; -1.222        ;
++-------------------+--------+---------------+
 
 
--------------------------------
-; Fast Model Datasheet Report ;
--------------------------------
-Nothing to report.
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Arena_buttonStart'                                                                                       ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock             ; Clock Edge ; Target                                       ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonStart ; Rise       ; Arena_buttonStart                            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0|datad           ;
++--------+--------------+----------------+------------------+-------------------+------------+----------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                        ;
-+------------------+-------+------+----------+---------+---------------------+
-; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
-+------------------+-------+------+----------+---------+---------------------+
++--------------------------------------------------------------------------------------------+
+; Setup Times                                                                                ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.309 ; 2.309 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 1.865 ; 1.865 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.670 ; 1.670 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 2.309 ; 2.309 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.307 ; 1.307 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.645 ; 1.645 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 1.711 ; 1.711 ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 2.637 ; 2.637 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 0.231 ; 0.231 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 2.367 ; 2.367 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 2.429 ; 2.429 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 2.366 ; 2.366 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.962 ; 0.962 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 2.637 ; 2.637 ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 2.694 ; 2.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 2.694 ; 2.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 2.076 ; 2.076 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 2.146 ; 2.146 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 2.062 ; 2.062 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 1.277  ; 1.277  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.657  ; 0.657  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 0.841  ; 0.841  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.484  ; 0.484  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.277  ; 1.277  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 0.923  ; 0.923  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.583  ; 0.583  ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.085  ; 1.085  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.085  ; 1.085  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 0.916  ; 0.916  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 0.755  ; 0.755  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 0.751  ; 0.751  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.783  ; 0.783  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.412  ; 0.412  ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -1.321 ; -1.321 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.179 ; -1.179 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.076 ; -1.076 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                            ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                    ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++--------------------+-------+------+----------+---------+---------------------+
+; Clock              ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack   ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+;  Arena_buttonStart ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS    ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1.222              ;
+;  Arena_buttonStart ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
++--------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Setup Times                                                                                ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.048 ; 5.048 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.623 ; 4.623 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.970 ; 3.970 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.657 ; 4.657 ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.690 ; 4.690 ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.511 ; 1.511 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.961 ; 5.961 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.056 ; 6.056 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.065 ; 6.065 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.913 ; 2.913 ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 3.975 ; 3.975 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 4.099 ; 4.099 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+-------+-------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.757  ; 0.757  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.191  ; 1.191  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.484  ; 0.484  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.583  ; 0.583  ; Fall       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.527  ; 1.527  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.074  ; 1.074  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.953  ; 0.953  ; Fall       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.412  ; 0.412  ; Fall       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -1.321 ; -1.321 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.179 ; -1.179 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.076 ; -1.076 ; Fall       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
++-----------------------+-------------------+--------+--------+------------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                              ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+--------+--------+------------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                    ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
++-----------------------------+-------------------+-------+-------+------------+-------------------+
 
 
 -------------------
@@ -194,10 +543,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 16    ; 16   ;
+; Unconstrained Input Port Paths  ; 96    ; 96   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
 
 
@@ -207,42 +556,47 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 04 18:16:55 2019
+    Info: Processing started: Fri Apr 05 21:06:56 2019
 Info: Command: quartus_sta bitwise -c bitwise
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 6 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'bitwise.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Arena_buttonStart Arena_buttonStart
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332159): No clocks to report
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 Arena_buttonStart 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 Arena_buttonStart 
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Thu Apr 04 18:16:57 2019
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 403 megabytes
+    Info: Processing ended: Fri Apr 05 21:06:58 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

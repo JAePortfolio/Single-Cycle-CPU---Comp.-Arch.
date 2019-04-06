@@ -28,5 +28,5 @@
 # Loading work.Arena_bitwise_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : bitwise.vt(245)
+# ** Note: $finish    : bitwise.vt(243)
 #    Time: 1 us  Iteration: 0  Instance: /Arena_bitwise_vlg_vec_tst/tb_out

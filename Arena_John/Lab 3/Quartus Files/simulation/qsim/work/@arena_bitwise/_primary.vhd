@@ -5,7 +5,6 @@ entity Arena_bitwise is
         Arena_a_bitwiseIN: in     vl_logic_vector(5 downto 0);
         Arena_b_bitwiseIN: in     vl_logic_vector(5 downto 0);
         Arena_result_bitwiseOUT: out    vl_logic_vector(5 downto 0);
-        Arena_opSelect  : in     vl_logic;
         Arena_opcode    : in     vl_logic_vector(3 downto 0);
         Arena_buttonStart: in     vl_logic
     );

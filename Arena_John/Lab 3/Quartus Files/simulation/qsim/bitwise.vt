@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/04/2019 17:26:07"
+// Generated on "04/05/2019 21:10:00"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Arena_bitwise
 // 
@@ -31,19 +31,17 @@ module Arena_bitwise_vlg_sample_tst(
 	Arena_b_bitwiseIN,
 	Arena_buttonStart,
 	Arena_opcode,
-	Arena_opSelect,
 	sampler_tx
 );
 input [5:0] Arena_a_bitwiseIN;
 input [5:0] Arena_b_bitwiseIN;
 input  Arena_buttonStart;
 input [3:0] Arena_opcode;
-input  Arena_opSelect;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(Arena_a_bitwiseIN or Arena_b_bitwiseIN or Arena_buttonStart or Arena_opcode or Arena_opSelect)
+always @(Arena_a_bitwiseIN or Arena_b_bitwiseIN or Arena_buttonStart or Arena_opcode)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -253,7 +251,6 @@ reg [5:0] Arena_a_bitwiseIN;
 reg [5:0] Arena_b_bitwiseIN;
 reg Arena_buttonStart;
 reg [3:0] Arena_opcode;
-reg Arena_opSelect;
 // wires                                               
 wire [5:0] Arena_result_bitwiseOUT;
 
@@ -266,7 +263,6 @@ Arena_bitwise i1 (
 	.Arena_b_bitwiseIN(Arena_b_bitwiseIN),
 	.Arena_buttonStart(Arena_buttonStart),
 	.Arena_opcode(Arena_opcode),
-	.Arena_opSelect(Arena_opSelect),
 	.Arena_result_bitwiseOUT(Arena_result_bitwiseOUT)
 );
 // Arena_a_bitwiseIN[ 5 ]
@@ -391,7 +387,6 @@ Arena_bitwise_vlg_sample_tst tb_sample (
 	.Arena_b_bitwiseIN(Arena_b_bitwiseIN),
 	.Arena_buttonStart(Arena_buttonStart),
 	.Arena_opcode(Arena_opcode),
-	.Arena_opSelect(Arena_opSelect),
 	.sampler_tx(sampler)
 );
 
