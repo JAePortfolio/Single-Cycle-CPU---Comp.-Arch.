@@ -38,7 +38,7 @@ Arena_a_sltIN_integer <= to_integer(signed(Arena_a_bitwiseIN)); -- Conversion to
 Arena_b_sltIN_integer <= to_integer(signed(Arena_b_bitwiseIN)); -- Conversion to integer
 process(Arena_buttonStart, Arena_opcode, Arena_a_sltuIN_integer, Arena_b_sltuIN_integer, Arena_a_sltIN_integer, Arena_b_sltIN_integer)
 	begin
-		if(Arena_buttonStart = '1') then 
+		if(Arena_buttonStart = '0') then 
 				case Arena_opcode is
 					when "0000" =>
 					Arena_result_bitwiseOUT <= not Arena_a_bitwiseIN;

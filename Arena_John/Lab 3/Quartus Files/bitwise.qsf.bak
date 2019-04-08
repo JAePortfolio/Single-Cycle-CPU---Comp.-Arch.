@@ -56,34 +56,6 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS PROGRAMMING PIN"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "USE AS REGULAR IO"
-set_global_assignment -name VHDL_FILE Mux16to4.vhd
-set_global_assignment -name VHDL_FILE Arena_bitwise_setLessThanSigned.vhd
-set_global_assignment -name VHDL_FILE Arena_bitwiseOperation_decoder.vhd
-set_global_assignment -name VHDL_FILE Arena_ledReset.vhd
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwisexor.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwiseor.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwisenot.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwiseand.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitshiftright.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitshiftleft.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitrotationright.vhd"
-set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitrotationleft.vhd"
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseOperation_decoder.vwf
-set_global_assignment -name TEXT_FILE Arena_bitwise_pinAssignments.txt
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitrotationleft.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitrotationright.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitshiftlift.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitshiftright.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseand.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwisenot.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseor.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwisexor.vwf
-set_global_assignment -name VHDL_FILE Arena_bitwise_setLessThanUnsigned.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_setLessThanUnsigned.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_setLessThanSigned.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_V2 -to Arena_opcode[3]
 set_location_assignment PIN_V1 -to Arena_opcode[2]
 set_location_assignment PIN_U4 -to Arena_opcode[1]
@@ -210,7 +182,55 @@ set_location_assignment PIN_B13 -to Arena_b_sltuIN[2]
 set_location_assignment PIN_A13 -to Arena_b_sltuIN[3]
 set_location_assignment PIN_N1 -to Arena_b_sltuIN[4]
 set_location_assignment PIN_P1 -to Arena_b_sltuIN[5]
+set_location_assignment PIN_AE22 -to Arena_result_bitwiseOUT[0]
+set_location_assignment PIN_AF22 -to Arena_result_bitwiseOUT[1]
+set_location_assignment PIN_W19 -to Arena_result_bitwiseOUT[2]
+set_location_assignment PIN_V18 -to Arena_result_bitwiseOUT[3]
+set_location_assignment PIN_U18 -to Arena_result_bitwiseOUT[4]
+set_location_assignment PIN_U17 -to Arena_result_bitwiseOUT[5]
+set_location_assignment PIN_N25 -to Arena_a_bitwiseIN[0]
+set_location_assignment PIN_N26 -to Arena_a_bitwiseIN[1]
+set_location_assignment PIN_P25 -to Arena_a_bitwiseIN[2]
+set_location_assignment PIN_AE14 -to Arena_a_bitwiseIN[3]
+set_location_assignment PIN_AF14 -to Arena_a_bitwiseIN[4]
+set_location_assignment PIN_AD13 -to Arena_a_bitwiseIN[5]
+set_location_assignment PIN_AC13 -to Arena_b_bitwiseIN[0]
+set_location_assignment PIN_C13 -to Arena_b_bitwiseIN[1]
+set_location_assignment PIN_B13 -to Arena_b_bitwiseIN[2]
+set_location_assignment PIN_A13 -to Arena_b_bitwiseIN[3]
+set_location_assignment PIN_N1 -to Arena_b_bitwiseIN[4]
+set_location_assignment PIN_P1 -to Arena_b_bitwiseIN[5]
+set_global_assignment -name BDF_FILE Arena_bitwise_2.bdf
+set_global_assignment -name VHDL_FILE Mux16to4.vhd
+set_global_assignment -name VHDL_FILE Arena_bitwise_setLessThanSigned.vhd
+set_global_assignment -name VHDL_FILE Arena_bitwiseOperation_decoder.vhd
+set_global_assignment -name VHDL_FILE Arena_ledReset.vhd
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwisexor.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwiseor.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwisenot.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitwiseand.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitshiftright.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitshiftleft.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitrotationright.vhd"
+set_global_assignment -name VHDL_FILE "../ModelSim Files/Arena_bitrotationleft.vhd"
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseOperation_decoder.vwf
+set_global_assignment -name TEXT_FILE Arena_bitwise_pinAssignments.txt
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitrotationleft.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitrotationright.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitshiftlift.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitshiftright.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseand.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwisenot.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwiseor.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwisexor.vwf
+set_global_assignment -name VHDL_FILE Arena_bitwise_setLessThanUnsigned.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_setLessThanUnsigned.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_setLessThanSigned.vwf
 set_global_assignment -name VHDL_FILE Arena_bitwise.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_2.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

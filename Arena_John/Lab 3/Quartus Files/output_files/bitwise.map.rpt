@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bitwise
-Fri Apr 05 21:06:41 2019
+Mon Apr 08 13:58:12 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 05 21:06:41 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 08 13:58:12 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bitwise                                         ;
 ; Top-level Entity Name              ; Arena_bitwise                                   ;
@@ -145,24 +145,30 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                             ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_bitwise.vhd                ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_bitwise.vhd                ; yes             ; User VHDL File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------+
@@ -261,9 +267,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 05 21:06:37 2019
+    Info: Processing started: Mon Apr 08 13:58:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bitwise -c bitwise
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file arena_bitwise_2.bdf
     Info (12023): Found entity 1: Arena_bitwise_2
 Info (12021): Found 2 design units, including 1 entities, in source file mux16to4.vhd
@@ -278,28 +284,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file arena_b
 Info (12021): Found 2 design units, including 1 entities, in source file arena_ledreset.vhd
     Info (12022): Found design unit 1: Arena_ledReset-Arena_ledReset_arch
     Info (12023): Found entity 1: Arena_ledReset
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisexor.vhd
     Info (12022): Found design unit 1: Arena_bitwisexor-Arena_bitwisexor_arch
     Info (12023): Found entity 1: Arena_bitwisexor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseor.vhd
     Info (12022): Found design unit 1: Arena_bitwiseor-Arena_bitwiseor_arch
     Info (12023): Found entity 1: Arena_bitwiseor
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwisenot.vhd
     Info (12022): Found design unit 1: Arena_bitwisenot-Arena_bitwisenot_arch
     Info (12023): Found entity 1: Arena_bitwisenot
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitwiseand.vhd
     Info (12022): Found design unit 1: Arena_bitwiseand-Arena_bitwiseand_arch
     Info (12023): Found entity 1: Arena_bitwiseand
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftright.vhd
     Info (12022): Found design unit 1: Arena_bitshiftright-Arena_bitshiftright_arch
     Info (12023): Found entity 1: Arena_bitshiftright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitshiftleft.vhd
     Info (12022): Found design unit 1: Arena_bitshiftleft-Arena_bitshiftleft_arch
     Info (12023): Found entity 1: Arena_bitshiftleft
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationright.vhd
     Info (12022): Found design unit 1: Arena_bitrotationright-Arena_bitrotationright_arch
     Info (12023): Found entity 1: Arena_bitrotationright
-Info (12021): Found 2 design units, including 1 entities, in source file /users/john/documents/college/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/john2/documents/spring 2019/csc 342 - organization/labs/arena_john/lab 3/modelsim files/arena_bitrotationleft.vhd
     Info (12022): Found design unit 1: Arena_bitrotationleft-Arena_bitrotationleft_arch
     Info (12023): Found entity 1: Arena_bitrotationleft
 Info (12021): Found 2 design units, including 1 entities, in source file arena_bitwise_setlessthanunsigned.vhd
@@ -349,10 +355,10 @@ Info (21057): Implemented 186 device resources after synthesis - the final resou
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 163 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 481 megabytes
-    Info: Processing ended: Fri Apr 05 21:06:41 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4675 megabytes
+    Info: Processing ended: Mon Apr 08 13:58:12 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

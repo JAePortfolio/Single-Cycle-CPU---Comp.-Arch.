@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bitwise
-Fri Apr 05 21:06:58 2019
+Mon Apr 08 13:58:28 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -76,15 +76,21 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -143,28 +149,28 @@ No paths to report.
 ; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonStart ; Rise       ; Arena_buttonStart                            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
@@ -183,25 +189,25 @@ No paths to report.
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.048 ; 5.048 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.623 ; 4.623 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.970 ; 3.970 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.657 ; 4.657 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.690 ; 4.690 ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.511 ; 1.511 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.961 ; 5.961 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.056 ; 6.056 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.065 ; 6.065 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.913 ; 2.913 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; 3.975 ; 3.975 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; 4.099 ; 4.099 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.033 ; 6.033 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.046 ; 5.046 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.624 ; 4.624 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.033 ; 6.033 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.971 ; 3.971 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.655 ; 4.655 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.691 ; 4.691 ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.652 ; 6.652 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.509 ; 1.509 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.959 ; 5.959 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.054 ; 6.054 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.063 ; 6.063 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.911 ; 2.911 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.652 ; 6.652 ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 3.976 ; 3.976 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 4.101 ; 4.101 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -210,25 +216,25 @@ No paths to report.
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.757  ; 0.757  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.191  ; 1.191  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.384  ; 0.384  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.581  ; 0.581  ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.527  ; 1.527  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.074  ; 1.074  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.953  ; 0.953  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.154  ; 0.154  ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; -1.430 ; -1.430 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; -2.223 ; -2.223 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; -1.892 ; -1.892 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; -1.587 ; -1.587 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; -1.430 ; -1.430 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.043  ; 2.043  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.755  ; 0.755  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.189  ; 1.189  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.359  ; 0.359  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.043  ; 2.043  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.227  ; 1.227  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.579  ; 0.579  ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.603  ; 1.603  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.603  ; 1.603  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.525  ; 1.525  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 0.744  ; 0.744  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.059  ; 1.059  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.951  ; 0.951  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.149  ; 0.149  ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -1.435 ; -1.435 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -2.222 ; -2.222 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.894 ; -1.894 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.606 ; -1.606 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -1.435 ; -1.435 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -237,13 +243,13 @@ No paths to report.
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.740 ; 11.740 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.631 ; 11.631 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.740 ; 11.740 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.318 ; 11.318 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.278 ; 11.278 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.738 ; 10.738 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.407 ; 11.407 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -252,13 +258,13 @@ No paths to report.
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 10.738 ; 10.738 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.631 ; 11.631 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.740 ; 11.740 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.318 ; 11.318 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.278 ; 11.278 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.738 ; 10.738 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.407 ; 11.407 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -303,28 +309,28 @@ No paths to report.
 ; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonStart ; Rise       ; Arena_buttonStart                            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_buttonStart|combout                    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[0]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[1]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[2]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[3]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[4]$latch|datad       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Fall       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch             ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]$latch|datac       ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonStart ; Rise       ; Arena_result_bitwiseOUT[5]~0clkctrl|inclk[0] ;
@@ -343,25 +349,25 @@ No paths to report.
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.309 ; 2.309 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 1.865 ; 1.865 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.670 ; 1.670 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 2.309 ; 2.309 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.307 ; 1.307 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.645 ; 1.645 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 1.711 ; 1.711 ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 2.637 ; 2.637 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 0.231 ; 0.231 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 2.367 ; 2.367 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 2.429 ; 2.429 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 2.366 ; 2.366 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.962 ; 0.962 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 2.637 ; 2.637 ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; 2.694 ; 2.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; 2.694 ; 2.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; 2.076 ; 2.076 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; 2.146 ; 2.146 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; 2.062 ; 2.062 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.308 ; 2.308 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 1.864 ; 1.864 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.671 ; 1.671 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 2.308 ; 2.308 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.308 ; 1.308 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.644 ; 1.644 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 1.712 ; 1.712 ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 2.636 ; 2.636 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 0.230 ; 0.230 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 2.366 ; 2.366 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 2.428 ; 2.428 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 2.365 ; 2.365 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.961 ; 0.961 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 2.636 ; 2.636 ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 2.692 ; 2.692 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 2.692 ; 2.692 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 2.071 ; 2.071 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 2.147 ; 2.147 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 2.041 ; 2.041 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -370,25 +376,25 @@ No paths to report.
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 1.277  ; 1.277  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.657  ; 0.657  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 0.841  ; 0.841  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.484  ; 0.484  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.277  ; 1.277  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 0.923  ; 0.923  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.583  ; 0.583  ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.085  ; 1.085  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.085  ; 1.085  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 0.916  ; 0.916  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 0.755  ; 0.755  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 0.751  ; 0.751  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.783  ; 0.783  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.412  ; 0.412  ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; -1.321 ; -1.321 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; -1.179 ; -1.179 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; -1.076 ; -1.076 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 1.283  ; 1.283  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.661  ; 0.661  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 0.845  ; 0.845  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.472  ; 0.472  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 1.283  ; 1.283  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 0.927  ; 0.927  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.587  ; 0.587  ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.089  ; 1.089  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.089  ; 1.089  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 0.920  ; 0.920  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 0.559  ; 0.559  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 0.756  ; 0.756  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.787  ; 0.787  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.411  ; 0.411  ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -0.994 ; -0.994 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -1.316 ; -1.316 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.175 ; -1.175 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.074 ; -1.074 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -0.994 ; -0.994 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -397,13 +403,13 @@ No paths to report.
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 6.121 ; 6.121 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.042 ; 6.042 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.121 ; 6.121 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.883 ; 5.883 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.860 ; 5.860 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.693 ; 5.693 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.951 ; 5.951 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -412,13 +418,13 @@ No paths to report.
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.693 ; 5.693 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.042 ; 6.042 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.121 ; 6.121 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.883 ; 5.883 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.860 ; 5.860 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.693 ; 5.693 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.951 ; 5.951 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -439,25 +445,25 @@ No paths to report.
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.048 ; 5.048 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.623 ; 4.623 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.035 ; 6.035 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.970 ; 3.970 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.657 ; 4.657 ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.690 ; 4.690 ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.511 ; 1.511 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.961 ; 5.961 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.056 ; 6.056 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.065 ; 6.065 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.913 ; 2.913 ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.654 ; 6.654 ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; 3.975 ; 3.975 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; 4.099 ; 4.099 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 6.033 ; 6.033 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 5.046 ; 5.046 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 4.624 ; 4.624 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 6.033 ; 6.033 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 3.971 ; 3.971 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 4.655 ; 4.655 ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 4.691 ; 4.691 ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 6.652 ; 6.652 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.509 ; 1.509 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 5.959 ; 5.959 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 6.054 ; 6.054 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 6.063 ; 6.063 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 2.911 ; 2.911 ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 6.652 ; 6.652 ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; 5.398 ; 5.398 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; 5.398 ; 5.398 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; 3.976 ; 3.976 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; 4.101 ; 4.101 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; 3.882 ; 3.882 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -466,25 +472,25 @@ No paths to report.
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port             ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.757  ; 0.757  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.191  ; 1.191  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.484  ; 0.484  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.058  ; 2.058  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
-;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.583  ; 0.583  ; Fall       ; Arena_buttonStart ;
-; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.605  ; 1.605  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.527  ; 1.527  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 1.229  ; 1.229  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.074  ; 1.074  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.953  ; 0.953  ; Fall       ; Arena_buttonStart ;
-;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.412  ; 0.412  ; Fall       ; Arena_buttonStart ;
-; Arena_opcode[*]       ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[0]      ; Arena_buttonStart ; -1.321 ; -1.321 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[1]      ; Arena_buttonStart ; -1.179 ; -1.179 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[2]      ; Arena_buttonStart ; -1.076 ; -1.076 ; Fall       ; Arena_buttonStart ;
-;  Arena_opcode[3]      ; Arena_buttonStart ; -0.993 ; -0.993 ; Fall       ; Arena_buttonStart ;
+; Arena_a_bitwiseIN[*]  ; Arena_buttonStart ; 2.043  ; 2.043  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[0] ; Arena_buttonStart ; 0.755  ; 0.755  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[1] ; Arena_buttonStart ; 1.189  ; 1.189  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[2] ; Arena_buttonStart ; 0.472  ; 0.472  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[3] ; Arena_buttonStart ; 2.043  ; 2.043  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[4] ; Arena_buttonStart ; 1.227  ; 1.227  ; Rise       ; Arena_buttonStart ;
+;  Arena_a_bitwiseIN[5] ; Arena_buttonStart ; 0.587  ; 0.587  ; Rise       ; Arena_buttonStart ;
+; Arena_b_bitwiseIN[*]  ; Arena_buttonStart ; 1.603  ; 1.603  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[0] ; Arena_buttonStart ; 1.603  ; 1.603  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[1] ; Arena_buttonStart ; 1.525  ; 1.525  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[2] ; Arena_buttonStart ; 0.744  ; 0.744  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[3] ; Arena_buttonStart ; 1.059  ; 1.059  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[4] ; Arena_buttonStart ; 0.951  ; 0.951  ; Rise       ; Arena_buttonStart ;
+;  Arena_b_bitwiseIN[5] ; Arena_buttonStart ; 0.411  ; 0.411  ; Rise       ; Arena_buttonStart ;
+; Arena_opcode[*]       ; Arena_buttonStart ; -0.994 ; -0.994 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[0]      ; Arena_buttonStart ; -1.316 ; -1.316 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[1]      ; Arena_buttonStart ; -1.175 ; -1.175 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[2]      ; Arena_buttonStart ; -1.074 ; -1.074 ; Rise       ; Arena_buttonStart ;
+;  Arena_opcode[3]      ; Arena_buttonStart ; -0.994 ; -0.994 ; Rise       ; Arena_buttonStart ;
 +-----------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -493,13 +499,13 @@ No paths to report.
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.632 ; 11.632 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.738 ; 11.738 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.319 ; 11.319 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.279 ; 11.279 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.739 ; 10.739 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.412 ; 11.412 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 11.740 ; 11.740 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 11.631 ; 11.631 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 11.740 ; 11.740 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 11.318 ; 11.318 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 11.278 ; 11.278 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 10.738 ; 10.738 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 11.407 ; 11.407 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+--------+--------+------------+-------------------+
 
 
@@ -508,13 +514,13 @@ No paths to report.
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 ; Data Port                   ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
-; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.043 ; 6.043 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.120 ; 6.120 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.884 ; 5.884 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.861 ; 5.861 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.694 ; 5.694 ; Fall       ; Arena_buttonStart ;
-;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.952 ; 5.952 ; Fall       ; Arena_buttonStart ;
+; Arena_result_bitwiseOUT[*]  ; Arena_buttonStart ; 5.693 ; 5.693 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[0] ; Arena_buttonStart ; 6.042 ; 6.042 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[1] ; Arena_buttonStart ; 6.121 ; 6.121 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[2] ; Arena_buttonStart ; 5.883 ; 5.883 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[3] ; Arena_buttonStart ; 5.860 ; 5.860 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[4] ; Arena_buttonStart ; 5.693 ; 5.693 ; Rise       ; Arena_buttonStart ;
+;  Arena_result_bitwiseOUT[5] ; Arena_buttonStart ; 5.951 ; 5.951 ; Rise       ; Arena_buttonStart ;
 +-----------------------------+-------------------+-------+-------+------------+-------------------+
 
 
@@ -556,10 +562,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 05 21:06:56 2019
+    Info: Processing started: Mon Apr 08 13:58:26 2019
 Info: Command: quartus_sta bitwise -c bitwise
 Info: qsta_default_script.tcl version: #1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): TimeQuest Timing Analyzer is analyzing 6 combinational loops as latches.
@@ -593,9 +599,9 @@ Info (332146): Worst-case minimum pulse width slack is -1.222
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 403 megabytes
-    Info: Processing ended: Fri Apr 05 21:06:58 2019
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Mon Apr 08 13:58:28 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
