@@ -28,6 +28,7 @@ source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Lab
 source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd
 source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vwf
 source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_2.vwf
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd
 source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/db/bitwise.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

@@ -229,8 +229,16 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_setLessThanSigned
 set_global_assignment -name VHDL_FILE Arena_bitwise.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_bitwise_2.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vwf"
+set_global_assignment -name VHDL_FILE Arena_bitwise_tb.vhd
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Arena_bitwise_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME Arena_bitwise_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Arena_bitwise_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Arena_bitwise_tb -section_id Arena_bitwise_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Arena_bitwise_tb.vhd -section_id Arena_bitwise_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

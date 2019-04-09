@@ -1,5 +1,5 @@
 Assembler report for bitwise
-Mon Apr 08 13:58:25 2019
+Mon Apr 08 21:17:50 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 08 13:58:25 2019 ;
+; Assembler Status      ; Successful - Mon Apr 08 21:17:50 2019 ;
 ; Revision Name         ; bitwise                               ;
 ; Top-level Entity Name ; Arena_bitwise                         ;
 ; Family                ; Cyclone II                            ;
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 08 13:58:22 2019
+    Info: Processing started: Mon Apr 08 21:17:47 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off bitwise -c bitwise
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4601 megabytes
-    Info: Processing ended: Mon Apr 08 13:58:25 2019
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Mon Apr 08 21:17:50 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

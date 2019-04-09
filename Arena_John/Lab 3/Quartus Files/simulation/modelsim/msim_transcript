@@ -10,36 +10,58 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd}
+# vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Arena_bitwiseOperation_decoder
-# -- Compiling architecture Arena_bitwiseOperation_decoder_arch of Arena_bitwiseOperation_decoder
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Arena_bitwise
+# -- Compiling architecture Arena_bitwise_arch of Arena_bitwise
 # 
-vsim work.arena_bitwiseoperation_decoder(arena_bitwiseoperation_decoder_arch)
-# vsim work.arena_bitwiseoperation_decoder(arena_bitwiseoperation_decoder_arch) 
+# vcom -93 -work work {C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Arena_bitwise_tb
+# -- Compiling architecture Arena_bitwise_tb_arch of Arena_bitwise_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity Arena_bitwise
+# ** Warning: [4] C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  Arena_bitwise_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Arena_bitwise_tb 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.arena_bitwiseoperation_decoder(arena_bitwiseoperation_decoder_arch)
-add wave  \
-sim:/arena_bitwiseoperation_decoder/Arena_opcode \
-sim:/arena_bitwiseoperation_decoder/Arena_opSelect
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 000 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 001 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 010 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 011 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 100 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 101 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 110 0
-run
-force -freeze sim:/arena_bitwiseoperation_decoder/Arena_opcode 111 0
-run
+# Loading ieee.numeric_std(body)
+# Loading work.arena_bitwise_tb(arena_bitwise_tb_arch)
+# Loading work.arena_bitwise(arena_bitwise_arch)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
+run 1000ns
+run 100ns
+run 1ns
+run -all

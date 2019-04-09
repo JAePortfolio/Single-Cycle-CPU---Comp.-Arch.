@@ -3,38 +3,77 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\Quartus Files\simulation\modelsim
-Earena_bitwiseoperation_decoder
-Z1 w1553978305
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\Quartus Files\simulation\modelsim
-Z5 8C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd
-Z6 FC:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd
+Earena_bitwise
+Z1 w1554746186
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 3\Quartus Files\simulation\modelsim
+Z6 8C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd
+Z7 FC:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd
 l0
-L6
-Vl8lNWk;i>>WUO5?DegdGW3
-!s100 ZgnP99mEVkPk^mA8bVXV>0
-Z7 OV;C;10.1d;51
+L7
+VVZjd]^=k@Q<_fc;BWH4Z40
+Z8 OV;C;10.1d;51
 31
+Z9 !s108 1554772723.015000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd|
+Z11 !s107 C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 WYAJVZf=naD6hF8GUR4EP1
 !i10b 1
-Z8 !s108 1553979092.987000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd|
-Z10 !s107 C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwiseOperation_decoder.vhd|
-Z11 o-93 -work work -O0
-Z12 tExplicit 1
-Aarena_bitwiseoperation_decoder_arch
+Aarena_bitwise_arch
 R2
 R3
-DEx4 work 30 arena_bitwiseoperation_decoder 0 22 l8lNWk;i>>WUO5?DegdGW3
-l15
-L13
-VLgUNGMhlhW<]:_=bhRXjg2
-!s100 z0]hf<iQ731aS3;N;?YEP3
-R7
-31
-!i10b 1
+R4
+Z14 DEx4 work 13 arena_bitwise 0 22 VZjd]^=k@Q<_fc;BWH4Z40
+l28
+L17
+VCd@:?1V[im6ld6kJDnCIB1
 R8
+31
 R9
 R10
 R11
 R12
+R13
+!s100 Q80gz`1TLDU0H>OJ4`ahk0
+!i10b 1
+Earena_bitwise_tb
+Z15 w1554772639
+R3
+R4
+R5
+Z16 8C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd
+Z17 FC:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd
+l0
+L7
+V[=<5N`0@Tc9?a8YKF:[]G1
+!s100 3=iS^fPhi1iMO5eG06O^T3
+R8
+31
+!i10b 1
+Z18 !s108 1554772723.156000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd|
+Z20 !s107 C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 3/Quartus Files/Arena_bitwise_tb.vhd|
+R12
+R13
+Aarena_bitwise_tb_arch
+R2
+R14
+R3
+R4
+DEx4 work 16 arena_bitwise_tb 0 22 [=<5N`0@Tc9?a8YKF:[]G1
+l38
+L10
+V4KbdBY>Y]7z_6_[iQcJSY3
+!s100 =j2WI[z?IkhC;dEjoB7_g0
+R8
+31
+!i10b 1
+R18
+R19
+R20
+R12
+R13
