@@ -3,7 +3,7 @@ $comment
 		vcd file Add_Sub_Mul_Div_Accum_Lab4.msim.vcd -direction
 $end
 $date
-	Thu Apr 11 15:43:25 2019
+	Thu Apr 11 19:11:02 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,392 +11,96 @@ $end
 $timescale
 	1ps
 $end
-$scope module Arena_32bitAdder_vlg_vec_tst $end
-$var reg 32 ! Arena_A_32bit [31:0] $end
-$var reg 32 " Arena_B_32bit [31:0] $end
-$var reg 1 # Arena_Cin_32bit $end
-$var wire 1 $ Arena_Cout_32bit $end
-$var wire 1 % Arena_Sum_32bit [31] $end
-$var wire 1 & Arena_Sum_32bit [30] $end
-$var wire 1 ' Arena_Sum_32bit [29] $end
-$var wire 1 ( Arena_Sum_32bit [28] $end
-$var wire 1 ) Arena_Sum_32bit [27] $end
-$var wire 1 * Arena_Sum_32bit [26] $end
-$var wire 1 + Arena_Sum_32bit [25] $end
-$var wire 1 , Arena_Sum_32bit [24] $end
-$var wire 1 - Arena_Sum_32bit [23] $end
-$var wire 1 . Arena_Sum_32bit [22] $end
-$var wire 1 / Arena_Sum_32bit [21] $end
-$var wire 1 0 Arena_Sum_32bit [20] $end
-$var wire 1 1 Arena_Sum_32bit [19] $end
-$var wire 1 2 Arena_Sum_32bit [18] $end
-$var wire 1 3 Arena_Sum_32bit [17] $end
-$var wire 1 4 Arena_Sum_32bit [16] $end
-$var wire 1 5 Arena_Sum_32bit [15] $end
-$var wire 1 6 Arena_Sum_32bit [14] $end
-$var wire 1 7 Arena_Sum_32bit [13] $end
-$var wire 1 8 Arena_Sum_32bit [12] $end
-$var wire 1 9 Arena_Sum_32bit [11] $end
-$var wire 1 : Arena_Sum_32bit [10] $end
-$var wire 1 ; Arena_Sum_32bit [9] $end
-$var wire 1 < Arena_Sum_32bit [8] $end
-$var wire 1 = Arena_Sum_32bit [7] $end
-$var wire 1 > Arena_Sum_32bit [6] $end
-$var wire 1 ? Arena_Sum_32bit [5] $end
-$var wire 1 @ Arena_Sum_32bit [4] $end
-$var wire 1 A Arena_Sum_32bit [3] $end
-$var wire 1 B Arena_Sum_32bit [2] $end
-$var wire 1 C Arena_Sum_32bit [1] $end
-$var wire 1 D Arena_Sum_32bit [0] $end
-$var wire 1 E sampler $end
+$scope module Arena_D_FlipFlop_vlg_vec_tst $end
+$var reg 1 ! Arena_clk $end
+$var reg 1 " Arena_D $end
+$var wire 1 # Arena_Q $end
+$var wire 1 $ sampler $end
 $scope module i1 $end
-$var wire 1 F gnd $end
-$var wire 1 G vcc $end
-$var wire 1 H unknown $end
-$var tri1 1 I devclrn $end
-$var tri1 1 J devpor $end
-$var tri1 1 K devoe $end
-$var wire 1 L Arena_Cin_32bit~combout $end
-$var wire 1 M Arena_Sum_32bit~0_combout $end
-$var wire 1 N Arena_Cout_32bit_vars[0]~8_combout $end
-$var wire 1 O Arena_Cout_32bit_vars[0]~9_combout $end
-$var wire 1 P Arena_Sum_32bit~1_combout $end
-$var wire 1 Q Arena_Cout_32bit_vars[1]~10_combout $end
-$var wire 1 R Arena_Sum_32bit~2_combout $end
-$var wire 1 S Arena_Cout_32bit_vars[2]~11_combout $end
-$var wire 1 T Arena_Cout_32bit_vars[2]~12_combout $end
-$var wire 1 U Arena_Sum_32bit~3_combout $end
-$var wire 1 V Arena_Cout_32bit_vars[3]~13_combout $end
-$var wire 1 W Arena_Sum_32bit~4_combout $end
-$var wire 1 X Arena_Cout_32bit_vars[4]~15_combout $end
-$var wire 1 Y Arena_Cout_32bit_vars[4]~16_combout $end
-$var wire 1 Z Arena_Cout_32bit_vars[4]~56_combout $end
-$var wire 1 [ Arena_Cout_32bit_vars[4]~14_combout $end
-$var wire 1 \ Arena_Sum_32bit~5_combout $end
-$var wire 1 ] Arena_Cout_32bit_vars[5]~17_combout $end
-$var wire 1 ^ Arena_Sum_32bit~6_combout $end
-$var wire 1 _ Arena_Cout_32bit_vars[6]~19_combout $end
-$var wire 1 ` Arena_Cout_32bit_vars[6]~18_combout $end
-$var wire 1 a Arena_Sum_32bit~7_combout $end
-$var wire 1 b Arena_Cout_32bit_vars[7]~20_combout $end
-$var wire 1 c Arena_Sum_32bit~8_combout $end
-$var wire 1 d Arena_Cout_32bit_vars[8]~22_combout $end
-$var wire 1 e Arena_Cout_32bit_vars[8]~21_combout $end
-$var wire 1 f Arena_Sum_32bit~9_combout $end
-$var wire 1 g Arena_Cout_32bit_vars[9]~23_combout $end
-$var wire 1 h Arena_Sum_32bit~10_combout $end
-$var wire 1 i Arena_Cout_32bit_vars[10]~24_combout $end
-$var wire 1 j Arena_Cout_32bit_vars[10]~25_combout $end
-$var wire 1 k Arena_Sum_32bit~11_combout $end
-$var wire 1 l Arena_Cout_32bit_vars[11]~26_combout $end
-$var wire 1 m Arena_Sum_32bit~12_combout $end
-$var wire 1 n Arena_Cout_32bit_vars[12]~28_combout $end
-$var wire 1 o Arena_Cout_32bit_vars[12]~27_combout $end
-$var wire 1 p Arena_Sum_32bit~13_combout $end
-$var wire 1 q Arena_Cout_32bit_vars[13]~29_combout $end
-$var wire 1 r Arena_Sum_32bit~14_combout $end
-$var wire 1 s Arena_Cout_32bit_vars[14]~30_combout $end
-$var wire 1 t Arena_Cout_32bit_vars[14]~31_combout $end
-$var wire 1 u Arena_Sum_32bit~15_combout $end
-$var wire 1 v Arena_Cout_32bit_vars[15]~32_combout $end
-$var wire 1 w Arena_Sum_32bit~16_combout $end
-$var wire 1 x Arena_Cout_32bit_vars[16]~34_combout $end
-$var wire 1 y Arena_Cout_32bit_vars[16]~33_combout $end
-$var wire 1 z Arena_Sum_32bit~17_combout $end
-$var wire 1 { Arena_Cout_32bit_vars[17]~35_combout $end
-$var wire 1 | Arena_Sum_32bit~18_combout $end
-$var wire 1 } Arena_Cout_32bit_vars[18]~36_combout $end
-$var wire 1 ~ Arena_Cout_32bit_vars[18]~37_combout $end
-$var wire 1 !! Arena_Sum_32bit~19_combout $end
-$var wire 1 "! Arena_Cout_32bit_vars[19]~38_combout $end
-$var wire 1 #! Arena_Sum_32bit~20_combout $end
-$var wire 1 $! Arena_Cout_32bit_vars[20]~40_combout $end
-$var wire 1 %! Arena_Cout_32bit_vars[20]~39_combout $end
-$var wire 1 &! Arena_Sum_32bit~21_combout $end
-$var wire 1 '! Arena_Cout_32bit_vars[21]~41_combout $end
-$var wire 1 (! Arena_Sum_32bit~22_combout $end
-$var wire 1 )! Arena_Cout_32bit_vars[22]~43_combout $end
-$var wire 1 *! Arena_Cout_32bit_vars[22]~42_combout $end
-$var wire 1 +! Arena_Sum_32bit~23_combout $end
-$var wire 1 ,! Arena_Cout_32bit_vars[23]~44_combout $end
-$var wire 1 -! Arena_Sum_32bit~24_combout $end
-$var wire 1 .! Arena_Cout_32bit_vars[24]~46_combout $end
-$var wire 1 /! Arena_Cout_32bit_vars[24]~45_combout $end
-$var wire 1 0! Arena_Sum_32bit~25_combout $end
-$var wire 1 1! Arena_Cout_32bit_vars[25]~47_combout $end
-$var wire 1 2! Arena_Sum_32bit~26_combout $end
-$var wire 1 3! Arena_Cout_32bit_vars[26]~48_combout $end
-$var wire 1 4! Arena_Cout_32bit_vars[26]~49_combout $end
-$var wire 1 5! Arena_Sum_32bit~27_combout $end
-$var wire 1 6! Arena_Cout_32bit_vars[27]~50_combout $end
-$var wire 1 7! Arena_Sum_32bit~28_combout $end
-$var wire 1 8! Arena_Cout_32bit_vars[28]~52_combout $end
-$var wire 1 9! Arena_Cout_32bit_vars[28]~51_combout $end
-$var wire 1 :! Arena_Sum_32bit~29_combout $end
-$var wire 1 ;! Arena_Cout_32bit_vars[29]~53_combout $end
-$var wire 1 <! Arena_Sum_32bit~30_combout $end
-$var wire 1 =! Arena_Cout_32bit_vars[30]~54_combout $end
-$var wire 1 >! Arena_Cout_32bit_vars[30]~55_combout $end
-$var wire 1 ?! Arena_Sum_32bit~31_combout $end
-$var wire 1 @! Arena_Cout_32bit~0_combout $end
-$var wire 1 A! Arena_B_32bit~combout [31] $end
-$var wire 1 B! Arena_B_32bit~combout [30] $end
-$var wire 1 C! Arena_B_32bit~combout [29] $end
-$var wire 1 D! Arena_B_32bit~combout [28] $end
-$var wire 1 E! Arena_B_32bit~combout [27] $end
-$var wire 1 F! Arena_B_32bit~combout [26] $end
-$var wire 1 G! Arena_B_32bit~combout [25] $end
-$var wire 1 H! Arena_B_32bit~combout [24] $end
-$var wire 1 I! Arena_B_32bit~combout [23] $end
-$var wire 1 J! Arena_B_32bit~combout [22] $end
-$var wire 1 K! Arena_B_32bit~combout [21] $end
-$var wire 1 L! Arena_B_32bit~combout [20] $end
-$var wire 1 M! Arena_B_32bit~combout [19] $end
-$var wire 1 N! Arena_B_32bit~combout [18] $end
-$var wire 1 O! Arena_B_32bit~combout [17] $end
-$var wire 1 P! Arena_B_32bit~combout [16] $end
-$var wire 1 Q! Arena_B_32bit~combout [15] $end
-$var wire 1 R! Arena_B_32bit~combout [14] $end
-$var wire 1 S! Arena_B_32bit~combout [13] $end
-$var wire 1 T! Arena_B_32bit~combout [12] $end
-$var wire 1 U! Arena_B_32bit~combout [11] $end
-$var wire 1 V! Arena_B_32bit~combout [10] $end
-$var wire 1 W! Arena_B_32bit~combout [9] $end
-$var wire 1 X! Arena_B_32bit~combout [8] $end
-$var wire 1 Y! Arena_B_32bit~combout [7] $end
-$var wire 1 Z! Arena_B_32bit~combout [6] $end
-$var wire 1 [! Arena_B_32bit~combout [5] $end
-$var wire 1 \! Arena_B_32bit~combout [4] $end
-$var wire 1 ]! Arena_B_32bit~combout [3] $end
-$var wire 1 ^! Arena_B_32bit~combout [2] $end
-$var wire 1 _! Arena_B_32bit~combout [1] $end
-$var wire 1 `! Arena_B_32bit~combout [0] $end
-$var wire 1 a! Arena_A_32bit~combout [31] $end
-$var wire 1 b! Arena_A_32bit~combout [30] $end
-$var wire 1 c! Arena_A_32bit~combout [29] $end
-$var wire 1 d! Arena_A_32bit~combout [28] $end
-$var wire 1 e! Arena_A_32bit~combout [27] $end
-$var wire 1 f! Arena_A_32bit~combout [26] $end
-$var wire 1 g! Arena_A_32bit~combout [25] $end
-$var wire 1 h! Arena_A_32bit~combout [24] $end
-$var wire 1 i! Arena_A_32bit~combout [23] $end
-$var wire 1 j! Arena_A_32bit~combout [22] $end
-$var wire 1 k! Arena_A_32bit~combout [21] $end
-$var wire 1 l! Arena_A_32bit~combout [20] $end
-$var wire 1 m! Arena_A_32bit~combout [19] $end
-$var wire 1 n! Arena_A_32bit~combout [18] $end
-$var wire 1 o! Arena_A_32bit~combout [17] $end
-$var wire 1 p! Arena_A_32bit~combout [16] $end
-$var wire 1 q! Arena_A_32bit~combout [15] $end
-$var wire 1 r! Arena_A_32bit~combout [14] $end
-$var wire 1 s! Arena_A_32bit~combout [13] $end
-$var wire 1 t! Arena_A_32bit~combout [12] $end
-$var wire 1 u! Arena_A_32bit~combout [11] $end
-$var wire 1 v! Arena_A_32bit~combout [10] $end
-$var wire 1 w! Arena_A_32bit~combout [9] $end
-$var wire 1 x! Arena_A_32bit~combout [8] $end
-$var wire 1 y! Arena_A_32bit~combout [7] $end
-$var wire 1 z! Arena_A_32bit~combout [6] $end
-$var wire 1 {! Arena_A_32bit~combout [5] $end
-$var wire 1 |! Arena_A_32bit~combout [4] $end
-$var wire 1 }! Arena_A_32bit~combout [3] $end
-$var wire 1 ~! Arena_A_32bit~combout [2] $end
-$var wire 1 !" Arena_A_32bit~combout [1] $end
-$var wire 1 "" Arena_A_32bit~combout [0] $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + Arena_D~combout $end
+$var wire 1 , Arena_clk~combout $end
+$var wire 1 - Arena_data~combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1100000011111100100111100000001 !
-b10100010100010011010111110001101 "
-0#
-1$
-0D
-1C
-1B
-1A
-0@
-0?
-0>
-1=
-0<
-1;
-1:
-19
-18
-17
-16
-15
-14
-13
-12
-01
-00
-0/
-0.
-0-
-1,
-1+
-0*
-0)
-0(
-0'
-0&
+1!
+1"
+1#
+x$
 0%
-xE
-0F
-1G
-xH
-1I
-1J
-1K
-0L
-0M
-0N
-1O
-1P
-0Q
-1R
-0S
-0T
-1U
-0V
-0W
-0X
-0Y
-0Z
-0[
-0\
-0]
-0^
-0_
-0`
-1a
-0b
-0c
-1d
-0e
-1f
-1g
-1h
-1i
-1j
-1k
-1l
-1m
-0n
-0o
-1p
-0q
-1r
-0s
-0t
-1u
-0v
-1w
-0x
-0y
-1z
-0{
-1|
-0}
-0~
-0!!
-1"!
-0#!
-1$!
-0%!
-0&!
-1'!
-0(!
-1)!
-0*!
-0+!
-1,!
-1-!
-0.!
-0/!
-10!
-01!
-02!
-03!
-04!
-05!
-06!
-07!
-08!
-09!
-0:!
-1;!
-0<!
-0=!
-1>!
-0?!
-1@!
-1`!
-0_!
-1^!
-1]!
-0\!
-0[!
-0Z!
-1Y!
-1X!
-1W!
-1V!
-1U!
-0T!
-1S!
-0R!
-1Q!
-1P!
-0O!
-0N!
-1M!
-0L!
-0K!
-0J!
-1I!
-0H!
-1G!
-0F!
-0E!
-0D!
-1C!
-0B!
-1A!
-1""
-0!"
-0~!
-0}!
-0|!
-0{!
-0z!
-0y!
-1x!
-1w!
-1v!
-1u!
-0t!
-0s!
-1r!
-0q!
-0p!
-1o!
-1n!
-1m!
-1l!
-1k!
-1j!
-0i!
-0h!
-0g!
-0f!
-0e!
-0d!
-1c!
-1b!
-0a!
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
 $end
+#10000
+0"
+0+
+0$
+0-
+0#
+#20000
+0!
+0,
+1$
+#50000
+1"
+1+
+0$
+#60000
+1!
+1,
+1$
+1-
+1#
+#80000
+0!
+0,
+0$
+#90000
+0"
+0+
+1$
+#100000
+1"
+1+
+0$
+#110000
+0"
+0+
+1$
+#120000
+1"
+1+
+0$
+#130000
+1!
+0"
+1,
+0+
+1$
+0-
+0#
+#140000
+0!
+1"
+0,
+1+
+0$
+#150000
+0"
+0+
+1$
 #160000
