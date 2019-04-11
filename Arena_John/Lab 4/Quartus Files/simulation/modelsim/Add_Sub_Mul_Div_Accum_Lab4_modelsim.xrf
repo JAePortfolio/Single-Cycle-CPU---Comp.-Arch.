@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bitAdder.vhd
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_fullAdder.vhd
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_fullAdder.vwf
+source_file = 1, C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/db/Add_Sub_Mul_Div_Accum_Lab4.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Arena_fullAdder
+instance = comp, \Arena_A~I , Arena_A, Arena_fullAdder, 1
+instance = comp, \Arena_Cin~I , Arena_Cin, Arena_fullAdder, 1
+instance = comp, \Arena_B~I , Arena_B, Arena_fullAdder, 1
+instance = comp, \Arena_Sum~0 , Arena_Sum~0, Arena_fullAdder, 1
+instance = comp, \Arena_Cout~0 , Arena_Cout~0, Arena_fullAdder, 1
+instance = comp, \Arena_Sum~I , Arena_Sum, Arena_fullAdder, 1
+instance = comp, \Arena_Cout~I , Arena_Cout, Arena_fullAdder, 1

@@ -1,0 +1,13 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 4 - Spring 2019 Due: 4/17/19
+-- Arena_fullAdder.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_fullAdder is 
+	port(
+		Arena_A, Arena_B, Arena_Cin : in std_logic;
+		Arena_Sum, Arena_Cout : out std_logic
+	);
+end Arena_fullAdder;
+

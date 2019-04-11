@@ -1,0 +1,14 @@
+|Arena_fullAdder
+Arena_A => Arena_Sum.IN0
+Arena_A => Arena_Cout.IN0
+Arena_A => Arena_Cout.IN0
+Arena_B => Arena_Sum.IN1
+Arena_B => Arena_Cout.IN1
+Arena_B => Arena_Cout.IN0
+Arena_Cin => Arena_Sum.IN1
+Arena_Cin => Arena_Cout.IN1
+Arena_Cin => Arena_Cout.IN1
+Arena_Sum <= Arena_Sum.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Cout <= Arena_Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
