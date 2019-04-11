@@ -61,7 +61,4 @@
 #    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /arena_bitwise_tb/UUT
-run 1000ns
-run 100ns
-run 1ns
-run -all
+# Can't move the Now cursor.
