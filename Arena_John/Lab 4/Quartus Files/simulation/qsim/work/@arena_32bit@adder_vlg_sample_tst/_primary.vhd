@@ -1,0 +1,10 @@
+library verilog;
+use verilog.vl_types.all;
+entity Arena_32bitAdder_vlg_sample_tst is
+    port(
+        Arena_A_32bit   : in     vl_logic_vector(31 downto 0);
+        Arena_B_32bit   : in     vl_logic_vector(31 downto 0);
+        Arena_Cin_32bit : in     vl_logic;
+        sampler_tx      : out    vl_logic
+    );
+end Arena_32bitAdder_vlg_sample_tst;

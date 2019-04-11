@@ -3,12 +3,12 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
-vArena_fullAdder
-Z1 !s100 ]RC7QjN6I_Id44Xm?FmX_0
-Z2 IPg1dmIZ^1E]G0lz=U>k9c2
-Z3 VW^8o2f;D8Bl[CZAi6PYok2
-Z4 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
-Z5 w1554945434
+vArena_32bitAdder
+Z1 !s100 an:QfCMa3ezES`X[2S2`a0
+Z2 IBHi7eXeWWbKYW7WCgRIHW1
+Z3 V?QkkaK[6Z5nW[MSfJTl_h3
+Z4 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
+Z5 w1555011803
 Z6 8Add_Sub_Mul_Div_Accum_Lab4.vo
 Z7 FAdd_Sub_Mul_Div_Accum_Lab4.vo
 L0 31
@@ -17,19 +17,19 @@ r1
 31
 Z9 !s90 -work|work|Add_Sub_Mul_Div_Accum_Lab4.vo|
 Z10 o-work work -O0
-Z11 n@arena_full@adder
+Z11 n@arena_32bit@adder
 !i10b 1
 !s85 0
-Z12 !s108 1554945435.439000
+Z12 !s108 1555011804.904000
 Z13 !s107 Add_Sub_Mul_Div_Accum_Lab4.vo|
 !s101 -O0
-vArena_fullAdder_vlg_check_tst
+vArena_32bitAdder_vlg_check_tst
 !i10b 1
-Z14 !s100 ?0NfW=YRZW9ad9c7^n:4<2
-Z15 I7=Wm4hekc10TI9gmDC2JO0
-Z16 V[DcPd3C1EYFFL:3a_fUHj2
+Z14 !s100 ENZ>E0XcP9ZDJ;ClY1MXz3
+Z15 IHjzUk3XBhe7HJ3Fl>mj4F0
+Z16 VY>B9B?NDV=OMEJWoDDFO>1
 R4
-Z17 w1554945432
+Z17 w1555011802
 Z18 8Add_Sub_Mul_Div_Accum_Lab4.vt
 Z19 FAdd_Sub_Mul_Div_Accum_Lab4.vt
 L0 61
@@ -37,17 +37,17 @@ R8
 r1
 !s85 0
 31
-Z20 !s108 1554945435.548000
+Z20 !s108 1555011805.084000
 Z21 !s107 Add_Sub_Mul_Div_Accum_Lab4.vt|
 Z22 !s90 -work|work|Add_Sub_Mul_Div_Accum_Lab4.vt|
 !s101 -O0
 R10
-Z23 n@arena_full@adder_vlg_check_tst
-vArena_fullAdder_vlg_sample_tst
+Z23 n@arena_32bit@adder_vlg_check_tst
+vArena_32bitAdder_vlg_sample_tst
 !i10b 1
-Z24 !s100 2X661LOc[i;b4lj^]ONLW0
-Z25 IFR8^EJ]f=O3hlm=MB<Nn<2
-Z26 V3^^@a9e6oz;hRzJD_W:Ym1
+Z24 !s100 EkS4kk0Ji9ooGIhfo?k;]0
+Z25 IEgZ`kNG555ImI_m8IFT5Z0
+Z26 VGNodaSD87A_a4KIFCl6lD3
 R4
 R17
 R18
@@ -62,17 +62,17 @@ R21
 R22
 !s101 -O0
 R10
-Z27 n@arena_full@adder_vlg_sample_tst
-vArena_fullAdder_vlg_vec_tst
+Z27 n@arena_32bit@adder_vlg_sample_tst
+vArena_32bitAdder_vlg_vec_tst
 !i10b 1
-!s100 V[3T86ZTT2Sm7o2Q<nd:c3
-IXXkbKhEQ?24_65cIETS;g2
-Z28 V9_2[SiEoU:bB7_EN4HM6_0
+!s100 6i57REhzE:LDe>[I6m;n[2
+I^Y[=z1bEf0oRP0V=WF2b@2
+Z28 VOJMO:X;@h50_Whg?W5]W23
 R4
 R17
 R18
 R19
-Z29 L0 183
+Z29 L0 740
 R8
 r1
 !s85 0
@@ -82,4 +82,84 @@ R21
 R22
 !s101 -O0
 R10
-Z30 n@arena_full@adder_vlg_vec_tst
+Z30 n@arena_32bit@adder_vlg_vec_tst
+vArena_fullAdder
+Z31 !s100 ]RC7QjN6I_Id44Xm?FmX_0
+Z32 IPg1dmIZ^1E]G0lz=U>k9c2
+Z33 VW^8o2f;D8Bl[CZAi6PYok2
+Z34 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
+Z35 w1554945434
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z36 n@arena_full@adder
+Z37 !s108 1554945435.439000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_fullAdder_vlg_check_tst
+Z38 !s100 ?0NfW=YRZW9ad9c7^n:4<2
+Z39 I7=Wm4hekc10TI9gmDC2JO0
+Z40 V[DcPd3C1EYFFL:3a_fUHj2
+R34
+Z41 w1554945432
+R18
+R19
+L0 61
+R8
+r1
+31
+Z42 !s108 1554945435.548000
+Z43 !s107 Add_Sub_Mul_Div_Accum_Lab4.vt|
+R22
+R10
+Z44 n@arena_full@adder_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_fullAdder_vlg_sample_tst
+Z45 !s100 2X661LOc[i;b4lj^]ONLW0
+Z46 IFR8^EJ]f=O3hlm=MB<Nn<2
+Z47 V3^^@a9e6oz;hRzJD_W:Ym1
+R34
+R41
+R18
+R19
+L0 29
+R8
+r1
+31
+R42
+R43
+R22
+R10
+Z48 n@arena_full@adder_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vArena_fullAdder_vlg_vec_tst
+Z49 IXXkbKhEQ?24_65cIETS;g2
+Z50 V9_2[SiEoU:bB7_EN4HM6_0
+R34
+R41
+R18
+R19
+Z51 L0 183
+R8
+r1
+31
+R42
+R43
+R22
+R10
+Z52 n@arena_full@adder_vlg_vec_tst
+Z53 !s100 V[3T86ZTT2Sm7o2Q<nd:c3
+!i10b 1
+!s85 0
+!s101 -O0
