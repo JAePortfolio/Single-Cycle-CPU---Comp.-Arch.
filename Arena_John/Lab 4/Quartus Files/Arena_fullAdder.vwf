@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("Arena_A")
+SIGNAL("Arena_A_fa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +42,7 @@ SIGNAL("Arena_A")
 	PARENT = "";
 }
 
-SIGNAL("Arena_B")
+SIGNAL("Arena_B_fa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -52,7 +52,7 @@ SIGNAL("Arena_B")
 	PARENT = "";
 }
 
-SIGNAL("Arena_Cin")
+SIGNAL("Arena_Cin_fa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -62,7 +62,7 @@ SIGNAL("Arena_Cin")
 	PARENT = "";
 }
 
-SIGNAL("Arena_Cout")
+SIGNAL("Arena_Cout_fa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -72,7 +72,7 @@ SIGNAL("Arena_Cout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_Sum")
+SIGNAL("Arena_Sum_fa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -82,7 +82,7 @@ SIGNAL("Arena_Sum")
 	PARENT = "";
 }
 
-TRANSITION_LIST("Arena_A")
+TRANSITION_LIST("Arena_A_fa")
 {
 	NODE
 	{
@@ -92,7 +92,7 @@ TRANSITION_LIST("Arena_A")
 	}
 }
 
-TRANSITION_LIST("Arena_B")
+TRANSITION_LIST("Arena_B_fa")
 {
 	NODE
 	{
@@ -104,7 +104,7 @@ TRANSITION_LIST("Arena_B")
 	}
 }
 
-TRANSITION_LIST("Arena_Cin")
+TRANSITION_LIST("Arena_Cin_fa")
 {
 	NODE
 	{
@@ -122,7 +122,7 @@ TRANSITION_LIST("Arena_Cin")
 	}
 }
 
-TRANSITION_LIST("Arena_Cout")
+TRANSITION_LIST("Arena_Cout_fa")
 {
 	NODE
 	{
@@ -131,7 +131,7 @@ TRANSITION_LIST("Arena_Cout")
 	}
 }
 
-TRANSITION_LIST("Arena_Sum")
+TRANSITION_LIST("Arena_Sum_fa")
 {
 	NODE
 	{
@@ -142,7 +142,7 @@ TRANSITION_LIST("Arena_Sum")
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_A";
+	CHANNEL = "Arena_A_fa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -151,7 +151,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_B";
+	CHANNEL = "Arena_B_fa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -160,7 +160,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_Cin";
+	CHANNEL = "Arena_Cin_fa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -169,7 +169,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_Cout";
+	CHANNEL = "Arena_Cout_fa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -178,7 +178,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_Sum";
+	CHANNEL = "Arena_Sum_fa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;

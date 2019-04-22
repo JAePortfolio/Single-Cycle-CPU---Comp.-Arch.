@@ -18,28 +18,30 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/21/2019 15:50:33"
+// Generated on "04/22/2019 16:55:59"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    Arena_32bitAccumulator
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Arena_32bit_arrayMultiplier
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module Arena_32bitAccumulator_vlg_sample_tst(
-	Arena_A_32bit,
-	Arena_Cin_32bit,
-	Arena_clk,
+module Arena_32bit_arrayMultiplier_vlg_sample_tst(
+	Arena_A_In,
+	Arena_B_In,
+	Arena_buttonSelect_one,
+	Arena_buttonSelect_two,
 	sampler_tx
 );
-input [31:0] Arena_A_32bit;
-input  Arena_Cin_32bit;
-input  Arena_clk;
+input [15:0] Arena_A_In;
+input [15:0] Arena_B_In;
+input  Arena_buttonSelect_one;
+input  Arena_buttonSelect_two;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(Arena_A_32bit or Arena_Cin_32bit or Arena_clk)
+always @(Arena_A_In or Arena_B_In or Arena_buttonSelect_one or Arena_buttonSelect_two)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -58,45 +60,27 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module Arena_32bitAccumulator_vlg_check_tst (
-	Arena_Cout_32bit,
-	Arena_Q,
-	Arena_Sum_32bit,
-	Arena_Sum_Immediate,
+module Arena_32bit_arrayMultiplier_vlg_check_tst (
+	Arena_out,
 	sampler_rx
 );
-input  Arena_Cout_32bit;
-input [31:0] Arena_Q;
-input [31:0] Arena_Sum_32bit;
-input [31:0] Arena_Sum_Immediate;
+input [15:0] Arena_out;
 input sampler_rx;
 
-reg  Arena_Cout_32bit_expected;
-reg [31:0] Arena_Q_expected;
-reg [31:0] Arena_Sum_32bit_expected;
-reg [31:0] Arena_Sum_Immediate_expected;
+reg [15:0] Arena_out_expected;
 
-reg  Arena_Cout_32bit_prev;
-reg [31:0] Arena_Q_prev;
-reg [31:0] Arena_Sum_32bit_prev;
-reg [31:0] Arena_Sum_Immediate_prev;
+reg [15:0] Arena_out_prev;
 
-reg  Arena_Cout_32bit_expected_prev;
-reg [31:0] Arena_Q_expected_prev;
-reg [31:0] Arena_Sum_32bit_expected_prev;
-reg [31:0] Arena_Sum_Immediate_expected_prev;
+reg [15:0] Arena_out_expected_prev;
 
-reg  last_Arena_Cout_32bit_exp;
-reg [31:0] last_Arena_Q_exp;
-reg [31:0] last_Arena_Sum_32bit_exp;
-reg [31:0] last_Arena_Sum_Immediate_exp;
+reg [15:0] last_Arena_out_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:4] on_first_change ;
+reg [1:1] on_first_change ;
 
 
 initial
@@ -104,518 +88,106 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 4'b1;
+on_first_change = 1'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	Arena_Cout_32bit_prev = Arena_Cout_32bit;
-	Arena_Q_prev = Arena_Q;
-	Arena_Sum_32bit_prev = Arena_Sum_32bit;
-	Arena_Sum_Immediate_prev = Arena_Sum_Immediate;
+	Arena_out_prev = Arena_out;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	Arena_Cout_32bit_expected_prev = Arena_Cout_32bit_expected;
-	Arena_Q_expected_prev = Arena_Q_expected;
-	Arena_Sum_32bit_expected_prev = Arena_Sum_32bit_expected;
-	Arena_Sum_Immediate_expected_prev = Arena_Sum_Immediate_expected;
+	Arena_out_expected_prev = Arena_out_expected;
 end
 
 
-
-// expected Arena_Cout_32bit
+// expected Arena_out[ 15 ]
 initial
 begin
-	Arena_Cout_32bit_expected = 1'bX;
+	Arena_out_expected[15] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 31 ]
+// expected Arena_out[ 14 ]
 initial
 begin
-	Arena_Sum_32bit_expected[31] = 1'bX;
+	Arena_out_expected[14] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 30 ]
+// expected Arena_out[ 13 ]
 initial
 begin
-	Arena_Sum_32bit_expected[30] = 1'bX;
+	Arena_out_expected[13] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 29 ]
+// expected Arena_out[ 12 ]
 initial
 begin
-	Arena_Sum_32bit_expected[29] = 1'bX;
+	Arena_out_expected[12] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 28 ]
+// expected Arena_out[ 11 ]
 initial
 begin
-	Arena_Sum_32bit_expected[28] = 1'bX;
+	Arena_out_expected[11] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 27 ]
+// expected Arena_out[ 10 ]
 initial
 begin
-	Arena_Sum_32bit_expected[27] = 1'bX;
+	Arena_out_expected[10] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 26 ]
+// expected Arena_out[ 9 ]
 initial
 begin
-	Arena_Sum_32bit_expected[26] = 1'bX;
+	Arena_out_expected[9] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 25 ]
+// expected Arena_out[ 8 ]
 initial
 begin
-	Arena_Sum_32bit_expected[25] = 1'bX;
+	Arena_out_expected[8] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 24 ]
+// expected Arena_out[ 7 ]
 initial
 begin
-	Arena_Sum_32bit_expected[24] = 1'bX;
+	Arena_out_expected[7] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 23 ]
+// expected Arena_out[ 6 ]
 initial
 begin
-	Arena_Sum_32bit_expected[23] = 1'bX;
+	Arena_out_expected[6] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 22 ]
+// expected Arena_out[ 5 ]
 initial
 begin
-	Arena_Sum_32bit_expected[22] = 1'bX;
+	Arena_out_expected[5] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 21 ]
+// expected Arena_out[ 4 ]
 initial
 begin
-	Arena_Sum_32bit_expected[21] = 1'bX;
+	Arena_out_expected[4] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 20 ]
+// expected Arena_out[ 3 ]
 initial
 begin
-	Arena_Sum_32bit_expected[20] = 1'bX;
+	Arena_out_expected[3] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 19 ]
+// expected Arena_out[ 2 ]
 initial
 begin
-	Arena_Sum_32bit_expected[19] = 1'bX;
+	Arena_out_expected[2] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 18 ]
+// expected Arena_out[ 1 ]
 initial
 begin
-	Arena_Sum_32bit_expected[18] = 1'bX;
+	Arena_out_expected[1] = 1'bX;
 end 
-// expected Arena_Sum_32bit[ 17 ]
+// expected Arena_out[ 0 ]
 initial
 begin
-	Arena_Sum_32bit_expected[17] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 16 ]
-initial
-begin
-	Arena_Sum_32bit_expected[16] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 15 ]
-initial
-begin
-	Arena_Sum_32bit_expected[15] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 14 ]
-initial
-begin
-	Arena_Sum_32bit_expected[14] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 13 ]
-initial
-begin
-	Arena_Sum_32bit_expected[13] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 12 ]
-initial
-begin
-	Arena_Sum_32bit_expected[12] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 11 ]
-initial
-begin
-	Arena_Sum_32bit_expected[11] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 10 ]
-initial
-begin
-	Arena_Sum_32bit_expected[10] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 9 ]
-initial
-begin
-	Arena_Sum_32bit_expected[9] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 8 ]
-initial
-begin
-	Arena_Sum_32bit_expected[8] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 7 ]
-initial
-begin
-	Arena_Sum_32bit_expected[7] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 6 ]
-initial
-begin
-	Arena_Sum_32bit_expected[6] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 5 ]
-initial
-begin
-	Arena_Sum_32bit_expected[5] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 4 ]
-initial
-begin
-	Arena_Sum_32bit_expected[4] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 3 ]
-initial
-begin
-	Arena_Sum_32bit_expected[3] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 2 ]
-initial
-begin
-	Arena_Sum_32bit_expected[2] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 1 ]
-initial
-begin
-	Arena_Sum_32bit_expected[1] = 1'bX;
-end 
-// expected Arena_Sum_32bit[ 0 ]
-initial
-begin
-	Arena_Sum_32bit_expected[0] = 1'bX;
-end 
-// expected Arena_Q[ 31 ]
-initial
-begin
-	Arena_Q_expected[31] = 1'bX;
-end 
-// expected Arena_Q[ 30 ]
-initial
-begin
-	Arena_Q_expected[30] = 1'bX;
-end 
-// expected Arena_Q[ 29 ]
-initial
-begin
-	Arena_Q_expected[29] = 1'bX;
-end 
-// expected Arena_Q[ 28 ]
-initial
-begin
-	Arena_Q_expected[28] = 1'bX;
-end 
-// expected Arena_Q[ 27 ]
-initial
-begin
-	Arena_Q_expected[27] = 1'bX;
-end 
-// expected Arena_Q[ 26 ]
-initial
-begin
-	Arena_Q_expected[26] = 1'bX;
-end 
-// expected Arena_Q[ 25 ]
-initial
-begin
-	Arena_Q_expected[25] = 1'bX;
-end 
-// expected Arena_Q[ 24 ]
-initial
-begin
-	Arena_Q_expected[24] = 1'bX;
-end 
-// expected Arena_Q[ 23 ]
-initial
-begin
-	Arena_Q_expected[23] = 1'bX;
-end 
-// expected Arena_Q[ 22 ]
-initial
-begin
-	Arena_Q_expected[22] = 1'bX;
-end 
-// expected Arena_Q[ 21 ]
-initial
-begin
-	Arena_Q_expected[21] = 1'bX;
-end 
-// expected Arena_Q[ 20 ]
-initial
-begin
-	Arena_Q_expected[20] = 1'bX;
-end 
-// expected Arena_Q[ 19 ]
-initial
-begin
-	Arena_Q_expected[19] = 1'bX;
-end 
-// expected Arena_Q[ 18 ]
-initial
-begin
-	Arena_Q_expected[18] = 1'bX;
-end 
-// expected Arena_Q[ 17 ]
-initial
-begin
-	Arena_Q_expected[17] = 1'bX;
-end 
-// expected Arena_Q[ 16 ]
-initial
-begin
-	Arena_Q_expected[16] = 1'bX;
-end 
-// expected Arena_Q[ 15 ]
-initial
-begin
-	Arena_Q_expected[15] = 1'bX;
-end 
-// expected Arena_Q[ 14 ]
-initial
-begin
-	Arena_Q_expected[14] = 1'bX;
-end 
-// expected Arena_Q[ 13 ]
-initial
-begin
-	Arena_Q_expected[13] = 1'bX;
-end 
-// expected Arena_Q[ 12 ]
-initial
-begin
-	Arena_Q_expected[12] = 1'bX;
-end 
-// expected Arena_Q[ 11 ]
-initial
-begin
-	Arena_Q_expected[11] = 1'bX;
-end 
-// expected Arena_Q[ 10 ]
-initial
-begin
-	Arena_Q_expected[10] = 1'bX;
-end 
-// expected Arena_Q[ 9 ]
-initial
-begin
-	Arena_Q_expected[9] = 1'bX;
-end 
-// expected Arena_Q[ 8 ]
-initial
-begin
-	Arena_Q_expected[8] = 1'bX;
-end 
-// expected Arena_Q[ 7 ]
-initial
-begin
-	Arena_Q_expected[7] = 1'bX;
-end 
-// expected Arena_Q[ 6 ]
-initial
-begin
-	Arena_Q_expected[6] = 1'bX;
-end 
-// expected Arena_Q[ 5 ]
-initial
-begin
-	Arena_Q_expected[5] = 1'bX;
-end 
-// expected Arena_Q[ 4 ]
-initial
-begin
-	Arena_Q_expected[4] = 1'bX;
-end 
-// expected Arena_Q[ 3 ]
-initial
-begin
-	Arena_Q_expected[3] = 1'bX;
-end 
-// expected Arena_Q[ 2 ]
-initial
-begin
-	Arena_Q_expected[2] = 1'bX;
-end 
-// expected Arena_Q[ 1 ]
-initial
-begin
-	Arena_Q_expected[1] = 1'bX;
-end 
-// expected Arena_Q[ 0 ]
-initial
-begin
-	Arena_Q_expected[0] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 31 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[31] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 30 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[30] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 29 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[29] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 28 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[28] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 27 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[27] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 26 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[26] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 25 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[25] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 24 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[24] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 23 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[23] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 22 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[22] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 21 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[21] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 20 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[20] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 19 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[19] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 18 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[18] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 17 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[17] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 16 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[16] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 15 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[15] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 14 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[14] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 13 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[13] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 12 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[12] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 11 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[11] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 10 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[10] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 9 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[9] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 8 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[8] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 7 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[7] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 6 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[6] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 5 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[5] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 4 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[4] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 3 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[3] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 2 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[2] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 1 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[1] = 1'bX;
-end 
-// expected Arena_Sum_Immediate[ 0 ]
-initial
-begin
-	Arena_Sum_Immediate_expected[0] = 1'bX;
+	Arena_out_expected[0] = 1'bX;
 end 
 // generate trigger
-always @(Arena_Cout_32bit_expected or Arena_Cout_32bit or Arena_Q_expected or Arena_Q or Arena_Sum_32bit_expected or Arena_Sum_32bit or Arena_Sum_Immediate_expected or Arena_Sum_Immediate)
+always @(Arena_out_expected or Arena_out)
 begin
 	trigger <= ~trigger;
 end
@@ -625,1269 +197,216 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected Arena_Cout_32bit = %b | expected Arena_Q = %b | expected Arena_Sum_32bit = %b | expected Arena_Sum_Immediate = %b | ",Arena_Cout_32bit_expected_prev,Arena_Q_expected_prev,Arena_Sum_32bit_expected_prev,Arena_Sum_Immediate_expected_prev);
-	$display("| real Arena_Cout_32bit = %b | real Arena_Q = %b | real Arena_Sum_32bit = %b | real Arena_Sum_Immediate = %b | ",Arena_Cout_32bit_prev,Arena_Q_prev,Arena_Sum_32bit_prev,Arena_Sum_Immediate_prev);
+	$display("| expected Arena_out = %b | ",Arena_out_expected_prev);
+	$display("| real Arena_out = %b | ",Arena_out_prev);
 `endif
 	if (
-		( Arena_Cout_32bit_expected_prev !== 1'bx ) && ( Arena_Cout_32bit_prev !== Arena_Cout_32bit_expected_prev )
-		&& ((Arena_Cout_32bit_expected_prev !== last_Arena_Cout_32bit_exp) ||
+		( Arena_out_expected_prev[0] !== 1'bx ) && ( Arena_out_prev[0] !== Arena_out_expected_prev[0] )
+		&& ((Arena_out_expected_prev[0] !== last_Arena_out_exp[0]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Cout_32bit :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Cout_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Cout_32bit_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_Arena_Cout_32bit_exp = Arena_Cout_32bit_expected_prev;
+		last_Arena_out_exp[0] = Arena_out_expected_prev[0];
 	end
 	if (
-		( Arena_Q_expected_prev[0] !== 1'bx ) && ( Arena_Q_prev[0] !== Arena_Q_expected_prev[0] )
-		&& ((Arena_Q_expected_prev[0] !== last_Arena_Q_exp[0]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[1] !== 1'bx ) && ( Arena_out_prev[1] !== Arena_out_expected_prev[1] )
+		&& ((Arena_out_expected_prev[1] !== last_Arena_out_exp[1]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[0] = Arena_Q_expected_prev[0];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[1] = Arena_out_expected_prev[1];
 	end
 	if (
-		( Arena_Q_expected_prev[1] !== 1'bx ) && ( Arena_Q_prev[1] !== Arena_Q_expected_prev[1] )
-		&& ((Arena_Q_expected_prev[1] !== last_Arena_Q_exp[1]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[2] !== 1'bx ) && ( Arena_out_prev[2] !== Arena_out_expected_prev[2] )
+		&& ((Arena_out_expected_prev[2] !== last_Arena_out_exp[2]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[1] = Arena_Q_expected_prev[1];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[2] = Arena_out_expected_prev[2];
 	end
 	if (
-		( Arena_Q_expected_prev[2] !== 1'bx ) && ( Arena_Q_prev[2] !== Arena_Q_expected_prev[2] )
-		&& ((Arena_Q_expected_prev[2] !== last_Arena_Q_exp[2]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[3] !== 1'bx ) && ( Arena_out_prev[3] !== Arena_out_expected_prev[3] )
+		&& ((Arena_out_expected_prev[3] !== last_Arena_out_exp[3]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[2] = Arena_Q_expected_prev[2];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[3] = Arena_out_expected_prev[3];
 	end
 	if (
-		( Arena_Q_expected_prev[3] !== 1'bx ) && ( Arena_Q_prev[3] !== Arena_Q_expected_prev[3] )
-		&& ((Arena_Q_expected_prev[3] !== last_Arena_Q_exp[3]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[4] !== 1'bx ) && ( Arena_out_prev[4] !== Arena_out_expected_prev[4] )
+		&& ((Arena_out_expected_prev[4] !== last_Arena_out_exp[4]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[3] = Arena_Q_expected_prev[3];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[4] = Arena_out_expected_prev[4];
 	end
 	if (
-		( Arena_Q_expected_prev[4] !== 1'bx ) && ( Arena_Q_prev[4] !== Arena_Q_expected_prev[4] )
-		&& ((Arena_Q_expected_prev[4] !== last_Arena_Q_exp[4]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[5] !== 1'bx ) && ( Arena_out_prev[5] !== Arena_out_expected_prev[5] )
+		&& ((Arena_out_expected_prev[5] !== last_Arena_out_exp[5]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[4] = Arena_Q_expected_prev[4];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[5] = Arena_out_expected_prev[5];
 	end
 	if (
-		( Arena_Q_expected_prev[5] !== 1'bx ) && ( Arena_Q_prev[5] !== Arena_Q_expected_prev[5] )
-		&& ((Arena_Q_expected_prev[5] !== last_Arena_Q_exp[5]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[6] !== 1'bx ) && ( Arena_out_prev[6] !== Arena_out_expected_prev[6] )
+		&& ((Arena_out_expected_prev[6] !== last_Arena_out_exp[6]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[5] = Arena_Q_expected_prev[5];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[6] = Arena_out_expected_prev[6];
 	end
 	if (
-		( Arena_Q_expected_prev[6] !== 1'bx ) && ( Arena_Q_prev[6] !== Arena_Q_expected_prev[6] )
-		&& ((Arena_Q_expected_prev[6] !== last_Arena_Q_exp[6]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[7] !== 1'bx ) && ( Arena_out_prev[7] !== Arena_out_expected_prev[7] )
+		&& ((Arena_out_expected_prev[7] !== last_Arena_out_exp[7]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[6] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[6] = Arena_Q_expected_prev[6];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[7] = Arena_out_expected_prev[7];
 	end
 	if (
-		( Arena_Q_expected_prev[7] !== 1'bx ) && ( Arena_Q_prev[7] !== Arena_Q_expected_prev[7] )
-		&& ((Arena_Q_expected_prev[7] !== last_Arena_Q_exp[7]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[8] !== 1'bx ) && ( Arena_out_prev[8] !== Arena_out_expected_prev[8] )
+		&& ((Arena_out_expected_prev[8] !== last_Arena_out_exp[8]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[7] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[8] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[7] = Arena_Q_expected_prev[7];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[8] = Arena_out_expected_prev[8];
 	end
 	if (
-		( Arena_Q_expected_prev[8] !== 1'bx ) && ( Arena_Q_prev[8] !== Arena_Q_expected_prev[8] )
-		&& ((Arena_Q_expected_prev[8] !== last_Arena_Q_exp[8]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[9] !== 1'bx ) && ( Arena_out_prev[9] !== Arena_out_expected_prev[9] )
+		&& ((Arena_out_expected_prev[9] !== last_Arena_out_exp[9]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[8] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[9] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[8] = Arena_Q_expected_prev[8];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[9] = Arena_out_expected_prev[9];
 	end
 	if (
-		( Arena_Q_expected_prev[9] !== 1'bx ) && ( Arena_Q_prev[9] !== Arena_Q_expected_prev[9] )
-		&& ((Arena_Q_expected_prev[9] !== last_Arena_Q_exp[9]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[10] !== 1'bx ) && ( Arena_out_prev[10] !== Arena_out_expected_prev[10] )
+		&& ((Arena_out_expected_prev[10] !== last_Arena_out_exp[10]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[9] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[9] = Arena_Q_expected_prev[9];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[10] = Arena_out_expected_prev[10];
 	end
 	if (
-		( Arena_Q_expected_prev[10] !== 1'bx ) && ( Arena_Q_prev[10] !== Arena_Q_expected_prev[10] )
-		&& ((Arena_Q_expected_prev[10] !== last_Arena_Q_exp[10]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[11] !== 1'bx ) && ( Arena_out_prev[11] !== Arena_out_expected_prev[11] )
+		&& ((Arena_out_expected_prev[11] !== last_Arena_out_exp[11]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[10] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[11] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[10] = Arena_Q_expected_prev[10];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[11] = Arena_out_expected_prev[11];
 	end
 	if (
-		( Arena_Q_expected_prev[11] !== 1'bx ) && ( Arena_Q_prev[11] !== Arena_Q_expected_prev[11] )
-		&& ((Arena_Q_expected_prev[11] !== last_Arena_Q_exp[11]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[12] !== 1'bx ) && ( Arena_out_prev[12] !== Arena_out_expected_prev[12] )
+		&& ((Arena_out_expected_prev[12] !== last_Arena_out_exp[12]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[11] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[12] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[11] = Arena_Q_expected_prev[11];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[12] = Arena_out_expected_prev[12];
 	end
 	if (
-		( Arena_Q_expected_prev[12] !== 1'bx ) && ( Arena_Q_prev[12] !== Arena_Q_expected_prev[12] )
-		&& ((Arena_Q_expected_prev[12] !== last_Arena_Q_exp[12]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[13] !== 1'bx ) && ( Arena_out_prev[13] !== Arena_out_expected_prev[13] )
+		&& ((Arena_out_expected_prev[13] !== last_Arena_out_exp[13]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[12] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[13] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[12] = Arena_Q_expected_prev[12];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[13] = Arena_out_expected_prev[13];
 	end
 	if (
-		( Arena_Q_expected_prev[13] !== 1'bx ) && ( Arena_Q_prev[13] !== Arena_Q_expected_prev[13] )
-		&& ((Arena_Q_expected_prev[13] !== last_Arena_Q_exp[13]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[14] !== 1'bx ) && ( Arena_out_prev[14] !== Arena_out_expected_prev[14] )
+		&& ((Arena_out_expected_prev[14] !== last_Arena_out_exp[14]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[13] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[14] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[13] = Arena_Q_expected_prev[13];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[14] = Arena_out_expected_prev[14];
 	end
 	if (
-		( Arena_Q_expected_prev[14] !== 1'bx ) && ( Arena_Q_prev[14] !== Arena_Q_expected_prev[14] )
-		&& ((Arena_Q_expected_prev[14] !== last_Arena_Q_exp[14]) ||
-			on_first_change[2])
+		( Arena_out_expected_prev[15] !== 1'bx ) && ( Arena_out_prev[15] !== Arena_out_expected_prev[15] )
+		&& ((Arena_out_expected_prev[15] !== last_Arena_out_exp[15]) ||
+			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[14] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
+		$display ("ERROR! Vector Mismatch for output port Arena_out[15] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Arena_out_expected_prev);
+		$display ("     Real value = %b", Arena_out_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[14] = Arena_Q_expected_prev[14];
-	end
-	if (
-		( Arena_Q_expected_prev[15] !== 1'bx ) && ( Arena_Q_prev[15] !== Arena_Q_expected_prev[15] )
-		&& ((Arena_Q_expected_prev[15] !== last_Arena_Q_exp[15]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[15] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[15] = Arena_Q_expected_prev[15];
-	end
-	if (
-		( Arena_Q_expected_prev[16] !== 1'bx ) && ( Arena_Q_prev[16] !== Arena_Q_expected_prev[16] )
-		&& ((Arena_Q_expected_prev[16] !== last_Arena_Q_exp[16]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[16] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[16] = Arena_Q_expected_prev[16];
-	end
-	if (
-		( Arena_Q_expected_prev[17] !== 1'bx ) && ( Arena_Q_prev[17] !== Arena_Q_expected_prev[17] )
-		&& ((Arena_Q_expected_prev[17] !== last_Arena_Q_exp[17]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[17] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[17] = Arena_Q_expected_prev[17];
-	end
-	if (
-		( Arena_Q_expected_prev[18] !== 1'bx ) && ( Arena_Q_prev[18] !== Arena_Q_expected_prev[18] )
-		&& ((Arena_Q_expected_prev[18] !== last_Arena_Q_exp[18]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[18] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[18] = Arena_Q_expected_prev[18];
-	end
-	if (
-		( Arena_Q_expected_prev[19] !== 1'bx ) && ( Arena_Q_prev[19] !== Arena_Q_expected_prev[19] )
-		&& ((Arena_Q_expected_prev[19] !== last_Arena_Q_exp[19]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[19] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[19] = Arena_Q_expected_prev[19];
-	end
-	if (
-		( Arena_Q_expected_prev[20] !== 1'bx ) && ( Arena_Q_prev[20] !== Arena_Q_expected_prev[20] )
-		&& ((Arena_Q_expected_prev[20] !== last_Arena_Q_exp[20]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[20] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[20] = Arena_Q_expected_prev[20];
-	end
-	if (
-		( Arena_Q_expected_prev[21] !== 1'bx ) && ( Arena_Q_prev[21] !== Arena_Q_expected_prev[21] )
-		&& ((Arena_Q_expected_prev[21] !== last_Arena_Q_exp[21]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[21] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[21] = Arena_Q_expected_prev[21];
-	end
-	if (
-		( Arena_Q_expected_prev[22] !== 1'bx ) && ( Arena_Q_prev[22] !== Arena_Q_expected_prev[22] )
-		&& ((Arena_Q_expected_prev[22] !== last_Arena_Q_exp[22]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[22] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[22] = Arena_Q_expected_prev[22];
-	end
-	if (
-		( Arena_Q_expected_prev[23] !== 1'bx ) && ( Arena_Q_prev[23] !== Arena_Q_expected_prev[23] )
-		&& ((Arena_Q_expected_prev[23] !== last_Arena_Q_exp[23]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[23] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[23] = Arena_Q_expected_prev[23];
-	end
-	if (
-		( Arena_Q_expected_prev[24] !== 1'bx ) && ( Arena_Q_prev[24] !== Arena_Q_expected_prev[24] )
-		&& ((Arena_Q_expected_prev[24] !== last_Arena_Q_exp[24]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[24] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[24] = Arena_Q_expected_prev[24];
-	end
-	if (
-		( Arena_Q_expected_prev[25] !== 1'bx ) && ( Arena_Q_prev[25] !== Arena_Q_expected_prev[25] )
-		&& ((Arena_Q_expected_prev[25] !== last_Arena_Q_exp[25]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[25] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[25] = Arena_Q_expected_prev[25];
-	end
-	if (
-		( Arena_Q_expected_prev[26] !== 1'bx ) && ( Arena_Q_prev[26] !== Arena_Q_expected_prev[26] )
-		&& ((Arena_Q_expected_prev[26] !== last_Arena_Q_exp[26]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[26] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[26] = Arena_Q_expected_prev[26];
-	end
-	if (
-		( Arena_Q_expected_prev[27] !== 1'bx ) && ( Arena_Q_prev[27] !== Arena_Q_expected_prev[27] )
-		&& ((Arena_Q_expected_prev[27] !== last_Arena_Q_exp[27]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[27] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[27] = Arena_Q_expected_prev[27];
-	end
-	if (
-		( Arena_Q_expected_prev[28] !== 1'bx ) && ( Arena_Q_prev[28] !== Arena_Q_expected_prev[28] )
-		&& ((Arena_Q_expected_prev[28] !== last_Arena_Q_exp[28]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[28] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[28] = Arena_Q_expected_prev[28];
-	end
-	if (
-		( Arena_Q_expected_prev[29] !== 1'bx ) && ( Arena_Q_prev[29] !== Arena_Q_expected_prev[29] )
-		&& ((Arena_Q_expected_prev[29] !== last_Arena_Q_exp[29]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[29] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[29] = Arena_Q_expected_prev[29];
-	end
-	if (
-		( Arena_Q_expected_prev[30] !== 1'bx ) && ( Arena_Q_prev[30] !== Arena_Q_expected_prev[30] )
-		&& ((Arena_Q_expected_prev[30] !== last_Arena_Q_exp[30]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[30] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[30] = Arena_Q_expected_prev[30];
-	end
-	if (
-		( Arena_Q_expected_prev[31] !== 1'bx ) && ( Arena_Q_prev[31] !== Arena_Q_expected_prev[31] )
-		&& ((Arena_Q_expected_prev[31] !== last_Arena_Q_exp[31]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Q[31] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Q_expected_prev);
-		$display ("     Real value = %b", Arena_Q_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_Arena_Q_exp[31] = Arena_Q_expected_prev[31];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[0] !== 1'bx ) && ( Arena_Sum_32bit_prev[0] !== Arena_Sum_32bit_expected_prev[0] )
-		&& ((Arena_Sum_32bit_expected_prev[0] !== last_Arena_Sum_32bit_exp[0]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[0] = Arena_Sum_32bit_expected_prev[0];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[1] !== 1'bx ) && ( Arena_Sum_32bit_prev[1] !== Arena_Sum_32bit_expected_prev[1] )
-		&& ((Arena_Sum_32bit_expected_prev[1] !== last_Arena_Sum_32bit_exp[1]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[1] = Arena_Sum_32bit_expected_prev[1];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[2] !== 1'bx ) && ( Arena_Sum_32bit_prev[2] !== Arena_Sum_32bit_expected_prev[2] )
-		&& ((Arena_Sum_32bit_expected_prev[2] !== last_Arena_Sum_32bit_exp[2]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[2] = Arena_Sum_32bit_expected_prev[2];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[3] !== 1'bx ) && ( Arena_Sum_32bit_prev[3] !== Arena_Sum_32bit_expected_prev[3] )
-		&& ((Arena_Sum_32bit_expected_prev[3] !== last_Arena_Sum_32bit_exp[3]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[3] = Arena_Sum_32bit_expected_prev[3];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[4] !== 1'bx ) && ( Arena_Sum_32bit_prev[4] !== Arena_Sum_32bit_expected_prev[4] )
-		&& ((Arena_Sum_32bit_expected_prev[4] !== last_Arena_Sum_32bit_exp[4]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[4] = Arena_Sum_32bit_expected_prev[4];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[5] !== 1'bx ) && ( Arena_Sum_32bit_prev[5] !== Arena_Sum_32bit_expected_prev[5] )
-		&& ((Arena_Sum_32bit_expected_prev[5] !== last_Arena_Sum_32bit_exp[5]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[5] = Arena_Sum_32bit_expected_prev[5];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[6] !== 1'bx ) && ( Arena_Sum_32bit_prev[6] !== Arena_Sum_32bit_expected_prev[6] )
-		&& ((Arena_Sum_32bit_expected_prev[6] !== last_Arena_Sum_32bit_exp[6]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[6] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[6] = Arena_Sum_32bit_expected_prev[6];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[7] !== 1'bx ) && ( Arena_Sum_32bit_prev[7] !== Arena_Sum_32bit_expected_prev[7] )
-		&& ((Arena_Sum_32bit_expected_prev[7] !== last_Arena_Sum_32bit_exp[7]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[7] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[7] = Arena_Sum_32bit_expected_prev[7];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[8] !== 1'bx ) && ( Arena_Sum_32bit_prev[8] !== Arena_Sum_32bit_expected_prev[8] )
-		&& ((Arena_Sum_32bit_expected_prev[8] !== last_Arena_Sum_32bit_exp[8]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[8] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[8] = Arena_Sum_32bit_expected_prev[8];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[9] !== 1'bx ) && ( Arena_Sum_32bit_prev[9] !== Arena_Sum_32bit_expected_prev[9] )
-		&& ((Arena_Sum_32bit_expected_prev[9] !== last_Arena_Sum_32bit_exp[9]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[9] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[9] = Arena_Sum_32bit_expected_prev[9];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[10] !== 1'bx ) && ( Arena_Sum_32bit_prev[10] !== Arena_Sum_32bit_expected_prev[10] )
-		&& ((Arena_Sum_32bit_expected_prev[10] !== last_Arena_Sum_32bit_exp[10]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[10] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[10] = Arena_Sum_32bit_expected_prev[10];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[11] !== 1'bx ) && ( Arena_Sum_32bit_prev[11] !== Arena_Sum_32bit_expected_prev[11] )
-		&& ((Arena_Sum_32bit_expected_prev[11] !== last_Arena_Sum_32bit_exp[11]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[11] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[11] = Arena_Sum_32bit_expected_prev[11];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[12] !== 1'bx ) && ( Arena_Sum_32bit_prev[12] !== Arena_Sum_32bit_expected_prev[12] )
-		&& ((Arena_Sum_32bit_expected_prev[12] !== last_Arena_Sum_32bit_exp[12]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[12] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[12] = Arena_Sum_32bit_expected_prev[12];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[13] !== 1'bx ) && ( Arena_Sum_32bit_prev[13] !== Arena_Sum_32bit_expected_prev[13] )
-		&& ((Arena_Sum_32bit_expected_prev[13] !== last_Arena_Sum_32bit_exp[13]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[13] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[13] = Arena_Sum_32bit_expected_prev[13];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[14] !== 1'bx ) && ( Arena_Sum_32bit_prev[14] !== Arena_Sum_32bit_expected_prev[14] )
-		&& ((Arena_Sum_32bit_expected_prev[14] !== last_Arena_Sum_32bit_exp[14]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[14] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[14] = Arena_Sum_32bit_expected_prev[14];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[15] !== 1'bx ) && ( Arena_Sum_32bit_prev[15] !== Arena_Sum_32bit_expected_prev[15] )
-		&& ((Arena_Sum_32bit_expected_prev[15] !== last_Arena_Sum_32bit_exp[15]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[15] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[15] = Arena_Sum_32bit_expected_prev[15];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[16] !== 1'bx ) && ( Arena_Sum_32bit_prev[16] !== Arena_Sum_32bit_expected_prev[16] )
-		&& ((Arena_Sum_32bit_expected_prev[16] !== last_Arena_Sum_32bit_exp[16]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[16] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[16] = Arena_Sum_32bit_expected_prev[16];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[17] !== 1'bx ) && ( Arena_Sum_32bit_prev[17] !== Arena_Sum_32bit_expected_prev[17] )
-		&& ((Arena_Sum_32bit_expected_prev[17] !== last_Arena_Sum_32bit_exp[17]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[17] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[17] = Arena_Sum_32bit_expected_prev[17];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[18] !== 1'bx ) && ( Arena_Sum_32bit_prev[18] !== Arena_Sum_32bit_expected_prev[18] )
-		&& ((Arena_Sum_32bit_expected_prev[18] !== last_Arena_Sum_32bit_exp[18]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[18] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[18] = Arena_Sum_32bit_expected_prev[18];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[19] !== 1'bx ) && ( Arena_Sum_32bit_prev[19] !== Arena_Sum_32bit_expected_prev[19] )
-		&& ((Arena_Sum_32bit_expected_prev[19] !== last_Arena_Sum_32bit_exp[19]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[19] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[19] = Arena_Sum_32bit_expected_prev[19];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[20] !== 1'bx ) && ( Arena_Sum_32bit_prev[20] !== Arena_Sum_32bit_expected_prev[20] )
-		&& ((Arena_Sum_32bit_expected_prev[20] !== last_Arena_Sum_32bit_exp[20]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[20] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[20] = Arena_Sum_32bit_expected_prev[20];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[21] !== 1'bx ) && ( Arena_Sum_32bit_prev[21] !== Arena_Sum_32bit_expected_prev[21] )
-		&& ((Arena_Sum_32bit_expected_prev[21] !== last_Arena_Sum_32bit_exp[21]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[21] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[21] = Arena_Sum_32bit_expected_prev[21];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[22] !== 1'bx ) && ( Arena_Sum_32bit_prev[22] !== Arena_Sum_32bit_expected_prev[22] )
-		&& ((Arena_Sum_32bit_expected_prev[22] !== last_Arena_Sum_32bit_exp[22]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[22] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[22] = Arena_Sum_32bit_expected_prev[22];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[23] !== 1'bx ) && ( Arena_Sum_32bit_prev[23] !== Arena_Sum_32bit_expected_prev[23] )
-		&& ((Arena_Sum_32bit_expected_prev[23] !== last_Arena_Sum_32bit_exp[23]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[23] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[23] = Arena_Sum_32bit_expected_prev[23];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[24] !== 1'bx ) && ( Arena_Sum_32bit_prev[24] !== Arena_Sum_32bit_expected_prev[24] )
-		&& ((Arena_Sum_32bit_expected_prev[24] !== last_Arena_Sum_32bit_exp[24]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[24] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[24] = Arena_Sum_32bit_expected_prev[24];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[25] !== 1'bx ) && ( Arena_Sum_32bit_prev[25] !== Arena_Sum_32bit_expected_prev[25] )
-		&& ((Arena_Sum_32bit_expected_prev[25] !== last_Arena_Sum_32bit_exp[25]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[25] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[25] = Arena_Sum_32bit_expected_prev[25];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[26] !== 1'bx ) && ( Arena_Sum_32bit_prev[26] !== Arena_Sum_32bit_expected_prev[26] )
-		&& ((Arena_Sum_32bit_expected_prev[26] !== last_Arena_Sum_32bit_exp[26]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[26] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[26] = Arena_Sum_32bit_expected_prev[26];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[27] !== 1'bx ) && ( Arena_Sum_32bit_prev[27] !== Arena_Sum_32bit_expected_prev[27] )
-		&& ((Arena_Sum_32bit_expected_prev[27] !== last_Arena_Sum_32bit_exp[27]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[27] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[27] = Arena_Sum_32bit_expected_prev[27];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[28] !== 1'bx ) && ( Arena_Sum_32bit_prev[28] !== Arena_Sum_32bit_expected_prev[28] )
-		&& ((Arena_Sum_32bit_expected_prev[28] !== last_Arena_Sum_32bit_exp[28]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[28] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[28] = Arena_Sum_32bit_expected_prev[28];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[29] !== 1'bx ) && ( Arena_Sum_32bit_prev[29] !== Arena_Sum_32bit_expected_prev[29] )
-		&& ((Arena_Sum_32bit_expected_prev[29] !== last_Arena_Sum_32bit_exp[29]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[29] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[29] = Arena_Sum_32bit_expected_prev[29];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[30] !== 1'bx ) && ( Arena_Sum_32bit_prev[30] !== Arena_Sum_32bit_expected_prev[30] )
-		&& ((Arena_Sum_32bit_expected_prev[30] !== last_Arena_Sum_32bit_exp[30]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[30] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[30] = Arena_Sum_32bit_expected_prev[30];
-	end
-	if (
-		( Arena_Sum_32bit_expected_prev[31] !== 1'bx ) && ( Arena_Sum_32bit_prev[31] !== Arena_Sum_32bit_expected_prev[31] )
-		&& ((Arena_Sum_32bit_expected_prev[31] !== last_Arena_Sum_32bit_exp[31]) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_32bit[31] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_32bit_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_32bit_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_Arena_Sum_32bit_exp[31] = Arena_Sum_32bit_expected_prev[31];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[0] !== 1'bx ) && ( Arena_Sum_Immediate_prev[0] !== Arena_Sum_Immediate_expected_prev[0] )
-		&& ((Arena_Sum_Immediate_expected_prev[0] !== last_Arena_Sum_Immediate_exp[0]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[0] = Arena_Sum_Immediate_expected_prev[0];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[1] !== 1'bx ) && ( Arena_Sum_Immediate_prev[1] !== Arena_Sum_Immediate_expected_prev[1] )
-		&& ((Arena_Sum_Immediate_expected_prev[1] !== last_Arena_Sum_Immediate_exp[1]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[1] = Arena_Sum_Immediate_expected_prev[1];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[2] !== 1'bx ) && ( Arena_Sum_Immediate_prev[2] !== Arena_Sum_Immediate_expected_prev[2] )
-		&& ((Arena_Sum_Immediate_expected_prev[2] !== last_Arena_Sum_Immediate_exp[2]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[2] = Arena_Sum_Immediate_expected_prev[2];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[3] !== 1'bx ) && ( Arena_Sum_Immediate_prev[3] !== Arena_Sum_Immediate_expected_prev[3] )
-		&& ((Arena_Sum_Immediate_expected_prev[3] !== last_Arena_Sum_Immediate_exp[3]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[3] = Arena_Sum_Immediate_expected_prev[3];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[4] !== 1'bx ) && ( Arena_Sum_Immediate_prev[4] !== Arena_Sum_Immediate_expected_prev[4] )
-		&& ((Arena_Sum_Immediate_expected_prev[4] !== last_Arena_Sum_Immediate_exp[4]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[4] = Arena_Sum_Immediate_expected_prev[4];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[5] !== 1'bx ) && ( Arena_Sum_Immediate_prev[5] !== Arena_Sum_Immediate_expected_prev[5] )
-		&& ((Arena_Sum_Immediate_expected_prev[5] !== last_Arena_Sum_Immediate_exp[5]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[5] = Arena_Sum_Immediate_expected_prev[5];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[6] !== 1'bx ) && ( Arena_Sum_Immediate_prev[6] !== Arena_Sum_Immediate_expected_prev[6] )
-		&& ((Arena_Sum_Immediate_expected_prev[6] !== last_Arena_Sum_Immediate_exp[6]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[6] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[6] = Arena_Sum_Immediate_expected_prev[6];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[7] !== 1'bx ) && ( Arena_Sum_Immediate_prev[7] !== Arena_Sum_Immediate_expected_prev[7] )
-		&& ((Arena_Sum_Immediate_expected_prev[7] !== last_Arena_Sum_Immediate_exp[7]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[7] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[7] = Arena_Sum_Immediate_expected_prev[7];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[8] !== 1'bx ) && ( Arena_Sum_Immediate_prev[8] !== Arena_Sum_Immediate_expected_prev[8] )
-		&& ((Arena_Sum_Immediate_expected_prev[8] !== last_Arena_Sum_Immediate_exp[8]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[8] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[8] = Arena_Sum_Immediate_expected_prev[8];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[9] !== 1'bx ) && ( Arena_Sum_Immediate_prev[9] !== Arena_Sum_Immediate_expected_prev[9] )
-		&& ((Arena_Sum_Immediate_expected_prev[9] !== last_Arena_Sum_Immediate_exp[9]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[9] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[9] = Arena_Sum_Immediate_expected_prev[9];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[10] !== 1'bx ) && ( Arena_Sum_Immediate_prev[10] !== Arena_Sum_Immediate_expected_prev[10] )
-		&& ((Arena_Sum_Immediate_expected_prev[10] !== last_Arena_Sum_Immediate_exp[10]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[10] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[10] = Arena_Sum_Immediate_expected_prev[10];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[11] !== 1'bx ) && ( Arena_Sum_Immediate_prev[11] !== Arena_Sum_Immediate_expected_prev[11] )
-		&& ((Arena_Sum_Immediate_expected_prev[11] !== last_Arena_Sum_Immediate_exp[11]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[11] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[11] = Arena_Sum_Immediate_expected_prev[11];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[12] !== 1'bx ) && ( Arena_Sum_Immediate_prev[12] !== Arena_Sum_Immediate_expected_prev[12] )
-		&& ((Arena_Sum_Immediate_expected_prev[12] !== last_Arena_Sum_Immediate_exp[12]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[12] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[12] = Arena_Sum_Immediate_expected_prev[12];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[13] !== 1'bx ) && ( Arena_Sum_Immediate_prev[13] !== Arena_Sum_Immediate_expected_prev[13] )
-		&& ((Arena_Sum_Immediate_expected_prev[13] !== last_Arena_Sum_Immediate_exp[13]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[13] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[13] = Arena_Sum_Immediate_expected_prev[13];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[14] !== 1'bx ) && ( Arena_Sum_Immediate_prev[14] !== Arena_Sum_Immediate_expected_prev[14] )
-		&& ((Arena_Sum_Immediate_expected_prev[14] !== last_Arena_Sum_Immediate_exp[14]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[14] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[14] = Arena_Sum_Immediate_expected_prev[14];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[15] !== 1'bx ) && ( Arena_Sum_Immediate_prev[15] !== Arena_Sum_Immediate_expected_prev[15] )
-		&& ((Arena_Sum_Immediate_expected_prev[15] !== last_Arena_Sum_Immediate_exp[15]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[15] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[15] = Arena_Sum_Immediate_expected_prev[15];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[16] !== 1'bx ) && ( Arena_Sum_Immediate_prev[16] !== Arena_Sum_Immediate_expected_prev[16] )
-		&& ((Arena_Sum_Immediate_expected_prev[16] !== last_Arena_Sum_Immediate_exp[16]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[16] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[16] = Arena_Sum_Immediate_expected_prev[16];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[17] !== 1'bx ) && ( Arena_Sum_Immediate_prev[17] !== Arena_Sum_Immediate_expected_prev[17] )
-		&& ((Arena_Sum_Immediate_expected_prev[17] !== last_Arena_Sum_Immediate_exp[17]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[17] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[17] = Arena_Sum_Immediate_expected_prev[17];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[18] !== 1'bx ) && ( Arena_Sum_Immediate_prev[18] !== Arena_Sum_Immediate_expected_prev[18] )
-		&& ((Arena_Sum_Immediate_expected_prev[18] !== last_Arena_Sum_Immediate_exp[18]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[18] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[18] = Arena_Sum_Immediate_expected_prev[18];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[19] !== 1'bx ) && ( Arena_Sum_Immediate_prev[19] !== Arena_Sum_Immediate_expected_prev[19] )
-		&& ((Arena_Sum_Immediate_expected_prev[19] !== last_Arena_Sum_Immediate_exp[19]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[19] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[19] = Arena_Sum_Immediate_expected_prev[19];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[20] !== 1'bx ) && ( Arena_Sum_Immediate_prev[20] !== Arena_Sum_Immediate_expected_prev[20] )
-		&& ((Arena_Sum_Immediate_expected_prev[20] !== last_Arena_Sum_Immediate_exp[20]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[20] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[20] = Arena_Sum_Immediate_expected_prev[20];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[21] !== 1'bx ) && ( Arena_Sum_Immediate_prev[21] !== Arena_Sum_Immediate_expected_prev[21] )
-		&& ((Arena_Sum_Immediate_expected_prev[21] !== last_Arena_Sum_Immediate_exp[21]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[21] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[21] = Arena_Sum_Immediate_expected_prev[21];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[22] !== 1'bx ) && ( Arena_Sum_Immediate_prev[22] !== Arena_Sum_Immediate_expected_prev[22] )
-		&& ((Arena_Sum_Immediate_expected_prev[22] !== last_Arena_Sum_Immediate_exp[22]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[22] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[22] = Arena_Sum_Immediate_expected_prev[22];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[23] !== 1'bx ) && ( Arena_Sum_Immediate_prev[23] !== Arena_Sum_Immediate_expected_prev[23] )
-		&& ((Arena_Sum_Immediate_expected_prev[23] !== last_Arena_Sum_Immediate_exp[23]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[23] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[23] = Arena_Sum_Immediate_expected_prev[23];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[24] !== 1'bx ) && ( Arena_Sum_Immediate_prev[24] !== Arena_Sum_Immediate_expected_prev[24] )
-		&& ((Arena_Sum_Immediate_expected_prev[24] !== last_Arena_Sum_Immediate_exp[24]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[24] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[24] = Arena_Sum_Immediate_expected_prev[24];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[25] !== 1'bx ) && ( Arena_Sum_Immediate_prev[25] !== Arena_Sum_Immediate_expected_prev[25] )
-		&& ((Arena_Sum_Immediate_expected_prev[25] !== last_Arena_Sum_Immediate_exp[25]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[25] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[25] = Arena_Sum_Immediate_expected_prev[25];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[26] !== 1'bx ) && ( Arena_Sum_Immediate_prev[26] !== Arena_Sum_Immediate_expected_prev[26] )
-		&& ((Arena_Sum_Immediate_expected_prev[26] !== last_Arena_Sum_Immediate_exp[26]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[26] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[26] = Arena_Sum_Immediate_expected_prev[26];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[27] !== 1'bx ) && ( Arena_Sum_Immediate_prev[27] !== Arena_Sum_Immediate_expected_prev[27] )
-		&& ((Arena_Sum_Immediate_expected_prev[27] !== last_Arena_Sum_Immediate_exp[27]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[27] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[27] = Arena_Sum_Immediate_expected_prev[27];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[28] !== 1'bx ) && ( Arena_Sum_Immediate_prev[28] !== Arena_Sum_Immediate_expected_prev[28] )
-		&& ((Arena_Sum_Immediate_expected_prev[28] !== last_Arena_Sum_Immediate_exp[28]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[28] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[28] = Arena_Sum_Immediate_expected_prev[28];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[29] !== 1'bx ) && ( Arena_Sum_Immediate_prev[29] !== Arena_Sum_Immediate_expected_prev[29] )
-		&& ((Arena_Sum_Immediate_expected_prev[29] !== last_Arena_Sum_Immediate_exp[29]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[29] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[29] = Arena_Sum_Immediate_expected_prev[29];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[30] !== 1'bx ) && ( Arena_Sum_Immediate_prev[30] !== Arena_Sum_Immediate_expected_prev[30] )
-		&& ((Arena_Sum_Immediate_expected_prev[30] !== last_Arena_Sum_Immediate_exp[30]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[30] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[30] = Arena_Sum_Immediate_expected_prev[30];
-	end
-	if (
-		( Arena_Sum_Immediate_expected_prev[31] !== 1'bx ) && ( Arena_Sum_Immediate_prev[31] !== Arena_Sum_Immediate_expected_prev[31] )
-		&& ((Arena_Sum_Immediate_expected_prev[31] !== last_Arena_Sum_Immediate_exp[31]) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port Arena_Sum_Immediate[31] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", Arena_Sum_Immediate_expected_prev);
-		$display ("     Real value = %b", Arena_Sum_Immediate_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_Arena_Sum_Immediate_exp[31] = Arena_Sum_Immediate_expected_prev[31];
+		on_first_change[1] = 1'b0;
+		last_Arena_out_exp[15] = Arena_out_expected_prev[15];
 	end
 
 	trigger <= ~trigger;
@@ -1905,262 +424,213 @@ $finish;
 end 
 endmodule
 
-module Arena_32bitAccumulator_vlg_vec_tst();
+module Arena_32bit_arrayMultiplier_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [31:0] Arena_A_32bit;
-reg Arena_Cin_32bit;
-reg Arena_clk;
+reg [15:0] Arena_A_In;
+reg [15:0] Arena_B_In;
+reg Arena_buttonSelect_one;
+reg Arena_buttonSelect_two;
 // wires                                               
-wire Arena_Cout_32bit;
-wire [31:0] Arena_Q;
-wire [31:0] Arena_Sum_32bit;
-wire [31:0] Arena_Sum_Immediate;
+wire [15:0] Arena_out;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-Arena_32bitAccumulator i1 (
+Arena_32bit_arrayMultiplier i1 (
 // port map - connection between master ports and signals/registers   
-	.Arena_A_32bit(Arena_A_32bit),
-	.Arena_Cin_32bit(Arena_Cin_32bit),
-	.Arena_clk(Arena_clk),
-	.Arena_Cout_32bit(Arena_Cout_32bit),
-	.Arena_Q(Arena_Q),
-	.Arena_Sum_32bit(Arena_Sum_32bit),
-	.Arena_Sum_Immediate(Arena_Sum_Immediate)
+	.Arena_A_In(Arena_A_In),
+	.Arena_B_In(Arena_B_In),
+	.Arena_buttonSelect_one(Arena_buttonSelect_one),
+	.Arena_buttonSelect_two(Arena_buttonSelect_two),
+	.Arena_out(Arena_out)
 );
-// Arena_A_32bit[ 31 ]
+// Arena_A_In[ 15 ]
 initial
 begin
-	Arena_A_32bit[31] = 1'b0;
-	Arena_A_32bit[31] = #42543 1'b1;
-	Arena_A_32bit[31] = #42543 1'b0;
-	Arena_A_32bit[31] = #42543 1'b1;
+	Arena_A_In[15] = 1'b0;
 end 
-// Arena_A_32bit[ 30 ]
+// Arena_A_In[ 14 ]
 initial
 begin
-	Arena_A_32bit[30] = 1'b1;
-	Arena_A_32bit[30] = #42543 1'b0;
-	Arena_A_32bit[30] = #85086 1'b1;
+	Arena_A_In[14] = 1'b0;
 end 
-// Arena_A_32bit[ 29 ]
+// Arena_A_In[ 13 ]
 initial
 begin
-	Arena_A_32bit[29] = 1'b0;
-	Arena_A_32bit[29] = #42543 1'b1;
+	Arena_A_In[13] = 1'b1;
 end 
-// Arena_A_32bit[ 28 ]
+// Arena_A_In[ 12 ]
 initial
 begin
-	Arena_A_32bit[28] = 1'b1;
-	Arena_A_32bit[28] = #42543 1'b0;
+	Arena_A_In[12] = 1'b1;
 end 
-// Arena_A_32bit[ 27 ]
+// Arena_A_In[ 11 ]
 initial
 begin
-	Arena_A_32bit[27] = 1'b0;
-	Arena_A_32bit[27] = #42543 1'b1;
-	Arena_A_32bit[27] = #42543 1'b0;
+	Arena_A_In[11] = 1'b1;
 end 
-// Arena_A_32bit[ 26 ]
+// Arena_A_In[ 10 ]
 initial
 begin
-	Arena_A_32bit[26] = 1'b1;
-	Arena_A_32bit[26] = #42543 1'b0;
-	Arena_A_32bit[26] = #85086 1'b1;
+	Arena_A_In[10] = 1'b1;
 end 
-// Arena_A_32bit[ 25 ]
+// Arena_A_In[ 9 ]
 initial
 begin
-	Arena_A_32bit[25] = 1'b0;
-	Arena_A_32bit[25] = #85086 1'b1;
-	Arena_A_32bit[25] = #42543 1'b0;
+	Arena_A_In[9] = 1'b1;
 end 
-// Arena_A_32bit[ 24 ]
+// Arena_A_In[ 8 ]
 initial
 begin
-	Arena_A_32bit[24] = 1'b1;
-	Arena_A_32bit[24] = #127629 1'b0;
+	Arena_A_In[8] = 1'b1;
 end 
-// Arena_A_32bit[ 23 ]
+// Arena_A_In[ 7 ]
 initial
 begin
-	Arena_A_32bit[23] = 1'b1;
-	Arena_A_32bit[23] = #85086 1'b0;
+	Arena_A_In[7] = 1'b1;
 end 
-// Arena_A_32bit[ 22 ]
+// Arena_A_In[ 6 ]
 initial
 begin
-	Arena_A_32bit[22] = 1'b0;
-	Arena_A_32bit[22] = #42543 1'b1;
-	Arena_A_32bit[22] = #42543 1'b0;
+	Arena_A_In[6] = 1'b0;
 end 
-// Arena_A_32bit[ 21 ]
+// Arena_A_In[ 5 ]
 initial
 begin
-	Arena_A_32bit[21] = 1'b1;
-	Arena_A_32bit[21] = #85086 1'b0;
-	Arena_A_32bit[21] = #42543 1'b1;
+	Arena_A_In[5] = 1'b0;
 end 
-// Arena_A_32bit[ 20 ]
+// Arena_A_In[ 4 ]
 initial
 begin
-	Arena_A_32bit[20] = 1'b0;
+	Arena_A_In[4] = 1'b1;
 end 
-// Arena_A_32bit[ 19 ]
+// Arena_A_In[ 3 ]
 initial
 begin
-	Arena_A_32bit[19] = 1'b0;
+	Arena_A_In[3] = 1'b0;
 end 
-// Arena_A_32bit[ 18 ]
+// Arena_A_In[ 2 ]
 initial
 begin
-	Arena_A_32bit[18] = 1'b1;
+	Arena_A_In[2] = 1'b1;
 end 
-// Arena_A_32bit[ 17 ]
+// Arena_A_In[ 1 ]
 initial
 begin
-	Arena_A_32bit[17] = 1'b1;
-	Arena_A_32bit[17] = #42543 1'b0;
-	Arena_A_32bit[17] = #42543 1'b1;
-	Arena_A_32bit[17] = #42543 1'b0;
+	Arena_A_In[1] = 1'b0;
 end 
-// Arena_A_32bit[ 16 ]
+// Arena_A_In[ 0 ]
 initial
 begin
-	Arena_A_32bit[16] = 1'b1;
-	Arena_A_32bit[16] = #42543 1'b0;
-	Arena_A_32bit[16] = #85086 1'b1;
+	Arena_A_In[0] = 1'b0;
 end 
-// Arena_A_32bit[ 15 ]
+// Arena_B_In[ 15 ]
 initial
 begin
-	Arena_A_32bit[15] = 1'b1;
-	Arena_A_32bit[15] = #42543 1'b0;
+	Arena_B_In[15] = 1'b0;
 end 
-// Arena_A_32bit[ 14 ]
+// Arena_B_In[ 14 ]
 initial
 begin
-	Arena_A_32bit[14] = 1'b0;
-	Arena_A_32bit[14] = #85086 1'b1;
+	Arena_B_In[14] = 1'b1;
 end 
-// Arena_A_32bit[ 13 ]
+// Arena_B_In[ 13 ]
 initial
 begin
-	Arena_A_32bit[13] = 1'b1;
-	Arena_A_32bit[13] = #42543 1'b0;
+	Arena_B_In[13] = 1'b1;
 end 
-// Arena_A_32bit[ 12 ]
+// Arena_B_In[ 12 ]
 initial
 begin
-	Arena_A_32bit[12] = 1'b1;
-	Arena_A_32bit[12] = #127629 1'b0;
+	Arena_B_In[12] = 1'b1;
 end 
-// Arena_A_32bit[ 11 ]
+// Arena_B_In[ 11 ]
 initial
 begin
-	Arena_A_32bit[11] = 1'b0;
+	Arena_B_In[11] = 1'b1;
 end 
-// Arena_A_32bit[ 10 ]
+// Arena_B_In[ 10 ]
 initial
 begin
-	Arena_A_32bit[10] = 1'b1;
+	Arena_B_In[10] = 1'b1;
 end 
-// Arena_A_32bit[ 9 ]
+// Arena_B_In[ 9 ]
 initial
 begin
-	Arena_A_32bit[9] = 1'b0;
-	Arena_A_32bit[9] = #42543 1'b1;
-	Arena_A_32bit[9] = #42543 1'b0;
+	Arena_B_In[9] = 1'b0;
 end 
-// Arena_A_32bit[ 8 ]
+// Arena_B_In[ 8 ]
 initial
 begin
-	Arena_A_32bit[8] = 1'b1;
-	Arena_A_32bit[8] = #42543 1'b0;
-	Arena_A_32bit[8] = #42543 1'b1;
+	Arena_B_In[8] = 1'b0;
 end 
-// Arena_A_32bit[ 7 ]
+// Arena_B_In[ 7 ]
 initial
 begin
-	Arena_A_32bit[7] = 1'b0;
-	Arena_A_32bit[7] = #127629 1'b1;
+	Arena_B_In[7] = 1'b1;
 end 
-// Arena_A_32bit[ 6 ]
+// Arena_B_In[ 6 ]
 initial
 begin
-	Arena_A_32bit[6] = 1'b1;
-	Arena_A_32bit[6] = #42543 1'b0;
-	Arena_A_32bit[6] = #42543 1'b1;
+	Arena_B_In[6] = 1'b0;
 end 
-// Arena_A_32bit[ 5 ]
+// Arena_B_In[ 5 ]
 initial
 begin
-	Arena_A_32bit[5] = 1'b0;
-	Arena_A_32bit[5] = #42543 1'b1;
-	Arena_A_32bit[5] = #85086 1'b0;
+	Arena_B_In[5] = 1'b0;
 end 
-// Arena_A_32bit[ 4 ]
+// Arena_B_In[ 4 ]
 initial
 begin
-	Arena_A_32bit[4] = 1'b1;
-	Arena_A_32bit[4] = #42543 1'b0;
+	Arena_B_In[4] = 1'b0;
 end 
-// Arena_A_32bit[ 3 ]
+// Arena_B_In[ 3 ]
 initial
 begin
-	Arena_A_32bit[3] = 1'b1;
-	Arena_A_32bit[3] = #42543 1'b0;
-	Arena_A_32bit[3] = #85086 1'b1;
+	Arena_B_In[3] = 1'b1;
 end 
-// Arena_A_32bit[ 2 ]
+// Arena_B_In[ 2 ]
 initial
 begin
-	Arena_A_32bit[2] = 1'b1;
-	Arena_A_32bit[2] = #85086 1'b0;
+	Arena_B_In[2] = 1'b1;
 end 
-// Arena_A_32bit[ 1 ]
+// Arena_B_In[ 1 ]
 initial
 begin
-	Arena_A_32bit[1] = 1'b0;
-	Arena_A_32bit[1] = #42543 1'b1;
+	Arena_B_In[1] = 1'b0;
 end 
-// Arena_A_32bit[ 0 ]
+// Arena_B_In[ 0 ]
 initial
 begin
-	Arena_A_32bit[0] = 1'b0;
-	Arena_A_32bit[0] = #42543 1'b1;
-	Arena_A_32bit[0] = #42543 1'b0;
+	Arena_B_In[0] = 1'b1;
 end 
 
-// Arena_Cin_32bit
+// Arena_buttonSelect_one
 initial
 begin
-	Arena_Cin_32bit = 1'b0;
+	Arena_buttonSelect_one = 1'b0;
+	Arena_buttonSelect_one = #10000 1'b1;
 end 
 
-// Arena_clk
-always
+// Arena_buttonSelect_two
+initial
 begin
-	Arena_clk = 1'b0;
-	Arena_clk = #20000 1'b1;
-	#20000;
+	Arena_buttonSelect_two = 1'b1;
+	Arena_buttonSelect_two = #10000 1'b0;
+	Arena_buttonSelect_two = #10000 1'b1;
 end 
 
-Arena_32bitAccumulator_vlg_sample_tst tb_sample (
-	.Arena_A_32bit(Arena_A_32bit),
-	.Arena_Cin_32bit(Arena_Cin_32bit),
-	.Arena_clk(Arena_clk),
+Arena_32bit_arrayMultiplier_vlg_sample_tst tb_sample (
+	.Arena_A_In(Arena_A_In),
+	.Arena_B_In(Arena_B_In),
+	.Arena_buttonSelect_one(Arena_buttonSelect_one),
+	.Arena_buttonSelect_two(Arena_buttonSelect_two),
 	.sampler_tx(sampler)
 );
 
-Arena_32bitAccumulator_vlg_check_tst tb_out(
-	.Arena_Cout_32bit(Arena_Cout_32bit),
-	.Arena_Q(Arena_Q),
-	.Arena_Sum_32bit(Arena_Sum_32bit),
-	.Arena_Sum_Immediate(Arena_Sum_Immediate),
+Arena_32bit_arrayMultiplier_vlg_check_tst tb_out(
+	.Arena_out(Arena_out),
 	.sampler_rx(sampler)
 );
 endmodule

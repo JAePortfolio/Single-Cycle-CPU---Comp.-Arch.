@@ -1,0 +1,23 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 4 - Spring 2019 Due: 4/17/19
+-- Arena_32bitInput.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_32bitInput is 
+	port(
+		Arena_A_lowerIN, Arena_A_higherIN, Arena_B_lowerIN, Arena_B_higherIN : in std_logic_vector(15 downto 0);
+		Arena_A_out, Arena_B_out : out std_logic_vector(31 downto 0);
+		Arena_buttonSelect_one, Arena_buttonSelect_two,
+		Arena_buttonSelect_three, Arena_buttonSelect_four: in std_logic
+	);
+end Arena_32bitInput;
+
+architecture Arena_32bitInput_arch of Arena_32b is
+
+begin
+	process(Arena_buttonSelect_one, Arena_buttonSelect_two)
+		begin
+			if(Arena_buttonSelect_one = '0') then
+				
+end Arena_32bitInput_arch;
