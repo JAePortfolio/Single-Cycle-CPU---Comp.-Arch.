@@ -392,174 +392,94 @@ SIGNAL("Arena_buttonSelect_two")
 	PARENT = "";
 }
 
-SIGNAL("Arena_out")
+SIGNAL("Arena_Product_Out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 16;
+	WIDTH = 8;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("Arena_out[15]")
+SIGNAL("Arena_Product_Out[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[14]")
+SIGNAL("Arena_Product_Out[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[13]")
+SIGNAL("Arena_Product_Out[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[12]")
+SIGNAL("Arena_Product_Out[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[11]")
+SIGNAL("Arena_Product_Out[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[10]")
+SIGNAL("Arena_Product_Out[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[9]")
+SIGNAL("Arena_Product_Out[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
-SIGNAL("Arena_out[8]")
+SIGNAL("Arena_Product_Out[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
-}
-
-SIGNAL("Arena_out[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Arena_out";
+	PARENT = "Arena_Product_Out";
 }
 
 TRANSITION_LIST("Arena_A_In[15]")
@@ -585,7 +505,7 @@ TRANSITION_LIST("Arena_A_In[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -594,7 +514,7 @@ TRANSITION_LIST("Arena_A_In[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -603,7 +523,7 @@ TRANSITION_LIST("Arena_A_In[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -612,7 +532,7 @@ TRANSITION_LIST("Arena_A_In[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -621,7 +541,7 @@ TRANSITION_LIST("Arena_A_In[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -630,7 +550,7 @@ TRANSITION_LIST("Arena_A_In[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -639,7 +559,7 @@ TRANSITION_LIST("Arena_A_In[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -666,7 +586,7 @@ TRANSITION_LIST("Arena_A_In[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -675,7 +595,7 @@ TRANSITION_LIST("Arena_A_In[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -693,7 +613,7 @@ TRANSITION_LIST("Arena_A_In[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -702,7 +622,7 @@ TRANSITION_LIST("Arena_A_In[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -720,7 +640,7 @@ TRANSITION_LIST("Arena_B_In[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -729,7 +649,7 @@ TRANSITION_LIST("Arena_B_In[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -738,7 +658,7 @@ TRANSITION_LIST("Arena_B_In[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -747,7 +667,7 @@ TRANSITION_LIST("Arena_B_In[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -756,7 +676,7 @@ TRANSITION_LIST("Arena_B_In[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -783,7 +703,7 @@ TRANSITION_LIST("Arena_B_In[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -837,7 +757,7 @@ TRANSITION_LIST("Arena_B_In[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -855,8 +775,7 @@ TRANSITION_LIST("Arena_buttonSelect_one")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -865,13 +784,11 @@ TRANSITION_LIST("Arena_buttonSelect_two")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_out[15]")
+TRANSITION_LIST("Arena_Product_Out[7]")
 {
 	NODE
 	{
@@ -880,7 +797,7 @@ TRANSITION_LIST("Arena_out[15]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[14]")
+TRANSITION_LIST("Arena_Product_Out[6]")
 {
 	NODE
 	{
@@ -889,7 +806,7 @@ TRANSITION_LIST("Arena_out[14]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[13]")
+TRANSITION_LIST("Arena_Product_Out[5]")
 {
 	NODE
 	{
@@ -898,7 +815,7 @@ TRANSITION_LIST("Arena_out[13]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[12]")
+TRANSITION_LIST("Arena_Product_Out[4]")
 {
 	NODE
 	{
@@ -907,7 +824,7 @@ TRANSITION_LIST("Arena_out[12]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[11]")
+TRANSITION_LIST("Arena_Product_Out[3]")
 {
 	NODE
 	{
@@ -916,7 +833,7 @@ TRANSITION_LIST("Arena_out[11]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[10]")
+TRANSITION_LIST("Arena_Product_Out[2]")
 {
 	NODE
 	{
@@ -925,7 +842,7 @@ TRANSITION_LIST("Arena_out[10]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[9]")
+TRANSITION_LIST("Arena_Product_Out[1]")
 {
 	NODE
 	{
@@ -934,79 +851,7 @@ TRANSITION_LIST("Arena_out[9]")
 	}
 }
 
-TRANSITION_LIST("Arena_out[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_out[0]")
+TRANSITION_LIST("Arena_Product_Out[0]")
 {
 	NODE
 	{
@@ -1019,7 +864,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 	CHILDREN = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16;
@@ -1029,7 +874,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[15]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1039,7 +884,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[14]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1049,7 +894,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[13]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1059,7 +904,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[12]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1069,7 +914,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[11]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1079,7 +924,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1089,7 +934,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1099,7 +944,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1109,7 +954,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1119,7 +964,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1129,7 +974,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1139,7 +984,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1149,7 +994,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1159,7 +1004,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1169,7 +1014,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1179,7 +1024,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_A_In[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -1189,7 +1034,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 0;
 	CHILDREN = 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33;
@@ -1199,7 +1044,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[15]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1209,7 +1054,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[14]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1219,7 +1064,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[13]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1229,7 +1074,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[12]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1239,7 +1084,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[11]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1249,7 +1094,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1259,7 +1104,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1269,7 +1114,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1279,7 +1124,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1289,7 +1134,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1299,7 +1144,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1309,7 +1154,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1319,7 +1164,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1329,7 +1174,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1339,7 +1184,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 32;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1349,7 +1194,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Arena_B_In[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 33;
 	TREE_LEVEL = 1;
 	PARENT = 17;
@@ -1375,19 +1220,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out";
+	CHANNEL = "Arena_Product_Out";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 36;
 	TREE_LEVEL = 0;
-	CHILDREN = 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52;
+	CHILDREN = 37, 38, 39, 40, 41, 42, 43, 44;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[15]";
+	CHANNEL = "Arena_Product_Out[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 37;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1395,9 +1240,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[14]";
+	CHANNEL = "Arena_Product_Out[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 38;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1405,9 +1250,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[13]";
+	CHANNEL = "Arena_Product_Out[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 39;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1415,9 +1260,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[12]";
+	CHANNEL = "Arena_Product_Out[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 40;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1425,9 +1270,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[11]";
+	CHANNEL = "Arena_Product_Out[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 41;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1435,9 +1280,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[10]";
+	CHANNEL = "Arena_Product_Out[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 42;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1445,9 +1290,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[9]";
+	CHANNEL = "Arena_Product_Out[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 43;
 	TREE_LEVEL = 1;
 	PARENT = 36;
@@ -1455,90 +1300,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_out[8]";
+	CHANNEL = "Arena_Product_Out[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 44;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 45;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 46;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 47;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 48;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 49;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 50;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 51;
-	TREE_LEVEL = 1;
-	PARENT = 36;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_out[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 52;
 	TREE_LEVEL = 1;
 	PARENT = 36;
 }

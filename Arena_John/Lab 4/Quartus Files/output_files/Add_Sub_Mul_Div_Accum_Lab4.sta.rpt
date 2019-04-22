@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Add_Sub_Mul_Div_Accum_Lab4
-Mon Apr 22 16:53:27 2019
+Mon Apr 22 18:32:19 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -78,21 +78,15 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -141,7 +135,7 @@ No paths to report.
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
 ; Arena_buttonSelect_one ; -1.380 ; -1.380        ;
-; Arena_buttonSelect_two ; -1.222 ; -1.222        ;
+; Arena_buttonSelect_two ; -1.380 ; -1.380        ;
 +------------------------+--------+---------------+
 
 
@@ -153,228 +147,146 @@ No paths to report.
 ; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one                  ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[0]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[0]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[10]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[10]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[11]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[11]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[12]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[12]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[13]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[13]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[14]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[14]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[15]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[15]   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[1]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[1]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[2]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[2]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[3]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[3]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[4]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[4]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[5]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[5]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[6]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[6]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[7]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[7]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[8]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[8]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[9]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[9]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one|combout          ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one|combout          ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|outclk   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[10]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[10]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[11]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[11]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[12]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[12]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[13]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[13]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[14]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[14]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[15]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[15]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datad               ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[2]|datac               ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[2]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[4]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[4]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[5]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[5]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[6]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[6]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[7]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[7]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[8]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[8]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[9]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[9]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datac               ;
 +--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_buttonSelect_two'                                                                               ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock                  ; Clock Edge ; Target                               ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad            ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------+
-; Setup Times                                                                                    ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; 4.424 ; 4.424 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; 4.263 ; 4.263 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; 4.216 ; 4.216 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; 4.268 ; 4.268 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; 4.321 ; 4.321 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; 4.214 ; 4.214 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; 4.286 ; 4.286 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; 4.424 ; 4.424 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; 4.108 ; 4.108 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; 4.003 ; 4.003 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; 3.946 ; 3.946 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; 3.660 ; 3.660 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; 3.826 ; 3.826 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; 3.837 ; 3.837 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; 4.026 ; 4.026 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; 4.102 ; 4.102 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; 4.103 ; 4.103 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; 4.798 ; 4.798 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; 4.798 ; 4.798 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-
-
-+--------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                       ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; -2.978 ; -2.978 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; -3.583 ; -3.583 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; -3.535 ; -3.535 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; -3.587 ; -3.587 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; -3.646 ; -3.646 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; -3.544 ; -3.544 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; -3.422 ; -3.422 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; -3.760 ; -3.760 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; -3.289 ; -3.289 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; -3.322 ; -3.322 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; -3.271 ; -3.271 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; -2.978 ; -2.978 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; -3.152 ; -3.152 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; -3.009 ; -3.009 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; -3.344 ; -3.344 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; -3.283 ; -3.283 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; -3.284 ; -3.284 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; -4.126 ; -4.126 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; -4.126 ; -4.126 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Arena_buttonSelect_two'                                                                                  ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                  ; Clock Edge ; Target                                  ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[1]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[1]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[2]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[2]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[3]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[3]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[2]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[2]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[3]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[3]|datad               ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                         ;
+; Setup Times                                                                                   ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 ; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 6.915 ; 6.915 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 6.781 ; 6.781 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 6.782 ; 6.782 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 6.818 ; 6.818 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 6.906 ; 6.906 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 6.562 ; 6.562 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 6.428 ; 6.428 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 6.561 ; 6.561 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 6.411 ; 6.411 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 6.528 ; 6.528 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 6.867 ; 6.867 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 6.915 ; 6.915 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 6.260 ; 6.260 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 6.640 ; 6.640 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 6.851 ; 6.851 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 6.662 ; 6.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 6.409 ; 6.409 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 8.589 ; 8.589 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 7.459 ; 7.459 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 7.415 ; 7.415 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 7.448 ; 7.448 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 7.131 ; 7.131 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 7.209 ; 7.209 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 7.204 ; 7.204 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 7.207 ; 7.207 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 7.193 ; 7.193 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 8.568 ; 8.568 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 8.588 ; 8.588 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 8.589 ; 8.589 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 8.476 ; 8.476 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 8.535 ; 8.535 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 8.585 ; 8.585 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 8.560 ; 8.560 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 8.303 ; 8.303 ; Rise       ; Arena_buttonSelect_two ;
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; 4.253 ; 4.253 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; 4.178 ; 4.178 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; 4.253 ; 4.253 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; 4.185 ; 4.185 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; 4.044 ; 4.044 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; 4.423 ; 4.423 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; 4.146 ; 4.146 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; 4.423 ; 4.423 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; 4.335 ; 4.335 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; 4.371 ; 4.371 ; Rise       ; Arena_buttonSelect_two ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                 ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 6.260 ; 6.260 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 6.781 ; 6.781 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 6.782 ; 6.782 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 6.818 ; 6.818 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 6.906 ; 6.906 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 6.562 ; 6.562 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 6.428 ; 6.428 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 6.561 ; 6.561 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 6.411 ; 6.411 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 6.528 ; 6.528 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 6.867 ; 6.867 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 6.915 ; 6.915 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 6.260 ; 6.260 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 6.640 ; 6.640 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 6.851 ; 6.851 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 6.662 ; 6.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 6.409 ; 6.409 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 7.131 ; 7.131 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 7.459 ; 7.459 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 7.415 ; 7.415 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 7.448 ; 7.448 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 7.131 ; 7.131 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 7.209 ; 7.209 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 7.204 ; 7.204 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 7.207 ; 7.207 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 7.193 ; 7.193 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 8.568 ; 8.568 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 8.588 ; 8.588 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 8.589 ; 8.589 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 8.476 ; 8.476 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 8.535 ; 8.535 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 8.585 ; 8.585 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 8.560 ; 8.560 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 8.303 ; 8.303 ; Rise       ; Arena_buttonSelect_two ;
-+----------------+------------------------+-------+-------+------------+------------------------+
++-------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                      ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Data Port      ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; -3.329 ; -3.329 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; -3.329 ; -3.329 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; -3.518 ; -3.518 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; -3.478 ; -3.478 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; -3.358 ; -3.358 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; -3.449 ; -3.449 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; -3.465 ; -3.465 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; -3.701 ; -3.701 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; -3.449 ; -3.449 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; -3.537 ; -3.537 ; Rise       ; Arena_buttonSelect_two ;
++----------------+------------------------+--------+--------+------------+------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                  ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 11.252 ; 11.252 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 7.385  ; 7.385  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 6.771  ; 6.771  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 7.460  ; 7.460  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 9.335  ; 9.335  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 10.012 ; 10.012 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 10.545 ; 10.545 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 11.252 ; 11.252 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 11.243 ; 11.243 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 11.325 ; 11.325 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 7.033  ; 7.033  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 6.972  ; 6.972  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 7.671  ; 7.671  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 9.311  ; 9.311  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 10.085 ; 10.085 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 10.618 ; 10.618 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 11.325 ; 11.325 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 11.316 ; 11.316 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 6.654 ; 6.654 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 7.385 ; 7.385 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 6.654 ; 6.654 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 6.781 ; 6.781 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 7.201 ; 7.201 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 7.839 ; 7.839 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 7.732 ; 7.732 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 7.166 ; 7.166 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 7.157 ; 7.157 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 6.722 ; 6.722 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 7.033 ; 7.033 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 6.722 ; 6.722 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 6.810 ; 6.810 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 6.724 ; 6.724 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 7.586 ; 7.586 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 7.591 ; 7.591 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 7.164 ; 7.164 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 7.163 ; 7.163 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
 
 
 ----------------------------
@@ -407,7 +319,7 @@ No paths to report.
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
 ; Arena_buttonSelect_one ; -1.380 ; -1.380        ;
-; Arena_buttonSelect_two ; -1.222 ; -1.222        ;
+; Arena_buttonSelect_two ; -1.380 ; -1.380        ;
 +------------------------+--------+---------------+
 
 
@@ -419,228 +331,146 @@ No paths to report.
 ; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one                  ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[0]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[0]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[10]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[10]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[11]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[11]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[12]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[12]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[13]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[13]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[14]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[14]   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[15]   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[15]   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[1]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[1]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[2]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[2]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[3]    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[3]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[4]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[4]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[5]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[5]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[6]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[6]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[7]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[7]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[8]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[8]    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[9]    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_32bitInput:inst|Arena_A_out[9]    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one|combout          ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one|combout          ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|outclk   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; Arena_buttonSelect_one~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[10]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[10]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[11]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[11]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[12]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[12]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[13]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[13]|datac              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[14]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[14]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[15]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[15]|datad              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[1]|datad               ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[2]|datac               ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[2]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[4]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[4]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[5]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[5]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[6]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[6]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[7]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[7]|datad               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[8]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[8]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[9]|datac               ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[9]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datac               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_one ; Rise       ; inst|Arena_A_out[3]|datac               ;
 +--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_buttonSelect_two'                                                                               ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock                  ; Clock Edge ; Target                               ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two               ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad            ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad            ;
-+--------+--------------+----------------+------------------+------------------------+------------+--------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------+
-; Setup Times                                                                                    ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; 2.326 ; 2.326 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; 2.268 ; 2.268 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; 2.235 ; 2.235 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; 2.266 ; 2.266 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; 2.286 ; 2.286 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; 2.240 ; 2.240 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; 2.270 ; 2.270 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; 2.326 ; 2.326 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; 2.195 ; 2.195 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; 2.198 ; 2.198 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; 2.159 ; 2.159 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; 2.045 ; 2.045 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; 2.122 ; 2.122 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; 2.120 ; 2.120 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; 2.203 ; 2.203 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; 2.230 ; 2.230 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; 2.237 ; 2.237 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; 2.735 ; 2.735 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; 2.735 ; 2.735 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-
-
-+--------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                       ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; -1.765 ; -1.765 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; -1.988 ; -1.988 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; -1.955 ; -1.955 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; -1.986 ; -1.986 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; -2.010 ; -2.010 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; -1.966 ; -1.966 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; -1.911 ; -1.911 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; -2.056 ; -2.056 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; -1.850 ; -1.850 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; -1.918 ; -1.918 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; -1.883 ; -1.883 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; -1.765 ; -1.765 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; -1.846 ; -1.846 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; -1.769 ; -1.769 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; -1.922 ; -1.922 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; -1.886 ; -1.886 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; -1.892 ; -1.892 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; -2.461 ; -2.461 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; -2.461 ; -2.461 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Arena_buttonSelect_two'                                                                                  ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                  ; Clock Edge ; Target                                  ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[1]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[1]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[2]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[2]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[3]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_32bitInput:inst|Arena_B_out[3]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; Arena_buttonSelect_two~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[0]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[1]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[2]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[2]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[3]|datad               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_buttonSelect_two ; Rise       ; inst|Arena_B_out[3]|datad               ;
++--------+--------------+----------------+------------------+------------------------+------------+-----------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                         ;
+; Setup Times                                                                                   ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 ; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 3.760 ; 3.760 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 3.697 ; 3.697 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 3.695 ; 3.695 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 3.722 ; 3.722 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 3.760 ; 3.760 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 3.600 ; 3.600 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 3.542 ; 3.542 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 3.602 ; 3.602 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 3.529 ; 3.529 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 3.501 ; 3.501 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 3.673 ; 3.673 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 3.694 ; 3.694 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 3.423 ; 3.423 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 3.553 ; 3.553 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 3.662 ; 3.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 3.576 ; 3.576 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 3.480 ; 3.480 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 4.319 ; 4.319 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 3.846 ; 3.846 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 3.815 ; 3.815 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 3.839 ; 3.839 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 3.678 ; 3.678 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 3.729 ; 3.729 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 3.724 ; 3.724 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 3.728 ; 3.728 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 3.714 ; 3.714 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 4.291 ; 4.291 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 4.318 ; 4.318 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 4.319 ; 4.319 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 4.250 ; 4.250 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 4.271 ; 4.271 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 4.315 ; 4.315 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 4.293 ; 4.293 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 4.197 ; 4.197 ; Rise       ; Arena_buttonSelect_two ;
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; 2.274 ; 2.274 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; 2.240 ; 2.240 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; 2.274 ; 2.274 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; 2.264 ; 2.264 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; 2.179 ; 2.179 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; 2.351 ; 2.351 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; 2.216 ; 2.216 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; 2.351 ; 2.351 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; 2.303 ; 2.303 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; 2.325 ; 2.325 ; Rise       ; Arena_buttonSelect_two ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                 ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 3.423 ; 3.423 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 3.697 ; 3.697 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 3.695 ; 3.695 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 3.722 ; 3.722 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 3.760 ; 3.760 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 3.600 ; 3.600 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 3.542 ; 3.542 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 3.602 ; 3.602 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 3.529 ; 3.529 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 3.501 ; 3.501 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 3.673 ; 3.673 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 3.694 ; 3.694 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 3.423 ; 3.423 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 3.553 ; 3.553 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 3.662 ; 3.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 3.576 ; 3.576 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 3.480 ; 3.480 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 3.678 ; 3.678 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 3.846 ; 3.846 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 3.815 ; 3.815 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 3.839 ; 3.839 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 3.678 ; 3.678 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 3.729 ; 3.729 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 3.724 ; 3.724 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 3.728 ; 3.728 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 3.714 ; 3.714 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 4.291 ; 4.291 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 4.318 ; 4.318 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 4.319 ; 4.319 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 4.250 ; 4.250 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 4.271 ; 4.271 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 4.315 ; 4.315 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 4.293 ; 4.293 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 4.197 ; 4.197 ; Rise       ; Arena_buttonSelect_two ;
-+----------------+------------------------+-------+-------+------------+------------------------+
++-------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                      ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Data Port      ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; -1.881 ; -1.881 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; -1.881 ; -1.881 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; -1.964 ; -1.964 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; -1.972 ; -1.972 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; -1.898 ; -1.898 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; -1.931 ; -1.931 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; -1.938 ; -1.938 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; -2.048 ; -2.048 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; -1.931 ; -1.931 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; -1.973 ; -1.973 ; Rise       ; Arena_buttonSelect_two ;
++----------------+------------------------+--------+--------+------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 5.605 ; 5.605 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 3.977 ; 3.977 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 3.703 ; 3.703 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 4.007 ; 4.007 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 4.814 ; 4.814 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 5.092 ; 5.092 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 5.311 ; 5.311 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 5.605 ; 5.605 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 5.599 ; 5.599 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 5.627 ; 5.627 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 3.835 ; 3.835 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 3.782 ; 3.782 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 4.098 ; 4.098 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 4.803 ; 4.803 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 5.114 ; 5.114 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 5.333 ; 5.333 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 5.627 ; 5.627 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 5.621 ; 5.621 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 3.648 ; 3.648 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 3.977 ; 3.977 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 3.648 ; 3.648 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 3.707 ; 3.707 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 3.903 ; 3.903 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 4.153 ; 4.153 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 4.110 ; 4.110 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 3.868 ; 3.868 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 3.861 ; 3.861 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 3.835 ; 3.835 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 3.712 ; 3.712 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 4.053 ; 4.053 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 4.058 ; 4.058 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 3.867 ; 3.867 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 3.874 ; 3.874 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
 
 
 +-----------------------------------------------------------------------------------+
@@ -650,149 +480,99 @@ No paths to report.
 +-------------------------+-------+------+----------+---------+---------------------+
 ; Worst-case Slack        ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
 ;  Arena_buttonSelect_one ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_buttonSelect_two ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
-; Design-wide TNS         ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -2.602              ;
+;  Arena_buttonSelect_two ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS         ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -2.76               ;
 ;  Arena_buttonSelect_one ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
-;  Arena_buttonSelect_two ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+;  Arena_buttonSelect_two ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
 +-------------------------+-------+------+----------+---------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Setup Times                                                                                    ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; 4.424 ; 4.424 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; 4.263 ; 4.263 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; 4.216 ; 4.216 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; 4.268 ; 4.268 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; 4.321 ; 4.321 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; 4.214 ; 4.214 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; 4.286 ; 4.286 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; 4.424 ; 4.424 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; 4.108 ; 4.108 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; 4.003 ; 4.003 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; 3.946 ; 3.946 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; 3.660 ; 3.660 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; 3.826 ; 3.826 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; 3.837 ; 3.837 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; 4.026 ; 4.026 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; 4.102 ; 4.102 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; 4.103 ; 4.103 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; 4.798 ; 4.798 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; 4.798 ; 4.798 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+-------+-------+------------+------------------------+
-
-
-+--------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                       ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Data Port       ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-; Arena_A_In[*]   ; Arena_buttonSelect_one ; -1.765 ; -1.765 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[0]  ; Arena_buttonSelect_one ; -1.988 ; -1.988 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[1]  ; Arena_buttonSelect_one ; -1.955 ; -1.955 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[2]  ; Arena_buttonSelect_one ; -1.986 ; -1.986 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[3]  ; Arena_buttonSelect_one ; -2.010 ; -2.010 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[4]  ; Arena_buttonSelect_one ; -1.966 ; -1.966 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[5]  ; Arena_buttonSelect_one ; -1.911 ; -1.911 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[6]  ; Arena_buttonSelect_one ; -2.056 ; -2.056 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[7]  ; Arena_buttonSelect_one ; -1.850 ; -1.850 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[8]  ; Arena_buttonSelect_one ; -1.918 ; -1.918 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[9]  ; Arena_buttonSelect_one ; -1.883 ; -1.883 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[10] ; Arena_buttonSelect_one ; -1.765 ; -1.765 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[11] ; Arena_buttonSelect_one ; -1.846 ; -1.846 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[12] ; Arena_buttonSelect_one ; -1.769 ; -1.769 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[13] ; Arena_buttonSelect_one ; -1.922 ; -1.922 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[14] ; Arena_buttonSelect_one ; -1.886 ; -1.886 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_A_In[15] ; Arena_buttonSelect_one ; -1.892 ; -1.892 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_B_In[*]   ; Arena_buttonSelect_two ; -2.461 ; -2.461 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_B_In[0]  ; Arena_buttonSelect_two ; -2.461 ; -2.461 ; Rise       ; Arena_buttonSelect_two ;
-+-----------------+------------------------+--------+--------+------------+------------------------+
-
-
 +-----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                         ;
+; Setup Times                                                                                   ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 ; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 6.915 ; 6.915 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 6.781 ; 6.781 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 6.782 ; 6.782 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 6.818 ; 6.818 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 6.906 ; 6.906 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 6.562 ; 6.562 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 6.428 ; 6.428 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 6.561 ; 6.561 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 6.411 ; 6.411 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 6.528 ; 6.528 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 6.867 ; 6.867 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 6.915 ; 6.915 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 6.260 ; 6.260 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 6.640 ; 6.640 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 6.851 ; 6.851 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 6.662 ; 6.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 6.409 ; 6.409 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 8.589 ; 8.589 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 7.459 ; 7.459 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 7.415 ; 7.415 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 7.448 ; 7.448 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 7.131 ; 7.131 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 7.209 ; 7.209 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 7.204 ; 7.204 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 7.207 ; 7.207 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 7.193 ; 7.193 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 8.568 ; 8.568 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 8.588 ; 8.588 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 8.589 ; 8.589 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 8.476 ; 8.476 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 8.535 ; 8.535 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 8.585 ; 8.585 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 8.560 ; 8.560 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 8.303 ; 8.303 ; Rise       ; Arena_buttonSelect_two ;
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; 4.253 ; 4.253 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; 4.178 ; 4.178 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; 4.253 ; 4.253 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; 4.185 ; 4.185 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; 4.044 ; 4.044 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; 4.423 ; 4.423 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; 4.146 ; 4.146 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; 4.423 ; 4.423 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; 4.335 ; 4.335 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; 4.371 ; 4.371 ; Rise       ; Arena_buttonSelect_two ;
 +----------------+------------------------+-------+-------+------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                 ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Data Port      ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+----------------+------------------------+-------+-------+------------+------------------------+
-; Arena_out[*]   ; Arena_buttonSelect_one ; 3.423 ; 3.423 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[0]  ; Arena_buttonSelect_one ; 3.697 ; 3.697 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[1]  ; Arena_buttonSelect_one ; 3.695 ; 3.695 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[2]  ; Arena_buttonSelect_one ; 3.722 ; 3.722 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[3]  ; Arena_buttonSelect_one ; 3.760 ; 3.760 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[4]  ; Arena_buttonSelect_one ; 3.600 ; 3.600 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[5]  ; Arena_buttonSelect_one ; 3.542 ; 3.542 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[6]  ; Arena_buttonSelect_one ; 3.602 ; 3.602 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[7]  ; Arena_buttonSelect_one ; 3.529 ; 3.529 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[8]  ; Arena_buttonSelect_one ; 3.501 ; 3.501 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[9]  ; Arena_buttonSelect_one ; 3.673 ; 3.673 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[10] ; Arena_buttonSelect_one ; 3.694 ; 3.694 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[11] ; Arena_buttonSelect_one ; 3.423 ; 3.423 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[12] ; Arena_buttonSelect_one ; 3.553 ; 3.553 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[13] ; Arena_buttonSelect_one ; 3.662 ; 3.662 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[14] ; Arena_buttonSelect_one ; 3.576 ; 3.576 ; Rise       ; Arena_buttonSelect_one ;
-;  Arena_out[15] ; Arena_buttonSelect_one ; 3.480 ; 3.480 ; Rise       ; Arena_buttonSelect_one ;
-; Arena_out[*]   ; Arena_buttonSelect_two ; 3.678 ; 3.678 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[0]  ; Arena_buttonSelect_two ; 3.846 ; 3.846 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[1]  ; Arena_buttonSelect_two ; 3.815 ; 3.815 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[2]  ; Arena_buttonSelect_two ; 3.839 ; 3.839 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[3]  ; Arena_buttonSelect_two ; 3.678 ; 3.678 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[4]  ; Arena_buttonSelect_two ; 3.729 ; 3.729 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[5]  ; Arena_buttonSelect_two ; 3.724 ; 3.724 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[6]  ; Arena_buttonSelect_two ; 3.728 ; 3.728 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[7]  ; Arena_buttonSelect_two ; 3.714 ; 3.714 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[8]  ; Arena_buttonSelect_two ; 4.291 ; 4.291 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[9]  ; Arena_buttonSelect_two ; 4.318 ; 4.318 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[10] ; Arena_buttonSelect_two ; 4.319 ; 4.319 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[11] ; Arena_buttonSelect_two ; 4.250 ; 4.250 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[12] ; Arena_buttonSelect_two ; 4.271 ; 4.271 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[13] ; Arena_buttonSelect_two ; 4.315 ; 4.315 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[14] ; Arena_buttonSelect_two ; 4.293 ; 4.293 ; Rise       ; Arena_buttonSelect_two ;
-;  Arena_out[15] ; Arena_buttonSelect_two ; 4.197 ; 4.197 ; Rise       ; Arena_buttonSelect_two ;
-+----------------+------------------------+-------+-------+------------+------------------------+
++-------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                      ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Data Port      ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++----------------+------------------------+--------+--------+------------+------------------------+
+; Arena_A_In[*]  ; Arena_buttonSelect_one ; -1.881 ; -1.881 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[0] ; Arena_buttonSelect_one ; -1.881 ; -1.881 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[1] ; Arena_buttonSelect_one ; -1.964 ; -1.964 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[2] ; Arena_buttonSelect_one ; -1.972 ; -1.972 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_A_In[3] ; Arena_buttonSelect_one ; -1.898 ; -1.898 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_B_In[*]  ; Arena_buttonSelect_two ; -1.931 ; -1.931 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[0] ; Arena_buttonSelect_two ; -1.938 ; -1.938 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[1] ; Arena_buttonSelect_two ; -2.048 ; -2.048 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[2] ; Arena_buttonSelect_two ; -1.931 ; -1.931 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_B_In[3] ; Arena_buttonSelect_two ; -1.973 ; -1.973 ; Rise       ; Arena_buttonSelect_two ;
++----------------+------------------------+--------+--------+------------+------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                  ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 11.252 ; 11.252 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 7.385  ; 7.385  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 6.771  ; 6.771  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 7.460  ; 7.460  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 9.335  ; 9.335  ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 10.012 ; 10.012 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 10.545 ; 10.545 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 11.252 ; 11.252 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 11.243 ; 11.243 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 11.325 ; 11.325 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 7.033  ; 7.033  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 6.972  ; 6.972  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 7.671  ; 7.671  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 9.311  ; 9.311  ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 10.085 ; 10.085 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 10.618 ; 10.618 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 11.325 ; 11.325 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 11.316 ; 11.316 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+--------+--------+------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Data Port             ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
+; Arena_Product_Out[*]  ; Arena_buttonSelect_one ; 3.648 ; 3.648 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_one ; 3.977 ; 3.977 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_one ; 3.648 ; 3.648 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_one ; 3.707 ; 3.707 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_one ; 3.903 ; 3.903 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_one ; 4.153 ; 4.153 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_one ; 4.110 ; 4.110 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_one ; 3.868 ; 3.868 ; Rise       ; Arena_buttonSelect_one ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_one ; 3.861 ; 3.861 ; Rise       ; Arena_buttonSelect_one ;
+; Arena_Product_Out[*]  ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[0] ; Arena_buttonSelect_two ; 3.835 ; 3.835 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[1] ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[2] ; Arena_buttonSelect_two ; 3.712 ; 3.712 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[3] ; Arena_buttonSelect_two ; 3.691 ; 3.691 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[4] ; Arena_buttonSelect_two ; 4.053 ; 4.053 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[5] ; Arena_buttonSelect_two ; 4.058 ; 4.058 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[6] ; Arena_buttonSelect_two ; 3.867 ; 3.867 ; Rise       ; Arena_buttonSelect_two ;
+;  Arena_Product_Out[7] ; Arena_buttonSelect_two ; 3.874 ; 3.874 ; Rise       ; Arena_buttonSelect_two ;
++-----------------------+------------------------+-------+-------+------------+------------------------+
 
 
 -------------------
@@ -820,10 +600,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 17    ; 17   ;
-; Unconstrained Input Port Paths  ; 17    ; 17   ;
-; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 32    ; 32   ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 52    ; 52   ;
 +---------------------------------+-------+------+
 
 
@@ -833,13 +613,13 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 22 16:53:26 2019
+    Info: Processing started: Mon Apr 22 18:32:18 2019
 Info: Command: quartus_sta Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 17 combinational loops as latches.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 8 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Add_Sub_Mul_Div_Accum_Lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
@@ -857,7 +637,7 @@ Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -1.380        -1.380 Arena_buttonSelect_one 
-    Info (332119):    -1.222        -1.222 Arena_buttonSelect_two 
+    Info (332119):    -1.380        -1.380 Arena_buttonSelect_two 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Info (332140): No Setup paths to report
@@ -869,14 +649,14 @@ Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -1.380        -1.380 Arena_buttonSelect_one 
-    Info (332119):    -1.222        -1.222 Arena_buttonSelect_two 
+    Info (332119):    -1.380        -1.380 Arena_buttonSelect_two 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Mon Apr 22 16:53:27 2019
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 388 megabytes
+    Info: Processing ended: Mon Apr 22 18:32:19 2019
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

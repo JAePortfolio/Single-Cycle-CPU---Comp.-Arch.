@@ -392,7 +392,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_buttonSelect_two")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[15]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -402,7 +402,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[15]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[14]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -412,7 +412,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[14]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[13]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,7 +422,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[13]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[12]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -432,7 +432,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[12]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[11]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -442,7 +442,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[11]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[10]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,7 +452,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[10]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[9]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -462,87 +462,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[9]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[0]")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -622,6 +542,36 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -652,7 +602,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~combou
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -662,7 +612,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst29~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -672,47 +622,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst11~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst10~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst9~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst8~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst28~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -732,7 +642,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst7~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Sum_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -742,7 +652,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Sum_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -752,7 +662,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1010~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -762,7 +672,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1010~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1023~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -772,7 +682,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1023~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst4~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst23~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -782,7 +692,7 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst4~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst3~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Cout_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -792,7 +702,197 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst3~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst2~combout")
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst24~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst25~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Cout_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Sum_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Sum_fa~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Sum_fa~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Sum_fa~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Sum_fa~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Sum_fa~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~3_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~2_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Sum_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -803,166 +903,6 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst2~combout")
 }
 
 SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1~combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1452,6 +1392,166 @@ SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[0]")
 	PARENT = "";
 }
 
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[15]")
 {
 	NODE
@@ -1475,7 +1575,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1484,7 +1584,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1493,7 +1593,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1502,7 +1602,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1511,7 +1611,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1520,7 +1620,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1529,7 +1629,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1556,7 +1656,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1565,7 +1665,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1583,7 +1683,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1592,7 +1692,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_A_In[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1610,7 +1710,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1619,7 +1719,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1628,7 +1728,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1637,7 +1737,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1646,7 +1746,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1673,7 +1773,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1727,7 +1827,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_B_In[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1745,8 +1845,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_buttonSelect_one"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1755,13 +1854,38 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_buttonSelect_two"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[15]")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[4]")
 {
 	NODE
 	{
@@ -1770,7 +1894,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[15]")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[14]")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[3]")
 {
 	NODE
 	{
@@ -1779,77 +1903,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[14]")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[6]")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[2]")
 {
 	NODE
 	{
@@ -1858,7 +1912,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[6]")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[5]")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[1]")
 {
 	NODE
 	{
@@ -1867,50 +1921,12 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[5]")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[4]")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1919,9 +1935,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|sampler")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 140.0;
+		LEVEL X FOR 160.0;
 	}
 }
 
@@ -1979,122 +1993,12 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~clkctrl_outclk")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 140.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst11~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst10~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst9~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst8~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst7~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
 TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2103,11 +2007,20 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1010~combout")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~combout")
 {
 	NODE
 	{
@@ -2116,17 +2029,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1010~combout")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1023~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst4~combout")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~clkctrl_outclk")
 {
 	NODE
 	{
@@ -2135,17 +2038,277 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst4~combout")
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst3~combout")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst2~combout")
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst29~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst28~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst7~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Sum_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Sum_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst23~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst24~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst25~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Cout_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Sum_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Sum_fa~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Sum_fa~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Sum_fa~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Sum_fa~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Sum_fa~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~3_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~2_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Sum_fa~0_combout")
 {
 	NODE
 	{
@@ -2159,150 +2322,6 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
 		LEVEL 1 FOR 160.0;
 	}
 }
@@ -2312,7 +2331,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2321,7 +2340,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2330,7 +2349,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2339,7 +2358,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2348,7 +2367,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2357,7 +2376,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2366,7 +2385,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[9
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2375,7 +2394,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[8
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2384,7 +2403,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[7
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2393,7 +2412,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[6
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2402,7 +2421,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[5
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2411,7 +2430,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[4
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2420,7 +2439,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[3
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2438,7 +2457,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2447,7 +2466,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[0
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2456,7 +2475,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[15]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2465,7 +2484,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[14]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2474,7 +2493,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[13]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2483,7 +2502,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[12]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2492,7 +2511,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[11]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2501,7 +2520,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[10]
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2510,7 +2529,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[9]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2519,7 +2538,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[8]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2528,7 +2547,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[7]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2537,7 +2556,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[6]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2546,7 +2565,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[5]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2555,7 +2574,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[4]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
@@ -2564,7 +2583,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[3]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2582,7 +2601,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[1]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2591,7 +2610,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[0]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2708,7 +2727,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[3]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2717,7 +2736,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[2]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2726,7 +2745,7 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[1]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -2735,8 +2754,151 @@ TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[0]"
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 1 FOR 150.0;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -3100,7 +3262,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[15]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -3109,7 +3271,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[14]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -3118,7 +3280,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[13]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -3127,7 +3289,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[12]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -3136,7 +3298,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[11]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -3145,7 +3307,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[10]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -3154,7 +3316,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[9]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -3163,7 +3325,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[8]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_Product_Out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -3172,7 +3334,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[7]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -3181,7 +3343,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[6]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -3190,7 +3352,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[5]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -3199,7 +3361,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[4]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -3208,7 +3370,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[3]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -3217,7 +3379,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[2]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -3226,7 +3388,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[1]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -3235,7 +3397,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|Arena_out[0]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -3244,7 +3406,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|sampler";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -3253,7 +3415,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|gnd";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -3262,7 +3424,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|vcc";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -3271,7 +3433,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|unknown";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -3280,7 +3442,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -3289,7 +3451,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devpor";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -3298,7 +3460,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|devoe";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst29~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -3307,7 +3469,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst28~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -3316,7 +3478,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_one~clkctrl_outclk";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst7~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -3325,7 +3487,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_buttonSelect_two~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -3334,7 +3496,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -3343,7 +3505,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -3352,7 +3514,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Cout_fa~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -3361,7 +3523,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst11~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst23~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -3370,7 +3532,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst10~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -3379,7 +3541,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst9~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -3388,7 +3550,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst8~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst24~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -3397,7 +3559,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst7~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -3406,7 +3568,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst6~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst13|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -3415,7 +3577,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst5~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst14|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -3424,7 +3586,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1010~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst20|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -3433,7 +3595,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1023~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -3442,7 +3604,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst4~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst25~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -3451,7 +3613,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst3~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -3460,7 +3622,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst2~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Cout_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -3469,7 +3631,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1~combout";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst34|Arena_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -3478,7 +3640,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst21|Arena_Sum_fa~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -3487,7 +3649,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst33|Arena_Sum_fa~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -3496,7 +3658,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Cout_fa~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -3505,7 +3667,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst32|Arena_Sum_fa~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -3514,7 +3676,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst19|Arena_Sum_fa~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -3523,7 +3685,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst31|Arena_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -3532,7 +3694,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~3_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -3541,7 +3703,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst18|Arena_Sum_fa~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -3550,7 +3712,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst12|Arena_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -3559,7 +3721,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst1~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -3568,7 +3730,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -3577,7 +3739,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -3586,7 +3748,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -3595,7 +3757,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -3604,7 +3766,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
@@ -3613,7 +3775,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -3622,7 +3784,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[15]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -3631,7 +3793,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[14]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -3640,7 +3802,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[13]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -3649,7 +3811,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[12]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -3658,7 +3820,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[11]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -3667,7 +3829,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[10]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -3676,7 +3838,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[9]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -3685,7 +3847,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[8]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -3694,7 +3856,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[7]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -3703,7 +3865,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[6]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -3712,7 +3874,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[5]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -3721,7 +3883,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[4]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -3730,7 +3892,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[3]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -3739,7 +3901,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[2]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -3748,7 +3910,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[1]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
@@ -3757,7 +3919,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_A_In~combout[0]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 109;
@@ -3766,7 +3928,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[15]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 110;
@@ -3775,7 +3937,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[14]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 111;
@@ -3784,7 +3946,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[13]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 112;
@@ -3793,7 +3955,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[12]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 113;
@@ -3802,7 +3964,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[11]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 114;
@@ -3811,7 +3973,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[10]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 115;
@@ -3820,7 +3982,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[9]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 116;
@@ -3829,7 +3991,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[8]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 117;
@@ -3838,7 +4000,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[7]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 118;
@@ -3847,7 +4009,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[6]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 119;
@@ -3856,7 +4018,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[5]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 120;
@@ -3865,7 +4027,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[4]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 121;
@@ -3874,7 +4036,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[3]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 122;
@@ -3883,7 +4045,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[2]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 123;
@@ -3892,7 +4054,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[1]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 124;
@@ -3901,7 +4063,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_A_out[0]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 125;
@@ -3910,7 +4072,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[15]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 126;
@@ -3919,7 +4081,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[14]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 127;
@@ -3928,7 +4090,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[13]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 128;
@@ -3937,7 +4099,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[12]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 129;
@@ -3946,7 +4108,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[11]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 130;
@@ -3955,7 +4117,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[10]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 131;
@@ -3964,7 +4126,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[9]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 132;
@@ -3973,7 +4135,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[8]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 133;
@@ -3982,7 +4144,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[7]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 134;
@@ -3991,7 +4153,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[6]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 135;
@@ -4000,7 +4162,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[5]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 136;
@@ -4009,7 +4171,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[4]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 137;
@@ -4018,7 +4180,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[3]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 138;
@@ -4027,7 +4189,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[2]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 139;
@@ -4036,7 +4198,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[1]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 140;
@@ -4045,10 +4207,100 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|inst|Arena_B_out[0]";
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 141;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 142;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 143;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 144;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 145;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 146;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 147;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 148;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 149;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 150;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_32bit_arrayMultiplier_vlg_vec_tst|i1|Arena_B_In~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 151;
 	TREE_LEVEL = 0;
 }
 ;

@@ -7,15 +7,15 @@ Slack : -1.380
 TNS   : -1.380
 
 Type  : Slow Model Minimum Pulse Width 'Arena_buttonSelect_two'
-Slack : -1.222
-TNS   : -1.222
+Slack : -1.380
+TNS   : -1.380
 
 Type  : Fast Model Minimum Pulse Width 'Arena_buttonSelect_one'
 Slack : -1.380
 TNS   : -1.380
 
 Type  : Fast Model Minimum Pulse Width 'Arena_buttonSelect_two'
-Slack : -1.222
-TNS   : -1.222
+Slack : -1.380
+TNS   : -1.380
 
 ------------------------------------------------------------

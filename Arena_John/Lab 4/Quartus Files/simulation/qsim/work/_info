@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
 vArena_32bit_arrayMultiplier
-Z1 !s100 `_9B2aQ;jSeJE2HQS<bXD1
-Z2 I6PnR7>JGXlQ[?UGnZV7]N3
-Z3 VZmaf6@_M@LRkHf545iUW=0
-Z4 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
-Z5 w1555966561
+Z1 !s100 @XZSeF>_h@07STIUzm4NB2
+Z2 In7IDCioHdM8]W>P9M94973
+Z3 VQSoMF21LNGaQ1aH@95OPI1
+Z4 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
+Z5 w1555972714
 Z6 8Add_Sub_Mul_Div_Accum_Lab4.vo
 Z7 FAdd_Sub_Mul_Div_Accum_Lab4.vo
 L0 31
@@ -20,16 +20,16 @@ Z10 o-work work -O0
 Z11 n@arena_32bit_array@multiplier
 !i10b 1
 !s85 0
-Z12 !s108 1555966562.614000
+Z12 !s108 1555972715.544000
 Z13 !s107 Add_Sub_Mul_Div_Accum_Lab4.vo|
 !s101 -O0
 vArena_32bit_arrayMultiplier_vlg_check_tst
 !i10b 1
-Z14 !s100 ]YU4Ec=H_?fhOkFIj[5Gb2
-Z15 IDm=^mf6[kLXL^Ol0_=`7H3
-Z16 V=lF8Bff:fbM4?e5zO=nVZ2
+Z14 !s100 5ZYK16l3dOch8h4@gkHMW2
+Z15 Ib`TaWCb5lcYI;Di[[6]k<1
+Z16 VkTiNX1;lIH3?`0hhkRRd<1
 R4
-Z17 w1555966559
+Z17 w1555972712
 Z18 8Add_Sub_Mul_Div_Accum_Lab4.vt
 Z19 FAdd_Sub_Mul_Div_Accum_Lab4.vt
 L0 63
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z20 !s108 1555966562.755000
+Z20 !s108 1555972715.684000
 Z21 !s107 Add_Sub_Mul_Div_Accum_Lab4.vt|
 Z22 !s90 -work|work|Add_Sub_Mul_Div_Accum_Lab4.vt|
 !s101 -O0
@@ -65,14 +65,14 @@ R10
 Z27 n@arena_32bit_array@multiplier_vlg_sample_tst
 vArena_32bit_arrayMultiplier_vlg_vec_tst
 !i10b 1
-!s100 >ZU`^<7`nVIiUcnDl5lV51
-IF]cP[8=YGA25Zo:Dz9k5a2
+!s100 =cW[m;IBb>`XD?W1T>CB30
+IVjJz;3h[o:Mdmaa<]:=kU3
 Z28 V7O_An^6llF>i>BR13z9N=3
 R4
 R17
 R18
 R19
-Z29 L0 427
+Z29 L0 283
 R8
 r1
 !s85 0
@@ -87,8 +87,8 @@ vArena_32bitAccumulator
 Z31 !s100 F@n2TmE2Lg]ABLCVRGE=`0
 Z32 IoNk@]8MB>CKQ`dgJfNA:]1
 Z33 VLW5W>kk6hX0B50:kDIiD50
-Z34 dC:\Users\John\Documents\College\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
-Z35 w1555876235
+R4
+Z34 w1555876235
 R6
 R7
 L0 31
@@ -97,77 +97,77 @@ r1
 31
 R9
 R10
-Z36 n@arena_32bit@accumulator
-Z37 !s108 1555876236.462000
+Z35 n@arena_32bit@accumulator
+Z36 !s108 1555876236.462000
 R13
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAccumulator_vlg_check_tst
-Z38 !s100 fG]d5oidfIZnz@5Ykh[8M2
-Z39 I@T;f8`<B0nP?XgaQj]aOj2
-Z40 V<oR4DJ97F_PdF1j:?NnPR3
-R34
-Z41 w1555876233
+Z37 !s100 fG]d5oidfIZnz@5Ykh[8M2
+Z38 I@T;f8`<B0nP?XgaQj]aOj2
+Z39 V<oR4DJ97F_PdF1j:?NnPR3
+R4
+Z40 w1555876233
 R18
 R19
 L0 61
 R8
 r1
 31
-Z42 !s108 1555876236.622000
-Z43 !s107 Add_Sub_Mul_Div_Accum_Lab4.vt|
+Z41 !s108 1555876236.622000
+Z42 !s107 Add_Sub_Mul_Div_Accum_Lab4.vt|
 R22
 R10
-Z44 n@arena_32bit@accumulator_vlg_check_tst
+Z43 n@arena_32bit@accumulator_vlg_check_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAccumulator_vlg_sample_tst
-Z45 !s100 V3RYjh@e@o0zgfmB5XVXa2
-Z46 I=L:`<5?63P2^PIcR7iBUf0
-Z47 VgoA1HD=D_K`X@1bOY;gID1
-R34
-R41
+Z44 !s100 V3RYjh@e@o0zgfmB5XVXa2
+Z45 I=L:`<5?63P2^PIcR7iBUf0
+Z46 VgoA1HD=D_K`X@1bOY;gID1
+R4
+R40
 R18
 R19
 L0 29
 R8
 r1
 31
+R41
 R42
-R43
 R22
 R10
-Z48 n@arena_32bit@accumulator_vlg_sample_tst
+Z47 n@arena_32bit@accumulator_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAccumulator_vlg_vec_tst
-Z49 !s100 f9nI=E4VADem@:QFaV0Gb1
-Z50 I]jIkEeY<m>egOL[0j9V6D1
-Z51 VNmK53Gfmi;4T5bmB?0LJV3
-R34
-R41
+Z48 !s100 f9nI=E4VADem@:QFaV0Gb1
+Z49 I]jIkEeY<m>egOL[0j9V6D1
+Z50 VNmK53Gfmi;4T5bmB?0LJV3
+R4
+R40
 R18
 R19
-Z52 L0 1908
+Z51 L0 1908
 R8
 r1
 31
+R41
 R42
-R43
 R22
 R10
-Z53 n@arena_32bit@accumulator_vlg_vec_tst
+Z52 n@arena_32bit@accumulator_vlg_vec_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAdder
-Z54 IhGeSTie:7V<XhSfcIKM=I0
-Z55 V8]:PUNYVT_3neB96]@5>`1
-R34
-Z56 w1555876003
+Z53 IhGeSTie:7V<XhSfcIKM=I0
+Z54 V8]:PUNYVT_3neB96]@5>`1
+R4
+Z55 w1555876003
 R6
 R7
 L0 31
@@ -176,77 +176,77 @@ r1
 31
 R9
 R10
-Z57 n@arena_32bit@adder
-Z58 !s100 dT5Y9U]z^fm<XW@Eg]Nm[0
-Z59 !s108 1555876005.260000
+Z56 n@arena_32bit@adder
+Z57 !s100 dT5Y9U]z^fm<XW@Eg]Nm[0
+Z58 !s108 1555876005.260000
 R13
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAdder_vlg_check_tst
-Z60 I7S5zl@j?BCl7]N8WzX]ll3
-Z61 Voe<lIX^O<fNc4_64kmY_Z0
-R34
-Z62 w1555876002
+Z59 I7S5zl@j?BCl7]N8WzX]ll3
+Z60 Voe<lIX^O<fNc4_64kmY_Z0
+R4
+Z61 w1555876002
 R18
 R19
 L0 61
 R8
 r1
 31
-Z63 !s108 1555876005.410000
-R43
+Z62 !s108 1555876005.410000
+R42
 R22
 R10
-Z64 n@arena_32bit@adder_vlg_check_tst
-Z65 !s100 DGk;a`Wm9zo:;GWLFojUA3
+Z63 n@arena_32bit@adder_vlg_check_tst
+Z64 !s100 DGk;a`Wm9zo:;GWLFojUA3
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAdder_vlg_sample_tst
-Z66 !s100 EkS4kk0Ji9ooGIhfo?k;]0
-Z67 IEgZ`kNG555ImI_m8IFT5Z0
-Z68 VGNodaSD87A_a4KIFCl6lD3
-R34
-R62
+Z65 !s100 EkS4kk0Ji9ooGIhfo?k;]0
+Z66 IEgZ`kNG555ImI_m8IFT5Z0
+Z67 VGNodaSD87A_a4KIFCl6lD3
+R4
+R61
 R18
 R19
 L0 29
 R8
 r1
 31
-R63
-R43
+R62
+R42
 R22
 R10
-Z69 n@arena_32bit@adder_vlg_sample_tst
+Z68 n@arena_32bit@adder_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitAdder_vlg_vec_tst
-Z70 IFMBV7:1g_Q`mFzW`9]6b=3
-Z71 VOJMO:X;@h50_Whg?W5]W23
-R34
-R62
+Z69 IFMBV7:1g_Q`mFzW`9]6b=3
+Z70 VOJMO:X;@h50_Whg?W5]W23
+R4
+R61
 R18
 R19
-Z72 L0 1588
+Z71 L0 1588
 R8
 r1
 31
-R63
-R43
+R62
+R42
 R22
 R10
-Z73 n@arena_32bit@adder_vlg_vec_tst
-Z74 !s100 5XNAK3M:k4L9FFNXaP>7h3
+Z72 n@arena_32bit@adder_vlg_vec_tst
+Z73 !s100 5XNAK3M:k4L9FFNXaP>7h3
 !i10b 1
 !s85 0
 !s101 -O0
 vArena_32bitInput
-Z75 IUaOgZNT]`bJFLNCWkM1902
-Z76 Vg2FMnS`djIP9CRM]1ShXY3
-R4
+Z74 IUaOgZNT]`bJFLNCWkM1902
+Z75 Vg2FMnS`djIP9CRM]1ShXY3
+Z76 dC:\Users\John2\Documents\Spring 2019\CSC 342 - Organization\Labs\Arena_John\Lab 4\Quartus Files\simulation\qsim
 Z77 w1555962385
 R6
 R7
@@ -266,7 +266,7 @@ R13
 vArena_32bitInput_vlg_check_tst
 Z81 I:Xd:93Lg3@e?;YLFoLNi60
 Z82 Vj]k839HUND`?XS_XUcSok1
-R4
+R76
 Z83 w1555962383
 R18
 R19
@@ -275,7 +275,7 @@ R8
 r1
 31
 Z84 !s108 1555962386.852000
-R43
+R42
 R22
 R10
 Z85 n@arena_32bit@input_vlg_check_tst
@@ -286,7 +286,7 @@ Z86 !s100 7?IZ3]]jFHZNn[I7JCm;]1
 vArena_32bitInput_vlg_sample_tst
 Z87 I1ioSPIacDcdno1fz6OGh]3
 Z88 V3d_A_i:IQ7PoT=J@CdkAU2
-R4
+R76
 R83
 R18
 R19
@@ -295,7 +295,7 @@ R8
 r1
 31
 R84
-R43
+R42
 R22
 R10
 Z89 n@arena_32bit@input_vlg_sample_tst
@@ -306,7 +306,7 @@ Z90 !s100 bn;^1GeA14YeOVecZkYVj3
 vArena_32bitInput_vlg_vec_tst
 Z91 Ia@mKAKRQ^=lcGHoXAdfWI2
 Z92 VjFIheA3_B1UUQ?]`_6h0R1
-R4
+R76
 R83
 R18
 R19
@@ -315,7 +315,7 @@ R8
 r1
 31
 R84
-R43
+R42
 R22
 R10
 Z94 n@arena_32bit@input_vlg_vec_tst
@@ -327,7 +327,7 @@ vArena_32bitRegister
 Z96 !s100 JWBE@B^8kUzoKbZ<R_Ula2
 Z97 IeB?n3l5BLa8_ZT3hiYWWB3
 Z98 VV:FJ=hmhKghhClQ<gND?C1
-R34
+R4
 Z99 w1555874377
 R6
 R7
@@ -347,7 +347,7 @@ vArena_32bitRegister_vlg_check_tst
 Z102 !s100 ^iWIA`c>Kg5kc?X4F1<cO2
 Z103 IIh9aKEM`k1P@VZdz_c>Bz2
 Z104 Vk@9;i>?AX0`H7J?iS=Sk83
-R34
+R4
 Z105 w1555874376
 R18
 R19
@@ -356,7 +356,7 @@ R8
 r1
 31
 Z106 !s108 1555874378.986000
-R43
+R42
 R22
 R10
 Z107 n@arena_32bit@register_vlg_check_tst
@@ -367,7 +367,7 @@ vArena_32bitRegister_vlg_sample_tst
 Z108 !s100 EjQG4RX7_J1>Y<QEGO1Za0
 Z109 IBUQ^KD[0>eeRCddN>9a>^2
 Z110 VYPRbUS2OjflOdZ@eZ7@]k1
-R34
+R4
 R105
 R18
 R19
@@ -376,7 +376,7 @@ R8
 r1
 31
 R106
-R43
+R42
 R22
 R10
 Z111 n@arena_32bit@register_vlg_sample_tst
@@ -387,7 +387,7 @@ vArena_32bitRegister_vlg_vec_tst
 Z112 !s100 blZ:9z]?QzSbiD?NiKZ@Y1
 Z113 Ib_oZM@;1P300c5_8SWg^G3
 Z114 VcmX[H[P_zP`]Va3mS@MIO0
-R34
+R4
 R105
 R18
 R19
@@ -396,7 +396,7 @@ R8
 r1
 31
 R106
-R43
+R42
 R22
 R10
 Z116 n@arena_32bit@register_vlg_vec_tst
@@ -407,7 +407,7 @@ vArena_D_FlipFlop
 Z117 !s100 zg6CiQb7V7Ila:F2a8Q]<3
 Z118 InI[ZFaUfbg0zgz_B[?zRj3
 Z119 V=TlJhV5DJVgoG0_j1zgO:3
-R34
+R4
 Z120 w1555874705
 R6
 R7
@@ -427,7 +427,7 @@ vArena_D_FlipFlop_vlg_check_tst
 Z123 !s100 0?^Cf3P17DQd=Fd3W`Obd2
 Z124 Ie]<92hLlUVj_Az_??^0^F0
 Z125 VgP^Ab[UiaEF`AQ[Y6dg4G2
-R34
+R4
 Z126 w1555874704
 R18
 R19
@@ -436,7 +436,7 @@ R8
 r1
 31
 Z127 !s108 1555874707.223000
-R43
+R42
 R22
 R10
 Z128 n@arena_@d_@flip@flop_vlg_check_tst
@@ -447,7 +447,7 @@ vArena_D_FlipFlop_vlg_sample_tst
 Z129 !s100 D=cjoWkMKQe`oUUh<eJW`2
 Z130 IU@QCW]fKeZG7:64W4AZD:1
 Z131 V?U:X;WB?nd]g[nMHLcBhE0
-R34
+R4
 R126
 R18
 R19
@@ -456,7 +456,7 @@ R8
 r1
 31
 R127
-R43
+R42
 R22
 R10
 Z132 n@arena_@d_@flip@flop_vlg_sample_tst
@@ -467,7 +467,7 @@ vArena_D_FlipFlop_vlg_vec_tst
 Z133 !s100 USLzf=0cVkSJRFNJ>6fNz2
 Z134 I^0;jG=dU5JC2oS82OQ43@1
 Z135 VHRIK>9S=`JZ>6fWX9B]3=2
-R34
+R4
 R126
 R18
 R19
@@ -476,7 +476,7 @@ R8
 r1
 31
 R127
-R43
+R42
 R22
 R10
 Z137 n@arena_@d_@flip@flop_vlg_vec_tst
@@ -487,7 +487,7 @@ vArena_fullAdder
 Z138 !s100 WbdOB;15IL@Y^jHKncj[N0
 Z139 IgOII0;a[2:4e[Q6K>?=?91
 Z140 V?ID>4ITQ_`927@`NElEc73
-R4
+R76
 Z141 w1555958417
 R6
 R7
@@ -506,7 +506,7 @@ R13
 vArena_fullAdder_vlg_check_tst
 Z144 IX0iFgL5l]a865a0b]MX5@0
 Z145 V`l0U>H2dRJ>A6oa;RHei?0
-R4
+R76
 Z146 w1555958415
 R18
 R19
@@ -515,7 +515,7 @@ R8
 r1
 31
 Z147 !s108 1555958419.235000
-R43
+R42
 R22
 R10
 Z148 n@arena_full@adder_vlg_check_tst
@@ -526,7 +526,7 @@ Z149 !s100 jlHKC6Tn9V@iOUGNFd>D_1
 vArena_fullAdder_vlg_sample_tst
 Z150 IJY<7bCMYWnjjDH5hLR7E<1
 Z151 V<Bb3]P3Xia>HgX`Eb7=n82
-R4
+R76
 R146
 R18
 R19
@@ -535,7 +535,7 @@ R8
 r1
 31
 R147
-R43
+R42
 R22
 R10
 Z152 n@arena_full@adder_vlg_sample_tst
@@ -546,7 +546,7 @@ Z153 !s100 9fGE^XbPzIldkG_djdIk@3
 vArena_fullAdder_vlg_vec_tst
 Z154 IiY:i3?T?_Z4m;LFC]oZZ?2
 Z155 V9_2[SiEoU:bB7_EN4HM6_0
-R4
+R76
 R146
 R18
 R19
@@ -555,7 +555,7 @@ R8
 r1
 31
 R147
-R43
+R42
 R22
 R10
 Z157 n@arena_full@adder_vlg_vec_tst
@@ -567,7 +567,7 @@ vArena_register
 Z159 !s100 id6z?V@JYe[zM07z3<dzO2
 Z160 IJCN[7P8c_EMeG_D=ZXAcX1
 Z161 VVWJ1BlhNkz]ZFLI86BUid1
-R34
+R4
 Z162 w1555023795
 R6
 R7
@@ -587,7 +587,7 @@ vArena_register_vlg_check_tst
 Z165 !s100 G[YONo0iOA72l_@WAR<860
 Z166 I>IjTWXc9`D5dDd>F9M@2O0
 Z167 Vn4SVzJ44_7lW]^V6eA8EX0
-R34
+R4
 Z168 w1555023794
 R18
 R19
@@ -596,7 +596,7 @@ R8
 r1
 31
 Z169 !s108 1555023797.397000
-R43
+R42
 R22
 R10
 Z170 n@arena_register_vlg_check_tst
@@ -607,7 +607,7 @@ vArena_register_vlg_sample_tst
 Z171 !s100 1Ug@5S?>C7M4=XgO>KnYV3
 Z172 I]Z?WXPc;V`7MV8LmFh90L1
 Z173 VQ`9Cz0?K0b0ao02GBC^B90
-R34
+R4
 R168
 R18
 R19
@@ -616,7 +616,7 @@ R8
 r1
 31
 R169
-R43
+R42
 R22
 R10
 Z174 n@arena_register_vlg_sample_tst
@@ -626,7 +626,7 @@ Z174 n@arena_register_vlg_sample_tst
 vArena_register_vlg_vec_tst
 Z175 ISXN0?`M[h]eZKP062KoRN3
 Z176 VOiT=XGf<kjN5Va9]ML?Ck0
-R34
+R4
 R168
 R18
 R19
@@ -635,7 +635,7 @@ R8
 r1
 31
 R169
-R43
+R42
 R22
 R10
 Z177 n@arena_register_vlg_vec_tst

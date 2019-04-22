@@ -1,5 +1,5 @@
 Flow report for Add_Sub_Mul_Div_Accum_Lab4
-Mon Apr 22 16:56:01 2019
+Mon Apr 22 18:38:34 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 22 16:56:01 2019           ;
+; Flow Status                        ; Successful - Mon Apr 22 18:38:34 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Add_Sub_Mul_Div_Accum_Lab4                      ;
 ; Top-level Entity Name              ; Arena_32bit_arrayMultiplier                     ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 33 / 33,216 ( < 1 % )                           ;
-;     Total combinational functions  ; 33 / 33,216 ( < 1 % )                           ;
+; Total logic elements               ; 41 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 41 / 33,216 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 50 / 475 ( 11 % )                               ;
+; Total pins                         ; 42 / 475 ( 9 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------------+
 ; Option            ; Setting                    ;
 +-------------------+----------------------------+
-; Start date & time ; 04/22/2019 16:53:09        ;
+; Start date & time ; 04/22/2019 18:32:01        ;
 ; Main task         ; Compilation                ;
 ; Revision Name     ; Add_Sub_Mul_Div_Accum_Lab4 ;
 +-------------------+----------------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+----------------------------+-----------------------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value              ; Entity Name                 ; Section Id     ;
 +-------------------------------------+---------------------------------------+----------------------------+-----------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264840330406669.155596638907992       ; --                         ; --                          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220314654093205.155597232110064       ; --                         ; --                          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --                         ; --                          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --                         ; --                          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>                     ; --                          ; --             ;
@@ -96,20 +96,18 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4676 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:08     ; 1.2                     ; 5042 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4598 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4589 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4545 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 491 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 662 MB              ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 424 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 388 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 371 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 379 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:21                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,19 +116,17 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -142,13 +138,11 @@ quartus_fit --read_settings_files=off --write_settings_files=off Add_Sub_Mul_Div
 quartus_asm --read_settings_files=off --write_settings_files=off Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 quartus_sta Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 quartus_eda --read_settings_files=off --write_settings_files=off Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4 --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bit_arrayMultiplier.vwf" --testbench_file=./simulation/qsim/Add_Sub_Mul_Div_Accum_Lab4.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 
 
