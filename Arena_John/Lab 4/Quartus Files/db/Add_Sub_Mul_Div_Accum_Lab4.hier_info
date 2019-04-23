@@ -1,56 +1,47 @@
-|Arena_16bitAdder
-Arena_Cout_fa_15 <= Arena_fullAdder:inst26.Arena_Cout_fa
-Arena_A_fa[0] => Arena_fullAdder:inst12.Arena_A_fa
-Arena_A_fa[1] => Arena_fullAdder:inst13.Arena_A_fa
-Arena_A_fa[2] => Arena_fullAdder:inst14.Arena_A_fa
-Arena_A_fa[3] => Arena_fullAdder:inst15.Arena_A_fa
-Arena_A_fa[4] => Arena_fullAdder:inst16.Arena_A_fa
-Arena_A_fa[5] => Arena_fullAdder:inst191.Arena_A_fa
-Arena_A_fa[6] => Arena_fullAdder:inst20.Arena_A_fa
-Arena_A_fa[7] => Arena_fullAdder:inst22.Arena_A_fa
-Arena_A_fa[8] => Arena_fullAdder:inst17.Arena_A_fa
-Arena_A_fa[9] => Arena_fullAdder:inst18.Arena_A_fa
-Arena_A_fa[10] => Arena_fullAdder:inst19.Arena_A_fa
-Arena_A_fa[11] => Arena_fullAdder:inst21.Arena_A_fa
-Arena_A_fa[12] => Arena_fullAdder:inst23.Arena_A_fa
-Arena_A_fa[13] => Arena_fullAdder:inst24.Arena_A_fa
-Arena_A_fa[14] => Arena_fullAdder:inst25.Arena_A_fa
-Arena_A_fa[15] => Arena_fullAdder:inst26.Arena_A_fa
-Arena_B_fa[0] => Arena_fullAdder:inst12.Arena_B_fa
-Arena_B_fa[1] => Arena_fullAdder:inst13.Arena_B_fa
-Arena_B_fa[2] => Arena_fullAdder:inst14.Arena_B_fa
-Arena_B_fa[3] => Arena_fullAdder:inst15.Arena_B_fa
-Arena_B_fa[4] => Arena_fullAdder:inst16.Arena_B_fa
-Arena_B_fa[5] => Arena_fullAdder:inst191.Arena_B_fa
-Arena_B_fa[6] => Arena_fullAdder:inst20.Arena_B_fa
-Arena_B_fa[7] => Arena_fullAdder:inst22.Arena_B_fa
-Arena_B_fa[8] => Arena_fullAdder:inst17.Arena_B_fa
-Arena_B_fa[9] => Arena_fullAdder:inst18.Arena_B_fa
-Arena_B_fa[10] => Arena_fullAdder:inst19.Arena_B_fa
-Arena_B_fa[11] => Arena_fullAdder:inst21.Arena_B_fa
-Arena_B_fa[12] => Arena_fullAdder:inst23.Arena_B_fa
-Arena_B_fa[13] => Arena_fullAdder:inst24.Arena_B_fa
-Arena_B_fa[14] => Arena_fullAdder:inst25.Arena_B_fa
-Arena_B_fa[15] => Arena_fullAdder:inst26.Arena_B_fa
-Arena_Sum_fa[0] <= Arena_fullAdder:inst12.Arena_Sum_fa
-Arena_Sum_fa[1] <= Arena_fullAdder:inst13.Arena_Sum_fa
-Arena_Sum_fa[2] <= Arena_fullAdder:inst14.Arena_Sum_fa
-Arena_Sum_fa[3] <= Arena_fullAdder:inst15.Arena_Sum_fa
-Arena_Sum_fa[4] <= Arena_fullAdder:inst16.Arena_Sum_fa
-Arena_Sum_fa[5] <= Arena_fullAdder:inst191.Arena_Sum_fa
-Arena_Sum_fa[6] <= Arena_fullAdder:inst20.Arena_Sum_fa
-Arena_Sum_fa[7] <= Arena_fullAdder:inst22.Arena_Sum_fa
-Arena_Sum_fa[8] <= Arena_fullAdder:inst17.Arena_Sum_fa
-Arena_Sum_fa[9] <= Arena_fullAdder:inst18.Arena_Sum_fa
-Arena_Sum_fa[10] <= Arena_fullAdder:inst19.Arena_Sum_fa
-Arena_Sum_fa[11] <= Arena_fullAdder:inst21.Arena_Sum_fa
-Arena_Sum_fa[12] <= Arena_fullAdder:inst23.Arena_Sum_fa
-Arena_Sum_fa[13] <= Arena_fullAdder:inst24.Arena_Sum_fa
-Arena_Sum_fa[14] <= Arena_fullAdder:inst25.Arena_Sum_fa
-Arena_Sum_fa[15] <= Arena_fullAdder:inst26.Arena_Sum_fa
+|Arena_4bit_arrayMultipler
+Arena_4bitIN_A[0] => Arena_andGate.IN0
+Arena_4bitIN_A[0] => Arena_andGate[4].IN0
+Arena_4bitIN_A[0] => Arena_andGate[8].IN0
+Arena_4bitIN_A[0] => Arena_andGate[12].IN0
+Arena_4bitIN_A[1] => Arena_andGate[1].IN0
+Arena_4bitIN_A[1] => Arena_andGate[5].IN0
+Arena_4bitIN_A[1] => Arena_andGate[9].IN0
+Arena_4bitIN_A[1] => Arena_andGate[13].IN0
+Arena_4bitIN_A[2] => Arena_andGate[2].IN0
+Arena_4bitIN_A[2] => Arena_andGate[6].IN0
+Arena_4bitIN_A[2] => Arena_andGate[10].IN0
+Arena_4bitIN_A[2] => Arena_andGate[14].IN0
+Arena_4bitIN_A[3] => Arena_andGate[3].IN0
+Arena_4bitIN_A[3] => Arena_andGate[7].IN0
+Arena_4bitIN_A[3] => Arena_andGate[11].IN0
+Arena_4bitIN_A[3] => Arena_andGate[15].IN0
+Arena_4bitIN_B[0] => Arena_andGate.IN1
+Arena_4bitIN_B[0] => Arena_andGate[1].IN1
+Arena_4bitIN_B[0] => Arena_andGate[2].IN1
+Arena_4bitIN_B[0] => Arena_andGate[3].IN1
+Arena_4bitIN_B[1] => Arena_andGate[4].IN1
+Arena_4bitIN_B[1] => Arena_andGate[5].IN1
+Arena_4bitIN_B[1] => Arena_andGate[6].IN1
+Arena_4bitIN_B[1] => Arena_andGate[7].IN1
+Arena_4bitIN_B[2] => Arena_andGate[8].IN1
+Arena_4bitIN_B[2] => Arena_andGate[9].IN1
+Arena_4bitIN_B[2] => Arena_andGate[10].IN1
+Arena_4bitIN_B[2] => Arena_andGate[11].IN1
+Arena_4bitIN_B[3] => Arena_andGate[12].IN1
+Arena_4bitIN_B[3] => Arena_andGate[13].IN1
+Arena_4bitIN_B[3] => Arena_andGate[14].IN1
+Arena_4bitIN_B[3] => Arena_andGate[15].IN1
+Arena_4bitOUT[0] <= Arena_andGate.DB_MAX_OUTPUT_PORT_TYPE
+Arena_4bitOUT[1] <= Arena_fullAdder:FA0.Arena_Sum_fa
+Arena_4bitOUT[2] <= Arena_fullAdder:FA4.Arena_Sum_fa
+Arena_4bitOUT[3] <= Arena_fullAdder:FA8.Arena_Sum_fa
+Arena_4bitOUT[4] <= Arena_fullAdder:FA9.Arena_Sum_fa
+Arena_4bitOUT[5] <= Arena_fullAdder:FA10.Arena_Sum_fa
+Arena_4bitOUT[6] <= Arena_fullAdder:FA11.Arena_Sum_fa
+Arena_4bitOUT[7] <= Arena_fullAdder:FA11.Arena_Cout_fa
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst26
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA0
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -64,7 +55,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst25
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA1
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -78,7 +69,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst24
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA2
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -92,7 +83,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst23
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA3
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -106,7 +97,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst21
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA4
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -120,7 +111,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst19
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA5
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -134,7 +125,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst18
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA6
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -148,7 +139,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst17
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA7
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -162,7 +153,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst22
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA8
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -176,7 +167,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst20
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA9
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -190,7 +181,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst191
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA10
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -204,63 +195,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_16bitAdder|Arena_fullAdder:inst16
-Arena_A_fa => Arena_Sum_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_B_fa => Arena_Sum_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN0
-Arena_Cin_fa => Arena_Sum_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
-Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Arena_16bitAdder|Arena_fullAdder:inst15
-Arena_A_fa => Arena_Sum_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_B_fa => Arena_Sum_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN0
-Arena_Cin_fa => Arena_Sum_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
-Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Arena_16bitAdder|Arena_fullAdder:inst14
-Arena_A_fa => Arena_Sum_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_B_fa => Arena_Sum_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN0
-Arena_Cin_fa => Arena_Sum_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
-Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Arena_16bitAdder|Arena_fullAdder:inst13
-Arena_A_fa => Arena_Sum_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_A_fa => Arena_Cout_fa.IN0
-Arena_B_fa => Arena_Sum_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN1
-Arena_B_fa => Arena_Cout_fa.IN0
-Arena_Cin_fa => Arena_Sum_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Cin_fa => Arena_Cout_fa.IN1
-Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
-Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Arena_16bitAdder|Arena_fullAdder:inst12
+|Arena_4bit_arrayMultipler|Arena_fullAdder:FA11
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0

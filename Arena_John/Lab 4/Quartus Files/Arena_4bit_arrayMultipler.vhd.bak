@@ -1,0 +1,19 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 4 - Spring 2019 Due: 4/17/19
+-- Arena_4bit_arrayMultipler.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_4bit_arrayMultipler is 
+	port(
+		Arena_4bitIN_A, Arena_4bitIN_B: in std_logic_vector(3 downto 0);
+		Arena_4bitOUT: out std_logic_vector(7 downto 0);
+	);
+end Arena_4bit_arrayMultipler;
+
+architecture Arena_4bit_arrayMultipler_arch of Arena_4bit_arrayMultipler is
+signal Arena_and : std_logic_vector(15 downto 0);
+begin
+	Arena_Sum_fa <= Arena_A_fa xor Arena_B_fa xor Arena_Cin_fa ;
+	Arena_Cout_fa <= (Arena_A_fa and Arena_B_fa) or (Arena_Cin_fa and Arena_A_fa) or (Arena_Cin_fa and Arena_B_fa);
+end Arena_fullAdder_arch;
