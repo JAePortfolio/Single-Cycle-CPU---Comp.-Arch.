@@ -1,0 +1,1853 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 832 344 1041 360)
+	(text "INPUT" (rect 15 0 43 10)(font "Arial" (font_size 6)))
+	(text "Arena_B_fa[15..0]" (rect 114 0 203 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 59 4)(pt 55 8))
+		(line (pt 59 12)(pt 55 8))
+	)
+	(flipy)
+	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 832 304 1036 320)
+	(text "INPUT" (rect 15 0 43 10)(font "Arial" (font_size 6)))
+	(text "Arena_A_fa[15..0]" (rect 109 0 198 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 59 4)(pt 55 8))
+		(line (pt 59 12)(pt 55 8))
+	)
+	(flipy)
+	(text "VCC" (rect 20 7 40 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect -3704 696 -3516 712)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Arena_Cout_fa_15" (rect 90 0 182 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1088 600 1289 616)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Arena_Sum_fa[15..0]" (rect 90 0 195 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 808 456 1032 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst12" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect 488 456 712 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst13" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect 176 456 400 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst14" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -120 456 104 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst15" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -440 456 -216 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst16" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -1064 456 -840 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst20" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -1384 456 -1160 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst22" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -1744 456 -1520 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst17" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -2064 456 -1840 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst18" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -2376 456 -2152 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst19" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -2672 456 -2448 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst21" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -2992 456 -2768 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst23" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -3304 456 -3080 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst24" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -3616 456 -3392 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst25" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -3936 456 -3712 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst26" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect -752 456 -528 568)
+	(text "Arena_fullAdder" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst191" (rect 8 96 43 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_A_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_A_fa" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_B_fa" (rect 0 0 57 12)(font "Arial" ))
+		(text "Arena_B_fa" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_Cin_fa" (rect 0 0 67 12)(font "Arial" ))
+		(text "Arena_Cin_fa" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "Arena_Sum_fa" (rect 0 0 73 12)(font "Arial" ))
+		(text "Arena_Sum_fa" (rect 142 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "Arena_Cout_fa" (rect 0 0 74 12)(font "Arial" ))
+		(text "Arena_Cout_fa" (rect 141 43 215 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 96))
+	)
+)
+(symbol
+	(rect 776 536 808 568)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst117" (rect 3 21 38 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(connector
+	(pt 792 520)
+	(pt 792 536)
+)
+(connector
+	(pt 792 520)
+	(pt 808 520)
+)
+(connector
+	(pt 1032 504)
+	(pt 1064 504)
+)
+(connector
+	(pt 1064 400)
+	(pt 1064 504)
+)
+(connector
+	(pt 1064 400)
+	(pt 472 400)
+)
+(connector
+	(pt 488 520)
+	(pt 472 520)
+)
+(connector
+	(pt 472 520)
+	(pt 472 400)
+)
+(connector
+	(pt 712 504)
+	(pt 728 504)
+)
+(connector
+	(pt 728 504)
+	(pt 728 416)
+)
+(connector
+	(pt 728 416)
+	(pt 160 416)
+)
+(connector
+	(pt 176 520)
+	(pt 160 520)
+)
+(connector
+	(pt 160 520)
+	(pt 160 416)
+)
+(connector
+	(pt 400 504)
+	(pt 416 504)
+)
+(connector
+	(pt 416 504)
+	(pt 416 424)
+)
+(connector
+	(pt 416 424)
+	(pt -136 424)
+)
+(connector
+	(pt -120 520)
+	(pt -136 520)
+)
+(connector
+	(pt -136 520)
+	(pt -136 424)
+)
+(connector
+	(pt -440 520)
+	(pt -456 520)
+)
+(connector
+	(pt -456 520)
+	(pt -456 400)
+)
+(connector
+	(pt -216 504)
+	(pt -200 504)
+)
+(connector
+	(pt -200 504)
+	(pt -200 424)
+)
+(connector
+	(pt -200 424)
+	(pt -776 424)
+)
+(connector
+	(pt -752 520)
+	(pt -776 520)
+)
+(connector
+	(pt -776 520)
+	(pt -776 424)
+)
+(connector
+	(pt -528 504)
+	(pt -512 504)
+)
+(connector
+	(pt -512 504)
+	(pt -512 400)
+)
+(connector
+	(pt -512 400)
+	(pt -1096 400)
+)
+(connector
+	(pt -1064 520)
+	(pt -1096 520)
+)
+(connector
+	(pt -1096 520)
+	(pt -1096 400)
+)
+(connector
+	(pt -840 504)
+	(pt -824 504)
+)
+(connector
+	(pt -824 416)
+	(pt -824 504)
+)
+(connector
+	(pt -824 416)
+	(pt -1424 416)
+)
+(connector
+	(pt -1384 520)
+	(pt -1424 520)
+)
+(connector
+	(pt -1424 416)
+	(pt -1424 520)
+)
+(connector
+	(pt 808 488)
+	(pt 784 488)
+)
+(connector
+	(pt 832 312)
+	(pt 784 312)
+	(bus)
+)
+(connector
+	(text "Arena_A_fa[0]" (rect 768 402 780 472)(font "Arial" )(vertical))
+	(pt 784 488)
+	(pt 784 312)
+)
+(connector
+	(pt 784 312)
+	(pt 464 312)
+	(bus)
+)
+(connector
+	(pt 488 488)
+	(pt 464 488)
+)
+(connector
+	(text "Arena_A_fa[1]" (rect 448 418 460 488)(font "Arial" )(vertical))
+	(pt 464 488)
+	(pt 464 312)
+)
+(connector
+	(pt 464 312)
+	(pt 152 312)
+	(bus)
+)
+(connector
+	(pt 176 488)
+	(pt 152 488)
+)
+(connector
+	(text "Arena_A_fa[2]" (rect 160 418 172 488)(font "Arial" )(vertical))
+	(pt 152 488)
+	(pt 152 312)
+)
+(connector
+	(pt 152 312)
+	(pt -152 312)
+	(bus)
+)
+(connector
+	(pt -120 488)
+	(pt -152 488)
+)
+(connector
+	(text "Arena_A_fa[3]" (rect -168 418 -156 488)(font "Arial" )(vertical))
+	(pt -152 488)
+	(pt -152 312)
+)
+(connector
+	(pt -152 312)
+	(pt -472 312)
+	(bus)
+)
+(connector
+	(pt -440 488)
+	(pt -472 488)
+)
+(connector
+	(text "Arena_A_fa[4]" (rect -488 418 -476 488)(font "Arial" )(vertical))
+	(pt -472 488)
+	(pt -472 312)
+)
+(connector
+	(pt -752 488)
+	(pt -760 488)
+)
+(connector
+	(text "Arena_A_fa[5]" (rect -776 418 -764 488)(font "Arial" )(vertical))
+	(pt -760 312)
+	(pt -760 488)
+)
+(connector
+	(pt -760 312)
+	(pt -472 312)
+	(bus)
+)
+(connector
+	(pt -1080 312)
+	(pt -760 312)
+	(bus)
+)
+(connector
+	(pt -1064 488)
+	(pt -1080 488)
+)
+(connector
+	(text "Arena_A_fa[6]" (rect -1096 418 -1084 488)(font "Arial" )(vertical))
+	(pt -1080 488)
+	(pt -1080 312)
+)
+(connector
+	(pt -1384 488)
+	(pt -1392 488)
+)
+(connector
+	(text "Arena_A_fa[7]" (rect -1408 418 -1396 488)(font "Arial" )(vertical))
+	(pt -1392 488)
+	(pt -1392 312)
+)
+(connector
+	(pt -1384 504)
+	(pt -1408 504)
+)
+(connector
+	(text "Arena_B_fa[7]" (rect -1424 434 -1412 504)(font "Arial" )(vertical))
+	(pt -1408 504)
+	(pt -1408 352)
+)
+(connector
+	(pt -1064 504)
+	(pt -1112 504)
+)
+(connector
+	(text "Arena_B_fa[6]" (rect -1128 434 -1116 504)(font "Arial" )(vertical))
+	(pt -1112 504)
+	(pt -1112 352)
+)
+(connector
+	(pt -792 352)
+	(pt -1112 352)
+	(bus)
+)
+(connector
+	(pt -752 504)
+	(pt -792 504)
+)
+(connector
+	(text "Arena_B_fa[5]" (rect -808 434 -796 504)(font "Arial" )(vertical))
+	(pt -792 504)
+	(pt -792 352)
+)
+(connector
+	(pt -488 352)
+	(pt -792 352)
+	(bus)
+)
+(connector
+	(pt -440 504)
+	(pt -488 504)
+)
+(connector
+	(text "Arena_B_fa[4]" (rect -504 434 -492 504)(font "Arial" )(vertical))
+	(pt -488 504)
+	(pt -488 352)
+)
+(connector
+	(pt -176 352)
+	(pt -488 352)
+	(bus)
+)
+(connector
+	(pt -120 504)
+	(pt -176 504)
+)
+(connector
+	(text "Arena_B_fa[3]" (rect -192 434 -180 504)(font "Arial" )(vertical))
+	(pt -176 504)
+	(pt -176 352)
+)
+(connector
+	(pt 104 504)
+	(pt 120 504)
+)
+(connector
+	(pt 120 504)
+	(pt 120 400)
+)
+(connector
+	(pt -456 400)
+	(pt 120 400)
+)
+(connector
+	(pt 144 352)
+	(pt -176 352)
+	(bus)
+)
+(connector
+	(pt 176 504)
+	(pt 144 504)
+)
+(connector
+	(text "Arena_B_fa[2]" (rect 128 434 140 504)(font "Arial" )(vertical))
+	(pt 144 504)
+	(pt 144 352)
+)
+(connector
+	(pt 448 352)
+	(pt 144 352)
+	(bus)
+)
+(connector
+	(pt 488 504)
+	(pt 448 504)
+)
+(connector
+	(text "Arena_B_fa[1]" (rect 432 434 444 504)(font "Arial" )(vertical))
+	(pt 448 504)
+	(pt 448 352)
+)
+(connector
+	(pt 832 352)
+	(pt 768 352)
+	(bus)
+)
+(connector
+	(pt 768 352)
+	(pt 448 352)
+	(bus)
+)
+(connector
+	(pt 808 504)
+	(pt 768 504)
+)
+(connector
+	(text "Arena_B_fa[0]" (rect 752 434 764 504)(font "Arial" )(vertical))
+	(pt 768 504)
+	(pt 768 352)
+)
+(connector
+	(pt -1160 488)
+	(pt -1136 488)
+)
+(connector
+	(text "Arena_Sum_fa[7]" (rect -1152 525 -1140 611)(font "Arial" )(vertical))
+	(pt -1136 488)
+	(pt -1136 608)
+)
+(connector
+	(pt -1136 608)
+	(pt -808 608)
+	(bus)
+)
+(connector
+	(pt -840 488)
+	(pt -808 488)
+)
+(connector
+	(text "Arena_Sum_fa[6]" (rect -824 525 -812 611)(font "Arial" )(vertical))
+	(pt -808 488)
+	(pt -808 608)
+)
+(connector
+	(pt -808 608)
+	(pt -520 608)
+	(bus)
+)
+(connector
+	(pt -528 488)
+	(pt -520 488)
+)
+(connector
+	(text "Arena_Sum_fa[5]" (rect -536 525 -524 611)(font "Arial" )(vertical))
+	(pt -520 488)
+	(pt -520 608)
+)
+(connector
+	(pt -520 608)
+	(pt -208 608)
+	(bus)
+)
+(connector
+	(pt -216 488)
+	(pt -208 488)
+)
+(connector
+	(text "Arena_Sum_fa[4]" (rect -224 525 -212 611)(font "Arial" )(vertical))
+	(pt -208 488)
+	(pt -208 608)
+)
+(connector
+	(pt -208 608)
+	(pt 112 608)
+	(bus)
+)
+(connector
+	(pt 104 488)
+	(pt 112 488)
+)
+(connector
+	(text "Arena_Sum_fa[3]" (rect 96 525 108 611)(font "Arial" )(vertical))
+	(pt 112 488)
+	(pt 112 608)
+)
+(connector
+	(pt 112 608)
+	(pt 408 608)
+	(bus)
+)
+(connector
+	(pt 400 488)
+	(pt 408 488)
+)
+(connector
+	(text "Arena_Sum_fa[2]" (rect 392 525 404 611)(font "Arial" )(vertical))
+	(pt 408 488)
+	(pt 408 608)
+)
+(connector
+	(pt 408 608)
+	(pt 720 608)
+	(bus)
+)
+(connector
+	(pt 712 488)
+	(pt 720 488)
+)
+(connector
+	(text "Arena_Sum_fa[1]" (rect 704 525 716 611)(font "Arial" )(vertical))
+	(pt 720 488)
+	(pt 720 608)
+)
+(connector
+	(pt 720 608)
+	(pt 1040 608)
+	(bus)
+)
+(connector
+	(pt 1040 608)
+	(pt 1088 608)
+	(bus)
+)
+(connector
+	(pt 1032 488)
+	(pt 1040 488)
+)
+(connector
+	(text "Arena_Sum_fa[0]" (rect 1024 525 1036 611)(font "Arial" )(vertical))
+	(pt 1040 488)
+	(pt 1040 608)
+)
+(connector
+	(pt -4000 312)
+	(pt -4000 296)
+	(bus)
+)
+(connector
+	(pt -1392 312)
+	(pt -1080 312)
+	(bus)
+)
+(connector
+	(pt -4024 352)
+	(pt -4024 312)
+	(bus)
+)
+(connector
+	(pt -1408 352)
+	(pt -1112 352)
+	(bus)
+)
+(connector
+	(pt -1520 504)
+	(pt -1488 504)
+)
+(connector
+	(pt -1488 416)
+	(pt -1488 504)
+)
+(connector
+	(pt -1488 416)
+	(pt -2080 416)
+)
+(connector
+	(pt -2064 520)
+	(pt -2080 520)
+)
+(connector
+	(pt -2080 520)
+	(pt -2080 416)
+)
+(connector
+	(pt -1840 504)
+	(pt -1824 504)
+)
+(connector
+	(pt -1824 504)
+	(pt -1824 392)
+)
+(connector
+	(pt -2376 520)
+	(pt -2392 520)
+)
+(connector
+	(pt -2392 520)
+	(pt -2392 392)
+)
+(connector
+	(pt -2392 392)
+	(pt -1824 392)
+)
+(connector
+	(pt -2152 504)
+	(pt -2144 504)
+)
+(connector
+	(pt -2144 504)
+	(pt -2144 440)
+)
+(connector
+	(pt -2144 440)
+	(pt -2696 440)
+)
+(connector
+	(pt -2672 520)
+	(pt -2696 520)
+)
+(connector
+	(pt -2696 520)
+	(pt -2696 440)
+)
+(connector
+	(pt -2448 504)
+	(pt -2432 504)
+)
+(connector
+	(pt -2432 504)
+	(pt -2432 416)
+)
+(connector
+	(pt -2432 416)
+	(pt -3000 416)
+)
+(connector
+	(pt -2992 520)
+	(pt -3000 520)
+)
+(connector
+	(pt -3000 520)
+	(pt -3000 416)
+)
+(connector
+	(pt -2768 504)
+	(pt -2752 504)
+)
+(connector
+	(pt -2752 504)
+	(pt -2752 400)
+)
+(connector
+	(pt -2752 400)
+	(pt -3328 400)
+)
+(connector
+	(pt -3304 520)
+	(pt -3328 520)
+)
+(connector
+	(pt -3328 520)
+	(pt -3328 400)
+)
+(connector
+	(pt -3080 504)
+	(pt -3064 504)
+)
+(connector
+	(pt -3064 504)
+	(pt -3064 432)
+)
+(connector
+	(pt -3064 432)
+	(pt -3640 432)
+)
+(connector
+	(pt -3616 520)
+	(pt -3640 520)
+)
+(connector
+	(pt -3640 520)
+	(pt -3640 432)
+)
+(connector
+	(pt -3392 504)
+	(pt -3368 504)
+)
+(connector
+	(pt -3368 504)
+	(pt -3368 408)
+)
+(connector
+	(pt -3368 408)
+	(pt -3960 408)
+)
+(connector
+	(pt -3936 520)
+	(pt -3960 520)
+)
+(connector
+	(pt -3960 520)
+	(pt -3960 408)
+)
+(connector
+	(pt -1744 488)
+	(pt -1752 488)
+)
+(connector
+	(pt -1752 312)
+	(pt -1392 312)
+	(bus)
+)
+(connector
+	(pt -1744 504)
+	(pt -1776 504)
+)
+(connector
+	(pt -1776 352)
+	(pt -1408 352)
+	(bus)
+)
+(connector
+	(pt -1160 504)
+	(pt -1152 504)
+)
+(connector
+	(pt -1152 504)
+	(pt -1152 584)
+)
+(connector
+	(pt -1152 584)
+	(pt -1768 584)
+)
+(connector
+	(pt -1744 520)
+	(pt -1768 520)
+)
+(connector
+	(pt -1768 520)
+	(pt -1768 584)
+)
+(connector
+	(text "Arena_A_fa[8]" (rect -1768 418 -1756 488)(font "Arial" )(vertical))
+	(pt -1752 488)
+	(pt -1752 312)
+)
+(connector
+	(text "Arena_B_fa[8]" (rect -1792 434 -1780 504)(font "Arial" )(vertical))
+	(pt -1776 504)
+	(pt -1776 352)
+)
+(connector
+	(pt -1504 608)
+	(pt -1136 608)
+	(bus)
+)
+(connector
+	(pt -1520 488)
+	(pt -1504 488)
+)
+(connector
+	(text "Arena_Sum_fa[8]" (rect -1520 509 -1508 595)(font "Arial" )(vertical))
+	(pt -1504 488)
+	(pt -1504 608)
+)
+(connector
+	(pt -1832 608)
+	(pt -1504 608)
+	(bus)
+)
+(connector
+	(pt -1840 488)
+	(pt -1832 488)
+)
+(connector
+	(text "Arena_Sum_fa[9]" (rect -1848 525 -1836 611)(font "Arial" )(vertical))
+	(pt -1832 488)
+	(pt -1832 608)
+)
+(connector
+	(pt -2096 312)
+	(pt -1752 312)
+	(bus)
+)
+(connector
+	(pt -2064 488)
+	(pt -2096 488)
+)
+(connector
+	(text "Arena_A_fa[9]" (rect -2112 418 -2100 488)(font "Arial" )(vertical))
+	(pt -2096 488)
+	(pt -2096 312)
+)
+(connector
+	(pt -2088 352)
+	(pt -1776 352)
+	(bus)
+)
+(connector
+	(pt -2064 504)
+	(pt -2088 504)
+)
+(connector
+	(text "Arena_B_fa[9]" (rect -2104 434 -2092 504)(font "Arial" )(vertical))
+	(pt -2088 504)
+	(pt -2088 352)
+)
+(connector
+	(pt -2152 488)
+	(pt -2120 488)
+)
+(connector
+	(pt -2120 608)
+	(pt -1832 608)
+	(bus)
+)
+(connector
+	(text "Arena_Sum_fa[10]" (rect -2136 520 -2124 612)(font "Arial" )(vertical))
+	(pt -2120 488)
+	(pt -2120 608)
+)
+(connector
+	(pt -2400 312)
+	(pt -2096 312)
+	(bus)
+)
+(connector
+	(pt -2376 488)
+	(pt -2400 488)
+)
+(connector
+	(text "Arena_A_fa[10]" (rect -2416 413 -2404 489)(font "Arial" )(vertical))
+	(pt -2400 488)
+	(pt -2400 312)
+)
+(connector
+	(pt -2384 352)
+	(pt -2088 352)
+	(bus)
+)
+(connector
+	(pt -2376 504)
+	(pt -2384 504)
+)
+(connector
+	(text "Arena_B_fa[10]" (rect -2400 429 -2388 505)(font "Arial" )(vertical))
+	(pt -2384 504)
+	(pt -2384 352)
+)
+(connector
+	(pt -2440 608)
+	(pt -2120 608)
+	(bus)
+)
+(connector
+	(pt -2448 488)
+	(pt -2440 488)
+)
+(connector
+	(text "Arena_Sum_fa[11]" (rect -2456 520 -2444 612)(font "Arial" )(vertical))
+	(pt -2440 488)
+	(pt -2440 608)
+)
+(connector
+	(pt -2680 312)
+	(pt -2400 312)
+	(bus)
+)
+(connector
+	(pt -2672 488)
+	(pt -2680 488)
+)
+(connector
+	(text "Arena_A_fa[11]" (rect -2696 413 -2684 489)(font "Arial" )(vertical))
+	(pt -2680 488)
+	(pt -2680 312)
+)
+(connector
+	(pt -2712 352)
+	(pt -2384 352)
+	(bus)
+)
+(connector
+	(pt -2672 504)
+	(pt -2712 504)
+)
+(connector
+	(text "Arena_B_fa[11]" (rect -2728 429 -2716 505)(font "Arial" )(vertical))
+	(pt -2712 504)
+	(pt -2712 352)
+)
+(connector
+	(pt -2736 608)
+	(pt -2440 608)
+	(bus)
+)
+(connector
+	(pt -2768 488)
+	(pt -2736 488)
+)
+(connector
+	(text "Arena_Sum_fa[12]" (rect -2752 520 -2740 612)(font "Arial" )(vertical))
+	(pt -2736 488)
+	(pt -2736 608)
+)
+(connector
+	(pt -3008 312)
+	(pt -2680 312)
+	(bus)
+)
+(connector
+	(pt -2992 488)
+	(pt -3008 488)
+)
+(connector
+	(text "Arena_A_fa[12]" (rect -3024 413 -3012 489)(font "Arial" )(vertical))
+	(pt -3008 488)
+	(pt -3008 312)
+)
+(connector
+	(pt -2992 504)
+	(pt -3024 504)
+)
+(connector
+	(text "Arena_B_fa[12]" (rect -3040 429 -3028 505)(font "Arial" )(vertical))
+	(pt -3024 352)
+	(pt -3024 504)
+)
+(connector
+	(pt -3024 352)
+	(pt -2712 352)
+	(bus)
+)
+(connector
+	(pt -3048 608)
+	(pt -2736 608)
+	(bus)
+)
+(connector
+	(pt -3080 488)
+	(pt -3048 488)
+)
+(connector
+	(text "Arena_Sum_fa[13]" (rect -3064 520 -3052 612)(font "Arial" )(vertical))
+	(pt -3048 488)
+	(pt -3048 608)
+)
+(connector
+	(pt -3312 312)
+	(pt -3008 312)
+	(bus)
+)
+(connector
+	(pt -3304 488)
+	(pt -3312 488)
+)
+(connector
+	(text "Arena_A_fa[13]" (rect -3328 413 -3316 489)(font "Arial" )(vertical))
+	(pt -3312 488)
+	(pt -3312 312)
+)
+(connector
+	(pt -3336 352)
+	(pt -3024 352)
+	(bus)
+)
+(connector
+	(pt -3304 504)
+	(pt -3336 504)
+)
+(connector
+	(text "Arena_B_fa[13]" (rect -3352 429 -3340 505)(font "Arial" )(vertical))
+	(pt -3336 504)
+	(pt -3336 352)
+)
+(connector
+	(pt -3384 608)
+	(pt -3048 608)
+	(bus)
+)
+(connector
+	(pt -3392 488)
+	(pt -3384 488)
+)
+(connector
+	(text "Arena_Sum_fa[14]" (rect -3400 520 -3388 612)(font "Arial" )(vertical))
+	(pt -3384 488)
+	(pt -3384 608)
+)
+(connector
+	(pt -3624 312)
+	(pt -3312 312)
+	(bus)
+)
+(connector
+	(pt -3616 488)
+	(pt -3624 488)
+)
+(connector
+	(text "Arena_A_fa[14]" (rect -3640 413 -3628 489)(font "Arial" )(vertical))
+	(pt -3624 488)
+	(pt -3624 312)
+)
+(connector
+	(pt -3648 352)
+	(pt -3336 352)
+	(bus)
+)
+(connector
+	(pt -3616 504)
+	(pt -3648 504)
+)
+(connector
+	(text "Arena_B_fa[14]" (rect -3664 429 -3652 505)(font "Arial" )(vertical))
+	(pt -3648 504)
+	(pt -3648 352)
+)
+(connector
+	(pt -4024 608)
+	(pt -3680 608)
+	(bus)
+)
+(connector
+	(pt -3680 608)
+	(pt -3384 608)
+	(bus)
+)
+(connector
+	(pt -3712 488)
+	(pt -3680 488)
+)
+(connector
+	(text "Arena_Sum_fa[15]" (rect -3696 520 -3684 612)(font "Arial" )(vertical))
+	(pt -3680 488)
+	(pt -3680 608)
+)
+(connector
+	(pt -4000 312)
+	(pt -3944 312)
+	(bus)
+)
+(connector
+	(pt -3944 312)
+	(pt -3624 312)
+	(bus)
+)
+(connector
+	(pt -3936 488)
+	(pt -3944 488)
+)
+(connector
+	(text "Arena_A_fa[15]" (rect -3960 413 -3948 489)(font "Arial" )(vertical))
+	(pt -3944 488)
+	(pt -3944 312)
+)
+(connector
+	(pt -4024 352)
+	(pt -3992 352)
+	(bus)
+)
+(connector
+	(pt -3992 352)
+	(pt -3648 352)
+	(bus)
+)
+(connector
+	(pt -3936 504)
+	(pt -3992 504)
+)
+(connector
+	(text "Arena_B_fa[15]" (rect -4008 429 -3996 505)(font "Arial" )(vertical))
+	(pt -3992 504)
+	(pt -3992 352)
+)
+(connector
+	(pt -3704 704)
+	(pt -3704 504)
+)
+(connector
+	(pt -3704 504)
+	(pt -3712 504)
+)
+(junction (pt 784 312))
+(junction (pt 464 312))
+(junction (pt 152 312))
+(junction (pt -152 312))
+(junction (pt -472 312))
+(junction (pt -760 312))
+(junction (pt -1080 312))
+(junction (pt -1392 312))
+(junction (pt -1408 352))
+(junction (pt -1112 352))
+(junction (pt -792 352))
+(junction (pt -488 352))
+(junction (pt -176 352))
+(junction (pt 144 352))
+(junction (pt 448 352))
+(junction (pt 768 352))
+(junction (pt -1136 608))
+(junction (pt -808 608))
+(junction (pt -520 608))
+(junction (pt -208 608))
+(junction (pt 112 608))
+(junction (pt 408 608))
+(junction (pt 720 608))
+(junction (pt 1040 608))
+(junction (pt -1752 312))
+(junction (pt -1776 352))
+(junction (pt -1504 608))
+(junction (pt -1832 608))
+(junction (pt -2096 312))
+(junction (pt -2088 352))
+(junction (pt -2120 608))
+(junction (pt -2400 312))
+(junction (pt -2384 352))
+(junction (pt -2440 608))
+(junction (pt -2680 312))
+(junction (pt -2712 352))
+(junction (pt -2736 608))
+(junction (pt -3008 312))
+(junction (pt -3024 352))
+(junction (pt -3048 608))
+(junction (pt -3312 312))
+(junction (pt -3336 352))
+(junction (pt -3384 608))
+(junction (pt -3624 312))
+(junction (pt -3648 352))
+(junction (pt -3680 608))
+(junction (pt -3944 312))
+(junction (pt -3992 352))

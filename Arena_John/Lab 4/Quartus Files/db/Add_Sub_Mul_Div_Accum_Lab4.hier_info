@@ -1,148 +1,56 @@
-|Arena_32bit_arrayMultiplier
-Arena_Product_Out[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Arena_Product_Out[1] <= Arena_fullAdder:inst12.Arena_Sum_fa
-Arena_Product_Out[2] <= Arena_fullAdder:inst18.Arena_Sum_fa
-Arena_Product_Out[3] <= Arena_fullAdder:inst31.Arena_Sum_fa
-Arena_Product_Out[4] <= Arena_fullAdder:inst32.Arena_Sum_fa
-Arena_Product_Out[5] <= Arena_fullAdder:inst33.Arena_Sum_fa
-Arena_Product_Out[6] <= Arena_fullAdder:inst34.Arena_Sum_fa
-Arena_Product_Out[7] <= Arena_fullAdder:inst34.Arena_Cout_fa
-Arena_buttonSelect_one => Arena_32bitInput:inst.Arena_buttonSelect_one
-Arena_buttonSelect_two => Arena_32bitInput:inst.Arena_buttonSelect_two
-Arena_A_In[0] => Arena_32bitInput:inst.Arena_A_In[0]
-Arena_A_In[1] => Arena_32bitInput:inst.Arena_A_In[1]
-Arena_A_In[2] => Arena_32bitInput:inst.Arena_A_In[2]
-Arena_A_In[3] => Arena_32bitInput:inst.Arena_A_In[3]
-Arena_A_In[4] => Arena_32bitInput:inst.Arena_A_In[4]
-Arena_A_In[5] => Arena_32bitInput:inst.Arena_A_In[5]
-Arena_A_In[6] => Arena_32bitInput:inst.Arena_A_In[6]
-Arena_A_In[7] => Arena_32bitInput:inst.Arena_A_In[7]
-Arena_A_In[8] => Arena_32bitInput:inst.Arena_A_In[8]
-Arena_A_In[9] => Arena_32bitInput:inst.Arena_A_In[9]
-Arena_A_In[10] => Arena_32bitInput:inst.Arena_A_In[10]
-Arena_A_In[11] => Arena_32bitInput:inst.Arena_A_In[11]
-Arena_A_In[12] => Arena_32bitInput:inst.Arena_A_In[12]
-Arena_A_In[13] => Arena_32bitInput:inst.Arena_A_In[13]
-Arena_A_In[14] => Arena_32bitInput:inst.Arena_A_In[14]
-Arena_A_In[15] => Arena_32bitInput:inst.Arena_A_In[15]
-Arena_B_In[0] => Arena_32bitInput:inst.Arena_B_In[0]
-Arena_B_In[1] => Arena_32bitInput:inst.Arena_B_In[1]
-Arena_B_In[2] => Arena_32bitInput:inst.Arena_B_In[2]
-Arena_B_In[3] => Arena_32bitInput:inst.Arena_B_In[3]
-Arena_B_In[4] => Arena_32bitInput:inst.Arena_B_In[4]
-Arena_B_In[5] => Arena_32bitInput:inst.Arena_B_In[5]
-Arena_B_In[6] => Arena_32bitInput:inst.Arena_B_In[6]
-Arena_B_In[7] => Arena_32bitInput:inst.Arena_B_In[7]
-Arena_B_In[8] => Arena_32bitInput:inst.Arena_B_In[8]
-Arena_B_In[9] => Arena_32bitInput:inst.Arena_B_In[9]
-Arena_B_In[10] => Arena_32bitInput:inst.Arena_B_In[10]
-Arena_B_In[11] => Arena_32bitInput:inst.Arena_B_In[11]
-Arena_B_In[12] => Arena_32bitInput:inst.Arena_B_In[12]
-Arena_B_In[13] => Arena_32bitInput:inst.Arena_B_In[13]
-Arena_B_In[14] => Arena_32bitInput:inst.Arena_B_In[14]
-Arena_B_In[15] => Arena_32bitInput:inst.Arena_B_In[15]
+|Arena_16bitAdder
+Arena_Cout_fa_15 <= Arena_fullAdder:inst26.Arena_Cout_fa
+Arena_A_fa[0] => Arena_fullAdder:inst12.Arena_A_fa
+Arena_A_fa[1] => Arena_fullAdder:inst13.Arena_A_fa
+Arena_A_fa[2] => Arena_fullAdder:inst14.Arena_A_fa
+Arena_A_fa[3] => Arena_fullAdder:inst15.Arena_A_fa
+Arena_A_fa[4] => Arena_fullAdder:inst16.Arena_A_fa
+Arena_A_fa[5] => Arena_fullAdder:inst191.Arena_A_fa
+Arena_A_fa[6] => Arena_fullAdder:inst20.Arena_A_fa
+Arena_A_fa[7] => Arena_fullAdder:inst22.Arena_A_fa
+Arena_A_fa[8] => Arena_fullAdder:inst17.Arena_A_fa
+Arena_A_fa[9] => Arena_fullAdder:inst18.Arena_A_fa
+Arena_A_fa[10] => Arena_fullAdder:inst19.Arena_A_fa
+Arena_A_fa[11] => Arena_fullAdder:inst21.Arena_A_fa
+Arena_A_fa[12] => Arena_fullAdder:inst23.Arena_A_fa
+Arena_A_fa[13] => Arena_fullAdder:inst24.Arena_A_fa
+Arena_A_fa[14] => Arena_fullAdder:inst25.Arena_A_fa
+Arena_A_fa[15] => Arena_fullAdder:inst26.Arena_A_fa
+Arena_B_fa[0] => Arena_fullAdder:inst12.Arena_B_fa
+Arena_B_fa[1] => Arena_fullAdder:inst13.Arena_B_fa
+Arena_B_fa[2] => Arena_fullAdder:inst14.Arena_B_fa
+Arena_B_fa[3] => Arena_fullAdder:inst15.Arena_B_fa
+Arena_B_fa[4] => Arena_fullAdder:inst16.Arena_B_fa
+Arena_B_fa[5] => Arena_fullAdder:inst191.Arena_B_fa
+Arena_B_fa[6] => Arena_fullAdder:inst20.Arena_B_fa
+Arena_B_fa[7] => Arena_fullAdder:inst22.Arena_B_fa
+Arena_B_fa[8] => Arena_fullAdder:inst17.Arena_B_fa
+Arena_B_fa[9] => Arena_fullAdder:inst18.Arena_B_fa
+Arena_B_fa[10] => Arena_fullAdder:inst19.Arena_B_fa
+Arena_B_fa[11] => Arena_fullAdder:inst21.Arena_B_fa
+Arena_B_fa[12] => Arena_fullAdder:inst23.Arena_B_fa
+Arena_B_fa[13] => Arena_fullAdder:inst24.Arena_B_fa
+Arena_B_fa[14] => Arena_fullAdder:inst25.Arena_B_fa
+Arena_B_fa[15] => Arena_fullAdder:inst26.Arena_B_fa
+Arena_Sum_fa[0] <= Arena_fullAdder:inst12.Arena_Sum_fa
+Arena_Sum_fa[1] <= Arena_fullAdder:inst13.Arena_Sum_fa
+Arena_Sum_fa[2] <= Arena_fullAdder:inst14.Arena_Sum_fa
+Arena_Sum_fa[3] <= Arena_fullAdder:inst15.Arena_Sum_fa
+Arena_Sum_fa[4] <= Arena_fullAdder:inst16.Arena_Sum_fa
+Arena_Sum_fa[5] <= Arena_fullAdder:inst191.Arena_Sum_fa
+Arena_Sum_fa[6] <= Arena_fullAdder:inst20.Arena_Sum_fa
+Arena_Sum_fa[7] <= Arena_fullAdder:inst22.Arena_Sum_fa
+Arena_Sum_fa[8] <= Arena_fullAdder:inst17.Arena_Sum_fa
+Arena_Sum_fa[9] <= Arena_fullAdder:inst18.Arena_Sum_fa
+Arena_Sum_fa[10] <= Arena_fullAdder:inst19.Arena_Sum_fa
+Arena_Sum_fa[11] <= Arena_fullAdder:inst21.Arena_Sum_fa
+Arena_Sum_fa[12] <= Arena_fullAdder:inst23.Arena_Sum_fa
+Arena_Sum_fa[13] <= Arena_fullAdder:inst24.Arena_Sum_fa
+Arena_Sum_fa[14] <= Arena_fullAdder:inst25.Arena_Sum_fa
+Arena_Sum_fa[15] <= Arena_fullAdder:inst26.Arena_Sum_fa
 
 
-|Arena_32bit_arrayMultiplier|Arena_32bitInput:inst
-Arena_A_In[0] => Arena_A_out[0]$latch.DATAIN
-Arena_A_In[1] => Arena_A_out[1]$latch.DATAIN
-Arena_A_In[2] => Arena_A_out[2]$latch.DATAIN
-Arena_A_In[3] => Arena_A_out[3]$latch.DATAIN
-Arena_A_In[4] => Arena_A_out[4]$latch.DATAIN
-Arena_A_In[5] => Arena_A_out[5]$latch.DATAIN
-Arena_A_In[6] => Arena_A_out[6]$latch.DATAIN
-Arena_A_In[7] => Arena_A_out[7]$latch.DATAIN
-Arena_A_In[8] => Arena_A_out[8]$latch.DATAIN
-Arena_A_In[9] => Arena_A_out[9]$latch.DATAIN
-Arena_A_In[10] => Arena_A_out[10]$latch.DATAIN
-Arena_A_In[11] => Arena_A_out[11]$latch.DATAIN
-Arena_A_In[12] => Arena_A_out[12]$latch.DATAIN
-Arena_A_In[13] => Arena_A_out[13]$latch.DATAIN
-Arena_A_In[14] => Arena_A_out[14]$latch.DATAIN
-Arena_A_In[15] => Arena_A_out[15]$latch.DATAIN
-Arena_B_In[0] => Arena_B_out[0]$latch.DATAIN
-Arena_B_In[1] => Arena_B_out[1]$latch.DATAIN
-Arena_B_In[2] => Arena_B_out[2]$latch.DATAIN
-Arena_B_In[3] => Arena_B_out[3]$latch.DATAIN
-Arena_B_In[4] => Arena_B_out[4]$latch.DATAIN
-Arena_B_In[5] => Arena_B_out[5]$latch.DATAIN
-Arena_B_In[6] => Arena_B_out[6]$latch.DATAIN
-Arena_B_In[7] => Arena_B_out[7]$latch.DATAIN
-Arena_B_In[8] => Arena_B_out[8]$latch.DATAIN
-Arena_B_In[9] => Arena_B_out[9]$latch.DATAIN
-Arena_B_In[10] => Arena_B_out[10]$latch.DATAIN
-Arena_B_In[11] => Arena_B_out[11]$latch.DATAIN
-Arena_B_In[12] => Arena_B_out[12]$latch.DATAIN
-Arena_B_In[13] => Arena_B_out[13]$latch.DATAIN
-Arena_B_In[14] => Arena_B_out[14]$latch.DATAIN
-Arena_B_In[15] => Arena_B_out[15]$latch.DATAIN
-Arena_A_out[0] <= Arena_A_out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[1] <= Arena_A_out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[2] <= Arena_A_out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[3] <= Arena_A_out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[4] <= Arena_A_out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[5] <= Arena_A_out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[6] <= Arena_A_out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[7] <= Arena_A_out[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[8] <= Arena_A_out[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[9] <= Arena_A_out[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[10] <= Arena_A_out[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[11] <= Arena_A_out[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[12] <= Arena_A_out[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[13] <= Arena_A_out[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[14] <= Arena_A_out[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_A_out[15] <= Arena_A_out[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[0] <= Arena_B_out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[1] <= Arena_B_out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[2] <= Arena_B_out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[3] <= Arena_B_out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[4] <= Arena_B_out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[5] <= Arena_B_out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[6] <= Arena_B_out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[7] <= Arena_B_out[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[8] <= Arena_B_out[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[9] <= Arena_B_out[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[10] <= Arena_B_out[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[11] <= Arena_B_out[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[12] <= Arena_B_out[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[13] <= Arena_B_out[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[14] <= Arena_B_out[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_B_out[15] <= Arena_B_out[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
-Arena_buttonSelect_one => Arena_A_out[0]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[1]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[2]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[3]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[4]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[5]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[6]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[7]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[8]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[9]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[10]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[11]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[12]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[13]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[14]$latch.LATCH_ENABLE
-Arena_buttonSelect_one => Arena_A_out[15]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[0]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[1]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[2]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[3]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[4]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[5]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[6]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[7]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[8]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[9]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[10]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[11]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[12]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[13]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[14]$latch.LATCH_ENABLE
-Arena_buttonSelect_two => Arena_B_out[15]$latch.LATCH_ENABLE
-
-
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst12
+|Arena_16bitAdder|Arena_fullAdder:inst26
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -156,7 +64,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst18
+|Arena_16bitAdder|Arena_fullAdder:inst25
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -170,7 +78,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst13
+|Arena_16bitAdder|Arena_fullAdder:inst24
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -184,7 +92,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst31
+|Arena_16bitAdder|Arena_fullAdder:inst23
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -198,7 +106,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst19
+|Arena_16bitAdder|Arena_fullAdder:inst21
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -212,7 +120,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst14
+|Arena_16bitAdder|Arena_fullAdder:inst19
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -226,7 +134,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst32
+|Arena_16bitAdder|Arena_fullAdder:inst18
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -240,7 +148,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst20
+|Arena_16bitAdder|Arena_fullAdder:inst17
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -254,7 +162,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst15
+|Arena_16bitAdder|Arena_fullAdder:inst22
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -268,7 +176,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst33
+|Arena_16bitAdder|Arena_fullAdder:inst20
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -282,7 +190,7 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst21
+|Arena_16bitAdder|Arena_fullAdder:inst191
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
@@ -296,7 +204,63 @@ Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
 Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Arena_32bit_arrayMultiplier|Arena_fullAdder:inst34
+|Arena_16bitAdder|Arena_fullAdder:inst16
+Arena_A_fa => Arena_Sum_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_B_fa => Arena_Sum_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN0
+Arena_Cin_fa => Arena_Sum_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16bitAdder|Arena_fullAdder:inst15
+Arena_A_fa => Arena_Sum_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_B_fa => Arena_Sum_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN0
+Arena_Cin_fa => Arena_Sum_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16bitAdder|Arena_fullAdder:inst14
+Arena_A_fa => Arena_Sum_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_B_fa => Arena_Sum_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN0
+Arena_Cin_fa => Arena_Sum_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16bitAdder|Arena_fullAdder:inst13
+Arena_A_fa => Arena_Sum_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_A_fa => Arena_Cout_fa.IN0
+Arena_B_fa => Arena_Sum_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN1
+Arena_B_fa => Arena_Cout_fa.IN0
+Arena_Cin_fa => Arena_Sum_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Cin_fa => Arena_Cout_fa.IN1
+Arena_Sum_fa <= Arena_Sum_fa.DB_MAX_OUTPUT_PORT_TYPE
+Arena_Cout_fa <= Arena_Cout_fa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arena_16bitAdder|Arena_fullAdder:inst12
 Arena_A_fa => Arena_Sum_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
 Arena_A_fa => Arena_Cout_fa.IN0
