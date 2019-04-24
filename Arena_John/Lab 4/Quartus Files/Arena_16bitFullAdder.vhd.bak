@@ -1,0 +1,29 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 4 - Spring 2019 Due: 4/17/19
+-- Arena_16bitFullAdder.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Arena_16bitFullAdder is 
+	port(
+		Arena_16bitIN_A_fa, Arena_16bitIN_B_fa: in std_logic_vector(15 downto 0);
+		Arena_16bitIN_Cin_fa : in std_logic;
+		Arena_16bitOUT_Sum_fa : out std_logic_vector(15 downto 0);
+		Arena_16bitOUT_Cout_fa : out std_logic
+	);
+end Arena_16bitFullAdder;
+
+architecture Arena_16bitFullAdder_arch of Arena_16bitFullAdder is
+signal Arena_16bitCout_vec : std_logic_vector(15 downto 0);
+signal Arena_16bitCin_vec : std_logic_vector(15 downto 0);
+
+begin
+	---------------------------------------------Adder Bit 0-------------------------------------------------------
+	Arena_16bitOUT_Sum_fa(0) <= Arena_16bitIN_A_fa(0) xor Arena_16bitIN_B_fa(0) xor Arena_16bitIN_Cin_fa;
+	Arena_16bitCout_vec(0) <= (Arena_16bitIN_A_fa(0) and Arena_16bitIN_B_fa(0)) or (Arena_16bitIN_Cin_fa and Arena_16bitIN_A_fa(0))
+	or (Arena_16bitIN_Cin_fa(0) and Arena_16bitIN_B_fa(0)));
+	
+--	Arena_Sum_fa <= Arena_A_fa xor Arena_B_fa xor Arena_Cin_fa ;
+--	Arena_Cout_fa <= (Arena_A_fa and Arena_B_fa) or (Arena_Cin_fa and Arena_A_fa) or (Arena_Cin_fa and Arena_B_fa);
+	
+end Arena_16bitFullAdder_arch;
