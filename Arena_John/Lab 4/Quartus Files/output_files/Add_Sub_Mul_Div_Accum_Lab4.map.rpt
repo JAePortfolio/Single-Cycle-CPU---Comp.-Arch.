@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Add_Sub_Mul_Div_Accum_Lab4
-Tue Apr 23 17:24:35 2019
+Tue Apr 23 22:00:48 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,12 +14,24 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "Arena_fullAdder:FA8"
- 10. Port Connectivity Checks: "Arena_fullAdder:FA4"
- 11. Port Connectivity Checks: "Arena_fullAdder:FA3"
- 12. Port Connectivity Checks: "Arena_fullAdder:FA0"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "Arena_fullAdder:FA224"
+ 10. Port Connectivity Checks: "Arena_fullAdder:FA208"
+ 11. Port Connectivity Checks: "Arena_fullAdder:FA192"
+ 12. Port Connectivity Checks: "Arena_fullAdder:FA176"
+ 13. Port Connectivity Checks: "Arena_fullAdder:FA160"
+ 14. Port Connectivity Checks: "Arena_fullAdder:FA144"
+ 15. Port Connectivity Checks: "Arena_fullAdder:FA128"
+ 16. Port Connectivity Checks: "Arena_fullAdder:FA112"
+ 17. Port Connectivity Checks: "Arena_fullAdder:FA96"
+ 18. Port Connectivity Checks: "Arena_fullAdder:FA80"
+ 19. Port Connectivity Checks: "Arena_fullAdder:FA64"
+ 20. Port Connectivity Checks: "Arena_fullAdder:FA48"
+ 21. Port Connectivity Checks: "Arena_fullAdder:FA32"
+ 22. Port Connectivity Checks: "Arena_fullAdder:FA16"
+ 23. Port Connectivity Checks: "Arena_fullAdder:FA15"
+ 24. Port Connectivity Checks: "Arena_fullAdder:FA0"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +57,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 23 17:24:35 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 23 22:00:48 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Add_Sub_Mul_Div_Accum_Lab4                      ;
-; Top-level Entity Name              ; Arena_4bit_arrayMultipler                       ;
+; Top-level Entity Name              ; Arena_16bit_arrayMultipler                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 33                                              ;
-;     Total combinational functions  ; 33                                              ;
+; Total logic elements               ; 812                                             ;
+;     Total combinational functions  ; 812                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 16                                              ;
+; Total pins                         ; 64                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -62,89 +74,89 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                       ;
-+----------------------------------------------------------------------------+---------------------------+----------------------------+
-; Option                                                                     ; Setting                   ; Default Value              ;
-+----------------------------------------------------------------------------+---------------------------+----------------------------+
-; Device                                                                     ; EP2C35F672C6              ;                            ;
-; Top-level entity name                                                      ; Arena_4bit_arrayMultipler ; Add_Sub_Mul_Div_Accum_Lab4 ;
-; Family name                                                                ; Cyclone II                ; Cyclone IV GX              ;
-; Use smart compilation                                                      ; Off                       ; Off                        ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                        ; On                         ;
-; Enable compact report table                                                ; Off                       ; Off                        ;
-; Restructure Multiplexers                                                   ; Auto                      ; Auto                       ;
-; Create Debugging Nodes for IP Cores                                        ; Off                       ; Off                        ;
-; Preserve fewer node names                                                  ; On                        ; On                         ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                       ; Off                        ;
-; Verilog Version                                                            ; Verilog_2001              ; Verilog_2001               ;
-; VHDL Version                                                               ; VHDL_1993                 ; VHDL_1993                  ;
-; State Machine Processing                                                   ; Auto                      ; Auto                       ;
-; Safe State Machine                                                         ; Off                       ; Off                        ;
-; Extract Verilog State Machines                                             ; On                        ; On                         ;
-; Extract VHDL State Machines                                                ; On                        ; On                         ;
-; Ignore Verilog initial constructs                                          ; Off                       ; Off                        ;
-; Iteration limit for constant Verilog loops                                 ; 5000                      ; 5000                       ;
-; Iteration limit for non-constant Verilog loops                             ; 250                       ; 250                        ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                        ; On                         ;
-; Infer RAMs from Raw Logic                                                  ; On                        ; On                         ;
-; Parallel Synthesis                                                         ; On                        ; On                         ;
-; DSP Block Balancing                                                        ; Auto                      ; Auto                       ;
-; NOT Gate Push-Back                                                         ; On                        ; On                         ;
-; Power-Up Don't Care                                                        ; On                        ; On                         ;
-; Remove Redundant Logic Cells                                               ; Off                       ; Off                        ;
-; Remove Duplicate Registers                                                 ; On                        ; On                         ;
-; Ignore CARRY Buffers                                                       ; Off                       ; Off                        ;
-; Ignore CASCADE Buffers                                                     ; Off                       ; Off                        ;
-; Ignore GLOBAL Buffers                                                      ; Off                       ; Off                        ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                       ; Off                        ;
-; Ignore LCELL Buffers                                                       ; Off                       ; Off                        ;
-; Ignore SOFT Buffers                                                        ; On                        ; On                         ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                       ; Off                        ;
-; Optimization Technique                                                     ; Balanced                  ; Balanced                   ;
-; Carry Chain Length                                                         ; 70                        ; 70                         ;
-; Auto Carry Chains                                                          ; On                        ; On                         ;
-; Auto Open-Drain Pins                                                       ; On                        ; On                         ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                       ; Off                        ;
-; Auto ROM Replacement                                                       ; On                        ; On                         ;
-; Auto RAM Replacement                                                       ; On                        ; On                         ;
-; Auto Shift Register Replacement                                            ; Auto                      ; Auto                       ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto                      ; Auto                       ;
-; Auto Clock Enable Replacement                                              ; On                        ; On                         ;
-; Strict RAM Replacement                                                     ; Off                       ; Off                        ;
-; Allow Synchronous Control Signals                                          ; On                        ; On                         ;
-; Force Use of Synchronous Clear Signals                                     ; Off                       ; Off                        ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                       ; Off                        ;
-; Auto Resource Sharing                                                      ; Off                       ; Off                        ;
-; Allow Any RAM Size For Recognition                                         ; Off                       ; Off                        ;
-; Allow Any ROM Size For Recognition                                         ; Off                       ; Off                        ;
-; Allow Any Shift Register Size For Recognition                              ; Off                       ; Off                        ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                        ; On                         ;
-; Ignore translate_off and synthesis_off directives                          ; Off                       ; Off                        ;
-; Timing-Driven Synthesis                                                    ; Off                       ; Off                        ;
-; Report Parameter Settings                                                  ; On                        ; On                         ;
-; Report Source Assignments                                                  ; On                        ; On                         ;
-; Report Connectivity Checks                                                 ; On                        ; On                         ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                       ; Off                        ;
-; Synchronization Register Chain Length                                      ; 2                         ; 2                          ;
-; PowerPlay Power Optimization                                               ; Normal compilation        ; Normal compilation         ;
-; HDL message level                                                          ; Level2                    ; Level2                     ;
-; Suppress Register Optimization Related Messages                            ; Off                       ; Off                        ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000                      ; 5000                       ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                      ; 5000                       ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                       ; 100                        ;
-; Clock MUX Protection                                                       ; On                        ; On                         ;
-; Auto Gated Clock Conversion                                                ; Off                       ; Off                        ;
-; Block Design Naming                                                        ; Auto                      ; Auto                       ;
-; SDC constraint protection                                                  ; Off                       ; Off                        ;
-; Synthesis Effort                                                           ; Auto                      ; Auto                       ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                        ; On                         ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                       ; Off                        ;
-; Analysis & Synthesis Message Level                                         ; Medium                    ; Medium                     ;
-; Disable Register Merging Across Hierarchies                                ; Auto                      ; Auto                       ;
-; Resource Aware Inference For Block RAM                                     ; On                        ; On                         ;
-; Synthesis Seed                                                             ; 1                         ; 1                          ;
-+----------------------------------------------------------------------------+---------------------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                        ;
++----------------------------------------------------------------------------+----------------------------+----------------------------+
+; Option                                                                     ; Setting                    ; Default Value              ;
++----------------------------------------------------------------------------+----------------------------+----------------------------+
+; Device                                                                     ; EP2C35F672C6               ;                            ;
+; Top-level entity name                                                      ; Arena_16bit_arrayMultipler ; Add_Sub_Mul_Div_Accum_Lab4 ;
+; Family name                                                                ; Cyclone II                 ; Cyclone IV GX              ;
+; Use smart compilation                                                      ; Off                        ; Off                        ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                         ; On                         ;
+; Enable compact report table                                                ; Off                        ; Off                        ;
+; Restructure Multiplexers                                                   ; Auto                       ; Auto                       ;
+; Create Debugging Nodes for IP Cores                                        ; Off                        ; Off                        ;
+; Preserve fewer node names                                                  ; On                         ; On                         ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                        ; Off                        ;
+; Verilog Version                                                            ; Verilog_2001               ; Verilog_2001               ;
+; VHDL Version                                                               ; VHDL_1993                  ; VHDL_1993                  ;
+; State Machine Processing                                                   ; Auto                       ; Auto                       ;
+; Safe State Machine                                                         ; Off                        ; Off                        ;
+; Extract Verilog State Machines                                             ; On                         ; On                         ;
+; Extract VHDL State Machines                                                ; On                         ; On                         ;
+; Ignore Verilog initial constructs                                          ; Off                        ; Off                        ;
+; Iteration limit for constant Verilog loops                                 ; 5000                       ; 5000                       ;
+; Iteration limit for non-constant Verilog loops                             ; 250                        ; 250                        ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                         ; On                         ;
+; Infer RAMs from Raw Logic                                                  ; On                         ; On                         ;
+; Parallel Synthesis                                                         ; On                         ; On                         ;
+; DSP Block Balancing                                                        ; Auto                       ; Auto                       ;
+; NOT Gate Push-Back                                                         ; On                         ; On                         ;
+; Power-Up Don't Care                                                        ; On                         ; On                         ;
+; Remove Redundant Logic Cells                                               ; Off                        ; Off                        ;
+; Remove Duplicate Registers                                                 ; On                         ; On                         ;
+; Ignore CARRY Buffers                                                       ; Off                        ; Off                        ;
+; Ignore CASCADE Buffers                                                     ; Off                        ; Off                        ;
+; Ignore GLOBAL Buffers                                                      ; Off                        ; Off                        ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                        ; Off                        ;
+; Ignore LCELL Buffers                                                       ; Off                        ; Off                        ;
+; Ignore SOFT Buffers                                                        ; On                         ; On                         ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                        ; Off                        ;
+; Optimization Technique                                                     ; Balanced                   ; Balanced                   ;
+; Carry Chain Length                                                         ; 70                         ; 70                         ;
+; Auto Carry Chains                                                          ; On                         ; On                         ;
+; Auto Open-Drain Pins                                                       ; On                         ; On                         ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                        ; Off                        ;
+; Auto ROM Replacement                                                       ; On                         ; On                         ;
+; Auto RAM Replacement                                                       ; On                         ; On                         ;
+; Auto Shift Register Replacement                                            ; Auto                       ; Auto                       ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                       ; Auto                       ;
+; Auto Clock Enable Replacement                                              ; On                         ; On                         ;
+; Strict RAM Replacement                                                     ; Off                        ; Off                        ;
+; Allow Synchronous Control Signals                                          ; On                         ; On                         ;
+; Force Use of Synchronous Clear Signals                                     ; Off                        ; Off                        ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                        ; Off                        ;
+; Auto Resource Sharing                                                      ; Off                        ; Off                        ;
+; Allow Any RAM Size For Recognition                                         ; Off                        ; Off                        ;
+; Allow Any ROM Size For Recognition                                         ; Off                        ; Off                        ;
+; Allow Any Shift Register Size For Recognition                              ; Off                        ; Off                        ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                         ; On                         ;
+; Ignore translate_off and synthesis_off directives                          ; Off                        ; Off                        ;
+; Timing-Driven Synthesis                                                    ; Off                        ; Off                        ;
+; Report Parameter Settings                                                  ; On                         ; On                         ;
+; Report Source Assignments                                                  ; On                         ; On                         ;
+; Report Connectivity Checks                                                 ; On                         ; On                         ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                        ; Off                        ;
+; Synchronization Register Chain Length                                      ; 2                          ; 2                          ;
+; PowerPlay Power Optimization                                               ; Normal compilation         ; Normal compilation         ;
+; HDL message level                                                          ; Level2                     ; Level2                     ;
+; Suppress Register Optimization Related Messages                            ; Off                        ; Off                        ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                       ; 5000                       ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                       ; 5000                       ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                        ; 100                        ;
+; Clock MUX Protection                                                       ; On                         ; On                         ;
+; Auto Gated Clock Conversion                                                ; Off                        ; Off                        ;
+; Block Design Naming                                                        ; Auto                       ; Auto                       ;
+; SDC constraint protection                                                  ; Off                        ; Off                        ;
+; Synthesis Effort                                                           ; Auto                       ; Auto                       ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                         ; On                         ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                        ; Off                        ;
+; Analysis & Synthesis Message Level                                         ; Medium                     ; Medium                     ;
+; Disable Register Merging Across Hierarchies                                ; Auto                       ; Auto                       ;
+; Resource Aware Inference For Block RAM                                     ; On                         ; On                         ;
+; Synthesis Seed                                                             ; 1                          ; 1                          ;
++----------------------------------------------------------------------------+----------------------------+----------------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -158,64 +170,292 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_fullAdder.vhd              ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_fullAdder.vhd           ;         ;
-; Arena_4bit_arrayMultipler.vhd    ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_4bit_arrayMultipler.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                 ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                          ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Arena_fullAdder.vhd              ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_fullAdder.vhd            ;         ;
+; Arena_16bit_arrayMultipler.vhd   ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_16bit_arrayMultipler.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 33                ;
-;                                             ;                   ;
-; Total combinational functions               ; 33                ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 21                ;
-;     -- 3 input functions                    ; 3                 ;
-;     -- <=2 input functions                  ; 9                 ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 33                ;
-;     -- arithmetic mode                      ; 0                 ;
-;                                             ;                   ;
-; Total registers                             ; 0                 ;
-;     -- Dedicated logic registers            ; 0                 ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 16                ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-; Maximum fan-out node                        ; Arena_4bitIN_B[1] ;
-; Maximum fan-out                             ; 9                 ;
-; Total fan-out                               ; 119               ;
-; Average fan-out                             ; 2.43              ;
-+---------------------------------------------+-------------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 812                ;
+;                                             ;                    ;
+; Total combinational functions               ; 812                ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 523                ;
+;     -- 3 input functions                    ; 64                 ;
+;     -- <=2 input functions                  ; 225                ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 812                ;
+;     -- arithmetic mode                      ; 0                  ;
+;                                             ;                    ;
+; Total registers                             ; 0                  ;
+;     -- Dedicated logic registers            ; 0                  ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 64                 ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+; Maximum fan-out node                        ; Arena_16bitIN_B[9] ;
+; Maximum fan-out                             ; 43                 ;
+; Total fan-out                               ; 2766               ;
+; Average fan-out                             ; 3.16               ;
++---------------------------------------------+--------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; |Arena_4bit_arrayMultipler ; 33 (9)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Arena_4bit_arrayMultipler                      ; work         ;
-;    |Arena_fullAdder:FA0|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA0  ; work         ;
-;    |Arena_fullAdder:FA10|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA10 ; work         ;
-;    |Arena_fullAdder:FA11|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA11 ; work         ;
-;    |Arena_fullAdder:FA1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA1  ; work         ;
-;    |Arena_fullAdder:FA2|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA2  ; work         ;
-;    |Arena_fullAdder:FA4|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA4  ; work         ;
-;    |Arena_fullAdder:FA5|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA5  ; work         ;
-;    |Arena_fullAdder:FA6|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA6  ; work         ;
-;    |Arena_fullAdder:FA7|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA7  ; work         ;
-;    |Arena_fullAdder:FA8|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA8  ; work         ;
-;    |Arena_fullAdder:FA9|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_4bit_arrayMultipler|Arena_fullAdder:FA9  ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; |Arena_16bit_arrayMultipler              ; 812 (222)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |Arena_16bit_arrayMultipler                                     ; work         ;
+;    |Arena_fullAdder:FA0|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA0                 ; work         ;
+;    |Arena_fullAdder:FA111|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA111               ; work         ;
+;    |Arena_fullAdder:FA112|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA112               ; work         ;
+;    |Arena_fullAdder:FA127|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA127               ; work         ;
+;    |Arena_fullAdder:FA128|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA128               ; work         ;
+;    |Arena_fullAdder:FA143|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA143               ; work         ;
+;    |Arena_fullAdder:FA144|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA144               ; work         ;
+;    |Arena_fullAdder:FA159|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA159               ; work         ;
+;    |Arena_fullAdder:FA160|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA160               ; work         ;
+;    |Arena_fullAdder:FA16|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA16                ; work         ;
+;    |Arena_fullAdder:FA175|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA175               ; work         ;
+;    |Arena_fullAdder:FA176|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA176               ; work         ;
+;    |Arena_fullAdder:FA191|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA191               ; work         ;
+;    |Arena_fullAdder:FA192|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA192               ; work         ;
+;    |Arena_fullAdder:FA207|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA207               ; work         ;
+;    |Arena_fullAdder:FA208|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA208               ; work         ;
+;    |Arena_fullAdder:FA223|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA223               ; work         ;
+;    |Arena_fullAdder:FA224|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA224               ; work         ;
+;    |Arena_fullAdder:FA239|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA239               ; work         ;
+;    |Arena_fullAdder:FA31|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA31                ; work         ;
+;    |Arena_fullAdder:FA32|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA32                ; work         ;
+;    |Arena_fullAdder:FA47|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA47                ; work         ;
+;    |Arena_fullAdder:FA48|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA48                ; work         ;
+;    |Arena_fullAdder:FA63|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA63                ; work         ;
+;    |Arena_fullAdder:FA64|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA64                ; work         ;
+;    |Arena_fullAdder:FA79|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA79                ; work         ;
+;    |Arena_fullAdder:FA80|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA80                ; work         ;
+;    |Arena_fullAdder:FA95|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA95                ; work         ;
+;    |Arena_fullAdder:FA96|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:FA96                ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:10:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:10:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:11:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:11:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:12:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:12:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:13:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:13:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:14:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:14:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:1:FAX|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:1:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:2:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:2:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:3:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:3:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:4:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:4:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:5:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:5:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:6:FAX|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:6:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:7:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:7:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:8:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:8:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L0:9:FAX|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L0:9:FAX    ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:161:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:161:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:162:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:162:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:163:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:163:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:164:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:164:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:165:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:165:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:166:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:166:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:167:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:167:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:168:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:168:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:169:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:169:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:170:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:170:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:171:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:171:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:172:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:172:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:173:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:173:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L10:174:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L10:174:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:177:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:177:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:178:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:178:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:179:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:179:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:180:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:180:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:181:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:181:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:182:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:182:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:183:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:183:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:184:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:184:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:185:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:185:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:186:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:186:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:187:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:187:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:188:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:188:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:189:FAX| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:189:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L11:190:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L11:190:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:193:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:193:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:194:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:194:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:195:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:195:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:196:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:196:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:197:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:197:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:198:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:198:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:199:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:199:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:200:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:200:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:201:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:201:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:202:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:202:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:203:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:203:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:204:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:204:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:205:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:205:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L12:206:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L12:206:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:209:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:209:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:210:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:210:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:211:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:211:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:212:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:212:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:213:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:213:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:214:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:214:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:215:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:215:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:216:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:216:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:217:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:217:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:218:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:218:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:219:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:219:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:220:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:220:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:221:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:221:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L13:222:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L13:222:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:225:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:225:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:226:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:226:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:227:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:227:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:228:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:228:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:229:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:229:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:230:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:230:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:231:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:231:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:232:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:232:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:233:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:233:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:234:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:234:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:235:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:235:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:236:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:236:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:237:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:237:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L14:238:FAX| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L14:238:FAX ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:17:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:17:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:18:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:18:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:19:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:19:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:20:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:20:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:21:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:21:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:22:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:22:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:23:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:23:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:24:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:24:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:25:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:25:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:26:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:26:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:27:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:27:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:28:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:28:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:29:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:29:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L1:30:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L1:30:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:33:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:33:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:34:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:34:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:35:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:35:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:36:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:36:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:37:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:37:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:38:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:38:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:39:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:39:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:40:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:40:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:41:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:41:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:42:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:42:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:43:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:43:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:44:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:44:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:45:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:45:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L2:46:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L2:46:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:49:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:49:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:50:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:50:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:51:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:51:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:52:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:52:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:53:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:53:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:54:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:54:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:55:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:55:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:56:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:56:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:57:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:57:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:58:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:58:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:59:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:59:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:60:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:60:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:61:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:61:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L3:62:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L3:62:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:65:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:65:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:66:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:66:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:67:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:67:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:68:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:68:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:69:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:69:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:70:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:70:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:71:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:71:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:72:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:72:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:73:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:73:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:74:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:74:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:75:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:75:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:76:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:76:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:77:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:77:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L4:78:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L4:78:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:81:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:81:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:82:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:82:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:83:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:83:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:84:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:84:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:85:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:85:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:86:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:86:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:87:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:87:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:88:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:88:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:89:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:89:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:90:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:90:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:91:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:91:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:92:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:92:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:93:FAX|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:93:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L5:94:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L5:94:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:100:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:100:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:101:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:101:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:102:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:102:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:103:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:103:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:104:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:104:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:105:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:105:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:106:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:106:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:107:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:107:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:108:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:108:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:109:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:109:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:110:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:110:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:97:FAX|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:97:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:98:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:98:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L6:99:FAX|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L6:99:FAX   ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:113:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:113:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:114:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:114:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:115:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:115:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:116:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:116:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:117:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:117:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:118:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:118:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:119:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:119:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:120:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:120:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:121:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:121:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:122:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:122:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:123:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:123:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:124:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:124:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:125:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:125:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L7:126:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L7:126:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:129:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:129:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:130:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:130:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:131:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:131:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:132:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:132:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:133:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:133:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:134:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:134:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:135:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:135:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:136:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:136:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:137:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:137:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:138:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:138:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:139:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:139:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:140:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:140:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:141:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:141:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L8:142:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L8:142:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:145:FAX|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:145:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:146:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:146:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:147:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:147:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:148:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:148:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:149:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:149:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:150:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:150:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:151:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:151:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:152:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:152:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:153:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:153:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:154:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:154:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:155:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:155:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:156:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:156:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:157:FAX|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:157:FAX  ; work         ;
+;    |Arena_fullAdder:\GEN_FA_L9:158:FAX|  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arena_16bit_arrayMultipler|Arena_fullAdder:\GEN_FA_L9:158:FAX  ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,31 +474,139 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "Arena_fullAdder:FA8" ;
-+--------------+-------+----------+---------------+
-; Port         ; Type  ; Severity ; Details       ;
-+--------------+-------+----------+---------------+
-; arena_cin_fa ; Input ; Info     ; Stuck at GND  ;
-+--------------+-------+----------+---------------+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA224" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "Arena_fullAdder:FA4" ;
-+--------------+-------+----------+---------------+
-; Port         ; Type  ; Severity ; Details       ;
-+--------------+-------+----------+---------------+
-; arena_cin_fa ; Input ; Info     ; Stuck at GND  ;
-+--------------+-------+----------+---------------+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA208" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
 
 
-+-------------------------------------------------+
-; Port Connectivity Checks: "Arena_fullAdder:FA3" ;
-+------------+-------+----------+-----------------+
-; Port       ; Type  ; Severity ; Details         ;
-+------------+-------+----------+-----------------+
-; arena_a_fa ; Input ; Info     ; Stuck at GND    ;
-+------------+-------+----------+-----------------+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA192" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA176" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA160" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA144" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA128" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA112" ;
++--------------+-------+----------+-----------------+
+; Port         ; Type  ; Severity ; Details         ;
++--------------+-------+----------+-----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND    ;
++--------------+-------+----------+-----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA96" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA80" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA64" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA48" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA32" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA16" ;
++--------------+-------+----------+----------------+
+; Port         ; Type  ; Severity ; Details        ;
++--------------+-------+----------+----------------+
+; arena_cin_fa ; Input ; Info     ; Stuck at GND   ;
++--------------+-------+----------+----------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Arena_fullAdder:FA15" ;
++------------+-------+----------+------------------+
+; Port       ; Type  ; Severity ; Details          ;
++------------+-------+----------+------------------+
+; arena_a_fa ; Input ; Info     ; Stuck at GND     ;
++------------+-------+----------+------------------+
 
 
 +-------------------------------------------------+
@@ -275,7 +623,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -285,7 +633,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 23 17:24:31 2019
+    Info: Processing started: Tue Apr 23 22:00:41 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file arena_4bit_arraymultiplier.bdf
@@ -316,18 +664,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file arena_1
 Info (12021): Found 2 design units, including 1 entities, in source file arena_4bit_arraymultipler.vhd
     Info (12022): Found design unit 1: Arena_4bit_arrayMultipler-Arena_4bit_arrayMultipler_arch
     Info (12023): Found entity 1: Arena_4bit_arrayMultipler
-Info (12127): Elaborating entity "Arena_4bit_arrayMultipler" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file arena_16bit_arraymultipler.vhd
+    Info (12022): Found design unit 1: Arena_16bit_arrayMultipler-Arena_16bit_arrayMultipler_arch
+    Info (12023): Found entity 1: Arena_16bit_arrayMultipler
+Info (12127): Elaborating entity "Arena_16bit_arrayMultipler" for the top level hierarchy
 Info (12128): Elaborating entity "Arena_fullAdder" for hierarchy "Arena_fullAdder:FA0"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 33 logic cells
+Info (21057): Implemented 876 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 812 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 475 megabytes
-    Info: Processing ended: Tue Apr 23 17:24:35 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 491 megabytes
+    Info: Processing ended: Tue Apr 23 22:00:48 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
