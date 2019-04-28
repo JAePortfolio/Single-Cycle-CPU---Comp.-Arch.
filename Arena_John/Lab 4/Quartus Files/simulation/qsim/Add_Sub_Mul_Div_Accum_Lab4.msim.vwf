@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -42,167 +42,167 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[15]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[14]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[13]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[12]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[11]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[10]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[9]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[8]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[7]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[6]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[5]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[4]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[3]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[2]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[1]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[0]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_A[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_A";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -212,167 +212,167 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[15]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[14]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[13]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[12]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[11]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[10]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[9]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[8]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[7]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[6]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[5]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[4]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[3]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[2]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[1]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[0]")
+SIGNAL("test_vlg_vec_tst|Arena_16bitIN_B[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	PARENT = "test_vlg_vec_tst|Arena_16bitIN_B";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_Cin_fa")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[31]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -382,7 +382,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_Cin_fa")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Cout_fa")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[30]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -392,7 +392,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Cout_fa")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[15]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[29]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -402,7 +402,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[15]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[14]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[28]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -412,7 +412,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[14]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[13]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[27]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,7 +422,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[13]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[12]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[26]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -432,7 +432,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[12]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[11]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[25]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -442,7 +442,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[11]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[10]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[24]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,7 +452,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[10]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[9]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[23]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -462,7 +462,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[9]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[8]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[22]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -472,7 +472,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[8]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[7]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[21]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -482,7 +482,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[7]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[6]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[20]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -492,7 +492,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[6]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[5]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[19]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -502,7 +502,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[5]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[4]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[18]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -512,7 +512,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[4]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[3]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[17]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -522,7 +522,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[3]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[2]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[16]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -532,7 +532,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[2]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[1]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -542,7 +542,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[1]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[0]")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -552,7 +552,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[0]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|sampler")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -562,7 +562,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|sampler")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|gnd")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -572,7 +572,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|gnd")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|vcc")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -582,7 +582,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|vcc")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|unknown")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -592,7 +592,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|unknown")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devclrn")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -602,7 +602,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devclrn")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devpor")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -612,7 +612,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devpor")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devoe")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -622,7 +622,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_Cin_fa~combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -632,7 +632,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_Cin_fa~combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~0_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -642,7 +642,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~0_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~9_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -652,7 +652,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~9_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~8_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -662,7 +662,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~1_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -672,7 +672,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[1]~10_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -682,7 +682,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[1]~10_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~2_combout")
+SIGNAL("test_vlg_vec_tst|Arena_32bitOUT[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -692,7 +692,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~11_combout")
+SIGNAL("test_vlg_vec_tst|sampler")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -702,7 +702,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~11_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~12_combout")
+SIGNAL("test_vlg_vec_tst|i1|gnd")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -712,7 +712,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~12_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~3_combout")
+SIGNAL("test_vlg_vec_tst|i1|vcc")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -722,7 +722,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~3_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[3]~13_combout")
+SIGNAL("test_vlg_vec_tst|i1|unknown")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -732,7 +732,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[3]~13_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~4_combout")
+SIGNAL("test_vlg_vec_tst|i1|devclrn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -742,7 +742,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~4_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~33_combout")
+SIGNAL("test_vlg_vec_tst|i1|devpor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -752,7 +752,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~33_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~14_combout")
+SIGNAL("test_vlg_vec_tst|i1|devoe")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -762,7 +762,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~14_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~15_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_andGate~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -772,7 +772,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~15_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~16_combout")
+SIGNAL("test_vlg_vec_tst|i1|nbitFA_L0:0:nbitFA0|Arena_16bitOUT_Sum_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -782,7 +782,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~16_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~5_combout")
+SIGNAL("test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -792,7 +792,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~5_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[5]~17_combout")
+SIGNAL("test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -802,7 +802,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[5]~17_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~6_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -812,7 +812,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~6_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~18_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -822,7 +822,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~18_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~19_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -832,7 +832,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~19_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~7_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -842,7 +842,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~7_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[7]~20_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -852,7 +852,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[7]~20_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~8_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -862,7 +862,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~8_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~21_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -872,7 +872,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~21_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~22_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -882,7 +882,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~22_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~9_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -892,7 +892,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~9_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[9]~23_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -902,7 +902,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[9]~23_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~10_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -912,7 +912,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~10_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~24_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -922,7 +922,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~24_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~25_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -932,7 +932,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~25_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~11_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -942,7 +942,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~11_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[11]~26_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -952,7 +952,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[11]~26_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~12_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -962,7 +962,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~12_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~28_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -972,7 +972,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~28_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~27_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -982,7 +982,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~27_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~13_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -992,7 +992,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~13_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[13]~29_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1002,7 +1002,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[13]~29_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~14_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1012,7 +1012,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~14_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~30_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1022,7 +1022,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~30_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~31_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1032,7 +1032,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~31_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~15_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1042,7 +1042,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~15_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec~32_combout")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1052,7 +1052,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec~32_combout")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[15]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1062,7 +1062,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[15]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[14]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1072,7 +1072,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[14]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[13]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1082,7 +1082,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[13]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[12]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1092,7 +1092,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[12]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[11]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1102,7 +1102,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[11]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[10]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1112,7 +1112,7 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[10]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[9]")
+SIGNAL("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -1122,545 +1122,27 @@ SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[9]")
 	PARENT = "";
 }
 
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[15]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[14]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[13]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[12]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[15]")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[15]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 16.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[14]")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[14]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 16.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_Cin_fa")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[13]")
 {
 	NODE
 	{
@@ -1669,151 +1151,17 @@ TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_Cin_fa")
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Cout_fa")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[12]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 153.0;
+		LEVEL 1 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[0]")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[11]")
 {
 	NODE
 	{
@@ -1822,7 +1170,1345 @@ TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[0]")
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|sampler")
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 16.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 16.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 16.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 144.0;
+		LEVEL 1 FOR 9.0;
+		LEVEL 0 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 153.0;
+		LEVEL 1 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 72.0;
+		LEVEL 1 FOR 81.0;
+		LEVEL 0 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 36.0;
+		LEVEL 1 FOR 36.0;
+		LEVEL 0 FOR 36.0;
+		LEVEL 1 FOR 45.0;
+		LEVEL 0 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_A[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 16.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 14.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 12.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 16.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 16.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 14.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_16bitIN_B[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 22.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 7.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|Arena_32bitOUT[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 26.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 26.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 16.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("test_vlg_vec_tst|i1|unknown")
 {
 	NODE
 	{
@@ -1831,331 +2517,16 @@ TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|sampler")
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|gnd")
+TRANSITION_LIST("test_vlg_vec_tst|i1|devclrn")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|vcc")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|unknown")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|devclrn")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|devpor")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|devoe")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_Cin_fa~combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~0_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~9_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~1_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[1]~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~11_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~3_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[3]~13_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~4_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~33_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~14_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~15_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~16_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~5_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[5]~17_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~6_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~18_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~19_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~7_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[7]~20_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~8_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~21_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~22_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~9_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[9]~23_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~10_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~24_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
 		LEVEL 1 FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~25_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|devpor")
 {
 	NODE
 	{
@@ -2164,7 +2535,7 @@ TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~25_
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~11_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|devoe")
 {
 	NODE
 	{
@@ -2173,396 +2544,564 @@ TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~11_co
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[11]~26_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_andGate~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~12_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~28_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~27_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~13_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[13]~29_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~14_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~30_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 26.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 26.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 16.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~31_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|nbitFA_L0:0:nbitFA0|Arena_16bitOUT_Sum_fa~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 22.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~15_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~0_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 36.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec~32_combout")
+TRANSITION_LIST("test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~1_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[15]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[15]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[14]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[14]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[13]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[13]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[12]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[12]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[11]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[11]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[10]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[10]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[9]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[9]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[8]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[8]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[7]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[6]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[5]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[4]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[3]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[2]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 72.0;
+		LEVEL 1 FOR 81.0;
+		LEVEL 0 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[1]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 36.0;
+		LEVEL 1 FOR 36.0;
+		LEVEL 0 FOR 36.0;
+		LEVEL 1 FOR 45.0;
+		LEVEL 0 FOR 7.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[0]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 18.0;
+		LEVEL 0 FOR 16.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[15]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[15]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[14]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[14]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[13]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[13]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[12]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[12]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[11]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[11]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[10]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[10]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[9]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[9]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[8]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[8]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[7]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[6]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[5]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[4]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[3]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL Z FOR 160.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[2]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[1]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 18.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
 	}
 }
 
-TRANSITION_LIST("Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[0]")
+TRANSITION_LIST("test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 12.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -2572,7 +3111,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[15]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -2582,7 +3121,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[14]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -2592,7 +3131,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[13]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -2602,7 +3141,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[12]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -2612,7 +3151,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[11]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -2622,7 +3161,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[10]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -2632,7 +3171,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[9]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -2642,7 +3181,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[8]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -2652,7 +3191,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[7]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -2662,7 +3201,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[6]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
@@ -2672,7 +3211,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[5]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -2682,7 +3221,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[4]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
@@ -2692,7 +3231,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[3]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
@@ -2702,7 +3241,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[2]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -2712,7 +3251,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[1]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -2722,7 +3261,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_A_fa[0]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_A[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -2732,7 +3271,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -2742,7 +3281,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[15]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -2752,7 +3291,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[14]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -2762,7 +3301,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[13]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -2772,7 +3311,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[12]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -2782,7 +3321,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[11]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -2792,7 +3331,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[10]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -2802,7 +3341,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[9]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -2812,7 +3351,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[8]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -2822,7 +3361,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[7]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -2832,7 +3371,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[6]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -2842,7 +3381,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[5]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -2852,7 +3391,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[4]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -2862,7 +3401,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[3]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -2872,7 +3411,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[2]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -2882,7 +3421,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[1]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -2892,7 +3431,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_B_fa[0]";
+	CHANNEL = "test_vlg_vec_tst|Arena_16bitIN_B[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -2902,7 +3441,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitIN_Cin_fa";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -2911,7 +3450,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Cout_fa";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -2920,7 +3459,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[15]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -2929,7 +3468,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[14]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -2938,7 +3477,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[13]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -2947,7 +3486,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[12]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -2956,7 +3495,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[11]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -2965,7 +3504,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[10]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -2974,7 +3513,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[9]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -2983,7 +3522,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[8]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -2992,7 +3531,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[7]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -3001,7 +3540,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[6]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -3010,7 +3549,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[5]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -3019,7 +3558,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[4]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -3028,7 +3567,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[3]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -3037,7 +3576,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[2]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -3046,7 +3585,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[1]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -3055,7 +3594,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|Arena_16bitOUT_Sum_fa[0]";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -3064,7 +3603,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|sampler";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -3073,7 +3612,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|gnd";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -3082,7 +3621,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|vcc";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -3091,7 +3630,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|unknown";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -3100,7 +3639,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -3109,7 +3648,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|devpor";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -3118,7 +3657,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|devoe";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -3127,7 +3666,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_Cin_fa~combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -3136,7 +3675,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~0_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -3145,7 +3684,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~9_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -3154,7 +3693,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[0]~8_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -3163,7 +3702,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~1_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -3172,7 +3711,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[1]~10_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -3181,7 +3720,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~2_combout";
+	CHANNEL = "test_vlg_vec_tst|Arena_32bitOUT[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -3190,7 +3729,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~11_combout";
+	CHANNEL = "test_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -3199,7 +3738,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[2]~12_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -3208,7 +3747,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~3_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -3217,7 +3756,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[3]~13_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -3226,7 +3765,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~4_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -3235,7 +3774,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~33_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -3244,7 +3783,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~14_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -3253,7 +3792,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~15_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_andGate~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -3262,7 +3801,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[4]~16_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|nbitFA_L0:0:nbitFA0|Arena_16bitOUT_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -3271,7 +3810,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~5_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -3280,7 +3819,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[5]~17_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|nbitFA_L1:0:nbitFA1|Arena_16bitOUT_Sum_fa~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -3289,7 +3828,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~6_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -3298,7 +3837,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~18_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -3307,7 +3846,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[6]~19_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -3316,7 +3855,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~7_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -3325,7 +3864,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[7]~20_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -3334,7 +3873,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~8_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -3343,7 +3882,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~21_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -3352,7 +3891,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[8]~22_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -3361,7 +3900,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~9_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -3370,7 +3909,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[9]~23_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -3379,7 +3918,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~10_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
@@ -3388,7 +3927,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~24_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 88;
@@ -3397,7 +3936,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[10]~25_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 89;
@@ -3406,7 +3945,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~11_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 90;
@@ -3415,7 +3954,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[11]~26_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 91;
@@ -3424,7 +3963,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~12_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_A~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 92;
@@ -3433,7 +3972,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~28_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 93;
@@ -3442,7 +3981,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[12]~27_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 94;
@@ -3451,7 +3990,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~13_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 95;
@@ -3460,7 +3999,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[13]~29_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 96;
@@ -3469,7 +4008,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~14_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 97;
@@ -3478,7 +4017,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~30_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 98;
@@ -3487,7 +4026,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec[14]~31_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 99;
@@ -3496,7 +4035,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitOUT_Sum_fa~15_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 100;
@@ -3505,7 +4044,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitCout_vec~32_combout";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 101;
@@ -3514,7 +4053,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[15]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 102;
@@ -3523,7 +4062,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[14]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 103;
@@ -3532,7 +4071,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[13]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 104;
@@ -3541,7 +4080,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[12]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 105;
@@ -3550,7 +4089,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[11]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 106;
@@ -3559,7 +4098,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[10]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 107;
@@ -3568,235 +4107,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[9]";
+	CHANNEL = "test_vlg_vec_tst|i1|Arena_16bitIN_B~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 108;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 109;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 110;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 111;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 112;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 113;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 114;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 115;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 116;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_B_fa~combout[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 117;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[15]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 118;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[14]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 119;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[13]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 120;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[12]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 121;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[11]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 122;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 123;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 124;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 125;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 126;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 127;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 128;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 129;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 130;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 131;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 132;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Arena_16bitFullAdder_vlg_vec_tst|i1|Arena_16bitIN_A_fa~combout[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 133;
 	TREE_LEVEL = 0;
 }
 ;

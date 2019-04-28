@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Apr 24 16:55:28 2019
+Analysis & Synthesis Status : Successful - Sat Apr 27 19:29:15 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Add_Sub_Mul_Div_Accum_Lab4
-Top-level Entity Name : Arena_16bitFullAdder
+Top-level Entity Name : test
 Family : Cyclone II
-Total logic elements : 42
-    Total combinational functions : 42
+Total logic elements : 4
+    Total combinational functions : 4
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 50
+Total pins : 64
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
