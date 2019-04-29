@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Add_Sub_Mul_Div_Accum_Lab4
-Sat Apr 27 19:29:33 2019
+Sun Apr 28 20:05:15 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,23 +16,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Propagation Delay
- 12. Minimum Propagation Delay
- 13. Fast Model Setup Summary
- 14. Fast Model Hold Summary
- 15. Fast Model Recovery Summary
- 16. Fast Model Removal Summary
- 17. Fast Model Minimum Pulse Width Summary
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Multicorner Timing Analysis Summary
- 21. Progagation Delay
- 22. Minimum Progagation Delay
- 23. Clock Transfers
- 24. Report TCCS
- 25. Report RSKM
- 26. Unconstrained Paths
- 27. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Datasheet Report
+ 12. Fast Model Setup Summary
+ 13. Fast Model Hold Summary
+ 14. Fast Model Recovery Summary
+ 15. Fast Model Removal Summary
+ 16. Fast Model Minimum Pulse Width Summary
+ 17. Fast Model Datasheet Report
+ 18. Multicorner Timing Analysis Summary
+ 19. Clock Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -68,15 +64,21 @@ applicable agreement for further details.
 +--------------------+-------------------------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
 ----------
@@ -121,44 +123,10 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------------------+
-; Propagation Delay                                                      ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 9.330 ;       ;       ; 9.330 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 9.185 ; 9.185 ; 9.185 ; 9.185 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 9.322 ; 9.322 ; 9.322 ; 9.322 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 8.872 ; 8.872 ; 8.872 ; 8.872 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 9.230 ; 9.230 ; 9.230 ; 9.230 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 9.566 ; 9.566 ; 9.566 ; 9.566 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 9.201 ;       ;       ; 9.201 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 9.057 ; 9.057 ; 9.057 ; 9.057 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 9.721 ; 9.721 ; 9.721 ; 9.721 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 8.645 ; 8.645 ; 8.645 ; 8.645 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 9.584 ; 9.584 ; 9.584 ; 9.584 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 9.446 ; 9.446 ; 9.446 ; 9.446 ;
-+--------------------+-------------------+-------+-------+-------+-------+
-
-
-+------------------------------------------------------------------------+
-; Minimum Propagation Delay                                              ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 9.330 ;       ;       ; 9.330 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 9.185 ; 9.185 ; 9.185 ; 9.185 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 9.322 ; 9.322 ; 9.322 ; 9.322 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 8.872 ; 8.872 ; 8.872 ; 8.872 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 9.230 ; 9.230 ; 9.230 ; 9.230 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 9.566 ; 9.566 ; 9.566 ; 9.566 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 9.201 ;       ;       ; 9.201 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 9.057 ; 9.057 ; 9.057 ; 9.057 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 9.721 ; 9.721 ; 9.721 ; 9.721 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 8.645 ; 8.645 ; 8.645 ; 8.645 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 9.584 ; 9.584 ; 9.584 ; 9.584 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 9.446 ; 9.446 ; 9.446 ; 9.446 ;
-+--------------------+-------------------+-------+-------+-------+-------+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -191,44 +159,10 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------------------+
-; Propagation Delay                                                      ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 5.226 ;       ;       ; 5.226 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 5.171 ; 5.171 ; 5.171 ; 5.171 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 5.222 ; 5.222 ; 5.222 ; 5.222 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 5.019 ; 5.019 ; 5.019 ; 5.019 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 5.173 ; 5.173 ; 5.173 ; 5.173 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 5.193 ;       ;       ; 5.193 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 5.114 ; 5.114 ; 5.114 ; 5.114 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 5.396 ; 5.396 ; 5.396 ; 5.396 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 4.938 ; 4.938 ; 4.938 ; 4.938 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 5.278 ; 5.278 ; 5.278 ; 5.278 ;
-+--------------------+-------------------+-------+-------+-------+-------+
-
-
-+------------------------------------------------------------------------+
-; Minimum Propagation Delay                                              ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 5.226 ;       ;       ; 5.226 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 5.171 ; 5.171 ; 5.171 ; 5.171 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 5.222 ; 5.222 ; 5.222 ; 5.222 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 5.019 ; 5.019 ; 5.019 ; 5.019 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 5.173 ; 5.173 ; 5.173 ; 5.173 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 5.193 ;       ;       ; 5.193 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 5.114 ; 5.114 ; 5.114 ; 5.114 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 5.396 ; 5.396 ; 5.396 ; 5.396 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 4.938 ; 4.938 ; 4.938 ; 4.938 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 5.278 ; 5.278 ; 5.278 ; 5.278 ;
-+--------------------+-------------------+-------+-------+-------+-------+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +----------------------------------------------------------------------------+
@@ -239,46 +173,6 @@ No paths to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+------------------------------------------------------------------------+
-; Progagation Delay                                                      ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 9.330 ;       ;       ; 9.330 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 9.185 ; 9.185 ; 9.185 ; 9.185 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 9.322 ; 9.322 ; 9.322 ; 9.322 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 8.872 ; 8.872 ; 8.872 ; 8.872 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 9.230 ; 9.230 ; 9.230 ; 9.230 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 9.566 ; 9.566 ; 9.566 ; 9.566 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 9.201 ;       ;       ; 9.201 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 9.057 ; 9.057 ; 9.057 ; 9.057 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 9.721 ; 9.721 ; 9.721 ; 9.721 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 8.645 ; 8.645 ; 8.645 ; 8.645 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 9.584 ; 9.584 ; 9.584 ; 9.584 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 9.446 ; 9.446 ; 9.446 ; 9.446 ;
-+--------------------+-------------------+-------+-------+-------+-------+
-
-
-+------------------------------------------------------------------------+
-; Minimum Progagation Delay                                              ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Input Port         ; Output Port       ; RR    ; RF    ; FR    ; FF    ;
-+--------------------+-------------------+-------+-------+-------+-------+
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[0] ; 5.226 ;       ;       ; 5.226 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[1] ; 5.171 ; 5.171 ; 5.171 ; 5.171 ;
-; Arena_16bitIN_A[0] ; Arena_32bitOUT[2] ; 5.222 ; 5.222 ; 5.222 ; 5.222 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[1] ; 5.019 ; 5.019 ; 5.019 ; 5.019 ;
-; Arena_16bitIN_A[1] ; Arena_32bitOUT[2] ; 5.173 ; 5.173 ; 5.173 ; 5.173 ;
-; Arena_16bitIN_A[2] ; Arena_32bitOUT[2] ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[0] ; 5.193 ;       ;       ; 5.193 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[1] ; 5.114 ; 5.114 ; 5.114 ; 5.114 ;
-; Arena_16bitIN_B[0] ; Arena_32bitOUT[2] ; 5.396 ; 5.396 ; 5.396 ; 5.396 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[1] ; 4.938 ; 4.938 ; 4.938 ; 4.938 ;
-; Arena_16bitIN_B[1] ; Arena_32bitOUT[2] ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; Arena_16bitIN_B[2] ; Arena_32bitOUT[2] ; 5.278 ; 5.278 ; 5.278 ; 5.278 ;
-+--------------------+-------------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -306,10 +200,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 12    ; 12   ;
-; Unconstrained Output Ports      ; 3     ; 3    ;
-; Unconstrained Output Port Paths ; 12    ; 12   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -319,10 +213,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Apr 27 19:29:31 2019
+    Info: Processing started: Sun Apr 28 20:05:13 2019
 Info: Command: quartus_sta Add_Sub_Mul_Div_Accum_Lab4 -c Add_Sub_Mul_Div_Accum_Lab4
 Info: qsta_default_script.tcl version: #1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Add_Sub_Mul_Div_Accum_Lab4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -349,12 +243,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Sat Apr 27 19:29:33 2019
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4589 megabytes
+    Info: Processing ended: Sun Apr 28 20:05:15 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
