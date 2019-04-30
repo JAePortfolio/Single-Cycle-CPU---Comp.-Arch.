@@ -59,6 +59,13 @@ applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "Arena_reset" (rect 0 0 51 12)(font "Arial" ))
+		(text "Arena_reset" (rect 21 107 72 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
 		(pt 312 32)
 		(output)
 		(text "Arena_Sum_32bit[31..0]" (rect 0 0 97 12)(font "Arial" ))

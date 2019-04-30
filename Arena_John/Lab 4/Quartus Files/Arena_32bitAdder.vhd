@@ -12,7 +12,8 @@ port(
 	Arena_Sum_32bit : out std_logic_vector(31 downto 0);
 	Arena_Difference_32bit : out std_logic_vector(31 downto 0);
 	Arena_Cout_32bit : out std_logic; -- Carry out
-	Arena_Bout_32bit : out std_logic -- Borrow out
+	Arena_Bout_32bit : out std_logic; -- Borrow out
+	Arena_reset : in std_logic -- Active low reset
 	);
 end Arena_32bitAdder;
 
@@ -34,7 +35,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 --Arena_Cout_fa <= (Arena_A_fa and Arena_B_fa) or (Arena_Cin_fa and Arena_A_fa) or  (Arena_Cin_fa and Arena_B_fa);
 
 	begin
-		process(Arena_A_32bit, Arena_B_32bit, Arena_Cin_32bit, Arena_sub_add)
+		process(Arena_A_32bit, Arena_B_32bit, Arena_Cin_32bit, Arena_sub_add, Arena_reset)
 			variable Arena_Cin_32bit_vars : std_logic_vector(31 downto 0):= (others => '0');
 			variable Arena_Cout_32bit_vars : std_logic_vector(31 downto 0):= (others => '0');
 			variable Arena_Bin_32bit_vars : std_logic_vector(31 downto 0):= (others => '0');
@@ -93,6 +94,12 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 					or ((not Arena_A_32bit(31)) and Arena_B_32bit(31)) or (Arena_Bin_32bit_vars(31) and Arena_B_32bit(31));
 				else
 					null;
+			end if;
+			if(Arena_reset = '0') then
+				Arena_Sum_32bit <= "00000000000000000000000000000000";
+				Arena_Difference_32bit <= "00000000000000000000000000000000";
+			else 
+				null;
 			end if;
 		end process;
 		
