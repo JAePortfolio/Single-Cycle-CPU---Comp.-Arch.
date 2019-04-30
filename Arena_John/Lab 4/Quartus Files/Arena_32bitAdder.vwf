@@ -1042,6 +1042,356 @@ SIGNAL("Arena_Sum_32bit[4]")
 	PARENT = "Arena_Sum_32bit";
 }
 
+SIGNAL("Arena_sub_add")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_Difference_32bit")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 32;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Arena_Difference_32bit[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Difference_32bit[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Arena_Difference_32bit";
+}
+
+SIGNAL("Arena_Bin_32bit")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("Arena_A_32bit[3]")
 {
 	NODE
@@ -2019,6 +2369,312 @@ TRANSITION_LIST("Arena_Sum_32bit[4]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_sub_add")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Difference_32bit[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 160.0;
+	}
+}
+
+TRANSITION_LIST("Arena_Bin_32bit")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -3028,6 +3684,354 @@ DISPLAY_LINE
 	TREE_INDEX = 100;
 	TREE_LEVEL = 1;
 	PARENT = 68;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_sub_add";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 0;
+	CHILDREN = 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 103;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 104;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 105;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 106;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 107;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 108;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 109;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 110;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 111;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 112;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 113;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 114;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 115;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 116;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 117;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 118;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 119;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 120;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 121;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 122;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 123;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 124;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 125;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 126;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 127;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 128;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 129;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 130;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 131;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 132;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 133;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Difference_32bit[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 134;
+	TREE_LEVEL = 1;
+	PARENT = 102;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Arena_Bin_32bit";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 135;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR
