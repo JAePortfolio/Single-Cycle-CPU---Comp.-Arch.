@@ -3,64 +3,48 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'Arena_sub_add'
-Slack : -16.534
-TNS   : -635.793
+Slack : -17.365
+TNS   : -642.215
 
 Type  : Slow Model Setup 'Arena_clk'
-Slack : -0.953
-TNS   : -2.328
+Slack : -0.720
+TNS   : -1.388
 
 Type  : Slow Model Hold 'Arena_clk'
-Slack : -0.284
-TNS   : -2.907
+Slack : 0.147
+TNS   : 0.000
 
 Type  : Slow Model Hold 'Arena_sub_add'
-Slack : 1.106
+Slack : 1.132
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'Arena_clk'
 Slack : -1.380
 TNS   : -65.380
 
-Type  : Slow Model Minimum Pulse Width 'Arena_button[0]'
-Slack : -1.380
-TNS   : -1.380
-
-Type  : Slow Model Minimum Pulse Width 'Arena_button[1]'
-Slack : -1.380
-TNS   : -1.380
-
 Type  : Slow Model Minimum Pulse Width 'Arena_sub_add'
 Slack : -1.380
 TNS   : -1.380
 
 Type  : Fast Model Setup 'Arena_sub_add'
-Slack : -6.466
-TNS   : -248.710
+Slack : -7.099
+TNS   : -251.280
 
 Type  : Fast Model Setup 'Arena_clk'
-Slack : -0.117
-TNS   : -0.117
+Slack : -0.009
+TNS   : -0.009
 
 Type  : Fast Model Hold 'Arena_clk'
-Slack : -0.268
-TNS   : -9.642
+Slack : -0.281
+TNS   : -7.847
 
 Type  : Fast Model Hold 'Arena_sub_add'
-Slack : 0.591
+Slack : 0.630
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'Arena_clk'
 Slack : -1.380
 TNS   : -65.380
-
-Type  : Fast Model Minimum Pulse Width 'Arena_button[0]'
-Slack : -1.380
-TNS   : -1.380
-
-Type  : Fast Model Minimum Pulse Width 'Arena_button[1]'
-Slack : -1.380
-TNS   : -1.380
 
 Type  : Fast Model Minimum Pulse Width 'Arena_sub_add'
 Slack : -1.380
