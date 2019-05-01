@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 328 176)
+	(rect 16 16 360 176)
 	(text "Arena_32bitAccumulator" (rect 5 0 146 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -66,27 +66,27 @@ applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
-		(pt 312 32)
+		(pt 344 32)
 		(output)
-		(text "Arena_Sum_32bit[31..0]" (rect 0 0 136 14)(font "Arial" (font_size 8)))
-		(text "Arena_Sum_32bit[31..0]" (rect 155 27 291 41)(font "Arial" (font_size 8)))
-		(line (pt 312 32)(pt 296 32)(line_width 3))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 0 0 172 14)(font "Arial" (font_size 8)))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 151 27 323 41)(font "Arial" (font_size 8)))
+		(line (pt 344 32)(pt 328 32)(line_width 3))
 	)
 	(port
-		(pt 312 48)
+		(pt 344 48)
 		(output)
 		(text "Arena_Cout_32bit" (rect 0 0 102 14)(font "Arial" (font_size 8)))
-		(text "Arena_Cout_32bit" (rect 189 43 291 57)(font "Arial" (font_size 8)))
-		(line (pt 312 48)(pt 296 48))
+		(text "Arena_Cout_32bit" (rect 221 43 323 57)(font "Arial" (font_size 8)))
+		(line (pt 344 48)(pt 328 48))
 	)
 	(port
-		(pt 312 64)
+		(pt 344 64)
 		(output)
 		(text "Arena_Bout_32bit" (rect 0 0 102 14)(font "Arial" (font_size 8)))
-		(text "Arena_Bout_32bit" (rect 189 59 291 73)(font "Arial" (font_size 8)))
-		(line (pt 312 64)(pt 296 64))
+		(text "Arena_Bout_32bit" (rect 221 59 323 73)(font "Arial" (font_size 8)))
+		(line (pt 344 64)(pt 328 64))
 	)
 	(drawing
-		(rectangle (rect 16 16 296 144))
+		(rectangle (rect 16 16 328 144))
 	)
 )

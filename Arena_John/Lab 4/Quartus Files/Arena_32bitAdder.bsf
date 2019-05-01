@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 312 32)
 		(output)
-		(text "Arena_Sum_32bit[31..0]" (rect 0 0 97 12)(font "Arial" ))
-		(text "Arena_Sum_32bit[31..0]" (rect 194 27 291 39)(font "Arial" ))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 0 0 123 12)(font "Arial" ))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 168 27 291 39)(font "Arial" ))
 		(line (pt 312 32)(pt 296 32)(line_width 3))
 	)
 	(port

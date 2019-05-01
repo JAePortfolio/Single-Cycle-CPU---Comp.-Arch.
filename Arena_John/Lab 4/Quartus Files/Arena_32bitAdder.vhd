@@ -9,7 +9,7 @@ port(
 	Arena_sub_add: in std_logic; -- 1 = subtraciton, 0 = addition
 	Arena_Cin_32bit : in std_logic; -- Carry for addition, also used for borrowing in subtraction
 	Arena_Bin_32bit : in std_logic; -- Borrow in
-	Arena_Sum_32bit : out std_logic_vector(31 downto 0);
+	Arena_AccumOut_32bit : out std_logic_vector(31 downto 0);
 	Arena_Difference_32bit : out std_logic_vector(31 downto 0);
 	Arena_Cout_32bit : out std_logic; -- Carry out
 	Arena_Bout_32bit : out std_logic; -- Borrow out
@@ -26,10 +26,10 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 --	end component;
 --	signal Arena_c1, Arena_c2, Arena_c3 : std_logic;
 --	begin 
---		FA1: Arena_32bitAdder_comp port map (Arena_A_32bit(0), Arena_B_32bit(0), Arena_Cin_32bit, Arena_Sum_32bit(0), Arena_c1);
---		FA2: Arena_32bitAdder_comp port map (Arena_A_32bit(1), Arena_B_32bit(1), Arena_c1, Arena_Sum_32bit(1), Arena_c2);
---		FA3: Arena_32bitAdder_comp port map (Arena_A_32bit(2), Arena_B_32bit(2), Arena_c2, Arena_Sum_32bit(2), Arena_c3);
---		FA4: Arena_32bitAdder_comp port map (Arena_A_32bit(3), Arena_B_32bit(3), Arena_c3, Arena_Sum_32bit(3), Arena_Cout_bit);
+--		FA1: Arena_32bitAdder_comp port map (Arena_A_32bit(0), Arena_B_32bit(0), Arena_Cin_32bit, Arena_AccumOut_32bit(0), Arena_c1);
+--		FA2: Arena_32bitAdder_comp port map (Arena_A_32bit(1), Arena_B_32bit(1), Arena_c1, Arena_AccumOut_32bit(1), Arena_c2);
+--		FA3: Arena_32bitAdder_comp port map (Arena_A_32bit(2), Arena_B_32bit(2), Arena_c2, Arena_AccumOut_32bit(2), Arena_c3);
+--		FA4: Arena_32bitAdder_comp port map (Arena_A_32bit(3), Arena_B_32bit(3), Arena_c3, Arena_AccumOut_32bit(3), Arena_Cout_bit);
 --	
 --Arena_Sum_fa <= Arena_A_fa xor Arena_B_fa xor Arena_Cin_fa ;
 --Arena_Cout_fa <= (Arena_A_fa and Arena_B_fa) or (Arena_Cin_fa and Arena_A_fa) or  (Arena_Cin_fa and Arena_B_fa);
@@ -44,7 +44,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 			begin
 			if(Arena_sub_add = '0') then
 						-- Adder 0
-				Arena_Sum_32bit(0) <= Arena_A_32bit(0) xor Arena_B_32bit(0)
+				Arena_AccumOut_32bit(0) <= Arena_A_32bit(0) xor Arena_B_32bit(0)
 				xor Arena_Cin_32bit;
 				
 				Arena_Cout_32bit_vars(0) := (Arena_A_32bit(0) and Arena_B_32bit(0)) 
@@ -52,7 +52,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 				
 				Arena_Cin_32bit_vars(1) := Arena_Cout_32bit_vars(0);
 				for i in 1 to 30 loop
-					Arena_Sum_32bit(i) <= Arena_A_32bit(i) xor Arena_B_32bit(i)
+					Arena_AccumOut_32bit(i) <= Arena_A_32bit(i) xor Arena_B_32bit(i)
 					xor Arena_Cin_32bit_vars(i);
 					
 					Arena_Cout_32bit_vars(i) := (Arena_A_32bit(i) and Arena_B_32bit(i)) 
@@ -62,7 +62,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 				end loop;
 				
 				-- Adder 3
-				Arena_Sum_32bit(31) <= Arena_A_32bit(31) xor Arena_B_32bit(31)
+				Arena_AccumOut_32bit(31) <= Arena_A_32bit(31) xor Arena_B_32bit(31)
 				xor Arena_Cin_32bit_vars(31);
 				
 				Arena_Cout_32bit <= (Arena_A_32bit(31) and Arena_B_32bit(31)) 
@@ -96,7 +96,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 					null;
 			end if;
 			if(Arena_reset = '0') then
-				Arena_Sum_32bit <= "00000000000000000000000000000000";
+				Arena_AccumOut_32bit <= "00000000000000000000000000000000";
 				Arena_Difference_32bit <= "00000000000000000000000000000000";
 			else 
 				null;

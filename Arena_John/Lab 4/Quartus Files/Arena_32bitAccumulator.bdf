@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 312 376 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Arena_reset" (rect 5 0 65 12)(font "Arial" ))
+	(text "Arena_reset" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -133,9 +133,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1128 224 1342 240)
+	(rect 1032 488 1214 504)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Arena_Sum_32bit[31..0]" (rect 90 0 208 12)(font "Arial" ))
+	(text "Arena_Bout_32bit" (rect 90 0 176 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -149,9 +149,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1032 488 1214 504)
+	(rect 1128 224 1371 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Arena_Bout_32bit" (rect 90 0 176 12)(font "Arial" ))
+	(text "Arena_AccumOut_32bit[31..0]" (rect 90 0 237 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -418,8 +418,8 @@ applicable agreement for further details.
 	(port
 		(pt 312 32)
 		(output)
-		(text "Arena_Sum_32bit[31..0]" (rect 0 0 118 12)(font "Arial" ))
-		(text "Arena_Sum_32bit[31..0]" (rect 192 27 291 39)(font "Arial" ))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 0 0 147 12)(font "Arial" ))
+		(text "Arena_AccumOut_32bit[31..0]" (rect 167 27 291 39)(font "Arial" ))
 		(line (pt 312 32)(pt 296 32)(line_width 3))
 	)
 	(port
