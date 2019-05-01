@@ -707,7 +707,7 @@ TRANSITION_LIST("Arena_16bitIN_A[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -716,7 +716,7 @@ TRANSITION_LIST("Arena_16bitIN_A[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -725,7 +725,7 @@ TRANSITION_LIST("Arena_16bitIN_A[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -734,7 +734,7 @@ TRANSITION_LIST("Arena_16bitIN_A[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -743,7 +743,7 @@ TRANSITION_LIST("Arena_16bitIN_A[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -752,7 +752,7 @@ TRANSITION_LIST("Arena_16bitIN_A[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -761,7 +761,7 @@ TRANSITION_LIST("Arena_16bitIN_A[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -770,7 +770,7 @@ TRANSITION_LIST("Arena_16bitIN_A[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -779,7 +779,7 @@ TRANSITION_LIST("Arena_16bitIN_A[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -824,7 +824,7 @@ TRANSITION_LIST("Arena_16bitIN_A[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -851,7 +851,7 @@ TRANSITION_LIST("Arena_16bitIN_B[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -860,7 +860,7 @@ TRANSITION_LIST("Arena_16bitIN_B[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -869,7 +869,7 @@ TRANSITION_LIST("Arena_16bitIN_B[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -878,7 +878,7 @@ TRANSITION_LIST("Arena_16bitIN_B[12]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -887,7 +887,7 @@ TRANSITION_LIST("Arena_16bitIN_B[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -896,7 +896,7 @@ TRANSITION_LIST("Arena_16bitIN_B[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -905,7 +905,7 @@ TRANSITION_LIST("Arena_16bitIN_B[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -923,7 +923,7 @@ TRANSITION_LIST("Arena_16bitIN_B[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -941,7 +941,7 @@ TRANSITION_LIST("Arena_16bitIN_B[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -950,7 +950,7 @@ TRANSITION_LIST("Arena_16bitIN_B[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -959,7 +959,7 @@ TRANSITION_LIST("Arena_16bitIN_B[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -968,7 +968,7 @@ TRANSITION_LIST("Arena_16bitIN_B[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -977,7 +977,7 @@ TRANSITION_LIST("Arena_16bitIN_B[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
