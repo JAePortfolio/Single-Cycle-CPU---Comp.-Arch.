@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Add_Sub_Mul_Div_Accum_Lab4">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Arena_32bitAccumulator_withSegmentDisplay|Arena_32bitAccumulator:inst|BUSMUX:inst7|lpm_mux:$00000" CBX_FILE_NAME="mux_9oc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

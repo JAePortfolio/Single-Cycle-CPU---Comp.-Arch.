@@ -18,7 +18,7 @@ Arena_octalBits[15], PIN_U4
 Arena_Cin_32bit, PIN_V1
 Arena_sub_add, PIN_V2
 
-Arena_reset[0], PIN_G26
+Arena_reset, PIN_G26
 Arena_clk, PIN_N23
 Arena_button[0], PIN_P23
 Arena_button[1], PIN_W26

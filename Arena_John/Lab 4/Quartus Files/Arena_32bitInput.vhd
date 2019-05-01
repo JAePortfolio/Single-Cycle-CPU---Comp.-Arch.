@@ -5,8 +5,9 @@ entity Arena_32bitInput is
 	port(
 		Arena_button: in std_logic_vector(1 downto 0);
 		Arena_octalBits: in std_logic_vector(15 downto 0);
-		Arena_octet0: out std_logic_vector(15 downto 0);
-		Arena_octet1: out std_logic_vector(15 downto 0)
+		Arena_octet0: buffer std_logic_vector(15 downto 0);
+		Arena_octet1: buffer std_logic_vector(15 downto 0);
+		Arena_32bitOutput : out std_logic_vector(31 downto 0)
 --		Arena_octet2: out std_logic_vector(7 downto 0);
 --		Arena_octet3: out std_logic_vector(7 downto 0)
 		);
@@ -57,7 +58,9 @@ process(Arena_octalBits, Arena_button)
 		else 
 			null;
 		end if;
---
+		Arena_32bitOutput(15 downto 0) <= Arena_octet0;
+		Arena_32bitOutput(31 downto 16) <= Arena_octet1;
+--		
 --		if (Arena_button(2) = '0') then -- If button2 pressed, take 3rd set 8 bits of 32-bit number
 --            Arena_octet2(0) <= Arena_octalBits(0);
 --            Arena_octet2(1) <= Arena_octalBits(1);
