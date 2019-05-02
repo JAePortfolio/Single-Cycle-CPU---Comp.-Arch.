@@ -1429,7 +1429,7 @@ TRANSITION_LIST("Arena_sub_add")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 

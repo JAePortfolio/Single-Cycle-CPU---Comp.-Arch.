@@ -1606,7 +1606,7 @@ TRANSITION_LIST("Arena_sub_add")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -1903,9 +1903,7 @@ TRANSITION_LIST("Arena_octalBits[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 84.86;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1914,9 +1912,7 @@ TRANSITION_LIST("Arena_octalBits[14]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 84.86;
-		LEVEL 0 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1925,9 +1921,7 @@ TRANSITION_LIST("Arena_octalBits[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 84.86;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1945,9 +1939,7 @@ TRANSITION_LIST("Arena_octalBits[11]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 84.86;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1956,9 +1948,7 @@ TRANSITION_LIST("Arena_octalBits[10]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 75.14;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1967,9 +1957,7 @@ TRANSITION_LIST("Arena_octalBits[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 84.86;
-		LEVEL 1 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1978,9 +1966,7 @@ TRANSITION_LIST("Arena_octalBits[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 84.86;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1989,7 +1975,7 @@ TRANSITION_LIST("Arena_octalBits[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -1998,9 +1984,7 @@ TRANSITION_LIST("Arena_octalBits[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 75.14;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -2009,8 +1993,7 @@ TRANSITION_LIST("Arena_octalBits[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 127.29;
-		LEVEL 1 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -2019,10 +2002,7 @@ TRANSITION_LIST("Arena_octalBits[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -2031,9 +2011,7 @@ TRANSITION_LIST("Arena_octalBits[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 84.86;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -2042,9 +2020,7 @@ TRANSITION_LIST("Arena_octalBits[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 84.86;
-		LEVEL 0 FOR 32.71;
+		LEVEL 0 FOR 160.0;
 	}
 }
 
@@ -2053,9 +2029,8 @@ TRANSITION_LIST("Arena_octalBits[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 42.43;
-		LEVEL 0 FOR 84.86;
-		LEVEL 1 FOR 32.71;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -2064,8 +2039,8 @@ TRANSITION_LIST("Arena_octalBits[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 42.43;
-		LEVEL 1 FOR 117.57;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
 	}
 }
 

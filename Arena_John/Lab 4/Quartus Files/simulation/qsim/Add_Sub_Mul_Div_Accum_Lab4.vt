@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/01/2019 12:08:54"
+// Generated on "05/01/2019 15:57:23"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Arena_32bitAccumulator_withSegmentDisplay
 // 
@@ -2348,28 +2348,22 @@ end
 // Arena_sub_add
 initial
 begin
-	Arena_sub_add = 1'b0;
+	Arena_sub_add = 1'b1;
 end 
 // Arena_octalBits[ 15 ]
 initial
 begin
 	Arena_octalBits[15] = 1'b0;
-	Arena_octalBits[15] = #84860 1'b1;
-	Arena_octalBits[15] = #42430 1'b0;
 end 
 // Arena_octalBits[ 14 ]
 initial
 begin
 	Arena_octalBits[14] = 1'b0;
-	Arena_octalBits[14] = #42430 1'b1;
-	Arena_octalBits[14] = #84860 1'b0;
 end 
 // Arena_octalBits[ 13 ]
 initial
 begin
-	Arena_octalBits[13] = 1'b1;
-	Arena_octalBits[13] = #84860 1'b0;
-	Arena_octalBits[13] = #42430 1'b1;
+	Arena_octalBits[13] = 1'b0;
 end 
 // Arena_octalBits[ 12 ]
 initial
@@ -2379,83 +2373,64 @@ end
 // Arena_octalBits[ 11 ]
 initial
 begin
-	Arena_octalBits[11] = 1'b1;
-	Arena_octalBits[11] = #84860 1'b0;
-	Arena_octalBits[11] = #42430 1'b1;
+	Arena_octalBits[11] = 1'b0;
 end 
 // Arena_octalBits[ 10 ]
 initial
 begin
 	Arena_octalBits[10] = 1'b0;
-	Arena_octalBits[10] = #42430 1'b1;
-	Arena_octalBits[10] = #42430 1'b0;
 end 
 // Arena_octalBits[ 9 ]
 initial
 begin
-	Arena_octalBits[9] = 1'b1;
-	Arena_octalBits[9] = #42430 1'b0;
-	Arena_octalBits[9] = #84860 1'b1;
+	Arena_octalBits[9] = 1'b0;
 end 
 // Arena_octalBits[ 8 ]
 initial
 begin
 	Arena_octalBits[8] = 1'b0;
-	Arena_octalBits[8] = #84860 1'b1;
-	Arena_octalBits[8] = #42430 1'b0;
 end 
 // Arena_octalBits[ 7 ]
 initial
 begin
-	Arena_octalBits[7] = 1'b1;
+	Arena_octalBits[7] = 1'b0;
 end 
 // Arena_octalBits[ 6 ]
 initial
 begin
-	Arena_octalBits[6] = 1'b1;
-	Arena_octalBits[6] = #42430 1'b0;
-	Arena_octalBits[6] = #42430 1'b1;
+	Arena_octalBits[6] = 1'b0;
 end 
 // Arena_octalBits[ 5 ]
 initial
 begin
 	Arena_octalBits[5] = 1'b0;
-	Arena_octalBits[5] = #127290 1'b1;
 end 
 // Arena_octalBits[ 4 ]
 initial
 begin
 	Arena_octalBits[4] = 1'b0;
-	Arena_octalBits[4] = #42430 1'b1;
-	Arena_octalBits[4] = #42430 1'b0;
-	Arena_octalBits[4] = #42430 1'b1;
 end 
 // Arena_octalBits[ 3 ]
 initial
 begin
 	Arena_octalBits[3] = 1'b0;
-	Arena_octalBits[3] = #84860 1'b1;
-	Arena_octalBits[3] = #42430 1'b0;
 end 
 // Arena_octalBits[ 2 ]
 initial
 begin
 	Arena_octalBits[2] = 1'b0;
-	Arena_octalBits[2] = #42430 1'b1;
-	Arena_octalBits[2] = #84860 1'b0;
 end 
 // Arena_octalBits[ 1 ]
 initial
 begin
 	Arena_octalBits[1] = 1'b1;
-	Arena_octalBits[1] = #42430 1'b0;
-	Arena_octalBits[1] = #84860 1'b1;
+	Arena_octalBits[1] = #80000 1'b0;
 end 
 // Arena_octalBits[ 0 ]
 initial
 begin
 	Arena_octalBits[0] = 1'b0;
-	Arena_octalBits[0] = #42430 1'b1;
+	Arena_octalBits[0] = #80000 1'b1;
 end 
 // Arena_button[ 1 ]
 initial

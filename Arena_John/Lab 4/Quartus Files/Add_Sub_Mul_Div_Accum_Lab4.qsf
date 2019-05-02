@@ -169,14 +169,10 @@ set_location_assignment PIN_L6 -to Arena_segment8_D
 set_location_assignment PIN_L7 -to Arena_segment8_E
 set_location_assignment PIN_P9 -to Arena_segment8_F
 set_location_assignment PIN_N9 -to Arena_segment8_G
-set_location_assignment PIN_V1 -to Arena_Cin_32bit
-set_location_assignment PIN_V2 -to Arena_sub_add
-set_location_assignment PIN_AE22 -to Arena_Cout_32bit
-set_location_assignment PIN_AE23 -to Arena_Bout_32bit
-set_location_assignment PIN_G26 -to Arena_reset
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_32bitAccumulator_withSegmentDisplay.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16bitMultiplier_withSegmentDisplay.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_32bitAccumulator_withSegmentDisplay.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bitAccumulator_withSegmentDisplay.vwf"
