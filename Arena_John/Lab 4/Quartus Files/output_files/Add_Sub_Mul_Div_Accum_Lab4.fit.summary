@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed May 01 15:56:56 2019
+Fitter Status : Successful - Thu May 02 21:41:05 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Add_Sub_Mul_Div_Accum_Lab4
-Top-level Entity Name : Arena_32bitAccumulator_withSegmentDisplay
+Top-level Entity Name : Arena_4bit_divider
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 348 / 33,216 ( 1 % )
-    Total combinational functions : 338 / 33,216 ( 1 % )
-    Dedicated logic registers : 64 / 33,216 ( < 1 % )
-Total registers : 64
-Total pins : 177 / 475 ( 37 % )
+Total logic elements : 25 / 33,216 ( < 1 % )
+    Total combinational functions : 25 / 33,216 ( < 1 % )
+    Dedicated logic registers : 0 / 33,216 ( 0 % )
+Total registers : 0
+Total pins : 16 / 475 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

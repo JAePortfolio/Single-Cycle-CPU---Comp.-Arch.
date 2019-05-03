@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity Arena_4bit_divider_vlg_vec_tst is
+end Arena_4bit_divider_vlg_vec_tst;
