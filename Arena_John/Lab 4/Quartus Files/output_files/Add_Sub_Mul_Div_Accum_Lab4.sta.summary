@@ -2,21 +2,29 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'Arena_startDivision'
-Slack : 0.878
+Type  : Slow Model Setup 'Arena_sub_add'
+Slack : -17.626
+TNS   : -627.828
+
+Type  : Slow Model Setup 'Arena_clk'
+Slack : -3.113
+TNS   : -64.543
+
+Type  : Slow Model Hold 'Arena_clk'
+Slack : 0.152
 TNS   : 0.000
 
-Type  : Slow Model Hold 'Arena_startDivision'
-Slack : -0.342
-TNS   : -15.492
+Type  : Slow Model Hold 'Arena_sub_add'
+Slack : 1.220
+TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'Arena_startDivision'
-Slack : -1.380
-TNS   : -65.380
-
-Type  : Slow Model Minimum Pulse Width 'Arena_button[2]'
+Type  : Slow Model Minimum Pulse Width 'Arena_sub_add'
 Slack : -1.380
 TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'Arena_clk'
+Slack : -1.222
+TNS   : -65.222
 
 Type  : Slow Model Minimum Pulse Width 'Arena_button[0]'
 Slack : -1.222
@@ -26,35 +34,35 @@ Type  : Slow Model Minimum Pulse Width 'Arena_button[1]'
 Slack : -1.222
 TNS   : -1.222
 
-Type  : Slow Model Minimum Pulse Width 'Arena_button[3]'
-Slack : -1.222
-TNS   : -1.222
+Type  : Fast Model Setup 'Arena_sub_add'
+Slack : -7.192
+TNS   : -241.550
 
-Type  : Fast Model Setup 'Arena_startDivision'
-Slack : 1.063
+Type  : Fast Model Setup 'Arena_clk'
+Slack : -1.230
+TNS   : -18.342
+
+Type  : Fast Model Hold 'Arena_clk'
+Slack : -0.243
+TNS   : -6.380
+
+Type  : Fast Model Hold 'Arena_sub_add'
+Slack : 0.597
 TNS   : 0.000
 
-Type  : Fast Model Hold 'Arena_startDivision'
-Slack : -0.309
-TNS   : -15.563
-
-Type  : Fast Model Minimum Pulse Width 'Arena_startDivision'
-Slack : -1.380
-TNS   : -65.380
-
-Type  : Fast Model Minimum Pulse Width 'Arena_button[2]'
+Type  : Fast Model Minimum Pulse Width 'Arena_sub_add'
 Slack : -1.380
 TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'Arena_clk'
+Slack : -1.222
+TNS   : -65.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[0]'
 Slack : -1.222
 TNS   : -1.222
 
 Type  : Fast Model Minimum Pulse Width 'Arena_button[1]'
-Slack : -1.222
-TNS   : -1.222
-
-Type  : Fast Model Minimum Pulse Width 'Arena_button[3]'
 Slack : -1.222
 TNS   : -1.222
 
