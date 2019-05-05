@@ -7,18 +7,20 @@ Arena_octalBits[4], PIN_AF14
 Arena_octalBits[5], PIN_AD13
 Arena_octalBits[6], PIN_AC13
 Arena_octalBits[7], PIN_C13
-Arena_octalOpcode, PIN_B13
-Arena_Bin_32bit, PIN_U4
-Arena_Cin_32bit, PIN_V1
-Arena_sub_add, PIN_V2
+Arena_octalBits[8], PIN_B13
+Arena_octalBits[9], PIN_A13
+Arena_octalBits[10], PIN_N1
+Arena_octalBits[11], PIN_P1
+Arena_octalBits[12], PIN_P2
+Arena_octalBits[13], PIN_T7
+Arena_octalBits[14], PIN_U3
+Arena_octalBits[15], PIN_U4
+Arena_startDivision, PIN_V2
 
-Arena_reset, PIN_G26
-Arena_clk, PIN_N23
-Arena_button[0], PIN_P23
-Arena_button[1], PIN_W26
-
-Arena_Cout_32bit, PIN_AE22
-Arena_Bout_32bit, PIN_AE23
+Arena_button[0], PIN_G26
+Arena_button[1], PIN_N23
+Arena_button[2], PIN_P23
+Arena_button[3], PIN_W26
 
 
 Arena_segment1_G, PIN_V13
@@ -84,4 +86,34 @@ Arena_segment8_D, PIN_L6
 Arena_segment8_E, PIN_L7
 Arena_segment8_F, PIN_P9
 Arena_segment8_G, PIN_N9
+
+Arena_Remainder_32bit[0], PIN_AE22
+Arena_Remainder_32bit[1], PIN_AF22
+Arena_Remainder_32bit[2], PIN_W19
+Arena_Remainder_32bit[3], PIN_V18
+Arena_Remainder_32bit[4], PIN_U18
+Arena_Remainder_32bit[5], PIN_U17
+Arena_Remainder_32bit[6], PIN_AA20
+Arena_Remainder_32bit[7], PIN_Y18
+Arena_Remainder_32bit[8], PIN_Y12
+Arena_Remainder_32bit[9], PIN_AE23
+Arena_Remainder_32bit[10], PIN_AF23
+Arena_Remainder_32bit[11], PIN_AB21
+Arena_Remainder_32bit[12], PIN_AC22
+Arena_Remainder_32bit[13], PIN_AD22
+Arena_Remainder_32bit[14], PIN_AD23
+Arena_Remainder_32bit[15], PIN_AD21
+Arena_Remainder_32bit[16], PIN_AC21
+Arena_Remainder_32bit[17], PIN_AA14
+Arena_Remainder_32bit[18], PIN_Y13
+Arena_Remainder_32bit[19], PIN_AA13
+Arena_Remainder_32bit[20], PIN_AC14
+Arena_Remainder_32bit[21], PIN_AD15
+Arena_Remainder_32bit[22], PIN_AE15
+Arena_Remainder_32bit[23], PIN_AF13
+Arena_Remainder_32bit[24], PIN_AE13
+Arena_Remainder_32bit[25], PIN_AE12
+Arena_Remainder_32bit[26], PIN_AD12
+
+
 
