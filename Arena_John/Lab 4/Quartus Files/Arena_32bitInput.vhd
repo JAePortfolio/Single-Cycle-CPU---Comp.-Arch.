@@ -1,3 +1,5 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 4 - Spring 2019 Due: 4/17/19
+-- Arena_32bitInput.vhd
 library ieee;
 use ieee.std_logic_1164.all;
 
