@@ -8,8 +8,9 @@ entity Arena_32bitAccumulator_withSegmentDisplay is
         Arena_Cin_32bit : in     vl_logic;
         Arena_Bin_32bit : in     vl_logic;
         Arena_reset     : in     vl_logic;
+        Arena_octalOpcode: in     vl_logic;
         Arena_button    : in     vl_logic_vector(1 downto 0);
-        Arena_octalBits : in     vl_logic_vector(15 downto 0);
+        Arena_octalBits : in     vl_logic_vector(7 downto 0);
         Arena_Bout_32bit: out    vl_logic;
         Arena_segment1_A: out    vl_logic;
         Arena_AccumOut_32bit: out    vl_logic_vector(31 downto 0);

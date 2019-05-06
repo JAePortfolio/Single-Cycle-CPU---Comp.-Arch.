@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 208 312 376 328)
+	(rect 1016 320 1184 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Arena_reset" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
@@ -511,21 +511,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 424 168)
-	(pt 424 240)
-	(bus)
-)
-(connector
-	(pt 424 240)
-	(pt 456 240)
-	(bus)
-)
-(connector
-	(pt 392 224)
-	(pt 456 224)
-	(bus)
-)
-(connector
 	(pt 456 256)
 	(pt 408 256)
 )
@@ -711,18 +696,6 @@ applicable agreement for further details.
 	(pt 792 496)
 )
 (connector
-	(pt 376 320)
-	(pt 440 320)
-)
-(connector
-	(pt 440 320)
-	(pt 440 304)
-)
-(connector
-	(pt 456 304)
-	(pt 440 304)
-)
-(connector
 	(pt 112 144)
 	(pt 88 144)
 )
@@ -737,6 +710,47 @@ applicable agreement for further details.
 (connector
 	(pt 184 144)
 	(pt 184 400)
+)
+(connector
+	(pt 424 224)
+	(pt 424 168)
+	(bus)
+)
+(connector
+	(pt 424 224)
+	(pt 456 224)
+	(bus)
+)
+(connector
+	(pt 392 224)
+	(pt 416 224)
+	(bus)
+)
+(connector
+	(pt 416 224)
+	(pt 416 240)
+	(bus)
+)
+(connector
+	(pt 456 240)
+	(pt 416 240)
+	(bus)
+)
+(connector
+	(pt 1184 328)
+	(pt 1192 328)
+)
+(connector
+	(pt 1192 328)
+	(pt 1192 296)
+)
+(connector
+	(pt 1192 296)
+	(pt 1040 296)
+)
+(connector
+	(pt 1040 296)
+	(pt 1040 280)
 )
 (junction (pt 1104 224))
 (junction (pt 392 248))

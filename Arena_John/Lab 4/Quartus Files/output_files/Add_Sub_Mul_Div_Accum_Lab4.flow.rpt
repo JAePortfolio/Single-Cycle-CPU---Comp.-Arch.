@@ -1,5 +1,5 @@
 Flow report for Add_Sub_Mul_Div_Accum_Lab4
-Sun May 05 00:09:01 2019
+Mon May 06 15:10:52 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 05 00:09:01 2019           ;
+; Flow Status                        ; Successful - Mon May 06 15:10:52 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Add_Sub_Mul_Div_Accum_Lab4                      ;
 ; Top-level Entity Name              ; Arena_32bitAccumulator_withSegmentDisplay       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 343 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 342 / 33,216 ( 1 % )                            ;
-;     Dedicated logic registers      ; 64 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 64                                              ;
-; Total pins                         ; 170 / 475 ( 36 % )                              ;
+; Total logic elements               ; 1,690 / 33,216 ( 5 % )                          ;
+;     Total combinational functions  ; 886 / 33,216 ( 3 % )                            ;
+;     Dedicated logic registers      ; 1,295 / 33,216 ( 4 % )                          ;
+; Total registers                    ; 1295                                            ;
+; Total pins                         ; 171 / 475 ( 36 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Total memory bits                  ; 9,600 / 483,840 ( 2 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,34 +64,64 @@ applicable agreement for further details.
 +-------------------+----------------------------+
 ; Option            ; Setting                    ;
 +-------------------+----------------------------+
-; Start date & time ; 05/05/2019 00:08:36        ;
+; Start date & time ; 05/06/2019 15:10:19        ;
 ; Main task         ; Compilation                ;
 ; Revision Name     ; Add_Sub_Mul_Div_Accum_Lab4 ;
 +-------------------+----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                          ;
-+-------------------------------------+-------------------------------------------+----------------------------+-------------------------------------------+----------------+
-; Assignment Name                     ; Value                                     ; Default Value              ; Entity Name                               ; Section Id     ;
-+-------------------------------------+-------------------------------------------+----------------------------+-------------------------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220314654093205.155702931610444           ; --                         ; --                                        ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                        ; --                         ; --                                        ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                               ; --                         ; --                                        ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                 ; <None>                     ; --                                        ; --             ;
-; IP_TOOL_NAME                        ; PARALLEL_ADD                              ; --                         ; --                                        ; --             ;
-; IP_TOOL_VERSION                     ; 13.0                                      ; --                         ; --                                        ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                        ; --                         ; --                                        ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                         ; --                         ; --                                        ; --             ;
-; MISC_FILE                           ; Arena_parallelAdder.cmp                   ; --                         ; --                                        ; --             ;
-; PARTITION_COLOR                     ; 16764057                                  ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                     ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                    ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                       ; --                         ; --                                        ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW     ; --                         ; --                                        ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                              ; --                         ; --                                        ; --             ;
-; TOP_LEVEL_ENTITY                    ; Arena_32bitAccumulator_withSegmentDisplay ; Add_Sub_Mul_Div_Accum_Lab4 ; --                                        ; --             ;
-+-------------------------------------+-------------------------------------------+----------------------------+-------------------------------------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                                                                                                                                                            ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+-------------------------------------------+------------------+
+; Assignment Name                     ; Value                                                                                                                                                                                                                                                                     ; Default Value              ; Entity Name                               ; Section Id       ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+-------------------------------------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 264840330406669.155716981808852                                                                                                                                                                                                                                           ; --                         ; --                                        ; --               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                                                                                                                                                                                                        ; --                         ; --                                        ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                                                                                                                                                                                                               ; --                         ; --                                        ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                                                                                                                                                                                                 ; <None>                     ; --                                        ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                                                                                                                                                                                                        ; --                         ; --                                        ; --               ;
+; IP_TOOL_NAME                        ; PARALLEL_ADD                                                                                                                                                                                                                                                              ; --                         ; --                                        ; --               ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                                                                                                                                                                                                                                               ; --                         ; --                                        ; --               ;
+; IP_TOOL_VERSION                     ; 13.0                                                                                                                                                                                                                                                                      ; --                         ; --                                        ; --               ;
+; IP_TOOL_VERSION                     ; 13.0                                                                                                                                                                                                                                                                      ; --                         ; --                                        ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                                                                                                                                                                        ; --                         ; --                                        ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                                                                                                                                                                         ; --                         ; --                                        ; --               ;
+; MISC_FILE                           ; Arena_parallelAdder.cmp                                                                                                                                                                                                                                                   ; --                         ; --                                        ; --               ;
+; MISC_FILE                           ; output_files/lpm_add_sub0.bsf                                                                                                                                                                                                                                             ; --                         ; --                                        ; --               ;
+; MISC_FILE                           ; output_files/lpm_add_sub0.cmp                                                                                                                                                                                                                                             ; --                         ; --                                        ; --               ;
+; PARTITION_COLOR                     ; 16764057                                                                                                                                                                                                                                                                  ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                                                                                                                                                                                                     ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top              ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                                                                                                                                                                                                    ; --                         ; Arena_32bitAccumulator_withSegmentDisplay ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                                                                                                                                                                                                       ; --                         ; --                                        ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                                                                                                                                                                     ; --                         ; --                                        ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                                                                                                                                                                              ; --                         ; --                                        ; --               ;
+; SLD_FILE                            ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/output_files/stp2_auto_stripped.stp                                                                                                                                       ; --                         ; --                                        ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                                                                                                                                                                       ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                                                                                                                                                                             ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=75                                                                                                                                                                                                                                                          ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=75                                                                                                                                                                                                                                                       ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                                                                                                                                                                                                   ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                                                                                                                    ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=246                                                                                                                                                                                                                                             ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                                                                                                             ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=128                                                                                                                                                                                                                                                      ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                                                                                                                ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                                                                                                            ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                                                                                                                                                                         ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                                                                                                                    ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                                                                                                              ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_LOWORD=60732                                                                                                                                                                                                                                                 ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_HIWORD=31139                                                                                                                                                                                                                                                 ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                                                                                                       ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=128                                                                                                                                                                                                                                                      ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                                                                                                                  ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                                                                                                                      ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                                                                                                              ; --                         ; --                                        ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                                                                                                             ; --                         ; --                                        ; auto_signaltap_0 ;
+; TOP_LEVEL_ENTITY                    ; Arena_32bitAccumulator_withSegmentDisplay                                                                                                                                                                                                                                 ; Add_Sub_Mul_Div_Accum_Lab4 ; --                                        ; --               ;
+; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                                                                                                                                                                                                                                                     ; --                         ; --                                        ; --               ;
++-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+-------------------------------------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -99,12 +129,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 497 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 664 MB              ; 00:00:12                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 415 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 409 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 372 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:21                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4717 MB             ; 00:00:09                           ;
+; Fitter                    ; 00:00:12     ; 1.1                     ; 5059 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4602 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4612 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4568 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:29                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,11 +143,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

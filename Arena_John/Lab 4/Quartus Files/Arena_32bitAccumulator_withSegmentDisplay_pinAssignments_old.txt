@@ -1,0 +1,95 @@
+To, Location
+Arena_octalBits[0], PIN_N25
+Arena_octalBits[1], PIN_N26
+Arena_octalBits[2], PIN_P25
+Arena_octalBits[3], PIN_AE14
+Arena_octalBits[4], PIN_AF14
+Arena_octalBits[5], PIN_AD13
+Arena_octalBits[6], PIN_AC13
+Arena_octalBits[7], PIN_C13
+Arena_octalBits[8], PIN_B13
+Arena_octalBits[9], PIN_A13
+Arena_octalBits[10], PIN_N1
+Arena_octalBits[11], PIN_P1
+Arena_octalBits[12], PIN_P2
+Arena_octalBits[13], PIN_T7
+Arena_octalBits[14], PIN_U3
+Arena_octalBits[15], PIN_U4
+
+
+Arena_Cin_32bit, PIN_V1
+Arena_sub_add, PIN_V2
+
+Arena_reset, PIN_G26
+Arena_clk, PIN_N23
+Arena_button[0], PIN_P23
+Arena_button[1], PIN_W26
+
+Arena_Cout_32bit, PIN_AE22
+Arena_Bout_32bit, PIN_AE23
+
+
+Arena_segment1_G, PIN_V13
+Arena_segment1_F, PIN_V14
+Arena_segment1_E, PIN_AE11
+Arena_segment1_D, PIN_AD11
+Arena_segment1_C, PIN_AC12
+Arena_segment1_B, PIN_AB12
+Arena_segment1_A, PIN_AF10
+
+Arena_segment2_A, PIN_V20
+Arena_segment2_B, PIN_V21
+Arena_segment2_C, PIN_W21
+Arena_segment2_D, PIN_Y22
+Arena_segment2_E, PIN_AA24
+Arena_segment2_F, PIN_AA23
+Arena_segment2_G, PIN_AB24
+
+Arena_segment3_A, PIN_AB23
+Arena_segment3_B, PIN_V22
+Arena_segment3_C, PIN_AC25
+Arena_segment3_D, PIN_AC26
+Arena_segment3_E, PIN_AB26
+Arena_segment3_F, PIN_AB25
+Arena_segment3_G, PIN_Y24
+
+Arena_segment4_A, PIN_Y23
+Arena_segment4_B, PIN_AA25
+Arena_segment4_C, PIN_AA26
+Arena_segment4_D, PIN_Y26
+Arena_segment4_E, PIN_Y25
+Arena_segment4_F, PIN_U22
+Arena_segment4_G, PIN_W24
+
+Arena_segment5_A, PIN_U9
+Arena_segment5_B, PIN_U1
+Arena_segment5_C, PIN_U2
+Arena_segment5_D, PIN_T4
+Arena_segment5_E, PIN_R7
+Arena_segment5_F, PIN_R6
+Arena_segment5_G, PIN_T3
+
+Arena_segment6_A, PIN_T2
+Arena_segment6_B, PIN_P6
+Arena_segment6_C, PIN_P7
+Arena_segment6_D, PIN_T9
+Arena_segment6_E, PIN_R5
+Arena_segment6_F, PIN_R4
+Arena_segment6_G, PIN_R3
+
+Arena_segment7_A, PIN_R2
+Arena_segment7_B, PIN_P4
+Arena_segment7_C, PIN_P3
+Arena_segment7_D, PIN_M2
+Arena_segment7_E, PIN_M3
+Arena_segment7_F, PIN_M5
+Arena_segment7_G, PIN_M4
+
+Arena_segment8_A, PIN_L3
+Arena_segment8_B, PIN_L2
+Arena_segment8_C, PIN_L9
+Arena_segment8_D, PIN_L6
+Arena_segment8_E, PIN_L7
+Arena_segment8_F, PIN_P9
+Arena_segment8_G, PIN_N9
+

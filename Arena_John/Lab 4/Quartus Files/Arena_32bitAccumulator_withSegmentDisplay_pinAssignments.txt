@@ -7,15 +7,16 @@ Arena_octalBits[4], PIN_AF14
 Arena_octalBits[5], PIN_AD13
 Arena_octalBits[6], PIN_AC13
 Arena_octalBits[7], PIN_C13
-Arena_octalOpcode, PIN_B13
+Arena_octalOpcode[0], PIN_B13
+Arena_octalOpcode[1], PIN_A13
 Arena_Bin_32bit, PIN_U4
 Arena_Cin_32bit, PIN_V1
 Arena_sub_add, PIN_V2
 
 Arena_reset, PIN_G26
 Arena_clk, PIN_N23
-Arena_button[0], PIN_P23
-Arena_button[1], PIN_W26
+Arena_button, PIN_W26
+
 
 Arena_Cout_32bit, PIN_AE22
 Arena_Bout_32bit, PIN_AE23

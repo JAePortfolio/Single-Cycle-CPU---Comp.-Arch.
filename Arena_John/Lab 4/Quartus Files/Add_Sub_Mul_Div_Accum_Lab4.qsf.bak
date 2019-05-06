@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY Arena_16bitMultiplier_withSegmentDisplay
+set_global_assignment -name TOP_LEVEL_ENTITY Arena_32bitInput
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:51:15  APRIL 10, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -94,90 +94,26 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16bitMultiplier_using_reg
 set_global_assignment -name BDF_FILE Arena_16bitMultiplier_withSegmentDisplay.bdf
 set_global_assignment -name TEXT_FILE Arena_16bitMultiplier_withSegmentDisplay_pinAssignments.txt
 set_global_assignment -name TEXT_FILE Arena_32bitAccumulator_withSegmentDisplay_pinAssignments.txt
-set_location_assignment PIN_N25 -to Arena_octalBits[0]
-set_location_assignment PIN_N26 -to Arena_octalBits[1]
-set_location_assignment PIN_P25 -to Arena_octalBits[2]
-set_location_assignment PIN_AE14 -to Arena_octalBits[3]
-set_location_assignment PIN_AF14 -to Arena_octalBits[4]
-set_location_assignment PIN_AD13 -to Arena_octalBits[5]
-set_location_assignment PIN_AC13 -to Arena_octalBits[6]
-set_location_assignment PIN_C13 -to Arena_octalBits[7]
-set_location_assignment PIN_B13 -to Arena_octalBits[8]
-set_location_assignment PIN_A13 -to Arena_octalBits[9]
-set_location_assignment PIN_N1 -to Arena_octalBits[10]
-set_location_assignment PIN_P1 -to Arena_octalBits[11]
-set_location_assignment PIN_P2 -to Arena_octalBits[12]
-set_location_assignment PIN_T7 -to Arena_octalBits[13]
-set_location_assignment PIN_U3 -to Arena_octalBits[14]
-set_location_assignment PIN_U4 -to Arena_octalBits[15]
-set_location_assignment PIN_N23 -to Arena_clk
-set_location_assignment PIN_P23 -to Arena_button[0]
-set_location_assignment PIN_W26 -to Arena_button[1]
-set_location_assignment PIN_V13 -to Arena_segment1_G
-set_location_assignment PIN_V14 -to Arena_segment1_F
-set_location_assignment PIN_AE11 -to Arena_segment1_E
-set_location_assignment PIN_AD11 -to Arena_segment1_D
-set_location_assignment PIN_AC12 -to Arena_segment1_C
-set_location_assignment PIN_AB12 -to Arena_segment1_B
-set_location_assignment PIN_AF10 -to Arena_segment1_A
-set_location_assignment PIN_V20 -to Arena_segment2_A
-set_location_assignment PIN_V21 -to Arena_segment2_B
-set_location_assignment PIN_W21 -to Arena_segment2_C
-set_location_assignment PIN_Y22 -to Arena_segment2_D
-set_location_assignment PIN_AA24 -to Arena_segment2_E
-set_location_assignment PIN_AA23 -to Arena_segment2_F
-set_location_assignment PIN_AB24 -to Arena_segment2_G
-set_location_assignment PIN_AB23 -to Arena_segment3_A
-set_location_assignment PIN_V22 -to Arena_segment3_B
-set_location_assignment PIN_AC25 -to Arena_segment3_C
-set_location_assignment PIN_AC26 -to Arena_segment3_D
-set_location_assignment PIN_AB26 -to Arena_segment3_E
-set_location_assignment PIN_AB25 -to Arena_segment3_F
-set_location_assignment PIN_Y24 -to Arena_segment3_G
-set_location_assignment PIN_Y23 -to Arena_segment4_A
-set_location_assignment PIN_AA25 -to Arena_segment4_B
-set_location_assignment PIN_AA26 -to Arena_segment4_C
-set_location_assignment PIN_Y26 -to Arena_segment4_D
-set_location_assignment PIN_Y25 -to Arena_segment4_E
-set_location_assignment PIN_U22 -to Arena_segment4_F
-set_location_assignment PIN_W24 -to Arena_segment4_G
-set_location_assignment PIN_U9 -to Arena_segment5_A
-set_location_assignment PIN_U1 -to Arena_segment5_B
-set_location_assignment PIN_U2 -to Arena_segment5_C
-set_location_assignment PIN_T4 -to Arena_segment5_D
-set_location_assignment PIN_R7 -to Arena_segment5_E
-set_location_assignment PIN_R6 -to Arena_segment5_F
-set_location_assignment PIN_T3 -to Arena_segment5_G
-set_location_assignment PIN_T2 -to Arena_segment6_A
-set_location_assignment PIN_P6 -to Arena_segment6_B
-set_location_assignment PIN_P7 -to Arena_segment6_C
-set_location_assignment PIN_T9 -to Arena_segment6_D
-set_location_assignment PIN_R5 -to Arena_segment6_E
-set_location_assignment PIN_R4 -to Arena_segment6_F
-set_location_assignment PIN_R3 -to Arena_segment6_G
-set_location_assignment PIN_R2 -to Arena_segment7_A
-set_location_assignment PIN_P4 -to Arena_segment7_B
-set_location_assignment PIN_P3 -to Arena_segment7_C
-set_location_assignment PIN_M2 -to Arena_segment7_D
-set_location_assignment PIN_M3 -to Arena_segment7_E
-set_location_assignment PIN_M5 -to Arena_segment7_F
-set_location_assignment PIN_M4 -to Arena_segment7_G
-set_location_assignment PIN_L3 -to Arena_segment8_A
-set_location_assignment PIN_L2 -to Arena_segment8_B
-set_location_assignment PIN_L9 -to Arena_segment8_C
-set_location_assignment PIN_L6 -to Arena_segment8_D
-set_location_assignment PIN_L7 -to Arena_segment8_E
-set_location_assignment PIN_P9 -to Arena_segment8_F
-set_location_assignment PIN_N9 -to Arena_segment8_G
-set_location_assignment PIN_V1 -to Arena_Cin_32bit
-set_location_assignment PIN_V2 -to Arena_sub_add
-set_location_assignment PIN_AE22 -to Arena_Cout_32bit
-set_location_assignment PIN_AE23 -to Arena_Bout_32bit
-set_location_assignment PIN_G26 -to Arena_reset
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_32bitAccumulator_withSegmentDisplay.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16bitMultiplier_withSegmentDisplay.vwf
+set_global_assignment -name VHDL_FILE Arena_fullSubtractor.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_fullSubtractor.vwf
+set_global_assignment -name BDF_FILE Arena_1bitDivider.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_1bitDivider.vwf
+set_global_assignment -name BDF_FILE Arena_4bit_divider.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_4bit_divider.vwf
+set_global_assignment -name VHDL_FILE Arena_4bit_divider_usingVHDL.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_4bit_divider_usingVHDL.vwf
+set_global_assignment -name VHDL_FILE Arena_32bit_divider_usingVHDL.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_32bit_divider_usingVHDL.vwf
+set_global_assignment -name VHDL_FILE Arena_32bitInput_Divider.vhd
+set_global_assignment -name BDF_FILE Arena_32bitDivider_withSegmentDisplay.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_32bitDivider_withSegmentDisplay.vwf
+set_global_assignment -name TEXT_FILE Arena_32bitDivider_withSegmentDisplay_pinAssignments.txt
+set_global_assignment -name TEXT_FILE Arena_32bitAccumulator_withSegmentDisplay_pinAssignments_old.txt
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_32bitInput.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_16bitMultiplier_withSegmentDisplay.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 4/Quartus Files/Arena_16bitMultiplier_withSegmentDisplay.vwf"
