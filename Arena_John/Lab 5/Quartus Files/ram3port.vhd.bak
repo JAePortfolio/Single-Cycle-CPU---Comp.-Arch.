@@ -1,0 +1,26 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 5 - FINAL LAB - Spring 2019 Due: 5/15/19
+-- ram3port.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+library altera_mf;
+use altera_mf.all;
+
+entity ram3port is
+	port(
+		clock: in std_logic;
+		data: in std_logic_vector(4 downto 0);
+		rdaddress_a: in std_logic_vector(4 downto 0);
+		rdaddress_b: in std_logic_vector(4 downto 0);
+		wraddress: in std_logic_vector(4 downto 0); -- write/dest register
+		wren: in std_logic := '1';
+		qa: out std_logic_vector(31 downto 0);
+		qb: out std_logic_vector(31 downto 0);
+		);
+end ram3port;
+
+architecture syn of ram3port is
+	signal sub_wire0 : std_logic_vector(31 downto 0);
+	signal sub_wire1: std_logic_vector(31 downto 0);
+	component alt3pram
+	

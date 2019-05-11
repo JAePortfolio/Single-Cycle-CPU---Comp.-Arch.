@@ -1,0 +1,119 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.numeric_std.all;
+
+Entity Mem_Access is
+Port(
+	INPUT_ADDR: in std_logic_vector(7 downto 0); --Address input from Switches 
+	INPUT_DATA : in std_logic_vector(7 downto 0); -- Data input from Switches
+	INPUT_WE : in std_logic; -- Write Enable from Switches
+	SRAM_ADDR: out std_logic_vector(19 downto 0); -- Address going to the SRAM
+	SRAM_DQ : inout std_logic_vector(15 downto 0); -- Data going and coming from the SRAM
+	SRAM_CE_N: out std_logic; -- Chip enable/select going to the SRAM
+	SRAM_OE_N: out std_logic; -- Output Enable going to the SRAM
+	SRAM_WE_N: out std_logic; -- Write Enable going to the SRAM
+	SRAM_UB_N: out std_logic; -- Upper Bytes enable going to the SRAM
+	SRAM_LB_N : out std_logic; -- Lower Bytes enable going to the SRAM
+);
+End Mem_Access;
+
+Architecture rtl of Mem_Access is
+signal A : std_logic_vector(15 downto 0);
+Begin
+	SRAM_DQ(7 downto 0)<=INPUT_DATA when INPUT_WE = '1' else (others=> 'Z'); -- SRAM_DQ is both input and output so we can send data through it and receive data through it.
+	SRAM_WE_N <= '0' when INPUT_WE = '1' else '1'; -- Since all the SRAM signals are Active Low(only enabled when '0') we write to SRAM by setting it to Zero when we input our WRITE ENABLE from the switch.
+	SRAM_CE_N<='0'; -- Chip enable/select is always active since its always '0'
+	SRAM_OE_N<='1' when INPUT_WE ='1' else '0'; -- Output enable is only active when our INPUT_WE(write enable switch) is low. 
+	SRAM_UB_N<='0'; -- keep the same 
+	SRAM_LB_N<='0'; -- keep the same 
+	SRAM_ADDR(19 downto 8) <= (others=>'0'); -- set the SRAM address to '0'
+	SRAM_ADDR(7 downto 0)<=INPUT_ADDR; -- Set the first 8 bits of the address to the INPUT_ADDR. Make sure you change this portion to utilize the entire address space. 
+	SRAM_DQ(15 downto 8)<=(others=>'0'); -- set the remaining bits of the SRAM_DQ to '0's
+	A <= SRAM_DQ; -- save the Data from the SRAM into Signal for later use( possible to output to the display segments)
+	
+End rtl;
+
+
+
+--                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--      .                 ,     @                                              
+--     +@                 @#    @                                              
+--    #@@                 @@#   @                                              
+--   @@@@                 @@@@  @                                              
+--  @@@@@@@@@@@@@@@@@@@@@@@@@@@ @`@@` @@@  ++  @  @    `@@@  @@+               
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SRAM_DQ
+--  @@@@@@@@@@@@@@@@@@@@@@@@@@@'@ @@; @@@ `,`, +@@+    `, `,@  ..              
+--   @@@@`````````........@@@@  @'. @ ; @ +@@@ ''''    `, @ #,:@               
+--    #@@                 @@@   @ @@  ; `+@  +`;..;    `@@`  '@+,              
+--     @@                 @#    @                  .@@@                        
+--      ,                 +     @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                        .     @                                              
+--                        @#    @                                              
+--                        @@#   @                                              
+--                        @@@@  @                                              
+--    @@@@@@@@@@@@@@@@@@@@@@@@@ @ @@ @@@` @: '+ @.    @: +@@ '@@`,@@'          
+--    @@@@@@@@@@@@@@@@@@@@@@@@@@@ SRAM_ADDR
+--    @@@@@@@@@@@@@@@@@@@@@@@@@;@  :.@ @ ;@@ '`;`.   '@@ +  @'  @,`@           
+--        ``````````......@@@@  @ @@ @ .,@  '+ @`.   @  '+@@`'@@`,` @          
+--                        @@@   @                `@@@                          
+--                        @#    @                                              
+--                        +     @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                        @     @                                              
+--                        @@    @                                              
+--                        @@@`  @                                              
+--    :@@@@@@@@@@@@@@@@@@#@@@@' @ @@  @@@  :;  @  @     `@: .@@@    '` @       
+--    :@@@@@@@@@@@@@@@@@@@@@@@@@@;``' ; ;. @@  @..@    `@ ;;..      '@ @       
+--    ;@@@@@@@@@@@@@@@@@@@@@@@@@@ SRAM_OE_N
+--    ,@@@#@@#@@@@@@@@@@@@@@@@@ @+  @ ;.+ ;@@@ +@+'    .:  +..      ' @@       
+--                        @@@+  @ @@; ; ;.@  @ ;;,+     @@@ .@@@    + `@       
+--                        @@`   @                                              
+--                        @     @                                              
+--                        @     @                                              
+--                        @@'   @                                              
+--                        @@@@  @                                              
+--    @@@@@@@@@@@@@@@@@@@@@@@@@ @ @@  @@@  :;  @  @    @ `@ @`@@@    :. @      
+--    @@@@@@@@@@@@@@@@@@@@@@@@@@@;``' ; :. @@  @..@    ;`+@ @`,      :@ @      
+--    @@@@@@@@@@@@@@@@@@@@@@@@@@@ SRAM_WE_N
+--    @@@@@@@@@@@@@@@@@@@@@@@@+ @+  @ ;.+ ;@@@`+@++     @;`'.`,      : @@      
+--                        @@@   @ @@; ; ;.@  @ ;:,'     @` @ `@@@    :  @      
+--                        @@    @                                              
+--                        @     @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @                                              
+--                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+
