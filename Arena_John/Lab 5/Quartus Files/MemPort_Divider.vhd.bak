@@ -1,0 +1,47 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+--MAKE SURE YOU GUYS DELETE THESE COMMENTS AND CUSTOMIZE THE NAMING A BIT. Make it your own file! 
+
+Entity MemPort_Divider is
+generic(
+	WIDE: natural := 32;
+);
+port(
+	PC_Address : in std_logic_vector(WIDE-1 downto 0);
+	SRAM_Address : out std_logic_vector(19 downto 0);
+	wr : in std_logic; --Signal to Write
+	rd : in std_logic; -- Signal to Read
+	data : in std_logic_vector(31 downto 0); -- Data to Write Into Instruction Ram
+	DQ : inout std_logic_vector(31 downto 0);
+	OE : out std_logic;
+	WE : out std_logic;
+	CS : out std_logic;
+	LB : out std_logic;
+	UB : out std_logic;
+	outD : out std_logic_vector(31 downto 0) := (others=>'0')
+);
+
+end MemPort_Divider;
+
+Architecture rtl of MemPort_Divider is
+type half_array is array (0 to 1000) of std_logic_vector(15 downto 0); --Do not go over 1000 Instructions!
+signal half_instr : half_array; -- Holds half of the Instruction Since SRAM is only 16 bit output 
+signal buff : std_logic_vector(31 downto 0):=(others=>'0'); -- Buffer for Full Instruction Output 
+
+begin 
+SRAM_Address <= PC_Address(19 downto 0); -- Use only 20 bits of address since SRAM only has 20 bit Input Address
+DQ(15 downto 0) <= Data(15 downto 0) when wr = '0' else (others=>'Z'); -- Get half the Instruction from SRAM
+DQ(31 downto 16) <= Data(31 downto 16) when wr = '0' else half_instr(to_integer(unsigned(PC_Address))); -- Get other half from instruction Array
+half_instr(to_integer(unsigned(PC_Address))) <= DQ(31 downto 16); -- Save Data into Instruction Array
+buff<= DQ when rd ='0' else buff; -- Set buffer for output
+outD <= buff;
+WE <= wr; --SRAM signals for writing and reading
+OE <= rd;
+CS <= '0';-- Keep the same Do not change
+LB <= '0'; -- Keep the same Do not change
+UB <= '0';-- Keep the same Do not change
+end rtl;
+
+

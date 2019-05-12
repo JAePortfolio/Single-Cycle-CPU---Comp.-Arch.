@@ -1,5 +1,5 @@
 Flow report for Single_Cycle_CPU
-Fri May 10 20:56:38 2019
+Sat May 11 21:21:36 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri May 10 20:56:38 2019           ;
+; Flow Status                        ; Successful - Sat May 11 21:21:36 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Single_Cycle_CPU                                ;
-; Top-level Entity Name              ; ram3port                                        ;
+; Top-level Entity Name              ; Arena_ALU                                       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 0 / 33,216 ( 0 % )                              ;
-;     Total combinational functions  ; 0 / 33,216 ( 0 % )                              ;
+; Total logic elements               ; 293 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 293 / 33,216 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 113 / 475 ( 24 % )                              ;
+; Total pins                         ; 101 / 475 ( 21 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 2,048 / 483,840 ( < 1 % )                       ;
+; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/10/2019 20:56:17 ;
+; Start date & time ; 05/11/2019 21:21:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Single_Cycle_CPU    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value    ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220314654093205.155753617708624       ; --               ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220314654093205.155762407110048       ; --               ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --               ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --               ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>           ; --          ; --             ;
@@ -97,13 +97,13 @@ applicable agreement for further details.
 ; MISC_FILE                           ; lpm_constant1.cmp                     ; --               ; --          ; --             ;
 ; MISC_FILE                           ; lpm_3ramport.bsf                      ; --               ; --          ; --             ;
 ; MISC_FILE                           ; lpm_3ramport.cmp                      ; --               ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --               ; ram3port    ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --               ; ram3port    ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --               ; ram3port    ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --               ; Arena_ALU   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --               ; Arena_ALU   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --               ; Arena_ALU   ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --               ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --               ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --               ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; ram3port                              ; Single_Cycle_CPU ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Arena_ALU                             ; Single_Cycle_CPU ; --          ; --             ;
 +-------------------------------------+---------------------------------------+------------------+-------------+----------------+
 
 
@@ -112,12 +112,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 499 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 669 MB              ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 423 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 392 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 371 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 480 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 667 MB              ; 00:00:11                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 423 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 393 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 372 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:20                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

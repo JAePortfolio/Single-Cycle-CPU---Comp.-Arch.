@@ -1,0 +1,39 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 5 - FINAL LAB - Spring 2019 Due: 5/15/19
+-- Arena_Control.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+-- Hexadecimal to 7 segment4 decoder for LED display
+
+entity Arena_Control is
+	port(
+		Arena_opCode: in std_logic_vector(5 downto 0); -- 6 bits from top 6 bits of Instruction, denoted OPCODE
+		Arena_controlLines: out std_logic_vector(6 downto 0); -- 7 control lines
+		-- CL0: RegDst, CL1: Branch, CL2: MemRead, CL3: MemtoReg, CL4: MemWrite, CL5: ALUSrc, CL6: RegWrite -- 
+		Arena_aluOP: out std_logic_vector(1 downto 0) -- opcode to be sent to ALU for correct operation 
+		);
+end Arena_Control;
+
+architecture Arena_Control_arch of Arena_Control is
+begin
+	process (Arena_opCode))
+	-- Hex to 7 segment4 decoder 
+	begin 
+		case Arena_opCode is
+			when "000000" => -- R Type Instruction
+			Arena_controlLines <= "10000000";
+
+		end case;
+	end process;
+--extract segment4 data bits and invert since operates on low
+-- led driver circuit is inverted
+Arena_segment4_A <= NOT Arena_segment4_data(6);
+Arena_segment4_B <= NOT Arena_segment4_data(5);
+Arena_segment4_C <= NOT Arena_segment4_data(4);
+Arena_segment4_D <= NOT Arena_segment4_data(3);
+Arena_segment4_E <= NOT Arena_segment4_data(2);
+Arena_segment4_F <= NOT Arena_segment4_data(1);
+Arena_segment4_G <= NOT Arena_segment4_data(0);
+end Arena_Control_arch;

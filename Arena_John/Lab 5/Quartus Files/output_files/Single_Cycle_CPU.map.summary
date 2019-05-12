@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri May 10 20:56:20 2019
+Analysis & Synthesis Status : Successful - Sat May 11 21:21:14 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Single_Cycle_CPU
-Top-level Entity Name : ram3port
+Top-level Entity Name : Arena_ALU
 Family : Cyclone II
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 293
+    Total combinational functions : 293
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 113
+Total pins : 101
 Total virtual pins : 0
-Total memory bits : 2,048
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
