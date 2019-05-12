@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Single_Cycle_CPU
-Sat May 11 21:21:14 2019
+Sun May 12 14:17:37 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,11 +13,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Source assignments for ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated
+ 12. Source assignments for ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated
+ 13. Parameter Settings for User Entity Instance: lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component
+ 14. Parameter Settings for User Entity Instance: ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: BUSMUX:inst5
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +50,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 11 21:21:14 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sun May 12 14:17:37 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Single_Cycle_CPU                                ;
-; Top-level Entity Name              ; Arena_ALU                                       ;
+; Top-level Entity Name              ; Single_Cycle_CPU                                ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 293                                             ;
-;     Total combinational functions  ; 293                                             ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 101                                             ;
+; Total logic elements               ; 30                                              ;
+;     Total combinational functions  ; 30                                              ;
+;     Dedicated logic registers      ; 30                                              ;
+; Total registers                    ; 30                                              ;
+; Total pins                         ; 89                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -66,7 +73,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; Arena_ALU          ; Single_Cycle_CPU   ;
+; Top-level entity name                                                      ; Single_Cycle_CPU   ; Single_Cycle_CPU   ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -145,174 +152,124 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; Arena_ALU.vhd                    ; yes             ; User VHDL File  ; C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_ALU.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; ram3port.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/ram3port.bdf                   ;         ;
+; Mem_Access.vhd                   ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Mem_Access.vhd                 ;         ;
+; Arena_ProgramCounter_32bit.vhd   ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_ProgramCounter_32bit.vhd ;         ;
+; Single_Cycle_CPU.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.bdf           ;         ;
+; lpm_add_sub0.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/lpm_add_sub0.vhd               ;         ;
+; lpm_3ramport.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/lpm_3ramport.vhd               ;         ;
+; Arena_Control.vhd                ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_Control.vhd              ;         ;
+; Arena_ALU_Control.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_ALU_Control.bdf          ;         ;
+; Arena_ALU.vhd                    ; yes             ; User VHDL File                     ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_ALU.vhd                  ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                              ;         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                                                                  ;         ;
+; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                                                                 ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                                 ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                                 ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                      ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                               ;         ;
+; db/add_sub_dph.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/db/add_sub_dph.tdf             ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                 ;         ;
+; db/altsyncram_c9o1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/db/altsyncram_c9o1.tdf         ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                                                                   ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                  ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                                                                   ;         ;
+; db/mux_pmc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/db/mux_pmc.tdf                 ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 293    ;
-;                                             ;        ;
-; Total combinational functions               ; 293    ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 34     ;
-;     -- 3 input functions                    ; 224    ;
-;     -- <=2 input functions                  ; 35     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 230    ;
-;     -- arithmetic mode                      ; 63     ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 101    ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; Mux3~0 ;
-; Maximum fan-out                             ; 96     ;
-; Total fan-out                               ; 911    ;
-; Average fan-out                             ; 2.31   ;
-+---------------------------------------------+--------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 30        ;
+;                                             ;           ;
+; Total combinational functions               ; 30        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 30        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1         ;
+;     -- arithmetic mode                      ; 29        ;
+;                                             ;           ;
+; Total registers                             ; 30        ;
+;     -- Dedicated logic registers            ; 30        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 89        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; Arena_clk ;
+; Maximum fan-out                             ; 30        ;
+; Total fan-out                               ; 153       ;
+; Average fan-out                             ; 1.03      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Arena_ALU                 ; 293 (293)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |Arena_ALU          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                               ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
+; |Single_Cycle_CPU                         ; 30 (0)            ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 89   ; 0            ; |Single_Cycle_CPU                                                                                          ; work         ;
+;    |lpm_add_sub0:PC_Incrementer|          ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Single_Cycle_CPU|lpm_add_sub0:PC_Incrementer                                                              ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Single_Cycle_CPU|lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component                            ; work         ;
+;          |add_sub_dph:auto_generated|     ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Single_Cycle_CPU|lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component|add_sub_dph:auto_generated ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                 ;
-+------------------------------------------------------+---------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal ; Free of Timing Hazards ;
-+------------------------------------------------------+---------------------+------------------------+
-; Arena_ALU_OUT[0]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[1]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[2]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[3]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[4]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[5]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[6]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[7]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[8]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[9]$latch                               ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[10]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[11]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[12]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[13]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[14]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[15]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[16]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[17]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[18]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[19]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[20]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[21]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[22]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[23]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[24]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[25]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[26]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[27]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[28]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[29]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[30]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_OUT[31]$latch                              ; Mux132              ; yes                    ;
-; Arena_ALU_Zero$latch                                 ; Mux1                ; yes                    ;
-; Arena_arithmetic_conv[0]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[1]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[2]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[3]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[4]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[5]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[6]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[7]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[8]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[9]                             ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[10]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[11]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[12]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[13]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[14]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[15]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[16]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[17]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[18]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[19]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[20]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[21]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[22]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[23]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[24]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[25]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[26]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[27]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[28]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[29]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[30]                            ; Mux3                ; yes                    ;
-; Arena_arithmetic_conv[31]                            ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[0]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[0]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[1]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[1]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[2]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[2]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[3]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[3]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[4]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[4]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[5]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[5]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[6]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[6]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[7]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[7]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[8]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[8]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[9]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[9]                                 ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[10]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[10]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[11]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[11]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[12]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[12]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[13]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[13]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[14]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[14]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[15]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[15]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[16]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_A[16]                                ; Mux3                ; yes                    ;
-; Arena_sign_conv_B[17]                                ; Mux3                ; yes                    ;
-; Number of user-specified and inferred latches = 129  ;                     ;                        ;
-+------------------------------------------------------+---------------------+------------------------+
-Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                            ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                               ; IP Include File                                                                                                  ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |Single_Cycle_CPU|lpm_add_sub0:PC_Incrementer                 ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/lpm_add_sub0.vhd ;
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |Single_Cycle_CPU|ram3port:Registers|lpm_3ramport:lpm_2port_a ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/lpm_3ramport.vhd ;
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |Single_Cycle_CPU|ram3port:Registers|lpm_3ramport:lpm_2port_b ; C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/lpm_3ramport.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; PC[0]                                 ; Merged with PC[1]                      ;
+; PC[1]                                 ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -320,7 +277,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -330,14 +287,213 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 1:1                ; 64 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |Arena_ALU|Mux99           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Arena_ALU|Mux131          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                  ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                   ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                  ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                   ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+-------------+---------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                ;
++------------------------+-------------+---------------------------------------------------------------------+
+; LPM_WIDTH              ; 32          ; Signed Integer                                                      ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                             ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                                             ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                                             ;
+; LPM_PIPELINE           ; 0           ; Untyped                                                             ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                                             ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                                             ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                                             ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                             ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                  ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                                             ;
+; USE_WYS                ; OFF         ; Untyped                                                             ;
+; STYLE                  ; FAST        ; Untyped                                                             ;
+; CBXI_PARAMETER         ; add_sub_dph ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                      ;
++------------------------+-------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                         ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                      ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                      ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                               ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                               ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                               ;
+; WIDTHAD_B                          ; 5                    ; Signed Integer                                               ;
+; NUMWORDS_B                         ; 32                   ; Signed Integer                                               ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                      ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                      ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                      ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                      ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                                      ;
+; CBXI_PARAMETER                     ; altsyncram_c9o1      ; Untyped                                                      ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                         ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                      ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                      ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                               ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                               ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                      ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                               ;
+; WIDTHAD_B                          ; 5                    ; Signed Integer                                               ;
+; NUMWORDS_B                         ; 32                   ; Signed Integer                                               ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                      ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                      ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                      ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                      ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                                      ;
+; CBXI_PARAMETER                     ; altsyncram_c9o1      ; Untyped                                                      ;
++------------------------------------+----------------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst5 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 5     ; Untyped                          ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                        ;
++-------------------------------------------+-----------------------------------------------------------------------------+
+; Name                                      ; Value                                                                       ;
++-------------------------------------------+-----------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                           ;
+; Entity Instance                           ; ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                   ;
+;     -- WIDTH_A                            ; 32                                                                          ;
+;     -- NUMWORDS_A                         ; 32                                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                ;
+;     -- WIDTH_B                            ; 32                                                                          ;
+;     -- NUMWORDS_B                         ; 32                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK0                                                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                   ;
+; Entity Instance                           ; ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                   ;
+;     -- WIDTH_A                            ; 32                                                                          ;
+;     -- NUMWORDS_A                         ; 32                                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                ;
+;     -- WIDTH_B                            ; 32                                                                          ;
+;     -- NUMWORDS_B                         ; 32                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK0                                                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                   ;
++-------------------------------------------+-----------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -355,9 +511,9 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat May 11 21:21:10 2019
+    Info: Processing started: Sun May 12 14:17:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Single_Cycle_CPU -c Single_Cycle_CPU
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file arena_mem_access_2.vhd
     Info (12022): Found design unit 1: Arena_Mem_Access_2-Arena_Mem_Access_2_arch
     Info (12023): Found entity 1: Arena_Mem_Access_2
@@ -395,7 +551,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file arena_a
 Info (12021): Found 2 design units, including 1 entities, in source file arena_alu.vhd
     Info (12022): Found design unit 1: Arena_ALU-Arena_ALU_arch
     Info (12023): Found entity 1: Arena_ALU
-Info (12127): Elaborating entity "Arena_ALU" for the top level hierarchy
+Info (12127): Elaborating entity "Single_Cycle_CPU" for the top level hierarchy
+Info (12128): Elaborating entity "Mem_Access" for hierarchy "Mem_Access:inst"
+Info (12128): Elaborating entity "lpm_add_sub0" for hierarchy "lpm_add_sub0:PC_Incrementer"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_dph.tdf
+    Info (12023): Found entity 1: add_sub_dph
+Info (12128): Elaborating entity "add_sub_dph" for hierarchy "lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component|add_sub_dph:auto_generated"
+Info (12128): Elaborating entity "Arena_Control" for hierarchy "Arena_Control:inst1"
+Warning (10541): VHDL Signal Declaration warning at Arena_Control.vhd(13): used implicit default value for signal "Arena_aluOP" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10631): VHDL Process Statement warning at Arena_Control.vhd(19): inferring latch(es) for signal or variable "Arena_controlLines", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Arena_controlLines[0]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[1]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[2]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[3]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[4]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[5]" at Arena_Control.vhd(19)
+Info (10041): Inferred latch for "Arena_controlLines[6]" at Arena_Control.vhd(19)
+Info (12128): Elaborating entity "Arena_ALU_Control" for hierarchy "Arena_ALU_Control:inst2"
+Info (12128): Elaborating entity "Arena_ALU" for hierarchy "Arena_ALU:inst3"
 Warning (10492): VHDL Process Statement warning at Arena_ALU.vhd(28): signal "Arena_IN_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_ALU.vhd(28): signal "Arena_IN_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Arena_ALU.vhd(30): signal "Arena_IN_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -546,80 +727,174 @@ Info (10041): Inferred latch for "Arena_ALU_OUT[28]" at Arena_ALU.vhd(24)
 Info (10041): Inferred latch for "Arena_ALU_OUT[29]" at Arena_ALU.vhd(24)
 Info (10041): Inferred latch for "Arena_ALU_OUT[30]" at Arena_ALU.vhd(24)
 Info (10041): Inferred latch for "Arena_ALU_OUT[31]" at Arena_ALU.vhd(24)
-Warning (13012): Latch Arena_ALU_OUT[0]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[1]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[2]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[3]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[4]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[5]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[6]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[7]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[8]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[9]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[10]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[11]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[12]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[13]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[14]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[15]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[16]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[17]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[18]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[19]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[20]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[21]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[22]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[23]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[24]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[25]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[26]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[27]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[28]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[29]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[30]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
-Warning (13012): Latch Arena_ALU_OUT[31]$latch has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Arena_ALU_IN_Operation[1]
+Info (12128): Elaborating entity "ram3port" for hierarchy "ram3port:Registers"
+Info (12128): Elaborating entity "lpm_3ramport" for hierarchy "ram3port:Registers|lpm_3ramport:lpm_2port_a"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "numwords_b" = "32"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "widthad_b" = "5"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c9o1.tdf
+    Info (12023): Found entity 1: altsyncram_c9o1
+Info (12128): Elaborating entity "altsyncram_c9o1" for hierarchy "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst5"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst5"
+Info (12133): Instantiated megafunction "BUSMUX:inst5" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst5|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pmc.tdf
+    Info (12023): Found entity 1: mux_pmc
+Info (12128): Elaborating entity "mux_pmc" for hierarchy "BUSMUX:inst5|lpm_mux:$00000|mux_pmc:auto_generated"
+Info (12128): Elaborating entity "Arena_ProgramCounter_32bit" for hierarchy "Arena_ProgramCounter_32bit:Instruction_Input"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[0]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[1]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[2]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[3]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[4]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[5]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[6]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[7]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[8]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[9]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[10]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[11]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[12]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[13]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[14]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[15]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[16]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[17]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[18]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[19]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[20]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[21]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[22]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[23]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[24]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[25]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[26]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[27]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[28]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[29]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[30]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[31]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[0]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[1]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[2]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[3]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[4]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[5]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[6]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[7]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[8]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[9]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[10]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[11]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[12]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[13]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[14]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[15]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[16]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[17]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[18]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[19]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[20]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[21]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[22]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[23]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[24]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[25]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[26]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[27]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[28]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[29]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[30]"
+        Warning (14320): Synthesized away node "ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component|altsyncram_c9o1:auto_generated|q_b[31]"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SRAM_CE_N" is stuck at GND
+    Warning (13410): Pin "SRAM_UB_N" is stuck at GND
+    Warning (13410): Pin "SRAM_LB_N" is stuck at GND
+    Warning (13410): Pin "DRAM_CE_N" is stuck at GND
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND
+    Warning (13410): Pin "test[1]" is stuck at GND
+    Warning (13410): Pin "test[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 394 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 68 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 293 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 86 warnings
-    Info: Peak virtual memory: 491 megabytes
-    Info: Processing ended: Sat May 11 21:21:14 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+Warning (21074): Design contains 45 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "DRAM_CKE"
+    Warning (15610): No output dependent on input pin "DRAM_CLK"
+    Warning (15610): No output dependent on input pin "instr[31]"
+    Warning (15610): No output dependent on input pin "instr[30]"
+    Warning (15610): No output dependent on input pin "instr[29]"
+    Warning (15610): No output dependent on input pin "instr[28]"
+    Warning (15610): No output dependent on input pin "instr[27]"
+    Warning (15610): No output dependent on input pin "instr[26]"
+    Warning (15610): No output dependent on input pin "instr[25]"
+    Warning (15610): No output dependent on input pin "instr[24]"
+    Warning (15610): No output dependent on input pin "instr[23]"
+    Warning (15610): No output dependent on input pin "instr[22]"
+    Warning (15610): No output dependent on input pin "instr[21]"
+    Warning (15610): No output dependent on input pin "instr[20]"
+    Warning (15610): No output dependent on input pin "instr[19]"
+    Warning (15610): No output dependent on input pin "instr[18]"
+    Warning (15610): No output dependent on input pin "instr[17]"
+    Warning (15610): No output dependent on input pin "instr[16]"
+    Warning (15610): No output dependent on input pin "instr[15]"
+    Warning (15610): No output dependent on input pin "instr[14]"
+    Warning (15610): No output dependent on input pin "instr[13]"
+    Warning (15610): No output dependent on input pin "instr[12]"
+    Warning (15610): No output dependent on input pin "instr[11]"
+    Warning (15610): No output dependent on input pin "instr[10]"
+    Warning (15610): No output dependent on input pin "instr[9]"
+    Warning (15610): No output dependent on input pin "instr[8]"
+    Warning (15610): No output dependent on input pin "instr[7]"
+    Warning (15610): No output dependent on input pin "instr[6]"
+    Warning (15610): No output dependent on input pin "instr[5]"
+    Warning (15610): No output dependent on input pin "instr[4]"
+    Warning (15610): No output dependent on input pin "instr[3]"
+    Warning (15610): No output dependent on input pin "instr[2]"
+    Warning (15610): No output dependent on input pin "instr[1]"
+    Warning (15610): No output dependent on input pin "instr[0]"
+    Warning (15610): No output dependent on input pin "Arena_button"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[7]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[6]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[5]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[4]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[3]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[2]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[1]"
+    Warning (15610): No output dependent on input pin "Arena_octalBits[0]"
+    Warning (15610): No output dependent on input pin "Arena_octalOpcode[1]"
+    Warning (15610): No output dependent on input pin "Arena_octalOpcode[0]"
+Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 47 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 60 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 144 warnings
+    Info: Peak virtual memory: 4678 megabytes
+    Info: Processing ended: Sun May 12 14:17:37 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

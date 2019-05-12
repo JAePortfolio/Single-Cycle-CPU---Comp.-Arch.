@@ -617,7 +617,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1544 120 1752 280)
+	(rect 1624 120 1832 280)
 	(text "ram3port" (rect 5 0 55 14)(font "Arial" (font_size 8)))
 	(text "Registers" (rect 8 144 55 156)(font "Arial" ))
 	(port
@@ -780,6 +780,54 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 320 96))
 	)
+)
+(symbol
+	(rect 1464 184 1576 272)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst5" (rect 3 77 26 89)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"5"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 1440 320 1568 348))
 )
 (connector
 	(pt 880 -144)
@@ -1065,54 +1113,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "RAM_Instruction[20..16]" (rect 1424 465 1436 584)(font "Arial" )(vertical))
-	(pt 1424 592)
-	(pt 1424 288)
-	(bus)
-)
-(connector
-	(text "RAM_Instruction[15..11]" (rect 1464 465 1476 584)(font "Arial" )(vertical))
-	(pt 1464 592)
-	(pt 1464 288)
-	(bus)
-)
-(connector
-	(pt 1424 592)
-	(pt 1464 592)
-	(bus)
-)
-(connector
-	(pt 1464 592)
-	(pt 1504 592)
-	(bus)
-)
-(connector
-	(text "RAM_Instruction[25..21]" (rect 1384 465 1396 584)(font "Arial" )(vertical))
-	(pt 1384 152)
-	(pt 1384 592)
-	(bus)
-)
-(connector
-	(pt 1384 152)
-	(pt 1544 152)
-	(bus)
-)
-(connector
-	(pt 1384 592)
-	(pt 1424 592)
-	(bus)
-)
-(connector
-	(pt 1904 448)
-	(pt 1856 448)
-	(bus)
-)
-(connector
-	(pt 1856 448)
-	(pt 1856 -144)
-	(bus)
-)
-(connector
 	(text "RAM_Instruction[31..26]" (rect 1344 465 1356 584)(font "Arial" )(vertical))
 	(pt 1344 592)
 	(pt 1344 -160)
@@ -1127,16 +1127,6 @@ applicable agreement for further details.
 	(text "RAM_Instruction[31..0]" (rect 1050 576 1163 588)(font "Arial" ))
 	(pt 1040 592)
 	(pt 1344 592)
-	(bus)
-)
-(connector
-	(pt 1344 592)
-	(pt 1384 592)
-	(bus)
-)
-(connector
-	(pt 1696 -144)
-	(pt 1856 -144)
 	(bus)
 )
 (connector
@@ -1155,13 +1145,140 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1752 152)
 	(pt 2224 152)
+	(pt 1832 152)
+	(bus)
+)
+(connector
+	(pt 1904 448)
+	(pt 1888 448)
+	(bus)
+)
+(connector
+	(pt 1888 448)
+	(pt 1888 -144)
+	(bus)
+)
+(connector
+	(pt 1696 -144)
+	(pt 1888 -144)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[25..21]" (rect 1368 465 1380 584)(font "Arial" )(vertical))
+	(pt 1368 592)
+	(pt 1368 152)
+	(bus)
+)
+(connector
+	(pt 1624 152)
+	(pt 1368 152)
+	(bus)
+)
+(connector
+	(pt 1344 592)
+	(pt 1368 592)
+	(bus)
+)
+(connector
+	(pt 1368 592)
+	(pt 1400 592)
+	(bus)
+)
+(connector
+	(pt 1624 168)
+	(pt 1400 168)
+	(bus)
+)
+(connector
+	(pt 1400 216)
+	(pt 1464 216)
+	(bus)
+)
+(connector
+	(pt 1400 168)
+	(pt 1400 216)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[20..16]" (rect 1400 465 1412 584)(font "Arial" )(vertical))
+	(pt 1400 216)
+	(pt 1400 592)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[15..11]" (rect 1432 465 1444 584)(font "Arial" )(vertical))
+	(pt 1432 248)
+	(pt 1432 592)
+	(bus)
+)
+(connector
+	(pt 1432 248)
+	(pt 1464 248)
+	(bus)
+)
+(connector
+	(pt 1400 592)
+	(pt 1432 592)
+	(bus)
+)
+(connector
+	(pt 1432 592)
+	(pt 1504 592)
+	(bus)
+)
+(connector
+	(pt 1576 232)
+	(pt 1584 232)
+	(bus)
+)
+(connector
+	(pt 1584 232)
+	(pt 1584 184)
+	(bus)
+)
+(connector
+	(pt 1624 184)
+	(pt 1584 184)
+	(bus)
+)
+(connector
+	(pt 1328 312)
+	(pt 1520 312)
+)
+(connector
+	(pt 1520 312)
+	(pt 1520 272)
+)
+(connector
+	(text "Arena_controlLines[0]" (rect 1736 -276 1748 -170)(font "Arial" )(vertical))
+	(pt 1752 -160)
+	(pt 1752 -272)
+)
+(connector
+	(pt 1328 -272)
+	(pt 1752 -272)
+)
+(connector
+	(pt 1328 312)
+	(pt 1328 -272)
+)
+(connector
+	(text "Arena_controlLines[6..0]" (rect 1618 -176 1737 -164)(font "Arial" ))
+	(pt 1696 -160)
+	(pt 1752 -160)
+	(bus)
+)
+(connector
+	(pt 1752 -160)
+	(pt 1888 -160)
 	(bus)
 )
 (junction (pt 936 -144))
 (junction (pt 672 128))
-(junction (pt 1424 592))
-(junction (pt 1384 592))
 (junction (pt 1344 592))
-(junction (pt 1464 592))
+(junction (pt 1368 592))
+(junction (pt 1400 592))
+(junction (pt 1432 592))
+(junction (pt 1400 216))
+(junction (pt 1752 -160))

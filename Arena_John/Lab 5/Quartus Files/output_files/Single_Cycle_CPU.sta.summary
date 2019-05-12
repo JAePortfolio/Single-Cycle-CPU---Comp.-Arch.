@@ -2,28 +2,28 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'Arena_ALU_IN_Operation[0]'
-Slack : -4.413
-TNS   : -146.187
+Type  : Slow Model Setup 'Arena_clk'
+Slack : -2.653
+TNS   : -44.583
 
-Type  : Slow Model Hold 'Arena_ALU_IN_Operation[0]'
-Slack : -0.821
-TNS   : -23.086
+Type  : Slow Model Hold 'Arena_clk'
+Slack : 0.520
+TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'Arena_ALU_IN_Operation[0]'
+Type  : Slow Model Minimum Pulse Width 'Arena_clk'
 Slack : -1.380
-TNS   : -1.380
+TNS   : -31.380
 
-Type  : Fast Model Setup 'Arena_ALU_IN_Operation[0]'
-Slack : -1.487
-TNS   : -29.933
+Type  : Fast Model Setup 'Arena_clk'
+Slack : -0.768
+TNS   : -7.679
 
-Type  : Fast Model Hold 'Arena_ALU_IN_Operation[0]'
-Slack : -0.696
-TNS   : -20.106
+Type  : Fast Model Hold 'Arena_clk'
+Slack : 0.239
+TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'Arena_ALU_IN_Operation[0]'
+Type  : Fast Model Minimum Pulse Width 'Arena_clk'
 Slack : -1.380
-TNS   : -1.380
+TNS   : -31.380
 
 ------------------------------------------------------------

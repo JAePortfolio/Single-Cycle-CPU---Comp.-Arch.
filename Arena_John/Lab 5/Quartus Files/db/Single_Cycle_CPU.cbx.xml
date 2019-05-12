@@ -1,5 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Single_Cycle_CPU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Single_Cycle_CPU|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_pmc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Single_Cycle_CPU|lpm_add_sub0:PC_Incrementer|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_dph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Single_Cycle_CPU|ram3port:Registers|lpm_3ramport:lpm_2port_a|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_c9o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Single_Cycle_CPU|ram3port:Registers|lpm_3ramport:lpm_2port_b|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_c9o1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
