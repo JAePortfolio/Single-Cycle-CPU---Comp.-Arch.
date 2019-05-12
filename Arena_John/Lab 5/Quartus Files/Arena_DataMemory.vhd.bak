@@ -1,0 +1,27 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 5 - FINAL LAB - Spring 2019 Due: 5/15/19
+-- Arena_DataMemory.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity Arena_DataMemory is
+	port(
+		Arena_MemWrite, Arena_MemRead: in std_logic; -- Control Line inputs
+		Arena_Address: in std_logic_vector(31 downto 0); -- 32 bit address 
+		
+	);
+end Arena_DataMemory;
+
+architecture Arena_DataMemory_arch of Arena_DataMemory is
+begin
+	process (Arena_opCode)
+	begin 
+		case Arena_opCode is
+			when "000000" => -- R Type Instruction
+			Arena_DataMemoryLines <= "1000001"; -- RegDst, RegWrite
+			when others =>
+			null;
+		end case;
+	end process;
+end Arena_DataMemory_arch;

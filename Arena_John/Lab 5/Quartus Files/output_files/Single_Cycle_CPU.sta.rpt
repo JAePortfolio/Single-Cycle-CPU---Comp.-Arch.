@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Single_Cycle_CPU
-Sun May 12 14:17:55 2019
+Sun May 12 18:09:22 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,36 +16,23 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Setup: 'Arena_clk'
- 12. Slow Model Hold: 'Arena_clk'
- 13. Slow Model Minimum Pulse Width: 'Arena_clk'
- 14. Clock to Output Times
- 15. Minimum Clock to Output Times
- 16. Propagation Delay
- 17. Minimum Propagation Delay
- 18. Fast Model Setup Summary
- 19. Fast Model Hold Summary
- 20. Fast Model Recovery Summary
- 21. Fast Model Removal Summary
- 22. Fast Model Minimum Pulse Width Summary
- 23. Fast Model Setup: 'Arena_clk'
- 24. Fast Model Hold: 'Arena_clk'
- 25. Fast Model Minimum Pulse Width: 'Arena_clk'
- 26. Clock to Output Times
- 27. Minimum Clock to Output Times
- 28. Propagation Delay
- 29. Minimum Propagation Delay
- 30. Multicorner Timing Analysis Summary
- 31. Clock to Output Times
- 32. Minimum Clock to Output Times
- 33. Progagation Delay
- 34. Minimum Progagation Delay
- 35. Setup Transfers
- 36. Hold Transfers
- 37. Report TCCS
- 38. Report RSKM
- 39. Unconstrained Paths
- 40. TimeQuest Timing Analyzer Messages
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
 
 
 
@@ -98,41 +85,28 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; Arena_clk  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Arena_clk } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
-+--------------------------------------------------+
-; Slow Model Fmax Summary                          ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 273.75 MHz ; 273.75 MHz      ; Arena_clk  ;      ;
-+------------+-----------------+------------+------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
 
 
-+------------------------------------+
-; Slow Model Setup Summary           ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; Arena_clk ; -2.653 ; -44.583       ;
-+-----------+--------+---------------+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+-----------------------------------+
-; Slow Model Hold Summary           ;
-+-----------+-------+---------------+
-; Clock     ; Slack ; End Point TNS ;
-+-----------+-------+---------------+
-; Arena_clk ; 0.520 ; 0.000         ;
-+-----------+-------+---------------+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -147,415 +121,10 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------+
+------------------------------------------
 ; Slow Model Minimum Pulse Width Summary ;
-+-----------+--------+-------------------+
-; Clock     ; Slack  ; End Point TNS     ;
-+-----------+--------+-------------------+
-; Arena_clk ; -1.380 ; -31.380           ;
-+-----------+--------+-------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'Arena_clk'                                                                      ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -2.653 ; PC[2]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.686      ;
-; -2.583 ; PC[3]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.616      ;
-; -2.582 ; PC[2]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.615      ;
-; -2.547 ; PC[4]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.580      ;
-; -2.512 ; PC[3]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.545      ;
-; -2.511 ; PC[2]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.544      ;
-; -2.476 ; PC[4]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.509      ;
-; -2.441 ; PC[5]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.474      ;
-; -2.441 ; PC[3]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.474      ;
-; -2.440 ; PC[2]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.473      ;
-; -2.406 ; PC[6]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.439      ;
-; -2.405 ; PC[4]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.438      ;
-; -2.370 ; PC[5]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.403      ;
-; -2.370 ; PC[3]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.403      ;
-; -2.369 ; PC[2]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.402      ;
-; -2.335 ; PC[7]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.368      ;
-; -2.335 ; PC[6]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.368      ;
-; -2.334 ; PC[4]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.367      ;
-; -2.299 ; PC[5]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.332      ;
-; -2.299 ; PC[3]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.332      ;
-; -2.298 ; PC[2]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.331      ;
-; -2.264 ; PC[7]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.297      ;
-; -2.264 ; PC[6]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.297      ;
-; -2.263 ; PC[4]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.296      ;
-; -2.232 ; PC[8]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.265      ;
-; -2.228 ; PC[5]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.261      ;
-; -2.228 ; PC[3]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.261      ;
-; -2.227 ; PC[2]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.260      ;
-; -2.193 ; PC[7]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.226      ;
-; -2.193 ; PC[6]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.226      ;
-; -2.192 ; PC[4]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.225      ;
-; -2.161 ; PC[8]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.194      ;
-; -2.157 ; PC[5]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.190      ;
-; -2.157 ; PC[3]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.190      ;
-; -2.122 ; PC[7]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.155      ;
-; -2.122 ; PC[6]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.155      ;
-; -2.121 ; PC[4]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.154      ;
-; -2.104 ; PC[9]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.137      ;
-; -2.090 ; PC[8]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.123      ;
-; -2.086 ; PC[5]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.119      ;
-; -2.068 ; PC[2]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.101      ;
-; -2.051 ; PC[7]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.084      ;
-; -2.051 ; PC[6]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.084      ;
-; -2.033 ; PC[9]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.066      ;
-; -2.019 ; PC[8]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.052      ;
-; -2.015 ; PC[5]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.048      ;
-; -1.998 ; PC[10]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.031      ;
-; -1.998 ; PC[3]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.031      ;
-; -1.997 ; PC[2]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.030      ;
-; -1.980 ; PC[7]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.013      ;
-; -1.980 ; PC[6]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 3.013      ;
-; -1.962 ; PC[11]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.995      ;
-; -1.962 ; PC[9]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.995      ;
-; -1.962 ; PC[4]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.995      ;
-; -1.948 ; PC[8]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.981      ;
-; -1.927 ; PC[10]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.960      ;
-; -1.927 ; PC[3]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.960      ;
-; -1.926 ; PC[2]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.959      ;
-; -1.909 ; PC[7]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.942      ;
-; -1.891 ; PC[11]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.924      ;
-; -1.891 ; PC[9]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.924      ;
-; -1.891 ; PC[4]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.924      ;
-; -1.877 ; PC[8]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.910      ;
-; -1.856 ; PC[12]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.889      ;
-; -1.856 ; PC[10]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.889      ;
-; -1.856 ; PC[5]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.889      ;
-; -1.856 ; PC[3]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.889      ;
-; -1.855 ; PC[2]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.888      ;
-; -1.821 ; PC[6]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.854      ;
-; -1.820 ; PC[13]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.853      ;
-; -1.820 ; PC[11]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.853      ;
-; -1.820 ; PC[9]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.853      ;
-; -1.820 ; PC[4]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.853      ;
-; -1.806 ; PC[8]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.839      ;
-; -1.785 ; PC[12]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.818      ;
-; -1.785 ; PC[10]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.818      ;
-; -1.785 ; PC[5]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.818      ;
-; -1.785 ; PC[3]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.818      ;
-; -1.784 ; PC[2]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.817      ;
-; -1.750 ; PC[7]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.783      ;
-; -1.750 ; PC[6]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.783      ;
-; -1.749 ; PC[13]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.782      ;
-; -1.749 ; PC[11]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.782      ;
-; -1.749 ; PC[9]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.782      ;
-; -1.749 ; PC[4]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.782      ;
-; -1.714 ; PC[14]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.747      ;
-; -1.714 ; PC[12]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.747      ;
-; -1.714 ; PC[10]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.747      ;
-; -1.714 ; PC[5]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.747      ;
-; -1.714 ; PC[3]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.747      ;
-; -1.713 ; PC[2]     ; PC[19]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.746      ;
-; -1.679 ; PC[7]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.712      ;
-; -1.679 ; PC[6]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.712      ;
-; -1.678 ; PC[13]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.711      ;
-; -1.678 ; PC[11]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.711      ;
-; -1.678 ; PC[9]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.711      ;
-; -1.678 ; PC[4]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.711      ;
-; -1.647 ; PC[8]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.680      ;
-; -1.643 ; PC[15]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.676      ;
-; -1.643 ; PC[14]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 2.676      ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Slow Model Hold: 'Arena_clk'                                                                      ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 0.520 ; PC[31]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.786      ;
-; 0.788 ; PC[17]    ; PC[17]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.054      ;
-; 0.795 ; PC[30]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.061      ;
-; 0.798 ; PC[2]     ; PC[2]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.064      ;
-; 0.798 ; PC[18]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.064      ;
-; 0.799 ; PC[3]     ; PC[3]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[5]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[8]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[10]    ; PC[10]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[12]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[14]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[15]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[16]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[19]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[21]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[24]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[26]    ; PC[26]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.799 ; PC[28]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.065      ;
-; 0.831 ; PC[4]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[9]     ; PC[9]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[11]    ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[13]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[20]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[25]    ; PC[25]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[27]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; PC[29]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.097      ;
-; 0.832 ; PC[6]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.098      ;
-; 0.832 ; PC[7]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.098      ;
-; 0.832 ; PC[22]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.098      ;
-; 0.832 ; PC[23]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.098      ;
-; 1.171 ; PC[17]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.437      ;
-; 1.178 ; PC[30]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.444      ;
-; 1.181 ; PC[2]     ; PC[3]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.447      ;
-; 1.181 ; PC[18]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.447      ;
-; 1.182 ; PC[14]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[15]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[3]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[10]    ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[12]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[19]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[26]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[28]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[5]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.182 ; PC[21]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.448      ;
-; 1.217 ; PC[29]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[4]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[9]     ; PC[10]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[11]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[13]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[20]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[25]    ; PC[26]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.217 ; PC[27]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.483      ;
-; 1.218 ; PC[7]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.484      ;
-; 1.218 ; PC[23]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.484      ;
-; 1.218 ; PC[6]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.484      ;
-; 1.218 ; PC[22]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.484      ;
-; 1.242 ; PC[17]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.508      ;
-; 1.252 ; PC[2]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.518      ;
-; 1.252 ; PC[18]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.518      ;
-; 1.253 ; PC[14]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[28]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[3]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[10]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[12]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[19]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[26]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[5]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.253 ; PC[21]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.519      ;
-; 1.274 ; PC[8]     ; PC[9]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.540      ;
-; 1.274 ; PC[24]    ; PC[25]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.540      ;
-; 1.277 ; PC[16]    ; PC[17]  ; Arena_clk    ; Arena_clk   ; 0.000        ; -0.003     ; 1.540      ;
-; 1.288 ; PC[29]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[13]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[9]     ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[11]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[25]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[27]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[4]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.288 ; PC[20]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.554      ;
-; 1.289 ; PC[6]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.555      ;
-; 1.289 ; PC[22]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.555      ;
-; 1.313 ; PC[17]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.579      ;
-; 1.323 ; PC[2]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.589      ;
-; 1.323 ; PC[18]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.589      ;
-; 1.324 ; PC[28]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[12]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[10]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[26]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[3]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[19]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[5]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.324 ; PC[21]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.590      ;
-; 1.331 ; PC[15]    ; PC[17]  ; Arena_clk    ; Arena_clk   ; 0.000        ; -0.003     ; 1.594      ;
-; 1.345 ; PC[8]     ; PC[10]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.611      ;
-; 1.345 ; PC[24]    ; PC[26]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.611      ;
-; 1.348 ; PC[16]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; -0.003     ; 1.611      ;
-; 1.359 ; PC[13]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.625      ;
-; 1.359 ; PC[27]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.625      ;
-; 1.359 ; PC[9]     ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.625      ;
-; 1.359 ; PC[11]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 1.625      ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'Arena_clk'                                                                     ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                     ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_clk ; Rise       ; Arena_clk                  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[10]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[10]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[11]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[11]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[12]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[12]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[13]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[13]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[14]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[14]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[15]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[15]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[16]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[16]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[17]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[17]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[18]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[18]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[19]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[19]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[20]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[20]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[21]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[21]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[22]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[22]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[23]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[23]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[24]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[24]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[25]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[25]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[26]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[26]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[27]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[27]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[28]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[28]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[29]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[29]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[2]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[2]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[30]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[30]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[31]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[31]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[3]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[3]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[4]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[4]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[5]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[5]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[6]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[6]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[7]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[7]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[8]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[8]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[9]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[9]                      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[10]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[10]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[11]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[11]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[12]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[12]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[13]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[13]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[14]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[14]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[15]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[15]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[16]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[16]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[17]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[17]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[18]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[18]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[19]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[19]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[20]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[20]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[21]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[21]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[22]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[22]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[23]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[23]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[24]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[24]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[25]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[25]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[26]|clk                 ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Clock to Output Times                                                 ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 9.678 ; 9.678 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 7.295 ; 7.295 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 7.467 ; 7.467 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 7.760 ; 7.760 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 7.608 ; 7.608 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 7.498 ; 7.498 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 7.732 ; 7.732 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 7.524 ; 7.524 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 7.644 ; 7.644 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 7.745 ; 7.745 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 7.783 ; 7.783 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 8.144 ; 8.144 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 8.483 ; 8.483 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 8.416 ; 8.416 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 8.415 ; 8.415 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 8.438 ; 8.438 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 8.555 ; 8.555 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 8.826 ; 8.826 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 8.696 ; 8.696 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 8.846 ; 8.846 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 8.865 ; 8.865 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 8.940 ; 8.940 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 9.147 ; 9.147 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 8.823 ; 8.823 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 8.953 ; 8.953 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 9.024 ; 9.024 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 9.118 ; 9.118 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 9.501 ; 9.501 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 9.499 ; 9.499 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 9.678 ; 9.678 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 9.366 ; 9.366 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------+
-; Minimum Clock to Output Times                                         ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 6.463 ; 6.463 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 7.295 ; 7.295 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 7.085 ; 7.085 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 7.339 ; 7.339 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 7.084 ; 7.084 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 6.936 ; 6.936 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 7.099 ; 7.099 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 6.787 ; 6.787 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 6.780 ; 6.780 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 6.778 ; 6.778 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 6.777 ; 6.777 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 7.035 ; 7.035 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 7.335 ; 7.335 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 7.165 ; 7.165 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 7.093 ; 7.093 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 7.045 ; 7.045 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 7.002 ; 7.002 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 7.212 ; 7.212 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 7.012 ; 7.012 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 7.123 ; 7.123 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 7.039 ; 7.039 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 7.076 ; 7.076 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 7.212 ; 7.212 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 6.784 ; 6.784 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 6.787 ; 6.787 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 6.755 ; 6.755 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 6.810 ; 6.810 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 7.090 ; 7.090 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 7.049 ; 7.049 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 7.121 ; 7.121 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 6.463 ; 6.463 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
+------------------------------------------
+No paths to report.
 
 
 +----------------------------------------------------------+
@@ -563,10 +132,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 8.831 ; 8.831 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 8.811 ; 8.811 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 8.931 ;       ;       ; 8.931 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 8.876 ; 8.876 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 8.891 ;       ;       ; 8.891 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 8.950 ; 8.950 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -575,29 +144,23 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 8.831 ; 8.831 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 8.811 ; 8.811 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 8.931 ;       ;       ; 8.931 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 8.876 ; 8.876 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 8.891 ;       ;       ; 8.891 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 8.950 ; 8.950 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
-+------------------------------------+
-; Fast Model Setup Summary           ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; Arena_clk ; -0.768 ; -7.679        ;
-+-----------+--------+---------------+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+-----------------------------------+
-; Fast Model Hold Summary           ;
-+-----------+-------+---------------+
-; Clock     ; Slack ; End Point TNS ;
-+-----------+-------+---------------+
-; Arena_clk ; 0.239 ; 0.000         ;
-+-----------+-------+---------------+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -612,415 +175,10 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------+
+------------------------------------------
 ; Fast Model Minimum Pulse Width Summary ;
-+-----------+--------+-------------------+
-; Clock     ; Slack  ; End Point TNS     ;
-+-----------+--------+-------------------+
-; Arena_clk ; -1.380 ; -31.380           ;
-+-----------+--------+-------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'Arena_clk'                                                                      ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -0.768 ; PC[2]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.797      ;
-; -0.734 ; PC[3]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.763      ;
-; -0.733 ; PC[2]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.762      ;
-; -0.712 ; PC[4]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.741      ;
-; -0.699 ; PC[3]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.728      ;
-; -0.698 ; PC[2]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.727      ;
-; -0.677 ; PC[4]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.706      ;
-; -0.665 ; PC[5]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.694      ;
-; -0.664 ; PC[3]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.693      ;
-; -0.663 ; PC[2]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.692      ;
-; -0.643 ; PC[6]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.672      ;
-; -0.642 ; PC[4]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.671      ;
-; -0.630 ; PC[5]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.659      ;
-; -0.629 ; PC[3]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.658      ;
-; -0.628 ; PC[2]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.657      ;
-; -0.608 ; PC[7]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.637      ;
-; -0.608 ; PC[6]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.637      ;
-; -0.607 ; PC[4]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.636      ;
-; -0.595 ; PC[5]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.624      ;
-; -0.594 ; PC[3]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.623      ;
-; -0.593 ; PC[2]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.622      ;
-; -0.573 ; PC[7]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.602      ;
-; -0.573 ; PC[6]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.602      ;
-; -0.572 ; PC[4]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.601      ;
-; -0.560 ; PC[5]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.589      ;
-; -0.559 ; PC[3]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.588      ;
-; -0.558 ; PC[2]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.587      ;
-; -0.556 ; PC[8]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.585      ;
-; -0.538 ; PC[7]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.567      ;
-; -0.538 ; PC[6]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.567      ;
-; -0.537 ; PC[4]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.566      ;
-; -0.525 ; PC[5]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.554      ;
-; -0.524 ; PC[3]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.553      ;
-; -0.521 ; PC[8]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.550      ;
-; -0.503 ; PC[7]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.532      ;
-; -0.503 ; PC[6]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.532      ;
-; -0.502 ; PC[4]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.531      ;
-; -0.490 ; PC[5]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.519      ;
-; -0.486 ; PC[8]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.515      ;
-; -0.478 ; PC[9]     ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.507      ;
-; -0.468 ; PC[7]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.497      ;
-; -0.468 ; PC[6]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.497      ;
-; -0.464 ; PC[2]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.493      ;
-; -0.455 ; PC[5]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.484      ;
-; -0.451 ; PC[8]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.480      ;
-; -0.443 ; PC[9]     ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.472      ;
-; -0.433 ; PC[7]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.462      ;
-; -0.433 ; PC[6]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.462      ;
-; -0.430 ; PC[10]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.459      ;
-; -0.430 ; PC[3]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.459      ;
-; -0.429 ; PC[2]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.458      ;
-; -0.416 ; PC[8]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.445      ;
-; -0.408 ; PC[11]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.437      ;
-; -0.408 ; PC[9]     ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.437      ;
-; -0.408 ; PC[4]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.437      ;
-; -0.398 ; PC[7]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.427      ;
-; -0.395 ; PC[10]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.424      ;
-; -0.395 ; PC[3]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.424      ;
-; -0.394 ; PC[2]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.423      ;
-; -0.381 ; PC[8]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.410      ;
-; -0.373 ; PC[11]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.402      ;
-; -0.373 ; PC[9]     ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.402      ;
-; -0.373 ; PC[4]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.402      ;
-; -0.361 ; PC[5]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.390      ;
-; -0.360 ; PC[12]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.389      ;
-; -0.360 ; PC[10]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.389      ;
-; -0.360 ; PC[3]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.389      ;
-; -0.359 ; PC[2]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.388      ;
-; -0.346 ; PC[8]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.375      ;
-; -0.339 ; PC[13]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.368      ;
-; -0.339 ; PC[6]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.368      ;
-; -0.338 ; PC[11]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.367      ;
-; -0.338 ; PC[9]     ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.367      ;
-; -0.338 ; PC[4]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.367      ;
-; -0.326 ; PC[5]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.355      ;
-; -0.325 ; PC[12]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.354      ;
-; -0.325 ; PC[10]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.354      ;
-; -0.325 ; PC[3]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.354      ;
-; -0.324 ; PC[2]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.353      ;
-; -0.304 ; PC[13]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.333      ;
-; -0.304 ; PC[7]     ; PC[24]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.333      ;
-; -0.304 ; PC[6]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.333      ;
-; -0.303 ; PC[11]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.332      ;
-; -0.303 ; PC[9]     ; PC[26]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.332      ;
-; -0.303 ; PC[4]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.332      ;
-; -0.291 ; PC[14]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.320      ;
-; -0.291 ; PC[5]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.320      ;
-; -0.290 ; PC[12]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.319      ;
-; -0.290 ; PC[10]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.319      ;
-; -0.290 ; PC[3]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.319      ;
-; -0.289 ; PC[2]     ; PC[19]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.318      ;
-; -0.269 ; PC[13]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.298      ;
-; -0.269 ; PC[7]     ; PC[23]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.298      ;
-; -0.269 ; PC[6]     ; PC[22]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.298      ;
-; -0.268 ; PC[11]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.297      ;
-; -0.268 ; PC[9]     ; PC[25]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.297      ;
-; -0.268 ; PC[4]     ; PC[20]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.297      ;
-; -0.256 ; PC[15]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.285      ;
-; -0.256 ; PC[14]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.285      ;
-; -0.256 ; PC[5]     ; PC[21]  ; Arena_clk    ; Arena_clk   ; 1.000        ; -0.003     ; 1.285      ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'Arena_clk'                                                                      ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 0.239 ; PC[31]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.391      ;
-; 0.353 ; PC[17]    ; PC[17]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.505      ;
-; 0.356 ; PC[30]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.508      ;
-; 0.357 ; PC[2]     ; PC[2]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.509      ;
-; 0.357 ; PC[18]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.509      ;
-; 0.358 ; PC[3]     ; PC[3]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; PC[10]    ; PC[10]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; PC[12]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; PC[19]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; PC[26]    ; PC[26]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; PC[28]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.510      ;
-; 0.359 ; PC[5]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[8]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[14]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[15]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[16]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[21]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; PC[24]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.511      ;
-; 0.369 ; PC[4]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; PC[9]     ; PC[9]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; PC[11]    ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; PC[20]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; PC[25]    ; PC[25]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; PC[27]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.521      ;
-; 0.370 ; PC[6]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; PC[7]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; PC[13]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; PC[22]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; PC[23]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.370 ; PC[29]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.522      ;
-; 0.491 ; PC[17]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.643      ;
-; 0.494 ; PC[30]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.646      ;
-; 0.495 ; PC[2]     ; PC[3]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.647      ;
-; 0.495 ; PC[18]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.647      ;
-; 0.496 ; PC[3]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.496 ; PC[10]    ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.496 ; PC[19]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.496 ; PC[26]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.496 ; PC[12]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.496 ; PC[28]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.648      ;
-; 0.497 ; PC[14]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; PC[15]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; PC[5]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; PC[21]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.649      ;
-; 0.509 ; PC[9]     ; PC[10]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; PC[11]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; PC[25]    ; PC[26]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; PC[27]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; PC[4]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; PC[20]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.661      ;
-; 0.510 ; PC[29]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.510 ; PC[7]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.510 ; PC[13]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.510 ; PC[23]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.510 ; PC[6]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.510 ; PC[22]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.662      ;
-; 0.526 ; PC[17]    ; PC[19]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.678      ;
-; 0.530 ; PC[2]     ; PC[4]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.682      ;
-; 0.530 ; PC[18]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.682      ;
-; 0.531 ; PC[10]    ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.531 ; PC[26]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.531 ; PC[3]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.531 ; PC[19]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.531 ; PC[28]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.531 ; PC[12]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.683      ;
-; 0.532 ; PC[14]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.684      ;
-; 0.532 ; PC[5]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.684      ;
-; 0.532 ; PC[21]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.684      ;
-; 0.544 ; PC[9]     ; PC[11]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.544 ; PC[25]    ; PC[27]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.544 ; PC[11]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.544 ; PC[27]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.544 ; PC[4]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.544 ; PC[20]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.696      ;
-; 0.545 ; PC[29]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.697      ;
-; 0.545 ; PC[13]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.697      ;
-; 0.545 ; PC[6]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.697      ;
-; 0.545 ; PC[22]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.697      ;
-; 0.547 ; PC[16]    ; PC[17]  ; Arena_clk    ; Arena_clk   ; 0.000        ; -0.003     ; 0.696      ;
-; 0.552 ; PC[8]     ; PC[9]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.704      ;
-; 0.552 ; PC[24]    ; PC[25]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.704      ;
-; 0.561 ; PC[17]    ; PC[20]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.713      ;
-; 0.565 ; PC[2]     ; PC[5]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.717      ;
-; 0.565 ; PC[18]    ; PC[21]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.717      ;
-; 0.566 ; PC[10]    ; PC[13]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.566 ; PC[26]    ; PC[29]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.566 ; PC[3]     ; PC[6]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.566 ; PC[19]    ; PC[22]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.566 ; PC[28]    ; PC[31]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.566 ; PC[12]    ; PC[15]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.718      ;
-; 0.567 ; PC[5]     ; PC[8]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.719      ;
-; 0.567 ; PC[21]    ; PC[24]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.719      ;
-; 0.579 ; PC[9]     ; PC[12]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.579 ; PC[25]    ; PC[28]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.579 ; PC[27]    ; PC[30]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.579 ; PC[11]    ; PC[14]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.579 ; PC[4]     ; PC[7]   ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.579 ; PC[20]    ; PC[23]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.731      ;
-; 0.580 ; PC[13]    ; PC[16]  ; Arena_clk    ; Arena_clk   ; 0.000        ; 0.000      ; 0.732      ;
-; 0.582 ; PC[16]    ; PC[18]  ; Arena_clk    ; Arena_clk   ; 0.000        ; -0.003     ; 0.731      ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'Arena_clk'                                                                     ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                     ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; Arena_clk ; Rise       ; Arena_clk                  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[10]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[10]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[11]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[11]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[12]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[12]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[13]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[13]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[14]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[14]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[15]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[15]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[16]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[16]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[17]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[17]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[18]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[18]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[19]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[19]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[20]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[20]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[21]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[21]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[22]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[22]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[23]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[23]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[24]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[24]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[25]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[25]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[26]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[26]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[27]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[27]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[28]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[28]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[29]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[29]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[2]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[2]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[30]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[30]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[31]                     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[31]                     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[3]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[3]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[4]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[4]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[5]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[5]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[6]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[6]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[7]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[7]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[8]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[8]                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Arena_clk ; Fall       ; PC[9]                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Arena_clk ; Fall       ; PC[9]                      ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; Arena_clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; Arena_clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[10]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[10]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[11]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[11]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[12]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[12]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[13]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[13]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[14]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[14]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[15]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[15]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[16]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[16]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[17]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[17]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[18]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[18]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[19]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[19]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[20]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[20]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[21]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[21]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[22]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[22]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[23]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[23]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[24]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[24]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[25]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Arena_clk ; Rise       ; PC[25]|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Arena_clk ; Rise       ; PC[26]|clk                 ;
-+--------+--------------+----------------+------------------+-----------+------------+----------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Clock to Output Times                                                 ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 5.245 ; 5.245 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 4.055 ; 4.055 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 4.099 ; 4.099 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 4.237 ; 4.237 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 4.169 ; 4.169 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 4.104 ; 4.104 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 4.170 ; 4.170 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 4.088 ; 4.088 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 4.149 ; 4.149 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 4.214 ; 4.214 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 4.218 ; 4.218 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 4.404 ; 4.404 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 4.605 ; 4.605 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 4.565 ; 4.565 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 4.587 ; 4.587 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 4.546 ; 4.546 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 4.589 ; 4.589 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 4.731 ; 4.731 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 4.658 ; 4.658 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 4.768 ; 4.768 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 4.749 ; 4.749 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 4.793 ; 4.793 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 4.875 ; 4.875 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 4.759 ; 4.759 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 4.830 ; 4.830 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 4.865 ; 4.865 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 4.920 ; 4.920 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 5.104 ; 5.104 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 5.075 ; 5.075 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 5.245 ; 5.245 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 5.029 ; 5.029 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------+
-; Minimum Clock to Output Times                                         ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 3.620 ; 3.620 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 4.055 ; 4.055 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 3.962 ; 3.962 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 4.076 ; 4.076 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 3.963 ; 3.963 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 3.874 ; 3.874 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 3.905 ; 3.905 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 3.777 ; 3.777 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 3.754 ; 3.754 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 3.773 ; 3.773 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 3.753 ; 3.753 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 3.893 ; 3.893 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 4.071 ; 4.071 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 3.985 ; 3.985 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 3.972 ; 3.972 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 3.896 ; 3.896 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 3.843 ; 3.843 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 3.954 ; 3.954 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 3.847 ; 3.847 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 3.933 ; 3.933 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 3.869 ; 3.869 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 3.889 ; 3.889 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 3.936 ; 3.936 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 3.774 ; 3.774 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 3.761 ; 3.761 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 3.750 ; 3.750 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 3.781 ; 3.781 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 3.919 ; 3.919 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 3.867 ; 3.867 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 3.988 ; 3.988 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 3.620 ; 3.620 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
+------------------------------------------
+No paths to report.
 
 
 +----------------------------------------------------------+
@@ -1028,10 +186,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 5.032 ; 5.032 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 5.012 ; 5.012 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 5.108 ;       ;       ; 5.108 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 5.057 ; 5.057 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 5.068 ;       ;       ; 5.068 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 5.112 ; 5.112 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -1040,101 +198,21 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 5.032 ; 5.032 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 5.012 ; 5.012 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 5.108 ;       ;       ; 5.108 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 5.057 ; 5.057 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 5.068 ;       ;       ; 5.068 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 5.112 ; 5.112 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
-+-------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                           ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -2.653  ; 0.239 ; N/A      ; N/A     ; -1.380              ;
-;  Arena_clk       ; -2.653  ; 0.239 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; -44.583 ; 0.0   ; 0.0      ; 0.0     ; -31.38              ;
-;  Arena_clk       ; -44.583 ; 0.000 ; N/A      ; N/A     ; -31.380             ;
-+------------------+---------+-------+----------+---------+---------------------+
-
-
-+-----------------------------------------------------------------------+
-; Clock to Output Times                                                 ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 9.678 ; 9.678 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 7.295 ; 7.295 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 7.467 ; 7.467 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 7.760 ; 7.760 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 7.608 ; 7.608 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 7.498 ; 7.498 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 7.732 ; 7.732 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 7.524 ; 7.524 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 7.644 ; 7.644 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 7.745 ; 7.745 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 7.783 ; 7.783 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 8.144 ; 8.144 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 8.483 ; 8.483 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 8.416 ; 8.416 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 8.415 ; 8.415 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 8.438 ; 8.438 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 8.555 ; 8.555 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 8.826 ; 8.826 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 8.696 ; 8.696 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 8.846 ; 8.846 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 8.865 ; 8.865 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 8.940 ; 8.940 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 9.147 ; 9.147 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 8.823 ; 8.823 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 8.953 ; 8.953 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 9.024 ; 9.024 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 9.118 ; 9.118 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 9.501 ; 9.501 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 9.499 ; 9.499 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 9.678 ; 9.678 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 9.366 ; 9.366 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
-
-
-+-----------------------------------------------------------------------+
-; Minimum Clock to Output Times                                         ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; test[*]   ; Arena_clk  ; 3.620 ; 3.620 ; Fall       ; Arena_clk       ;
-;  test[2]  ; Arena_clk  ; 4.055 ; 4.055 ; Fall       ; Arena_clk       ;
-;  test[3]  ; Arena_clk  ; 3.962 ; 3.962 ; Fall       ; Arena_clk       ;
-;  test[4]  ; Arena_clk  ; 4.076 ; 4.076 ; Fall       ; Arena_clk       ;
-;  test[5]  ; Arena_clk  ; 3.963 ; 3.963 ; Fall       ; Arena_clk       ;
-;  test[6]  ; Arena_clk  ; 3.874 ; 3.874 ; Fall       ; Arena_clk       ;
-;  test[7]  ; Arena_clk  ; 3.905 ; 3.905 ; Fall       ; Arena_clk       ;
-;  test[8]  ; Arena_clk  ; 3.777 ; 3.777 ; Fall       ; Arena_clk       ;
-;  test[9]  ; Arena_clk  ; 3.754 ; 3.754 ; Fall       ; Arena_clk       ;
-;  test[10] ; Arena_clk  ; 3.773 ; 3.773 ; Fall       ; Arena_clk       ;
-;  test[11] ; Arena_clk  ; 3.753 ; 3.753 ; Fall       ; Arena_clk       ;
-;  test[12] ; Arena_clk  ; 3.893 ; 3.893 ; Fall       ; Arena_clk       ;
-;  test[13] ; Arena_clk  ; 4.071 ; 4.071 ; Fall       ; Arena_clk       ;
-;  test[14] ; Arena_clk  ; 3.985 ; 3.985 ; Fall       ; Arena_clk       ;
-;  test[15] ; Arena_clk  ; 3.972 ; 3.972 ; Fall       ; Arena_clk       ;
-;  test[16] ; Arena_clk  ; 3.896 ; 3.896 ; Fall       ; Arena_clk       ;
-;  test[17] ; Arena_clk  ; 3.843 ; 3.843 ; Fall       ; Arena_clk       ;
-;  test[18] ; Arena_clk  ; 3.954 ; 3.954 ; Fall       ; Arena_clk       ;
-;  test[19] ; Arena_clk  ; 3.847 ; 3.847 ; Fall       ; Arena_clk       ;
-;  test[20] ; Arena_clk  ; 3.933 ; 3.933 ; Fall       ; Arena_clk       ;
-;  test[21] ; Arena_clk  ; 3.869 ; 3.869 ; Fall       ; Arena_clk       ;
-;  test[22] ; Arena_clk  ; 3.889 ; 3.889 ; Fall       ; Arena_clk       ;
-;  test[23] ; Arena_clk  ; 3.936 ; 3.936 ; Fall       ; Arena_clk       ;
-;  test[24] ; Arena_clk  ; 3.774 ; 3.774 ; Fall       ; Arena_clk       ;
-;  test[25] ; Arena_clk  ; 3.761 ; 3.761 ; Fall       ; Arena_clk       ;
-;  test[26] ; Arena_clk  ; 3.750 ; 3.750 ; Fall       ; Arena_clk       ;
-;  test[27] ; Arena_clk  ; 3.781 ; 3.781 ; Fall       ; Arena_clk       ;
-;  test[28] ; Arena_clk  ; 3.919 ; 3.919 ; Fall       ; Arena_clk       ;
-;  test[29] ; Arena_clk  ; 3.867 ; 3.867 ; Fall       ; Arena_clk       ;
-;  test[30] ; Arena_clk  ; 3.988 ; 3.988 ; Fall       ; Arena_clk       ;
-;  test[31] ; Arena_clk  ; 3.620 ; 3.620 ; Fall       ; Arena_clk       ;
-+-----------+------------+-------+-------+------------+-----------------+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
 
 
 +----------------------------------------------------------+
@@ -1142,10 +220,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 8.831 ; 8.831 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 8.811 ;       ;       ; 8.811 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 8.811 ; 8.811 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 8.931 ;       ;       ; 8.931 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 8.876 ; 8.876 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 8.891 ;       ;       ; 8.891 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 8.950 ; 8.950 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -1154,31 +232,17 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; INPUT_WE   ; DRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; DRAM_WE_N   ;       ; 5.032 ; 5.032 ;       ;
-; INPUT_WE   ; SRAM_OE_N   ; 5.012 ;       ;       ; 5.012 ;
-; INPUT_WE   ; SRAM_WE_N   ;       ; 5.012 ; 5.012 ;       ;
+; INPUT_WE   ; DRAM_OE_N   ; 5.108 ;       ;       ; 5.108 ;
+; INPUT_WE   ; DRAM_WE_N   ;       ; 5.057 ; 5.057 ;       ;
+; INPUT_WE   ; SRAM_OE_N   ; 5.068 ;       ;       ; 5.068 ;
+; INPUT_WE   ; SRAM_WE_N   ;       ; 5.112 ; 5.112 ;       ;
 +------------+-------------+-------+-------+-------+-------+
 
 
-+--------------------------------------------------------------------+
-; Setup Transfers                                                    ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; Arena_clk  ; Arena_clk ; 0        ; 0        ; 0        ; 465      ;
-+------------+-----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
-
-
-+--------------------------------------------------------------------+
-; Hold Transfers                                                     ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; Arena_clk  ; Arena_clk ; 0        ; 0        ; 0        ; 465      ;
-+------------+-----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
 
 
 ---------------
@@ -1202,8 +266,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 4     ; 4    ;
-; Unconstrained Output Ports      ; 34    ; 34   ;
-; Unconstrained Output Port Paths ; 469   ; 469  ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
 +---------------------------------+-------+------+
 
 
@@ -1213,7 +277,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun May 12 14:17:53 2019
+    Info: Processing started: Sun May 12 18:09:20 2019
 Info: Command: quartus_sta Single_Cycle_CPU -c Single_Cycle_CPU
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -1221,48 +285,33 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Single_Cycle_CPU.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name Arena_clk Arena_clk
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.653
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -2.653       -44.583 Arena_clk 
-Info (332146): Worst-case hold slack is 0.520
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.520         0.000 Arena_clk 
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -31.380 Arena_clk 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.768
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.768        -7.679 Arena_clk 
-Info (332146): Worst-case hold slack is 0.239
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.239         0.000 Arena_clk 
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -1.380
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -31.380 Arena_clk 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Sun May 12 14:17:55 2019
+    Info: Peak virtual memory: 4589 megabytes
+    Info: Processing ended: Sun May 12 18:09:22 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

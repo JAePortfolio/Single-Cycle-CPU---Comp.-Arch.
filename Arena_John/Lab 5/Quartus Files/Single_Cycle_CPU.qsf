@@ -52,6 +52,7 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE Arena_DataMemory.vhd
 set_global_assignment -name VHDL_FILE Arena_Mem_Access_2.vhd
 set_global_assignment -name BDF_FILE ram3port.bdf
 set_global_assignment -name VHDL_FILE Mem_Access.vhd
@@ -65,9 +66,18 @@ set_global_assignment -name QIP_FILE lpm_constant1.qip
 set_global_assignment -name QIP_FILE lpm_3ramport.qip
 set_global_assignment -name VHDL_FILE Arena_Control.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_Control.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_Control.vwf"
 set_global_assignment -name BDF_FILE Arena_ALU_Control.bdf
 set_global_assignment -name VHDL_FILE Arena_ALU.vhd
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_DataMemory.vwf
+set_global_assignment -name VHDL_FILE Arena_Sign_Extend_16to32.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_Sign_Extend_16to32.vwf
+set_global_assignment -name VHDL_FILE Arena_Shift_Left_32bit.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_Shift_Left_32bit.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Arena_Shift_Left_32bit.vwf"
+set_global_assignment -name QIP_FILE lpm_add_sub1.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

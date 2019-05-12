@@ -149,22 +149,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 960 -144 1136 -128)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "test[31..0]" (rect 90 0 140 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 1136 336 1312 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SRAM_CE_N" (rect 90 0 156 12)(font "Arial" ))
@@ -710,7 +694,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1904 416 2192 512)
+	(rect 1904 512 2192 608)
 	(text "Arena_ALU_Control" (rect 5 0 119 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -782,9 +766,57 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 2000 160 2112 248)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "ALUSrcMux" (rect 3 77 60 89)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 2000 280 2128 308))
+)
+(symbol
 	(rect 1464 184 1576 272)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst5" (rect 3 77 26 89)(font "Arial" ))
+	(text "RegDstMux" (rect 3 77 60 89)(font "Arial" ))
 	(port
 		(pt 0 64)
 		(input)
@@ -829,14 +861,263 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 1440 320 1568 348))
 )
+(symbol
+	(rect 2728 120 3016 232)
+	(text "Arena_DataMemory" (rect 5 0 102 12)(font "Arial" ))
+	(text "DataMem-8BIT_ADDR_TO_REDUCE_COMPILE_TIME" (rect 8 96 277 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_memWrite" (rect 0 0 84 12)(font "Arial" ))
+		(text "Arena_memWrite" (rect 21 27 105 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_memRead" (rect 0 0 84 12)(font "Arial" ))
+		(text "Arena_memRead" (rect 21 43 105 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Arena_address[7..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "Arena_address[7..0]" (rect 21 59 120 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Arena_writeData[31..0]" (rect 0 0 112 12)(font "Arial" ))
+		(text "Arena_writeData[31..0]" (rect 21 75 133 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "Arena_readData[31..0]" (rect 0 0 110 12)(font "Arial" ))
+		(text "Arena_readData[31..0]" (rect 174 27 284 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 96))
+	)
+)
+(symbol
+	(rect 2816 288 2928 376)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "DataMemMux" (rect 3 77 70 89)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 2808 256 2936 284))
+)
+(symbol
+	(rect 1552 376 1872 456)
+	(text "Arena_Sign_Extend_16to32" (rect 5 0 139 12)(font "Arial" ))
+	(text "Sign_Extender" (rect 8 64 78 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_16bit_IMMEDIATE_IN[15..0]" (rect 0 0 172 12)(font "Arial" ))
+		(text "Arena_16bit_IMMEDIATE_IN[15..0]" (rect 21 27 193 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 320 56)
+		(output)
+		(text "Arena_32bit_IMMEDIATE_OUT[31..0]" (rect -96 0 86 12)(font "Arial" ))
+		(text "Arena_32bit_IMMEDIATE_OUT[31..0]" (rect 145 51 327 63)(font "Arial" ))
+		(line (pt 320 56)(pt 304 56)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 312 64))
+	)
+)
+(symbol
+	(rect 2376 -112 2536 -16)
+	(text "lpm_add_sub1" (rect 39 0 138 16)(font "Arial" (font_size 10)))
+	(text "inst8" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "dataa[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[31..0]" (rect 4 26 71 40)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 64 40)(line_width 3))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "datab[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "datab[31..0]" (rect 4 58 71 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 64 72)(line_width 3))
+	)
+	(port
+		(pt 160 56)
+		(output)
+		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 100 42 167 56)(font "Arial" (font_size 8)))
+		(line (pt 160 56)(pt 96 56)(line_width 3))
+	)
+	(drawing
+		(text "A+B" (rect 75 51 99 65)(font "Arial" (font_size 8)))
+		(text "A" (rect 64 35 73 49)(font "Arial" (font_size 8)))
+		(text "B" (rect 65 67 73 81)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 64 80))
+		(line (pt 64 32)(pt 96 40))
+		(line (pt 64 80)(pt 96 72))
+		(line (pt 96 40)(pt 96 72))
+		(line (pt 0 0)(pt 162 0))
+		(line (pt 162 0)(pt 162 98))
+		(line (pt 0 98)(pt 162 98))
+		(line (pt 0 0)(pt 0 98))
+	)
+)
+(symbol
+	(rect 2032 -56 2352 24)
+	(text "Arena_Shift_Left_32bit" (rect 5 0 118 12)(font "Arial" ))
+	(text "ShiftLEFT_2bits" (rect 8 64 87 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_32bit_IMMEDIATE_IN[31..0]" (rect 0 0 172 12)(font "Arial" ))
+		(text "Arena_32bit_IMMEDIATE_IN[31..0]" (rect 21 27 193 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 320 48)
+		(output)
+		(text "Arena_32bit_IMMEDIATE_OUT[31..0]" (rect -96 0 86 12)(font "Arial" ))
+		(text "Arena_32bit_IMMEDIATE_OUT[31..0]" (rect 145 43 327 55)(font "Arial" ))
+		(line (pt 320 48)(pt 304 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 312 64))
+	)
+)
+(symbol
+	(rect 2696 -120 2808 -32)
+	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
+	(text "inst10" (rect 3 77 32 89)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 108 65)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 44 65)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 75 84)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 108 33)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 56 41)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 56 65)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 2688 -152 2816 -124))
+)
+(symbol
+	(rect 2680 0 2744 48)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "and_4_branch" (rect 3 37 71 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(pt 880 -144)
 	(pt 936 -144)
-	(bus)
-)
-(connector
-	(pt 936 -136)
-	(pt 960 -136)
 	(bus)
 )
 (connector
@@ -1130,16 +1411,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2192 448)
-	(pt 2208 448)
-	(bus)
-)
-(connector
-	(pt 2208 448)
-	(pt 2208 184)
-	(bus)
-)
-(connector
 	(pt 2208 184)
 	(pt 2224 184)
 	(bus)
@@ -1147,16 +1418,6 @@ applicable agreement for further details.
 (connector
 	(pt 2224 152)
 	(pt 1832 152)
-	(bus)
-)
-(connector
-	(pt 1904 448)
-	(pt 1888 448)
-	(bus)
-)
-(connector
-	(pt 1888 448)
-	(pt 1888 -144)
 	(bus)
 )
 (connector
@@ -1218,16 +1479,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1400 592)
-	(pt 1432 592)
-	(bus)
-)
-(connector
-	(pt 1432 592)
-	(pt 1504 592)
-	(bus)
-)
-(connector
 	(pt 1576 232)
 	(pt 1584 232)
 	(bus)
@@ -1251,28 +1502,526 @@ applicable agreement for further details.
 	(pt 1520 272)
 )
 (connector
-	(text "Arena_controlLines[0]" (rect 1736 -276 1748 -170)(font "Arial" )(vertical))
-	(pt 1752 -160)
-	(pt 1752 -272)
-)
-(connector
-	(pt 1328 -272)
-	(pt 1752 -272)
-)
-(connector
 	(pt 1328 312)
 	(pt 1328 -272)
 )
 (connector
-	(text "Arena_controlLines[6..0]" (rect 1618 -176 1737 -164)(font "Arial" ))
-	(pt 1696 -160)
-	(pt 1752 -160)
+	(pt 1968 168)
+	(pt 1968 192)
 	(bus)
 )
 (connector
-	(pt 1752 -160)
+	(pt 2000 192)
+	(pt 1968 192)
+	(bus)
+)
+(connector
+	(pt 2112 208)
+	(pt 2176 208)
+	(bus)
+)
+(connector
+	(pt 2176 208)
+	(pt 2176 168)
+	(bus)
+)
+(connector
+	(pt 2224 168)
+	(pt 2176 168)
+	(bus)
+)
+(connector
+	(pt 1936 -272)
+	(pt 1936 264)
+)
+(connector
+	(pt 2056 248)
+	(pt 2056 264)
+)
+(connector
+	(pt 2056 264)
+	(pt 1936 264)
+)
+(connector
+	(text "Arena_controlLines[0]" (rect 1720 -276 1732 -170)(font "Arial" )(vertical))
+	(pt 1736 -160)
+	(pt 1736 -272)
+)
+(connector
+	(pt 1328 -272)
+	(pt 1736 -272)
+)
+(connector
+	(text "Arena_controlLines[6..0]" (rect 1618 -176 1737 -164)(font "Arial" ))
+	(pt 1696 -160)
+	(pt 1736 -160)
+	(bus)
+)
+(connector
+	(pt 1984 -288)
+	(pt 1984 80)
+)
+(connector
+	(pt 2816 352)
+	(pt 2784 352)
+	(bus)
+)
+(connector
+	(pt 2784 352)
+	(pt 2784 248)
+	(bus)
+)
+(connector
+	(pt 2008 -304)
+	(pt 2008 56)
+)
+(connector
+	(pt 2008 56)
+	(pt 2576 56)
+)
+(connector
+	(pt 2576 56)
+	(pt 2576 384)
+)
+(connector
+	(pt 2872 376)
+	(pt 2872 384)
+)
+(connector
+	(pt 2872 384)
+	(pt 2576 384)
+)
+(connector
+	(pt 2208 544)
+	(pt 2192 544)
+	(bus)
+)
+(connector
+	(pt 2208 184)
+	(pt 2208 544)
+	(bus)
+)
+(connector
+	(pt 1888 544)
+	(pt 1904 544)
+	(bus)
+)
+(connector
+	(pt 1888 -144)
+	(pt 1888 544)
+	(bus)
+)
+(connector
+	(pt 1968 224)
+	(pt 1968 432)
+	(bus)
+)
+(connector
+	(pt 1400 592)
+	(pt 1432 592)
+	(bus)
+)
+(connector
+	(pt 1432 592)
+	(pt 1464 592)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[15..0]" (rect 1464 470 1476 583)(font "Arial" )(vertical))
+	(pt 1464 592)
+	(pt 1464 408)
+	(bus)
+)
+(connector
+	(pt 1464 408)
+	(pt 1552 408)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[5..0]" (rect 1504 475 1516 582)(font "Arial" )(vertical))
+	(pt 1504 592)
+	(pt 1504 480)
+	(bus)
+)
+(connector
+	(pt 1464 592)
+	(pt 1504 592)
+	(bus)
+)
+(connector
+	(pt 1504 592)
+	(pt 1544 592)
+	(bus)
+)
+(connector
+	(pt 1856 480)
+	(pt 1504 480)
+	(bus)
+)
+(connector
+	(pt 1856 480)
+	(pt 1856 560)
+	(bus)
+)
+(connector
+	(pt 1904 560)
+	(pt 1856 560)
+	(bus)
+)
+(connector
+	(pt 1968 224)
+	(pt 2000 224)
+	(bus)
+)
+(connector
+	(pt 1264 -136)
+	(pt 936 -136)
+	(bus)
+)
+(connector
+	(pt 1264 -136)
+	(pt 1264 -72)
+	(bus)
+)
+(connector
+	(pt 2032 -24)
+	(pt 1912 -24)
+	(bus)
+)
+(connector
+	(pt 1912 -24)
+	(pt 1912 432)
+	(bus)
+)
+(connector
+	(pt 1968 432)
+	(pt 1912 432)
+	(bus)
+)
+(connector
+	(pt 1912 432)
+	(pt 1872 432)
+	(bus)
+)
+(connector
+	(pt 2352 -8)
+	(pt 2360 -8)
+	(bus)
+)
+(connector
+	(pt 2360 -8)
+	(pt 2360 -40)
+	(bus)
+)
+(connector
+	(pt 2376 -40)
+	(pt 2360 -40)
+	(bus)
+)
+(connector
+	(pt 2536 -56)
+	(pt 2696 -56)
+	(bus)
+)
+(connector
+	(pt 2336 -72)
+	(pt 2336 -128)
+	(bus)
+)
+(connector
+	(pt 2336 -128)
+	(pt 2640 -128)
+	(bus)
+)
+(connector
+	(pt 1264 -72)
+	(pt 2336 -72)
+	(bus)
+)
+(connector
+	(pt 2336 -72)
+	(pt 2376 -72)
+	(bus)
+)
+(connector
+	(pt 2696 -88)
+	(pt 2640 -88)
+	(bus)
+)
+(connector
+	(pt 2640 -88)
+	(pt 2640 -128)
+	(bus)
+)
+(connector
+	(text "Arena_controlLines[4]" (rect 1816 -276 1828 -170)(font "Arial" )(vertical))
+	(pt 1832 -160)
+	(pt 1832 -280)
+)
+(connector
+	(pt 1960 -280)
+	(pt 1832 -280)
+)
+(connector
+	(pt 1960 104)
+	(pt 1960 -280)
+)
+(connector
+	(text "Arena_controlLines[3]" (rect 1792 -276 1804 -170)(font "Arial" )(vertical))
+	(pt 1808 -160)
+	(pt 1808 -304)
+)
+(connector
+	(pt 2008 -304)
+	(pt 1808 -304)
+)
+(connector
+	(text "Arena_controlLines[2]" (rect 1768 -276 1780 -170)(font "Arial" )(vertical))
+	(pt 1784 -160)
+	(pt 1784 -288)
+)
+(connector
+	(pt 1984 -288)
+	(pt 1784 -288)
+)
+(connector
+	(pt 1808 -160)
+	(pt 1832 -160)
+	(bus)
+)
+(connector
+	(pt 1784 -160)
+	(pt 1808 -160)
+	(bus)
+)
+(connector
+	(text "Arena_controlLines[1]" (rect 1744 -276 1756 -170)(font "Arial" )(vertical))
+	(pt 1760 -160)
+	(pt 1760 -320)
+)
+(connector
+	(pt 1736 -160)
+	(pt 1760 -160)
+	(bus)
+)
+(connector
+	(pt 1760 -160)
+	(pt 1784 -160)
+	(bus)
+)
+(connector
+	(pt 2632 -320)
+	(pt 1760 -320)
+)
+(connector
+	(pt 2680 16)
+	(pt 2632 16)
+)
+(connector
+	(pt 2632 -320)
+	(pt 2632 16)
+)
+(connector
+	(pt 2560 168)
+	(pt 2592 168)
+)
+(connector
+	(pt 2680 32)
+	(pt 2592 32)
+)
+(connector
+	(pt 2592 32)
+	(pt 2592 168)
+)
+(connector
+	(pt 2744 24)
+	(pt 2752 24)
+)
+(connector
+	(pt 2752 24)
+	(pt 2752 -32)
+)
+(connector
+	(pt 2784 248)
+	(pt 3032 248)
+	(bus)
+)
+(connector
+	(pt 3032 152)
+	(pt 3016 152)
+	(bus)
+)
+(connector
+	(pt 3032 248)
+	(pt 3032 152)
+	(bus)
+)
+(connector
+	(pt 1960 104)
+	(pt 2720 104)
+)
+(connector
+	(pt 2720 104)
+	(pt 2720 152)
+)
+(connector
+	(pt 2728 152)
+	(pt 2720 152)
+)
+(connector
+	(pt 1984 80)
+	(pt 2704 80)
+)
+(connector
+	(pt 2704 80)
+	(pt 2704 168)
+)
+(connector
+	(pt 2728 168)
+	(pt 2704 168)
+)
+(connector
+	(pt 2816 320)
+	(pt 2664 320)
+	(bus)
+)
+(connector
+	(text "Arena_ALU_OUT[31..0]" (rect 2570 136 2685 148)(font "Arial" ))
+	(pt 2560 152)
+	(pt 2664 152)
+	(bus)
+)
+(connector
+	(pt 2664 152)
+	(pt 2664 184)
+	(bus)
+)
+(connector
+	(pt 2664 184)
+	(pt 2664 320)
+	(bus)
+)
+(connector
+	(text "Arena_ALU_OUT[7..0]" (rect 2664 168 2773 180)(font "Arial" ))
+	(pt 2728 184)
+	(pt 2664 184)
+	(bus)
+)
+(connector
+	(text "Arena_controlLines[5]" (rect 1840 -268 1852 -162)(font "Arial" )(vertical))
+	(pt 1856 -160)
+	(pt 1856 -272)
+)
+(connector
+	(pt 1936 -272)
+	(pt 1856 -272)
+)
+(connector
+	(pt 1832 -160)
+	(pt 1856 -160)
+	(bus)
+)
+(connector
+	(text "Arena_controlLines[6]" (rect 1848 -140 1860 -34)(font "Arial" )(vertical))
+	(pt 1864 96)
+	(pt 1864 -160)
+)
+(connector
+	(pt 1856 -160)
+	(pt 1864 -160)
+	(bus)
+)
+(connector
+	(pt 1864 -160)
 	(pt 1888 -160)
 	(bus)
+)
+(connector
+	(pt 1864 168)
+	(pt 1864 320)
+	(bus)
+)
+(connector
+	(pt 1864 320)
+	(pt 2528 320)
+	(bus)
+)
+(connector
+	(pt 1832 168)
+	(pt 1864 168)
+	(bus)
+)
+(connector
+	(pt 1864 168)
+	(pt 1968 168)
+	(bus)
+)
+(connector
+	(pt 2528 320)
+	(pt 2528 248)
+	(bus)
+)
+(connector
+	(pt 2728 200)
+	(pt 2696 200)
+	(bus)
+)
+(connector
+	(pt 2696 248)
+	(pt 2696 200)
+	(bus)
+)
+(connector
+	(pt 2696 248)
+	(pt 2528 248)
+	(bus)
+)
+(connector
+	(pt 2928 336)
+	(pt 2984 336)
+	(bus)
+)
+(connector
+	(pt 2984 408)
+	(pt 2984 336)
+	(bus)
+)
+(connector
+	(pt 2024 408)
+	(pt 2984 408)
+	(bus)
+)
+(connector
+	(pt 2024 408)
+	(pt 2024 352)
+	(bus)
+)
+(connector
+	(pt 2024 352)
+	(pt 1600 352)
+	(bus)
+)
+(connector
+	(pt 1624 200)
+	(pt 1600 200)
+	(bus)
+)
+(connector
+	(pt 1600 200)
+	(pt 1600 352)
+	(bus)
+)
+(connector
+	(pt 1864 96)
+	(pt 1608 96)
+)
+(connector
+	(pt 1624 248)
+	(pt 1608 248)
+)
+(connector
+	(pt 1608 248)
+	(pt 1608 96)
 )
 (junction (pt 936 -144))
 (junction (pt 672 128))
@@ -1281,4 +2030,16 @@ applicable agreement for further details.
 (junction (pt 1400 592))
 (junction (pt 1432 592))
 (junction (pt 1400 216))
-(junction (pt 1752 -160))
+(junction (pt 1736 -160))
+(junction (pt 1464 592))
+(junction (pt 1504 592))
+(junction (pt 1912 432))
+(junction (pt 2336 -72))
+(junction (pt 1832 -160))
+(junction (pt 1808 -160))
+(junction (pt 1784 -160))
+(junction (pt 1760 -160))
+(junction (pt 2664 184))
+(junction (pt 1856 -160))
+(junction (pt 1864 -160))
+(junction (pt 1864 168))

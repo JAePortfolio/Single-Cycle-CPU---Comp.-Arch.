@@ -2,27 +2,27 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Arena_Control
+# -- Compiling module Arena_Shift_Left_32bit
 # 
 # Top level modules:
-# 	Arena_Control
+# 	Arena_Shift_Left_32bit
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Arena_Control_vlg_sample_tst
-# -- Compiling module Arena_Control_vlg_check_tst
-# -- Compiling module Arena_Control_vlg_vec_tst
+# -- Compiling module Arena_Shift_Left_32bit_vlg_sample_tst
+# -- Compiling module Arena_Shift_Left_32bit_vlg_check_tst
+# -- Compiling module Arena_Shift_Left_32bit_vlg_vec_tst
 # 
 # Top level modules:
-# 	Arena_Control_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Arena_Control_vlg_vec_tst 
-# Loading work.Arena_Control_vlg_vec_tst
-# Loading work.Arena_Control
+# 	Arena_Shift_Left_32bit_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Arena_Shift_Left_32bit_vlg_vec_tst 
+# Loading work.Arena_Shift_Left_32bit_vlg_vec_tst
+# Loading work.Arena_Shift_Left_32bit
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
-# Loading work.Arena_Control_vlg_sample_tst
-# Loading work.Arena_Control_vlg_check_tst
+# Loading work.Arena_Shift_Left_32bit_vlg_sample_tst
+# Loading work.Arena_Shift_Left_32bit_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : Single_Cycle_CPU.vt(260)
-#    Time: 160 ns  Iteration: 0  Instance: /Arena_Control_vlg_vec_tst/tb_out
+# ** Note: $finish    : Single_Cycle_CPU.vt(705)
+#    Time: 160 ns  Iteration: 0  Instance: /Arena_Shift_Left_32bit_vlg_vec_tst/tb_out

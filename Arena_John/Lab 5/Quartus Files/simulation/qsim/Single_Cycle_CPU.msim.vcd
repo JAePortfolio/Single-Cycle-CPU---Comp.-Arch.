@@ -3,7 +3,7 @@ $comment
 		vcd file Single_Cycle_CPU.msim.vcd -direction
 $end
 $date
-	Sat May 11 19:30:07 2019
+	Sun May 12 17:50:19 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,46 +11,312 @@ $end
 $timescale
 	1ps
 $end
-$scope module Arena_Control_vlg_vec_tst $end
-$var reg 6 ! Arena_opCode [5:0] $end
-$var wire 1 " Arena_aluOP [1] $end
-$var wire 1 # Arena_aluOP [0] $end
-$var wire 1 $ Arena_controlLines [6] $end
-$var wire 1 % Arena_controlLines [5] $end
-$var wire 1 & Arena_controlLines [4] $end
-$var wire 1 ' Arena_controlLines [3] $end
-$var wire 1 ( Arena_controlLines [2] $end
-$var wire 1 ) Arena_controlLines [1] $end
-$var wire 1 * Arena_controlLines [0] $end
-$var wire 1 + sampler $end
+$scope module Arena_Shift_Left_32bit_vlg_vec_tst $end
+$var reg 32 ! Arena_32bit_IMMEDIATE_IN [31:0] $end
+$var wire 1 " Arena_32bit_IMMEDIATE_OUT [31] $end
+$var wire 1 # Arena_32bit_IMMEDIATE_OUT [30] $end
+$var wire 1 $ Arena_32bit_IMMEDIATE_OUT [29] $end
+$var wire 1 % Arena_32bit_IMMEDIATE_OUT [28] $end
+$var wire 1 & Arena_32bit_IMMEDIATE_OUT [27] $end
+$var wire 1 ' Arena_32bit_IMMEDIATE_OUT [26] $end
+$var wire 1 ( Arena_32bit_IMMEDIATE_OUT [25] $end
+$var wire 1 ) Arena_32bit_IMMEDIATE_OUT [24] $end
+$var wire 1 * Arena_32bit_IMMEDIATE_OUT [23] $end
+$var wire 1 + Arena_32bit_IMMEDIATE_OUT [22] $end
+$var wire 1 , Arena_32bit_IMMEDIATE_OUT [21] $end
+$var wire 1 - Arena_32bit_IMMEDIATE_OUT [20] $end
+$var wire 1 . Arena_32bit_IMMEDIATE_OUT [19] $end
+$var wire 1 / Arena_32bit_IMMEDIATE_OUT [18] $end
+$var wire 1 0 Arena_32bit_IMMEDIATE_OUT [17] $end
+$var wire 1 1 Arena_32bit_IMMEDIATE_OUT [16] $end
+$var wire 1 2 Arena_32bit_IMMEDIATE_OUT [15] $end
+$var wire 1 3 Arena_32bit_IMMEDIATE_OUT [14] $end
+$var wire 1 4 Arena_32bit_IMMEDIATE_OUT [13] $end
+$var wire 1 5 Arena_32bit_IMMEDIATE_OUT [12] $end
+$var wire 1 6 Arena_32bit_IMMEDIATE_OUT [11] $end
+$var wire 1 7 Arena_32bit_IMMEDIATE_OUT [10] $end
+$var wire 1 8 Arena_32bit_IMMEDIATE_OUT [9] $end
+$var wire 1 9 Arena_32bit_IMMEDIATE_OUT [8] $end
+$var wire 1 : Arena_32bit_IMMEDIATE_OUT [7] $end
+$var wire 1 ; Arena_32bit_IMMEDIATE_OUT [6] $end
+$var wire 1 < Arena_32bit_IMMEDIATE_OUT [5] $end
+$var wire 1 = Arena_32bit_IMMEDIATE_OUT [4] $end
+$var wire 1 > Arena_32bit_IMMEDIATE_OUT [3] $end
+$var wire 1 ? Arena_32bit_IMMEDIATE_OUT [2] $end
+$var wire 1 @ Arena_32bit_IMMEDIATE_OUT [1] $end
+$var wire 1 A Arena_32bit_IMMEDIATE_OUT [0] $end
+$var wire 1 B sampler $end
 $scope module i1 $end
-$var wire 1 , gnd $end
-$var wire 1 - vcc $end
-$var wire 1 . unknown $end
-$var tri1 1 / devclrn $end
-$var tri1 1 0 devpor $end
-$var tri1 1 1 devoe $end
+$var wire 1 C gnd $end
+$var wire 1 D vcc $end
+$var wire 1 E unknown $end
+$var tri1 1 F devclrn $end
+$var tri1 1 G devpor $end
+$var tri1 1 H devoe $end
+$var wire 1 I Arena_32bit_IMMEDIATE_IN~combout [31] $end
+$var wire 1 J Arena_32bit_IMMEDIATE_IN~combout [30] $end
+$var wire 1 K Arena_32bit_IMMEDIATE_IN~combout [29] $end
+$var wire 1 L Arena_32bit_IMMEDIATE_IN~combout [28] $end
+$var wire 1 M Arena_32bit_IMMEDIATE_IN~combout [27] $end
+$var wire 1 N Arena_32bit_IMMEDIATE_IN~combout [26] $end
+$var wire 1 O Arena_32bit_IMMEDIATE_IN~combout [25] $end
+$var wire 1 P Arena_32bit_IMMEDIATE_IN~combout [24] $end
+$var wire 1 Q Arena_32bit_IMMEDIATE_IN~combout [23] $end
+$var wire 1 R Arena_32bit_IMMEDIATE_IN~combout [22] $end
+$var wire 1 S Arena_32bit_IMMEDIATE_IN~combout [21] $end
+$var wire 1 T Arena_32bit_IMMEDIATE_IN~combout [20] $end
+$var wire 1 U Arena_32bit_IMMEDIATE_IN~combout [19] $end
+$var wire 1 V Arena_32bit_IMMEDIATE_IN~combout [18] $end
+$var wire 1 W Arena_32bit_IMMEDIATE_IN~combout [17] $end
+$var wire 1 X Arena_32bit_IMMEDIATE_IN~combout [16] $end
+$var wire 1 Y Arena_32bit_IMMEDIATE_IN~combout [15] $end
+$var wire 1 Z Arena_32bit_IMMEDIATE_IN~combout [14] $end
+$var wire 1 [ Arena_32bit_IMMEDIATE_IN~combout [13] $end
+$var wire 1 \ Arena_32bit_IMMEDIATE_IN~combout [12] $end
+$var wire 1 ] Arena_32bit_IMMEDIATE_IN~combout [11] $end
+$var wire 1 ^ Arena_32bit_IMMEDIATE_IN~combout [10] $end
+$var wire 1 _ Arena_32bit_IMMEDIATE_IN~combout [9] $end
+$var wire 1 ` Arena_32bit_IMMEDIATE_IN~combout [8] $end
+$var wire 1 a Arena_32bit_IMMEDIATE_IN~combout [7] $end
+$var wire 1 b Arena_32bit_IMMEDIATE_IN~combout [6] $end
+$var wire 1 c Arena_32bit_IMMEDIATE_IN~combout [5] $end
+$var wire 1 d Arena_32bit_IMMEDIATE_IN~combout [4] $end
+$var wire 1 e Arena_32bit_IMMEDIATE_IN~combout [3] $end
+$var wire 1 f Arena_32bit_IMMEDIATE_IN~combout [2] $end
+$var wire 1 g Arena_32bit_IMMEDIATE_IN~combout [1] $end
+$var wire 1 h Arena_32bit_IMMEDIATE_IN~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 !
-0#
-0"
+b1101110000000001101001010111100 !
+0A
+0@
+0?
+0>
+1=
+1<
+1;
+1:
+09
+18
+07
+16
+05
+04
+13
+02
+11
+10
+0/
+0.
+0-
+0,
+0+
 0*
 0)
 0(
 0'
-0&
+1&
+1%
+1$
+0#
+1"
+xB
+0C
+1D
+xE
+1F
+1G
+1H
+0h
+0g
+1f
+1e
+1d
+1c
+0b
+1a
+0`
+1_
+0^
+0]
+1\
+0[
+1Z
+1Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+1O
+1N
+1M
+0L
+1K
+zJ
+zI
+$end
+#40000
+b11101110000000001101001010111100 !
+b10101110000000001101001010111100 !
+b10100110000000001101001010111100 !
+b10100111000000001101001010111100 !
+b10100111100000001101001010111100 !
+b10100111110000001101001010111100 !
+b10100111111000001101001010111100 !
+b10100111111100001101001010111100 !
+b10100111111110001101001010111100 !
+b10100111111111001101001010111100 !
+b10100111111111101101001010111100 !
+b10100111111111101001001010111100 !
+b10100111111111101000001010111100 !
+b10100111111111101000001000111100 !
+b10100111111111101000001000011100 !
+b10100111111111101000001000010100 !
+b10100111111111101000001000010110 !
+b10100111111111101000001000010111 !
+1h
+1g
+0e
+0c
+0a
+0\
+0Z
+1W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+0M
+0B
+1?
+1>
+0<
+0:
+08
+03
+01
+1.
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+0$
+#80000
+b10110111111111101000001000010111 !
+b10110111111111111000001000010111 !
+b10110111111111110000001000010111 !
+b10110111111111110010001000010111 !
+b10110111111111110010011000010111 !
+b10110111111111110010011100010111 !
+b10110111111111110010011101010111 !
+b10110111111111110010011101000111 !
+b10110111111111110010011101000011 !
+b10110110111111110010011101000011 !
+b10110110011111110010011101000011 !
+b10110110010111110010011101000011 !
+b10110110010110110010011101000011 !
+b10110110010110010010011101000011 !
+b10110110010110010110011101000011 !
+b10110110010110010111011101000011 !
+b10110110010110010111011101001011 !
+0f
+1e
+0d
+1b
+1`
+1^
+1\
+1[
+1Z
+0Y
+1X
+0W
+0V
+0S
+0Q
+0P
+1L
+1B
+0=
+1<
+0;
+19
+17
+15
+13
+12
+11
+00
+1/
+0.
+0-
+0*
+0(
+0'
+1#
+#120000
+b10110010010110010111011101001011 !
+b110010010110010111011101001011 !
+b111010010110010111011101001011 !
+b111010000110010111011101001011 !
+b111010000100010111011101001011 !
+b111010000100010111011101101011 !
+b111010000100010111011101101001 !
+b111010000100010111011101101000 !
+b111010000100011111011101101000 !
+b111010000100011111001101101000 !
+b111010000100011111001001101000 !
+b111010000100011111001001111000 !
+b111010000100011111001001111100 !
+b111011000100011111001001111100 !
+b111011100100011111001001111100 !
+b111011100100111111001001111100 !
+b111011100100111111001001110100 !
+0h
+0g
+1f
+0e
+1d
+1c
+0`
+0^
+1Y
+1W
+0U
+0R
+1Q
+1P
+0N
+1M
+0B
+0?
+0>
+1=
+0<
+1;
+1:
+07
+05
+10
+1.
+0,
+0)
+1(
+1'
 0%
 1$
-x+
-0,
-1-
-x.
-1/
-10
-11
-$end
 #160000
