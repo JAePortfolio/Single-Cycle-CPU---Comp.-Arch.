@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 280 48)
 		(output)
-		(text "Arena_aluOP[1..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "Arena_aluOP[1..0]" (rect 185 43 259 55)(font "Arial" ))
+		(text "Arena_aluOP[2..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "Arena_aluOP[2..0]" (rect 184 43 259 55)(font "Arial" ))
 		(line (pt 280 48)(pt 264 48)(line_width 3))
 	)
 	(drawing

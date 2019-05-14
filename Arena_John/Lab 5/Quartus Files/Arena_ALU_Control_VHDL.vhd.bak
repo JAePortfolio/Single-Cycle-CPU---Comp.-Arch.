@@ -1,0 +1,31 @@
+-- (First, Last) John Arena - CSC 342/343 - Lab 5 - FINAL LAB - Spring 2019 Due: 5/15/19
+-- Arena_ALU_Control_VHDL.vhd
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity Arena_ALU_Control_VHDL is
+	port(
+		Arena_ALUop: in std_logic_vector(1 downto 0); -- op code
+		Arena_func: in std_logic_vector(5 downto 0); -- func code
+		Arena_operation: out std_logic_vector(3 downto 0); -- operation out
+		);
+end Arena_ALU_Control_VHDL;
+
+architecture Arena_ALU_Control_VHDL_arch of Arena_ALU_Control_VHDL is
+begin
+	process (Arena_func)
+	begin 
+		case Arena_func is
+			when "XX0000" => -- R Type Instruction, ex add, sub
+				if(Arena_ALUop = "10") then
+					Arena_operation <= "0010";
+				else
+					null;
+				end if;
+			when others =>
+			null;
+		end case;
+	end process;
+end Arena_ALU_Control_VHDL_arch;

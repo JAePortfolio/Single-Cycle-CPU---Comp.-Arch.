@@ -307,6 +307,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 2624 352 2800 368)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "result[31..0]" (rect 90 0 149 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 448 128 496 160)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
@@ -662,64 +678,6 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 192 144))
-	)
-)
-(symbol
-	(rect 1416 -192 1696 -112)
-	(text "Arena_Control" (rect 5 0 74 12)(font "Arial" ))
-	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Arena_opCode[5..0]" (rect 0 0 97 12)(font "Arial" ))
-		(text "Arena_opCode[5..0]" (rect 21 27 118 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 280 32)
-		(output)
-		(text "Arena_controlLines[6..0]" (rect 0 0 119 12)(font "Arial" ))
-		(text "Arena_controlLines[6..0]" (rect 159 27 278 39)(font "Arial" ))
-		(line (pt 280 32)(pt 264 32)(line_width 3))
-	)
-	(port
-		(pt 280 48)
-		(output)
-		(text "Arena_aluOP[1..0]" (rect 0 0 89 12)(font "Arial" ))
-		(text "Arena_aluOP[1..0]" (rect 184 43 273 55)(font "Arial" ))
-		(line (pt 280 48)(pt 264 48)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 264 64))
-	)
-)
-(symbol
-	(rect 1904 512 2192 608)
-	(text "Arena_ALU_Control" (rect 5 0 119 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Arena_ALUOp[1..0]" (rect 0 0 112 14)(font "Arial" (font_size 8)))
-		(text "Arena_ALUOp[1..0]" (rect 21 27 133 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Arena_funct[5..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
-		(text "Arena_funct[5..0]" (rect 21 43 121 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 288 32)
-		(output)
-		(text "Arena_operation[3..0]" (rect 0 0 123 14)(font "Arial" (font_size 8)))
-		(text "Arena_operation[3..0]" (rect 144 27 267 41)(font "Arial" (font_size 8)))
-		(line (pt 288 32)(pt 272 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 272 80))
 	)
 )
 (symbol
@@ -1113,6 +1071,64 @@ applicable agreement for further details.
 		(line (pt 14 37)(pt 31 37))
 		(line (pt 14 12)(pt 14 37))
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 1416 -192 1696 -112)
+	(text "Arena_Control" (rect 5 0 74 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_opCode[5..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "Arena_opCode[5..0]" (rect 21 27 118 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "Arena_controlLines[6..0]" (rect 0 0 119 12)(font "Arial" ))
+		(text "Arena_controlLines[6..0]" (rect 159 27 259 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "Arena_aluOP[2..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "Arena_aluOP[2..0]" (rect 184 43 259 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 64))
+	)
+)
+(symbol
+	(rect 1912 528 2184 608)
+	(text "Arena_ALU_Control_VHDL" (rect 5 0 137 12)(font "Arial" ))
+	(text "ALUCntrl_VHDL" (rect 8 64 88 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_ALUop[2..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "Arena_ALUop[2..0]" (rect 21 27 114 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_func[5..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "Arena_func[5..0]" (rect 21 43 103 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "Arena_operation[3..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "Arena_operation[3..0]" (rect 163 27 268 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 64))
 	)
 )
 (connector
@@ -1592,26 +1608,6 @@ applicable agreement for further details.
 	(pt 2576 384)
 )
 (connector
-	(pt 2208 544)
-	(pt 2192 544)
-	(bus)
-)
-(connector
-	(pt 2208 184)
-	(pt 2208 544)
-	(bus)
-)
-(connector
-	(pt 1888 544)
-	(pt 1904 544)
-	(bus)
-)
-(connector
-	(pt 1888 -144)
-	(pt 1888 544)
-	(bus)
-)
-(connector
 	(pt 1968 224)
 	(pt 1968 432)
 	(bus)
@@ -1656,16 +1652,6 @@ applicable agreement for further details.
 (connector
 	(pt 1856 480)
 	(pt 1504 480)
-	(bus)
-)
-(connector
-	(pt 1856 480)
-	(pt 1856 560)
-	(bus)
-)
-(connector
-	(pt 1904 560)
-	(pt 1856 560)
 	(bus)
 )
 (connector
@@ -1897,11 +1883,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2664 184)
-	(pt 2664 320)
-	(bus)
-)
-(connector
 	(text "Arena_ALU_OUT[7..0]" (rect 2664 168 2773 180)(font "Arial" ))
 	(pt 2728 184)
 	(pt 2664 184)
@@ -2023,6 +2004,61 @@ applicable agreement for further details.
 	(pt 1608 248)
 	(pt 1608 96)
 )
+(connector
+	(pt 2624 360)
+	(pt 2616 360)
+	(bus)
+)
+(connector
+	(pt 2616 360)
+	(pt 2616 296)
+	(bus)
+)
+(connector
+	(pt 2616 296)
+	(pt 2664 296)
+	(bus)
+)
+(connector
+	(pt 2664 184)
+	(pt 2664 296)
+	(bus)
+)
+(connector
+	(pt 2664 296)
+	(pt 2664 320)
+	(bus)
+)
+(connector
+	(pt 2208 184)
+	(pt 2208 560)
+	(bus)
+)
+(connector
+	(pt 1888 -144)
+	(pt 1888 560)
+	(bus)
+)
+(connector
+	(pt 1856 480)
+	(pt 1856 576)
+	(bus)
+)
+(connector
+	(pt 2184 560)
+	(pt 2208 560)
+	(bus)
+)
+(connector
+	(pt 1912 560)
+	(pt 1888 560)
+	(bus)
+)
+(connector
+	(pt 1912 576)
+	(pt 1856 576)
+	(bus)
+)
 (junction (pt 936 -144))
 (junction (pt 672 128))
 (junction (pt 1344 592))
@@ -2043,3 +2079,4 @@ applicable agreement for further details.
 (junction (pt 1856 -160))
 (junction (pt 1864 -160))
 (junction (pt 1864 168))
+(junction (pt 2664 296))

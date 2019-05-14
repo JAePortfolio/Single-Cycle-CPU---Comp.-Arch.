@@ -46,14 +46,14 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 					Arena_Cin_32bit_vars(i+1) := Arena_Cout_32bit_vars(i);
 				end loop;
 				
-				-- Adder 3
+				-- Adder 31
 				Arena_AccumOut_32bit(31) <= Arena_A_32bit(31) xor Arena_B_32bit(31)
 				xor Arena_Cin_32bit_vars(31);
 				
 				Arena_Cout_32bit <= (Arena_A_32bit(31) and Arena_B_32bit(31)) 
 				or (Arena_Cin_32bit_vars(31) and Arena_A_32bit(31)) or (Arena_Cin_32bit_vars(31) and Arena_B_32bit(31));
 			elsif (Arena_sub_add = '1') then
-							-- Adder 0
+							-- Subtractor 0
 					Arena_Difference_32bit(0) <= Arena_A_32bit(0) xor Arena_B_32bit(0)
 					xor Arena_Bin_32bit;
 					
@@ -71,7 +71,7 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 						Arena_Bin_32bit_vars(i+1) := Arena_Bout_32bit_vars(i);
 					end loop;
 					
-					-- Adder 3
+					-- Subtractor 31
 					Arena_Difference_32bit(31) <= Arena_A_32bit(31) xor Arena_B_32bit(31)
 					xor Arena_Bin_32bit_vars(31);
 					
@@ -80,16 +80,5 @@ architecture Arena_32bitAdder_arch of Arena_32bitAdder is
 				else
 					null;
 			end if;
---			if(Arena_reset = '0') then
---				Arena_AccumOut_32bit <= "00000000000000000000000000000000";
---				Arena_Difference_32bit <= "00000000000000000000000000000000";
---			else 
---				null;
---			end if;
 		end process;
-		
-
-		
-		
-
 end Arena_32bitAdder_arch;

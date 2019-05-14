@@ -2,4 +2,84 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Setup 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : -10.712
+TNS   : -326.717
+
+Type  : Slow Model Setup 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : -8.106
+TNS   : -508.806
+
+Type  : Slow Model Setup 'INPUT_WE'
+Slack : -4.464
+TNS   : -28.752
+
+Type  : Slow Model Hold 'INPUT_WE'
+Slack : -4.423
+TNS   : -6.210
+
+Type  : Slow Model Hold 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : -1.481
+TNS   : -4.351
+
+Type  : Slow Model Hold 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : -1.344
+TNS   : -12.241
+
+Type  : Slow Model Minimum Pulse Width 'INPUT_WE'
+Slack : -1.222
+TNS   : -31.694
+
+Type  : Slow Model Minimum Pulse Width 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : -4.579
+TNS   : -134.526
+
+Type  : Fast Model Setup 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : -3.205
+TNS   : -193.344
+
+Type  : Fast Model Setup 'INPUT_WE'
+Slack : -1.611
+TNS   : -8.981
+
+Type  : Fast Model Hold 'INPUT_WE'
+Slack : -2.180
+TNS   : -2.889
+
+Type  : Fast Model Hold 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : -1.019
+TNS   : -7.801
+
+Type  : Fast Model Hold 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : -0.634
+TNS   : -5.969
+
+Type  : Fast Model Minimum Pulse Width 'INPUT_WE'
+Slack : -1.222
+TNS   : -3.792
+
+Type  : Fast Model Minimum Pulse Width 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Arena_Control:inst1|Arena_controlLines[3]'
+Slack : 0.500
+TNS   : 0.000
+
 ------------------------------------------------------------

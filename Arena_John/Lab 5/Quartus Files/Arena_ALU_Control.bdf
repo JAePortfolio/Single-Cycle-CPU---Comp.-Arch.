@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -144 192 48 208)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
-	(text "Arena_ALUOp[1..0]" (rect 5 0 101 12)(font "Arial" ))
+	(text "Arena_ALUOp[1..0]" (rect 5 0 100 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 108 12)(pt 133 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect -88 360 96 376)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "Arena_funct[5..0]" (rect 5 0 92 12)(font "Arial" ))
+	(text "Arena_funct[5..0]" (rect 5 0 91 12)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -190,7 +190,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 528 392 592 440)
+	(rect 576 392 640 440)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -248,7 +248,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 440 432 488 464)
+	(rect 440 416 488 448)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -386,28 +386,8 @@ applicable agreement for further details.
 	(pt 384 504)
 )
 (connector
-	(pt 528 408)
-	(pt 512 408)
-)
-(connector
-	(pt 528 424)
-	(pt 512 424)
-)
-(connector
-	(pt 512 448)
-	(pt 488 448)
-)
-(connector
-	(pt 512 424)
-	(pt 512 448)
-)
-(connector
 	(pt 512 392)
 	(pt 488 392)
-)
-(connector
-	(pt 512 408)
-	(pt 512 392)
 )
 (connector
 	(text "Arena_funct[2]" (rect 138 400 211 412)(font "Arial" ))
@@ -415,17 +395,9 @@ applicable agreement for further details.
 	(pt 128 416)
 )
 (connector
-	(pt 368 416)
-	(pt 368 448)
-)
-(connector
 	(pt 128 368)
 	(pt 128 416)
 	(bus)
-)
-(connector
-	(pt 440 448)
-	(pt 368 448)
 )
 (connector
 	(pt 440 392)
@@ -551,9 +523,23 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_operation[1]" (rect 602 400 694 412)(font "Arial" ))
+	(text "Arena_operation[0]" (rect 490 496 582 508)(font "Arial" ))
+	(pt 736 512)
+	(pt 472 512)
+)
+(connector
+	(pt 736 512)
+	(pt 736 528)
+	(bus)
+)
+(connector
+	(pt 512 392)
+	(pt 512 408)
+)
+(connector
+	(text "Arena_operation[1]" (rect 650 400 742 412)(font "Arial" ))
 	(pt 736 416)
-	(pt 592 416)
+	(pt 640 416)
 )
 (connector
 	(pt 736 320)
@@ -561,19 +547,33 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Arena_operation[0]" (rect 490 496 582 508)(font "Arial" ))
-	(pt 736 512)
-	(pt 472 512)
-)
-(connector
 	(pt 736 416)
 	(pt 736 512)
 	(bus)
 )
 (connector
-	(pt 736 512)
-	(pt 736 528)
-	(bus)
+	(pt 512 424)
+	(pt 576 424)
+)
+(connector
+	(pt 512 408)
+	(pt 576 408)
+)
+(connector
+	(pt 512 432)
+	(pt 488 432)
+)
+(connector
+	(pt 368 416)
+	(pt 368 432)
+)
+(connector
+	(pt 368 432)
+	(pt 440 432)
+)
+(connector
+	(pt 512 424)
+	(pt 512 432)
 )
 (junction (pt 128 368))
 (junction (pt 128 416))

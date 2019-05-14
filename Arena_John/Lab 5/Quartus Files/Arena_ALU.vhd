@@ -38,6 +38,11 @@ begin
 				Arena_sign_conv_B <= signed(Arena_IN_B);
 				Arena_arithmetic_conv <= Arena_sign_conv_A - Arena_sign_conv_B;
 				Arena_ALU_OUT <= std_logic_vector(Arena_arithmetic_conv);
+				if(Arena_arithmetic_conv = "00000000000000000000000000000000") then 
+					Arena_ALU_Zero <= '1';
+				else 
+					Arena_ALU_Zero <= '0';
+				end if;
 			when "0111" => -- Set on less than
 				if(Arena_IN_A < Arena_IN_B) then
 					Arena_ALU_Zero <= '1';

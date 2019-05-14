@@ -17,8 +17,7 @@ entity Single_Cycle_CPU is
         DRAM_WE_N       : out    vl_logic;
         DRAM_LDQM       : out    vl_logic;
         DRAM_UDQM       : out    vl_logic;
-        ram             : out    vl_logic_vector(31 downto 0);
-        test            : out    vl_logic_vector(31 downto 0);
+        result          : out    vl_logic_vector(31 downto 0);
         Arena_button    : in     vl_logic;
         Arena_octalBits : in     vl_logic_vector(7 downto 0);
         Arena_octalOpcode: in     vl_logic_vector(1 downto 0)
