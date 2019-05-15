@@ -1,12 +1,12 @@
 -- megafunction wizard: %RAM: 2-PORT%
 -- GENERATION: STANDARD
 -- VERSION: WM1.0
--- MODULE: altsyncram 
+-- MODULE: altdpram 
 
 -- ============================================================
 -- File Name: lpm_3ramport.vhd
 -- Megafunction Name(s):
--- 			altsyncram
+-- 			altdpram
 --
 -- Simulation Library Files(s):
 -- 			altera_mf
@@ -42,7 +42,7 @@ USE altera_mf.all;
 ENTITY lpm_3ramport IS
 	PORT
 	(
-		clock		: IN STD_LOGIC  := '1';
+		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		rdaddress		: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
 		wraddress		: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
@@ -58,70 +58,72 @@ ARCHITECTURE SYN OF lpm_3ramport IS
 
 
 
-	COMPONENT altsyncram
+	COMPONENT altdpram
 	GENERIC (
-		address_reg_b		: STRING;
-		clock_enable_input_a		: STRING;
-		clock_enable_input_b		: STRING;
-		clock_enable_output_a		: STRING;
-		clock_enable_output_b		: STRING;
+		indata_aclr		: STRING;
+		indata_reg		: STRING;
 		intended_device_family		: STRING;
 		lpm_type		: STRING;
-		numwords_a		: NATURAL;
-		numwords_b		: NATURAL;
-		operation_mode		: STRING;
-		outdata_aclr_b		: STRING;
-		outdata_reg_b		: STRING;
-		power_up_uninitialized		: STRING;
+		outdata_aclr		: STRING;
+		outdata_reg		: STRING;
+		rdaddress_aclr		: STRING;
+		rdaddress_reg		: STRING;
+		rdcontrol_aclr		: STRING;
+		rdcontrol_reg		: STRING;
 		read_during_write_mode_mixed_ports		: STRING;
-		widthad_a		: NATURAL;
-		widthad_b		: NATURAL;
-		width_a		: NATURAL;
-		width_b		: NATURAL;
-		width_byteena_a		: NATURAL
+		use_eab		: STRING;
+		width		: NATURAL;
+		widthad		: NATURAL;
+		width_byteena		: NATURAL;
+		wraddress_aclr		: STRING;
+		wraddress_reg		: STRING;
+		wrcontrol_aclr		: STRING;
+		wrcontrol_reg		: STRING
 	);
 	PORT (
-			address_a	: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
-			clock0	: IN STD_LOGIC ;
-			data_a	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-			q_b	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
-			wren_a	: IN STD_LOGIC ;
-			address_b	: IN STD_LOGIC_VECTOR (4 DOWNTO 0)
+			data	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			outclock	: IN STD_LOGIC ;
+			rdaddress	: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+			wren	: IN STD_LOGIC ;
+			inclock	: IN STD_LOGIC ;
+			q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+			wraddress	: IN STD_LOGIC_VECTOR (4 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
 	q    <= sub_wire0(31 DOWNTO 0);
 
-	altsyncram_component : altsyncram
+	altdpram_component : altdpram
 	GENERIC MAP (
-		address_reg_b => "CLOCK0",
-		clock_enable_input_a => "BYPASS",
-		clock_enable_input_b => "BYPASS",
-		clock_enable_output_a => "BYPASS",
-		clock_enable_output_b => "BYPASS",
+		indata_aclr => "OFF",
+		indata_reg => "INCLOCK",
 		intended_device_family => "Cyclone II",
-		lpm_type => "altsyncram",
-		numwords_a => 32,
-		numwords_b => 32,
-		operation_mode => "DUAL_PORT",
-		outdata_aclr_b => "NONE",
-		outdata_reg_b => "CLOCK0",
-		power_up_uninitialized => "FALSE",
+		lpm_type => "altdpram",
+		outdata_aclr => "OFF",
+		outdata_reg => "UNREGISTERED",
+		rdaddress_aclr => "OFF",
+		rdaddress_reg => "INCLOCK",
+		rdcontrol_aclr => "OFF",
+		rdcontrol_reg => "UNREGISTERED",
 		read_during_write_mode_mixed_ports => "DONT_CARE",
-		widthad_a => 5,
-		widthad_b => 5,
-		width_a => 32,
-		width_b => 32,
-		width_byteena_a => 1
+		use_eab => "OFF",
+		width => 32,
+		widthad => 5,
+		width_byteena => 1,
+		wraddress_aclr => "OFF",
+		wraddress_reg => "INCLOCK",
+		wrcontrol_aclr => "OFF",
+		wrcontrol_reg => "INCLOCK"
 	)
 	PORT MAP (
-		address_a => wraddress,
-		clock0 => clock,
-		data_a => data,
-		wren_a => wren,
-		address_b => rdaddress,
-		q_b => sub_wire0
+		data => data,
+		outclock => clock,
+		rdaddress => rdaddress,
+		wren => wren,
+		inclock => clock,
+		wraddress => wraddress,
+		q => sub_wire0
 	);
 
 
@@ -166,8 +168,8 @@ END SYN;
 -- Retrieval info: PRIVATE: MIFfilename STRING ""
 -- Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "2"
 -- Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
--- Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "1"
--- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
+-- Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "0"
+-- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "5"
 -- Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_MIXED_PORTS NUMERIC "2"
 -- Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
 -- Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_B NUMERIC "3"
@@ -191,37 +193,38 @@ END SYN;
 -- Retrieval info: PRIVATE: enable NUMERIC "0"
 -- Retrieval info: PRIVATE: rden NUMERIC "0"
 -- Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
--- Retrieval info: CONSTANT: ADDRESS_REG_B STRING "CLOCK0"
--- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_B STRING "BYPASS"
--- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_B STRING "BYPASS"
+-- Retrieval info: CONSTANT: INDATA_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: INDATA_REG STRING "INCLOCK"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
--- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
--- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "32"
--- Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "32"
--- Retrieval info: CONSTANT: OPERATION_MODE STRING "DUAL_PORT"
--- Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
--- Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK0"
--- Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
+-- Retrieval info: CONSTANT: LPM_TYPE STRING "altdpram"
+-- Retrieval info: CONSTANT: OUTDATA_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: OUTDATA_REG STRING "UNREGISTERED"
+-- Retrieval info: CONSTANT: RDADDRESS_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: RDADDRESS_REG STRING "INCLOCK"
+-- Retrieval info: CONSTANT: RDCONTROL_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: RDCONTROL_REG STRING "UNREGISTERED"
 -- Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
--- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "5"
--- Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "5"
--- Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
--- Retrieval info: CONSTANT: WIDTH_B NUMERIC "32"
--- Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
--- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
+-- Retrieval info: CONSTANT: USE_EAB STRING "OFF"
+-- Retrieval info: CONSTANT: WIDTH NUMERIC "32"
+-- Retrieval info: CONSTANT: WIDTHAD NUMERIC "5"
+-- Retrieval info: CONSTANT: WIDTH_BYTEENA NUMERIC "1"
+-- Retrieval info: CONSTANT: WRADDRESS_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: WRADDRESS_REG STRING "INCLOCK"
+-- Retrieval info: CONSTANT: WRCONTROL_ACLR STRING "OFF"
+-- Retrieval info: CONSTANT: WRCONTROL_REG STRING "INCLOCK"
+-- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 -- Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 -- Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
 -- Retrieval info: USED_PORT: rdaddress 0 0 5 0 INPUT NODEFVAL "rdaddress[4..0]"
 -- Retrieval info: USED_PORT: wraddress 0 0 5 0 INPUT NODEFVAL "wraddress[4..0]"
 -- Retrieval info: USED_PORT: wren 0 0 0 0 INPUT GND "wren"
--- Retrieval info: CONNECT: @address_a 0 0 5 0 wraddress 0 0 5 0
--- Retrieval info: CONNECT: @address_b 0 0 5 0 rdaddress 0 0 5 0
--- Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0
--- Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 32 0 @q_b 0 0 32 0
+-- Retrieval info: CONNECT: @data 0 0 32 0 data 0 0 32 0
+-- Retrieval info: CONNECT: @inclock 0 0 0 0 clock 0 0 0 0
+-- Retrieval info: CONNECT: @outclock 0 0 0 0 clock 0 0 0 0
+-- Retrieval info: CONNECT: @rdaddress 0 0 5 0 rdaddress 0 0 5 0
+-- Retrieval info: CONNECT: @wraddress 0 0 5 0 wraddress 0 0 5 0
+-- Retrieval info: CONNECT: @wren 0 0 0 0 wren 0 0 0 0
+-- Retrieval info: CONNECT: q 0 0 32 0 @q 0 0 32 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_3ramport.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_3ramport.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_3ramport.cmp TRUE

@@ -309,9 +309,105 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2624 352 2800 368)
+	(rect 2704 352 2880 368)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "result[31..0]" (rect 90 0 149 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2128 112 2306 128)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "readData1[31..0]" (rect 90 0 172 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2080 136 2258 152)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "readData2[31..0]" (rect 90 0 172 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1736 -112 1912 -96)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "controlLine[6..0]" (rect 90 0 169 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1688 -40 1864 -24)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "aluOP[2..0]" (rect 90 0 145 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2312 496 2488 512)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "operation[3..0]" (rect 90 0 160 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1600 608 1782 624)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "out_instruc[31..0]" (rect 90 0 176 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -681,7 +777,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2224 120 2560 232)
+	(rect 2312 120 2648 232)
 	(text "Arena_ALU" (rect 5 0 60 12)(font "Arial" ))
 	(text "inst3" (rect 8 96 31 108)(font "Arial" ))
 	(port
@@ -724,7 +820,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2000 160 2112 248)
+	(rect 2080 160 2192 248)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
 	(text "ALUSrcMux" (rect 3 77 60 89)(font "Arial" ))
 	(port
@@ -769,7 +865,7 @@ applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 2000 280 2128 308))
+	(annotation_block (parameter)(rect 2080 280 2208 308))
 )
 (symbol
 	(rect 1464 184 1576 272)
@@ -820,7 +916,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1440 320 1568 348))
 )
 (symbol
-	(rect 2728 120 3016 232)
+	(rect 2808 120 3096 232)
 	(text "Arena_DataMemory" (rect 5 0 102 12)(font "Arial" ))
 	(text "DataMem-8BIT_ADDR_TO_REDUCE_COMPILE_TIME" (rect 8 96 277 108)(font "Arial" ))
 	(port
@@ -863,7 +959,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2816 288 2928 376)
+	(rect 2896 288 3008 376)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
 	(text "DataMemMux" (rect 3 77 70 89)(font "Arial" ))
 	(port
@@ -908,7 +1004,7 @@ applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 2808 256 2936 284))
+	(annotation_block (parameter)(rect 2888 256 3016 284))
 )
 (symbol
 	(rect 1552 376 1872 456)
@@ -933,7 +1029,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2376 -112 2536 -16)
+	(rect 2456 -112 2616 -16)
 	(text "lpm_add_sub1" (rect 39 0 138 16)(font "Arial" (font_size 10)))
 	(text "inst8" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -972,7 +1068,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2032 -56 2352 24)
+	(rect 2112 -56 2432 24)
 	(text "Arena_Shift_Left_32bit" (rect 5 0 118 12)(font "Arial" ))
 	(text "ShiftLEFT_2bits" (rect 8 64 87 76)(font "Arial" ))
 	(port
@@ -994,7 +1090,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2696 -120 2808 -32)
+	(rect 2776 -120 2888 -32)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
 	(text "inst10" (rect 3 77 32 89)(font "Arial" ))
 	(port
@@ -1039,10 +1135,10 @@ applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 2688 -152 2816 -124))
+	(annotation_block (parameter)(rect 2768 -152 2896 -124))
 )
 (symbol
-	(rect 2680 0 2744 48)
+	(rect 2760 0 2824 48)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "and_4_branch" (rect 3 37 71 49)(font "Arial" ))
 	(port
@@ -1088,14 +1184,14 @@ applicable agreement for further details.
 		(pt 280 32)
 		(output)
 		(text "Arena_controlLines[6..0]" (rect 0 0 119 12)(font "Arial" ))
-		(text "Arena_controlLines[6..0]" (rect 159 27 259 39)(font "Arial" ))
+		(text "Arena_controlLines[6..0]" (rect 159 27 278 39)(font "Arial" ))
 		(line (pt 280 32)(pt 264 32)(line_width 3))
 	)
 	(port
 		(pt 280 48)
 		(output)
 		(text "Arena_aluOP[2..0]" (rect 0 0 89 12)(font "Arial" ))
-		(text "Arena_aluOP[2..0]" (rect 184 43 259 55)(font "Arial" ))
+		(text "Arena_aluOP[2..0]" (rect 184 43 273 55)(font "Arial" ))
 		(line (pt 280 48)(pt 264 48)(line_width 3))
 	)
 	(drawing
@@ -1103,7 +1199,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1912 528 2184 608)
+	(rect 1992 528 2264 608)
 	(text "Arena_ALU_Control_VHDL" (rect 5 0 137 12)(font "Arial" ))
 	(text "ALUCntrl_VHDL" (rect 8 64 88 76)(font "Arial" ))
 	(port
@@ -1145,10 +1241,6 @@ applicable agreement for further details.
 	(pt 936 -144)
 	(pt 936 -136)
 	(bus)
-)
-(connector
-	(pt 560 144)
-	(pt 496 144)
 )
 (connector
 	(pt 384 144)
@@ -1390,11 +1482,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1040 592)
-	(pt 1040 464)
-	(bus)
-)
-(connector
 	(pt 496 248)
 	(pt 632 248)
 	(bus)
@@ -1421,27 +1508,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "RAM_Instruction[31..0]" (rect 1050 576 1163 588)(font "Arial" ))
-	(pt 1040 592)
-	(pt 1344 592)
-	(bus)
-)
-(connector
-	(pt 2208 184)
-	(pt 2224 184)
-	(bus)
-)
-(connector
-	(pt 2224 152)
-	(pt 1832 152)
-	(bus)
-)
-(connector
-	(pt 1696 -144)
-	(pt 1888 -144)
-	(bus)
-)
-(connector
 	(text "RAM_Instruction[25..21]" (rect 1368 465 1380 584)(font "Arial" )(vertical))
 	(pt 1368 592)
 	(pt 1368 152)
@@ -1450,11 +1516,6 @@ applicable agreement for further details.
 (connector
 	(pt 1624 152)
 	(pt 1368 152)
-	(bus)
-)
-(connector
-	(pt 1344 592)
-	(pt 1368 592)
 	(bus)
 )
 (connector
@@ -1522,95 +1583,13 @@ applicable agreement for further details.
 	(pt 1328 -272)
 )
 (connector
-	(pt 1968 168)
-	(pt 1968 192)
-	(bus)
-)
-(connector
-	(pt 2000 192)
-	(pt 1968 192)
-	(bus)
-)
-(connector
-	(pt 2112 208)
-	(pt 2176 208)
-	(bus)
-)
-(connector
-	(pt 2176 208)
-	(pt 2176 168)
-	(bus)
-)
-(connector
-	(pt 2224 168)
-	(pt 2176 168)
-	(bus)
-)
-(connector
-	(pt 1936 -272)
-	(pt 1936 264)
-)
-(connector
-	(pt 2056 248)
-	(pt 2056 264)
-)
-(connector
-	(pt 2056 264)
-	(pt 1936 264)
-)
-(connector
-	(text "Arena_controlLines[0]" (rect 1720 -276 1732 -170)(font "Arial" )(vertical))
+	(text "Arena_controlLines[0]" (rect 1712 -276 1724 -170)(font "Arial" )(vertical))
 	(pt 1736 -160)
 	(pt 1736 -272)
 )
 (connector
 	(pt 1328 -272)
 	(pt 1736 -272)
-)
-(connector
-	(text "Arena_controlLines[6..0]" (rect 1618 -176 1737 -164)(font "Arial" ))
-	(pt 1696 -160)
-	(pt 1736 -160)
-	(bus)
-)
-(connector
-	(pt 1984 -288)
-	(pt 1984 80)
-)
-(connector
-	(pt 2816 352)
-	(pt 2784 352)
-	(bus)
-)
-(connector
-	(pt 2784 352)
-	(pt 2784 248)
-	(bus)
-)
-(connector
-	(pt 2008 -304)
-	(pt 2008 56)
-)
-(connector
-	(pt 2008 56)
-	(pt 2576 56)
-)
-(connector
-	(pt 2576 56)
-	(pt 2576 384)
-)
-(connector
-	(pt 2872 376)
-	(pt 2872 384)
-)
-(connector
-	(pt 2872 384)
-	(pt 2576 384)
-)
-(connector
-	(pt 1968 224)
-	(pt 1968 432)
-	(bus)
 )
 (connector
 	(pt 1400 592)
@@ -1655,251 +1634,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1968 224)
-	(pt 2000 224)
-	(bus)
-)
-(connector
 	(pt 1264 -136)
 	(pt 936 -136)
-	(bus)
-)
-(connector
-	(pt 1264 -136)
-	(pt 1264 -72)
-	(bus)
-)
-(connector
-	(pt 2032 -24)
-	(pt 1912 -24)
-	(bus)
-)
-(connector
-	(pt 1912 -24)
-	(pt 1912 432)
-	(bus)
-)
-(connector
-	(pt 1968 432)
-	(pt 1912 432)
-	(bus)
-)
-(connector
-	(pt 1912 432)
-	(pt 1872 432)
-	(bus)
-)
-(connector
-	(pt 2352 -8)
-	(pt 2360 -8)
-	(bus)
-)
-(connector
-	(pt 2360 -8)
-	(pt 2360 -40)
-	(bus)
-)
-(connector
-	(pt 2376 -40)
-	(pt 2360 -40)
-	(bus)
-)
-(connector
-	(pt 2536 -56)
-	(pt 2696 -56)
-	(bus)
-)
-(connector
-	(pt 2336 -72)
-	(pt 2336 -128)
-	(bus)
-)
-(connector
-	(pt 2336 -128)
-	(pt 2640 -128)
-	(bus)
-)
-(connector
-	(pt 1264 -72)
-	(pt 2336 -72)
-	(bus)
-)
-(connector
-	(pt 2336 -72)
-	(pt 2376 -72)
-	(bus)
-)
-(connector
-	(pt 2696 -88)
-	(pt 2640 -88)
-	(bus)
-)
-(connector
-	(pt 2640 -88)
-	(pt 2640 -128)
-	(bus)
-)
-(connector
-	(text "Arena_controlLines[4]" (rect 1816 -276 1828 -170)(font "Arial" )(vertical))
-	(pt 1832 -160)
-	(pt 1832 -280)
-)
-(connector
-	(pt 1960 -280)
-	(pt 1832 -280)
-)
-(connector
-	(pt 1960 104)
-	(pt 1960 -280)
-)
-(connector
-	(text "Arena_controlLines[3]" (rect 1792 -276 1804 -170)(font "Arial" )(vertical))
-	(pt 1808 -160)
-	(pt 1808 -304)
-)
-(connector
-	(pt 2008 -304)
-	(pt 1808 -304)
-)
-(connector
-	(text "Arena_controlLines[2]" (rect 1768 -276 1780 -170)(font "Arial" )(vertical))
-	(pt 1784 -160)
-	(pt 1784 -288)
-)
-(connector
-	(pt 1984 -288)
-	(pt 1784 -288)
-)
-(connector
-	(pt 1808 -160)
-	(pt 1832 -160)
-	(bus)
-)
-(connector
-	(pt 1784 -160)
-	(pt 1808 -160)
-	(bus)
-)
-(connector
-	(text "Arena_controlLines[1]" (rect 1744 -276 1756 -170)(font "Arial" )(vertical))
-	(pt 1760 -160)
-	(pt 1760 -320)
-)
-(connector
-	(pt 1736 -160)
-	(pt 1760 -160)
-	(bus)
-)
-(connector
-	(pt 1760 -160)
-	(pt 1784 -160)
-	(bus)
-)
-(connector
-	(pt 2632 -320)
-	(pt 1760 -320)
-)
-(connector
-	(pt 2680 16)
-	(pt 2632 16)
-)
-(connector
-	(pt 2632 -320)
-	(pt 2632 16)
-)
-(connector
-	(pt 2560 168)
-	(pt 2592 168)
-)
-(connector
-	(pt 2680 32)
-	(pt 2592 32)
-)
-(connector
-	(pt 2592 32)
-	(pt 2592 168)
-)
-(connector
-	(pt 2744 24)
-	(pt 2752 24)
-)
-(connector
-	(pt 2752 24)
-	(pt 2752 -32)
-)
-(connector
-	(pt 2784 248)
-	(pt 3032 248)
-	(bus)
-)
-(connector
-	(pt 3032 152)
-	(pt 3016 152)
-	(bus)
-)
-(connector
-	(pt 3032 248)
-	(pt 3032 152)
-	(bus)
-)
-(connector
-	(pt 1960 104)
-	(pt 2720 104)
-)
-(connector
-	(pt 2720 104)
-	(pt 2720 152)
-)
-(connector
-	(pt 2728 152)
-	(pt 2720 152)
-)
-(connector
-	(pt 1984 80)
-	(pt 2704 80)
-)
-(connector
-	(pt 2704 80)
-	(pt 2704 168)
-)
-(connector
-	(pt 2728 168)
-	(pt 2704 168)
-)
-(connector
-	(pt 2816 320)
-	(pt 2664 320)
-	(bus)
-)
-(connector
-	(text "Arena_ALU_OUT[31..0]" (rect 2570 136 2685 148)(font "Arial" ))
-	(pt 2560 152)
-	(pt 2664 152)
-	(bus)
-)
-(connector
-	(pt 2664 152)
-	(pt 2664 184)
-	(bus)
-)
-(connector
-	(text "Arena_ALU_OUT[7..0]" (rect 2664 168 2773 180)(font "Arial" ))
-	(pt 2728 184)
-	(pt 2664 184)
-	(bus)
-)
-(connector
-	(text "Arena_controlLines[5]" (rect 1840 -268 1852 -162)(font "Arial" )(vertical))
-	(pt 1856 -160)
-	(pt 1856 -272)
-)
-(connector
-	(pt 1936 -272)
-	(pt 1856 -272)
-)
-(connector
-	(pt 1832 -160)
-	(pt 1856 -160)
 	(bus)
 )
 (connector
@@ -1908,88 +1644,13 @@ applicable agreement for further details.
 	(pt 1864 -160)
 )
 (connector
-	(pt 1856 -160)
-	(pt 1864 -160)
-	(bus)
-)
-(connector
 	(pt 1864 -160)
 	(pt 1888 -160)
 	(bus)
 )
 (connector
-	(pt 1864 168)
-	(pt 1864 320)
-	(bus)
-)
-(connector
-	(pt 1864 320)
-	(pt 2528 320)
-	(bus)
-)
-(connector
-	(pt 1832 168)
-	(pt 1864 168)
-	(bus)
-)
-(connector
-	(pt 1864 168)
-	(pt 1968 168)
-	(bus)
-)
-(connector
-	(pt 2528 320)
-	(pt 2528 248)
-	(bus)
-)
-(connector
-	(pt 2728 200)
-	(pt 2696 200)
-	(bus)
-)
-(connector
-	(pt 2696 248)
-	(pt 2696 200)
-	(bus)
-)
-(connector
-	(pt 2696 248)
-	(pt 2528 248)
-	(bus)
-)
-(connector
-	(pt 2928 336)
-	(pt 2984 336)
-	(bus)
-)
-(connector
-	(pt 2984 408)
-	(pt 2984 336)
-	(bus)
-)
-(connector
-	(pt 2024 408)
-	(pt 2984 408)
-	(bus)
-)
-(connector
-	(pt 2024 408)
-	(pt 2024 352)
-	(bus)
-)
-(connector
-	(pt 2024 352)
-	(pt 1600 352)
-	(bus)
-)
-(connector
 	(pt 1624 200)
 	(pt 1600 200)
-	(bus)
-)
-(connector
-	(pt 1600 200)
-	(pt 1600 352)
 	(bus)
 )
 (connector
@@ -2005,33 +1666,319 @@ applicable agreement for further details.
 	(pt 1608 96)
 )
 (connector
-	(pt 2624 360)
-	(pt 2616 360)
+	(pt 1736 -104)
+	(pt 1720 -104)
 	(bus)
 )
 (connector
-	(pt 2616 360)
-	(pt 2616 296)
+	(pt 1720 -104)
+	(pt 1720 -160)
 	(bus)
 )
 (connector
-	(pt 2616 296)
-	(pt 2664 296)
+	(text "Arena_controlLines[6..0]" (rect 1618 -176 1737 -164)(font "Arial" ))
+	(pt 1696 -160)
+	(pt 1720 -160)
 	(bus)
 )
 (connector
-	(pt 2664 184)
-	(pt 2664 296)
+	(pt 1720 -160)
+	(pt 1736 -160)
 	(bus)
 )
 (connector
-	(pt 2664 296)
-	(pt 2664 320)
+	(pt 1688 -32)
+	(pt 1704 -32)
 	(bus)
 )
 (connector
-	(pt 2208 184)
-	(pt 2208 560)
+	(pt 1704 -32)
+	(pt 1704 -144)
+	(bus)
+)
+(connector
+	(pt 1696 -144)
+	(pt 1704 -144)
+	(bus)
+)
+(connector
+	(pt 1704 -144)
+	(pt 1888 -144)
+	(bus)
+)
+(connector
+	(pt 1624 232)
+	(pt 1616 232)
+)
+(connector
+	(pt 1616 232)
+	(pt 1616 120)
+)
+(connector
+	(pt 896 120)
+	(pt 896 192)
+)
+(connector
+	(pt 896 192)
+	(pt 520 192)
+)
+(connector
+	(pt 520 192)
+	(pt 520 144)
+)
+(connector
+	(pt 560 144)
+	(pt 520 144)
+)
+(connector
+	(pt 520 144)
+	(pt 496 144)
+)
+(connector
+	(pt 1344 592)
+	(pt 1368 592)
+	(bus)
+)
+(connector
+	(pt 2048 168)
+	(pt 2048 192)
+	(bus)
+)
+(connector
+	(pt 2016 -272)
+	(pt 2016 264)
+)
+(connector
+	(pt 2136 248)
+	(pt 2136 264)
+)
+(connector
+	(pt 2136 264)
+	(pt 2016 264)
+)
+(connector
+	(pt 2064 -288)
+	(pt 2064 80)
+)
+(connector
+	(pt 2864 352)
+	(pt 2864 248)
+	(bus)
+)
+(connector
+	(pt 2088 -304)
+	(pt 2088 56)
+)
+(connector
+	(pt 2088 56)
+	(pt 2656 56)
+)
+(connector
+	(pt 2656 56)
+	(pt 2656 384)
+)
+(connector
+	(pt 2952 376)
+	(pt 2952 384)
+)
+(connector
+	(pt 2952 384)
+	(pt 2656 384)
+)
+(connector
+	(pt 2048 224)
+	(pt 2048 432)
+	(bus)
+)
+(connector
+	(pt 1264 -136)
+	(pt 1264 -72)
+	(bus)
+)
+(connector
+	(pt 1992 432)
+	(pt 1992 -24)
+	(bus)
+)
+(connector
+	(pt 2432 -8)
+	(pt 2440 -8)
+	(bus)
+)
+(connector
+	(pt 2440 -8)
+	(pt 2440 -40)
+	(bus)
+)
+(connector
+	(pt 2416 -72)
+	(pt 2416 -128)
+	(bus)
+)
+(connector
+	(pt 2416 -128)
+	(pt 2720 -128)
+	(bus)
+)
+(connector
+	(pt 2720 -88)
+	(pt 2720 -128)
+	(bus)
+)
+(connector
+	(text "Arena_controlLines[4]" (rect 1816 -276 1828 -170)(font "Arial" )(vertical))
+	(pt 1832 -160)
+	(pt 1832 -280)
+)
+(connector
+	(pt 1832 -280)
+	(pt 2040 -280)
+)
+(connector
+	(pt 2040 104)
+	(pt 2040 -280)
+)
+(connector
+	(text "Arena_controlLines[3]" (rect 1792 -276 1804 -170)(font "Arial" )(vertical))
+	(pt 1808 -160)
+	(pt 1808 -304)
+)
+(connector
+	(pt 1808 -304)
+	(pt 2088 -304)
+)
+(connector
+	(text "Arena_controlLines[2]" (rect 1768 -276 1780 -170)(font "Arial" )(vertical))
+	(pt 1784 -160)
+	(pt 1784 -288)
+)
+(connector
+	(pt 1784 -288)
+	(pt 2064 -288)
+)
+(connector
+	(text "Arena_controlLines[1]" (rect 1744 -276 1756 -170)(font "Arial" )(vertical))
+	(pt 1760 -160)
+	(pt 1760 -320)
+)
+(connector
+	(pt 1760 -320)
+	(pt 2712 -320)
+)
+(connector
+	(pt 2712 -320)
+	(pt 2712 16)
+)
+(connector
+	(pt 2824 24)
+	(pt 2832 24)
+)
+(connector
+	(pt 2832 24)
+	(pt 2832 -32)
+)
+(connector
+	(pt 2864 248)
+	(pt 3112 248)
+	(bus)
+)
+(connector
+	(pt 3112 248)
+	(pt 3112 152)
+	(bus)
+)
+(connector
+	(pt 2040 104)
+	(pt 2800 104)
+)
+(connector
+	(pt 2800 104)
+	(pt 2800 152)
+)
+(connector
+	(pt 2808 152)
+	(pt 2800 152)
+)
+(connector
+	(pt 2064 80)
+	(pt 2784 80)
+)
+(connector
+	(pt 2784 80)
+	(pt 2784 168)
+)
+(connector
+	(text "Arena_controlLines[5]" (rect 1840 -268 1852 -162)(font "Arial" )(vertical))
+	(pt 1856 -160)
+	(pt 1856 -272)
+)
+(connector
+	(pt 1856 -272)
+	(pt 2016 -272)
+)
+(connector
+	(pt 1864 168)
+	(pt 1864 320)
+	(bus)
+)
+(connector
+	(pt 1864 320)
+	(pt 2608 320)
+	(bus)
+)
+(connector
+	(pt 2608 320)
+	(pt 2608 248)
+	(bus)
+)
+(connector
+	(pt 2776 248)
+	(pt 2776 200)
+	(bus)
+)
+(connector
+	(pt 2776 248)
+	(pt 2608 248)
+	(bus)
+)
+(connector
+	(pt 3064 408)
+	(pt 3064 336)
+	(bus)
+)
+(connector
+	(pt 2104 408)
+	(pt 3064 408)
+	(bus)
+)
+(connector
+	(pt 2104 408)
+	(pt 2104 352)
+	(bus)
+)
+(connector
+	(pt 1600 352)
+	(pt 2104 352)
+	(bus)
+)
+(connector
+	(pt 1600 200)
+	(pt 1600 352)
+	(bus)
+)
+(connector
+	(pt 2704 360)
+	(pt 2696 360)
+	(bus)
+)
+(connector
+	(pt 2696 360)
+	(pt 2696 296)
+	(bus)
+)
+(connector
+	(pt 2696 296)
+	(pt 2744 296)
 	(bus)
 )
 (connector
@@ -2045,18 +1992,276 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2184 560)
-	(pt 2208 560)
+	(pt 2064 144)
+	(pt 2064 192)
 	(bus)
 )
 (connector
-	(pt 1912 560)
+	(pt 2048 120)
+	(pt 2048 152)
+	(bus)
+)
+(connector
+	(pt 2048 224)
+	(pt 2080 224)
+	(bus)
+)
+(connector
+	(pt 2784 168)
+	(pt 2808 168)
+)
+(connector
+	(text "Arena_ALU_OUT[7..0]" (rect 2744 168 2853 180)(font "Arial" ))
+	(pt 2744 184)
+	(pt 2808 184)
+	(bus)
+)
+(connector
+	(pt 2776 200)
+	(pt 2808 200)
+	(bus)
+)
+(connector
+	(pt 2864 352)
+	(pt 2896 352)
+	(bus)
+)
+(connector
+	(pt 2744 320)
+	(pt 2896 320)
+	(bus)
+)
+(connector
+	(pt 2440 -40)
+	(pt 2456 -40)
+	(bus)
+)
+(connector
+	(pt 1992 -24)
+	(pt 2112 -24)
+	(bus)
+)
+(connector
+	(pt 2720 -88)
+	(pt 2776 -88)
+	(bus)
+)
+(connector
+	(pt 2712 16)
+	(pt 2760 16)
+)
+(connector
+	(pt 2672 32)
+	(pt 2760 32)
+)
+(connector
 	(pt 1888 560)
+	(pt 1992 560)
 	(bus)
 )
 (connector
-	(pt 1912 576)
 	(pt 1856 576)
+	(pt 1992 576)
+	(bus)
+)
+(connector
+	(pt 2048 120)
+	(pt 2128 120)
+	(bus)
+)
+(connector
+	(pt 2064 144)
+	(pt 2080 144)
+	(bus)
+)
+(connector
+	(pt 2288 504)
+	(pt 2312 504)
+	(bus)
+)
+(connector
+	(pt 1808 -160)
+	(pt 1832 -160)
+	(bus)
+)
+(connector
+	(pt 1784 -160)
+	(pt 1808 -160)
+	(bus)
+)
+(connector
+	(pt 1736 -160)
+	(pt 1760 -160)
+	(bus)
+)
+(connector
+	(pt 1760 -160)
+	(pt 1784 -160)
+	(bus)
+)
+(connector
+	(pt 1832 -160)
+	(pt 1856 -160)
+	(bus)
+)
+(connector
+	(pt 1856 -160)
+	(pt 1864 -160)
+	(bus)
+)
+(connector
+	(pt 1832 168)
+	(pt 1864 168)
+	(bus)
+)
+(connector
+	(pt 1864 168)
+	(pt 2048 168)
+	(bus)
+)
+(connector
+	(pt 1872 432)
+	(pt 1992 432)
+	(bus)
+)
+(connector
+	(pt 1992 432)
+	(pt 2048 432)
+	(bus)
+)
+(connector
+	(pt 2048 192)
+	(pt 2064 192)
+	(bus)
+)
+(connector
+	(pt 2064 192)
+	(pt 2080 192)
+	(bus)
+)
+(connector
+	(pt 2744 296)
+	(pt 2744 320)
+	(bus)
+)
+(connector
+	(pt 1264 -72)
+	(pt 2416 -72)
+	(bus)
+)
+(connector
+	(pt 2416 -72)
+	(pt 2456 -72)
+	(bus)
+)
+(connector
+	(pt 2192 208)
+	(pt 2256 208)
+	(bus)
+)
+(connector
+	(pt 3096 152)
+	(pt 3112 152)
+	(bus)
+)
+(connector
+	(pt 3008 336)
+	(pt 3064 336)
+	(bus)
+)
+(connector
+	(pt 2616 -56)
+	(pt 2776 -56)
+	(bus)
+)
+(connector
+	(pt 2264 560)
+	(pt 2288 560)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[31..0]" (rect 1050 576 1163 588)(font "Arial" ))
+	(pt 1040 592)
+	(pt 1344 592)
+	(bus)
+)
+(connector
+	(text "RAM_Instruction[31..0]" (rect 1042 600 1155 612)(font "Arial" ))
+	(pt 1040 616)
+	(pt 1600 616)
+	(bus)
+)
+(connector
+	(pt 1040 464)
+	(pt 1040 592)
+	(bus)
+)
+(connector
+	(pt 1040 592)
+	(pt 1040 616)
+	(bus)
+)
+(connector
+	(pt 896 120)
+	(pt 1616 120)
+)
+(connector
+	(pt 2256 208)
+	(pt 2256 168)
+	(bus)
+)
+(connector
+	(pt 2672 32)
+	(pt 2672 168)
+)
+(connector
+	(text "Arena_ALU_OUT[31..0]" (rect 2658 136 2773 148)(font "Arial" ))
+	(pt 2744 152)
+	(pt 2648 152)
+	(bus)
+)
+(connector
+	(pt 2672 168)
+	(pt 2648 168)
+)
+(connector
+	(pt 1832 152)
+	(pt 2048 152)
+	(bus)
+)
+(connector
+	(pt 2744 152)
+	(pt 2744 184)
+	(bus)
+)
+(connector
+	(pt 2744 184)
+	(pt 2744 296)
+	(bus)
+)
+(connector
+	(pt 2288 184)
+	(pt 2288 504)
+	(bus)
+)
+(connector
+	(pt 2288 504)
+	(pt 2288 560)
+	(bus)
+)
+(connector
+	(pt 2048 152)
+	(pt 2312 152)
+	(bus)
+)
+(connector
+	(pt 2256 168)
+	(pt 2312 168)
+	(bus)
+)
+(connector
+	(pt 2288 184)
+	(pt 2312 184)
 	(bus)
 )
 (junction (pt 936 -144))
@@ -2069,14 +2274,21 @@ applicable agreement for further details.
 (junction (pt 1736 -160))
 (junction (pt 1464 592))
 (junction (pt 1504 592))
-(junction (pt 1912 432))
-(junction (pt 2336 -72))
 (junction (pt 1832 -160))
 (junction (pt 1808 -160))
 (junction (pt 1784 -160))
 (junction (pt 1760 -160))
-(junction (pt 2664 184))
 (junction (pt 1856 -160))
 (junction (pt 1864 -160))
 (junction (pt 1864 168))
-(junction (pt 2664 296))
+(junction (pt 1720 -160))
+(junction (pt 1704 -144))
+(junction (pt 520 144))
+(junction (pt 1992 432))
+(junction (pt 2048 152))
+(junction (pt 2064 192))
+(junction (pt 2744 184))
+(junction (pt 2744 296))
+(junction (pt 2416 -72))
+(junction (pt 2288 504))
+(junction (pt 1040 592))

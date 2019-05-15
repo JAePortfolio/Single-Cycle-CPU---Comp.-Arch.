@@ -16,10 +16,8 @@
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Single_Cycle_CPU_vlg_vec_tst 
 # Loading work.Single_Cycle_CPU_vlg_vec_tst
 # Loading work.Single_Cycle_CPU
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -34,5 +32,5 @@
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim Altera version. Expect performance to be adversely affected.
 # Simulation passed !
-# ** Note: $finish    : Single_Cycle_CPU.vt(769)
-#    Time: 160 ns  Iteration: 0  Instance: /Single_Cycle_CPU_vlg_vec_tst/tb_out
+# ** Note: $finish    : Single_Cycle_CPU.vt(2860)
+#    Time: 2 us  Iteration: 0  Instance: /Single_Cycle_CPU_vlg_vec_tst/tb_out

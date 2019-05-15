@@ -3,32 +3,52 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'Arena_Control:inst1|Arena_controlLines[3]'
-Slack : -10.712
-TNS   : -326.717
+Slack : -12.121
+TNS   : -363.034
 
 Type  : Slow Model Setup 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
-Slack : -8.106
-TNS   : -508.806
+Slack : -9.599
+TNS   : -849.811
+
+Type  : Slow Model Setup 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : -8.025
+TNS   : -40281.901
 
 Type  : Slow Model Setup 'INPUT_WE'
-Slack : -4.464
-TNS   : -28.752
+Slack : -5.367
+TNS   : -27.974
+
+Type  : Slow Model Setup 'Arena_clk'
+Slack : -5.326
+TNS   : -4677.846
 
 Type  : Slow Model Hold 'INPUT_WE'
-Slack : -4.423
-TNS   : -6.210
+Slack : -4.960
+TNS   : -9.211
+
+Type  : Slow Model Hold 'Arena_clk'
+Slack : -2.097
+TNS   : -103.916
 
 Type  : Slow Model Hold 'Arena_Control:inst1|Arena_controlLines[3]'
-Slack : -1.481
-TNS   : -4.351
+Slack : -1.390
+TNS   : -1.693
+
+Type  : Slow Model Hold 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : -0.963
+TNS   : -21.579
 
 Type  : Slow Model Hold 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
-Slack : -1.344
-TNS   : -12.241
+Slack : -0.408
+TNS   : -0.906
 
 Type  : Slow Model Minimum Pulse Width 'INPUT_WE'
-Slack : -1.222
-TNS   : -31.694
+Slack : -2.087
+TNS   : -72.066
+
+Type  : Slow Model Minimum Pulse Width 'Arena_clk'
+Slack : -1.380
+TNS   : -1035.380
 
 Type  : Slow Model Minimum Pulse Width 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
 Slack : 0.500
@@ -43,32 +63,52 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Setup 'Arena_Control:inst1|Arena_controlLines[3]'
-Slack : -4.579
-TNS   : -134.526
+Slack : -5.104
+TNS   : -153.481
 
 Type  : Fast Model Setup 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
-Slack : -3.205
-TNS   : -193.344
+Slack : -4.463
+TNS   : -359.945
+
+Type  : Fast Model Setup 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : -3.768
+TNS   : -18154.212
 
 Type  : Fast Model Setup 'INPUT_WE'
-Slack : -1.611
-TNS   : -8.981
+Slack : -2.059
+TNS   : -8.450
+
+Type  : Fast Model Setup 'Arena_clk'
+Slack : -1.676
+TNS   : -1348.940
 
 Type  : Fast Model Hold 'INPUT_WE'
-Slack : -2.180
-TNS   : -2.889
+Slack : -2.402
+TNS   : -4.275
+
+Type  : Fast Model Hold 'Arena_clk'
+Slack : -1.434
+TNS   : -323.530
 
 Type  : Fast Model Hold 'Arena_Control:inst1|Arena_controlLines[3]'
-Slack : -1.019
-TNS   : -7.801
+Slack : -0.962
+TNS   : -3.244
 
 Type  : Fast Model Hold 'Arena_ALU_Control_VHDL:ALUCntrl_VHDL|Arena_operation[0]'
-Slack : -0.634
-TNS   : -5.969
+Slack : -0.251
+TNS   : -0.472
+
+Type  : Fast Model Hold 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
+Slack : -0.082
+TNS   : -0.177
+
+Type  : Fast Model Minimum Pulse Width 'Arena_clk'
+Slack : -1.380
+TNS   : -1035.380
 
 Type  : Fast Model Minimum Pulse Width 'INPUT_WE'
 Slack : -1.222
-TNS   : -3.792
+TNS   : -20.202
 
 Type  : Fast Model Minimum Pulse Width 'Arena_ALU:inst3|Arena_ALU_OUT[0]'
 Slack : 0.500

@@ -16,7 +16,7 @@
 component lpm_3ramport
 	PORT
 	(
-		clock		: IN STD_LOGIC  := '1';
+		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		rdaddress		: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
 		wraddress		: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
