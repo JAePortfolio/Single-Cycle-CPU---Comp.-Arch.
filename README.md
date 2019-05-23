@@ -2,7 +2,7 @@
 # It consists of all the labs, with a Single Cycle CPU as the last lab.
 **1. Lab 1**
     - Full Adders, Half Adders, Mux's, etc.
-**2. Lab 2 **
+**2. Lab 2**
     - Designed, simulated 32-bit SRAM. Tested on FGPA Quartus II Board.
 **3. Lab 3**
     - Designed, simulated 32-bit bitwise operations such as AND, OR, XOR, NOT, Shift Left, etc. Tested on FPGA Board.
