@@ -1,0 +1,160 @@
+To, Location
+Arena_octalBits[0], PIN_N25
+Arena_octalBits[1], PIN_N26
+Arena_octalBits[2], PIN_P25
+Arena_octalBits[3], PIN_AE14
+Arena_octalBits[4], PIN_AF14
+Arena_octalBits[5], PIN_AD13
+Arena_octalBits[6], PIN_AC13
+Arena_octalBits[7], PIN_C13
+Arena_octalOpcode[0], PIN_B13
+Arena_octalOpcode[1], PIN_A13
+INPUT_WE, PIN_V2
+
+Arena_clk, PIN_N23
+Arena_button, PIN_W26
+
+
+DRAM_CKE, PIN_AA6
+DRAM_CLK, PIN_AA7
+
+SRAM_ADDR[0],PIN_AE4
+SRAM_ADDR[1],PIN_AF4
+SRAM_ADDR[2],PIN_AC5
+SRAM_ADDR[3],PIN_AC6
+SRAM_ADDR[4],PIN_AD4
+SRAM_ADDR[5],PIN_AD5
+SRAM_ADDR[6],PIN_AE5
+SRAM_ADDR[7],PIN_AF5
+SRAM_ADDR[8],PIN_AD6
+SRAM_ADDR[9],PIN_AD7
+SRAM_ADDR[10],PIN_V10
+SRAM_ADDR[11],PIN_V9
+SRAM_ADDR[12],PIN_AC7
+SRAM_ADDR[13],PIN_W8
+SRAM_ADDR[14],PIN_W10
+SRAM_ADDR[15],PIN_Y10
+SRAM_ADDR[16],PIN_AB8
+SRAM_ADDR[17],PIN_AC8
+
+SRAM_DQ[0], PIN_AD8
+SRAM_DQ[1], PIN_AE6
+SRAM_DQ[2], PIN_AF6
+SRAM_DQ[3], PIN_AA9
+SRAM_DQ[4], PIN_AA10
+SRAM_DQ[5], PIN_AB10
+SRAM_DQ[6], PIN_AA11
+SRAM_DQ[7], PIN_Y11
+SRAM_DQ[8], PIN_AE7
+SRAM_DQ[9], PIN_AF7
+SRAM_DQ[10], PIN_AE8
+SRAM_DQ[11], PIN_AF8
+SRAM_DQ[12], PIN_W11
+SRAM_DQ[13], PIN_W12
+SRAM_DQ[14], PIN_AC9
+SRAM_DQ[15], PIN_AC10
+SRAM_CE_N, PIN_AC11
+SRAM_OE_N, PIN_AD10
+SRAM_WE_N, PIN_AE10
+SRAM_UB_N, PIN_AF9
+SRAM_LB_N, PIN_AE9
+
+SDRAM_ADDR[0], PIN_T6
+SDRAM_ADDR[1], PIN_V4
+SDRAM_ADDR[2], PIN_V3
+SDRAM_ADDR[3], PIN_W2
+SDRAM_ADDR[4], PIN_W1
+SDRAM_ADDR[5], PIN_U6
+SDRAM_ADDR[6], PIN_U7
+SDRAM_ADDR[7], PIN_U5
+SDRAM_ADDR[8], PIN_W4
+SDRAM_ADDR[9], PIN_W3
+SDRAM_ADDR[10], PIN_Y1
+SDRAM_ADDR[11], PIN_V5
+
+DRAM_DQ[0], PIN_V6
+DRAM_DQ[1], PIN_AA2
+DRAM_DQ[2], PIN_AA1
+DRAM_DQ[3], PIN_Y3
+DRAM_DQ[4], PIN_Y4
+DRAM_DQ[5], PIN_R8
+DRAM_DQ[6], PIN_T8
+DRAM_DQ[7], PIN_V7
+DRAM_DQ[8], PIN_W6
+DRAM_DQ[9], PIN_AB2
+DRAM_DQ[10], PIN_AB1
+DRAM_DQ[11], PIN_AA4
+DRAM_DQ[12], PIN_AA3
+DRAM_DQ[13], PIN_AC2
+DRAM_DQ[14], PIN_AC1
+DRAM_DQ[15], PIN_AA5
+
+DRAM_OE_N, PIN_AC3
+DRAM_WE_N, PIN_AD3
+DRAM_LDQM, PIN_AD2
+DRAM_UDQM, PIN_Y5
+
+Arena_segment1_G, PIN_V13
+Arena_segment1_F, PIN_V14
+Arena_segment1_E, PIN_AE11
+Arena_segment1_D, PIN_AD11
+Arena_segment1_C, PIN_AC12
+Arena_segment1_B, PIN_AB12
+Arena_segment1_A, PIN_AF10
+
+Arena_segment2_A, PIN_V20
+Arena_segment2_B, PIN_V21
+Arena_segment2_C, PIN_W21
+Arena_segment2_D, PIN_Y22
+Arena_segment2_E, PIN_AA24
+Arena_segment2_F, PIN_AA23
+Arena_segment2_G, PIN_AB24
+
+Arena_segment3_A, PIN_AB23
+Arena_segment3_B, PIN_V22
+Arena_segment3_C, PIN_AC25
+Arena_segment3_D, PIN_AC26
+Arena_segment3_E, PIN_AB26
+Arena_segment3_F, PIN_AB25
+Arena_segment3_G, PIN_Y24
+
+Arena_segment4_A, PIN_Y23
+Arena_segment4_B, PIN_AA25
+Arena_segment4_C, PIN_AA26
+Arena_segment4_D, PIN_Y26
+Arena_segment4_E, PIN_Y25
+Arena_segment4_F, PIN_U22
+Arena_segment4_G, PIN_W24
+
+Arena_segment5_A, PIN_U9
+Arena_segment5_B, PIN_U1
+Arena_segment5_C, PIN_U2
+Arena_segment5_D, PIN_T4
+Arena_segment5_E, PIN_R7
+Arena_segment5_F, PIN_R6
+Arena_segment5_G, PIN_T3
+
+Arena_segment6_A, PIN_T2
+Arena_segment6_B, PIN_P6
+Arena_segment6_C, PIN_P7
+Arena_segment6_D, PIN_T9
+Arena_segment6_E, PIN_R5
+Arena_segment6_F, PIN_R4
+Arena_segment6_G, PIN_R3
+
+Arena_segment7_A, PIN_R2
+Arena_segment7_B, PIN_P4
+Arena_segment7_C, PIN_P3
+Arena_segment7_D, PIN_M2
+Arena_segment7_E, PIN_M3
+Arena_segment7_F, PIN_M5
+Arena_segment7_G, PIN_M4
+
+Arena_segment8_A, PIN_L3
+Arena_segment8_B, PIN_L2
+Arena_segment8_C, PIN_L9
+Arena_segment8_D, PIN_L6
+Arena_segment8_E, PIN_L7
+Arena_segment8_F, PIN_P9
+Arena_segment8_G, PIN_N9
+

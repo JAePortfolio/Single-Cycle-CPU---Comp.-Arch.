@@ -148,9 +148,9 @@ begin
 			null;
 		end case;
 		case Arena_ALUop is
-			when "000" => -- Add for SW
+			when "000" => -- Add for SW/LW
 				Arena_operation <= "0010";
-			when "001" => -- Sub for LW
+			when "001" => -- Sub for BEQ
 				Arena_operation <= "0110";
 			when "111" => -- OR for ORI
 				Arena_operation <= "0001";

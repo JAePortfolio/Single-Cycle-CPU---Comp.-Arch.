@@ -52,6 +52,159 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_location_assignment PIN_N25 -to Arena_octalBits[0]
+set_location_assignment PIN_N26 -to Arena_octalBits[1]
+set_location_assignment PIN_P25 -to Arena_octalBits[2]
+set_location_assignment PIN_AE14 -to Arena_octalBits[3]
+set_location_assignment PIN_AF14 -to Arena_octalBits[4]
+set_location_assignment PIN_AD13 -to Arena_octalBits[5]
+set_location_assignment PIN_AC13 -to Arena_octalBits[6]
+set_location_assignment PIN_C13 -to Arena_octalBits[7]
+set_location_assignment PIN_B13 -to Arena_octalOpcode[0]
+set_location_assignment PIN_A13 -to Arena_octalOpcode[1]
+set_location_assignment PIN_N23 -to Arena_clk
+set_location_assignment PIN_W26 -to Arena_button
+set_location_assignment PIN_V13 -to Arena_segment1_G
+set_location_assignment PIN_V14 -to Arena_segment1_F
+set_location_assignment PIN_AE11 -to Arena_segment1_E
+set_location_assignment PIN_AD11 -to Arena_segment1_D
+set_location_assignment PIN_AC12 -to Arena_segment1_C
+set_location_assignment PIN_AB12 -to Arena_segment1_B
+set_location_assignment PIN_AF10 -to Arena_segment1_A
+set_location_assignment PIN_V20 -to Arena_segment2_A
+set_location_assignment PIN_V21 -to Arena_segment2_B
+set_location_assignment PIN_W21 -to Arena_segment2_C
+set_location_assignment PIN_Y22 -to Arena_segment2_D
+set_location_assignment PIN_AA24 -to Arena_segment2_E
+set_location_assignment PIN_AA23 -to Arena_segment2_F
+set_location_assignment PIN_AB24 -to Arena_segment2_G
+set_location_assignment PIN_AB23 -to Arena_segment3_A
+set_location_assignment PIN_V22 -to Arena_segment3_B
+set_location_assignment PIN_AC25 -to Arena_segment3_C
+set_location_assignment PIN_AC26 -to Arena_segment3_D
+set_location_assignment PIN_AB26 -to Arena_segment3_E
+set_location_assignment PIN_AB25 -to Arena_segment3_F
+set_location_assignment PIN_Y24 -to Arena_segment3_G
+set_location_assignment PIN_Y23 -to Arena_segment4_A
+set_location_assignment PIN_AA25 -to Arena_segment4_B
+set_location_assignment PIN_AA26 -to Arena_segment4_C
+set_location_assignment PIN_Y26 -to Arena_segment4_D
+set_location_assignment PIN_Y25 -to Arena_segment4_E
+set_location_assignment PIN_U22 -to Arena_segment4_F
+set_location_assignment PIN_W24 -to Arena_segment4_G
+set_location_assignment PIN_U9 -to Arena_segment5_A
+set_location_assignment PIN_U1 -to Arena_segment5_B
+set_location_assignment PIN_U2 -to Arena_segment5_C
+set_location_assignment PIN_T4 -to Arena_segment5_D
+set_location_assignment PIN_R7 -to Arena_segment5_E
+set_location_assignment PIN_R6 -to Arena_segment5_F
+set_location_assignment PIN_T3 -to Arena_segment5_G
+set_location_assignment PIN_T2 -to Arena_segment6_A
+set_location_assignment PIN_P6 -to Arena_segment6_B
+set_location_assignment PIN_P7 -to Arena_segment6_C
+set_location_assignment PIN_T9 -to Arena_segment6_D
+set_location_assignment PIN_R5 -to Arena_segment6_E
+set_location_assignment PIN_R4 -to Arena_segment6_F
+set_location_assignment PIN_R3 -to Arena_segment6_G
+set_location_assignment PIN_R2 -to Arena_segment7_A
+set_location_assignment PIN_P4 -to Arena_segment7_B
+set_location_assignment PIN_P3 -to Arena_segment7_C
+set_location_assignment PIN_M2 -to Arena_segment7_D
+set_location_assignment PIN_M3 -to Arena_segment7_E
+set_location_assignment PIN_M5 -to Arena_segment7_F
+set_location_assignment PIN_M4 -to Arena_segment7_G
+set_location_assignment PIN_L3 -to Arena_segment8_A
+set_location_assignment PIN_L2 -to Arena_segment8_B
+set_location_assignment PIN_L9 -to Arena_segment8_C
+set_location_assignment PIN_L6 -to Arena_segment8_D
+set_location_assignment PIN_L7 -to Arena_segment8_E
+set_location_assignment PIN_P9 -to Arena_segment8_F
+set_location_assignment PIN_N9 -to Arena_segment8_G
+set_location_assignment PIN_AE4 -to SRAM_ADDR[0]
+set_location_assignment PIN_AF4 -to SRAM_ADDR[1]
+set_location_assignment PIN_AC5 -to SRAM_ADDR[2]
+set_location_assignment PIN_AC6 -to SRAM_ADDR[3]
+set_location_assignment PIN_AD4 -to SRAM_ADDR[4]
+set_location_assignment PIN_AD5 -to SRAM_ADDR[5]
+set_location_assignment PIN_AE5 -to SRAM_ADDR[6]
+set_location_assignment PIN_AF5 -to SRAM_ADDR[7]
+set_location_assignment PIN_AD6 -to SRAM_ADDR[8]
+set_location_assignment PIN_AD7 -to SRAM_ADDR[9]
+set_location_assignment PIN_V10 -to SRAM_ADDR[10]
+set_location_assignment PIN_V9 -to SRAM_ADDR[11]
+set_location_assignment PIN_AC7 -to SRAM_ADDR[12]
+set_location_assignment PIN_W8 -to SRAM_ADDR[13]
+set_location_assignment PIN_W10 -to SRAM_ADDR[14]
+set_location_assignment PIN_Y10 -to SRAM_ADDR[15]
+set_location_assignment PIN_AB8 -to SRAM_ADDR[16]
+set_location_assignment PIN_AC8 -to SRAM_ADDR[17]
+set_location_assignment PIN_AD8 -to SRAM_DQ[0]
+set_location_assignment PIN_AE6 -to SRAM_DQ[1]
+set_location_assignment PIN_AF6 -to SRAM_DQ[2]
+set_location_assignment PIN_AA9 -to SRAM_DQ[3]
+set_location_assignment PIN_AA10 -to SRAM_DQ[4]
+set_location_assignment PIN_AB10 -to SRAM_DQ[5]
+set_location_assignment PIN_AA11 -to SRAM_DQ[6]
+set_location_assignment PIN_Y11 -to SRAM_DQ[7]
+set_location_assignment PIN_AE7 -to SRAM_DQ[8]
+set_location_assignment PIN_AF7 -to SRAM_DQ[9]
+set_location_assignment PIN_AE8 -to SRAM_DQ[10]
+set_location_assignment PIN_AF8 -to SRAM_DQ[11]
+set_location_assignment PIN_W11 -to SRAM_DQ[12]
+set_location_assignment PIN_W12 -to SRAM_DQ[13]
+set_location_assignment PIN_AC9 -to SRAM_DQ[14]
+set_location_assignment PIN_AC10 -to SRAM_DQ[15]
+set_location_assignment PIN_AC11 -to SRAM_CE_N
+set_location_assignment PIN_AD10 -to SRAM_OE_N
+set_location_assignment PIN_AE10 -to SRAM_WE_N
+set_location_assignment PIN_AF9 -to SRAM_UB_N
+set_location_assignment PIN_AE9 -to SRAM_LB_N
+set_location_assignment PIN_T6 -to SDRAM_ADDR[0]
+set_location_assignment PIN_V4 -to SDRAM_ADDR[1]
+set_location_assignment PIN_V3 -to SDRAM_ADDR[2]
+set_location_assignment PIN_W2 -to SDRAM_ADDR[3]
+set_location_assignment PIN_W1 -to SDRAM_ADDR[4]
+set_location_assignment PIN_U6 -to SDRAM_ADDR[5]
+set_location_assignment PIN_U7 -to SDRAM_ADDR[6]
+set_location_assignment PIN_U5 -to SDRAM_ADDR[7]
+set_location_assignment PIN_W4 -to SDRAM_ADDR[8]
+set_location_assignment PIN_W3 -to SDRAM_ADDR[9]
+set_location_assignment PIN_Y1 -to SDRAM_ADDR[10]
+set_location_assignment PIN_V5 -to SDRAM_ADDR[11]
+set_location_assignment PIN_V6 -to DRAM_DQ[0]
+set_location_assignment PIN_AA2 -to DRAM_DQ[1]
+set_location_assignment PIN_AA1 -to DRAM_DQ[2]
+set_location_assignment PIN_Y3 -to DRAM_DQ[3]
+set_location_assignment PIN_Y4 -to DRAM_DQ[4]
+set_location_assignment PIN_R8 -to DRAM_DQ[5]
+set_location_assignment PIN_T8 -to DRAM_DQ[6]
+set_location_assignment PIN_V7 -to DRAM_DQ[7]
+set_location_assignment PIN_W6 -to DRAM_DQ[8]
+set_location_assignment PIN_AB2 -to DRAM_DQ[9]
+set_location_assignment PIN_AB1 -to DRAM_DQ[10]
+set_location_assignment PIN_AA4 -to DRAM_DQ[11]
+set_location_assignment PIN_AA3 -to DRAM_DQ[12]
+set_location_assignment PIN_AC2 -to DRAM_DQ[13]
+set_location_assignment PIN_AC1 -to DRAM_DQ[14]
+set_location_assignment PIN_AA5 -to DRAM_DQ[15]
+set_location_assignment PIN_AC3 -to DRAM_OE_N
+set_location_assignment PIN_AD3 -to DRAM_WE_N
+set_location_assignment PIN_AD2 -to DRAM_LDQM
+set_location_assignment PIN_Y5 -to DRAM_UDQM
+set_location_assignment PIN_V2 -to INPUT_WE
+set_location_assignment PIN_AA6 -to DRAM_CKE
+set_location_assignment PIN_AA7 -to DRAM_CLK
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg8Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg7Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg6Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg5Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg4Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg3Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg2Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../../Lab 4/Quartus Files/Arena_Seg1Decoder.vhd"
 set_global_assignment -name VHDL_FILE Arena_DataMemory.vhd
 set_global_assignment -name VHDL_FILE Arena_Mem_Access_2.vhd
 set_global_assignment -name BDF_FILE ram3port.bdf
@@ -68,9 +221,6 @@ set_global_assignment -name VHDL_FILE Arena_Control.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_Control.vwf
 set_global_assignment -name BDF_FILE Arena_ALU_Control.bdf
 set_global_assignment -name VHDL_FILE Arena_ALU.vhd
-set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
-set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
-set_global_assignment -name FITTER_EFFORT "FAST FIT"
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_DataMemory.vwf
 set_global_assignment -name VHDL_FILE Arena_Sign_Extend_16to32.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_Sign_Extend_16to32.vwf
@@ -80,8 +230,12 @@ set_global_assignment -name QIP_FILE lpm_add_sub1.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_ALU_Control.vwf
 set_global_assignment -name VHDL_FILE Arena_ALU_Control_VHDL.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arena_ALU_Control_VHDL.vwf
+set_global_assignment -name QIP_FILE ram1.qip
+set_global_assignment -name TEXT_FILE Single_Cycle_CPU_pinAssignments.txt
+set_global_assignment -name BDF_FILE Single_Cycle_CPU_withDisplays.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf"
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf"

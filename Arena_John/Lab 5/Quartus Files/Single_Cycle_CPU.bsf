@@ -1,0 +1,239 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 336 432)
+	(text "Single_Cycle_CPU" (rect 5 0 108 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 400 25 412)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Arena_clk" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Arena_clk" (rect 21 27 78 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Arena_button" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "Arena_button" (rect 21 43 98 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "instr[31..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "instr[31..0]" (rect 21 59 81 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Arena_octalBits[7..0]" (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "Arena_octalBits[7..0]" (rect 21 75 140 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Arena_octalOpcode[1..0]" (rect 0 0 142 14)(font "Arial" (font_size 8)))
+		(text "Arena_octalOpcode[1..0]" (rect 21 91 163 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "INPUT_WE" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "INPUT_WE" (rect 21 107 80 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "DRAM_CKE" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CKE" (rect 21 123 87 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "DRAM_CLK" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CLK" (rect 21 139 87 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 320 32)
+		(output)
+		(text "controlLine[6..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "controlLine[6..0]" (rect 209 27 299 41)(font "Arial" (font_size 8)))
+		(line (pt 320 32)(pt 304 32)(line_width 3))
+	)
+	(port
+		(pt 320 48)
+		(output)
+		(text "aluOP[2..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "aluOP[2..0]" (rect 238 43 299 57)(font "Arial" (font_size 8)))
+		(line (pt 320 48)(pt 304 48)(line_width 3))
+	)
+	(port
+		(pt 320 64)
+		(output)
+		(text "readData1[31..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "readData1[31..0]" (rect 205 59 299 73)(font "Arial" (font_size 8)))
+		(line (pt 320 64)(pt 304 64)(line_width 3))
+	)
+	(port
+		(pt 320 80)
+		(output)
+		(text "readData2[31..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "readData2[31..0]" (rect 205 75 299 89)(font "Arial" (font_size 8)))
+		(line (pt 320 80)(pt 304 80)(line_width 3))
+	)
+	(port
+		(pt 320 96)
+		(output)
+		(text "Arena_PC[31..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "Arena_PC[31..0]" (rect 206 91 299 105)(font "Arial" (font_size 8)))
+		(line (pt 320 96)(pt 304 96)(line_width 3))
+	)
+	(port
+		(pt 320 112)
+		(output)
+		(text "SRAM_ADDR[17..0]" (rect 0 0 112 14)(font "Arial" (font_size 8)))
+		(text "SRAM_ADDR[17..0]" (rect 187 107 299 121)(font "Arial" (font_size 8)))
+		(line (pt 320 112)(pt 304 112)(line_width 3))
+	)
+	(port
+		(pt 320 128)
+		(output)
+		(text "SDRAM_ADDR[11..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "SDRAM_ADDR[11..0]" (rect 179 123 299 137)(font "Arial" (font_size 8)))
+		(line (pt 320 128)(pt 304 128)(line_width 3))
+	)
+	(port
+		(pt 320 176)
+		(output)
+		(text "SRAM_CE_N" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "SRAM_CE_N" (rect 226 171 299 185)(font "Arial" (font_size 8)))
+		(line (pt 320 176)(pt 304 176))
+	)
+	(port
+		(pt 320 192)
+		(output)
+		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 232 187 299 201)(font "Arial" (font_size 8)))
+		(line (pt 320 192)(pt 304 192)(line_width 3))
+	)
+	(port
+		(pt 320 208)
+		(output)
+		(text "SRAM_OE_N" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "SRAM_OE_N" (rect 225 203 299 217)(font "Arial" (font_size 8)))
+		(line (pt 320 208)(pt 304 208))
+	)
+	(port
+		(pt 320 224)
+		(output)
+		(text "SRAM_WE_N" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "SRAM_WE_N" (rect 223 219 299 233)(font "Arial" (font_size 8)))
+		(line (pt 320 224)(pt 304 224))
+	)
+	(port
+		(pt 320 240)
+		(output)
+		(text "SRAM_UB_N" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "SRAM_UB_N" (rect 225 235 299 249)(font "Arial" (font_size 8)))
+		(line (pt 320 240)(pt 304 240))
+	)
+	(port
+		(pt 320 256)
+		(output)
+		(text "SRAM_LB_N" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "SRAM_LB_N" (rect 226 251 299 265)(font "Arial" (font_size 8)))
+		(line (pt 320 256)(pt 304 256))
+	)
+	(port
+		(pt 320 272)
+		(output)
+		(text "DRAM_CE_N" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CE_N" (rect 226 267 299 281)(font "Arial" (font_size 8)))
+		(line (pt 320 272)(pt 304 272))
+	)
+	(port
+		(pt 320 288)
+		(output)
+		(text "DRAM_OE_N" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "DRAM_OE_N" (rect 225 283 299 297)(font "Arial" (font_size 8)))
+		(line (pt 320 288)(pt 304 288))
+	)
+	(port
+		(pt 320 304)
+		(output)
+		(text "operation[3..0]" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "operation[3..0]" (rect 218 299 299 313)(font "Arial" (font_size 8)))
+		(line (pt 320 304)(pt 304 304)(line_width 3))
+	)
+	(port
+		(pt 320 320)
+		(output)
+		(text "DRAM_WE_N" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "DRAM_WE_N" (rect 223 315 299 329)(font "Arial" (font_size 8)))
+		(line (pt 320 320)(pt 304 320))
+	)
+	(port
+		(pt 320 336)
+		(output)
+		(text "DRAM_LDQM" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "DRAM_LDQM" (rect 223 331 299 345)(font "Arial" (font_size 8)))
+		(line (pt 320 336)(pt 304 336))
+	)
+	(port
+		(pt 320 352)
+		(output)
+		(text "DRAM_UDQM" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "DRAM_UDQM" (rect 222 347 299 361)(font "Arial" (font_size 8)))
+		(line (pt 320 352)(pt 304 352))
+	)
+	(port
+		(pt 320 368)
+		(output)
+		(text "out_instruc[31..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "out_instruc[31..0]" (rect 200 363 299 377)(font "Arial" (font_size 8)))
+		(line (pt 320 368)(pt 304 368)(line_width 3))
+	)
+	(port
+		(pt 320 144)
+		(bidir)
+		(text "SRAM_DQ[15..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "SRAM_DQ[15..0]" (rect 204 139 299 153)(font "Arial" (font_size 8)))
+		(line (pt 320 144)(pt 304 144)(line_width 3))
+	)
+	(port
+		(pt 320 160)
+		(bidir)
+		(text "DRAM_DQ[15..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "DRAM_DQ[15..0]" (rect 204 155 299 169)(font "Arial" (font_size 8)))
+		(line (pt 320 160)(pt 304 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 304 400))
+	)
+)

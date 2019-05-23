@@ -1,5 +1,5 @@
 Flow report for Single_Cycle_CPU
-Wed May 15 02:03:43 2019
+Wed May 15 16:41:28 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed May 15 02:03:43 2019           ;
+; Flow Status                        ; Successful - Wed May 15 16:41:28 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Single_Cycle_CPU                                ;
 ; Top-level Entity Name              ; Single_Cycle_CPU                                ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 16,339 / 33,216 ( 49 % )                        ;
-;     Total combinational functions  ; 15,948 / 33,216 ( 48 % )                        ;
-;     Dedicated logic registers      ; 1,034 / 33,216 ( 3 % )                          ;
-; Total registers                    ; 1034                                            ;
-; Total pins                         ; 199 / 475 ( 42 % )                              ;
+; Total logic elements               ; 16,480 / 33,216 ( 50 % )                        ;
+;     Total combinational functions  ; 16,009 / 33,216 ( 48 % )                        ;
+;     Dedicated logic registers      ; 1,096 / 33,216 ( 3 % )                          ;
+; Total registers                    ; 1096                                            ;
+; Total pins                         ; 293 / 475 ( 62 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/15/2019 01:46:35 ;
+; Start date & time ; 05/15/2019 16:28:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Single_Cycle_CPU    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220314654093205.155789919305396       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264840330406669.155795211414196       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
@@ -85,6 +85,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; RAM: 2-PORT                           ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
@@ -102,6 +104,8 @@ applicable agreement for further details.
 ; MISC_FILE                           ; lpm_3ramport.cmp                      ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_add_sub1.bsf                      ; --            ; --          ; --             ;
 ; MISC_FILE                           ; lpm_add_sub1.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram1.bsf                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram1.cmp                              ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
@@ -116,18 +120,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 574 MB              ; 00:00:49                           ;
-; Fitter                    ; 00:02:55     ; 1.0                     ; 832 MB              ; 00:02:53                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 457 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 574 MB              ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 490 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 493 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 493 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 473 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 493 MB              ; 00:00:05                           ;
-; Total                     ; 00:04:26     ; --                      ; --                  ; 00:04:21                           ;
+; Analysis & Synthesis      ; 00:00:42     ; 1.0                     ; 4715 MB             ; 00:00:42                           ;
+; Fitter                    ; 00:02:58     ; 1.1                     ; 5191 MB             ; 00:03:18                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4642 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4803 MB             ; 00:00:11                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4656 MB             ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4648 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4664 MB             ; 00:00:06                           ;
+; Total                     ; 00:04:09     ; --                      ; --                  ; 00:04:29                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -136,17 +136,13 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; John-PC          ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-30O6SP6  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -158,11 +154,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off Single_Cycle_CP
 quartus_asm --read_settings_files=off --write_settings_files=off Single_Cycle_CPU -c Single_Cycle_CPU
 quartus_sta Single_Cycle_CPU -c Single_Cycle_CPU
 quartus_eda --read_settings_files=off --write_settings_files=off Single_Cycle_CPU -c Single_Cycle_CPU
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf" --testbench_file=./simulation/qsim/Single_Cycle_CPU.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf" --testbench_file=./simulation/qsim/Single_Cycle_CPU.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU --vector_source="C:/Users/John/Documents/College/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf" --testbench_file=./simulation/qsim/Single_Cycle_CPU.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU --vector_source="C:/Users/John2/Documents/Spring 2019/CSC 342 - Organization/Labs/Arena_John/Lab 5/Quartus Files/Single_Cycle_CPU.vwf" --testbench_file=./simulation/qsim/Single_Cycle_CPU.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Single_Cycle_CPU -c Single_Cycle_CPU
 
 
